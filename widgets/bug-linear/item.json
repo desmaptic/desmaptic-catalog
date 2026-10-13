@@ -1,0 +1,61 @@
+{
+  "id": "bug-linear",
+  "revision": 2,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Bug in Linear…",
+    "de": "Bug in Linear…",
+    "es": "Bug en Linear…",
+    "fr": "Bug dans Linear…",
+    "ru": "Баг в Linear…"
+  },
+  "summary": {
+    "en": "Describe a bug on the phone: a Linear issue with the branch, last commit and browser tab from the Mac",
+    "de": "Beschreib einen Bug auf dem Telefon: ein Linear-Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
+    "es": "Describe un bug en el teléfono: una incidencia en Linear con la rama, el último commit y la pestaña del Mac",
+    "fr": "Décrivez un bug sur le téléphone : un ticket Linear avec la branche, le dernier commit et l’onglet du Mac",
+    "ru": "Опишите баг на телефоне — задача в Linear с веткой, последним коммитом и вкладкой браузера с Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The first line is the title; the Mac adds branch, last commit, front app and browser tab. “+ screenshot” adds the simulator’s screen to the next report. Needs a Linear API key: the button says how.",
+    "de": "Die erste Zeile ist der Titel; der Mac fügt Branch, letzten Commit, App im Vordergrund und Browser-Tab hinzu. „+ screenshot“ legt dem nächsten Bericht den Simulator bei. Braucht einen Linear-API-Schlüssel: Die Taste sagt, wie.",
+    "es": "La primera línea es el título; el Mac añade rama, último commit, app en primer plano y pestaña del navegador. «+ screenshot» añade la pantalla del simulador al siguiente informe. Necesita una clave API de Linear: el botón dice cómo.",
+    "fr": "La première ligne est le titre ; le Mac ajoute branche, dernier commit, app au premier plan et onglet du navigateur. « + screenshot » joint l’écran du simulateur au rapport suivant. Il faut une clé d’API Linear : le bouton dit comment.",
+    "ru": "Первая строка — заголовок; Mac добавит ветку, последний коммит, переднее приложение и вкладку браузера. «+ screenshot» приложит экран симулятора к следующему отчёту. Нужен API-ключ Linear: кнопка подскажет, как."
+  },
+  "tapAction": {
+    "en": "Asks what broke and files it in Linear",
+    "de": "Fragt, was kaputt ist, und legt es in Linear an",
+    "es": "Pregunta qué se ha roto y lo registra en Linear",
+    "fr": "Demande ce qui est cassé et le signale dans Linear",
+    "ru": "Спрашивает, что сломалось, и заводит задачу в Linear"
+  },
+  "permissions": [
+    "automation"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "ladybug.fill"
+      }
+    },
+    "color": "#5E5CE6",
+    "command": {
+      "shellCommand": {
+        "command": "team=\"\"     # ← your Linear team’s key, e.g. \"ENG\"; may stay empty when you have one team\nfolder=\"\"   # ← your project folder, for its branch and last commit: e.g. \"~/Developer/my-app\"; may stay empty\n@file:report.zsh\n@file:linear.zsh"
+      }
+    },
+    "input": {
+      "question": "What broke?",
+      "placeholder": "The title on the first line, details below",
+      "quickReplies": [
+        "+ screenshot"
+      ],
+      "multiline": true
+    }
+  }
+}

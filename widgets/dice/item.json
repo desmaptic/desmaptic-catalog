@@ -1,0 +1,66 @@
+{
+  "id": "dice",
+  "revision": 5,
+  "kind": "widget",
+  "title": {
+    "en": "Dice",
+    "de": "Würfel",
+    "es": "Dado",
+    "fr": "Dé",
+    "ru": "Кубик"
+  },
+  "summary": {
+    "en": "Throws dice from d4 to d100, or flips a coin",
+    "de": "Wirft Würfel von W4 bis W100 oder eine Münze",
+    "es": "Lanza dados del d4 al d100 o una moneda",
+    "fr": "Lance des dés du d4 au d100, ou une pièce",
+    "ru": "Бросает кубики от d4 до d100 или монетку"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Every face is equally likely and a 20 on the d20 glows gold. Choose your dice in the first line of the Long Press script, from d4 d6 d8 d10 d12 d20 d100 coin.",
+    "de": "Jede Seite ist gleich wahrscheinlich, eine 20 auf dem W20 leuchtet golden. Deine Würfel stehen in der ersten Zeile des Skripts unter „Langes Drücken“: d4 d6 d8 d10 d12 d20 d100 coin.",
+    "es": "Todas las caras son igual de probables y un 20 en el d20 brilla en dorado. Elige tus dados en la primera línea del script de Pulsación larga: d4 d6 d8 d10 d12 d20 d100 coin.",
+    "fr": "Toutes les faces ont la même chance, et un 20 sur le d20 brille en doré. Choisissez vos dés à la première ligne du script de l’appui long : d4 d6 d8 d10 d12 d20 d100 coin.",
+    "ru": "Все грани равновероятны, двадцатка на d20 светится золотом. Свои кубики выберите в первой строке скрипта долгого нажатия: d4 d6 d8 d10 d12 d20 d100 coin."
+  },
+  "tapAction": {
+    "en": "Throws the die or flips the coin",
+    "de": "Wirft den Würfel oder die Münze",
+    "es": "Lanza el dado o la moneda",
+    "fr": "Lance le dé ou la pièce",
+    "ru": "Бросает кубик или монетку"
+  },
+  "holdAction": {
+    "en": "Switches to the next die in your list",
+    "de": "Wechselt zum nächsten Würfel deiner Liste",
+    "es": "Cambia al siguiente dado de tu lista",
+    "fr": "Passe au dé suivant de votre liste",
+    "ru": "Переключает на следующий кубик из вашего списка"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "die.face.5"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "mode=roll\n@file:dice.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "dice=\"d6 d20\"   # ← your dice, in order: d4 d6 d8 d10 d12 d20 d100 coin\nmode=switch\n@file:dice.zsh"
+      }
+    },
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

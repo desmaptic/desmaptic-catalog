@@ -1,0 +1,679 @@
+{
+  "id": "vscode",
+  "revision": 5,
+  "name": "VS Code",
+  "bundleIds": ["com.microsoft.VSCode"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "command-palette",
+      "title": {"en": "Command Palette", "de": "Alle Befehle", "es": "Paleta de comandos", "fr": "Palette de commandes", "ru": "Палитра команд"},
+      "summary": {
+        "en": "Runs any VS Code command by name (⇧⌘P)",
+        "de": "Führt jeden VS-Code-Befehl über seinen Namen aus (⇧⌘P)",
+        "es": "Ejecuta cualquier comando de VS Code por su nombre (⇧⌘P)",
+        "fr": "Lance n’importe quelle commande de VS Code par son nom (⇧⌘P)",
+        "ru": "Любая команда VS Code по названию (⇧⌘P)"
+      },
+      "details": {
+        "en": "Type part of a command’s name and press Return to run it — View › Command Palette (⇧⌘P). Works while VS Code is in front.",
+        "de": "Einen Teil des Befehlsnamens tippen und mit Return ausführen – View › Command Palette (⇧⌘P). Funktioniert, wenn VS Code vorne ist.",
+        "es": "Escribe parte del nombre de un comando y pulsa Retorno para ejecutarlo: View › Command Palette (⇧⌘P). Funciona cuando VS Code está delante.",
+        "fr": "Tapez une partie du nom d’une commande, puis Retour pour la lancer — View › Command Palette (⇧⌘P). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Наберите часть названия команды и нажмите Return, чтобы выполнить её, — View › Command Palette (⇧⌘P). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Command Palette",
+        "de": "Öffnet die Befehlspalette",
+        "es": "Abre la paleta de comandos",
+        "fr": "Ouvre la palette de commandes",
+        "ru": "Открывает палитру команд"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "go-to-file",
+      "title": {"en": "Go to File", "de": "Gehe zu Datei", "es": "Ir al archivo", "fr": "Atteindre le fichier", "ru": "Перейти к файлу"},
+      "summary": {
+        "en": "Opens any file of the workspace by name (⌘P)",
+        "de": "Öffnet jede Datei des Arbeitsbereichs über ihren Namen (⌘P)",
+        "es": "Abre cualquier archivo del área de trabajo por su nombre (⌘P)",
+        "fr": "Ouvre n’importe quel fichier de l’espace de travail par son nom (⌘P)",
+        "ru": "Открывает любой файл рабочей области по имени (⌘P)"
+      },
+      "details": {
+        "en": "Quick Open: type a few letters of a file name and press Return to open it — Go › Go to File (⌘P). Works while VS Code is in front.",
+        "de": "Quick Open: ein paar Buchstaben des Dateinamens tippen und mit Return öffnen – Go › Go to File (⌘P). Funktioniert, wenn VS Code vorne ist.",
+        "es": "Quick Open: escribe unas letras del nombre de un archivo y pulsa Retorno para abrirlo: Go › Go to File (⌘P). Funciona cuando VS Code está delante.",
+        "fr": "Quick Open : tapez quelques lettres du nom d’un fichier, puis Retour pour l’ouvrir — Go › Go to File (⌘P). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Quick Open: наберите несколько букв имени файла и нажмите Return, чтобы открыть его, — Go › Go to File (⌘P). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Quick Open",
+        "de": "Öffnet Quick Open",
+        "es": "Abre Quick Open",
+        "fr": "Ouvre Quick Open",
+        "ru": "Открывает Quick Open"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.text.magnifyingglass"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "find-in-files",
+      "title": {"en": "Find in Files", "de": "In Dateien suchen", "es": "Buscar en archivos", "fr": "Rechercher", "ru": "Поиск в файлах"},
+      "summary": {
+        "en": "Searches every file of the workspace (⇧⌘F)",
+        "de": "Durchsucht alle Dateien des Arbeitsbereichs (⇧⌘F)",
+        "es": "Busca en todos los archivos del área de trabajo (⇧⌘F)",
+        "fr": "Cherche dans tous les fichiers de l’espace de travail (⇧⌘F)",
+        "ru": "Ищет по всем файлам рабочей области (⇧⌘F)"
+      },
+      "details": {
+        "en": "The Search view, for text in every file of the workspace, regular expressions included — Edit › Find in Files (⇧⌘F). Works while VS Code is in front.",
+        "de": "Die Suchansicht, für Text in allen Dateien des Arbeitsbereichs, auch mit regulären Ausdrücken – Edit › Find in Files (⇧⌘F). Funktioniert, wenn VS Code vorne ist.",
+        "es": "La vista Buscar, para texto en todos los archivos del área de trabajo, también con expresiones regulares: Edit › Find in Files (⇧⌘F). Funciona cuando VS Code está delante.",
+        "fr": "La vue Rechercher, pour du texte dans tous les fichiers de l’espace de travail, expressions régulières comprises — Edit › Find in Files (⇧⌘F). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Панель поиска текста по всем файлам рабочей области, в том числе регулярными выражениями, — Edit › Find in Files (⇧⌘F). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the search across files",
+        "de": "Öffnet die Suche in Dateien",
+        "es": "Abre la búsqueda en archivos",
+        "fr": "Ouvre la recherche dans les fichiers",
+        "ru": "Открывает поиск по файлам"
+      },
+      "holdAction": {
+        "en": "Opens search and replace across files (⇧⌘H)",
+        "de": "Öffnet Suchen und Ersetzen in Dateien (⇧⌘H)",
+        "es": "Abre buscar y reemplazar en archivos (⇧⌘H)",
+        "fr": "Ouvre rechercher et remplacer dans les fichiers (⇧⌘H)",
+        "ru": "Открывает поиск с заменой по файлам (⇧⌘H)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 4, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "terminal",
+      "title": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
+      "summary": {
+        "en": "Shows or hides the integrated terminal",
+        "de": "Blendet das integrierte Terminal ein oder aus",
+        "es": "Muestra u oculta el terminal integrado",
+        "fr": "Affiche ou masque le terminal intégré",
+        "ru": "Показывает или прячет встроенный терминал"
+      },
+      "details": {
+        "en": "Clicks View › Terminal in VS Code’s menu, so it works on any keyboard layout. Needs VS Code in front, with its menus in English.",
+        "de": "Klickt im Menü von VS Code auf View › Terminal und klappt so mit jeder Tastaturbelegung. VS Code muss vorne sein, mit englischen Menüs.",
+        "es": "Hace clic en View › Terminal en el menú de VS Code, así que funciona con cualquier distribución de teclado. VS Code debe estar delante y con los menús en inglés.",
+        "fr": "Clique sur View › Terminal dans le menu de VS Code et fonctionne donc avec toute disposition de clavier. VS Code doit être au premier plan, menus en anglais.",
+        "ru": "Нажимает View › Terminal в меню VS Code, поэтому работает при любой раскладке. VS Code должен быть на переднем плане, а его меню — на английском."
+      },
+      "tapAction": {
+        "en": "Shows or hides the terminal",
+        "de": "Blendet das Terminal ein oder aus",
+        "es": "Muestra u oculta el terminal",
+        "fr": "Affiche ou masque le terminal",
+        "ru": "Показывает или прячет терминал"
+      },
+      "holdAction": {
+        "en": "Opens a new terminal",
+        "de": "Öffnet ein neues Terminal",
+        "es": "Abre un terminal nuevo",
+        "fr": "Ouvre un nouveau terminal",
+        "ru": "Открывает новый терминал"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "terminal"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "menu=View item=Terminal\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "menu=Terminal item='New Terminal'\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "explorer",
+      "title": {"en": "Explorer", "de": "Explorer", "es": "Explorador", "fr": "Explorateur", "ru": "Проводник"},
+      "summary": {
+        "en": "Shows the files of the workspace (⇧⌘E)",
+        "de": "Zeigt die Dateien des Arbeitsbereichs (⇧⌘E)",
+        "es": "Muestra los archivos del área de trabajo (⇧⌘E)",
+        "fr": "Affiche les fichiers de l’espace de travail (⇧⌘E)",
+        "ru": "Показывает файлы рабочей области (⇧⌘E)"
+      },
+      "details": {
+        "en": "The file tree in the side bar, which opens if it was hidden — View › Explorer (⇧⌘E). Works while VS Code is in front.",
+        "de": "Der Dateibaum in der Seitenleiste, die dafür aufgeht, falls sie ausgeblendet war – View › Explorer (⇧⌘E). Funktioniert, wenn VS Code vorne ist.",
+        "es": "El árbol de archivos en la barra lateral, que se abre si estaba oculta: View › Explorer (⇧⌘E). Funciona cuando VS Code está delante.",
+        "fr": "L’arborescence des fichiers dans la barre latérale, qui s’ouvre si elle était masquée — View › Explorer (⇧⌘E). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Дерево файлов в боковой панели; если панель была скрыта, она откроется. View › Explorer (⇧⌘E). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the Explorer",
+        "de": "Zeigt den Explorer",
+        "es": "Muestra el explorador",
+        "fr": "Affiche l’explorateur",
+        "ru": "Показывает проводник"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.on.doc"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 14, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "source-control",
+      "title": {"en": "Source Control", "de": "Git", "es": "Git", "fr": "Git", "ru": "Git"},
+      "summary": {
+        "en": "Changed files and commits (⌃⇧G)",
+        "de": "Geänderte Dateien und Commits (⌃⇧G)",
+        "es": "Archivos cambiados y commits (⌃⇧G)",
+        "fr": "Fichiers modifiés et commits (⌃⇧G)",
+        "ru": "Изменённые файлы и коммиты (⌃⇧G)"
+      },
+      "details": {
+        "en": "The Source Control view: changed files, staging and the commit message — View › Source Control (⌃⇧G). Works while VS Code is in front.",
+        "de": "Die Quellcodeverwaltung: geänderte Dateien, Staging und die Commit-Nachricht – View › Source Control (⌃⇧G). Funktioniert, wenn VS Code vorne ist.",
+        "es": "La vista de control de código fuente: archivos cambiados, staging y el mensaje del commit. View › Source Control (⌃⇧G). Funciona cuando VS Code está delante.",
+        "fr": "La vue Contrôle de code source : fichiers modifiés, indexation et message de commit — View › Source Control (⌃⇧G). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Панель управления версиями: изменённые файлы, индекс и сообщение коммита. View › Source Control (⌃⇧G). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows Source Control",
+        "de": "Zeigt die Quellcodeverwaltung",
+        "es": "Muestra el control de código fuente",
+        "fr": "Affiche le contrôle de code source",
+        "ru": "Показывает управление версиями"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.triangle.branch"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "side-bar",
+      "title": {"en": "Side Bar", "de": "Seitenleiste", "es": "Barra lateral", "fr": "Barre latérale", "ru": "Боковая панель"},
+      "summary": {
+        "en": "Shows or hides the side bar (⌘B)",
+        "de": "Blendet die Seitenleiste ein oder aus (⌘B)",
+        "es": "Muestra u oculta la barra lateral (⌘B)",
+        "fr": "Affiche ou masque la barre latérale (⌘B)",
+        "ru": "Показывает или прячет боковую панель (⌘B)"
+      },
+      "details": {
+        "en": "The side bar with Explorer, Search and Source Control; hidden, it leaves more room for code — View › Appearance › Primary Side Bar (⌘B). Works while VS Code is in front.",
+        "de": "Die Seitenleiste mit Explorer, Suche und Quellcodeverwaltung; ausgeblendet bleibt mehr Platz für Code – View › Appearance › Primary Side Bar (⌘B). Funktioniert, wenn VS Code vorne ist.",
+        "es": "La barra lateral con el explorador, la búsqueda y el control de código fuente; oculta, deja más sitio al código. View › Appearance › Primary Side Bar (⌘B). Funciona cuando VS Code está delante.",
+        "fr": "La barre latérale avec l’explorateur, la recherche et le contrôle de code source ; masquée, elle laisse plus de place au code — View › Appearance › Primary Side Bar (⌘B). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Боковая панель с проводником, поиском и управлением версиями; без неё больше места для кода. View › Appearance › Primary Side Bar (⌘B). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the side bar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или прячет боковую панель"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.leading"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "panel",
+      "title": {"en": "Panel", "de": "Panel", "es": "Panel", "fr": "Panneau", "ru": "Панель"},
+      "summary": {
+        "en": "Shows or hides the bottom panel (⌘J)",
+        "de": "Blendet das Panel unten ein oder aus (⌘J)",
+        "es": "Muestra u oculta el panel inferior (⌘J)",
+        "fr": "Affiche ou masque le panneau du bas (⌘J)",
+        "ru": "Показывает или прячет нижнюю панель (⌘J)"
+      },
+      "details": {
+        "en": "The panel under the editor with Problems, Output, Debug Console and the terminal — View › Appearance › Panel (⌘J). Works while VS Code is in front.",
+        "de": "Das Panel unter dem Editor mit Problemen, Ausgabe, Debugkonsole und Terminal – View › Appearance › Panel (⌘J). Funktioniert, wenn VS Code vorne ist.",
+        "es": "El panel bajo el editor con Problemas, Salida, Consola de depuración y el terminal: View › Appearance › Panel (⌘J). Funciona cuando VS Code está delante.",
+        "fr": "Le panneau sous l’éditeur, avec Problèmes, Sortie, Console de débogage et le terminal — View › Appearance › Panel (⌘J). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Панель под редактором с проблемами, выводом, консолью отладки и терминалом — View › Appearance › Panel (⌘J). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the panel",
+        "de": "Blendet das Panel ein oder aus",
+        "es": "Muestra u oculta el panel",
+        "fr": "Affiche ou masque le panneau",
+        "ru": "Показывает или прячет панель"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.bottomthird.inset.filled"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 38, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "comment",
+      "title": {"en": "Comment", "de": "Kommentar", "es": "Comentario", "fr": "Commentaire", "ru": "Коммент"},
+      "summary": {
+        "en": "Comments the selected lines out, or back in",
+        "de": "Kommentiert die markierten Zeilen aus oder wieder ein",
+        "es": "Comenta o descomenta las líneas seleccionadas",
+        "fr": "Commente ou décommente les lignes sélectionnées",
+        "ru": "Комментирует выделенные строки или снимает комментарий"
+      },
+      "details": {
+        "en": "Clicks Edit › Toggle Line Comment in VS Code’s menu, so it works on any keyboard layout. Needs VS Code in front, with its menus in English.",
+        "de": "Klickt im Menü von VS Code auf Edit › Toggle Line Comment und klappt so mit jeder Tastaturbelegung. VS Code muss vorne sein, mit englischen Menüs.",
+        "es": "Hace clic en Edit › Toggle Line Comment en el menú de VS Code, así que funciona con cualquier distribución de teclado. VS Code debe estar delante y con los menús en inglés.",
+        "fr": "Clique sur Edit › Toggle Line Comment dans le menu de VS Code et fonctionne donc avec toute disposition de clavier. VS Code doit être au premier plan, menus en anglais.",
+        "ru": "Нажимает Edit › Toggle Line Comment в меню VS Code, поэтому работает при любой раскладке. VS Code должен быть на переднем плане, а его меню — на английском."
+      },
+      "tapAction": {
+        "en": "Toggles a line comment",
+        "de": "Schaltet den Zeilenkommentar um",
+        "es": "Alterna el comentario de línea",
+        "fr": "Bascule le commentaire de ligne",
+        "ru": "Переключает строчный комментарий"
+      },
+      "holdAction": {
+        "en": "Toggles a block comment (⇧⌥A)",
+        "de": "Schaltet den Blockkommentar um (⇧⌥A)",
+        "es": "Alterna el comentario de bloque (⇧⌥A)",
+        "fr": "Bascule le commentaire de bloc (⇧⌥A)",
+        "ru": "Переключает блочный комментарий (⇧⌥A)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "text.bubble"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "menu=Edit item='Toggle Line Comment'\n@file:menu/click.zsh"}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 0, "modifiers": ["shift", "option"]}}}
+      }
+    },
+    {
+      "id": "format",
+      "title": {"en": "Format", "de": "Formatieren", "es": "Formatear", "fr": "Mettre en forme", "ru": "Формат"},
+      "summary": {
+        "en": "Formats the whole file (⇧⌥F)",
+        "de": "Formatiert die ganze Datei (⇧⌥F)",
+        "es": "Da formato a todo el archivo (⇧⌥F)",
+        "fr": "Met en forme tout le fichier (⇧⌥F)",
+        "ru": "Форматирует весь файл (⇧⌥F)"
+      },
+      "details": {
+        "en": "Format Document (⇧⌥F) with the formatter of the file’s language; if the language has none, VS Code says so. Works while VS Code is in front.",
+        "de": "Format Document (⇧⌥F) mit dem Formatierer der Dateisprache; hat die Sprache keinen, meldet VS Code das. Funktioniert, wenn VS Code vorne ist.",
+        "es": "Format Document (⇧⌥F) con el formateador del lenguaje del archivo; si el lenguaje no tiene ninguno, VS Code lo avisa. Funciona cuando VS Code está delante.",
+        "fr": "Format Document (⇧⌥F) avec le formateur du langage du fichier ; si le langage n’en a pas, VS Code le signale. Fonctionne quand VS Code est au premier plan.",
+        "ru": "Format Document (⇧⌥F) — форматтером языка файла; если у языка его нет, VS Code об этом скажет. Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Formats the document",
+        "de": "Formatiert das Dokument",
+        "es": "Da formato al documento",
+        "fr": "Met en forme le document",
+        "ru": "Форматирует документ"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "text.alignleft"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "option"]}}}
+      }
+    },
+    {
+      "id": "rename",
+      "title": {"en": "Rename", "de": "Umbenennen", "es": "Cambiar nombre", "fr": "Renommer", "ru": "Новое имя"},
+      "summary": {
+        "en": "Renames a symbol everywhere it is used (F2)",
+        "de": "Benennt ein Symbol überall um, wo es vorkommt (F2)",
+        "es": "Cambia el nombre de un símbolo en todos sus usos (F2)",
+        "fr": "Renomme un symbole partout où il sert (F2)",
+        "ru": "Переименовывает символ везде, где он используется (F2)"
+      },
+      "details": {
+        "en": "Rename Symbol (F2): with the cursor on a name, tap, type the new name and press Return. Needs a language extension that knows the code. Works while VS Code is in front.",
+        "de": "Rename Symbol (F2): Cursor auf einen Namen setzen, diese Taste antippen, neuen Namen eingeben, Return. Braucht eine Spracherweiterung, die den Code versteht. Funktioniert, wenn VS Code vorne ist.",
+        "es": "Rename Symbol (F2): con el cursor sobre un nombre, toca, escribe el nombre nuevo y pulsa Retorno. Requiere una extensión de lenguaje que entienda el código. Funciona cuando VS Code está delante.",
+        "fr": "Rename Symbol (F2) : curseur sur un nom, touchez, tapez le nouveau nom puis Retour. Il faut une extension de langage qui comprend le code. Fonctionne quand VS Code est au premier plan.",
+        "ru": "Rename Symbol (F2): поставьте курсор на имя, нажмите кнопку, введите новое имя и Return. Нужно расширение языка, понимающее код. Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Renames the symbol at the cursor",
+        "de": "Benennt das Symbol am Cursor um",
+        "es": "Cambia el nombre del símbolo del cursor",
+        "fr": "Renomme le symbole sous le curseur",
+        "ru": "Переименовывает символ под курсором"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pencil"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 120, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "split-editor",
+      "title": {"en": "Split Editor", "de": "Editor teilen", "es": "Dividir editor", "fr": "Fractionner l’éditeur", "ru": "Разделить редактор"},
+      "summary": {
+        "en": "Opens the file a second time on the right",
+        "de": "Öffnet die Datei ein zweites Mal rechts",
+        "es": "Abre el archivo por segunda vez a la derecha",
+        "fr": "Ouvre le fichier une seconde fois à droite",
+        "ru": "Открывает файл второй раз справа"
+      },
+      "details": {
+        "en": "Clicks View › Editor Layout › Split Right in VS Code’s menu, so it works on any keyboard layout. Needs VS Code in front, with its menus in English.",
+        "de": "Klickt im Menü von VS Code auf View › Editor Layout › Split Right und klappt so mit jeder Tastaturbelegung. VS Code muss vorne sein, mit englischen Menüs.",
+        "es": "Hace clic en View › Editor Layout › Split Right en el menú de VS Code, así que funciona con cualquier distribución de teclado. VS Code debe estar delante y con los menús en inglés.",
+        "fr": "Clique sur View › Editor Layout › Split Right dans le menu de VS Code et fonctionne donc avec toute disposition de clavier. VS Code doit être au premier plan, menus en anglais.",
+        "ru": "Нажимает View › Editor Layout › Split Right в меню VS Code, поэтому работает при любой раскладке. VS Code должен быть на переднем плане, а его меню — на английском."
+      },
+      "tapAction": {
+        "en": "Splits the editor",
+        "de": "Teilt den Editor",
+        "es": "Divide el editor",
+        "fr": "Fractionne l’éditeur",
+        "ru": "Разделяет редактор"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.split.2x1"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "menu=View submenu='Editor Layout' item='Split Right'\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "debug",
+      "title": {"en": "Debug", "de": "Debuggen", "es": "Depurar", "fr": "Déboguer", "ru": "Отладка"},
+      "summary": {
+        "en": "Starts debugging, or continues (F5)",
+        "de": "Startet das Debuggen oder setzt fort (F5)",
+        "es": "Inicia la depuración o continúa (F5)",
+        "fr": "Lance le débogage ou reprend (F5)",
+        "ru": "Запускает отладку или продолжает (F5)"
+      },
+      "details": {
+        "en": "Starts the configuration chosen in Run and Debug, or continues a program paused at a breakpoint — Run › Start Debugging (F5). Works while VS Code is in front.",
+        "de": "Startet die in Run and Debug gewählte Konfiguration oder setzt ein an einem Haltepunkt angehaltenes Programm fort – Run › Start Debugging (F5). Funktioniert, wenn VS Code vorne ist.",
+        "es": "Inicia la configuración elegida en Run and Debug o reanuda un programa detenido en un punto de interrupción: Run › Start Debugging (F5). Funciona cuando VS Code está delante.",
+        "fr": "Lance la configuration choisie dans Run and Debug, ou reprend un programme arrêté sur un point d’arrêt — Run › Start Debugging (F5). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Запускает конфигурацию, выбранную в Run and Debug, или продолжает программу, остановленную на точке останова, — Run › Start Debugging (F5). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Starts or continues debugging",
+        "de": "Startet oder setzt das Debuggen fort",
+        "es": "Inicia o reanuda la depuración",
+        "fr": "Lance ou reprend le débogage",
+        "ru": "Запускает или продолжает отладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "play.fill"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 96, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "stop",
+      "title": {"en": "Stop", "de": "Stopp", "es": "Detener", "fr": "Arrêter", "ru": "Стоп"},
+      "summary": {
+        "en": "Stops debugging (⇧F5)",
+        "de": "Beendet das Debuggen (⇧F5)",
+        "es": "Detiene la depuración (⇧F5)",
+        "fr": "Arrête le débogage (⇧F5)",
+        "ru": "Останавливает отладку (⇧F5)"
+      },
+      "details": {
+        "en": "Ends the debug session, or detaches from a process it attached to — Run › Stop Debugging (⇧F5). Works while VS Code is in front.",
+        "de": "Beendet die Debugsitzung oder trennt sich von einem angehängten Prozess – Run › Stop Debugging (⇧F5). Funktioniert, wenn VS Code vorne ist.",
+        "es": "Termina la sesión de depuración o se desconecta de un proceso adjunto: Run › Stop Debugging (⇧F5). Funciona cuando VS Code está delante.",
+        "fr": "Termine la session de débogage, ou se détache d’un processus attaché — Run › Stop Debugging (⇧F5). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Завершает сеанс отладки или отключается от подключённого процесса — Run › Stop Debugging (⇧F5). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Stops debugging",
+        "de": "Beendet das Debuggen",
+        "es": "Detiene la depuración",
+        "fr": "Arrête le débogage",
+        "ru": "Останавливает отладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "stop.fill"}},
+        "color": "#FF375F",
+        "command": {"keystroke": {"_0": {"keyCode": 96, "modifiers": ["shift"]}}}
+      }
+    },
+    {
+      "id": "step-over",
+      "title": {"en": "Step Over", "de": "Step Over", "es": "Step Over", "fr": "Step Over", "ru": "Шаг с обходом"},
+      "summary": {
+        "en": "Runs the current line (F10)",
+        "de": "Führt die aktuelle Zeile aus (F10)",
+        "es": "Ejecuta la línea actual (F10)",
+        "fr": "Exécute la ligne en cours (F10)",
+        "ru": "Выполняет текущую строку (F10)"
+      },
+      "details": {
+        "en": "Runs the current line and stops at the next one, without going into the functions it calls — Run › Step Over (F10). Works while VS Code is in front.",
+        "de": "Führt die aktuelle Zeile aus und hält an der nächsten, ohne in aufgerufene Funktionen zu gehen – Run › Step Over (F10). Funktioniert, wenn VS Code vorne ist.",
+        "es": "Ejecuta la línea actual y se detiene en la siguiente, sin entrar en las funciones que llama: Run › Step Over (F10). Funciona cuando VS Code está delante.",
+        "fr": "Exécute la ligne en cours et s’arrête à la suivante, sans entrer dans les fonctions appelées — Run › Step Over (F10). Fonctionne quand VS Code est au premier plan.",
+        "ru": "Выполняет текущую строку и останавливается на следующей, не заходя в вызываемые функции, — Run › Step Over (F10). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Steps over the current line",
+        "de": "Führt die Zeile aus, ohne hineinzugehen",
+        "es": "Avanza una línea sin entrar en funciones",
+        "fr": "Avance d’une ligne sans entrer dans les fonctions",
+        "ru": "Выполняет строку, не заходя в функции"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrowshape.bounce.right"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 109, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "breakpoint",
+      "title": {"en": "Breakpoint", "de": "Haltepunkt", "es": "Punto de interrupción", "fr": "Point d’arrêt", "ru": "Точка останова"},
+      "summary": {
+        "en": "Sets or removes a breakpoint (F9)",
+        "de": "Setzt oder entfernt einen Haltepunkt (F9)",
+        "es": "Pone o quita un punto de interrupción (F9)",
+        "fr": "Pose ou retire un point d’arrêt (F9)",
+        "ru": "Ставит или убирает точку останова (F9)"
+      },
+      "details": {
+        "en": "On the line with the cursor, shown as a red dot beside the line number — Run › Toggle Breakpoint (F9). Works while VS Code is in front.",
+        "de": "In der Zeile mit dem Cursor, als roter Punkt neben der Zeilennummer – Run › Toggle Breakpoint (F9). Funktioniert, wenn VS Code vorne ist.",
+        "es": "En la línea del cursor, con un punto rojo junto al número de línea: Run › Toggle Breakpoint (F9). Funciona cuando VS Code está delante.",
+        "fr": "Sur la ligne du curseur, signalé par un point rouge à côté du numéro de ligne — Run › Toggle Breakpoint (F9). Fonctionne quand VS Code est au premier plan.",
+        "ru": "На строке с курсором; видна как красная точка у номера строки. Run › Toggle Breakpoint (F9). Работает, когда VS Code на переднем плане."
+      },
+      "tapAction": {
+        "en": "Toggles a breakpoint",
+        "de": "Schaltet einen Haltepunkt um",
+        "es": "Alterna un punto de interrupción",
+        "fr": "Bascule un point d’arrêt",
+        "ru": "Ставит или убирает точку останова"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.fill"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 101, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "open-project",
+      "title": {"en": "Open Project", "de": "Projekt öffnen", "es": "Abrir proyecto", "fr": "Ouvrir le projet", "ru": "Открыть проект"},
+      "summary": {
+        "en": "Opens your project, or brings its window forward; hold for recent projects",
+        "de": "Öffnet dein Projekt oder holt sein Fenster nach vorne; Halten zeigt zuletzt geöffnete Projekte",
+        "es": "Abre tu proyecto o trae su ventana al frente; mantén pulsado para los proyectos recientes",
+        "fr": "Ouvre votre projet ou met sa fenêtre au premier plan ; maintenez pour les projets récents",
+        "ru": "Открывает ваш проект или выводит его окно вперёд; удержание — недавние проекты"
+      },
+      "details": {
+        "en": "Set the folder or .code-workspace file on the first line of the Tap script: folder=\"~/Projects/app\". Works from any app and starts VS Code if it’s closed. The long press needs VS Code in front, with English menus.",
+        "de": "Trag den Ordner oder die .code-workspace-Datei in der ersten Zeile des Skripts unter „Tippen“ ein: folder=\"~/Projects/app\". Klappt aus jeder App und startet VS Code, falls es geschlossen ist. Halten braucht VS Code vorne, mit englischen Menüs.",
+        "es": "Indica la carpeta o el archivo .code-workspace en la primera línea del script del toque: folder=\"~/Projects/app\". Funciona desde cualquier app y abre VS Code si está cerrado. Mantener pulsado necesita VS Code delante, con los menús en inglés.",
+        "fr": "Indiquez le dossier ou le fichier .code-workspace à la première ligne du script du toucher : folder=\"~/Projects/app\". Marche depuis toute app et lance VS Code s’il est fermé. L’appui long demande VS Code au premier plan, menus en anglais.",
+        "ru": "Укажите папку или файл .code-workspace в первой строке скрипта нажатия: folder=\"~/Projects/app\". Работает из любого приложения и запускает VS Code, если он закрыт. Удержание требует VS Code на переднем плане и меню на английском."
+      },
+      "tapAction": {
+        "en": "Opens the project in VS Code",
+        "de": "Öffnet das Projekt in VS Code",
+        "es": "Abre el proyecto en VS Code",
+        "fr": "Ouvre le projet dans VS Code",
+        "ru": "Открывает проект в VS Code"
+      },
+      "holdAction": {
+        "en": "Shows recent projects (File › Open Recent › More...)",
+        "de": "Zeigt zuletzt geöffnete Projekte (File › Open Recent › More...)",
+        "es": "Muestra los proyectos recientes (File › Open Recent › More...)",
+        "fr": "Affiche les projets récents (File › Open Recent › More...)",
+        "ru": "Показывает недавние проекты (File › Open Recent › More...)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "folder=\"\"   # ← your project: a folder or a .code-workspace file, such as ~/Projects/app\naction=open\n@file:open.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "menu=File submenu='Open Recent' item='More...'\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "agents-window",
+      "title": {"en": "Agents Window", "de": "Agents-Fenster", "es": "Ventana Agents", "fr": "Fenêtre Agents", "ru": "Окно Agents"},
+      "summary": {
+        "en": "VS Code’s window for your agent sessions",
+        "de": "Das Fenster von VS Code für deine Agent-Sitzungen",
+        "es": "La ventana de VS Code para tus sesiones de agente",
+        "fr": "La fenêtre de VS Code pour vos sessions d’agent",
+        "ru": "Окно VS Code для ваших сессий агентов"
+      },
+      "details": {
+        "en": "A window of its own for agent sessions, apart from your project windows. Works from any app and starts VS Code if it’s closed.",
+        "de": "Ein eigenes Fenster für Agent-Sitzungen, getrennt von deinen Projektfenstern. Klappt aus jeder App und startet VS Code, falls es geschlossen ist.",
+        "es": "Una ventana aparte para las sesiones de agente, separada de las ventanas de tus proyectos. Funciona desde cualquier app y abre VS Code si está cerrado.",
+        "fr": "Une fenêtre à part pour les sessions d’agent, distincte de celles de vos projets. Marche depuis toute app et lance VS Code s’il est fermé.",
+        "ru": "Отдельное окно для сессий агентов, не связанное с окнами ваших проектов. Работает из любого приложения и запускает VS Code, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens the Agents window",
+        "de": "Öffnet das Agents-Fenster",
+        "es": "Abre la ventana Agents",
+        "fr": "Ouvre la fenêtre Agents",
+        "ru": "Открывает окно Agents"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.stack"}},
+        "color": "#7A8CFF",
+        "command": {"shellCommand": {"command": "action=agents\n@file:open.zsh"}}
+      }
+    },
+    {
+      "id": "open-chat",
+      "title": {"en": "Open Chat", "de": "Chat öffnen", "es": "Abrir chat", "fr": "Ouvrir le chat", "ru": "Открыть чат"},
+      "summary": {
+        "en": "Opens the chat (⌃⌘I); hold for the chat in Agent mode (⇧⌘I)",
+        "de": "Öffnet den Chat (⌃⌘I); Halten öffnet ihn im Agent-Modus (⇧⌘I)",
+        "es": "Abre el chat (⌃⌘I); mantén pulsado para el chat en modo Agent (⇧⌘I)",
+        "fr": "Ouvre le chat (⌃⌘I) ; maintenez pour le chat en mode Agent (⇧⌘I)",
+        "ru": "Открывает чат (⌃⌘I); удержание — чат в режиме Agent (⇧⌘I)"
+      },
+      "details": {
+        "en": "The chat in the side bar, with the cursor in its message box; in Agent mode it edits files and runs commands itself. Works while VS Code is in front, with its default shortcuts.",
+        "de": "Der Chat in der Seitenleiste, mit dem Cursor im Nachrichtenfeld; im Agent-Modus bearbeitet er selbst Dateien und führt Befehle aus. Funktioniert, wenn VS Code vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "El chat en la barra lateral, con el cursor en el cuadro de mensaje; en modo Agent edita archivos y ejecuta comandos por sí solo. Funciona cuando VS Code está delante, con sus atajos predeterminados.",
+        "fr": "Le chat dans la barre latérale, curseur dans la zone de message ; en mode Agent, il modifie les fichiers et lance des commandes lui-même. Fonctionne quand VS Code est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Чат в боковой панели, курсор в поле сообщения; в режиме Agent он сам правит файлы и выполняет команды. Работает, когда VS Code на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the chat",
+        "de": "Öffnet den Chat",
+        "es": "Abre el chat",
+        "fr": "Ouvre le chat",
+        "ru": "Открывает чат"
+      },
+      "holdAction": {
+        "en": "Opens the chat in Agent mode (⇧⌘I)",
+        "de": "Öffnet den Chat im Agent-Modus (⇧⌘I)",
+        "es": "Abre el chat en modo Agent (⇧⌘I)",
+        "fr": "Ouvre le chat en mode Agent (⇧⌘I)",
+        "ru": "Открывает чат в режиме Agent (⇧⌘I)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubble.left.and.bubble.right"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["control", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["shift", "command"]}}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "VS Code", "de": "VS Code", "es": "VS Code", "fr": "VS Code", "ru": "VS Code"},
+      "summary": {
+        "en": "Projects, commands, editing, debugging and chat from your phone",
+        "de": "Projekte, Befehle, Bearbeiten, Debuggen und Chat vom Telefon aus",
+        "es": "Proyectos, comandos, edición, depuración y chat desde el teléfono",
+        "fr": "Projets, commandes, édition, débogage et chat depuis votre téléphone",
+        "ru": "Проекты, команды, правка, отладка и чат с телефона"
+      },
+      "details": {
+        "en": "Most buttons work while VS Code is in front; Open Project and Agents Window work from any app and start VS Code if it’s closed. Terminal, Comment, Split Editor and recent projects go through VS Code’s menus: any keyboard layout will do, but the menus must be in English.",
+        "de": "Die meisten Tasten funktionieren, wenn VS Code vorne ist; Projekt öffnen und Agents-Fenster klappen aus jeder App und starten VS Code, falls es geschlossen ist. Terminal, Kommentar, Editor teilen und zuletzt geöffnete Projekte gehen über die Menüs von VS Code: Jede Tastaturbelegung passt, die Menüs müssen aber englisch sein.",
+        "es": "Casi todos los botones funcionan cuando VS Code está delante; Abrir proyecto y Ventana Agents funcionan desde cualquier app y abren VS Code si está cerrado. Terminal, Comentario, Dividir editor y los proyectos recientes usan los menús de VS Code: sirve cualquier distribución de teclado, pero los menús deben estar en inglés.",
+        "fr": "La plupart des boutons fonctionnent quand VS Code est au premier plan ; Ouvrir le projet et Fenêtre Agents marchent depuis toute app et lancent VS Code s’il est fermé. Terminal, Commentaire, Fractionner l’éditeur et les projets récents passent par les menus de VS Code : toute disposition de clavier convient, mais les menus doivent être en anglais.",
+        "ru": "Большинство кнопок работает, когда VS Code на переднем плане; «Открыть проект» и «Окно Agents» работают из любого приложения и запускают VS Code, если он закрыт. «Терминал», «Коммент», «Разделить редактор» и недавние проекты нажимают пункты меню VS Code: подойдёт любая раскладка, но меню должны быть на английском."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "command-palette", "row": 0, "col": 0},
+        {"button": "go-to-file", "row": 0, "col": 1},
+        {"button": "find-in-files", "row": 0, "col": 2},
+        {"button": "terminal", "row": 0, "col": 3},
+        {"button": "explorer", "row": 1, "col": 0},
+        {"button": "source-control", "row": 1, "col": 1},
+        {"button": "side-bar", "row": 1, "col": 2},
+        {"button": "panel", "row": 1, "col": 3},
+        {"button": "comment", "row": 2, "col": 0},
+        {"button": "format", "row": 2, "col": 1},
+        {"button": "rename", "row": 2, "col": 2},
+        {"button": "split-editor", "row": 2, "col": 3},
+        {"button": "debug", "row": 3, "col": 0},
+        {"button": "stop", "row": 3, "col": 1},
+        {"button": "step-over", "row": 3, "col": 2},
+        {"button": "breakpoint", "row": 3, "col": 3},
+        {"button": "open-project", "row": 4, "col": 0},
+        {"button": "agents-window", "row": 4, "col": 1},
+        {"button": "open-chat", "row": 4, "col": 2}
+      ]
+    }
+  ]
+}

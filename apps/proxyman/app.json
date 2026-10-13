@@ -1,0 +1,670 @@
+{
+  "id": "proxyman",
+  "revision": 5,
+  "name": "Proxyman",
+  "bundleIds": ["com.proxyman.NSProxy"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "record",
+      "title": {"en": "Record", "de": "Aufnahme", "es": "Grabar", "fr": "Enregistrer", "ru": "Запись"},
+      "summary": {
+        "en": "Pauses or resumes capture; hold to clear the session",
+        "de": "Pausiert die Aufzeichnung oder setzt sie fort; Halten leert die Sitzung",
+        "es": "Pausa o reanuda la captura; mantén pulsado para vaciar la sesión",
+        "fr": "Met en pause ou reprend la capture ; maintenez pour vider la session",
+        "ru": "Пауза или продолжение записи; удержание — очистить сессию"
+      },
+      "details": {
+        "en": "Same as Tools › Toggle Recording: while paused, new requests stay out of the list and the captured ones remain. Works from any app while Proxyman is running.",
+        "de": "Wie Tools › Toggle Recording: In der Pause kommen keine neuen Anfragen in die Liste, die aufgezeichneten bleiben. Funktioniert aus jeder App, solange Proxyman läuft.",
+        "es": "Como Tools › Toggle Recording: en pausa, las solicitudes nuevas no entran en la lista y las capturadas se quedan. Funciona desde cualquier app mientras Proxyman esté abierto.",
+        "fr": "Comme Tools › Toggle Recording : en pause, les nouvelles requêtes n’entrent pas dans la liste et celles déjà capturées restent. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
+        "ru": "Как Tools › Toggle Recording: на паузе новые запросы не попадают в список, записанные остаются. Работает из любого приложения, пока Proxyman запущен."
+      },
+      "tapAction": {
+        "en": "Pauses or resumes recording",
+        "de": "Pausiert die Aufzeichnung oder setzt sie fort",
+        "es": "Pausa o reanuda la grabación",
+        "fr": "Met en pause ou reprend l’enregistrement",
+        "ru": "Ставит запись на паузу или продолжает её"
+      },
+      "holdAction": {
+        "en": "⚠️ Clears the session: every captured request, domain and client goes (Flow › Clear Session)",
+        "de": "⚠️ Leert die Sitzung: Alle aufgezeichneten Anfragen, Domains und Clients verschwinden (Flow › Clear Session)",
+        "es": "⚠️ Vacía la sesión: se borran todas las solicitudes, dominios y clientes capturados (Flow › Clear Session)",
+        "fr": "⚠️ Vide la session : toutes les requêtes, domaines et clients capturés disparaissent (Flow › Clear Session)",
+        "ru": "⚠️ Очищает сессию: все записанные запросы, домены и клиенты удаляются (Flow › Clear Session)"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "record.circle"}},
+        "color": "#FF453A",
+        "command": {"shellCommand": {"command": "action=record\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=clear-session\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "macos-proxy",
+      "title": {"en": "macOS Proxy", "de": "macOS-Proxy", "es": "Proxy de macOS", "fr": "Proxy macOS", "ru": "Прокси macOS"},
+      "summary": {
+        "en": "Whether the Mac’s web traffic goes through Proxyman; hold to switch it",
+        "de": "Ob der Webverkehr des Mac über Proxyman läuft; Halten schaltet um",
+        "es": "Si el tráfico web del Mac pasa por Proxyman; mantén pulsado para cambiarlo",
+        "fr": "Si le trafic web du Mac passe par Proxyman ; maintenez pour basculer",
+        "ru": "Идёт ли веб-трафик Mac через Proxyman; удержание — переключить"
+      },
+      "details": {
+        "en": "Green: the Mac’s proxy settings send web traffic to this Proxyman. Orange: to another proxy on this Mac. Grey: no proxy on this Mac. Checked every few seconds.",
+        "de": "Grün: Die Proxy-Einstellungen des Mac schicken den Webverkehr an dieses Proxyman. Orange: an einen anderen Proxy auf diesem Mac. Grau: kein Proxy auf diesem Mac. Alle paar Sekunden geprüft.",
+        "es": "Verde: los ajustes de proxy del Mac envían el tráfico web a este Proxyman. Naranja: a otro proxy de este Mac. Gris: ningún proxy en este Mac. Se revisa cada pocos segundos.",
+        "fr": "Vert : les réglages proxy du Mac envoient le trafic web à ce Proxyman. Orange : à un autre proxy de ce Mac. Gris : aucun proxy sur ce Mac. Relevé à quelques secondes d’intervalle.",
+        "ru": "Зелёный — настройки прокси Mac отправляют веб-трафик в этот Proxyman, оранжевый — в другой прокси на этом Mac, серый — прокси на этом Mac нет. Проверяется каждые несколько секунд."
+      },
+      "tapAction": {
+        "en": "Brings Proxyman to the front if it’s running",
+        "de": "Holt Proxyman nach vorne, wenn es läuft",
+        "es": "Trae Proxyman al frente si está abierto",
+        "fr": "Met Proxyman au premier plan s’il est ouvert",
+        "ru": "Выводит Proxyman на передний план, если он запущен"
+      },
+      "holdAction": {
+        "en": "⚠️ Turns Override macOS Proxy on or off for the whole Mac",
+        "de": "⚠️ Schaltet Override macOS Proxy für den ganzen Mac ein oder aus",
+        "es": "⚠️ Activa o desactiva Override macOS Proxy para todo el Mac",
+        "fr": "⚠️ Active ou désactive Override macOS Proxy pour tout le Mac",
+        "ru": "⚠️ Включает или выключает Override macOS Proxy для всего Mac"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "network"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "@file:proxy/front.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=system-proxy\n@file:action.zsh"}},
+        "startupScript": "@file:proxy/live.zsh"
+      }
+    },
+    {
+      "id": "filter",
+      "title": {"en": "Filter", "de": "Filter", "es": "Filtrar", "fr": "Filtrer", "ru": "Фильтр"},
+      "summary": {
+        "en": "Opens the filter bar (⌘F); hold to filter domains and apps",
+        "de": "Öffnet die Filterleiste (⌘F); Halten filtert Domains und Apps",
+        "es": "Abre la barra de filtro (⌘F); mantén pulsado para filtrar dominios y apps",
+        "fr": "Ouvre la barre de filtre (⌘F) ; maintenez pour filtrer domaines et apps",
+        "ru": "Открывает панель фильтра (⌘F); удержание — фильтр доменов и приложений"
+      },
+      "details": {
+        "en": "The filter bar of the session tab narrows the list by URL, header, body, status code or content type; Esc hides it. Works while Proxyman is in front.",
+        "de": "Die Filterleiste des Sitzungs-Tabs grenzt die Liste nach URL, Header, Body, Statuscode oder Inhaltstyp ein; Esc blendet sie aus. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "La barra de filtro de la pestaña de sesión acota la lista por URL, cabecera, cuerpo, código de estado o tipo de contenido; Esc la oculta. Funciona cuando Proxyman está delante.",
+        "fr": "La barre de filtre de l’onglet de session restreint la liste par URL, en-tête, corps, code d’état ou type de contenu ; Échap la masque. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Панель фильтра вкладки сессии сужает список по URL, заголовку, телу, коду ответа или типу содержимого; Esc скрывает её. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the filter bar",
+        "de": "Öffnet die Filterleiste",
+        "es": "Abre la barra de filtro",
+        "fr": "Ouvre la barre de filtre",
+        "ru": "Открывает панель фильтра"
+      },
+      "holdAction": {
+        "en": "Filters the domains and apps in the sidebar (View › Filter Domain or App, ⇧⌘F)",
+        "de": "Filtert die Domains und Apps in der Seitenleiste (View › Filter Domain or App, ⇧⌘F)",
+        "es": "Filtra los dominios y las apps de la barra lateral (View › Filter Domain or App, ⇧⌘F)",
+        "fr": "Filtre les domaines et les apps de la barre latérale (View › Filter Domain or App, ⇧⌘F)",
+        "ru": "Фильтрует домены и приложения на боковой панели (View › Filter Domain or App, ⇧⌘F)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "line.3.horizontal.decrease.circle"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "command-palette",
+      "title": {"en": "Command Palette", "de": "Befehle", "es": "Paleta de comandos", "fr": "Palette de commandes", "ru": "Палитра команд"},
+      "summary": {
+        "en": "Finds and opens any Proxyman tool (⇧⌘P)",
+        "de": "Findet und öffnet jedes Proxyman-Werkzeug (⇧⌘P)",
+        "es": "Busca y abre cualquier herramienta de Proxyman (⇧⌘P)",
+        "fr": "Trouve et ouvre n’importe quel outil de Proxyman (⇧⌘P)",
+        "ru": "Поиск и запуск любого инструмента Proxyman (⇧⌘P)"
+      },
+      "details": {
+        "en": "View › Show Command Palette: search the debugging tools, turn them on or off, open the setup guides. Works while Proxyman is in front.",
+        "de": "View › Show Command Palette: Debugging-Werkzeuge suchen, ein- oder ausschalten, Einrichtungsanleitungen öffnen. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "View › Show Command Palette: busca las herramientas de depuración, actívalas o desactívalas y abre las guías de configuración. Funciona cuando Proxyman está delante.",
+        "fr": "View › Show Command Palette : cherchez les outils de débogage, activez-les ou désactivez-les, ouvrez les guides de configuration. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "View › Show Command Palette: поиск инструментов отладки, их включение и выключение, руководства по настройке. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the command palette",
+        "de": "Öffnet die Befehlspalette",
+        "es": "Abre la paleta de comandos",
+        "fr": "Ouvre la palette de commandes",
+        "ru": "Открывает палитру команд"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "repeat",
+      "title": {"en": "Repeat", "de": "Wiederholen", "es": "Repetir", "fr": "Répéter", "ru": "Повторить"},
+      "summary": {
+        "en": "Sends the selected request again (⌘↩); hold to edit it first",
+        "de": "Sendet die ausgewählte Anfrage erneut (⌘↩); halten, um sie vorher zu bearbeiten",
+        "es": "Vuelve a enviar la solicitud seleccionada (⌘↩); mantén pulsado para editarla antes",
+        "fr": "Renvoie la requête sélectionnée (⌘↩) ; maintenez pour la modifier d’abord",
+        "ru": "Повторно отправляет выбранный запрос (⌘↩); удержание — сначала изменить"
+      },
+      "details": {
+        "en": "Flow › Repeat: the same URL, headers and body go to the server again, and the new response joins the list. Works while Proxyman is in front.",
+        "de": "Flow › Repeat: Dieselbe URL, Header und Body gehen erneut an den Server, die neue Antwort kommt in die Liste. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Flow › Repeat: la misma URL, cabeceras y cuerpo vuelven al servidor, y la nueva respuesta entra en la lista. Funciona cuando Proxyman está delante.",
+        "fr": "Flow › Repeat : la même URL, les mêmes en-têtes et le même corps repartent au serveur, et la nouvelle réponse rejoint la liste. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Flow › Repeat: тот же URL, заголовки и тело снова уходят на сервер, новый ответ появляется в списке. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Repeats the selected request",
+        "de": "Wiederholt die ausgewählte Anfrage",
+        "es": "Repite la solicitud seleccionada",
+        "fr": "Répète la requête sélectionnée",
+        "ru": "Повторяет выбранный запрос"
+      },
+      "holdAction": {
+        "en": "Opens Edit and Repeat to change the request before it goes (⌥⌘↩)",
+        "de": "Öffnet Edit and Repeat, um die Anfrage vor dem Senden zu ändern (⌥⌘↩)",
+        "es": "Abre Edit and Repeat para cambiar la solicitud antes de enviarla (⌥⌘↩)",
+        "fr": "Ouvre Edit and Repeat pour modifier la requête avant l’envoi (⌥⌘↩)",
+        "ru": "Открывает Edit and Repeat, чтобы изменить запрос перед отправкой (⌥⌘↩)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "compose",
+      "title": {"en": "Compose", "de": "Compose", "es": "Compose", "fr": "Compose", "ru": "Compose"},
+      "summary": {
+        "en": "A new request from scratch (⌥⌘C)",
+        "de": "Eine neue Anfrage von Grund auf (⌥⌘C)",
+        "es": "Una solicitud nueva desde cero (⌥⌘C)",
+        "fr": "Une nouvelle requête à partir de zéro (⌥⌘C)",
+        "ru": "Новый запрос с нуля (⌥⌘C)"
+      },
+      "details": {
+        "en": "Tools › Compose Request: set the method, URL, headers and body, then send. You can also paste a cURL command. Works while Proxyman is in front.",
+        "de": "Tools › Compose Request: Leg Methode, URL, Header und Body fest und sende die Anfrage. Du kannst auch einen cURL-Befehl einfügen. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Tools › Compose Request: define el método, la URL, las cabeceras y el cuerpo, y envía la solicitud. También puedes pegar un comando cURL. Funciona cuando Proxyman está delante.",
+        "fr": "Tools › Compose Request : choisissez la méthode, l’URL, les en-têtes et le corps, puis envoyez. Vous pouvez aussi coller une commande cURL. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Tools › Compose Request: задайте метод, URL, заголовки и тело и отправьте запрос. Можно и вставить команду cURL. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Compose",
+        "de": "Öffnet Compose",
+        "es": "Abre Compose",
+        "fr": "Ouvre Compose",
+        "ru": "Открывает Compose"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.and.pencil"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 8, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "copy-curl",
+      "title": {"en": "Copy as cURL", "de": "Als cURL kopieren", "es": "Copiar como cURL", "fr": "Copier en cURL", "ru": "Копировать cURL"},
+      "summary": {
+        "en": "Copies the selected request as a curl command (⇧⌘C)",
+        "de": "Kopiert die ausgewählte Anfrage als curl-Befehl (⇧⌘C)",
+        "es": "Copia la solicitud seleccionada como comando curl (⇧⌘C)",
+        "fr": "Copie la requête sélectionnée en commande curl (⇧⌘C)",
+        "ru": "Копирует выбранный запрос командой curl (⇧⌘C)"
+      },
+      "details": {
+        "en": "Edit › Copy as cURL: method, URL, headers and body in one command, ready to paste into Terminal. Works while Proxyman is in front.",
+        "de": "Edit › Copy as cURL: Methode, URL, Header und Body in einem Befehl, bereit zum Einfügen ins Terminal. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Edit › Copy as cURL: método, URL, cabeceras y cuerpo en un solo comando, listo para pegar en Terminal. Funciona cuando Proxyman está delante.",
+        "fr": "Edit › Copy as cURL : méthode, URL, en-têtes et corps en une commande, prête à coller dans Terminal. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Edit › Copy as cURL: метод, URL, заголовки и тело одной командой — можно вставить в Терминал. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Copies the selected request as cURL",
+        "de": "Kopiert die ausgewählte Anfrage als cURL",
+        "es": "Copia la solicitud seleccionada como cURL",
+        "fr": "Copie la requête sélectionnée en cURL",
+        "ru": "Копирует выбранный запрос как cURL"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.on.clipboard"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 8, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "latest",
+      "title": {"en": "Latest Request", "de": "Neueste Anfrage", "es": "Última solicitud", "fr": "Dernière requête", "ru": "Последний запрос"},
+      "summary": {
+        "en": "Keeps the newest request selected (⇧⌘L)",
+        "de": "Hält die neueste Anfrage ausgewählt (⇧⌘L)",
+        "es": "Mantiene seleccionada la solicitud más reciente (⇧⌘L)",
+        "fr": "Garde la requête la plus récente sélectionnée (⇧⌘L)",
+        "ru": "Держит выбранным самый новый запрос (⇧⌘L)"
+      },
+      "details": {
+        "en": "View › Auto Select the Latest Request: each new request is selected as it comes in, so its details stay on screen. Works while Proxyman is in front.",
+        "de": "View › Auto Select the Latest Request: Jede neue Anfrage wird beim Eintreffen ausgewählt, ihre Details bleiben im Blick. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "View › Auto Select the Latest Request: cada solicitud nueva se selecciona al llegar, así sus detalles quedan a la vista. Funciona cuando Proxyman está delante.",
+        "fr": "View › Auto Select the Latest Request : chaque nouvelle requête est sélectionnée à son arrivée, ses détails restent à l’écran. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "View › Auto Select the Latest Request: каждый новый запрос выбирается, как только приходит, и его подробности остаются на экране. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Turns Auto Select the Latest Request on or off",
+        "de": "Schaltet Auto Select the Latest Request ein oder aus",
+        "es": "Activa o desactiva Auto Select the Latest Request",
+        "fr": "Active ou désactive Auto Select the Latest Request",
+        "ru": "Включает или выключает Auto Select the Latest Request"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "list.bullet.below.rectangle"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "breakpoint",
+      "title": {"en": "Breakpoint", "de": "Breakpoint", "es": "Breakpoint", "fr": "Breakpoint", "ru": "Breakpoint"},
+      "summary": {
+        "en": "Opens the Breakpoint rules (⌥⌘B); hold to turn the tool on or off",
+        "de": "Öffnet die Breakpoint-Regeln (⌥⌘B); Halten schaltet das Werkzeug ein oder aus",
+        "es": "Abre las reglas de Breakpoint (⌥⌘B); mantén pulsado para activar o desactivar la herramienta",
+        "fr": "Ouvre les règles Breakpoint (⌥⌘B) ; maintenez pour activer ou désactiver l’outil",
+        "ru": "Открывает правила Breakpoint (⌥⌘B); удержание — включить или выключить инструмент"
+      },
+      "details": {
+        "en": "Breakpoint stops matching requests and responses so you can edit them before they go on. Works while Proxyman is in front.",
+        "de": "Breakpoint hält passende Anfragen und Antworten an, damit du sie bearbeiten kannst, bevor sie weitergehen. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Breakpoint detiene las solicitudes y respuestas que coinciden para que las edites antes de que sigan. Funciona cuando Proxyman está delante.",
+        "fr": "Breakpoint arrête les requêtes et réponses correspondantes pour que vous les modifiiez avant qu’elles repartent. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Breakpoint останавливает подходящие запросы и ответы, чтобы их можно было изменить, прежде чем они пойдут дальше. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Breakpoint › Rules",
+        "de": "Öffnet Breakpoint › Rules",
+        "es": "Abre Breakpoint › Rules",
+        "fr": "Ouvre Breakpoint › Rules",
+        "ru": "Открывает Breakpoint › Rules"
+      },
+      "holdAction": {
+        "en": "Turns the Breakpoint tool on or off (⌃⌥⌘B)",
+        "de": "Schaltet das Werkzeug Breakpoint ein oder aus (⌃⌥⌘B)",
+        "es": "Activa o desactiva la herramienta Breakpoint (⌃⌥⌘B)",
+        "fr": "Active ou désactive l’outil Breakpoint (⌃⌥⌘B)",
+        "ru": "Включает или выключает инструмент Breakpoint (⌃⌥⌘B)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "hand.raised"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "map-local",
+      "title": {"en": "Map Local", "de": "Map Local", "es": "Map Local", "fr": "Map Local", "ru": "Map Local"},
+      "summary": {
+        "en": "Opens the Map Local rules (⌥⌘L); hold to turn the tool on or off",
+        "de": "Öffnet die Map-Local-Regeln (⌥⌘L); Halten schaltet das Werkzeug ein oder aus",
+        "es": "Abre las reglas de Map Local (⌥⌘L); mantén pulsado para activar o desactivar la herramienta",
+        "fr": "Ouvre les règles Map Local (⌥⌘L) ; maintenez pour activer ou désactiver l’outil",
+        "ru": "Открывает правила Map Local (⌥⌘L); удержание — включить или выключить инструмент"
+      },
+      "details": {
+        "en": "Map Local answers matching requests with a file from this Mac instead of the server. Works while Proxyman is in front.",
+        "de": "Map Local beantwortet passende Anfragen mit einer Datei von diesem Mac statt vom Server. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Map Local responde a las solicitudes que coinciden con un archivo de este Mac en lugar del servidor. Funciona cuando Proxyman está delante.",
+        "fr": "Map Local répond aux requêtes correspondantes avec un fichier de ce Mac au lieu du serveur. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Map Local отвечает на подходящие запросы файлом с этого Mac вместо сервера. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Map Local",
+        "de": "Öffnet Map Local",
+        "es": "Abre Map Local",
+        "fr": "Ouvre Map Local",
+        "ru": "Открывает Map Local"
+      },
+      "holdAction": {
+        "en": "Turns the Map Local tool on or off (⌃⌥⌘L)",
+        "de": "Schaltet das Werkzeug Map Local ein oder aus (⌃⌥⌘L)",
+        "es": "Activa o desactiva la herramienta Map Local (⌃⌥⌘L)",
+        "fr": "Active ou désactive l’outil Map Local (⌃⌥⌘L)",
+        "ru": "Включает или выключает инструмент Map Local (⌃⌥⌘L)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.text"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "map-remote",
+      "title": {"en": "Map Remote", "de": "Map Remote", "es": "Map Remote", "fr": "Map Remote", "ru": "Map Remote"},
+      "summary": {
+        "en": "Opens the Map Remote rules (⌥⌘R); hold to turn the tool on or off",
+        "de": "Öffnet die Map-Remote-Regeln (⌥⌘R); Halten schaltet das Werkzeug ein oder aus",
+        "es": "Abre las reglas de Map Remote (⌥⌘R); mantén pulsado para activar o desactivar la herramienta",
+        "fr": "Ouvre les règles Map Remote (⌥⌘R) ; maintenez pour activer ou désactiver l’outil",
+        "ru": "Открывает правила Map Remote (⌥⌘R); удержание — включить или выключить инструмент"
+      },
+      "details": {
+        "en": "Map Remote sends matching requests to another host, path or port. Works while Proxyman is in front.",
+        "de": "Map Remote leitet passende Anfragen an einen anderen Host, Pfad oder Port. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Map Remote envía las solicitudes que coinciden a otro host, ruta o puerto. Funciona cuando Proxyman está delante.",
+        "fr": "Map Remote envoie les requêtes correspondantes vers un autre hôte, chemin ou port. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Map Remote перенаправляет подходящие запросы на другой хост, путь или порт. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Map Remote",
+        "de": "Öffnet Map Remote",
+        "es": "Abre Map Remote",
+        "fr": "Ouvre Map Remote",
+        "ru": "Открывает Map Remote"
+      },
+      "holdAction": {
+        "en": "Turns the Map Remote tool on or off (⌃⌥⌘R)",
+        "de": "Schaltet das Werkzeug Map Remote ein oder aus (⌃⌥⌘R)",
+        "es": "Activa o desactiva la herramienta Map Remote (⌃⌥⌘R)",
+        "fr": "Active ou désactive l’outil Map Remote (⌃⌥⌘R)",
+        "ru": "Включает или выключает инструмент Map Remote (⌃⌥⌘R)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.turn.up.right"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "scripting",
+      "title": {"en": "Scripting", "de": "Scripting", "es": "Scripting", "fr": "Scripting", "ru": "Scripting"},
+      "summary": {
+        "en": "Opens the Script List (⌥⌘I); hold to turn Scripting on or off",
+        "de": "Öffnet die Script List (⌥⌘I); Halten schaltet Scripting ein oder aus",
+        "es": "Abre la Script List (⌥⌘I); mantén pulsado para activar o desactivar Scripting",
+        "fr": "Ouvre la Script List (⌥⌘I) ; maintenez pour activer ou désactiver Scripting",
+        "ru": "Открывает Script List (⌥⌘I); удержание — включить или выключить Scripting"
+      },
+      "details": {
+        "en": "Scripting runs your JavaScript on matching requests and responses to change them on the fly. Works while Proxyman is in front.",
+        "de": "Scripting führt dein JavaScript für passende Anfragen und Antworten aus und ändert sie unterwegs. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Scripting ejecuta tu JavaScript en las solicitudes y respuestas que coinciden para cambiarlas al vuelo. Funciona cuando Proxyman está delante.",
+        "fr": "Scripting exécute votre JavaScript sur les requêtes et réponses correspondantes pour les modifier à la volée. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Scripting выполняет ваш JavaScript для подходящих запросов и ответов и меняет их на лету. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Script List",
+        "de": "Öffnet die Script List",
+        "es": "Abre la Script List",
+        "fr": "Ouvre la Script List",
+        "ru": "Открывает Script List"
+      },
+      "holdAction": {
+        "en": "Turns the Scripting tool on or off (⌃⌥⌘I)",
+        "de": "Schaltet das Werkzeug Scripting ein oder aus (⌃⌥⌘I)",
+        "es": "Activa o desactiva la herramienta Scripting (⌃⌥⌘I)",
+        "fr": "Active ou désactive l’outil Scripting (⌃⌥⌘I)",
+        "ru": "Включает или выключает инструмент Scripting (⌃⌥⌘I)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "curlybraces"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "ssl-proxying",
+      "title": {"en": "SSL Proxying", "de": "SSL Proxying", "es": "SSL Proxying", "fr": "SSL Proxying", "ru": "SSL Proxying"},
+      "summary": {
+        "en": "Opens the SSL Proxying List (⌥⌘P); hold to turn it on or off",
+        "de": "Öffnet die SSL Proxying List (⌥⌘P); Halten schaltet sie ein oder aus",
+        "es": "Abre la SSL Proxying List (⌥⌘P); mantén pulsado para activarla o desactivarla",
+        "fr": "Ouvre la SSL Proxying List (⌥⌘P) ; maintenez pour l’activer ou la désactiver",
+        "ru": "Открывает SSL Proxying List (⌥⌘P); удержание — включить или выключить"
+      },
+      "details": {
+        "en": "The domains and apps whose HTTPS traffic Proxyman decrypts and shows in full. Works while Proxyman is in front.",
+        "de": "Die Domains und Apps, deren HTTPS-Verkehr Proxyman entschlüsselt und vollständig zeigt. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Los dominios y apps cuyo tráfico HTTPS Proxyman descifra y muestra completo. Funciona cuando Proxyman está delante.",
+        "fr": "Les domaines et apps dont Proxyman déchiffre et affiche en entier le trafic HTTPS. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Домены и приложения, чей HTTPS-трафик Proxyman расшифровывает и показывает целиком. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the SSL Proxying List",
+        "de": "Öffnet die SSL Proxying List",
+        "es": "Abre la SSL Proxying List",
+        "fr": "Ouvre la SSL Proxying List",
+        "ru": "Открывает SSL Proxying List"
+      },
+      "holdAction": {
+        "en": "Turns the SSL Proxying List on or off (⌃⌥⌘P)",
+        "de": "Schaltet die SSL Proxying List ein oder aus (⌃⌥⌘P)",
+        "es": "Activa o desactiva la SSL Proxying List (⌃⌥⌘P)",
+        "fr": "Active ou désactive la SSL Proxying List (⌃⌥⌘P)",
+        "ru": "Включает или выключает SSL Proxying List (⌃⌥⌘P)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "lock.shield"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "network-conditions",
+      "title": {"en": "Network Conditions", "de": "Network Conditions", "es": "Network Conditions", "fr": "Network Conditions", "ru": "Network Conditions"},
+      "summary": {
+        "en": "Opens Network Conditions (⌥⌘J); hold to turn it on or off",
+        "de": "Öffnet Network Conditions (⌥⌘J); Halten schaltet es ein oder aus",
+        "es": "Abre Network Conditions (⌥⌘J); mantén pulsado para activarlo o desactivarlo",
+        "fr": "Ouvre Network Conditions (⌥⌘J) ; maintenez pour l’activer ou le désactiver",
+        "ru": "Открывает Network Conditions (⌥⌘J); удержание — включить или выключить"
+      },
+      "details": {
+        "en": "Network Conditions slows matching traffic to a profile such as 3G, with its bandwidth, delay and packet loss. Works while Proxyman is in front.",
+        "de": "Network Conditions drosselt passenden Verkehr auf ein Profil wie 3G – mit dessen Bandbreite, Verzögerung und Paketverlust. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Network Conditions limita el tráfico que coincide a un perfil como 3G, con su ancho de banda, retardo y pérdida de paquetes. Funciona cuando Proxyman está delante.",
+        "fr": "Network Conditions ralentit le trafic correspondant selon un profil comme la 3G, avec son débit, sa latence et ses pertes de paquets. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Network Conditions замедляет подходящий трафик по профилю вроде 3G — с его скоростью, задержкой и потерей пакетов. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Network Conditions",
+        "de": "Öffnet Network Conditions",
+        "es": "Abre Network Conditions",
+        "fr": "Ouvre Network Conditions",
+        "ru": "Открывает Network Conditions"
+      },
+      "holdAction": {
+        "en": "Turns Network Conditions on or off (⌃⌥⌘J)",
+        "de": "Schaltet Network Conditions ein oder aus (⌃⌥⌘J)",
+        "es": "Activa o desactiva Network Conditions (⌃⌥⌘J)",
+        "fr": "Active ou désactive Network Conditions (⌃⌥⌘J)",
+        "ru": "Включает или выключает Network Conditions (⌃⌥⌘J)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "tortoise"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 38, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 38, "modifiers": ["control", "option", "command"]}}}
+      }
+    },
+    {
+      "id": "no-caching",
+      "title": {"en": "No Caching", "de": "No Caching", "es": "No Caching", "fr": "No Caching", "ru": "No Caching"},
+      "summary": {
+        "en": "Turns the No Caching tool on or off (⌥⌘N)",
+        "de": "Schaltet das Werkzeug No Caching ein oder aus (⌥⌘N)",
+        "es": "Activa o desactiva la herramienta No Caching (⌥⌘N)",
+        "fr": "Active ou désactive l’outil No Caching (⌥⌘N)",
+        "ru": "Включает или выключает инструмент No Caching (⌥⌘N)"
+      },
+      "details": {
+        "en": "Tools › No Caching rewrites the caching headers of requests and responses, so each response comes fresh from the server. Works while Proxyman is in front.",
+        "de": "Tools › No Caching schreibt die Caching-Header von Anfragen und Antworten um, damit jede Antwort frisch vom Server kommt. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Tools › No Caching reescribe las cabeceras de caché de solicitudes y respuestas, para que cada respuesta llegue fresca del servidor. Funciona cuando Proxyman está delante.",
+        "fr": "Tools › No Caching réécrit les en-têtes de cache des requêtes et réponses, pour que chaque réponse vienne fraîche du serveur. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Tools › No Caching переписывает заголовки кеширования запросов и ответов, чтобы каждый ответ приходил с сервера свежим. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Turns No Caching on or off",
+        "de": "Schaltet No Caching ein oder aus",
+        "es": "Activa o desactiva No Caching",
+        "fr": "Active ou désactive No Caching",
+        "ru": "Включает или выключает No Caching"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "clock.badge.xmark"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 45, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "diff",
+      "title": {"en": "Diff", "de": "Diff", "es": "Diff", "fr": "Diff", "ru": "Diff"},
+      "summary": {
+        "en": "Adds the selected requests to Diff (⌘Y); hold to open Diff",
+        "de": "Fügt die ausgewählten Anfragen zu Diff hinzu (⌘Y); Halten öffnet Diff",
+        "es": "Añade las solicitudes seleccionadas a Diff (⌘Y); mantén pulsado para abrir Diff",
+        "fr": "Ajoute les requêtes sélectionnées à Diff (⌘Y) ; maintenez pour ouvrir Diff",
+        "ru": "Добавляет выбранные запросы в Diff (⌘Y); удержание — открыть Diff"
+      },
+      "details": {
+        "en": "Diff compares two requests or responses side by side: URL, method, status code, headers and body. Works while Proxyman is in front.",
+        "de": "Diff vergleicht zwei Anfragen oder Antworten nebeneinander: URL, Methode, Statuscode, Header und Body. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Diff compara dos solicitudes o respuestas lado a lado: URL, método, código de estado, cabeceras y cuerpo. Funciona cuando Proxyman está delante.",
+        "fr": "Diff compare deux requêtes ou réponses côte à côte : URL, méthode, code d’état, en-têtes et corps. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Diff сравнивает два запроса или ответа рядом: URL, метод, код ответа, заголовки и тело. Работает, когда Proxyman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Adds the selected requests to the Diff pool",
+        "de": "Fügt die ausgewählten Anfragen zum Diff Pool hinzu",
+        "es": "Añade las solicitudes seleccionadas al Diff Pool",
+        "fr": "Ajoute les requêtes sélectionnées au Diff Pool",
+        "ru": "Добавляет выбранные запросы в Diff Pool"
+      },
+      "holdAction": {
+        "en": "Opens the Diff window (⌥⌘Y)",
+        "de": "Öffnet das Diff-Fenster (⌥⌘Y)",
+        "es": "Abre la ventana Diff (⌥⌘Y)",
+        "fr": "Ouvre la fenêtre Diff (⌥⌘Y)",
+        "ru": "Открывает окно Diff (⌥⌘Y)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.split.2x1"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "block-list",
+      "title": {"en": "Block List", "de": "Block List", "es": "Block List", "fr": "Block List", "ru": "Block List"},
+      "summary": {
+        "en": "Turns the Block List on or off; hold to open its rules",
+        "de": "Schaltet die Block List ein oder aus; Halten öffnet ihre Regeln",
+        "es": "Activa o desactiva la Block List; mantén pulsado para abrir sus reglas",
+        "fr": "Active ou désactive la Block List ; maintenez pour ouvrir ses règles",
+        "ru": "Включает или выключает Block List; удержание — открыть его правила"
+      },
+      "details": {
+        "en": "Tools › Enable/Disable Tools › Block List: while it’s on, requests matching its rules are blocked, so you see how an app copes without those hosts. Works from any app while Proxyman is running.",
+        "de": "Tools › Enable/Disable Tools › Block List: Solange sie an ist, werden passende Anfragen blockiert – so siehst du, wie eine App ohne diese Hosts zurechtkommt. Funktioniert aus jeder App, solange Proxyman läuft.",
+        "es": "Tools › Enable/Disable Tools › Block List: mientras está activa, se bloquean las solicitudes que coinciden con sus reglas, para ver cómo se las arregla una app sin esos hosts. Funciona desde cualquier app mientras Proxyman esté abierto.",
+        "fr": "Tools › Enable/Disable Tools › Block List : tant qu’elle est active, les requêtes qui correspondent à ses règles sont bloquées, pour voir comment une app s’en sort sans ces hôtes. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
+        "ru": "Tools › Enable/Disable Tools › Block List: пока он включён, подходящие под его правила запросы блокируются — видно, как приложение живёт без этих хостов. Работает из любого приложения, пока Proxyman запущен."
+      },
+      "tapAction": {
+        "en": "Turns the Block List on or off",
+        "de": "Schaltet die Block List ein oder aus",
+        "es": "Activa o desactiva la Block List",
+        "fr": "Active ou désactive la Block List",
+        "ru": "Включает или выключает Block List"
+      },
+      "holdAction": {
+        "en": "Opens the Block List rules (Tools › Block List…)",
+        "de": "Öffnet die Regeln der Block List (Tools › Block List…)",
+        "es": "Abre las reglas de la Block List (Tools › Block List…)",
+        "fr": "Ouvre les règles de la Block List (Tools › Block List…)",
+        "ru": "Открывает правила Block List (Tools › Block List…)"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "nosign"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=blocklist\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=blocklist-rules\n@file:action.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Proxyman", "de": "Proxyman", "es": "Proxyman", "fr": "Proxyman", "ru": "Proxyman"},
+      "summary": {
+        "en": "Recording, replay and debugging tools at hand",
+        "de": "Aufzeichnung, Wiederholen und Debugging-Werkzeuge griffbereit",
+        "es": "Grabación, repetición y herramientas de depuración a mano",
+        "fr": "Enregistrement, répétition et outils de débogage à portée de main",
+        "ru": "Запись, повтор запросов и инструменты отладки под рукой"
+      },
+      "details": {
+        "en": "Record, Block List and macOS Proxy work even with Proxyman in the background; the other buttons press its shortcuts and work while it is in front. macOS Proxy fits on any other page too.",
+        "de": "Aufnahme, Block List und macOS-Proxy funktionieren auch mit Proxyman im Hintergrund; die übrigen Tasten drücken seine Kurzbefehle und funktionieren, wenn es vorne ist. macOS-Proxy passt auch auf jede andere Seite.",
+        "es": "Grabar, Block List y Proxy de macOS funcionan aunque Proxyman esté en segundo plano; los demás botones pulsan sus atajos y funcionan cuando está delante. Proxy de macOS sirve también en cualquier otra página.",
+        "fr": "Enregistrer, Block List et Proxy macOS fonctionnent même avec Proxyman en arrière-plan ; les autres boutons utilisent ses raccourcis et fonctionnent quand il est au premier plan. Proxy macOS va aussi sur toute autre page.",
+        "ru": "«Запись», Block List и «Прокси macOS» работают, даже когда Proxyman в фоне; остальные кнопки нажимают его сочетания клавиш и работают, когда он на переднем плане. «Прокси macOS» подойдёт и для любой другой страницы."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "record", "row": 0, "col": 0},
+        {"button": "macos-proxy", "row": 0, "col": 1},
+        {"button": "filter", "row": 0, "col": 2},
+        {"button": "command-palette", "row": 0, "col": 3},
+        {"button": "repeat", "row": 1, "col": 0},
+        {"button": "compose", "row": 1, "col": 1},
+        {"button": "copy-curl", "row": 1, "col": 2},
+        {"button": "latest", "row": 1, "col": 3},
+        {"button": "breakpoint", "row": 2, "col": 0},
+        {"button": "map-local", "row": 2, "col": 1},
+        {"button": "map-remote", "row": 2, "col": 2},
+        {"button": "scripting", "row": 2, "col": 3},
+        {"button": "ssl-proxying", "row": 3, "col": 0},
+        {"button": "network-conditions", "row": 3, "col": 1},
+        {"button": "no-caching", "row": 3, "col": 2},
+        {"button": "diff", "row": 3, "col": 3},
+        {"button": "block-list", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

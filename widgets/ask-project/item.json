@@ -1,0 +1,63 @@
+{
+  "id": "ask-project",
+  "revision": 3,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Ask the Project…",
+    "de": "Projekt fragen…",
+    "es": "Preguntar al proyecto…",
+    "fr": "Demander au projet…",
+    "ru": "Спросить про проект…"
+  },
+  "summary": {
+    "en": "Ask about a project on the Mac: yesterday’s commits, your PRs, what isn’t committed — or anything, via Claude Code",
+    "de": "Frag nach einem Projekt auf dem Mac: Commits von gestern, deine PRs, was nicht committet ist – oder alles, via Claude Code",
+    "es": "Pregunta por un proyecto del Mac: los commits de ayer, tus PR, lo que falta por confirmar, o lo que sea, con Claude Code",
+    "fr": "Interrogez un projet du Mac : les commits d’hier, vos PR, ce qui n’est pas commité, ou tout le reste, via Claude Code",
+    "ru": "Спросите о проекте на Mac: коммиты за вчера, ваши PR, что не закоммичено — или что угодно через Claude Code"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The answer comes as a notification and names the project. The three ready questions are answered at once, without AI; any other goes to Claude Code, read-only, up to 50 seconds. Unset, the project is your last Claude Code or Codex session’s folder, else the front Terminal or Finder window’s.",
+    "de": "Die Antwort kommt als Mitteilung und nennt das Projekt. Die drei fertigen Fragen werden sofort und ohne KI beantwortet, jede andere von Claude Code, nur lesend, bis zu 50 Sekunden. Ohne Einstellung ist das Projekt der Ordner deiner letzten Claude-Code- oder Codex-Sitzung, sonst des vorderen Terminal- oder Finder-Fensters.",
+    "es": "La respuesta llega como notificación y nombra el proyecto. Las tres preguntas preparadas se responden al momento, sin IA; cualquier otra va a Claude Code, solo lectura, hasta 50 segundos. Sin ajustes, el proyecto es la carpeta de tu última sesión de Claude Code o Codex, si no, la de la ventana de Terminal o Finder delante.",
+    "fr": "La réponse arrive en notification et nomme le projet. Les trois questions toutes prêtes sont traitées aussitôt, sans IA ; toute autre part vers Claude Code, en lecture seule, 50 secondes au plus. Sans réglage, le projet est le dossier de votre dernière session Claude Code ou Codex, sinon celui de la fenêtre Terminal ou Finder au premier plan.",
+    "ru": "Ответ приходит уведомлением и называет проект. Три готовых вопроса считаются сразу и без ИИ, любой другой уходит в Claude Code только на чтение, до 50 секунд. Без настройки проект — папка вашей последней сессии Claude Code или Codex, иначе переднего окна Терминала или Finder."
+  },
+  "tapAction": {
+    "en": "Asks what you want to know and sends the answer to the phone",
+    "de": "Fragt, was du wissen willst, und schickt die Antwort aufs Telefon",
+    "es": "Pregunta qué quieres saber y envía la respuesta al teléfono",
+    "fr": "Demande ce que vous voulez savoir et envoie la réponse sur le téléphone",
+    "ru": "Спрашивает, что вы хотите узнать, и присылает ответ на телефон"
+  },
+  "permissions": [
+    "notifications",
+    "automation"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "questionmark.bubble"
+      }
+    },
+    "color": "#D97757",
+    "command": {
+      "shellCommand": {
+        "command": "folder=\"\"   # ← your project folder: a full path or one starting with ~/, e.g. \"~/Developer/my-app\"; empty — the folder of your last Claude Code or Codex session, else of the front Terminal or Finder window\n@file:project.zsh\n@file:ask.zsh"
+      }
+    },
+    "input": {
+      "question": "What do you want to know?",
+      "placeholder": "A question about the project",
+      "quickReplies": [
+        "What did I do yesterday?",
+        "Status of my PRs",
+        "What isn’t committed?"
+      ]
+    }
+  }
+}

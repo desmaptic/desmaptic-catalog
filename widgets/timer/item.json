@@ -1,0 +1,70 @@
+{
+  "id": "timer",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Timer",
+    "de": "Timer",
+    "es": "Temporizador",
+    "fr": "Minuteur",
+    "ru": "Таймер"
+  },
+  "summary": {
+    "en": "A countdown ring: 5, 15, 25 or 50 minutes, with a chime at zero",
+    "de": "Countdown-Ring: 5, 15, 25 oder 50 Minuten, mit Signalton bei null",
+    "es": "Anillo de cuenta atrás: 5, 15, 25 o 50 minutos, con aviso al llegar a cero",
+    "fr": "Anneau de compte à rebours : 5, 15, 25 ou 50 minutes, avec carillon à zéro",
+    "ru": "Кольцо обратного отсчёта: 5, 15, 25 или 50 минут, со звуком в конце"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The ring melts away as the time runs out. At zero it turns pink, and your phone and Mac get a notification with a chime.",
+    "de": "Der Ring schmilzt, während die Zeit abläuft. Bei null wird er pink, und Telefon und Mac bekommen eine Mitteilung mit Signalton.",
+    "es": "El anillo se va consumiendo a medida que pasa el tiempo. Al llegar a cero se vuelve rosa, y tu teléfono y tu Mac reciben una notificación con aviso sonoro.",
+    "fr": "L’anneau fond à mesure que le temps s’écoule. À zéro, il devient rose, et votre téléphone et votre Mac reçoivent une notification avec un carillon.",
+    "ru": "Кольцо тает по мере того, как идёт время. В конце оно становится розовым, а на телефон и Mac приходит уведомление со звуком."
+  },
+  "tapAction": {
+    "en": "Starts or pauses the timer",
+    "de": "Startet den Timer oder hält ihn an",
+    "es": "Inicia o pausa el temporizador",
+    "fr": "Lance le minuteur ou le met en pause",
+    "ru": "Запускает таймер или ставит на паузу"
+  },
+  "holdAction": {
+    "en": "Resets the timer; on a reset timer, switches the length: 5, 15, 25 or 50 minutes",
+    "de": "Setzt den Timer zurück; ist er schon zurückgesetzt, wechselt die Dauer: 5, 15, 25 oder 50 Minuten",
+    "es": "Reinicia el temporizador; si ya está reiniciado, cambia la duración: 5, 15, 25 o 50 minutos",
+    "fr": "Réinitialise le minuteur ; s’il l’est déjà, change la durée : 5, 15, 25 ou 50 minutes",
+    "ru": "Сбрасывает таймер; на сброшенном — меняет длительность: 5, 15, 25 или 50 минут"
+  },
+  "permissions": [
+    "notifications"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "timer"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

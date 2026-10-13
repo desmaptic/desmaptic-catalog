@@ -1,0 +1,55 @@
+{
+  "id": "claude-limits",
+  "revision": 1,
+  "kind": "widget",
+  "title": {
+    "en": "Claude Limits",
+    "de": "Claude-Limits",
+    "es": "Límites de Claude",
+    "fr": "Limites de Claude",
+    "ru": "Лимиты Claude"
+  },
+  "summary": {
+    "en": "How much of your Claude 5-hour and weekly limits is used, and when each resets",
+    "de": "Wie viel deiner 5-Stunden- und Wochenlimits von Claude verbraucht ist und wann sie zurückgesetzt werden",
+    "es": "Cuánto has usado de tus límites de Claude de 5 horas y semanal, y cuándo se reinicia cada uno",
+    "fr": "La part utilisée de vos limites Claude sur 5 heures et sur la semaine, et quand chacune repart à zéro",
+    "ru": "Сколько израсходовано из лимитов Claude за 5 часов и за неделю и когда каждый сбросится"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "Percent used and time to reset; ✓ means the window has reset, the clock shows how old the numbers are. Turn on in Desmaptic Agent › AI Assistants › Claude Code › Claude limits.",
+    "de": "Verbrauch in Prozent und Zeit bis zum Zurücksetzen; ✓ heißt, das Fenster ist zurückgesetzt, die Uhr zeigt das Alter der Zahlen. Einschalten: Desmaptic Agent › KI-Assistenten › Claude Code › Claude-Limits.",
+    "es": "Porcentaje usado y tiempo hasta el reinicio; ✓ indica que la ventana se ha reiniciado, el reloj muestra la antigüedad de los datos. Se activa en Desmaptic Agent › Asistentes de IA › Claude Code › Límites de Claude.",
+    "fr": "Pourcentage utilisé et temps avant la remise à zéro ; ✓ signifie que la fenêtre est repartie à zéro, l’horloge indique l’âge des chiffres. À activer dans Desmaptic Agent › Assistants IA › Claude Code › Limites de Claude.",
+    "ru": "Процент израсходованного и время до сброса; ✓ — окно сброшено, часы — сколько минут назад пришли цифры. Включается в Desmaptic Agent › ИИ-ассистенты › Claude Code › Лимиты Claude."
+  },
+  "tapAction": {
+    "en": "Opens the usage page on claude.ai",
+    "de": "Öffnet die Nutzungsseite auf claude.ai",
+    "es": "Abre la página de uso en claude.ai",
+    "fr": "Ouvre la page d’utilisation sur claude.ai",
+    "ru": "Открывает страницу использования на claude.ai"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "gauge.with.dots.needle.50percent"
+      }
+    },
+    "color": "#D97757",
+    "command": {
+      "openURL": {
+        "url": "https://claude.ai/settings/usage"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

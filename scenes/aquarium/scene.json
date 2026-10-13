@@ -1,0 +1,66 @@
+{
+  "id": "aquarium",
+  "revision": 10,
+  "title": {
+    "en": "Aquarium",
+    "de": "Aquarium",
+    "es": "Acuario",
+    "fr": "Aquarium",
+    "ru": "Аквариум"
+  },
+  "summary": {
+    "en": "A living fish tank across the whole page",
+    "de": "Ein lebendiges Aquarium über die ganze Seite",
+    "es": "Un acuario vivo que ocupa toda la página",
+    "fr": "Un aquarium vivant sur toute la page",
+    "ru": "Живой аквариум на всю страницу"
+  },
+  "details": {
+    "en": "Fish, a school of neons, kelp and a crab — and now and then a turtle, a ray or a barracuda that scatters everyone. Tap anywhere to feed them. The light follows your Mac’s clock, the water clouds when the Mac is busy, and in landscape the tank becomes a reef.",
+    "de": "Fische, ein Neonschwarm, Seetang und eine Krabbe – und ab und zu eine Schildkröte, ein Rochen oder ein Barrakuda, vor dem alle auseinanderstieben. Tippe irgendwo, um sie zu füttern. Das Licht folgt der Uhr deines Mac, das Wasser trübt sich, wenn der Mac viel zu tun hat, und im Querformat wird das Becken zum Riff.",
+    "es": "Peces, un banco de neones, algas y un cangrejo, y de vez en cuando una tortuga, una raya o una barracuda que espanta a todos. Toca en cualquier lugar para darles de comer. La luz sigue el reloj de tu Mac, el agua se enturbia cuando el Mac está ocupado y, en horizontal, el acuario se convierte en un arrecife.",
+    "fr": "Des poissons, un banc de néons, des algues et un crabe — et de temps en temps une tortue, une raie ou un barracuda qui fait fuir tout le monde. Touchez n’importe où pour les nourrir. La lumière suit l’horloge de votre Mac, l’eau se trouble quand le Mac est occupé et, à l’horizontale, l’aquarium devient un récif.",
+    "ru": "Рыбы, стайка неонов, водоросли и краб, а иногда проплывает черепаха или скат, а то и проносится барракуда — и все разбегаются. Нажмите в любом месте, чтобы покормить рыб. Свет меняется по часам Mac, вода мутнеет, когда Mac занят, а если повернуть телефон, аквариум становится рифом."
+  },
+  "cover": {
+    "source": "@file:cover.svg",
+    "fit": "cover"
+  },
+  "tiles": {
+    "columns": 6,
+    "rows": 8,
+    "title": {
+      "en": "Aquarium",
+      "de": "Aquarium",
+      "es": "Acuario",
+      "fr": "Aquarium",
+      "ru": "Аквариум"
+    },
+    "tapAction": {
+      "en": "Drops food here; the fish swim to it",
+      "de": "Wirft hier Futter ins Wasser; die Fische schwimmen hin",
+      "es": "Echa comida aquí; los peces nadan hacia ella",
+      "fr": "Jette de la nourriture ici ; les poissons nagent vers elle",
+      "ru": "Бросает сюда корм — рыбы подплывают к нему"
+    },
+    "button": {
+      "icon": {
+        "sfSymbol": {
+          "name": "fish.fill"
+        }
+      },
+      "color": "#0A84FF",
+      "command": {
+        "shellCommand": {
+          "command": "@file:tap.zsh"
+        }
+      }
+    },
+    "engine": {
+      "row": 0,
+      "col": 0,
+      "startupScript": "@file:engine.zsh"
+    },
+    "faces": "@file:faces.json"
+  }
+}

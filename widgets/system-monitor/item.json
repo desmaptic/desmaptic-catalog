@@ -1,0 +1,55 @@
+{
+  "id": "system-monitor",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "System Monitor",
+    "de": "Systemstatus",
+    "es": "Monitor del sistema",
+    "fr": "Moniteur système",
+    "ru": "Системный монитор"
+  },
+  "summary": {
+    "en": "CPU, memory, disk and network traffic at a glance",
+    "de": "CPU, Arbeitsspeicher, Festplatte und Netzwerkverkehr auf einen Blick",
+    "es": "CPU, memoria, disco y tráfico de red de un vistazo",
+    "fr": "Processeur, mémoire, disque et trafic réseau d’un coup d’œil",
+    "ru": "Процессор, память, диск и сетевой трафик с одного взгляда"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "The gauge is CPU load, the bars are memory and disk use. Below: what the Mac downloads ↓ and uploads ↑ now and over 3 minutes — real traffic, not connection speed. Pink means something needs attention.",
+    "de": "Die Anzeige zeigt die CPU-Last, die Balken belegten Arbeitsspeicher und Festplattenplatz. Darunter, was der Mac gerade herunterlädt ↓ und hochlädt ↑, mit 3 Minuten Verlauf – echter Datenverkehr, nicht die Verbindungsgeschwindigkeit. Pink heißt: genauer hinsehen.",
+    "es": "El indicador es la carga de CPU; las barras, el uso de memoria y de disco. Debajo, lo que el Mac descarga ↓ y sube ↑ ahora y en los últimos 3 minutos: tráfico real, no la velocidad de la conexión. El rosa pide atención.",
+    "fr": "La jauge indique la charge du processeur ; les barres, la mémoire et le disque utilisés. En dessous, ce que le Mac télécharge ↓ et envoie ↑, maintenant et sur 3 minutes — le trafic réel, pas le débit de la connexion. Le rose signale un souci.",
+    "ru": "Шкала — загрузка процессора, полоски — занятые память и диск. Внизу — сколько Mac скачивает ↓ и отдаёт ↑ сейчас и за 3 минуты: реальный трафик, а не скорость подключения. Розовый — стоит обратить внимание."
+  },
+  "tapAction": {
+    "en": "Opens Activity Monitor on the Mac",
+    "de": "Öffnet die Aktivitätsanzeige auf dem Mac",
+    "es": "Abre Monitor de Actividad en el Mac",
+    "fr": "Ouvre Moniteur d’activité sur le Mac",
+    "ru": "Открывает Мониторинг системы на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "waveform.path.ecg"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "launchApp": {
+        "bundleIdentifier": "com.apple.ActivityMonitor"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

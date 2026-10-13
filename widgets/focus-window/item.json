@@ -1,0 +1,48 @@
+{
+  "id": "focus-window",
+  "revision": 1,
+  "kind": "widget",
+  "title": {
+    "en": "Focus Window",
+    "de": "Fenster fokussieren",
+    "es": "Enfocar ventana",
+    "fr": "Focus sur la fenêtre",
+    "ru": "Фокус на окне"
+  },
+  "summary": {
+    "en": "Blurs everything behind the Mac’s front window so you can focus on it",
+    "de": "Zeichnet alles hinter dem vorderen Fenster des Mac weich, damit du dich darauf konzentrieren kannst",
+    "es": "Desenfoca todo lo que hay detrás de la ventana activa del Mac para que te concentres en ella",
+    "fr": "Floute tout ce qui est derrière la fenêtre active du Mac pour vous concentrer dessus",
+    "ru": "Размывает всё позади активного окна Mac, чтобы сосредоточиться на нём"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The blur follows the focus: click a blurred window and it comes forward sharp. The button turns green while the blur is on; it goes away when the phone disconnects.",
+    "de": "Die Unschärfe folgt dem Fokus: Klickst du auf ein unscharfes Fenster, kommt es scharf nach vorne. Solange sie an ist, ist die Taste grün; sie endet, wenn das iPhone die Verbindung trennt.",
+    "es": "El desenfoque sigue al foco: haz clic en una ventana desenfocada y pasará al frente nítida. El botón se pone verde mientras está activo; se quita cuando el teléfono se desconecta.",
+    "fr": "Le flou suit le focus : cliquez sur une fenêtre floue et elle passe nette au premier plan. Le bouton devient vert tant que le flou est actif ; il disparaît quand le téléphone se déconnecte.",
+    "ru": "Размытие следует за фокусом: щёлкните по размытому окну — оно выйдет вперёд чётким. Пока размытие включено, кнопка зелёная; оно снимается, когда телефон отключается."
+  },
+  "tapAction": {
+    "en": "Turns the blur on; a second tap turns it off",
+    "de": "Schaltet die Unschärfe ein; erneutes Tippen schaltet sie aus",
+    "es": "Activa el desenfoque; otro toque lo desactiva",
+    "fr": "Active le flou ; touchez à nouveau pour le désactiver",
+    "ru": "Включает размытие; повторное нажатие выключает"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "macwindow"
+      }
+    },
+    "color": "#5E5CE6",
+    "command": {
+      "systemAction": {
+        "_0": "focusWindow"
+      }
+    }
+  }
+}

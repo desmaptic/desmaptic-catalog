@@ -1,0 +1,55 @@
+{
+  "id": "cpu",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "CPU Load",
+    "de": "CPU-Last",
+    "es": "Carga de CPU",
+    "fr": "Charge CPU",
+    "ru": "Загрузка ЦП"
+  },
+  "summary": {
+    "en": "How busy the processor is, every 2 seconds; turns pink under heavy load",
+    "de": "Wie ausgelastet der Prozessor ist, alle 2 Sekunden; wird bei hoher Last pink",
+    "es": "Cuánto trabaja el procesador, cada 2 segundos; se vuelve rosa con carga alta",
+    "fr": "La charge du processeur, toutes les 2 secondes ; vire au rose sous forte charge",
+    "ru": "Загрузка процессора каждые 2 секунды; розовеет под высокой нагрузкой"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "How busy the Mac’s processor is right now, across all its cores. The gauge warms up as the load grows and turns pink near 100%.",
+    "de": "Wie stark der Prozessor des Mac gerade ausgelastet ist – über alle Kerne hinweg. Mit steigender Last wird die Anzeige wärmer, nahe 100 % wird sie pink.",
+    "es": "Cuánto trabaja ahora mismo el procesador del Mac, en todos sus núcleos a la vez. El indicador se vuelve más cálido a medida que sube la carga y se pone rosa cerca del 100 %.",
+    "fr": "La charge actuelle du processeur du Mac, tous cœurs confondus. La jauge se réchauffe à mesure que la charge augmente et vire au rose près de 100 %.",
+    "ru": "Насколько сейчас загружен процессор Mac — по всем ядрам сразу. Чем выше нагрузка, тем теплее шкала, у 100 % она розовая."
+  },
+  "tapAction": {
+    "en": "Opens Activity Monitor on the Mac",
+    "de": "Öffnet die Aktivitätsanzeige auf dem Mac",
+    "es": "Abre Monitor de Actividad en el Mac",
+    "fr": "Ouvre Moniteur d’activité sur le Mac",
+    "ru": "Открывает Мониторинг системы на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "cpu"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "launchApp": {
+        "bundleIdentifier": "com.apple.ActivityMonitor"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

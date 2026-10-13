@@ -1,0 +1,55 @@
+{
+  "id": "to-mac",
+  "revision": 2,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "To the Mac…",
+    "de": "An den Mac…",
+    "es": "Al Mac…",
+    "fr": "Vers le Mac…",
+    "ru": "На Mac…"
+  },
+  "summary": {
+    "en": "Type or paste text on the phone and it lands on the Mac’s clipboard; a link also opens in the browser",
+    "de": "Tippe oder füge Text auf dem Telefon ein – er landet in der Zwischenablage des Mac; ein Link öffnet sich auch im Browser",
+    "es": "Escribe o pega un texto en el teléfono y llega al portapapeles del Mac; un enlace además se abre en el navegador",
+    "fr": "Saisissez ou collez un texte sur le téléphone : il arrive dans le presse-papiers du Mac ; un lien s’ouvre aussi dans le navigateur",
+    "ru": "Наберите или вставьте текст на телефоне — он окажется в буфере обмена Mac; ссылка ещё и откроется в браузере"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. A link alone, starting with http:// or https://, also opens in the Mac’s default browser. The button shows only a ✓, never the text: it may be a password or a key.",
+    "de": "Nichts einzurichten. Ein Link allein, der mit http:// oder https:// beginnt, öffnet sich außerdem im Standardbrowser des Mac. Die Taste zeigt nur ein ✓, nie den Text: Es kann ein Passwort oder ein Schlüssel sein.",
+    "es": "No hay nada que configurar. Un enlace solo, que empiece por http:// o https://, además se abre en el navegador predeterminado del Mac. El botón muestra solo un ✓, nunca el texto: puede ser una contraseña o una clave.",
+    "fr": "Rien à configurer. Un lien seul, commençant par http:// ou https://, s’ouvre aussi dans le navigateur par défaut du Mac. Le bouton n’affiche qu’un ✓, jamais le texte : ce peut être un mot de passe ou une clé.",
+    "ru": "Настраивать ничего не нужно. Одна ссылка, начинающаяся с http:// или https://, ещё и откроется в браузере Mac по умолчанию. На кнопке появится только ✓, но не сам текст: это может быть пароль или ключ."
+  },
+  "tapAction": {
+    "en": "Asks for text and puts it on the Mac’s clipboard",
+    "de": "Fragt nach einem Text und legt ihn in die Zwischenablage des Mac",
+    "es": "Pide un texto y lo pone en el portapapeles del Mac",
+    "fr": "Demande un texte et le place dans le presse-papiers du Mac",
+    "ru": "Спрашивает текст и кладёт его в буфер обмена Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "laptopcomputer.and.arrow.down"
+      }
+    },
+    "color": "#0A84FF",
+    "command": {
+      "shellCommand": {
+        "command": "@file:send.zsh"
+      }
+    },
+    "input": {
+      "question": "What to send to the Mac?",
+      "placeholder": "Text or a link",
+      "multiline": true
+    }
+  }
+}

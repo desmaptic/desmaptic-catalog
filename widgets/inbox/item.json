@@ -1,0 +1,57 @@
+{
+  "id": "inbox",
+  "revision": 2,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "To Inbox…",
+    "de": "In die Inbox…",
+    "es": "A la bandeja…",
+    "fr": "Dans l’inbox…",
+    "ru": "В инбокс…"
+  },
+  "summary": {
+    "en": "Note a task from the phone: a new reminder on the Mac, or a line in a Markdown file — your Obsidian inbox or a project’s INBOX.md",
+    "de": "Notiere eine Aufgabe vom Telefon: als neue Erinnerung auf dem Mac oder als Zeile in einer Markdown-Datei – deiner Obsidian-Inbox oder der INBOX.md eines Projekts",
+    "es": "Anota una tarea desde el teléfono: un recordatorio nuevo en el Mac o una línea de un archivo Markdown, tu bandeja de Obsidian o el INBOX.md de un proyecto",
+    "fr": "Notez une tâche depuis le téléphone : un nouveau rappel sur le Mac, ou une ligne d’un fichier Markdown, votre inbox Obsidian ou le INBOX.md d’un projet",
+    "ru": "Записывает задачу с телефона: новым напоминанием на Mac или строкой в Markdown-файл — во «Входящие» Obsidian или в INBOX.md проекта"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Unset, it adds a reminder to the default list of Reminders. With a Markdown file set on the tap script’s first line, such as ~/Notes/Inbox.md, it adds “- [ ] 14:05 your text” at its end instead.",
+    "de": "Ohne Einstellung legt es eine Erinnerung in der Standardliste von Erinnerungen an. Steht in der ersten Zeile des Tipp-Skripts eine Markdown-Datei, etwa ~/Notes/Inbox.md, hängt es stattdessen „- [ ] 14:05 dein Text“ an ihr Ende an.",
+    "es": "Sin ajustes, añade un recordatorio a la lista por omisión de Recordatorios. Con un archivo Markdown en la primera línea del script del toque, como ~/Notes/Inbox.md, añade en su lugar «- [ ] 14:05 tu texto» al final.",
+    "fr": "Sans réglage, il ajoute un rappel à la liste par défaut de Rappels. Avec un fichier Markdown sur la première ligne du script du toucher, comme ~/Notes/Inbox.md, il ajoute plutôt « - [ ] 14:05 votre texte » à sa fin.",
+    "ru": "Без настройки добавляет напоминание в список по умолчанию в «Напоминаниях». Если в первой строке скрипта нажатия задан Markdown-файл, например ~/Notes/Inbox.md, — дописывает «- [ ] 14:05 ваш текст» в его конец."
+  },
+  "tapAction": {
+    "en": "Asks what to note and adds it as a reminder or a task in the file",
+    "de": "Fragt, was notiert werden soll, und legt es als Erinnerung oder als Aufgabe in der Datei an",
+    "es": "Pregunta qué anotar y lo añade como recordatorio o como tarea en el archivo",
+    "fr": "Demande quoi noter et l’ajoute comme rappel ou comme tâche dans le fichier",
+    "ru": "Спрашивает, что записать, и добавляет это напоминанием или задачей в файл"
+  },
+  "permissions": [
+    "reminders"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "tray.and.arrow.down.fill"
+      }
+    },
+    "color": "#FF9F0A",
+    "command": {
+      "shellCommand": {
+        "command": "file=\"\"   # ← your inbox file: a full path or one starting with ~/, e.g. \"~/Notes/Inbox.md\"; empty — a new reminder in the default list of Reminders\n@file:append.zsh"
+      }
+    },
+    "input": {
+      "question": "What to note?",
+      "placeholder": "A task or a thought"
+    }
+  }
+}

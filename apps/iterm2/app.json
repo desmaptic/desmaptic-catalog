@@ -1,0 +1,1036 @@
+{
+  "id": "iterm2",
+  "revision": 5,
+  "name": "iTerm2",
+  "bundleIds": [
+    "com.googlecode.iterm2"
+  ],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "new-tab",
+      "title": {
+        "en": "New Tab",
+        "de": "Neuer Tab",
+        "es": "Nueva pestaña",
+        "fr": "Nouvel onglet",
+        "ru": "Новая вкладка"
+      },
+      "summary": {
+        "en": "A tab in the front window, from any app; hold to close the pane",
+        "de": "Ein Tab im vorderen Fenster, aus jeder App; Halten schließt den Bereich",
+        "es": "Una pestaña en la ventana de delante, desde cualquier app; mantén pulsado para cerrar el panel",
+        "fr": "Un onglet dans la fenêtre au premier plan, depuis n’importe quelle app ; maintenez pour fermer le panneau",
+        "ru": "Вкладка в переднем окне из любого приложения; удержание закрывает панель"
+      },
+      "details": {
+        "en": "With the default profile; iTerm2 comes forward. Shell › Undo Close (⇧⌘T) brings a closed pane back within 5 seconds (iTerm2’s default).",
+        "de": "Mit dem Standardprofil; iTerm2 kommt nach vorne. Shell › Undo Close (⇧⌘T) holt einen geschlossenen Bereich innerhalb von 5 Sekunden zurück (Standard von iTerm2).",
+        "es": "Con el perfil por omisión; iTerm2 pasa al frente. Shell › Undo Close (⇧⌘T) recupera un panel cerrado en los 5 segundos siguientes (valor por omisión de iTerm2).",
+        "fr": "Avec le profil par défaut ; iTerm2 passe au premier plan. Shell › Undo Close (⇧⌘T) rouvre un panneau fermé dans les 5 secondes (réglage par défaut d’iTerm2).",
+        "ru": "С профилем по умолчанию; iTerm2 выходит на передний план. Shell › Undo Close (⇧⌘T) возвращает закрытую панель в течение 5 секунд (так по умолчанию в iTerm2)."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "holdAction": {
+        "en": "⚠️ Closes the front pane and what runs in it, or the tab if it’s the only pane (Shell › Close)",
+        "de": "⚠️ Schließt den vorderen Bereich samt dem, was darin läuft – oder den Tab, wenn er der einzige Bereich ist (Shell › Close)",
+        "es": "⚠️ Cierra el panel de delante y lo que se ejecuta en él, o la pestaña si es el único panel (Shell › Close)",
+        "fr": "⚠️ Ferme le panneau au premier plan et ce qui s’y exécute, ou l’onglet s’il est le seul panneau (Shell › Close)",
+        "ru": "⚠️ Закрывает переднюю панель вместе с тем, что в ней запущено, а если панель одна — вкладку (Shell › Close)"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "plus.square.on.square"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "action=tab\n@file:action.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=close\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {
+        "en": "Previous Tab",
+        "de": "Vorheriger Tab",
+        "es": "Pestaña anterior",
+        "fr": "Onglet précédent",
+        "ru": "Предыдущая вкладка"
+      },
+      "summary": {
+        "en": "Switches to the tab on the left",
+        "de": "Wechselt zum Tab links davon",
+        "es": "Pasa a la pestaña de la izquierda",
+        "fr": "Passe à l’onglet de gauche",
+        "ru": "Переключает на вкладку слева"
+      },
+      "details": {
+        "en": "Works even with the Natural Text Editing key preset, which gives ⌘← to the cursor. From the first tab it goes round to the last. Works from any app.",
+        "de": "Klappt auch mit dem Tastenschema Natural Text Editing, das ⌘← dem Cursor gibt. Vom ersten Tab geht es zum letzten. Funktioniert aus jeder App.",
+        "es": "Sirve incluso con el ajuste de teclas Natural Text Editing, que da ⌘← al cursor. Desde la primera pestaña pasa a la última. Funciona desde cualquier app.",
+        "fr": "Marche même avec le préréglage de touches Natural Text Editing, qui donne ⌘← au curseur. Du premier onglet, on passe au dernier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Срабатывает даже с набором клавиш Natural Text Editing, который отдаёт ⌘← курсору. С первой вкладки переходит на последнюю. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Shows the previous tab",
+        "de": "Zeigt den vorherigen Tab",
+        "es": "Muestra la pestaña anterior",
+        "fr": "Affiche l’onglet précédent",
+        "ru": "Показывает предыдущую вкладку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.left.square"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "action=previous-tab\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {
+        "en": "Next Tab",
+        "de": "Nächster Tab",
+        "es": "Pestaña siguiente",
+        "fr": "Onglet suivant",
+        "ru": "Следующая вкладка"
+      },
+      "summary": {
+        "en": "Switches to the tab on the right",
+        "de": "Wechselt zum Tab rechts davon",
+        "es": "Pasa a la pestaña de la derecha",
+        "fr": "Passe à l’onglet de droite",
+        "ru": "Переключает на вкладку справа"
+      },
+      "details": {
+        "en": "Works even with the Natural Text Editing key preset, which gives ⌘→ to the cursor. From the last tab it goes round to the first. Works from any app.",
+        "de": "Klappt auch mit dem Tastenschema Natural Text Editing, das ⌘→ dem Cursor gibt. Vom letzten Tab geht es zum ersten. Funktioniert aus jeder App.",
+        "es": "Sirve incluso con el ajuste de teclas Natural Text Editing, que da ⌘→ al cursor. Desde la última pestaña pasa a la primera. Funciona desde cualquier app.",
+        "fr": "Marche même avec le préréglage de touches Natural Text Editing, qui donne ⌘→ au curseur. Du dernier onglet, on passe au premier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Срабатывает даже с набором клавиш Natural Text Editing, который отдаёт ⌘→ курсору. С последней вкладки переходит на первую. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Shows the next tab",
+        "de": "Zeigt den nächsten Tab",
+        "es": "Muestra la pestaña siguiente",
+        "fr": "Affiche l’onglet suivant",
+        "ru": "Показывает следующую вкладку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.right.square"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "action=next-tab\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {
+        "en": "New Window",
+        "de": "Neues Fenster",
+        "es": "Nueva ventana",
+        "fr": "Nouvelle fenêtre",
+        "ru": "Новое окно"
+      },
+      "summary": {
+        "en": "A new iTerm2 window, from any app",
+        "de": "Ein neues iTerm2-Fenster, aus jeder App",
+        "es": "Una ventana nueva de iTerm2, desde cualquier app",
+        "fr": "Une nouvelle fenêtre iTerm2, depuis n’importe quelle app",
+        "ru": "Новое окно iTerm2 из любого приложения"
+      },
+      "details": {
+        "en": "With the default profile; iTerm2 comes forward. When iTerm2 isn’t running, the tap starts it with the windows it usually opens at launch.",
+        "de": "Mit dem Standardprofil; iTerm2 kommt nach vorne. Läuft iTerm2 nicht, startet es der Tipp mit den Fenstern, die es beim Start sonst öffnet.",
+        "es": "Con el perfil por omisión; iTerm2 pasa al frente. Si iTerm2 no está abierto, el toque lo abre con las ventanas que abre al iniciarse.",
+        "fr": "Avec le profil par défaut ; iTerm2 passe au premier plan. S’il n’est pas ouvert, le toucher lance iTerm2 avec les fenêtres qu’il ouvre d’habitude au démarrage.",
+        "ru": "С профилем по умолчанию; iTerm2 выходит на передний план. Если iTerm2 не запущен, касание запускает его с окнами, которые он обычно открывает при запуске."
+      },
+      "tapAction": {
+        "en": "Opens a new window",
+        "de": "Öffnet ein neues Fenster",
+        "es": "Abre una ventana nueva",
+        "fr": "Ouvre une nouvelle fenêtre",
+        "ru": "Открывает новое окно"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "macwindow.badge.plus"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "action=window\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "split-right",
+      "title": {
+        "en": "Split Right",
+        "de": "Rechts teilen",
+        "es": "Dividir a la derecha",
+        "fr": "Diviser à droite",
+        "ru": "Разделить вправо"
+      },
+      "summary": {
+        "en": "A new pane to the right of the one in front",
+        "de": "Ein neuer Bereich rechts vom vorderen",
+        "es": "Un panel nuevo a la derecha del de delante",
+        "fr": "Un nouveau panneau à droite de celui au premier plan",
+        "ru": "Новая панель справа от передней"
+      },
+      "details": {
+        "en": "Shell › Split Vertically with Current Profile (⌘D); the new pane gets the focus. Works from any app.",
+        "de": "Shell › Split Vertically with Current Profile (⌘D); der neue Bereich bekommt den Fokus. Funktioniert aus jeder App.",
+        "es": "Shell › Split Vertically with Current Profile (⌘D); el panel nuevo recibe el foco. Funciona desde cualquier app.",
+        "fr": "Shell › Split Vertically with Current Profile (⌘D) ; le nouveau panneau prend le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "Shell › Split Vertically with Current Profile (⌘D); фокус получает новая панель. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Adds a pane on the right",
+        "de": "Fügt rechts einen Bereich hinzu",
+        "es": "Añade un panel a la derecha",
+        "fr": "Ajoute un panneau à droite",
+        "ru": "Добавляет панель справа"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.split.2x1"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=split-right\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "split-down",
+      "title": {
+        "en": "Split Down",
+        "de": "Unten teilen",
+        "es": "Dividir abajo",
+        "fr": "Diviser en bas",
+        "ru": "Разделить вниз"
+      },
+      "summary": {
+        "en": "A new pane below the one in front",
+        "de": "Ein neuer Bereich unter dem vorderen",
+        "es": "Un panel nuevo debajo del de delante",
+        "fr": "Un nouveau panneau sous celui au premier plan",
+        "ru": "Новая панель под передней"
+      },
+      "details": {
+        "en": "Shell › Split Horizontally with Current Profile (⇧⌘D); the new pane gets the focus. Works from any app.",
+        "de": "Shell › Split Horizontally with Current Profile (⇧⌘D); der neue Bereich bekommt den Fokus. Funktioniert aus jeder App.",
+        "es": "Shell › Split Horizontally with Current Profile (⇧⌘D); el panel nuevo recibe el foco. Funciona desde cualquier app.",
+        "fr": "Shell › Split Horizontally with Current Profile (⇧⌘D) ; le nouveau panneau prend le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "Shell › Split Horizontally with Current Profile (⇧⌘D); фокус получает новая панель. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Adds a pane below",
+        "de": "Fügt unten einen Bereich hinzu",
+        "es": "Añade un panel debajo",
+        "fr": "Ajoute un panneau en dessous",
+        "ru": "Добавляет панель снизу"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.split.1x2"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=split-down\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "next-pane",
+      "title": {
+        "en": "Next Pane",
+        "de": "Nächster Bereich",
+        "es": "Panel siguiente",
+        "fr": "Panneau suivant",
+        "ru": "Следующая панель"
+      },
+      "summary": {
+        "en": "Moves to the next pane; hold for the previous one",
+        "de": "Wechselt zum nächsten Bereich; halten für den vorherigen",
+        "es": "Pasa al panel siguiente; mantén pulsado para el anterior",
+        "fr": "Passe au panneau suivant ; maintenez pour le précédent",
+        "ru": "Переходит к следующей панели; удержание — к предыдущей"
+      },
+      "details": {
+        "en": "Clicks Window › Split Pane › Select Split Pane › Next Pane, so it works with any keyboard layout. Works while iTerm2 is in front.",
+        "de": "Klickt auf Window › Split Pane › Select Split Pane › Next Pane – so klappt es mit jeder Tastaturbelegung. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "Hace clic en Window › Split Pane › Select Split Pane › Next Pane, así que sirve con cualquier distribución de teclado. Funciona cuando iTerm2 está delante.",
+        "fr": "Clique sur Window › Split Pane › Select Split Pane › Next Pane et marche donc avec toute disposition de clavier. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "Выбирает в меню Window › Split Pane › Select Split Pane › Next Pane, поэтому срабатывает при любой раскладке. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Selects the next pane",
+        "de": "Wählt den nächsten Bereich",
+        "es": "Selecciona el panel siguiente",
+        "fr": "Sélectionne le panneau suivant",
+        "ru": "Выбирает следующую панель"
+      },
+      "holdAction": {
+        "en": "Selects the previous pane",
+        "de": "Wählt den vorherigen Bereich",
+        "es": "Selecciona el panel anterior",
+        "fr": "Sélectionne le panneau précédent",
+        "ru": "Выбирает предыдущую панель"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.2.swap"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=next-pane\n@file:menu/click.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=previous-pane\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "maximize-pane",
+      "title": {
+        "en": "Maximize Pane",
+        "de": "Bereich maximieren",
+        "es": "Maximizar panel",
+        "fr": "Agrandir le panneau",
+        "ru": "Развернуть панель"
+      },
+      "summary": {
+        "en": "The pane in front fills the tab (⇧⌘↩)",
+        "de": "Der vordere Bereich füllt den Tab (⇧⌘↩)",
+        "es": "El panel de delante ocupa la pestaña (⇧⌘↩)",
+        "fr": "Le panneau au premier plan occupe l’onglet (⇧⌘↩)",
+        "ru": "Передняя панель занимает всю вкладку (⇧⌘↩)"
+      },
+      "details": {
+        "en": "View › Maximize Active Pane (⇧⌘↩): the other panes of the tab are hidden, not closed, and come back on the next tap. Works while iTerm2 is in front.",
+        "de": "View › Maximize Active Pane (⇧⌘↩): Die anderen Bereiche des Tabs werden ausgeblendet, nicht geschlossen, und kommen beim nächsten Tippen zurück. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Maximize Active Pane (⇧⌘↩): los demás paneles de la pestaña se ocultan, no se cierran, y vuelven con el siguiente toque. Funciona cuando iTerm2 está delante.",
+        "fr": "View › Maximize Active Pane (⇧⌘↩) : les autres panneaux de l’onglet sont masqués, pas fermés, et reviennent au toucher suivant. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Maximize Active Pane (⇧⌘↩): остальные панели вкладки скрываются, а не закрываются, и возвращаются при следующем касании. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Maximizes or restores the pane",
+        "de": "Maximiert den Bereich oder stellt ihn wieder her",
+        "es": "Maximiza o restaura el panel",
+        "fr": "Agrandit ou rétablit le panneau",
+        "ru": "Разворачивает или возвращает панель"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.up.left.and.arrow.down.right"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 36,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "find",
+      "title": {
+        "en": "Find",
+        "de": "Suchen",
+        "es": "Buscar",
+        "fr": "Rechercher",
+        "ru": "Найти"
+      },
+      "summary": {
+        "en": "Searches the pane’s text (⌘F); hold to clear it",
+        "de": "Durchsucht den Text des Bereichs (⌘F); Halten leert ihn",
+        "es": "Busca en el texto del panel (⌘F); mantén pulsado para borrarlo",
+        "fr": "Cherche dans le texte du panneau (⌘F) ; maintenez pour l’effacer",
+        "ru": "Ищет по тексту панели (⌘F); удержание очищает его"
+      },
+      "details": {
+        "en": "Edit › Find › Find… (⌘F). Searches the scrollback too. Works while iTerm2 is in front.",
+        "de": "Edit › Find › Find… (⌘F). Sucht auch im Zeilenpuffer. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "Edit › Find › Find… (⌘F). Busca también en las líneas anteriores. Funciona cuando iTerm2 está delante.",
+        "fr": "Edit › Find › Find… (⌘F). Cherche aussi dans le défilement arrière. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "Edit › Find › Find… (⌘F). Ищет и в буфере строк. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the find bar",
+        "de": "Öffnet die Suchleiste",
+        "es": "Abre la barra de búsqueda",
+        "fr": "Ouvre la barre de recherche",
+        "ru": "Открывает панель поиска"
+      },
+      "holdAction": {
+        "en": "⚠️ Clears the pane’s text and scrollback for good (Edit › Clear Buffer)",
+        "de": "⚠️ Leert Text und Zeilenpuffer des Bereichs endgültig (Edit › Clear Buffer)",
+        "es": "⚠️ Borra para siempre el texto del panel y sus líneas anteriores (Edit › Clear Buffer)",
+        "fr": "⚠️ Efface définitivement le texte du panneau et son défilement arrière (Edit › Clear Buffer)",
+        "ru": "⚠️ Безвозвратно очищает текст панели и буфер строк (Edit › Clear Buffer)"
+      },
+      "permissions": [
+        "accessibility",
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 3,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=clear-buffer\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "open-quickly",
+      "title": {
+        "en": "Open Quickly",
+        "de": "Schnell öffnen",
+        "es": "Abrir rápido",
+        "fr": "Ouverture rapide",
+        "ru": "Быстрое открытие"
+      },
+      "summary": {
+        "en": "Finds a session by name, folder or command (⇧⌘O)",
+        "de": "Findet eine Sitzung nach Name, Ordner oder Befehl (⇧⌘O)",
+        "es": "Encuentra una sesión por nombre, carpeta o comando (⇧⌘O)",
+        "fr": "Trouve une session par nom, dossier ou commande (⇧⌘O)",
+        "ru": "Находит сеанс по имени, папке или команде (⇧⌘O)"
+      },
+      "details": {
+        "en": "View › Open Quickly (⇧⌘O): type part of a session’s title, folder, command or host to go there; profiles and arrangements are found too. Works while iTerm2 is in front.",
+        "de": "View › Open Quickly (⇧⌘O): Tippe einen Teil von Titel, Ordner, Befehl oder Host einer Sitzung ein, um dorthin zu wechseln; auch Profile und Arrangements werden gefunden. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Open Quickly (⇧⌘O): escribe parte del título, la carpeta, el comando o el host de una sesión para ir a ella; también encuentra perfiles y disposiciones. Funciona cuando iTerm2 está delante.",
+        "fr": "View › Open Quickly (⇧⌘O) : tapez une partie du titre, du dossier, de la commande ou de l’hôte d’une session pour y aller ; on y trouve aussi les profils et les arrangements. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Open Quickly (⇧⌘O): введите часть заголовка, папки, команды или хоста сеанса, чтобы перейти к нему; находятся и профили, и расстановки окон. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the search",
+        "de": "Öffnet die Suche",
+        "es": "Abre la búsqueda",
+        "fr": "Ouvre la recherche",
+        "ru": "Открывает поиск"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.and.text.magnifyingglass"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 31,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "instant-replay",
+      "title": {
+        "en": "Instant Replay",
+        "de": "Instant Replay",
+        "es": "Instant Replay",
+        "fr": "Instant Replay",
+        "ru": "Instant Replay"
+      },
+      "summary": {
+        "en": "Steps back through what the pane showed (⌥⌘B)",
+        "de": "Blättert zurück durch das, was der Bereich zeigte (⌥⌘B)",
+        "es": "Retrocede por lo que mostró el panel (⌥⌘B)",
+        "fr": "Remonte dans ce que le panneau a affiché (⌥⌘B)",
+        "ru": "Листает назад то, что показывала панель (⌥⌘B)"
+      },
+      "details": {
+        "en": "View › Start Instant Replay (⌥⌘B): ← and → step through the pane’s past screens, even text overwritten since; Esc exits. Works while iTerm2 is in front.",
+        "de": "View › Start Instant Replay (⌥⌘B): ← und → blättern durch frühere Bildschirme des Bereichs, auch inzwischen überschriebenen Text; Esc beendet. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Start Instant Replay (⌥⌘B): ← y → recorren las pantallas anteriores del panel, incluso texto ya sobrescrito; Esc sale. Funciona cuando iTerm2 está delante.",
+        "fr": "View › Start Instant Replay (⌥⌘B) : ← et → parcourent les écrans passés du panneau, même un texte écrasé depuis ; Échap pour quitter. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Start Instant Replay (⌥⌘B): ← и → листают прошлые экраны панели, даже уже перезаписанный текст; Esc — выход. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Starts Instant Replay",
+        "de": "Startet Instant Replay",
+        "es": "Inicia Instant Replay",
+        "fr": "Lance Instant Replay",
+        "ru": "Запускает Instant Replay"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "clock.arrow.circlepath"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 11,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "toolbelt",
+      "title": {
+        "en": "Toolbelt",
+        "de": "Toolbelt",
+        "es": "Toolbelt",
+        "fr": "Toolbelt",
+        "ru": "Toolbelt"
+      },
+      "summary": {
+        "en": "A side panel with jobs, notes and history (⇧⌘B)",
+        "de": "Eine Seitenleiste mit Jobs, Notizen und Verlauf (⇧⌘B)",
+        "es": "Un panel lateral con trabajos, notas e historial (⇧⌘B)",
+        "fr": "Un panneau latéral avec tâches, notes et historique (⇧⌘B)",
+        "ru": "Боковая панель с задачами, заметками и историей (⇧⌘B)"
+      },
+      "details": {
+        "en": "View › Toolbelt › Show Toolbelt (⇧⌘B). Choose what it shows — jobs, notes, recent folders, paste history and more — in View › Toolbelt. Works while iTerm2 is in front.",
+        "de": "View › Toolbelt › Show Toolbelt (⇧⌘B). Was sie zeigt – Jobs, Notizen, letzte Ordner, Einfügeverlauf und mehr –, wählst du in View › Toolbelt. Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Toolbelt › Show Toolbelt (⇧⌘B). Lo que muestra —trabajos, notas, carpetas recientes, historial de pegado y más— lo eliges en View › Toolbelt. Funciona cuando iTerm2 está delante.",
+        "fr": "View › Toolbelt › Show Toolbelt (⇧⌘B). Choisissez ce qu’elle affiche — tâches, notes, dossiers récents, historique des collages… — dans View › Toolbelt. Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Toolbelt › Show Toolbelt (⇧⌘B). Что в ней показывать — задачи, заметки, недавние папки, историю вставок и другое, — выбирается в View › Toolbelt. Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the toolbelt",
+        "de": "Blendet die Toolbelt ein oder aus",
+        "es": "Muestra u oculta la Toolbelt",
+        "fr": "Affiche ou masque la Toolbelt",
+        "ru": "Показывает или скрывает Toolbelt"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sidebar.right"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 11,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "finder-folder",
+      "title": {
+        "en": "Finder Folder",
+        "de": "Finder-Ordner",
+        "es": "Carpeta del Finder",
+        "fr": "Dossier du Finder",
+        "ru": "Папка Finder"
+      },
+      "summary": {
+        "en": "A new tab in the folder open in Finder",
+        "de": "Ein neuer Tab im Ordner, der im Finder offen ist",
+        "es": "Una pestaña nueva en la carpeta abierta en el Finder",
+        "fr": "Un nouvel onglet dans le dossier ouvert dans le Finder",
+        "ru": "Новая вкладка в папке, открытой в Finder"
+      },
+      "details": {
+        "en": "The folder of the front Finder window, or the desktop when none is open. If iTerm2 has no window, it opens one. Works from any app and starts iTerm2 if needed.",
+        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Hat iTerm2 kein Fenster, öffnet es eines. Funktioniert aus jeder App und startet iTerm2 bei Bedarf.",
+        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Si iTerm2 no tiene ventanas, abre una. Funciona desde cualquier app y abre iTerm2 si hace falta.",
+        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Si iTerm2 n’a pas de fenêtre, il en ouvre une. Fonctionne depuis n’importe quelle app et lance iTerm2 au besoin.",
+        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Если у iTerm2 нет окон, откроется новое. Работает из любого приложения и при необходимости запускает iTerm2."
+      },
+      "tapAction": {
+        "en": "Opens iTerm2 in that folder",
+        "de": "Öffnet iTerm2 in diesem Ordner",
+        "es": "Abre iTerm2 en esa carpeta",
+        "fr": "Ouvre iTerm2 dans ce dossier",
+        "ru": "Открывает iTerm2 в этой папке"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "terminal"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "@file:finder-folder.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "show-in-finder",
+      "title": {
+        "en": "Show in Finder",
+        "de": "Im Finder anzeigen",
+        "es": "Mostrar en el Finder",
+        "fr": "Afficher dans le Finder",
+        "ru": "Показать в Finder"
+      },
+      "summary": {
+        "en": "Opens the front pane’s folder in Finder",
+        "de": "Öffnet den Ordner des vorderen Bereichs im Finder",
+        "es": "Abre en el Finder la carpeta del panel de delante",
+        "fr": "Ouvre dans le Finder le dossier du panneau au premier plan",
+        "ru": "Открывает в Finder папку передней панели"
+      },
+      "details": {
+        "en": "The folder of the command running in the pane, or of the shell when nothing is running. Works with iTerm2 in the background too.",
+        "de": "Der Ordner des Befehls, der im Bereich läuft, oder der der Shell, wenn nichts läuft. Funktioniert auch mit iTerm2 im Hintergrund.",
+        "es": "La carpeta del comando que se ejecuta en el panel, o la del shell si no hay nada en marcha. Funciona también con iTerm2 en segundo plano.",
+        "fr": "Le dossier de la commande qui tourne dans le panneau, ou celui du shell si rien ne tourne. Fonctionne aussi avec iTerm2 en arrière-plan.",
+        "ru": "Папка команды, запущенной в панели, или папка оболочки, если ничего не запущено. Работает и когда iTerm2 в фоне."
+      },
+      "tapAction": {
+        "en": "Opens the folder in Finder",
+        "de": "Öffnet den Ordner im Finder",
+        "es": "Abre la carpeta en el Finder",
+        "fr": "Ouvre le dossier dans le Finder",
+        "ru": "Открывает папку в Finder"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "folder"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "@file:show-in-finder.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "smaller",
+      "title": {
+        "en": "Smaller",
+        "de": "Kleiner",
+        "es": "Más pequeño",
+        "fr": "Réduire",
+        "ru": "Уменьшить"
+      },
+      "summary": {
+        "en": "Makes the text smaller (⌘-); hold for the profile’s size",
+        "de": "Verkleinert die Schrift (⌘-); halten für die Größe des Profils",
+        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño del perfil",
+        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille du profil",
+        "ru": "Уменьшает шрифт (⌘-); удержание — размер из профиля"
+      },
+      "details": {
+        "en": "View › Make Text Smaller (⌘-), and View › Make Text Normal Size (⌘0) on hold. Works while iTerm2 is in front.",
+        "de": "View › Make Text Smaller (⌘-), beim Halten View › Make Text Normal Size (⌘0). Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Make Text Smaller (⌘-) y, al mantener pulsado, View › Make Text Normal Size (⌘0). Funciona cuando iTerm2 está delante.",
+        "fr": "View › Make Text Smaller (⌘-), et en maintenant View › Make Text Normal Size (⌘0). Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Make Text Smaller (⌘-), а при удержании — View › Make Text Normal Size (⌘0). Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes the text smaller",
+        "de": "Verkleinert die Schrift",
+        "es": "Reduce el texto",
+        "fr": "Réduit le texte",
+        "ru": "Уменьшает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the profile’s size",
+        "de": "Zurück zur Größe des Profils",
+        "es": "Vuelve al tamaño del perfil",
+        "fr": "Revient à la taille du profil",
+        "ru": "Возвращает размер из профиля"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "textformat.size.smaller"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 27,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 29,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "bigger",
+      "title": {
+        "en": "Bigger",
+        "de": "Größer",
+        "es": "Más grande",
+        "fr": "Agrandir",
+        "ru": "Увеличить"
+      },
+      "summary": {
+        "en": "Makes the text bigger (⌘+); hold for the profile’s size",
+        "de": "Vergrößert die Schrift (⌘+); halten für die Größe des Profils",
+        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño del perfil",
+        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille du profil",
+        "ru": "Увеличивает шрифт (⌘+); удержание — размер из профиля"
+      },
+      "details": {
+        "en": "View › Make Text Bigger (⌘+), and View › Make Text Normal Size (⌘0) on hold. Works while iTerm2 is in front.",
+        "de": "View › Make Text Bigger (⌘+), beim Halten View › Make Text Normal Size (⌘0). Funktioniert, wenn iTerm2 vorne ist.",
+        "es": "View › Make Text Bigger (⌘+) y, al mantener pulsado, View › Make Text Normal Size (⌘0). Funciona cuando iTerm2 está delante.",
+        "fr": "View › Make Text Bigger (⌘+), et en maintenant View › Make Text Normal Size (⌘0). Fonctionne quand iTerm2 est au premier plan.",
+        "ru": "View › Make Text Bigger (⌘+), а при удержании — View › Make Text Normal Size (⌘0). Работает, когда iTerm2 на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes the text bigger",
+        "de": "Vergrößert die Schrift",
+        "es": "Agranda el texto",
+        "fr": "Agrandit le texte",
+        "ru": "Увеличивает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the profile’s size",
+        "de": "Zurück zur Größe des Profils",
+        "es": "Vuelve al tamaño del perfil",
+        "fr": "Revient à la taille du profil",
+        "ru": "Возвращает размер из профиля"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "textformat.size.larger"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 69,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 29,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "profile-window",
+      "title": {
+        "en": "Profile Window",
+        "de": "Profilfenster",
+        "es": "Ventana de perfil",
+        "fr": "Fenêtre de profil",
+        "ru": "Окно профиля"
+      },
+      "summary": {
+        "en": "A new window with the iTerm2 profile you choose, from any app",
+        "de": "Ein neues Fenster mit dem iTerm2-Profil deiner Wahl, aus jeder App",
+        "es": "Una ventana nueva con el perfil de iTerm2 que elijas, desde cualquier app",
+        "fr": "Une nouvelle fenêtre avec le profil iTerm2 de votre choix, depuis n’importe quelle app",
+        "ru": "Новое окно с выбранным профилем iTerm2 из любого приложения"
+      },
+      "details": {
+        "en": "A server over SSH, a project’s shell: whatever the profile starts. Set its name, as in Settings › Profiles, on the first line of the button’s script. Starts iTerm2 if needed.",
+        "de": "Ein Server über SSH, die Shell eines Projekts: was das Profil startet. Seinen Namen wie in Settings › Profiles trägst du in der ersten Zeile des Skripts der Taste ein. Startet iTerm2 bei Bedarf.",
+        "es": "Un servidor por SSH, la shell de un proyecto: lo que inicie el perfil. Pon su nombre, como en Settings › Profiles, en la primera línea del script del botón. Abre iTerm2 si hace falta.",
+        "fr": "Un serveur en SSH, le shell d’un projet : ce que lance le profil. Indiquez son nom, comme dans Settings › Profiles, à la première ligne du script du bouton. Lance iTerm2 au besoin.",
+        "ru": "Сервер по SSH, оболочка проекта — всё, что запускает профиль. Его имя, как в Settings › Profiles, задайте в первой строке скрипта кнопки. При необходимости запускает iTerm2."
+      },
+      "tapAction": {
+        "en": "Opens a window with that profile",
+        "de": "Öffnet ein Fenster mit diesem Profil",
+        "es": "Abre una ventana con ese perfil",
+        "fr": "Ouvre une fenêtre avec ce profil",
+        "ru": "Открывает окно с этим профилем"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "person.crop.rectangle"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "profile=\"\"   # ← the name of an iTerm2 profile (Settings › Profiles), e.g. Work\n@file:profile-window.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "iTerm2",
+        "de": "iTerm2",
+        "es": "iTerm2",
+        "fr": "iTerm2",
+        "ru": "iTerm2"
+      },
+      "summary": {
+        "en": "Tabs, panes, profiles and search at a tap",
+        "de": "Tabs, Bereiche, Profile und Suche auf Knopfdruck",
+        "es": "Pestañas, paneles, perfiles y búsqueda con un toque",
+        "fr": "Onglets, panneaux, profils et recherche d’un toucher",
+        "ru": "Вкладки, панели, профили и поиск в одно касание"
+      },
+      "details": {
+        "en": "New Tab, New Window, Profile Window, the tab and split buttons, Finder Folder and Show in Finder work from any app; the rest, long presses included, while iTerm2 is in front. iTerm2’s menus are in English only.",
+        "de": "Neuer Tab, Neues Fenster, Profilfenster, die Tab- und Teilen-Tasten, Finder-Ordner und Im Finder anzeigen funktionieren aus jeder App; der Rest, auch das Halten, wenn iTerm2 vorne ist. Die Menüs von iTerm2 gibt es nur auf Englisch.",
+        "es": "Nueva pestaña, Nueva ventana, Ventana de perfil, los botones de pestañas y de dividir, Carpeta del Finder y Mostrar en el Finder funcionan desde cualquier app; el resto, también al mantener pulsado, cuando iTerm2 está delante. Los menús de iTerm2 solo están en inglés.",
+        "fr": "Nouvel onglet, Nouvelle fenêtre, Fenêtre de profil, les boutons d’onglets et de division, Dossier du Finder et Afficher dans le Finder fonctionnent depuis n’importe quelle app ; le reste, appuis longs compris, quand iTerm2 est au premier plan. Les menus d’iTerm2 sont uniquement en anglais.",
+        "ru": "«Новая вкладка», «Новое окно», «Окно профиля», кнопки вкладок и разделения, «Папка Finder» и «Показать в Finder» работают из любого приложения; остальное, включая удержание, — когда iTerm2 на переднем плане. Меню iTerm2 есть только на английском."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "new-tab",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "previous-tab",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "next-tab",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "new-window",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "split-right",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "split-down",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "next-pane",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "maximize-pane",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "find",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "open-quickly",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "instant-replay",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "toolbelt",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "finder-folder",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "show-in-finder",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "smaller",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "bigger",
+          "row": 3,
+          "col": 3
+        },
+        {
+          "button": "profile-window",
+          "row": 4,
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

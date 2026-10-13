@@ -1,0 +1,55 @@
+{
+  "id": "say-aloud",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Say Aloud…",
+    "de": "Vorlesen…",
+    "es": "Leer en voz alta…",
+    "fr": "Dire à voix haute…",
+    "ru": "Сказать вслух…"
+  },
+  "summary": {
+    "en": "Type on the phone and the Mac says it out loud",
+    "de": "Tippe auf dem Telefon – der Mac spricht es laut aus",
+    "es": "Escribe en el teléfono y el Mac lo dice en voz alta",
+    "fr": "Saisissez sur le téléphone : le Mac le dit à voix haute",
+    "ru": "Наберите текст на телефоне — Mac произнесёт его вслух"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. A voice for the text’s language from the ones on the Mac, up to about a minute of speech; the button waits until it ends.",
+    "de": "Nichts einzurichten. Eine Stimme in der Sprache des Textes aus denen auf dem Mac, bis etwa eine Minute lang; die Taste wartet, bis sie fertig ist.",
+    "es": "No hay nada que configurar. Una voz del idioma del texto entre las del Mac, hasta cerca de un minuto; el botón espera a que termine.",
+    "fr": "Rien à configurer. Une voix dans la langue du texte parmi celles du Mac, jusqu’à une minute environ ; le bouton attend la fin.",
+    "ru": "Настраивать ничего не нужно. Голос на языке текста из тех, что есть на Mac, примерно до минуты речи; кнопка ждёт, пока речь не закончится."
+  },
+  "tapAction": {
+    "en": "Asks what to say and the Mac speaks it",
+    "de": "Fragt, was gesagt werden soll, und der Mac spricht es",
+    "es": "Pregunta qué decir y el Mac lo pronuncia",
+    "fr": "Demande quoi dire et le Mac le prononce",
+    "ru": "Спрашивает, что сказать, и Mac произносит это"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "speaker.wave.2.fill"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:say.zsh"
+      }
+    },
+    "input": {
+      "question": "What should the Mac say?",
+      "placeholder": "Dinner is ready!",
+      "multiline": true
+    }
+  }
+}

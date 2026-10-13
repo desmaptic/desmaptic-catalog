@@ -1,0 +1,60 @@
+{
+  "id": "base64",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Base64",
+    "de": "Base64",
+    "es": "Base64",
+    "fr": "Base64",
+    "ru": "Base64"
+  },
+  "summary": {
+    "en": "Turns the text you copied on the Mac into Base64 and back",
+    "de": "Wandelt den auf dem Mac kopierten Text in Base64 um und zurück",
+    "es": "Convierte a Base64 el texto que copiaste en el Mac, y viceversa",
+    "fr": "Convertit en Base64 le texte copié sur le Mac, et inversement",
+    "ru": "Переводит скопированный на Mac текст в Base64 и обратно"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Encodes the text exactly as copied, as UTF-8; decodes URL-safe and unpadded Base64 too. Passwords from password managers, files and images are refused: the button flashes red.",
+    "de": "Kodiert den Text unverändert als UTF-8 und dekodiert auch URL-sicheres Base64 oder Base64 ohne Padding. Passwörter aus Passwortmanagern, Dateien und Bilder werden abgelehnt: Die Taste blinkt rot.",
+    "es": "Codifica el texto tal como se copió, en UTF-8, y decodifica también Base64 URL-safe o sin relleno. Rechaza contraseñas de gestores de contraseñas, archivos e imágenes: el botón parpadea en rojo.",
+    "fr": "Encode le texte tel quel, en UTF-8, et décode aussi le Base64 URL-safe ou sans remplissage. Les mots de passe d’un gestionnaire, les fichiers et les images sont refusés : le bouton clignote en rouge.",
+    "ru": "Кодирует текст как есть, в UTF-8, и декодирует также URL-safe Base64 и Base64 без «=» в конце. Пароли из менеджеров паролей, файлы и картинки не принимает — кнопка мигает красным."
+  },
+  "tapAction": {
+    "en": "Replaces the text on the Mac’s clipboard with its Base64",
+    "de": "Ersetzt den Text in der Zwischenablage des Mac durch sein Base64",
+    "es": "Sustituye el texto del portapapeles del Mac por su Base64",
+    "fr": "Remplace le texte du presse-papiers du Mac par son Base64",
+    "ru": "Заменяет текст в буфере обмена Mac на его Base64"
+  },
+  "holdAction": {
+    "en": "Turns the Base64 on the Mac’s clipboard back into text",
+    "de": "Wandelt das Base64 in der Zwischenablage des Mac zurück in Text",
+    "es": "Convierte de nuevo en texto el Base64 del portapapeles del Mac",
+    "fr": "Reconvertit en texte le Base64 du presse-papiers du Mac",
+    "ru": "Превращает Base64 в буфере обмена Mac обратно в текст"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "chevron.left.forwardslash.chevron.right"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "mode=encode\n@file:base64.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "mode=decode\n@file:base64.zsh"
+      }
+    }
+  }
+}

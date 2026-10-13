@@ -1,0 +1,49 @@
+{
+  "id": "snow",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Snow",
+    "de": "Schnee",
+    "es": "Nieve",
+    "fr": "Neige",
+    "ru": "Снег"
+  },
+  "summary": {
+    "en": "Lets it snow on the Mac’s screen",
+    "de": "Lässt es auf dem Mac-Bildschirm schneien",
+    "es": "Hace nevar en la pantalla del Mac",
+    "fr": "Fait neiger sur l’écran du Mac",
+    "ru": "Запускает снегопад на экране Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Soft flakes drift down over every display, above all windows; clicks go through them. It stops by itself after 10 minutes. The button turns icy blue while it snows.",
+    "de": "Weiche Flocken rieseln über jedes Display, über allen Fenstern; Klicks gehen hindurch. Nach 10 Minuten hört es von selbst auf. Die Taste wird eisblau, solange es schneit.",
+    "es": "Copos suaves caen sobre cada pantalla, por encima de todas las ventanas; los clics los atraviesan. Para sola a los 10 minutos. El botón se vuelve azul hielo mientras nieva.",
+    "fr": "De doux flocons tombent sur chaque écran, au-dessus de toutes les fenêtres ; les clics passent au travers. Cela s’arrête tout seul au bout de 10 minutes. Le bouton devient bleu glacier tant qu’il neige.",
+    "ru": "Мягкие хлопья падают на всех дисплеях поверх всех окон, клики проходят сквозь них. Через 10 минут снег прекращается сам. Пока идёт снег, кнопка становится ледяно-голубой."
+  },
+  "tapAction": {
+    "en": "Starts the snow; another tap stops it",
+    "de": "Lässt es schneien; erneutes Tippen beendet es",
+    "es": "Empieza a nevar; otro toque lo detiene",
+    "fr": "Fait tomber la neige ; un autre toucher l’arrête",
+    "ru": "Включает снег; повторное нажатие его останавливает"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "snowflake"
+      }
+    },
+    "color": "#8E8E93",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh"
+  }
+}

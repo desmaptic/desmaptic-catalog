@@ -1,0 +1,63 @@
+{
+  "id": "latest-download",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Latest Download",
+    "de": "Letzter Download",
+    "es": "Última descarga",
+    "fr": "Dernier téléchargé",
+    "ru": "Последняя загрузка"
+  },
+  "summary": {
+    "en": "Opens the file you downloaded last; hold to show it in Finder",
+    "de": "Öffnet die zuletzt heruntergeladene Datei; Halten zeigt sie im Finder",
+    "es": "Abre el último archivo descargado; mantén pulsado para verlo en el Finder",
+    "fr": "Ouvre le dernier fichier téléchargé ; maintenez pour l’afficher dans le Finder",
+    "ru": "Открывает последний скачанный файл; удержание покажет его в Finder"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Newest means the last to arrive in Downloads, whatever date the file carries; files still downloading are skipped. A folder, such as an unpacked archive, opens in Finder.",
+    "de": "Als neuestes gilt, was zuletzt in „Downloads“ gelandet ist, egal welches Datum die Datei trägt; laufende Downloads werden übersprungen. Ein Ordner, etwa ein entpacktes Archiv, öffnet sich im Finder.",
+    "es": "El más reciente es el último que llegó a Descargas, lleve la fecha que lleve el archivo; las descargas en curso se omiten. Una carpeta, como un archivo descomprimido, se abre en el Finder.",
+    "fr": "Le plus récent est le dernier arrivé dans Téléchargements, quelle que soit la date du fichier ; les téléchargements en cours sont ignorés. Un dossier, comme une archive décompressée, s’ouvre dans le Finder.",
+    "ru": "Самый новый — тот, что последним попал в «Загрузки», какая бы дата ни стояла у файла; то, что ещё скачивается, пропускается. Папка — например, распакованный архив — открывается в Finder."
+  },
+  "tapAction": {
+    "en": "Opens the newest item in Downloads",
+    "de": "Öffnet das neueste Objekt in „Downloads“",
+    "es": "Abre el elemento más reciente de Descargas",
+    "fr": "Ouvre l’élément le plus récent des Téléchargements",
+    "ru": "Открывает самый новый объект в «Загрузках»"
+  },
+  "holdAction": {
+    "en": "Shows the newest item in Finder",
+    "de": "Zeigt das neueste Objekt im Finder",
+    "es": "Muestra el elemento más reciente en el Finder",
+    "fr": "Affiche l’élément le plus récent dans le Finder",
+    "ru": "Показывает самый новый объект в Finder"
+  },
+  "permissions": [
+    "downloads"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "arrow.down.circle"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    }
+  }
+}

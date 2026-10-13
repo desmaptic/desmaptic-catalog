@@ -1,0 +1,588 @@
+{
+  "id": "music",
+  "revision": 7,
+  "name": {"en": "Music", "de": "Musik", "es": "Música", "fr": "Musique", "ru": "Музыка"},
+  "bundleIds": ["com.apple.Music"],
+  "category": "music",
+  "buttons": [
+    {
+      "id": "previous",
+      "title": {"en": "Previous Track", "de": "Vorheriger Titel", "es": "Pista anterior", "fr": "Piste précédente", "ru": "Предыдущая дорожка"},
+      "summary": {
+        "en": "Skips back to the previous song in Music",
+        "de": "Springt in Musik zum vorherigen Titel",
+        "es": "Vuelve a la canción anterior en Música",
+        "fr": "Revient au morceau précédent dans Musique",
+        "ru": "Переключает «Музыку» на предыдущую песню"
+      },
+      "details": {
+        "en": "Always the song before, even mid-song, where Music’s own ⏮ first goes back to the start. Works with Music in the background.",
+        "de": "Immer der Titel davor, auch mitten im Titel, wo die ⏮-Taste von Musik erst an den Anfang springt. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Siempre la canción anterior, también a mitad de canción, donde el ⏮ de Música vuelve antes al principio. Funciona con Música en segundo plano.",
+        "fr": "Toujours le morceau d’avant, même en plein morceau, là où le ⏮ de Musique revient d’abord au début. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Всегда предыдущая песня, даже с середины, где ⏮ самой «Музыки» сначала возвращает к началу. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Skips to the previous song",
+        "de": "Springt zum vorherigen Titel",
+        "es": "Salta a la canción anterior",
+        "fr": "Passe au morceau précédent",
+        "ru": "Включает предыдущую песню"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "backward.fill"}},
+        "color": "#FA2D48",
+        "command": {"shellCommand": {"command": "action=previous\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "play-pause",
+      "title": {"en": "Play/Pause", "de": "Play/Pause", "es": "Play/Pausa", "fr": "Lire/Pause", "ru": "Пуск/пауза"},
+      "summary": {
+        "en": "Plays or pauses Music",
+        "de": "Startet oder pausiert die Wiedergabe in Musik",
+        "es": "Inicia o pausa la reproducción en Música",
+        "fr": "Lance ou met en pause la lecture dans Musique",
+        "ru": "Запускает «Музыку» или ставит на паузу"
+      },
+      "details": {
+        "en": "Music’s own play button: it reaches Music even when another app has taken the Mac’s media keys, and works with Music in the background.",
+        "de": "Die Wiedergabetaste von Musik selbst: Sie erreicht Musik, auch wenn eine andere App die Medientasten des Mac übernommen hat, und funktioniert auch mit Musik im Hintergrund.",
+        "es": "El botón de reproducción de la propia Música: llega a Música aunque otra app se haya quedado con las teclas multimedia del Mac, y funciona con Música en segundo plano.",
+        "fr": "Le bouton lecture de Musique elle-même : il atteint Musique même quand une autre app a pris les touches multimédias du Mac, et fonctionne avec Musique en arrière-plan.",
+        "ru": "Кнопка воспроизведения самой «Музыки»: доходит до неё, даже когда медиаклавиши Mac забрало другое приложение, и работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Plays or pauses",
+        "de": "Spielt ab oder pausiert",
+        "es": "Reproduce o pausa",
+        "fr": "Lance ou met en pause la lecture",
+        "ru": "Запускает или ставит на паузу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "playpause.fill"}},
+        "color": "#FA2D48",
+        "command": {"shellCommand": {"command": "action=playpause\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "next",
+      "title": {"en": "Next Track", "de": "Nächster Titel", "es": "Pista siguiente", "fr": "Piste suivante", "ru": "Следующая дорожка"},
+      "summary": {
+        "en": "Skips to the next song in Music",
+        "de": "Springt in Musik zum nächsten Titel",
+        "es": "Pasa a la siguiente canción en Música",
+        "fr": "Passe au morceau suivant dans Musique",
+        "ru": "Переключает «Музыку» на следующую песню"
+      },
+      "details": {
+        "en": "Music has to be open — the button never starts it — but it may stay in the background.",
+        "de": "Musik muss geöffnet sein – die Taste startet die App nie –, darf aber im Hintergrund bleiben.",
+        "es": "Música tiene que estar abierta (el botón nunca la abre), pero puede quedarse en segundo plano.",
+        "fr": "Musique doit être ouverte (le bouton ne la lance jamais), mais peut rester en arrière-plan.",
+        "ru": "«Музыка» должна быть открыта — кнопка её не запускает, — но может оставаться в фоне."
+      },
+      "tapAction": {
+        "en": "Skips to the next song",
+        "de": "Springt zum nächsten Titel",
+        "es": "Salta a la siguiente canción",
+        "fr": "Passe au morceau suivant",
+        "ru": "Включает следующую песню"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "forward.fill"}},
+        "color": "#FA2D48",
+        "command": {"shellCommand": {"command": "action=next\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "volume-up",
+      "title": {"en": "Volume Up", "de": "Lauter", "es": "Subir volumen", "fr": "Plus fort", "ru": "Громче"},
+      "summary": {
+        "en": "Turns Music up, not the whole Mac",
+        "de": "Macht Musik lauter, nicht den ganzen Mac",
+        "es": "Sube el volumen de Música, no el de todo el Mac",
+        "fr": "Monte le volume de Musique, pas celui du Mac entier",
+        "ru": "Делает громче «Музыку», а не весь Mac"
+      },
+      "details": {
+        "en": "Music’s own volume, in steps of 10 up to its maximum; the Mac’s volume stays as it is. Works with Music in the background.",
+        "de": "Die Lautstärke von Musik selbst, in Zehnerschritten bis zum Maximum; die Lautstärke des Mac bleibt, wie sie ist. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "El volumen de la propia Música, en pasos de 10 hasta su máximo; el volumen del Mac no cambia. Funciona con Música en segundo plano.",
+        "fr": "Le volume de Musique elle-même, par pas de 10 jusqu’à son maximum ; celui du Mac ne change pas. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Громкость самой «Музыки», шагами по 10 до её максимума; громкость Mac не меняется. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Turns Music up by 10%",
+        "de": "Macht Musik um 10 % lauter",
+        "es": "Sube Música un 10 %",
+        "fr": "Monte Musique de 10 %",
+        "ru": "Делает «Музыку» громче на 10 %"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "speaker.plus.fill"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=volume-up\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "volume-down",
+      "title": {"en": "Volume Down", "de": "Leiser", "es": "Bajar volumen", "fr": "Moins fort", "ru": "Тише"},
+      "summary": {
+        "en": "Turns Music down, not the whole Mac",
+        "de": "Macht Musik leiser, nicht den ganzen Mac",
+        "es": "Baja el volumen de Música, no el de todo el Mac",
+        "fr": "Baisse le volume de Musique, pas celui du Mac entier",
+        "ru": "Делает тише «Музыку», а не весь Mac"
+      },
+      "details": {
+        "en": "Music’s own volume, in steps of 10: the songs get quieter, while a call or a video keeps its sound. Works with Music in the background.",
+        "de": "Die Lautstärke von Musik selbst, in Zehnerschritten: Die Titel werden leiser, der Ton eines Anrufs oder Videos bleibt, wie er ist. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "El volumen de la propia Música, en pasos de 10: las canciones bajan, y una llamada o un vídeo se siguen oyendo igual. Funciona con Música en segundo plano.",
+        "fr": "Le volume de Musique elle-même, par pas de 10 : les morceaux baissent, le son d’un appel ou d’une vidéo reste le même. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Громкость самой «Музыки», шагами по 10: песни становятся тише, а звук звонка или видео остаётся прежним. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Turns Music down by 10%",
+        "de": "Macht Musik um 10 % leiser",
+        "es": "Baja Música un 10 %",
+        "fr": "Baisse Musique de 10 %",
+        "ru": "Делает «Музыку» тише на 10 %"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "speaker.minus.fill"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=volume-down\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "shuffle",
+      "title": {"en": "Shuffle", "de": "Zufällige Wiedergabe", "es": "Aleatorio", "fr": "Ordre aléatoire", "ru": "Перемешать"},
+      "summary": {
+        "en": "Turns Music’s Shuffle on or off and shows whether it is on",
+        "de": "Schaltet die zufällige Wiedergabe in Musik ein oder aus und zeigt, ob sie an ist",
+        "es": "Activa o desactiva el modo aleatorio de Música y muestra si está activo",
+        "fr": "Active ou désactive l’ordre aléatoire de Musique et montre s’il est actif",
+        "ru": "Включает и выключает перемешивание в «Музыке» и показывает, включено ли оно"
+      },
+      "details": {
+        "en": "Red while Shuffle is on, also when it is switched in Music itself; grey when it is off or Music is closed. Works with Music in the background.",
+        "de": "Rot, solange die zufällige Wiedergabe an ist – auch wenn sie in Musik selbst umgeschaltet wird; grau, wenn sie aus oder Musik geschlossen ist. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Rojo mientras el modo aleatorio está activo, también si se cambia en la propia Música; gris si está desactivado o Música está cerrada. Funciona con Música en segundo plano.",
+        "fr": "Rouge tant que l’ordre aléatoire est actif, même s’il est changé dans Musique ; gris quand il est désactivé ou que Musique est fermée. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Красная, пока перемешивание включено, даже если его переключили в самой «Музыке»; серая, когда оно выключено или «Музыка» закрыта. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Turns Shuffle on or off",
+        "de": "Schaltet die zufällige Wiedergabe ein oder aus",
+        "es": "Activa o desactiva el modo aleatorio",
+        "fr": "Active ou désactive l’ordre aléatoire",
+        "ru": "Включает или выключает перемешивание"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "shuffle"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=shuffle\n@file:player/action.zsh"}},
+        "startupScript": "mode=shuffle\n@file:toggle/live.zsh"
+      }
+    },
+    {
+      "id": "repeat",
+      "title": {"en": "Repeat", "de": "Wiederholen", "es": "Repetir", "fr": "Répétition", "ru": "Повтор"},
+      "summary": {
+        "en": "Steps Music’s Repeat through Off, All and One and shows it",
+        "de": "Schaltet Wiederholen in Musik durch Aus, Alle und Eins und zeigt es an",
+        "es": "Cambia la repetición de Música entre Desactivado, Todo y Una, y la muestra",
+        "fr": "Fait passer la répétition de Musique par Désactivée, Tous et Morceau seul, et l’affiche",
+        "ru": "Переключает повтор в «Музыке»: выключен, всех, одной — и показывает его"
+      },
+      "details": {
+        "en": "Red while Repeat is on, with a 1 while it repeats one song, also when set in Music itself; grey when it is off or Music is closed. Works with Music in the background.",
+        "de": "Rot, solange Wiederholen an ist, mit einer 1 bei einem Titel – auch wenn es in Musik selbst eingestellt wird; grau, wenn es aus oder Musik geschlossen ist. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Rojo mientras la repetición está activa, con un 1 si repite una canción, también si se cambia en la propia Música; gris si está desactivada o Música está cerrada. Funciona con Música en segundo plano.",
+        "fr": "Rouge tant que la répétition est active, avec un 1 pour un seul morceau, même si elle est changée dans Musique ; gris sinon ou si Musique est fermée. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Красная, пока повтор включён, с цифрой 1 при повторе одной песни, даже если его переключили в самой «Музыке»; серая, когда он выключен или «Музыка» закрыта. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Switches Repeat to the next mode, as Music’s own button does",
+        "de": "Schaltet Wiederholen weiter, wie die Taste von Musik selbst",
+        "es": "Pasa la repetición al siguiente modo, como el botón de la propia Música",
+        "fr": "Passe la répétition au mode suivant, comme le bouton de Musique",
+        "ru": "Переключает повтор на следующий режим, как кнопка самой «Музыки»"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "repeat"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=repeat\n@file:player/action.zsh"}},
+        "startupScript": "mode=repeat\n@file:toggle/live.zsh"
+      }
+    },
+    {
+      "id": "favorite",
+      "title": {"en": "Favorite", "de": "Favorit", "es": "Favorita", "fr": "Favori", "ru": "Избранное"},
+      "summary": {
+        "en": "Marks the song playing in Music as a favorite, or undoes it",
+        "de": "Markiert den laufenden Titel in Musik als Favorit oder widerruft es",
+        "es": "Añade a favoritas la canción que suena en Música, o la quita",
+        "fr": "Ajoute aux favoris le morceau en cours dans Musique, ou l’en retire",
+        "ru": "Добавляет песню, которая играет в «Музыке», в Избранное или убирает её оттуда"
+      },
+      "details": {
+        "en": "Music’s star: filled and red while the song playing is a favorite; grey when it is not or nothing plays. Works with Music in the background.",
+        "de": "Der Stern von Musik: gefüllt und rot, solange der laufende Titel ein Favorit ist; grau, wenn nicht oder nichts läuft. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "La estrella de Música: rellena y roja mientras la canción que suena es favorita; gris si no lo es o no suena nada. Funciona con Música en segundo plano.",
+        "fr": "L’étoile de Musique : pleine et rouge tant que le morceau en cours est un favori ; grise sinon ou si rien ne joue. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Звёздочка «Музыки»: закрашенная и красная, пока играющая песня в Избранном; серая, если нет или ничего не играет. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Marks the song as a favorite or undoes it",
+        "de": "Markiert den Titel als Favorit oder widerruft es",
+        "es": "Añade la canción a favoritas o la quita",
+        "fr": "Ajoute le morceau aux favoris ou l’en retire",
+        "ru": "Добавляет песню в Избранное или убирает её"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "star"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=favorite\n@file:player/action.zsh"}},
+        "startupScript": "mode=favorite\n@file:toggle/live.zsh"
+      }
+    },
+    {
+      "id": "favorite-songs",
+      "title": {"en": "Favorite Songs", "de": "Favoriten", "es": "Canciones favoritas", "fr": "Morceaux favoris", "ru": "Избранные песни"},
+      "summary": {
+        "en": "Plays Favorite Songs, Music’s playlist of the songs marked with the star",
+        "de": "Spielt die Playlist von Musik mit den Titeln, die mit dem Stern markiert sind",
+        "es": "Reproduce la playlist de Música con las canciones marcadas con la estrella",
+        "fr": "Lance la playlist de Musique des morceaux marqués d’une étoile",
+        "ru": "Включает плейлист «Музыки» с песнями, отмеченными звёздочкой"
+      },
+      "details": {
+        "en": "The playlist Music fills by itself as songs get the star. Works with Music in the background.",
+        "de": "Die Playlist, die Musik selbst füllt, sobald ein Titel den Stern bekommt. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "La playlist que Música llena sola cuando una canción recibe la estrella. Funciona con Música en segundo plano.",
+        "fr": "La playlist que Musique remplit d’elle-même quand un morceau reçoit l’étoile. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Плейлист, который «Музыка» сама пополняет песнями со звёздочкой. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Plays your favorite songs",
+        "de": "Spielt die Favoriten ab",
+        "es": "Reproduce las canciones favoritas",
+        "fr": "Lance les morceaux favoris",
+        "ru": "Включает избранные песни"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "music.note.list"}},
+        "color": "#FF375F",
+        "command": {"shellCommand": {"command": "action=favorite-songs\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "play-playlist",
+      "title": {"en": "Play Playlist", "de": "Playlist abspielen", "es": "Reproducir playlist", "fr": "Lire la playlist", "ru": "Включить плейлист"},
+      "summary": {
+        "en": "Plays your playlist in Music",
+        "de": "Spielt deine Playlist in Musik ab",
+        "es": "Reproduce tu playlist en Música",
+        "fr": "Lance votre playlist dans Musique",
+        "ru": "Включает ваш плейлист в «Музыке»"
+      },
+      "details": {
+        "en": "Write the playlist’s name in the first line of the button’s script: playlist=\"Focus\". Any playlist of your library, smart ones too. Works with Music in the background.",
+        "de": "Schreib den Namen der Playlist in die erste Zeile des Skripts der Taste: playlist=\"Focus\". Jede Playlist deiner Mediathek, auch intelligente. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Escribe el nombre de la playlist en la primera línea del script del botón: playlist=\"Focus\". Cualquier playlist de tu biblioteca, también las inteligentes. Funciona con Música en segundo plano.",
+        "fr": "Écrivez le nom de la playlist à la première ligne du script du bouton : playlist=\"Focus\". Toute playlist de votre bibliothèque, intelligentes comprises. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Впишите имя плейлиста в первую строку скрипта кнопки: playlist=\"Focus\". Любой плейлист медиатеки, смарт-плейлисты тоже. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Plays the playlist",
+        "de": "Spielt die Playlist ab",
+        "es": "Reproduce la playlist",
+        "fr": "Lance la playlist",
+        "ru": "Включает плейлист"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "music.quarternote.3"}},
+        "color": "#FF375F",
+        "command": {"shellCommand": {"command": "playlist=\"\"   # ← the playlist to play, as Music lists it, for example playlist=\"Focus\"\naction=playlist\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "dislike",
+      "title": {"en": "Dislike & Skip", "de": "Gefällt mir nicht, weiter", "es": "No me gusta y saltar", "fr": "Je n’aime pas, suivant", "ru": "Не нравится, дальше"},
+      "summary": {
+        "en": "Marks the song playing in Music as disliked and skips to the next",
+        "de": "Markiert den laufenden Titel in Musik mit „Gefällt mir nicht“ und springt zum nächsten",
+        "es": "Marca con «No me gusta» la canción que suena en Música y pasa a la siguiente",
+        "fr": "Marque « Je n’aime pas » le morceau en cours dans Musique et passe au suivant",
+        "ru": "Отмечает песню, которая играет в «Музыке», как «Не нравится» и включает следующую"
+      },
+      "details": {
+        "en": "Music’s Suggest Less: the song is marked as disliked, so Music suggests less like it, and the next one plays. Undo it in Music itself. Works with Music in the background.",
+        "de": "„Weniger vorschlagen“ von Musik: Der Titel bekommt „Gefällt mir nicht“, Musik schlägt weniger Ähnliches vor, und der nächste läuft. Rückgängig in Musik selbst. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "«Sugerir menos» de Música: la canción queda marcada con «No me gusta», Música sugiere menos parecidas y suena la siguiente. Se deshace en la propia Música. Funciona con Música en segundo plano.",
+        "fr": "« Suggérer moins souvent » de Musique : le morceau est marqué « Je n’aime pas », Musique en suggère moins de semblables et le suivant démarre. S’annule dans Musique. Fonctionne avec Musique en arrière-plan.",
+        "ru": "«Предлагать меньше» в «Музыке»: песня отмечается как «Не нравится», «Музыка» реже предлагает похожие, и играет следующая. Отменить — в самой «Музыке». Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Marks the song as disliked and skips it",
+        "de": "Markiert den Titel mit „Gefällt mir nicht“ und überspringt ihn",
+        "es": "Marca la canción con «No me gusta» y la salta",
+        "fr": "Marque le morceau « Je n’aime pas » et le passe",
+        "ru": "Отмечает песню «Не нравится» и пропускает её"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "hand.thumbsdown"}},
+        "color": "#FA2D48",
+        "command": {"shellCommand": {"command": "action=dislike\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "airplay-speaker",
+      "title": {"en": "AirPlay Speaker", "de": "AirPlay-Lautsprecher", "es": "Altavoz AirPlay", "fr": "Enceinte AirPlay", "ru": "Колонка AirPlay"},
+      "summary": {
+        "en": "Sends Music to your AirPlay speaker; hold to bring it back to the Mac",
+        "de": "Schickt Musik an deinen AirPlay-Lautsprecher; Halten holt sie zurück auf den Mac",
+        "es": "Envía Música a tu altavoz AirPlay; mantén pulsado para volver al Mac",
+        "fr": "Envoie Musique vers votre enceinte AirPlay ; maintenez pour revenir au Mac",
+        "ru": "Выводит «Музыку» на вашу колонку AirPlay; удержание — вернуть звук на Mac"
+      },
+      "details": {
+        "en": "Write the speaker’s name, as Music shows it under AirPlay, in the first line of the button’s script: speaker=\"Living Room\". Music then plays only there. Works with Music in the background.",
+        "de": "Schreib den Namen des Lautsprechers, wie Musik ihn bei AirPlay zeigt, in die erste Zeile des Skripts der Taste: speaker=\"Living Room\". Musik spielt dann nur dort. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Escribe el nombre del altavoz, tal como Música lo muestra en AirPlay, en la primera línea del script del botón: speaker=\"Living Room\". Música suena entonces solo ahí. Funciona con Música en segundo plano.",
+        "fr": "Écrivez le nom de l’enceinte, tel que Musique l’affiche sous AirPlay, à la première ligne du script du bouton : speaker=\"Living Room\". Musique ne joue alors que là. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Впишите имя колонки, как «Музыка» показывает его в AirPlay, в первую строку скрипта кнопки: speaker=\"Living Room\". «Музыка» будет играть только на ней. Работает, когда «Музыка» в фоне."
+      },
+      "tapAction": {
+        "en": "Sends Music’s sound to the speaker",
+        "de": "Schickt den Ton von Musik an den Lautsprecher",
+        "es": "Envía el sonido de Música al altavoz",
+        "fr": "Envoie le son de Musique vers l’enceinte",
+        "ru": "Выводит звук «Музыки» на колонку"
+      },
+      "holdAction": {
+        "en": "Brings Music’s sound back to the Mac",
+        "de": "Holt den Ton von Musik zurück auf den Mac",
+        "es": "Devuelve el sonido de Música al Mac",
+        "fr": "Ramène le son de Musique sur le Mac",
+        "ru": "Возвращает звук «Музыки» на Mac"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "airplayaudio"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "speaker=\"\"   # ← the AirPlay speaker, as Music shows it, for example speaker=\"Living Room\"\naction=airplay\n@file:player/action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=computer\n@file:player/action.zsh"}}
+      }
+    },
+    {
+      "id": "current-song",
+      "title": {"en": "Current Song", "de": "Aktueller Titel", "es": "Canción actual", "fr": "Morceau en cours", "ru": "Текущая песня"},
+      "summary": {
+        "en": "Shows the song that plays in Music’s window (⌘L)",
+        "de": "Zeigt den laufenden Titel im Fenster von Musik (⌘L)",
+        "es": "Muestra la canción que suena en la ventana de Música (⌘L)",
+        "fr": "Montre le morceau en cours dans la fenêtre de Musique (⌘L)",
+        "ru": "Показывает играющую песню в окне «Музыки» (⌘L)"
+      },
+      "details": {
+        "en": "Controls › Go to Current Song (⌘L): Music’s window jumps to the song that plays. Works while Music is in front.",
+        "de": "Steuerung › Zum aktuellen Titel (⌘L): Das Fenster von Musik springt zum laufenden Titel. Funktioniert, wenn Musik vorne ist.",
+        "es": "Controles › Ir a la canción actual (⌘L): la ventana de Música salta a la canción que suena. Funciona cuando Música está delante.",
+        "fr": "Commandes › Aller au morceau à l’écoute (⌘L) : la fenêtre de Musique va au morceau en cours. Fonctionne quand Musique est au premier plan.",
+        "ru": "Управление › Перейти к текущей песне (⌘L): окно «Музыки» переходит к играющей песне. Работает, когда «Музыка» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Jumps to the song that plays",
+        "de": "Springt zum laufenden Titel",
+        "es": "Salta a la canción que suena",
+        "fr": "Va au morceau en cours",
+        "ru": "Переходит к играющей песне"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "scope"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "lyrics",
+      "title": {"en": "Lyrics", "de": "Liedtext", "es": "Letra", "fr": "Paroles", "ru": "Текст песни"},
+      "summary": {
+        "en": "Shows or hides the song’s lyrics in Music (⌃⌘U)",
+        "de": "Blendet in Musik den Liedtext ein oder aus (⌃⌘U)",
+        "es": "Muestra u oculta la letra de la canción en Música (⌃⌘U)",
+        "fr": "Affiche ou masque les paroles du morceau dans Musique (⌃⌘U)",
+        "ru": "Показывает или скрывает текст песни в «Музыке» (⌃⌘U)"
+      },
+      "details": {
+        "en": "View › Show Lyrics (⌃⌘U): the song’s lyrics beside the list, when it has them. Works while Music is in front.",
+        "de": "Darstellung › Liedtexte anzeigen (⌃⌘U): der Liedtext des Titels neben der Liste, wenn es einen gibt. Funktioniert, wenn Musik vorne ist.",
+        "es": "Visualización › Mostrar letra (⌃⌘U): la letra de la canción junto a la lista, si la tiene. Funciona cuando Música está delante.",
+        "fr": "Présentation › Afficher les paroles (⌃⌘U) : les paroles du morceau à côté de la liste, s’il en a. Fonctionne quand Musique est au premier plan.",
+        "ru": "Вид › Показать текст песни (⌃⌘U): текст песни рядом со списком, если он есть. Работает, когда «Музыка» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the lyrics",
+        "de": "Blendet den Liedtext ein oder aus",
+        "es": "Muestra u oculta la letra",
+        "fr": "Affiche ou masque les paroles",
+        "ru": "Показывает или скрывает текст"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "quote.bubble.fill"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 32, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "search",
+      "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
+      "summary": {
+        "en": "Jumps to Music’s search field (⌘F)",
+        "de": "Springt ins Suchfeld von Musik (⌘F)",
+        "es": "Va al campo de búsqueda de Música (⌘F)",
+        "fr": "Va dans le champ de recherche de Musique (⌘F)",
+        "ru": "Переходит в поле поиска «Музыки» (⌘F)"
+      },
+      "details": {
+        "en": "Go to Search (⌘F): the cursor lands in Music’s search field, ready to type on the Mac. Works while Music is in front.",
+        "de": "Zur Suche (⌘F): Der Cursor landet im Suchfeld von Musik, bereit zum Tippen am Mac. Funktioniert, wenn Musik vorne ist.",
+        "es": "Ir a la búsqueda (⌘F): el cursor queda en el campo de búsqueda de Música, listo para escribir en el Mac. Funciona cuando Música está delante.",
+        "fr": "Accéder à Recherche (⌘F) : le curseur se place dans le champ de recherche de Musique, prêt pour la saisie sur le Mac. Fonctionne quand Musique est au premier plan.",
+        "ru": "Перейти к поиску (⌘F): курсор встаёт в поле поиска «Музыки» — можно печатать на Mac. Работает, когда «Музыка» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Music’s search",
+        "de": "Öffnet die Suche von Musik",
+        "es": "Abre la búsqueda de Música",
+        "fr": "Ouvre la recherche de Musique",
+        "ru": "Открывает поиск «Музыки»"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "playing-next",
+      "title": {"en": "Playing Next", "de": "Als Nächstes", "es": "A continuación", "fr": "File d’attente", "ru": "На очереди"},
+      "summary": {
+        "en": "Shows or hides the songs coming next in Music (⌥⌘U)",
+        "de": "Blendet in Musik die kommenden Titel ein oder aus (⌥⌘U)",
+        "es": "Muestra u oculta las canciones que vienen en Música (⌥⌘U)",
+        "fr": "Affiche ou masque les morceaux à venir dans Musique (⌥⌘U)",
+        "ru": "Показывает или скрывает песни, которые будут дальше в «Музыке» (⌥⌘U)"
+      },
+      "details": {
+        "en": "View › Show Playing Next (⌥⌘U): the songs to come, beside the list. Works while Music is in front.",
+        "de": "Darstellung › „Nächster Titel“ einblenden (⌥⌘U): die kommenden Titel neben der Liste. Funktioniert, wenn Musik vorne ist.",
+        "es": "Visualización › Mostrar a continuación (⌥⌘U): las canciones que vienen, junto a la lista. Funciona cuando Música está delante.",
+        "fr": "Présentation › Afficher la file d’attente (⌥⌘U) : les morceaux à venir, à côté de la liste. Fonctionne quand Musique est au premier plan.",
+        "ru": "Вид › Показать список «На очереди» (⌥⌘U): песни, которые будут дальше, рядом со списком. Работает, когда «Музыка» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the queue",
+        "de": "Blendet die kommenden Titel ein oder aus",
+        "es": "Muestra u oculta la cola",
+        "fr": "Affiche ou masque la file d’attente",
+        "ru": "Показывает или скрывает очередь"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "list.bullet"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 32, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "mini-player",
+      "title": {"en": "MiniPlayer", "de": "MiniPlayer", "es": "Mini reproductor", "fr": "Mini-lecteur", "ru": "Мини-плеер"},
+      "summary": {
+        "en": "Opens or closes Music’s small player window (⌥⌘M)",
+        "de": "Öffnet oder schließt das kleine Wiedergabefenster von Musik (⌥⌘M)",
+        "es": "Abre o cierra la ventana pequeña de reproducción de Música (⌥⌘M)",
+        "fr": "Ouvre ou ferme la petite fenêtre de lecture de Musique (⌥⌘M)",
+        "ru": "Открывает или закрывает маленькое окно плеера «Музыки» (⌥⌘M)"
+      },
+      "details": {
+        "en": "Window › MiniPlayer (⌥⌘M): a small window with the song and its controls, beside the main one. Works while Music is in front.",
+        "de": "Fenster › MiniPlayer (⌥⌘M): ein kleines Fenster mit dem Titel und seinen Tasten, neben dem Hauptfenster. Funktioniert, wenn Musik vorne ist.",
+        "es": "Ventana › Minirreproductor (⌥⌘M): una ventana pequeña con la canción y sus controles, junto a la principal. Funciona cuando Música está delante.",
+        "fr": "Fenêtre › Mini-lecteur (⌥⌘M) : une petite fenêtre avec le morceau et ses commandes, à côté de la fenêtre principale. Fonctionne quand Musique est au premier plan.",
+        "ru": "Окно › Мини-плеер (⌥⌘M): маленькое окно с песней и кнопками управления рядом с основным. Работает, когда «Музыка» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens or closes the MiniPlayer",
+        "de": "Öffnet oder schließt den MiniPlayer",
+        "es": "Abre o cierra el minirreproductor",
+        "fr": "Ouvre ou ferme le mini-lecteur",
+        "ru": "Открывает или закрывает мини-плеер"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pip"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 46, "modifiers": ["option", "command"]}}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Music", "de": "Musik", "es": "Música", "fr": "Musique", "ru": "Музыка"},
+      "summary": {
+        "en": "Play a playlist, skip, shuffle, rate, pick a speaker and set the volume from your phone",
+        "de": "Playlists abspielen, springen, mischen, bewerten, Lautsprecher wählen und Lautstärke vom Telefon aus",
+        "es": "Reproduce una playlist, salta, mezcla, valora, elige altavoz y ajusta el volumen desde el teléfono",
+        "fr": "Playlists, morceaux, aléatoire, favoris, enceinte et volume depuis votre téléphone",
+        "ru": "Плейлисты, треки, перемешивание, оценки, колонка и громкость с телефона"
+      },
+      "details": {
+        "en": "Buttons that play or change a setting work with Music in the background; those that show part of Music’s window need Music in front. Play Playlist and AirPlay Speaker take a name in the first line of their script.",
+        "de": "Tasten, die abspielen oder etwas einstellen, funktionieren auch mit Musik im Hintergrund; die, die einen Teil des Fensters von Musik zeigen, brauchen Musik vorne. „Playlist abspielen“ und „AirPlay-Lautsprecher“ brauchen einen Namen in der ersten Zeile ihres Skripts.",
+        "es": "Los botones que reproducen o cambian un ajuste funcionan con Música en segundo plano; los que muestran una parte de la ventana de Música necesitan Música delante. Reproducir playlist y Altavoz AirPlay necesitan un nombre en la primera línea de su script.",
+        "fr": "Les boutons qui lancent la lecture ou changent un réglage fonctionnent avec Musique en arrière-plan ; ceux qui affichent une partie de la fenêtre de Musique demandent Musique au premier plan. Lire la playlist et Enceinte AirPlay demandent un nom à la première ligne de leur script.",
+        "ru": "Кнопки, которые включают музыку или меняют настройку, работают, когда «Музыка» в фоне; те, что показывают часть окна «Музыки», — когда она на переднем плане. «Включить плейлист» и «Колонка AirPlay» ждут имя в первой строке своего скрипта."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "previous", "row": 0, "col": 0},
+        {"button": "play-pause", "row": 0, "col": 1},
+        {"button": "next", "row": 0, "col": 2},
+        {"button": "volume-up", "row": 0, "col": 3},
+        {"widget": "now-playing", "row": 1, "col": 0},
+        {"button": "shuffle", "row": 1, "col": 2},
+        {"button": "volume-down", "row": 1, "col": 3},
+        {"button": "repeat", "row": 2, "col": 2},
+        {"button": "favorite", "row": 2, "col": 3},
+        {"button": "favorite-songs", "row": 3, "col": 0},
+        {"button": "current-song", "row": 3, "col": 1},
+        {"button": "lyrics", "row": 3, "col": 2},
+        {"button": "search", "row": 3, "col": 3},
+        {"button": "playing-next", "row": 4, "col": 0},
+        {"button": "mini-player", "row": 4, "col": 1},
+        {"button": "dislike", "row": 4, "col": 2},
+        {"button": "play-playlist", "row": 4, "col": 3},
+        {"button": "airplay-speaker", "row": 5, "col": 0}
+      ]
+    }
+  ]
+}

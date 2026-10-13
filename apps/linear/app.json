@@ -1,0 +1,646 @@
+{
+  "id": "linear",
+  "revision": 6,
+  "name": "Linear",
+  "bundleIds": ["com.linear"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "inbox",
+      "title": {"en": "Inbox", "de": "Posteingang", "es": "Bandeja de entrada", "fr": "Boîte de réception", "ru": "Входящие"},
+      "summary": {
+        "en": "Linear’s unread badge on your phone; tap for the Inbox",
+        "de": "Das Ungelesen-Kennzeichen von Linear auf dem Telefon; tippen öffnet die Inbox",
+        "es": "El globo de no leídos de Linear en el teléfono; toca para abrir Inbox",
+        "fr": "La pastille des non-lus de Linear sur le téléphone ; touchez pour ouvrir l’Inbox",
+        "ru": "Наклейка непрочитанного Linear на телефоне; нажатие открывает Inbox"
+      },
+      "details": {
+        "en": "The badge on Linear’s Dock icon: a dot for unread notifications, their number if Preferences › App notification badge is Unread count. A dash: Linear is closed, and a tap starts it.",
+        "de": "Das Kennzeichen am Dock-Symbol von Linear: ein Punkt für ungelesene Benachrichtigungen, ihre Zahl bei Preferences › App notification badge › Unread count. Ein Strich: Linear ist geschlossen, Tippen startet es.",
+        "es": "El globo del icono de Linear en el Dock: un punto si hay notificaciones sin leer, su número si Preferences › App notification badge es Unread count. Una raya: Linear está cerrado, y al tocar se abre.",
+        "fr": "La pastille de l’icône de Linear dans le Dock : un point pour des notifications non lues, leur nombre si Preferences › App notification badge vaut Unread count. Un tiret : Linear est fermé, et toucher le lance.",
+        "ru": "Наклейка на значке Linear в Dock: точка — есть непрочитанные уведомления, их число — если в Preferences › App notification badge выбрано Unread count. Прочерк — Linear закрыт, нажатие запустит его."
+      },
+      "tapAction": {
+        "en": "Opens the Inbox in a new tab, from any app",
+        "de": "Öffnet die Inbox in einem neuen Tab, aus jeder App",
+        "es": "Abre Inbox en una pestaña nueva, desde cualquier app",
+        "fr": "Ouvre l’Inbox dans un nouvel onglet, depuis n’importe quelle app",
+        "ru": "Открывает Inbox в новой вкладке из любого приложения"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "tray"}},
+        "color": "#5E6AD2",
+        "command": {"shellCommand": {"command": "action=inbox\n@file:link.zsh"}},
+        "startupScript": "@file:badge/startup.zsh",
+        "svgFace": {"source": "@file:badge/rest.svg"}
+      },
+      "demoFace": {"source": "@file:badge/demo.svg"}
+    },
+    {
+      "id": "my-issues",
+      "title": {"en": "My Issues", "de": "Meine Issues", "es": "Mis issues", "fr": "Mes issues", "ru": "Мои задачи"},
+      "summary": {
+        "en": "The issues assigned to you",
+        "de": "Die Issues, die dir zugewiesen sind",
+        "es": "Los issues asignados a ti",
+        "fr": "Les issues qui vous sont assignées",
+        "ru": "Задачи, назначенные вам"
+      },
+      "details": {
+        "en": "Linear’s My issues: the issues assigned to you, with tabs for the ones you created or subscribed to. Opens in a new tab, from any app, and starts Linear if it is closed.",
+        "de": "Die Ansicht My issues von Linear: die dir zugewiesenen Issues, mit Tabs für die von dir erstellten oder abonnierten. Öffnet sich in einem neuen Tab, aus jeder App, und startet Linear, wenn es geschlossen ist.",
+        "es": "La vista My issues de Linear: los issues asignados a ti, con pestañas para los que creaste o a los que te suscribiste. Se abre en una pestaña nueva, desde cualquier app, y abre Linear si está cerrado.",
+        "fr": "La vue My issues de Linear : les issues qui vous sont assignées, avec des onglets pour celles que vous avez créées ou suivez. S’ouvre dans un nouvel onglet, depuis n’importe quelle app, et lance Linear s’il est fermé.",
+        "ru": "Раздел My issues в Linear: задачи, назначенные вам, и вкладки с созданными вами и теми, на которые вы подписаны. Открывается в новой вкладке, из любого приложения, и запускает Linear, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens My issues",
+        "de": "Öffnet My issues",
+        "es": "Abre My issues",
+        "fr": "Ouvre My issues",
+        "ru": "Открывает My issues"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "person.crop.circle"}},
+        "color": "#5E6AD2",
+        "command": {"shellCommand": {"command": "action=my-issues\n@file:link.zsh"}}
+      }
+    },
+    {
+      "id": "new-issue",
+      "title": {"en": "New Issue", "de": "Neues Issue", "es": "Nuevo issue", "fr": "Nouvelle issue", "ru": "Новая задача"},
+      "summary": {
+        "en": "Opens the new issue form; hold for a new project",
+        "de": "Öffnet das Formular für ein neues Issue; halten für ein neues Projekt",
+        "es": "Abre el formulario de issue nuevo; mantén pulsado para un proyecto nuevo",
+        "fr": "Ouvre le formulaire de nouvelle issue ; maintenez pour un nouveau projet",
+        "ru": "Открывает форму новой задачи; удержание — нового проекта"
+      },
+      "details": {
+        "en": "Clicks File › New › Issue… in Linear’s menu, so any keyboard layout will do, even while you type. Nothing is created until you press Create issue. Works while Linear is in front.",
+        "de": "Klickt im Menü von Linear auf File › New › Issue…, daher passt jede Tastaturbelegung, auch beim Tippen. Angelegt wird erst mit Create issue. Funktioniert, wenn Linear vorne ist.",
+        "es": "Hace clic en File › New › Issue… en el menú de Linear, así que sirve cualquier distribución de teclado, incluso mientras escribes. No se crea nada hasta que pulses Create issue. Funciona cuando Linear está delante.",
+        "fr": "Clique sur File › New › Issue… dans le menu de Linear : toute disposition de clavier convient, même pendant la saisie. Rien n’est créé avant que vous cliquiez sur Create issue. Fonctionne quand Linear est au premier plan.",
+        "ru": "Нажимает File › New › Issue… в меню Linear, поэтому подойдёт любая раскладка, даже во время набора. Задача появится, только когда вы нажмёте Create issue. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the new issue form",
+        "de": "Öffnet das Formular für ein neues Issue",
+        "es": "Abre el formulario de issue nuevo",
+        "fr": "Ouvre le formulaire de nouvelle issue",
+        "ru": "Открывает форму новой задачи"
+      },
+      "holdAction": {
+        "en": "Opens the new project form (File › New › Project…)",
+        "de": "Öffnet das Formular für ein neues Projekt (File › New › Project…)",
+        "es": "Abre el formulario de proyecto nuevo (File › New › Project…)",
+        "fr": "Ouvre le formulaire de nouveau projet (File › New › Project…)",
+        "ru": "Открывает форму нового проекта (File › New › Project…)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.and.pencil"}},
+        "color": "#4CB782",
+        "command": {"shellCommand": {"command": "action=new-issue\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=new-project\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "command-menu",
+      "title": {"en": "Command Menu", "de": "Befehlsmenü", "es": "Menú de comandos", "fr": "Menu de commandes", "ru": "Меню команд"},
+      "summary": {
+        "en": "Runs any Linear action by name (⌘K)",
+        "de": "Führt jede Linear-Aktion über ihren Namen aus (⌘K)",
+        "es": "Ejecuta cualquier acción de Linear por su nombre (⌘K)",
+        "fr": "Lance n’importe quelle action de Linear par son nom (⌘K)",
+        "ru": "Запускает любое действие Linear по названию (⌘K)"
+      },
+      "details": {
+        "en": "Type part of an action — change status, go to a team, copy a link — and press Return; with an issue open, the actions are for it. Works while Linear is in front.",
+        "de": "Gib einen Teil einer Aktion ein – Status ändern, zu einem Team wechseln, Link kopieren – und drück Return; bei offenem Issue gelten die Aktionen ihm. Funktioniert, wenn Linear vorne ist.",
+        "es": "Escribe parte de una acción —cambiar el estado, ir a un equipo, copiar un enlace— y pulsa Retorno; con un issue abierto, las acciones son para él. Funciona cuando Linear está delante.",
+        "fr": "Tapez une partie d’une action — changer le statut, aller à une équipe, copier un lien — puis appuyez sur Retour ; avec une issue ouverte, les actions la concernent. Fonctionne quand Linear est au premier plan.",
+        "ru": "Наберите часть названия действия — сменить статус, перейти в команду, скопировать ссылку — и нажмите Return; при открытой задаче действия относятся к ней. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the command menu",
+        "de": "Öffnet das Befehlsmenü",
+        "es": "Abre el menú de comandos",
+        "fr": "Ouvre le menu de commandes",
+        "ru": "Открывает меню команд"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#26B5CE",
+        "command": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "projects",
+      "title": {"en": "Projects", "de": "Projekte", "es": "Proyectos", "fr": "Projets", "ru": "Проекты"},
+      "summary": {
+        "en": "Every project of the workspace",
+        "de": "Alle Projekte des Workspace",
+        "es": "Todos los proyectos del espacio de trabajo",
+        "fr": "Tous les projets de l’espace de travail",
+        "ru": "Все проекты рабочего пространства"
+      },
+      "details": {
+        "en": "Linear’s Projects page: every project of the workspace, with its lead, status and progress. Opens in a new tab, from any app, and starts Linear if it is closed.",
+        "de": "Die Seite Projects von Linear: alle Projekte des Workspace mit Lead, Status und Fortschritt. Öffnet sich in einem neuen Tab, aus jeder App, und startet Linear, wenn es geschlossen ist.",
+        "es": "La página Projects de Linear: todos los proyectos del espacio de trabajo, con responsable, estado y avance. Se abre en una pestaña nueva, desde cualquier app, y abre Linear si está cerrado.",
+        "fr": "La page Projects de Linear : tous les projets de l’espace de travail, avec responsable, statut et avancement. S’ouvre dans un nouvel onglet, depuis n’importe quelle app, et lance Linear s’il est fermé.",
+        "ru": "Страница Projects в Linear: все проекты рабочего пространства — ответственный, статус, прогресс. Открывается в новой вкладке, из любого приложения, и запускает Linear, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens Projects",
+        "de": "Öffnet Projects",
+        "es": "Abre Projects",
+        "fr": "Ouvre Projects",
+        "ru": "Открывает Projects"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "cube"}},
+        "color": "#5E6AD2",
+        "command": {"shellCommand": {"command": "action=projects\n@file:link.zsh"}}
+      }
+    },
+    {
+      "id": "views",
+      "title": {"en": "Views", "de": "Ansichten", "es": "Vistas", "fr": "Vues", "ru": "Views"},
+      "summary": {
+        "en": "Your saved views of issues and projects",
+        "de": "Deine gespeicherten Ansichten von Issues und Projekten",
+        "es": "Tus vistas guardadas de issues y proyectos",
+        "fr": "Vos vues enregistrées d’issues et de projets",
+        "ru": "Сохранённые представления задач и проектов"
+      },
+      "details": {
+        "en": "Linear’s Views page: the filtered lists of issues and projects that you and your team saved. Opens in a new tab, from any app, and starts Linear if it is closed.",
+        "de": "Die Seite Views von Linear: die gefilterten Listen von Issues und Projekten, die du und dein Team gespeichert habt. Öffnet sich in einem neuen Tab, aus jeder App, und startet Linear, wenn es geschlossen ist.",
+        "es": "La página Views de Linear: las listas filtradas de issues y proyectos que guardaste tú o tu equipo. Se abre en una pestaña nueva, desde cualquier app, y abre Linear si está cerrado.",
+        "fr": "La page Views de Linear : les listes filtrées d’issues et de projets enregistrées par vous et votre équipe. S’ouvre dans un nouvel onglet, depuis n’importe quelle app, et lance Linear s’il est fermé.",
+        "ru": "Страница Views в Linear: отфильтрованные списки задач и проектов, сохранённые вами и командой. Открывается в новой вкладке, из любого приложения, и запускает Linear, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens Views",
+        "de": "Öffnet Views",
+        "es": "Abre Views",
+        "fr": "Ouvre Views",
+        "ru": "Открывает Views"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.stack"}},
+        "color": "#5E6AD2",
+        "command": {"shellCommand": {"command": "action=views\n@file:link.zsh"}}
+      }
+    },
+    {
+      "id": "recent",
+      "title": {"en": "Recently Viewed", "de": "Zuletzt angesehen", "es": "Vistos hace poco", "fr": "Vus récemment", "ru": "Недавние"},
+      "summary": {
+        "en": "Jumps back to what you just looked at (⌘Y)",
+        "de": "Springt zurück zu dem, was du gerade angesehen hast (⌘Y)",
+        "es": "Vuelve a lo que acabas de ver (⌘Y)",
+        "fr": "Revient à ce que vous venez de consulter (⌘Y)",
+        "ru": "Возвращает к тому, что вы только что смотрели (⌘Y)"
+      },
+      "details": {
+        "en": "The issues, projects and views you opened recently; pick one with the arrow keys and Return. Works while Linear is in front and you are not typing.",
+        "de": "Eine Liste der zuletzt geöffneten Issues, Projekte und Ansichten; mit den Pfeiltasten und Return auswählen. Funktioniert, wenn Linear vorne ist und du nicht tippst.",
+        "es": "Los issues, proyectos y vistas que abriste hace poco; elige con las flechas y Retorno. Funciona cuando Linear está delante y no estás escribiendo.",
+        "fr": "Les issues, projets et vues ouverts récemment ; choisissez avec les flèches et Retour. Fonctionne quand Linear est au premier plan, hors saisie.",
+        "ru": "Список последних открытых задач, проектов и представлений; выберите стрелками и Return. Работает, когда Linear на переднем плане и вы не набираете текст."
+      },
+      "tapAction": {
+        "en": "Opens the recently viewed list",
+        "de": "Öffnet die Liste der zuletzt angesehenen Elemente",
+        "es": "Abre la lista de vistos hace poco",
+        "fr": "Ouvre la liste des éléments récents",
+        "ru": "Открывает список недавних"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "clock.arrow.circlepath"}},
+        "color": "#5E6AD2",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Retour", "ru": "Назад"},
+      "summary": {
+        "en": "Back through the pages of the tab; hold for Forward",
+        "de": "Zurück durch die Seiten des Tabs; halten für Vorwärts",
+        "es": "Vuelve por las páginas de la pestaña; mantén pulsado para ir adelante",
+        "fr": "Revient sur les pages de l’onglet ; maintenez pour avancer",
+        "ru": "Назад по страницам вкладки; удержание — вперёд"
+      },
+      "details": {
+        "en": "Clicks History › Back in Linear’s menu, so any keyboard layout will do. Works while Linear is in front.",
+        "de": "Klickt im Menü von Linear auf History › Back, daher passt jede Tastaturbelegung. Funktioniert, wenn Linear vorne ist.",
+        "es": "Hace clic en History › Back en el menú de Linear, así que sirve cualquier distribución de teclado. Funciona cuando Linear está delante.",
+        "fr": "Clique sur History › Back dans le menu de Linear : toute disposition de clavier convient. Fonctionne quand Linear est au premier plan.",
+        "ru": "Нажимает History › Back в меню Linear, поэтому подойдёт любая раскладка. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes back",
+        "de": "Geht zurück",
+        "es": "Vuelve atrás",
+        "fr": "Revient en arrière",
+        "ru": "Возвращает назад"
+      },
+      "holdAction": {
+        "en": "Goes forward (History › Forward)",
+        "de": "Geht vorwärts (History › Forward)",
+        "es": "Va adelante (History › Forward)",
+        "fr": "Avance (History › Forward)",
+        "ru": "Переходит вперёд (History › Forward)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#26B5CE",
+        "command": {"shellCommand": {"command": "action=back\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=forward\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "status",
+      "title": {"en": "Status", "de": "Status", "es": "Estado", "fr": "Statut", "ru": "Статус"},
+      "summary": {
+        "en": "Picks a new status for the issue (S)",
+        "de": "Wählt einen neuen Status für das Issue (S)",
+        "es": "Elige un nuevo estado para el issue (S)",
+        "fr": "Choisit un nouveau statut pour l’issue (S)",
+        "ru": "Выбор нового статуса задачи (S)"
+      },
+      "details": {
+        "en": "Opens the status menu for the open issue, or the one under the pointer; nothing changes until you pick. Works while Linear is in front and you are not typing.",
+        "de": "Öffnet das Statusmenü für das offene Issue oder das unter dem Zeiger; geändert wird erst mit deiner Wahl. Funktioniert, wenn Linear vorne ist und du nicht tippst.",
+        "es": "Abre el menú de estado del issue abierto o del que está bajo el puntero; nada cambia hasta que eliges. Funciona cuando Linear está delante y no estás escribiendo.",
+        "fr": "Ouvre le menu de statut de l’issue ouverte, ou de celle sous le pointeur ; rien ne change avant votre choix. Fonctionne quand Linear est au premier plan, hors saisie.",
+        "ru": "Открывает меню статуса для открытой задачи или той, что под указателем; ничего не меняется, пока вы не выберете. Работает, когда Linear на переднем плане и вы не набираете текст."
+      },
+      "tapAction": {
+        "en": "Opens the status menu",
+        "de": "Öffnet das Statusmenü",
+        "es": "Abre el menú de estado",
+        "fr": "Ouvre le menu de statut",
+        "ru": "Открывает меню статуса"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.dashed"}},
+        "color": "#F2994A",
+        "command": {"keystroke": {"_0": {"keyCode": 1, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "priority",
+      "title": {"en": "Priority", "de": "Priorität", "es": "Prioridad", "fr": "Priorité", "ru": "Приоритет"},
+      "summary": {
+        "en": "Picks the issue’s priority, Urgent to Low (P)",
+        "de": "Wählt die Priorität des Issues, Urgent bis Low (P)",
+        "es": "Elige la prioridad del issue, de Urgent a Low (P)",
+        "fr": "Choisit la priorité de l’issue, d’Urgent à Low (P)",
+        "ru": "Выбор приоритета задачи, от Urgent до Low (P)"
+      },
+      "details": {
+        "en": "Opens the priority menu for the open issue, or the one under the pointer; nothing changes until you pick. Works while Linear is in front and you are not typing.",
+        "de": "Öffnet das Prioritätsmenü für das offene Issue oder das unter dem Zeiger; geändert wird erst mit deiner Wahl. Funktioniert, wenn Linear vorne ist und du nicht tippst.",
+        "es": "Abre el menú de prioridad del issue abierto o del que está bajo el puntero; nada cambia hasta que eliges. Funciona cuando Linear está delante y no estás escribiendo.",
+        "fr": "Ouvre le menu de priorité de l’issue ouverte, ou de celle sous le pointeur ; rien ne change avant votre choix. Fonctionne quand Linear est au premier plan, hors saisie.",
+        "ru": "Открывает меню приоритета для открытой задачи или той, что под указателем; ничего не меняется, пока вы не выберете. Работает, когда Linear на переднем плане и вы не набираете текст."
+      },
+      "tapAction": {
+        "en": "Opens the priority menu",
+        "de": "Öffnet das Prioritätsmenü",
+        "es": "Abre el menú de prioridad",
+        "fr": "Ouvre le menu de priorité",
+        "ru": "Открывает меню приоритета"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chart.bar.fill"}},
+        "color": "#F2994A",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "assignee",
+      "title": {"en": "Assignee", "de": "Bearbeiter", "es": "Responsable", "fr": "Responsable", "ru": "Исполнитель"},
+      "summary": {
+        "en": "Picks who works on the issue (A)",
+        "de": "Wählt, wer am Issue arbeitet (A)",
+        "es": "Elige quién se encarga del issue (A)",
+        "fr": "Choisit qui s’occupe de l’issue (A)",
+        "ru": "Выбор исполнителя задачи (A)"
+      },
+      "details": {
+        "en": "Opens the assignee menu for the open issue, or the one under the pointer; nothing changes until you pick. Works while Linear is in front and you are not typing.",
+        "de": "Öffnet das Zuweisungsmenü für das offene Issue oder das unter dem Zeiger; geändert wird erst mit deiner Wahl. Funktioniert, wenn Linear vorne ist und du nicht tippst.",
+        "es": "Abre el menú de responsable del issue abierto o del que está bajo el puntero; nada cambia hasta que eliges. Funciona cuando Linear está delante y no estás escribiendo.",
+        "fr": "Ouvre le menu d’assignation de l’issue ouverte, ou de celle sous le pointeur ; rien ne change avant votre choix. Fonctionne quand Linear est au premier plan, hors saisie.",
+        "ru": "Открывает меню исполнителя для открытой задачи или той, что под указателем; ничего не меняется, пока вы не выберете. Работает, когда Linear на переднем плане и вы не набираете текст."
+      },
+      "tapAction": {
+        "en": "Opens the assignee menu",
+        "de": "Öffnet das Zuweisungsmenü",
+        "es": "Abre el menú de responsable",
+        "fr": "Ouvre le menu d’assignation",
+        "ru": "Открывает меню исполнителя"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "person.badge.plus"}},
+        "color": "#F2994A",
+        "command": {"keystroke": {"_0": {"keyCode": 0, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "labels",
+      "title": {"en": "Labels", "de": "Labels", "es": "Etiquetas", "fr": "Étiquettes", "ru": "Метки"},
+      "summary": {
+        "en": "Picks the issue’s labels (L)",
+        "de": "Wählt die Labels des Issues (L)",
+        "es": "Elige las etiquetas del issue (L)",
+        "fr": "Choisit les étiquettes de l’issue (L)",
+        "ru": "Выбор меток задачи (L)"
+      },
+      "details": {
+        "en": "Opens the labels menu for the open issue, or the one under the pointer; nothing changes until you pick. Works while Linear is in front and you are not typing.",
+        "de": "Öffnet das Label-Menü für das offene Issue oder das unter dem Zeiger; geändert wird erst mit deiner Wahl. Funktioniert, wenn Linear vorne ist und du nicht tippst.",
+        "es": "Abre el menú de etiquetas del issue abierto o del que está bajo el puntero; nada cambia hasta que eliges. Funciona cuando Linear está delante y no estás escribiendo.",
+        "fr": "Ouvre le menu des étiquettes de l’issue ouverte, ou de celle sous le pointeur ; rien ne change avant votre choix. Fonctionne quand Linear est au premier plan, hors saisie.",
+        "ru": "Открывает меню меток для открытой задачи или той, что под указателем; ничего не меняется, пока вы не выберете. Работает, когда Linear на переднем плане и вы не набираете текст."
+      },
+      "tapAction": {
+        "en": "Opens the labels menu",
+        "de": "Öffnet das Label-Menü",
+        "es": "Abre el menú de etiquetas",
+        "fr": "Ouvre le menu des étiquettes",
+        "ru": "Открывает меню меток"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "tag"}},
+        "color": "#F2994A",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "copy-link",
+      "title": {"en": "Copy Link", "de": "Link kopieren", "es": "Copiar enlace", "fr": "Copier le lien", "ru": "Скопировать ссылку"},
+      "summary": {
+        "en": "Copies the issue’s link; hold for its ID",
+        "de": "Kopiert den Link des Issues; halten für seine ID",
+        "es": "Copia el enlace del issue; mantén pulsado para su ID",
+        "fr": "Copie le lien de l’issue ; maintenez pour son ID",
+        "ru": "Копирует ссылку на задачу; удержание — её ID"
+      },
+      "details": {
+        "en": "For the open issue, or the one under the pointer. The ID (ENG-123) needs a keyboard that types a period without Shift, which French does not. Works while Linear is in front.",
+        "de": "Für das offene Issue oder das unter dem Zeiger. Die ID (ENG-123) braucht eine Tastatur, die den Punkt ohne Umschalttaste tippt – die französische tut das nicht. Funktioniert, wenn Linear vorne ist.",
+        "es": "Del issue abierto o del que está bajo el puntero. El ID (ENG-123) necesita un teclado que escriba el punto sin Mayúsculas; el francés no sirve. Funciona cuando Linear está delante.",
+        "fr": "De l’issue ouverte, ou de celle sous le pointeur. L’ID (ENG-123) demande un clavier qui tape le point sans Maj, ce que l’AZERTY ne fait pas. Fonctionne quand Linear est au premier plan.",
+        "ru": "Для открытой задачи или той, что под указателем. Для ID (ENG-123) нужна раскладка, где точка набирается без Shift, — французская не подходит. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Copies the issue’s link (⇧⌘,)",
+        "de": "Kopiert den Link des Issues (⇧⌘,)",
+        "es": "Copia el enlace del issue (⇧⌘,)",
+        "fr": "Copie le lien de l’issue (⇧⌘,)",
+        "ru": "Копирует ссылку на задачу (⇧⌘,)"
+      },
+      "holdAction": {
+        "en": "Copies its ID, like ENG-123 (⌘.)",
+        "de": "Kopiert seine ID, etwa ENG-123 (⌘.)",
+        "es": "Copia su ID, como ENG-123 (⌘.)",
+        "fr": "Copie son ID, comme ENG-123 (⌘.)",
+        "ru": "Копирует её ID, например ENG-123 (⌘.)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "link"}},
+        "color": "#95A2B3",
+        "command": {"keystroke": {"_0": {"keyCode": 43, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 47, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "sub-issue",
+      "title": {"en": "Sub-Issue", "de": "Sub-Issue", "es": "Subissue", "fr": "Sous-issue", "ru": "Подзадача"},
+      "summary": {
+        "en": "Adds a sub-issue to the open issue (⇧⌘O)",
+        "de": "Fügt dem offenen Issue ein Sub-Issue hinzu (⇧⌘O)",
+        "es": "Añade un subissue al issue abierto (⇧⌘O)",
+        "fr": "Ajoute une sous-issue à l’issue ouverte (⇧⌘O)",
+        "ru": "Добавляет подзадачу к открытой задаче (⇧⌘O)"
+      },
+      "details": {
+        "en": "Starts a new sub-issue of the open issue, or of the one under the pointer; nothing is created until you save it. Works while Linear is in front, even while you type.",
+        "de": "Beginnt ein neues Sub-Issue des offenen Issues oder des Issues unter dem Zeiger; angelegt wird erst beim Speichern. Funktioniert, wenn Linear vorne ist, auch beim Tippen.",
+        "es": "Empieza un subissue nuevo del issue abierto o del que está bajo el puntero; no se crea nada hasta guardarlo. Funciona cuando Linear está delante, incluso mientras escribes.",
+        "fr": "Commence une nouvelle sous-issue de l’issue ouverte, ou de celle sous le pointeur ; rien n’est créé avant l’enregistrement. Fonctionne quand Linear est au premier plan, même pendant la saisie.",
+        "ru": "Начинает новую подзадачу у открытой задачи или у той, что под указателем; ничего не создаётся, пока вы не сохраните. Работает, когда Linear на переднем плане, даже во время набора."
+      },
+      "tapAction": {
+        "en": "Opens the sub-issue form",
+        "de": "Öffnet das Formular für ein Sub-Issue",
+        "es": "Abre el formulario de subissue",
+        "fr": "Ouvre le formulaire de sous-issue",
+        "ru": "Открывает форму подзадачи"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.turn.down.right"}},
+        "color": "#4CB782",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Moves to the next Linear tab; hold for the previous one",
+        "de": "Wechselt zum nächsten Linear-Tab; halten für den vorherigen",
+        "es": "Pasa a la pestaña siguiente de Linear; mantén pulsado para la anterior",
+        "fr": "Passe à l’onglet Linear suivant ; maintenez pour le précédent",
+        "ru": "Переключает на следующую вкладку Linear; удержание — на предыдущую"
+      },
+      "details": {
+        "en": "Cycles through Linear’s tabs, including the ones the Inbox, My Issues, Projects and Views buttons open. Works while Linear is in front, even while you type.",
+        "de": "Geht die Tabs von Linear durch, auch die, die Posteingang, Meine Issues, Projekte und Ansichten öffnen. Funktioniert, wenn Linear vorne ist, auch beim Tippen.",
+        "es": "Recorre las pestañas de Linear, también las que abren Bandeja de entrada, Mis issues, Proyectos y Vistas. Funciona cuando Linear está delante, incluso mientras escribes.",
+        "fr": "Parcourt les onglets de Linear, y compris ceux qu’ouvrent Boîte de réception, Mes issues, Projets et Vues. Fonctionne quand Linear est au premier plan, même pendant la saisie.",
+        "ru": "Перебирает вкладки Linear, в том числе те, что открывают «Входящие», «Мои задачи», «Проекты» и «Views». Работает, когда Linear на переднем плане, даже во время набора."
+      },
+      "tapAction": {
+        "en": "Moves to the next tab (⌥⌘→)",
+        "de": "Wechselt zum nächsten Tab (⌥⌘→)",
+        "es": "Pasa a la pestaña siguiente (⌥⌘→)",
+        "fr": "Passe à l’onglet suivant (⌥⌘→)",
+        "ru": "Переключает на следующую вкладку (⌥⌘→)"
+      },
+      "holdAction": {
+        "en": "Moves to the previous tab (⌥⌘←)",
+        "de": "Wechselt zum vorherigen Tab (⌥⌘←)",
+        "es": "Pasa a la pestaña anterior (⌥⌘←)",
+        "fr": "Revient à l’onglet précédent (⌥⌘←)",
+        "ru": "Переключает на предыдущую вкладку (⌥⌘←)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.right.square"}},
+        "color": "#95A2B3",
+        "command": {"keystroke": {"_0": {"keyCode": 124, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 123, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "close-tab",
+      "title": {"en": "Close Tab", "de": "Tab schließen", "es": "Cerrar pestaña", "fr": "Fermer l’onglet", "ru": "Закрыть вкладку"},
+      "summary": {
+        "en": "Closes the Linear tab in front; hold to reopen it",
+        "de": "Schließt den vorderen Linear-Tab; Halten öffnet ihn wieder",
+        "es": "Cierra la pestaña de Linear de delante; mantén pulsado para reabrirla",
+        "fr": "Ferme l’onglet Linear au premier plan ; maintenez pour le rouvrir",
+        "ru": "Закрывает текущую вкладку Linear; удержание — открывает её снова"
+      },
+      "details": {
+        "en": "Linear asks first if something would be lost, and a pinned tab needs a second tap. The last tab closes the window. Works while Linear is in front.",
+        "de": "Linear fragt vorher, wenn dabei etwas verloren ginge, und ein angehefteter Tab braucht ein zweites Tippen. Der letzte Tab schließt das Fenster. Funktioniert, wenn Linear vorne ist.",
+        "es": "Linear pregunta antes si se va a perder algo, y una pestaña fijada necesita un segundo toque. La última pestaña cierra la ventana. Funciona cuando Linear está delante.",
+        "fr": "Linear demande d’abord si quelque chose serait perdu, et un onglet épinglé demande un second toucher. Le dernier onglet ferme la fenêtre. Fonctionne quand Linear est au premier plan.",
+        "ru": "Linear сначала спросит, если что-то потеряется, а закреплённой вкладке нужно второе нажатие. Последняя вкладка закрывает окно. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Closes the tab (⌘W)",
+        "de": "Schließt den Tab (⌘W)",
+        "es": "Cierra la pestaña (⌘W)",
+        "fr": "Ferme l’onglet (⌘W)",
+        "ru": "Закрывает вкладку (⌘W)"
+      },
+      "holdAction": {
+        "en": "Reopens the last closed tab (⇧⌘T)",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder (⇧⌘T)",
+        "es": "Reabre la última pestaña cerrada (⇧⌘T)",
+        "fr": "Rouvre le dernier onglet fermé (⇧⌘T)",
+        "ru": "Открывает последнюю закрытую вкладку (⇧⌘T)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "xmark.square"}},
+        "color": "#95A2B3",
+        "command": {"keystroke": {"_0": {"keyCode": 13, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "open-link",
+      "title": {"en": "Open Link", "de": "Link öffnen", "es": "Abrir enlace", "fr": "Ouvrir le lien", "ru": "Открыть ссылку"},
+      "summary": {
+        "en": "Opens a Linear page you saved: a cycle, a view, a project",
+        "de": "Öffnet eine gespeicherte Linear-Seite: einen Zyklus, eine Ansicht, ein Projekt",
+        "es": "Abre una página de Linear que guardaste: un ciclo, una vista, un proyecto",
+        "fr": "Ouvre une page de Linear enregistrée : un cycle, une vue, un projet",
+        "ru": "Открывает сохранённую страницу Linear: цикл, представление, проект"
+      },
+      "details": {
+        "en": "Put the page’s link, copied from Linear (https://linear.app/…), in the first line of the button’s script; until then the button says where. Works from any app; starts Linear if it is closed.",
+        "de": "Trag den aus Linear kopierten Link der Seite (https://linear.app/…) in die erste Zeile des Skripts der Taste ein; bis dahin sagt die Taste, wo. Funktioniert aus jeder App; startet Linear, wenn es geschlossen ist.",
+        "es": "Pon el enlace de la página, copiado de Linear (https://linear.app/…), en la primera línea del script del botón; hasta entonces el botón dice dónde. Funciona desde cualquier app y abre Linear si está cerrado.",
+        "fr": "Indiquez le lien de la page, copié depuis Linear (https://linear.app/…), à la première ligne du script du bouton ; d’ici là, le bouton dit où. Fonctionne depuis n’importe quelle app et lance Linear s’il est fermé.",
+        "ru": "Ссылку на страницу, скопированную из Linear (https://linear.app/…), впишите в первую строку скрипта кнопки; пока её нет, кнопка подскажет, где её задать. Работает из любого приложения и запускает Linear, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens your page in Linear",
+        "de": "Öffnet deine Seite in Linear",
+        "es": "Abre tu página en Linear",
+        "fr": "Ouvre votre page dans Linear",
+        "ru": "Открывает вашу страницу в Linear"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.right.square"}},
+        "color": "#5E6AD2",
+        "command": {"shellCommand": {"command": "link=\"\"   # ← a Linear page’s link, copied from Linear, e.g. \"https://linear.app/acme/team/ENG/active\"\naction=link\n@file:link.zsh"}}
+      }
+    },
+    {
+      "id": "agent-chat",
+      "title": {"en": "Agent Chat", "de": "Agent-Chat", "es": "Chat con agente", "fr": "Chat d’agent", "ru": "Чат с агентом"},
+      "summary": {
+        "en": "Starts a new chat with Linear’s agent",
+        "de": "Beginnt einen neuen Chat mit dem Agenten von Linear",
+        "es": "Empieza un chat nuevo con el agente de Linear",
+        "fr": "Lance une nouvelle discussion avec l’agent de Linear",
+        "ru": "Начинает новый чат с агентом Linear"
+      },
+      "details": {
+        "en": "Clicks File › New › Agent chat… in Linear’s menu, so any keyboard layout will do; when Linear greys the item out or hides it, the button says so. Works while Linear is in front.",
+        "de": "Klickt im Menü von Linear auf File › New › Agent chat…, daher passt jede Tastaturbelegung; ist der Punkt ausgegraut oder ausgeblendet, sagt die Taste es. Funktioniert, wenn Linear vorne ist.",
+        "es": "Hace clic en File › New › Agent chat… en el menú de Linear, así que sirve cualquier distribución de teclado; si Linear atenúa u oculta el elemento, el botón lo dice. Funciona cuando Linear está delante.",
+        "fr": "Clique sur File › New › Agent chat… dans le menu de Linear : toute disposition de clavier convient ; si Linear grise ou masque l’élément, le bouton le signale. Fonctionne quand Linear est au premier plan.",
+        "ru": "Нажимает File › New › Agent chat… в меню Linear, поэтому подойдёт любая раскладка; если Linear сделал пункт серым или спрятал его, кнопка об этом скажет. Работает, когда Linear на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new agent chat",
+        "de": "Öffnet einen neuen Agent-Chat",
+        "es": "Abre un chat nuevo con el agente",
+        "fr": "Ouvre une nouvelle discussion d’agent",
+        "ru": "Открывает новый чат с агентом"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubble.left.and.bubble.right"}},
+        "color": "#4CB782",
+        "command": {"shellCommand": {"command": "action=new-agent-chat\n@file:menu/click.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Linear", "de": "Linear", "es": "Linear", "fr": "Linear", "ru": "Linear"},
+      "summary": {
+        "en": "Inbox, issues and projects at hand",
+        "de": "Inbox, Issues und Projekte griffbereit",
+        "es": "Inbox, issues y proyectos a mano",
+        "fr": "Inbox, issues et projets à portée de main",
+        "ru": "Inbox, задачи и проекты под рукой"
+      },
+      "details": {
+        "en": "Inbox, My Issues, Projects, Views and Open Link work from any app and open a Linear tab; Inbox also shows Linear’s badge. The rest need Linear in front, with its default shortcuts.",
+        "de": "Posteingang, Meine Issues, Projekte, Ansichten und Link öffnen funktionieren aus jeder App und öffnen einen Linear-Tab; Posteingang zeigt auch das Linear-Kennzeichen. Der Rest braucht Linear vorne, mit den Standard-Tastenkürzeln.",
+        "es": "Bandeja de entrada, Mis issues, Proyectos, Vistas y Abrir enlace funcionan desde cualquier app y abren una pestaña de Linear; la bandeja muestra además el globo de Linear. El resto necesita Linear delante, con sus atajos predeterminados.",
+        "fr": "Boîte de réception, Mes issues, Projets, Vues et Ouvrir le lien fonctionnent depuis n’importe quelle app et ouvrent un onglet Linear ; la boîte affiche aussi la pastille de Linear. Le reste demande Linear au premier plan, avec ses raccourcis par défaut.",
+        "ru": "«Входящие», «Мои задачи», «Проекты», «Views» и «Открыть ссылку» работают из любого приложения и открывают вкладку Linear; «Входящие» ещё и показывают наклейку Linear. Остальным кнопкам нужен Linear на переднем плане со стандартными сочетаниями клавиш."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "inbox", "row": 0, "col": 0},
+        {"button": "my-issues", "row": 0, "col": 1},
+        {"button": "new-issue", "row": 0, "col": 2},
+        {"button": "command-menu", "row": 0, "col": 3},
+        {"button": "projects", "row": 1, "col": 0},
+        {"button": "views", "row": 1, "col": 1},
+        {"button": "recent", "row": 1, "col": 2},
+        {"button": "back", "row": 1, "col": 3},
+        {"button": "status", "row": 2, "col": 0},
+        {"button": "priority", "row": 2, "col": 1},
+        {"button": "assignee", "row": 2, "col": 2},
+        {"button": "labels", "row": 2, "col": 3},
+        {"button": "copy-link", "row": 3, "col": 0},
+        {"button": "sub-issue", "row": 3, "col": 1},
+        {"button": "next-tab", "row": 3, "col": 2},
+        {"button": "close-tab", "row": 3, "col": 3},
+        {"button": "open-link", "row": 4, "col": 0},
+        {"button": "agent-chat", "row": 4, "col": 1}
+      ]
+    }
+  ]
+}

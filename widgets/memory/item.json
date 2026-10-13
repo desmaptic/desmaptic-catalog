@@ -1,0 +1,55 @@
+{
+  "id": "memory",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Memory",
+    "de": "Speicher",
+    "es": "Memoria",
+    "fr": "Mémoire",
+    "ru": "Память"
+  },
+  "summary": {
+    "en": "How much memory is in use; glows pink when macOS reports memory pressure",
+    "de": "Wie viel Arbeitsspeicher belegt ist; leuchtet pink, wenn macOS Speicherdruck meldet",
+    "es": "Cuánta memoria está en uso; se ilumina en rosa cuando macOS indica presión de memoria",
+    "fr": "La mémoire utilisée ; s’allume en rose quand macOS signale une pression de la mémoire",
+    "ru": "Сколько памяти занято; светится розовым, когда macOS сообщает о нагрузке на память"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "How much of the Mac’s memory is in use. The colour is memory pressure, as in Activity Monitor: magenta — memory is getting tight, pink — it is running short and apps may slow down.",
+    "de": "Wie viel Arbeitsspeicher des Mac belegt ist. Die Farbe ist der Speicherdruck wie in der Aktivitätsanzeige: Magenta – der Speicher wird knapp, Pink – er reicht nicht mehr, Apps können langsamer werden.",
+    "es": "Cuánta memoria del Mac está en uso. El color es la presión de memoria, como en Monitor de Actividad: magenta, empieza a escasear; rosa, no alcanza y las apps pueden ir más lentas.",
+    "fr": "La part de mémoire du Mac utilisée. La couleur indique la pression de la mémoire, comme dans Moniteur d’activité : magenta, elle se raréfie ; rose, elle manque et les apps peuvent ralentir.",
+    "ru": "Сколько памяти Mac занято. Цвет — нагрузка на память, как в Мониторинге системы: пурпурный — памяти становится мало, розовый — её не хватает и приложения могут тормозить."
+  },
+  "tapAction": {
+    "en": "Opens Activity Monitor on the Mac",
+    "de": "Öffnet die Aktivitätsanzeige auf dem Mac",
+    "es": "Abre Monitor de Actividad en el Mac",
+    "fr": "Ouvre Moniteur d’activité sur le Mac",
+    "ru": "Открывает Мониторинг системы на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "memorychip"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "launchApp": {
+        "bundleIdentifier": "com.apple.ActivityMonitor"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

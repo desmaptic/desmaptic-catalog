@@ -1,0 +1,586 @@
+{
+  "id": "slack",
+  "revision": 5,
+  "name": "Slack",
+  "bundleIds": ["com.tinyspeck.slackmacgap"],
+  "category": "communication",
+  "buttons": [
+    {
+      "id": "badge",
+      "title": {"en": "Mentions & DMs", "de": "Erwähnungen & DMs", "es": "Menciones y MD", "fr": "Mentions et MP", "ru": "Упоминания и ЛС"},
+      "summary": {
+        "en": "Slack’s badge on your phone: how many mentions and DMs wait",
+        "de": "Das Slack-Kennzeichen auf dem Telefon: wie viele Erwähnungen und DMs warten",
+        "es": "El globo de Slack en el teléfono: cuántas menciones y MD esperan",
+        "fr": "La pastille de Slack sur le téléphone : combien de mentions et de MP attendent",
+        "ru": "Наклейка Slack на телефоне: сколько ждёт упоминаний и личных сообщений"
+      },
+      "details": {
+        "en": "The number on Slack’s Dock icon, checked every few seconds. A dot means other unread messages, a dash that Slack is closed.",
+        "de": "Die Zahl am Dock-Symbol von Slack, alle paar Sekunden geprüft. Ein Punkt heißt: andere ungelesene Nachrichten, ein Strich: Slack ist geschlossen.",
+        "es": "El número del icono de Slack en el Dock, revisado cada pocos segundos. Un punto indica otros mensajes sin leer; una raya, que Slack está cerrado.",
+        "fr": "Le nombre sur l’icône de Slack dans le Dock, relevé toutes les trois secondes environ. Un point signale d’autres messages non lus, un tiret que Slack est fermé.",
+        "ru": "Число с наклейки на значке Slack в Dock, проверяется каждые несколько секунд. Точка — другие непрочитанные сообщения, прочерк — Slack закрыт."
+      },
+      "tapAction": {
+        "en": "Brings Slack to the front",
+        "de": "Holt Slack nach vorne",
+        "es": "Trae Slack al frente",
+        "fr": "Met Slack au premier plan",
+        "ru": "Выводит Slack на передний план"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "at"}},
+        "color": "#FF375F",
+        "command": {"launchApp": {"bundleIdentifier": "com.tinyspeck.slackmacgap"}},
+        "startupScript": "@file:badge/startup.zsh",
+        "svgFace": {"source": "@file:badge/rest.svg"}
+      },
+      "demoFace": {"source": "@file:badge/demo.svg"}
+    },
+    {
+      "id": "activity",
+      "title": {"en": "Activity", "de": "Aktivität", "es": "Actividad", "fr": "Activité", "ru": "Активность"},
+      "summary": {
+        "en": "Mentions, reactions and replies to you (⇧⌘M)",
+        "de": "Erwähnungen, Reaktionen und Antworten an dich (⇧⌘M)",
+        "es": "Menciones, reacciones y respuestas para ti (⇧⌘M)",
+        "fr": "Mentions, réactions et réponses qui vous concernent (⇧⌘M)",
+        "ru": "Упоминания, реакции и ответы вам (⇧⌘M)"
+      },
+      "details": {
+        "en": "The Activity view: everything that involves you, newest first — mentions, reactions, thread replies (⇧⌘M). Works while Slack is in front.",
+        "de": "Die Ansicht Aktivität: alles, was dich betrifft, das Neueste oben – Erwähnungen, Reaktionen, Antworten in Threads (⇧⌘M). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Actividad: todo lo que te incumbe, lo más reciente arriba — menciones, reacciones, respuestas en hilos (⇧⌘M). Funciona cuando Slack está delante.",
+        "fr": "La vue Activité : tout ce qui vous concerne, le plus récent en haut — mentions, réactions, réponses dans les fils (⇧⌘M). Fonctionne quand Slack est au premier plan.",
+        "ru": "Раздел Activity: всё, что касается вас, свежее сверху, — упоминания, реакции, ответы в тредах (⇧⌘M). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Activity",
+        "de": "Öffnet Aktivität",
+        "es": "Abre Actividad",
+        "fr": "Ouvre Activité",
+        "ru": "Открывает Activity"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bell"}},
+        "color": "#E01E5A",
+        "command": {"keystroke": {"_0": {"keyCode": 46, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "unreads",
+      "title": {"en": "Unreads", "de": "Ungelesenes", "es": "Sin leer", "fr": "Non lus", "ru": "Всё новое"},
+      "summary": {
+        "en": "Every unread message in one list (⇧⌘A)",
+        "de": "Alle ungelesenen Nachrichten in einer Liste (⇧⌘A)",
+        "es": "Todos los mensajes sin leer en una lista (⇧⌘A)",
+        "fr": "Tous les messages non lus dans une seule liste (⇧⌘A)",
+        "ru": "Все непрочитанные сообщения одним списком (⇧⌘A)"
+      },
+      "details": {
+        "en": "All unreads: the unread messages of every channel and DM, conversation by conversation, to read through in one go (⇧⌘A). Works while Slack is in front.",
+        "de": "Die Ansicht Ungelesenes: die ungelesenen Nachrichten aller Channels und DMs, Unterhaltung für Unterhaltung, zum Durchlesen am Stück (⇧⌘A). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Mensajes sin leer: lo no leído de cada canal y MD, conversación por conversación, para leerlo de una vez (⇧⌘A). Funciona cuando Slack está delante.",
+        "fr": "La vue Messages non lus : ceux de chaque canal et MP, conversation par conversation, à lire d’une traite (⇧⌘A). Fonctionne quand Slack est au premier plan.",
+        "ru": "All unreads: непрочитанное из всех каналов и личных сообщений, по беседам, чтобы прочитать разом (⇧⌘A). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens All unreads",
+        "de": "Öffnet Ungelesenes",
+        "es": "Abre Mensajes sin leer",
+        "fr": "Ouvre les messages non lus",
+        "ru": "Открывает All unreads"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "tray.full"}},
+        "color": "#E01E5A",
+        "command": {"keystroke": {"_0": {"keyCode": 0, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "threads",
+      "title": {"en": "Threads", "de": "Threads", "es": "Hilos", "fr": "Fils de discussion", "ru": "Треды"},
+      "summary": {
+        "en": "The threads you follow (⇧⌘T)",
+        "de": "Die Threads, denen du folgst (⇧⌘T)",
+        "es": "Los hilos que sigues (⇧⌘T)",
+        "fr": "Les fils de discussion que vous suivez (⇧⌘T)",
+        "ru": "Треды, за которыми вы следите (⇧⌘T)"
+      },
+      "details": {
+        "en": "The Threads view: conversations you started, replied to or follow, with the newest replies on top (⇧⌘T). Works while Slack is in front.",
+        "de": "Die Ansicht Threads: Unterhaltungen, die du begonnen, beantwortet oder abonniert hast, neueste Antworten oben (⇧⌘T). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Hilos: conversaciones que empezaste, respondiste o sigues, con las respuestas más recientes arriba (⇧⌘T). Funciona cuando Slack está delante.",
+        "fr": "La vue Fils de discussion : ceux que vous avez lancés, auxquels vous avez répondu ou que vous suivez, réponses récentes en haut (⇧⌘T). Fonctionne quand Slack est au premier plan.",
+        "ru": "Раздел Threads: треды, которые вы начали, где ответили или на которые подписаны, свежие ответы сверху (⇧⌘T). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Threads",
+        "de": "Öffnet Threads",
+        "es": "Abre Hilos",
+        "fr": "Ouvre Fils de discussion",
+        "ru": "Открывает Threads"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubble.left.and.bubble.right"}},
+        "color": "#E01E5A",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "dms",
+      "title": {"en": "DMs", "de": "DMs", "es": "Mensajes directos", "fr": "Messages directs", "ru": "Личные сообщения"},
+      "summary": {
+        "en": "All your direct messages (⇧⌘K)",
+        "de": "Alle deine Direktnachrichten (⇧⌘K)",
+        "es": "Todos tus mensajes directos (⇧⌘K)",
+        "fr": "Tous vos messages directs (⇧⌘K)",
+        "ru": "Все личные сообщения (⇧⌘K)"
+      },
+      "details": {
+        "en": "The DMs view: your direct messages and group DMs in one list, the latest first (⇧⌘K). Works while Slack is in front.",
+        "de": "Die Ansicht Direktnachrichten: deine DMs und Gruppen-DMs in einer Liste, die neuesten zuerst (⇧⌘K). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Mensajes directos: tus MD y MD de grupo en una lista, los más recientes primero (⇧⌘K). Funciona cuando Slack está delante.",
+        "fr": "La vue Messages directs : vos messages directs et de groupe dans une liste, les plus récents d’abord (⇧⌘K). Fonctionne quand Slack est au premier plan.",
+        "ru": "Раздел DMs: личные и групповые переписки одним списком, свежие сверху (⇧⌘K). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens DMs",
+        "de": "Öffnet Direktnachrichten",
+        "es": "Abre los mensajes directos",
+        "fr": "Ouvre les messages directs",
+        "ru": "Открывает DMs"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "person.2"}},
+        "color": "#36C5F0",
+        "command": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "next-unread",
+      "title": {"en": "Next Unread", "de": "Nächste ungelesene", "es": "Siguiente sin leer", "fr": "Suivant non lu", "ru": "Следующее новое"},
+      "summary": {
+        "en": "Goes to the next channel or DM with unread messages (⌥⇧↓)",
+        "de": "Springt zum nächsten Channel oder DM mit ungelesenen Nachrichten (⌥⇧↓)",
+        "es": "Va al siguiente canal o MD con mensajes sin leer (⌥⇧↓)",
+        "fr": "Passe au canal ou MP suivant qui a des messages non lus (⌥⇧↓)",
+        "ru": "Переходит к следующему каналу или ЛС с непрочитанным (⌥⇧↓)"
+      },
+      "details": {
+        "en": "Goes down the sidebar one unread conversation at a time: a few taps and you’ve seen everything new. Works while Slack is in front.",
+        "de": "Geht die Seitenleiste von einer ungelesenen Unterhaltung zur nächsten durch: ein paarmal tippen, und du hast alles Neue gesehen. Funktioniert, wenn Slack vorne ist.",
+        "es": "Recorre la barra lateral de una conversación sin leer a la siguiente: con unos toques ves todo lo nuevo. Funciona cuando Slack está delante.",
+        "fr": "Parcourt la barre latérale d’une conversation non lue à la suivante : en quelques appuis, vous avez tout vu. Fonctionne quand Slack est au premier plan.",
+        "ru": "Идёт по боковой панели от одной непрочитанной беседы к другой: несколько нажатий — и вы видели всё новое. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes to the next unread conversation",
+        "de": "Springt zur nächsten ungelesenen Unterhaltung",
+        "es": "Va a la siguiente conversación sin leer",
+        "fr": "Passe à la conversation non lue suivante",
+        "ru": "Переходит к следующей непрочитанной беседе"
+      },
+      "holdAction": {
+        "en": "Goes to the previous unread conversation (⌥⇧↑)",
+        "de": "Springt zur vorherigen ungelesenen Unterhaltung (⌥⇧↑)",
+        "es": "Va a la conversación sin leer anterior (⌥⇧↑)",
+        "fr": "Revient à la conversation non lue précédente (⌥⇧↑)",
+        "ru": "Переходит к предыдущей непрочитанной беседе (⌥⇧↑)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.circle"}},
+        "color": "#36C5F0",
+        "command": {"keystroke": {"_0": {"keyCode": 125, "modifiers": ["option", "shift"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 126, "modifiers": ["option", "shift"]}}}
+      }
+    },
+    {
+      "id": "mark-read",
+      "title": {"en": "Mark Read", "de": "Gelesen", "es": "Marcar leído", "fr": "Marquer lu", "ru": "Прочитано"},
+      "summary": {
+        "en": "Marks the open conversation as read (Esc)",
+        "de": "Markiert die offene Unterhaltung als gelesen (Esc)",
+        "es": "Marca como leída la conversación abierta (Esc)",
+        "fr": "Marque la conversation ouverte comme lue (Esc)",
+        "ru": "Отмечает открытую беседу прочитанной (Esc)"
+      },
+      "details": {
+        "en": "Slack has no undo for this: to come back to a message later, mark it unread with ⌥-click. Works while Slack is in front.",
+        "de": "Slack kann das nicht rückgängig machen: Eine Nachricht für später markierst du per ⌥-Klick wieder als ungelesen. Funktioniert, wenn Slack vorne ist.",
+        "es": "Slack no lo puede deshacer: para volver a un mensaje más tarde, márcalo como no leído con ⌥-clic. Funciona cuando Slack está delante.",
+        "fr": "Slack ne peut pas l’annuler : pour revenir plus tard à un message, marquez-le non lu d’un ⌥-clic. Fonctionne quand Slack est au premier plan.",
+        "ru": "Отменить это в Slack нельзя: чтобы вернуться к сообщению позже, отметьте его непрочитанным ⌥-щелчком. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Marks the open conversation read",
+        "de": "Markiert die offene Unterhaltung als gelesen",
+        "es": "Marca como leída la conversación abierta",
+        "fr": "Marque la conversation ouverte comme lue",
+        "ru": "Отмечает прочитанной открытую беседу"
+      },
+      "holdAction": {
+        "en": "Marks all messages everywhere read (⇧Esc)",
+        "de": "Markiert alle Nachrichten überall als gelesen (⇧Esc)",
+        "es": "Marca como leídos todos los mensajes (⇧Esc)",
+        "fr": "Marque tous les messages comme lus, partout (⇧Esc)",
+        "ru": "Отмечает прочитанными все сообщения везде (⇧Esc)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "checkmark.circle"}},
+        "color": "#36C5F0",
+        "command": {"keystroke": {"_0": {"keyCode": 53, "modifiers": []}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 53, "modifiers": ["shift"]}}}
+      }
+    },
+    {
+      "id": "search",
+      "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
+      "summary": {
+        "en": "Searches messages, files, channels and people (⌘G)",
+        "de": "Durchsucht Nachrichten, Dateien, Channels und Personen (⌘G)",
+        "es": "Busca mensajes, archivos, canales y personas (⌘G)",
+        "fr": "Cherche messages, fichiers, canaux et personnes (⌘G)",
+        "ru": "Ищет сообщения, файлы, каналы и людей (⌘G)"
+      },
+      "details": {
+        "en": "Slack’s search box: type to jump to a channel or person, or press Return to search every message (⌘G). Works while Slack is in front.",
+        "de": "Das Suchfeld von Slack: einen Namen eingeben, um zu einem Channel oder einer Person zu springen, oder Return drücken, um alle Nachrichten zu durchsuchen (⌘G). Funktioniert, wenn Slack vorne ist.",
+        "es": "El cuadro de búsqueda de Slack: escribe para ir a un canal o persona, o pulsa Retorno para buscar en todos los mensajes (⌘G). Funciona cuando Slack está delante.",
+        "fr": "Le champ de recherche de Slack : tapez pour aller à un canal ou une personne, ou appuyez sur Retour pour chercher dans tous les messages (⌘G). Fonctionne quand Slack est au premier plan.",
+        "ru": "Поле поиска Slack: начните печатать, чтобы перейти к каналу или человеку, или нажмите Return, чтобы искать по всем сообщениям (⌘G). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens search",
+        "de": "Öffnet die Suche",
+        "es": "Abre la búsqueda",
+        "fr": "Ouvre la recherche",
+        "ru": "Открывает поиск"
+      },
+      "holdAction": {
+        "en": "Searches the open conversation (⌘F)",
+        "de": "Durchsucht die offene Unterhaltung (⌘F)",
+        "es": "Busca en la conversación abierta (⌘F)",
+        "fr": "Cherche dans la conversation ouverte (⌘F)",
+        "ru": "Ищет в открытой беседе (⌘F)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#36C5F0",
+        "command": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "new-message",
+      "title": {"en": "New Message", "de": "Neue Nachricht", "es": "Mensaje nuevo", "fr": "Nouveau message", "ru": "Новое сообщение"},
+      "summary": {
+        "en": "Writes to anyone in the workspace (⌘N)",
+        "de": "Schreibt an beliebige Personen im Workspace (⌘N)",
+        "es": "Escribe a quien quieras del espacio de trabajo (⌘N)",
+        "fr": "Écrit à qui vous voulez dans l’espace de travail (⌘N)",
+        "ru": "Сообщение кому угодно в рабочем пространстве (⌘N)"
+      },
+      "details": {
+        "en": "Opens a new message: pick people or a channel in To, then write. Nothing is sent until you press Return (⌘N). Works while Slack is in front.",
+        "de": "Öffnet eine neue Nachricht: Personen oder einen Channel bei An wählen, dann schreiben. Gesendet wird erst mit Return (⌘N). Funktioniert, wenn Slack vorne ist.",
+        "es": "Abre un mensaje nuevo: elige personas o un canal en Para y escribe. No se envía nada hasta que pulses Retorno (⌘N). Funciona cuando Slack está delante.",
+        "fr": "Ouvre un nouveau message : choisissez des personnes ou un canal dans À, puis écrivez. Rien n’est envoyé avant que vous appuyiez sur Retour (⌘N). Fonctionne quand Slack est au premier plan.",
+        "ru": "Открывает новое сообщение: выберите людей или канал в поле To и пишите. Ничего не уйдёт, пока вы не нажмёте Return (⌘N). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new message",
+        "de": "Öffnet eine neue Nachricht",
+        "es": "Abre un mensaje nuevo",
+        "fr": "Ouvre un nouveau message",
+        "ru": "Открывает новое сообщение"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.and.pencil"}},
+        "color": "#2EB67D",
+        "command": {"keystroke": {"_0": {"keyCode": 45, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "upload",
+      "title": {"en": "Upload", "de": "Hochladen", "es": "Subir", "fr": "Charger un fichier", "ru": "Загрузить"},
+      "summary": {
+        "en": "Shares a file in the open conversation (⌘O)",
+        "de": "Teilt eine Datei in der offenen Unterhaltung (⌘O)",
+        "es": "Comparte un archivo en la conversación abierta (⌘O)",
+        "fr": "Partage un fichier dans la conversation ouverte (⌘O)",
+        "ru": "Отправляет файл в открытую беседу (⌘O)"
+      },
+      "details": {
+        "en": "The file you pick waits in the message box with your text until you press Return (⌘O). Works while Slack is in front.",
+        "de": "Die gewählte Datei wartet mit deinem Text im Eingabefeld, bis du Return drückst (⌘O). Funktioniert, wenn Slack vorne ist.",
+        "es": "El archivo que elijas espera en el cuadro del mensaje con tu texto hasta que pulses Retorno (⌘O). Funciona cuando Slack está delante.",
+        "fr": "Le fichier choisi attend dans la zone de message avec votre texte jusqu’à ce que vous appuyiez sur Retour (⌘O). Fonctionne quand Slack est au premier plan.",
+        "ru": "Выбранный файл ждёт в поле сообщения вместе с текстом, пока вы не нажмёте Return (⌘O). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the file picker",
+        "de": "Öffnet die Dateiauswahl",
+        "es": "Abre el selector de archivos",
+        "fr": "Ouvre le sélecteur de fichiers",
+        "ru": "Открывает выбор файла"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "paperclip"}},
+        "color": "#2EB67D",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "huddle",
+      "title": {"en": "Huddle", "de": "Huddle", "es": "Junta", "fr": "Appel d’équipe", "ru": "Huddle"},
+      "summary": {
+        "en": "Starts, joins or leaves a huddle in the open conversation (⇧⌘H)",
+        "de": "Startet, betritt oder verlässt ein Huddle in der offenen Unterhaltung (⇧⌘H)",
+        "es": "Inicia o deja una junta en la conversación abierta, o te une a ella (⇧⌘H)",
+        "fr": "Lance, rejoint ou quitte un appel d’équipe dans la conversation ouverte (⇧⌘H)",
+        "ru": "Начинает huddle в открытой беседе, подключает к нему или выводит из него (⇧⌘H)"
+      },
+      "details": {
+        "en": "An audio call in the open channel or DM: the first tap starts one or joins the one going on, the next leaves it. Works while Slack is in front.",
+        "de": "Ein Audioanruf im offenen Channel oder DM: Einmal tippen startet ihn oder tritt dem laufenden bei, nochmal tippen verlässt ihn. Funktioniert, wenn Slack vorne ist.",
+        "es": "Una llamada de audio en el canal o MD abierto: el primer toque la inicia o te une a la que está en curso; el siguiente te saca de ella. Funciona cuando Slack está delante.",
+        "fr": "Un appel audio dans le canal ou MP ouvert : un premier appui le lance ou rejoint celui en cours, le suivant le quitte. Fonctionne quand Slack est au premier plan.",
+        "ru": "Аудиозвонок в открытом канале или ЛС: первое нажатие начинает его или подключает к идущему, следующее выводит из него. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Starts, joins or leaves a huddle",
+        "de": "Startet, betritt oder verlässt ein Huddle",
+        "es": "Inicia una junta, te une o te saca",
+        "fr": "Lance, rejoint ou quitte un appel d’équipe",
+        "ru": "Начинает huddle, подключает к нему или выводит из него"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "headphones"}},
+        "color": "#2EB67D",
+        "command": {"keystroke": {"_0": {"keyCode": 4, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "mute",
+      "title": {"en": "Mute", "de": "Stumm", "es": "Silenciar", "fr": "Muet", "ru": "Микрофон"},
+      "summary": {
+        "en": "Mutes or unmutes you in a huddle (⇧⌘Space)",
+        "de": "Schaltet dich im Huddle stumm oder wieder laut (⇧⌘Leertaste)",
+        "es": "Silencia o activa tu micrófono en una junta (⇧⌘Espacio)",
+        "fr": "Coupe ou rétablit votre micro dans un appel d’équipe (⇧⌘Espace)",
+        "ru": "Выключает и включает ваш микрофон в huddle (⇧⌘Пробел)"
+      },
+      "details": {
+        "en": "For the huddle you are in. Slack’s huddle controls show whether you are muted. Works while Slack is in front.",
+        "de": "Für das laufende Huddle. Ob du stumm bist, zeigt die Huddle-Steuerung von Slack. Funktioniert, wenn Slack vorne ist.",
+        "es": "Para la junta en la que estás. Los controles de la junta en Slack muestran si tienes el micrófono silenciado. Funciona cuando Slack está delante.",
+        "fr": "Pour l’appel d’équipe en cours. Les commandes de l’appel dans Slack indiquent si votre micro est coupé. Fonctionne quand Slack est au premier plan.",
+        "ru": "Для huddle, в котором вы сейчас. Выключен ли микрофон, видно на панели huddle в Slack. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Mutes or unmutes you",
+        "de": "Schaltet dich stumm oder laut",
+        "es": "Silencia o activa tu micrófono",
+        "fr": "Coupe ou rétablit votre micro",
+        "ru": "Выключает или включает микрофон"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "mic.slash"}},
+        "color": "#2EB67D",
+        "command": {"keystroke": {"_0": {"keyCode": 49, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Retour", "ru": "Назад"},
+      "summary": {
+        "en": "Back through the conversations and views you opened",
+        "de": "Zurück durch die geöffneten Unterhaltungen und Ansichten",
+        "es": "Vuelve por las conversaciones y vistas que abriste",
+        "fr": "Revient sur les conversations et vues ouvertes",
+        "ru": "Назад по открытым беседам и разделам"
+      },
+      "details": {
+        "en": "Clicks Go › History › Back in Slack’s menu, so it works with any keyboard layout and in any language. Works while Slack is in front.",
+        "de": "Klickt im Menü von Slack auf Gehe zu › Verlauf › Zurück und klappt so mit jeder Tastaturbelegung und in jeder Sprache. Funktioniert, wenn Slack vorne ist.",
+        "es": "Hace clic en Ir › Historial › Atrás en el menú de Slack, así que funciona con cualquier teclado y en cualquier idioma. Funciona cuando Slack está delante.",
+        "fr": "Clique sur Aller › Historique › Retour dans le menu de Slack et fonctionne donc avec tout clavier et dans toutes les langues. Fonctionne quand Slack est au premier plan.",
+        "ru": "Нажимает Go › History › Back в меню Slack, поэтому работает при любой раскладке и на любом языке. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes back",
+        "de": "Geht zurück",
+        "es": "Vuelve atrás",
+        "fr": "Revient en arrière",
+        "ru": "Возвращает назад"
+      },
+      "holdAction": {
+        "en": "Goes forward",
+        "de": "Geht vorwärts",
+        "es": "Va adelante",
+        "fr": "Avance",
+        "ru": "Переходит вперёд"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#ECB22E",
+        "command": {"shellCommand": {"command": "action=back\n@file:menu/history.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=forward\n@file:menu/history.zsh"}}
+      }
+    },
+    {
+      "id": "channels",
+      "title": {"en": "Channels", "de": "Channels", "es": "Canales", "fr": "Canaux", "ru": "Каналы"},
+      "summary": {
+        "en": "Browses every channel of the workspace (⇧⌘L)",
+        "de": "Zeigt alle Channels des Workspace (⇧⌘L)",
+        "es": "Explora todos los canales del espacio de trabajo (⇧⌘L)",
+        "fr": "Parcourt tous les canaux de l’espace de travail (⇧⌘L)",
+        "ru": "Все каналы рабочего пространства (⇧⌘L)"
+      },
+      "details": {
+        "en": "The channel browser, with the channels you’re not in yet: search one, preview it, join it (⇧⌘L). Works while Slack is in front.",
+        "de": "Der Channel-Browser, auch mit Channels, in denen du noch nicht bist: suchen, ansehen, beitreten (⇧⌘L). Funktioniert, wenn Slack vorne ist.",
+        "es": "El explorador de canales, incluidos aquellos en los que aún no estás: busca uno, échale un vistazo, únete (⇧⌘L). Funciona cuando Slack está delante.",
+        "fr": "Le navigateur de canaux, y compris ceux que vous n’avez pas rejoints : cherchez, prévisualisez, rejoignez (⇧⌘L). Fonctionne quand Slack est au premier plan.",
+        "ru": "Список каналов, включая те, где вас ещё нет: найти, посмотреть, вступить (⇧⌘L). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the channel browser",
+        "de": "Öffnet den Channel-Browser",
+        "es": "Abre el explorador de canales",
+        "fr": "Ouvre le navigateur de canaux",
+        "ru": "Открывает список каналов"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "number"}},
+        "color": "#ECB22E",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "workspace",
+      "title": {"en": "Workspace", "de": "Workspace", "es": "Espacio de trabajo", "fr": "Espace de travail", "ru": "Воркспейс"},
+      "summary": {
+        "en": "Switches to your next Slack workspace (⌃Tab)",
+        "de": "Wechselt zum nächsten Slack-Workspace (⌃Tab)",
+        "es": "Cambia al siguiente espacio de trabajo de Slack (⌃Tab)",
+        "fr": "Passe à l’espace de travail Slack suivant (⌃Tab)",
+        "ru": "Переключает на следующее рабочее пространство Slack (⌃Tab)"
+      },
+      "details": {
+        "en": "For when you are signed in to more than one workspace: goes round them in the order of the workspace switcher. Works while Slack is in front.",
+        "de": "Wenn du in mehreren Workspaces angemeldet bist: geht sie in der Reihenfolge des Workspace-Umschalters durch. Funktioniert, wenn Slack vorne ist.",
+        "es": "Si tienes sesión en varios espacios de trabajo: los recorre en el orden del selector de espacios. Funciona cuando Slack está delante.",
+        "fr": "Si vous êtes connecté à plusieurs espaces de travail : les parcourt dans l’ordre du sélecteur d’espaces. Fonctionne quand Slack est au premier plan.",
+        "ru": "Если вы вошли в несколько рабочих пространств: перебирает их по порядку переключателя. Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches to the next workspace",
+        "de": "Wechselt zum nächsten Workspace",
+        "es": "Cambia al siguiente espacio de trabajo",
+        "fr": "Passe à l’espace de travail suivant",
+        "ru": "Переключает на следующее пространство"
+      },
+      "holdAction": {
+        "en": "Switches to the previous workspace (⌃⇧Tab)",
+        "de": "Wechselt zum vorherigen Workspace (⌃⇧Tab)",
+        "es": "Cambia al espacio de trabajo anterior (⌃⇧Tab)",
+        "fr": "Revient à l’espace de travail précédent (⌃⇧Tab)",
+        "ru": "Переключает на предыдущее пространство (⌃⇧Tab)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.stack"}},
+        "color": "#ECB22E",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "status",
+      "title": {"en": "Set Status", "de": "Status", "es": "Estado", "fr": "Statut", "ru": "Статус"},
+      "summary": {
+        "en": "Sets your status: emoji, text and when it clears (⇧⌘Y)",
+        "de": "Setzt deinen Status: Emoji, Text und wann er endet (⇧⌘Y)",
+        "es": "Pone tu estado: emoji, texto y cuándo se borra (⇧⌘Y)",
+        "fr": "Définit votre statut : emoji, texte et quand il s’efface (⇧⌘Y)",
+        "ru": "Задаёт статус: эмодзи, текст и когда он снимется (⇧⌘Y)"
+      },
+      "details": {
+        "en": "The status window, with Slack’s suggestions and the statuses you used recently (⇧⌘Y). Works while Slack is in front.",
+        "de": "Das Statusfenster, mit den Vorschlägen von Slack und deinen zuletzt verwendeten Status (⇧⌘Y). Funktioniert, wenn Slack vorne ist.",
+        "es": "La ventana de estado, con las sugerencias de Slack y los estados que usaste hace poco (⇧⌘Y). Funciona cuando Slack está delante.",
+        "fr": "La fenêtre de statut, avec les suggestions de Slack et les statuts utilisés récemment (⇧⌘Y). Fonctionne quand Slack est au premier plan.",
+        "ru": "Окно статуса с вариантами Slack и статусами, которые вы ставили недавно (⇧⌘Y). Работает, когда Slack на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the status window",
+        "de": "Öffnet das Statusfenster",
+        "es": "Abre la ventana de estado",
+        "fr": "Ouvre la fenêtre de statut",
+        "ru": "Открывает окно статуса"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "face.smiling"}},
+        "color": "#ECB22E",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["shift", "command"]}}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Slack", "de": "Slack", "es": "Slack", "fr": "Slack", "ru": "Slack"},
+      "summary": {
+        "en": "Catch up, reply and huddle from your phone",
+        "de": "Nachlesen, antworten und Huddles – vom Telefon aus",
+        "es": "Ponte al día, responde e inicia juntas desde el teléfono",
+        "fr": "Rattrapez le fil, répondez et lancez des appels d’équipe depuis votre téléphone",
+        "ru": "Разбирать новое, отвечать и созваниваться с телефона"
+      },
+      "details": {
+        "en": "The buttons work while Slack is in front. Mentions & DMs shows Slack’s badge and fits on any other page too.",
+        "de": "Die Tasten funktionieren, wenn Slack vorne ist. Erwähnungen & DMs zeigt das Slack-Kennzeichen und passt auch auf jede andere Seite.",
+        "es": "Los botones funcionan cuando Slack está delante. Menciones y MD muestra el globo de Slack y sirve también en cualquier otra página.",
+        "fr": "Les boutons fonctionnent quand Slack est au premier plan. Mentions et MP affiche la pastille de Slack et va aussi sur toute autre page.",
+        "ru": "Кнопки работают, когда Slack на переднем плане. «Упоминания и ЛС» показывает наклейку Slack и подойдёт для любой другой страницы."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "badge", "row": 0, "col": 0},
+        {"button": "activity", "row": 0, "col": 1},
+        {"button": "unreads", "row": 0, "col": 2},
+        {"button": "threads", "row": 0, "col": 3},
+        {"button": "dms", "row": 1, "col": 0},
+        {"button": "next-unread", "row": 1, "col": 1},
+        {"button": "mark-read", "row": 1, "col": 2},
+        {"button": "search", "row": 1, "col": 3},
+        {"button": "new-message", "row": 2, "col": 0},
+        {"button": "upload", "row": 2, "col": 1},
+        {"button": "huddle", "row": 2, "col": 2},
+        {"button": "mute", "row": 2, "col": 3},
+        {"button": "back", "row": 3, "col": 0},
+        {"button": "channels", "row": 3, "col": 1},
+        {"button": "workspace", "row": 3, "col": 2},
+        {"button": "status", "row": 3, "col": 3}
+      ]
+    }
+  ]
+}

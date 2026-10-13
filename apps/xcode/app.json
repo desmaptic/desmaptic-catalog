@@ -1,0 +1,766 @@
+{
+  "id": "xcode",
+  "revision": 9,
+  "name": "Xcode",
+  "bundleIds": ["com.apple.dt.Xcode"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "build",
+      "title": {"en": "Build", "de": "Build", "es": "Compilar", "fr": "Compiler", "ru": "Собрать"},
+      "summary": {
+        "en": "Builds the active scheme, even with Xcode in the background",
+        "de": "Baut das aktive Schema, auch wenn Xcode im Hintergrund ist",
+        "es": "Compila el esquema activo, aunque Xcode esté en segundo plano",
+        "fr": "Compile le schéma actif, même avec Xcode en arrière-plan",
+        "ru": "Собирает активную схему, даже когда Xcode в фоне"
+      },
+      "details": {
+        "en": "Like ⌘B for the scheme in the front Xcode window, but it works even with Xcode in the background. Build Status shows how it went.",
+        "de": "Wie ⌘B für das Schema im vorderen Xcode-Fenster, klappt aber auch mit Xcode im Hintergrund. Build-Status zeigt, wie es ausging.",
+        "es": "Como ⌘B para el esquema de la ventana de Xcode que está delante, pero funciona aunque Xcode esté en segundo plano. Estado de compilación muestra cómo fue.",
+        "fr": "Comme ⌘B pour le schéma de la fenêtre Xcode au premier plan, mais fonctionne même avec Xcode en arrière-plan. État du build montre le résultat.",
+        "ru": "Как ⌘B для схемы из переднего окна Xcode, но работает и когда Xcode в фоне. Как всё прошло, показывает «Статус сборки»."
+      },
+      "tapAction": {
+        "en": "Builds the active scheme",
+        "de": "Baut das aktive Schema",
+        "es": "Compila el esquema activo",
+        "fr": "Compile le schéma actif",
+        "ru": "Собирает активную схему"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "hammer"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=build\n@file:scheme/action.zsh"}}
+      }
+    },
+    {
+      "id": "run",
+      "title": {"en": "Run", "de": "Ausführen", "es": "Ejecutar", "fr": "Exécuter", "ru": "Запуск"},
+      "summary": {
+        "en": "Builds and runs the active scheme; hold to stop",
+        "de": "Baut und startet das aktive Schema; Halten stoppt",
+        "es": "Compila y ejecuta el esquema activo; mantén pulsado para detener",
+        "fr": "Compile et lance le schéma actif ; maintenez pour arrêter",
+        "ru": "Собирает и запускает активную схему; удержание — стоп"
+      },
+      "details": {
+        "en": "Like ⌘R for the scheme in the front Xcode window, even with Xcode in the background. Build Status follows the run.",
+        "de": "Wie ⌘R für das Schema im vorderen Xcode-Fenster, auch mit Xcode im Hintergrund. Build-Status verfolgt den Lauf.",
+        "es": "Como ⌘R para el esquema de la ventana de Xcode que está delante, aunque Xcode esté en segundo plano. Estado de compilación sigue la ejecución.",
+        "fr": "Comme ⌘R pour le schéma de la fenêtre Xcode au premier plan, même avec Xcode en arrière-plan. État du build suit l’exécution.",
+        "ru": "Как ⌘R для схемы из переднего окна Xcode, даже когда Xcode в фоне. «Статус сборки» следит за запуском."
+      },
+      "tapAction": {
+        "en": "Builds and runs the active scheme",
+        "de": "Baut und startet das aktive Schema",
+        "es": "Compila y ejecuta el esquema activo",
+        "fr": "Compile et lance le schéma actif",
+        "ru": "Собирает и запускает активную схему"
+      },
+      "holdAction": {
+        "en": "Stops what is running: a build, the app or tests",
+        "de": "Stoppt, was gerade läuft: Build, App oder Tests",
+        "es": "Detiene lo que esté en marcha: compilación, app o pruebas",
+        "fr": "Arrête ce qui tourne : build, app ou tests",
+        "ru": "Останавливает то, что идёт: сборку, приложение или тесты"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "play.fill"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=run\n@file:scheme/action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=stop\n@file:scheme/action.zsh"}}
+      }
+    },
+    {
+      "id": "test",
+      "title": {"en": "Test", "de": "Testen", "es": "Probar", "fr": "Tester", "ru": "Тесты"},
+      "summary": {
+        "en": "Runs the tests of the active scheme",
+        "de": "Führt die Tests des aktiven Schemas aus",
+        "es": "Ejecuta las pruebas del esquema activo",
+        "fr": "Lance les tests du schéma actif",
+        "ru": "Запускает тесты активной схемы"
+      },
+      "details": {
+        "en": "Like ⌘U for the scheme in the front Xcode window, even with Xcode in the background. Build Status shows how many tests failed.",
+        "de": "Wie ⌘U für das Schema im vorderen Xcode-Fenster, auch mit Xcode im Hintergrund. Build-Status zeigt, wie viele Tests fehlgeschlagen sind.",
+        "es": "Como ⌘U para el esquema de la ventana de Xcode que está delante, aunque Xcode esté en segundo plano. Estado de compilación muestra cuántas pruebas fallaron.",
+        "fr": "Comme ⌘U pour le schéma de la fenêtre Xcode au premier plan, même avec Xcode en arrière-plan. État du build indique combien de tests ont échoué.",
+        "ru": "Как ⌘U для схемы из переднего окна Xcode, даже когда Xcode в фоне. Сколько тестов упало, покажет «Статус сборки»."
+      },
+      "tapAction": {
+        "en": "Runs the tests",
+        "de": "Führt die Tests aus",
+        "es": "Ejecuta las pruebas",
+        "fr": "Lance les tests",
+        "ru": "Запускает тесты"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "diamond"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=test\n@file:scheme/action.zsh"}}
+      }
+    },
+    {
+      "id": "stop",
+      "title": {"en": "Stop", "de": "Stopp", "es": "Detener", "fr": "Arrêter", "ru": "Стоп"},
+      "summary": {
+        "en": "Stops the build, run or tests in progress",
+        "de": "Stoppt Build, Ausführung oder Tests",
+        "es": "Detiene la compilación, la ejecución o las pruebas en curso",
+        "fr": "Arrête le build, l’exécution ou les tests en cours",
+        "ru": "Останавливает сборку, запуск или тесты"
+      },
+      "details": {
+        "en": "Like ⌘. in the front Xcode window: stops a build, a running app or tests, even with Xcode in the background.",
+        "de": "Wie ⌘. im vorderen Xcode-Fenster: stoppt einen Build, eine laufende App oder Tests, auch mit Xcode im Hintergrund.",
+        "es": "Como ⌘. en la ventana de Xcode que está delante: detiene una compilación, una app en marcha o las pruebas, aunque Xcode esté en segundo plano.",
+        "fr": "Comme ⌘. dans la fenêtre Xcode au premier plan : arrête un build, une app lancée ou des tests, même avec Xcode en arrière-plan.",
+        "ru": "Как ⌘. в переднем окне Xcode: останавливает сборку, запущенное приложение или тесты, даже когда Xcode в фоне."
+      },
+      "tapAction": {
+        "en": "Stops what is running",
+        "de": "Stoppt, was gerade läuft",
+        "es": "Detiene lo que esté en marcha",
+        "fr": "Arrête ce qui tourne",
+        "ru": "Останавливает то, что идёт"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "stop.fill"}},
+        "color": "#FF375F",
+        "command": {"shellCommand": {"command": "action=stop\n@file:scheme/action.zsh"}}
+      }
+    },
+    {
+      "id": "build-status",
+      "title": {"en": "Build Status", "de": "Build-Status", "es": "Estado de compilación", "fr": "État du build", "ru": "Статус сборки"},
+      "summary": {
+        "en": "Result of builds started here",
+        "de": "Ergebnis der hier gestarteten Builds",
+        "es": "Resultado de las compilaciones iniciadas aquí",
+        "fr": "Résultat des builds lancés d’ici",
+        "ru": "Итог сборок, запущенных отсюда"
+      },
+      "colSpan": 2,
+      "details": {
+        "en": "The last build, run, test or clean started from Desmaptic: ✓ and how long it took, ✕ and how many errors or failed tests, ■ stopped, ! didn’t start. A ⌘B pressed on the Mac doesn’t show here.",
+        "de": "Der letzte von Desmaptic gestartete Build, Lauf, Test oder das letzte Bereinigen: ✓ und die Dauer, ✕ und die Zahl der Fehler oder fehlgeschlagenen Tests, ■ gestoppt, ! nicht gestartet. Ein ⌘B auf dem Mac erscheint hier nicht.",
+        "es": "La última compilación, ejecución, prueba o limpieza iniciada desde Desmaptic: ✓ y cuánto tardó, ✕ y cuántos errores o pruebas fallidas, ■ detenida, ! no se inició. Un ⌘B pulsado en el Mac no aparece aquí.",
+        "fr": "Le dernier build, lancement, test ou nettoyage lancé depuis Desmaptic : ✓ et sa durée, ✕ et le nombre d’erreurs ou de tests échoués, ■ arrêté, ! pas lancé. Un ⌘B tapé sur le Mac n’apparaît pas ici.",
+        "ru": "Последняя сборка, запуск, тесты или очистка, начатые из Desmaptic: ✓ и сколько это заняло, ✕ и число ошибок или упавших тестов, ■ — остановлено, ! — не началось. ⌘B, нажатый на Mac, здесь не виден."
+      },
+      "tapAction": {
+        "en": "Builds the active scheme, like Build",
+        "de": "Baut das aktive Schema, wie Build",
+        "es": "Compila el esquema activo, como Compilar",
+        "fr": "Compile le schéma actif, comme Compiler",
+        "ru": "Собирает активную схему, как «Собрать»"
+      },
+      "holdAction": {
+        "en": "Stops what is running: a build, the app or tests",
+        "de": "Stoppt, was gerade läuft: Build, App oder Tests",
+        "es": "Detiene lo que esté en marcha: compilación, app o pruebas",
+        "fr": "Arrête ce qui tourne : build, app ou tests",
+        "ru": "Останавливает то, что идёт: сборку, приложение или тесты"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "hammer.circle"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=build\n@file:scheme/action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=stop\n@file:scheme/action.zsh"}},
+        "startupScript": "@file:build-status/startup.zsh",
+        "svgFace": {"source": "@file:build-status/rest.svg", "landscapeSource": "@file:build-status/rest-landscape.svg"}
+      },
+      "demoFace": {"source": "@file:build-status/demo.svg", "landscapeSource": "@file:build-status/demo-landscape.svg"}
+    },
+    {
+      "id": "clean",
+      "title": {"en": "Clean", "de": "Bereinigen", "es": "Limpiar", "fr": "Nettoyer", "ru": "Очистить"},
+      "summary": {
+        "en": "Cleans the build products of the active scheme",
+        "de": "Entfernt die Build-Produkte des aktiven Schemas",
+        "es": "Limpia los productos de compilación del esquema activo",
+        "fr": "Nettoie les produits de build du schéma actif",
+        "ru": "Удаляет результаты сборки активной схемы"
+      },
+      "details": {
+        "en": "The next build of the scheme in the front Xcode window starts from scratch. Works even with Xcode in the background; Build Status shows when it’s done.",
+        "de": "Der nächste Build des Schemas im vorderen Xcode-Fenster beginnt von vorn. Klappt auch mit Xcode im Hintergrund; Build-Status zeigt, wann es fertig ist.",
+        "es": "La próxima compilación del esquema de la ventana de Xcode que está delante empieza de cero. Funciona aunque Xcode esté en segundo plano; Estado de compilación muestra cuándo termina.",
+        "fr": "Le prochain build du schéma de la fenêtre Xcode au premier plan repart de zéro. Fonctionne même avec Xcode en arrière-plan ; État du build indique quand c’est fini.",
+        "ru": "Следующая сборка схемы из переднего окна Xcode начнётся с нуля. Работает и когда Xcode в фоне; когда закончится, покажет «Статус сборки»."
+      },
+      "tapAction": {
+        "en": "Cleans the active scheme",
+        "de": "Bereinigt das aktive Schema",
+        "es": "Limpia el esquema activo",
+        "fr": "Nettoie le schéma actif",
+        "ru": "Очищает активную схему"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubbles.and.sparkles"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=clean\n@file:scheme/action.zsh"}}
+      }
+    },
+    {
+      "id": "derived-data",
+      "title": {"en": "DerivedData", "de": "DerivedData", "es": "DerivedData", "fr": "DerivedData", "ru": "DerivedData"},
+      "summary": {
+        "en": "How much space Xcode’s DerivedData takes",
+        "de": "Wie viel Platz DerivedData von Xcode belegt",
+        "es": "Cuánto espacio ocupa DerivedData de Xcode",
+        "fr": "La place que prend DerivedData d’Xcode",
+        "ru": "Сколько места занимает DerivedData Xcode"
+      },
+      "details": {
+        "en": "The size of Xcode’s build products and indexes. The arc fills up to 20 GB and turns pink past it. Clearing is refused during a build and spares the folders of running apps.",
+        "de": "Die Größe der Build-Produkte und Indizes von Xcode. Der Bogen füllt sich bis 20 GB und wird darüber pink. Während eines Builds wird nicht gelöscht, und die Ordner laufender Apps bleiben.",
+        "es": "El tamaño de los productos de compilación y los índices de Xcode. El arco se llena hasta 20 GB y pasa a rosa por encima. No se borra nada durante una compilación, y las carpetas de las apps en ejecución se conservan.",
+        "fr": "La taille des produits de build et des index d’Xcode. L’arc se remplit jusqu’à 20 Go et vire au rose au-delà. Rien n’est effacé pendant un build, et les dossiers des apps en cours d’exécution sont épargnés.",
+        "ru": "Размер результатов сборки и индексов Xcode. Дуга заполняется до 20 ГБ, дальше — розовая. Во время сборки ничего не удаляется, а папки запущенных приложений остаются."
+      },
+      "tapAction": {
+        "en": "Opens the folder in Finder",
+        "de": "Öffnet den Ordner im Finder",
+        "es": "Abre la carpeta en el Finder",
+        "fr": "Ouvre le dossier dans le Finder",
+        "ru": "Открывает папку в Finder"
+      },
+      "holdAction": {
+        "en": "⚠️ Deletes all of DerivedData at once",
+        "de": "⚠️ Löscht sofort alles in DerivedData",
+        "es": "⚠️ Borra todo DerivedData al instante",
+        "fr": "⚠️ Supprime aussitôt tout DerivedData",
+        "ru": "⚠️ Сразу удаляет всю папку DerivedData"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder.badge.gearshape"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=open\n@file:derived-data/folder.zsh\n@file:derived-data/action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=clear\n@file:derived-data/folder.zsh\n@file:derived-data/action.zsh"}},
+        "startupScript": "@file:derived-data/folder.zsh\n@file:derived-data/startup.zsh",
+        "svgFace": {"source": "@file:derived-data/rest.svg"}
+      },
+      "demoFace": {"source": "@file:derived-data/demo.svg"}
+    },
+    {
+      "id": "breakpoints",
+      "title": {"en": "Breakpoints", "de": "Haltepunkte", "es": "Puntos de interrupción", "fr": "Points d’arrêt", "ru": "Точки останова"},
+      "summary": {
+        "en": "Turns all breakpoints on or off (⌘Y)",
+        "de": "Schaltet alle Haltepunkte ein oder aus (⌘Y)",
+        "es": "Activa o desactiva todos los puntos de interrupción (⌘Y)",
+        "fr": "Active ou désactive tous les points d’arrêt (⌘Y)",
+        "ru": "Включает или выключает все точки останова (⌘Y)"
+      },
+      "details": {
+        "en": "Every breakpoint at once — Debug › Activate Breakpoints (⌘Y). Works while Xcode is in front.",
+        "de": "Alle Haltepunkte auf einmal – Debug › Activate Breakpoints (⌘Y). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Todos los puntos de interrupción a la vez: Debug › Activate Breakpoints (⌘Y). Funciona cuando Xcode está delante.",
+        "fr": "Tous les points d’arrêt d’un coup — Debug › Activate Breakpoints (⌘Y). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Сразу все точки останова — Debug › Activate Breakpoints (⌘Y). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Turns the breakpoints on or off",
+        "de": "Schaltet die Haltepunkte ein oder aus",
+        "es": "Activa o desactiva los puntos de interrupción",
+        "fr": "Active ou désactive les points d’arrêt",
+        "ru": "Включает или выключает точки останова"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrowshape.right.fill"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "continue",
+      "title": {"en": "Continue", "de": "Fortsetzen", "es": "Continuar", "fr": "Continuer", "ru": "Продолжить"},
+      "summary": {
+        "en": "Continues the app paused in the debugger (⌃⌘Y)",
+        "de": "Setzt die im Debugger angehaltene App fort (⌃⌘Y)",
+        "es": "Reanuda la app pausada en el depurador (⌃⌘Y)",
+        "fr": "Reprend l’app en pause dans le débogueur (⌃⌘Y)",
+        "ru": "Продолжает приложение, остановленное в отладчике (⌃⌘Y)"
+      },
+      "details": {
+        "en": "Continues the app stopped at a breakpoint, or pauses it while it runs — Debug › Pause / Continue (⌃⌘Y). Works while Xcode is in front.",
+        "de": "Setzt die an einem Haltepunkt angehaltene App fort oder hält sie an, während sie läuft – Debug › Pause / Continue (⌃⌘Y). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Reanuda la app detenida en un punto de interrupción o la pausa mientras se ejecuta: Debug › Pause / Continue (⌃⌘Y). Funciona cuando Xcode está delante.",
+        "fr": "Reprend l’app arrêtée sur un point d’arrêt, ou la met en pause pendant qu’elle tourne — Debug › Pause / Continue (⌃⌘Y). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Продолжает приложение, остановленное на точке останова, или ставит его на паузу, пока оно работает, — Debug › Pause / Continue (⌃⌘Y). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Continues or pauses the app",
+        "de": "Setzt die App fort oder hält sie an",
+        "es": "Reanuda o pausa la app",
+        "fr": "Reprend ou met en pause l’app",
+        "ru": "Продолжает или приостанавливает приложение"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "playpause"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "step-over",
+      "title": {"en": "Step Over", "de": "Step Over", "es": "Step Over", "fr": "Step Over", "ru": "Шаг с обходом"},
+      "summary": {
+        "en": "Runs the current line (F6)",
+        "de": "Führt die aktuelle Zeile aus (F6)",
+        "es": "Ejecuta la línea actual (F6)",
+        "fr": "Exécute la ligne en cours (F6)",
+        "ru": "Выполняет текущую строку (F6)"
+      },
+      "details": {
+        "en": "Runs the current line and stops at the next one, without going into the functions it calls — Debug › Step Over (F6). Works while Xcode is in front.",
+        "de": "Führt die aktuelle Zeile aus und hält an der nächsten, ohne in aufgerufene Funktionen zu gehen – Debug › Step Over (F6). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Ejecuta la línea actual y se detiene en la siguiente, sin entrar en las funciones que llama: Debug › Step Over (F6). Funciona cuando Xcode está delante.",
+        "fr": "Exécute la ligne en cours et s’arrête à la suivante, sans entrer dans les fonctions appelées — Debug › Step Over (F6). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Выполняет текущую строку и останавливается на следующей, не заходя в вызываемые функции, — Debug › Step Over (F6). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Steps over the current line",
+        "de": "Führt die Zeile aus, ohne hineinzugehen",
+        "es": "Avanza una línea sin entrar en funciones",
+        "fr": "Avance d’une ligne sans entrer dans les fonctions",
+        "ru": "Выполняет строку, не заходя в функции"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrowshape.bounce.right"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 97, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "step-into",
+      "title": {"en": "Step Into", "de": "Step Into", "es": "Step Into", "fr": "Step Into", "ru": "Шаг с заходом"},
+      "summary": {
+        "en": "Goes into the function on the current line (F7)",
+        "de": "Geht in die Funktion der aktuellen Zeile (F7)",
+        "es": "Entra en la función de la línea actual (F7)",
+        "fr": "Entre dans la fonction de la ligne en cours (F7)",
+        "ru": "Заходит в функцию на текущей строке (F7)"
+      },
+      "details": {
+        "en": "Goes into the function called on the current line and stops at its first line — Debug › Step Into (F7). Works while Xcode is in front.",
+        "de": "Geht in die in der aktuellen Zeile aufgerufene Funktion und hält an ihrer ersten Zeile – Debug › Step Into (F7). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Entra en la función llamada en la línea actual y se detiene en su primera línea: Debug › Step Into (F7). Funciona cuando Xcode está delante.",
+        "fr": "Entre dans la fonction appelée sur la ligne en cours et s’arrête à sa première ligne — Debug › Step Into (F7). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Заходит в функцию, вызванную на текущей строке, и останавливается на её первой строке, — Debug › Step Into (F7). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Steps into the function",
+        "de": "Geht in die Funktion",
+        "es": "Entra en la función",
+        "fr": "Entre dans la fonction",
+        "ru": "Заходит в функцию"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.to.line"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 98, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "step-out",
+      "title": {"en": "Step Out", "de": "Step Out", "es": "Step Out", "fr": "Step Out", "ru": "Шаг с выходом"},
+      "summary": {
+        "en": "Finishes the current function (F8)",
+        "de": "Beendet die aktuelle Funktion (F8)",
+        "es": "Termina la función actual (F8)",
+        "fr": "Termine la fonction en cours (F8)",
+        "ru": "Доводит текущую функцию до конца (F8)"
+      },
+      "details": {
+        "en": "Runs the rest of the current function and stops where it returns — Debug › Step Out (F8). Works while Xcode is in front.",
+        "de": "Führt den Rest der aktuellen Funktion aus und hält dort, wohin sie zurückkehrt – Debug › Step Out (F8). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Ejecuta el resto de la función actual y se detiene donde regresa: Debug › Step Out (F8). Funciona cuando Xcode está delante.",
+        "fr": "Exécute le reste de la fonction en cours et s’arrête là où elle revient — Debug › Step Out (F8). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Выполняет остаток текущей функции и останавливается там, куда она вернулась, — Debug › Step Out (F8). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Steps out of the function",
+        "de": "Verlässt die Funktion",
+        "es": "Sale de la función",
+        "fr": "Sort de la fonction",
+        "ru": "Выходит из функции"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.to.line"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 100, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "navigator",
+      "title": {"en": "Navigator", "de": "Navigator", "es": "Navegador", "fr": "Navigateur", "ru": "Навигатор"},
+      "summary": {
+        "en": "Shows or hides the navigator on the left",
+        "de": "Blendet den Navigator links ein oder aus",
+        "es": "Muestra u oculta el navegador de la izquierda",
+        "fr": "Affiche ou masque le navigateur à gauche",
+        "ru": "Показывает или прячет навигатор слева"
+      },
+      "details": {
+        "en": "The panel on the left of the Xcode window — View › Navigators › Show Navigator. Works while Xcode is in front.",
+        "de": "Die linke Seitenleiste von Xcode – View › Navigators › Show Navigator. Funktioniert, wenn Xcode vorne ist.",
+        "es": "El panel izquierdo de Xcode: View › Navigators › Show Navigator. Funciona cuando Xcode está delante.",
+        "fr": "Le panneau gauche d’Xcode — View › Navigators › Show Navigator. Fonctionne quand Xcode est au premier plan.",
+        "ru": "Левая панель Xcode — View › Navigators › Show Navigator. Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the navigator",
+        "de": "Blendet den Navigator ein oder aus",
+        "es": "Muestra u oculta el navegador",
+        "fr": "Affiche ou masque le navigateur",
+        "ru": "Показывает или прячет навигатор"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.leading"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "menu=Navigators item=Navigator\n@file:menu/panel.zsh"}}
+      }
+    },
+    {
+      "id": "debug-area",
+      "title": {"en": "Debug Area", "de": "Debug-Bereich", "es": "Área de depuración", "fr": "Zone de débogage", "ru": "Область отладки"},
+      "summary": {
+        "en": "Shows or hides the debug area at the bottom (⇧⌘Y)",
+        "de": "Blendet den Debug-Bereich unten ein oder aus (⇧⌘Y)",
+        "es": "Muestra u oculta el área de depuración inferior (⇧⌘Y)",
+        "fr": "Affiche ou masque la zone de débogage en bas (⇧⌘Y)",
+        "ru": "Показывает или прячет область отладки внизу (⇧⌘Y)"
+      },
+      "details": {
+        "en": "The console and variables at the bottom of the window — View › Debug Area › Show Debug Area (⇧⌘Y). Works while Xcode is in front.",
+        "de": "Konsole und Variablen unten im Fenster – View › Debug Area › Show Debug Area (⇧⌘Y). Funktioniert, wenn Xcode vorne ist.",
+        "es": "La consola y las variables en la parte inferior de la ventana: View › Debug Area › Show Debug Area (⇧⌘Y). Funciona cuando Xcode está delante.",
+        "fr": "La console et les variables en bas de la fenêtre — View › Debug Area › Show Debug Area (⇧⌘Y). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Консоль и переменные внизу окна — View › Debug Area › Show Debug Area (⇧⌘Y). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the debug area",
+        "de": "Blendet den Debug-Bereich ein oder aus",
+        "es": "Muestra u oculta el área de depuración",
+        "fr": "Affiche ou masque la zone de débogage",
+        "ru": "Показывает или прячет область отладки"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.bottomthird.inset.filled"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "inspector",
+      "title": {"en": "Inspector", "de": "Inspektor", "es": "Inspector", "fr": "Inspecteur", "ru": "Инспектор"},
+      "summary": {
+        "en": "Shows or hides the inspector on the right",
+        "de": "Blendet den Inspektor rechts ein oder aus",
+        "es": "Muestra u oculta el inspector de la derecha",
+        "fr": "Affiche ou masque l’inspecteur à droite",
+        "ru": "Показывает или прячет инспектор справа"
+      },
+      "details": {
+        "en": "The panel on the right of the Xcode window — View › Inspectors › Show Inspector. Works while Xcode is in front.",
+        "de": "Die rechte Seitenleiste von Xcode – View › Inspectors › Show Inspector. Funktioniert, wenn Xcode vorne ist.",
+        "es": "El panel derecho de Xcode: View › Inspectors › Show Inspector. Funciona cuando Xcode está delante.",
+        "fr": "Le panneau droit d’Xcode — View › Inspectors › Show Inspector. Fonctionne quand Xcode est au premier plan.",
+        "ru": "Правая панель Xcode — View › Inspectors › Show Inspector. Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the inspector",
+        "de": "Blendet den Inspektor ein oder aus",
+        "es": "Muestra u oculta el inspector",
+        "fr": "Affiche ou masque l’inspecteur",
+        "ru": "Показывает или прячет инспектор"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.trailing"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "menu=Inspectors item=Inspector\n@file:menu/panel.zsh"}}
+      }
+    },
+    {
+      "id": "canvas",
+      "title": {"en": "Canvas", "de": "Canvas", "es": "Lienzo", "fr": "Canevas", "ru": "Холст"},
+      "summary": {
+        "en": "Shows or hides the SwiftUI preview canvas (⌥⌘↩)",
+        "de": "Blendet die SwiftUI-Vorschau ein oder aus (⌥⌘↩)",
+        "es": "Muestra u oculta el lienzo de vista previa de SwiftUI (⌥⌘↩)",
+        "fr": "Affiche ou masque le canevas d’aperçu SwiftUI (⌥⌘↩)",
+        "ru": "Показывает или прячет холст превью SwiftUI (⌥⌘↩)"
+      },
+      "details": {
+        "en": "The SwiftUI preview next to the editor — Editor › Preview (⌥⌘↩). Works while Xcode is in front.",
+        "de": "Die SwiftUI-Vorschau neben dem Editor – Editor › Preview (⌥⌘↩). Funktioniert, wenn Xcode vorne ist.",
+        "es": "La vista previa de SwiftUI junto al editor: Editor › Preview (⌥⌘↩). Funciona cuando Xcode está delante.",
+        "fr": "L’aperçu SwiftUI à côté de l’éditeur — Editor › Preview (⌥⌘↩). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Превью SwiftUI рядом с редактором — Editor › Preview (⌥⌘↩). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the canvas",
+        "de": "Blendet die Vorschau ein oder aus",
+        "es": "Muestra u oculta el lienzo",
+        "fr": "Affiche ou masque le canevas",
+        "ru": "Показывает или прячет холст"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.righthalf.inset.filled"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "open-quickly",
+      "title": {"en": "Open Quickly", "de": "Schnell öffnen", "es": "Abrir rápido", "fr": "Ouverture rapide", "ru": "Быстро открыть"},
+      "summary": {
+        "en": "Jumps to any file or symbol (⇧⌘O)",
+        "de": "Springt zu jeder Datei und jedem Symbol (⇧⌘O)",
+        "es": "Salta a cualquier archivo o símbolo (⇧⌘O)",
+        "fr": "Accède à n’importe quel fichier ou symbole (⇧⌘O)",
+        "ru": "Переход к любому файлу или символу (⇧⌘O)"
+      },
+      "details": {
+        "en": "Type a few letters of a file, type or function and press Return to jump there — File › Open Quickly (⇧⌘O). Works while Xcode is in front.",
+        "de": "Ein paar Buchstaben einer Datei, eines Typs oder einer Funktion tippen und mit Return hinspringen – File › Open Quickly (⇧⌘O). Funktioniert, wenn Xcode vorne ist.",
+        "es": "Escribe unas letras de un archivo, tipo o función y pulsa Retorno para ir allí: File › Open Quickly (⇧⌘O). Funciona cuando Xcode está delante.",
+        "fr": "Tapez quelques lettres d’un fichier, d’un type ou d’une fonction, puis Retour pour y aller — File › Open Quickly (⇧⌘O). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Наберите несколько букв файла, типа или функции и нажмите Return, чтобы перейти туда, — File › Open Quickly (⇧⌘O). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Open Quickly",
+        "de": "Öffnet „Open Quickly“",
+        "es": "Abre Open Quickly",
+        "fr": "Ouvre Open Quickly",
+        "ru": "Открывает Open Quickly"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bolt"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "find",
+      "title": {"en": "Find in Project", "de": "Im Projekt suchen", "es": "Buscar en proyecto", "fr": "Recherche globale", "ru": "Поиск в проекте"},
+      "summary": {
+        "en": "Searches every file of the project (⇧⌘F)",
+        "de": "Durchsucht alle Dateien des Projekts (⇧⌘F)",
+        "es": "Busca en todos los archivos del proyecto (⇧⌘F)",
+        "fr": "Cherche dans tous les fichiers du projet (⇧⌘F)",
+        "ru": "Ищет по всем файлам проекта (⇧⌘F)"
+      },
+      "details": {
+        "en": "The Find navigator, to search every file of the project — Find › Find in Workspace (⇧⌘F). Works while Xcode is in front.",
+        "de": "Der Suchnavigator, um alle Dateien des Projekts zu durchsuchen – Find › Find in Workspace (⇧⌘F). Funktioniert, wenn Xcode vorne ist.",
+        "es": "El navegador de búsqueda, para buscar en todos los archivos del proyecto: Find › Find in Workspace (⇧⌘F). Funciona cuando Xcode está delante.",
+        "fr": "Le navigateur de recherche, pour chercher dans tous les fichiers du projet — Find › Find in Workspace (⇧⌘F). Fonctionne quand Xcode est au premier plan.",
+        "ru": "Навигатор поиска по всем файлам проекта — Find › Find in Workspace (⇧⌘F). Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the project search",
+        "de": "Öffnet die Projektsuche",
+        "es": "Abre la búsqueda en el proyecto",
+        "fr": "Ouvre la recherche dans le projet",
+        "ru": "Открывает поиск по проекту"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "scheme",
+      "title": {"en": "Scheme", "de": "Schema", "es": "Esquema", "fr": "Schéma", "ru": "Схема"},
+      "summary": {
+        "en": "Makes your scheme the active one, even with Xcode in the background",
+        "de": "Macht dein Schema zum aktiven, auch wenn Xcode im Hintergrund ist",
+        "es": "Hace activo tu esquema, aunque Xcode esté en segundo plano",
+        "fr": "Rend votre schéma actif, même avec Xcode en arrière-plan",
+        "ru": "Делает вашу схему активной, даже когда Xcode в фоне"
+      },
+      "details": {
+        "en": "Write the scheme’s name in the first line of the button’s script: scheme=\"MyApp\". The next Build, Run or Test uses it. An unknown name is refused with the names there are.",
+        "de": "Schreib den Namen des Schemas in die erste Zeile des Skripts der Taste: scheme=\"MyApp\". Der nächste Build, Lauf oder Test nimmt es. Ein unbekannter Name wird mit den vorhandenen abgelehnt.",
+        "es": "Escribe el nombre del esquema en la primera línea del script del botón: scheme=\"MyApp\". La próxima compilación, ejecución o prueba lo usa. Un nombre desconocido se rechaza con la lista de los que hay.",
+        "fr": "Écrivez le nom du schéma à la première ligne du script du bouton : scheme=\"MyApp\". Le prochain build, lancement ou test l’utilise. Un nom inconnu est refusé avec la liste de ceux qui existent.",
+        "ru": "Впишите имя схемы в первую строку скрипта кнопки: scheme=\"MyApp\". Следующие сборка, запуск или тесты возьмут её. Незнакомое имя кнопка отклонит и перечислит те, что есть."
+      },
+      "tapAction": {
+        "en": "Makes the scheme active",
+        "de": "Macht das Schema aktiv",
+        "es": "Activa el esquema",
+        "fr": "Rend le schéma actif",
+        "ru": "Делает схему активной"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.stack.3d.up"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "scheme=\"\"   # ← the scheme to make active, as Xcode lists it: scheme=\"MyApp\"\n@file:scheme/active.zsh"}}
+      }
+    },
+    {
+      "id": "run-destination",
+      "title": {"en": "Run Destination", "de": "Zielgerät", "es": "Destino", "fr": "Destination", "ru": "Устройство запуска"},
+      "summary": {
+        "en": "Makes your device the run destination, even with Xcode in the background",
+        "de": "Macht dein Gerät zum Ziel für Ausführen, auch wenn Xcode im Hintergrund ist",
+        "es": "Hace de tu dispositivo el destino de ejecución, aunque Xcode esté en segundo plano",
+        "fr": "Fait de votre appareil la destination d’exécution, même avec Xcode en arrière-plan",
+        "ru": "Делает ваше устройство целью запуска, даже когда Xcode в фоне"
+      },
+      "details": {
+        "en": "Write the device’s name in the first line of the button’s script: destination=\"iPhone 17 Pro\". Of several so named, the newest system is taken; add the version for another: iPhone 17 Pro (26.4).",
+        "de": "Schreib den Gerätenamen in die erste Zeile des Skripts der Taste: destination=\"iPhone 17 Pro\". Von mehreren gleichnamigen gilt das neueste System; für ein anderes die Version anhängen: iPhone 17 Pro (26.4).",
+        "es": "Escribe el nombre del dispositivo en la primera línea del script del botón: destination=\"iPhone 17 Pro\". Entre varios del mismo nombre gana el sistema más nuevo; para otro, añade la versión: iPhone 17 Pro (26.4).",
+        "fr": "Écrivez le nom de l’appareil à la première ligne du script du bouton : destination=\"iPhone 17 Pro\". Parmi plusieurs du même nom, le système le plus récent l’emporte ; pour un autre, ajoutez la version : iPhone 17 Pro (26.4).",
+        "ru": "Впишите имя устройства в первую строку скрипта кнопки: destination=\"iPhone 17 Pro\". Из одноимённых берётся самая новая система; для другой допишите версию: iPhone 17 Pro (26.4)."
+      },
+      "tapAction": {
+        "en": "Makes the device the run destination",
+        "de": "Macht das Gerät zum Ziel",
+        "es": "Elige el dispositivo como destino",
+        "fr": "Choisit l’appareil comme destination",
+        "ru": "Делает устройство целью запуска"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "iphone"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "destination=\"\"   # ← the device to run on, as Xcode shows it next to the scheme: destination=\"iPhone 17 Pro\"\n@file:scheme/active.zsh"}}
+      }
+    },
+    {
+      "id": "test-again",
+      "title": {"en": "Test Again", "de": "Erneut testen", "es": "Repetir pruebas", "fr": "Retester", "ru": "Тесты снова"},
+      "summary": {
+        "en": "Runs the last tests again (⌃⌥⌘G)",
+        "de": "Führt die letzten Tests noch einmal aus (⌃⌥⌘G)",
+        "es": "Vuelve a ejecutar las últimas pruebas (⌃⌥⌘G)",
+        "fr": "Relance les derniers tests (⌃⌥⌘G)",
+        "ru": "Повторяет последние тесты (⌃⌥⌘G)"
+      },
+      "details": {
+        "en": "The same tests as last time — Product › Perform Action › Test Again (⌃⌥⌘G). When Xcode doesn’t offer it yet, the button says why. Works while Xcode is in front.",
+        "de": "Dieselben Tests wie zuletzt – Product › Perform Action › Test Again (⌃⌥⌘G). Bietet Xcode es noch nicht an, sagt die Taste, warum. Funktioniert, wenn Xcode vorne ist.",
+        "es": "Las mismas pruebas que la última vez: Product › Perform Action › Test Again (⌃⌥⌘G). Si Xcode aún no lo ofrece, el botón dice por qué. Funciona cuando Xcode está delante.",
+        "fr": "Les mêmes tests que la dernière fois — Product › Perform Action › Test Again (⌃⌥⌘G). Si Xcode ne le propose pas encore, le bouton dit pourquoi. Fonctionne quand Xcode est au premier plan.",
+        "ru": "Те же тесты, что в прошлый раз, — Product › Perform Action › Test Again (⌃⌥⌘G). Если Xcode пока этого не предлагает, кнопка скажет почему. Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Runs the last tests again",
+        "de": "Wiederholt die letzten Tests",
+        "es": "Repite las últimas pruebas",
+        "fr": "Relance les derniers tests",
+        "ru": "Повторяет последние тесты"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.counterclockwise"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "menu=Product sub='Perform Action' item='Test Again'\n@file:menu/press.zsh"}}
+      }
+    },
+    {
+      "id": "refresh-canvas",
+      "title": {"en": "Refresh Canvas", "de": "Canvas neu laden", "es": "Actualizar lienzo", "fr": "Actualiser le canevas", "ru": "Обновить холст"},
+      "summary": {
+        "en": "Refreshes the SwiftUI preview (⌥⌘P)",
+        "de": "Lädt die SwiftUI-Vorschau neu (⌥⌘P)",
+        "es": "Actualiza la vista previa de SwiftUI (⌥⌘P)",
+        "fr": "Actualise l’aperçu SwiftUI (⌥⌘P)",
+        "ru": "Обновляет превью SwiftUI (⌥⌘P)"
+      },
+      "details": {
+        "en": "Rebuilds the preview when it has paused — Editor › Canvas › Refresh Canvas (⌥⌘P). When no canvas is shown, the button says so. Works while Xcode is in front.",
+        "de": "Baut die Vorschau neu, wenn sie pausiert – Editor › Canvas › Refresh Canvas (⌥⌘P). Ist keine Vorschau zu sehen, sagt die Taste das. Funktioniert, wenn Xcode vorne ist.",
+        "es": "Vuelve a generar la vista previa cuando se ha pausado: Editor › Canvas › Refresh Canvas (⌥⌘P). Si no se ve ningún lienzo, el botón lo dice. Funciona cuando Xcode está delante.",
+        "fr": "Reconstruit l’aperçu quand il s’est mis en pause — Editor › Canvas › Refresh Canvas (⌥⌘P). Si aucun canevas n’est affiché, le bouton le dit. Fonctionne quand Xcode est au premier plan.",
+        "ru": "Пересобирает превью, когда оно встало на паузу, — Editor › Canvas › Refresh Canvas (⌥⌘P). Если холст не показан, кнопка так и скажет. Работает, когда Xcode на переднем плане."
+      },
+      "tapAction": {
+        "en": "Refreshes the canvas",
+        "de": "Lädt die Vorschau neu",
+        "es": "Actualiza el lienzo",
+        "fr": "Actualise le canevas",
+        "ru": "Обновляет холст"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "menu=Editor sub=Canvas item='Refresh Canvas'\n@file:menu/press.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Xcode", "de": "Xcode", "es": "Xcode", "fr": "Xcode", "ru": "Xcode"},
+      "summary": {
+        "en": "Build, run, test and debug from your phone",
+        "de": "Bauen, starten, testen und debuggen vom Telefon aus",
+        "es": "Compila, ejecuta, prueba y depura desde el teléfono",
+        "fr": "Compilez, lancez, testez et déboguez depuis votre téléphone",
+        "ru": "Сборка, запуск, тесты и отладка с телефона"
+      },
+      "details": {
+        "en": "Build, run, test, stop, clean and the scheme and run destination buttons work even with Xcode in the background. The debugger, panel, search, Test Again and canvas buttons work while Xcode is in front.",
+        "de": "Bauen, Starten, Testen, Stoppen, Bereinigen sowie die Tasten für Schema und Zielgerät klappen auch mit Xcode im Hintergrund. Die Tasten für Debugger, Bereiche, Suche, erneutes Testen und Canvas funktionieren, wenn Xcode vorne ist.",
+        "es": "Compilar, ejecutar, probar, detener, limpiar y los botones de esquema y destino funcionan aunque Xcode esté en segundo plano. Los del depurador, los paneles, la búsqueda, repetir pruebas y el lienzo funcionan cuando Xcode está delante.",
+        "fr": "Compiler, lancer, tester, arrêter, nettoyer et les boutons de schéma et de destination fonctionnent même avec Xcode en arrière-plan. Les boutons du débogueur, des panneaux, de la recherche, de Retester et du canevas fonctionnent quand Xcode est au premier plan.",
+        "ru": "Сборка, запуск, тесты, остановка, очистка, выбор схемы и устройства запуска работают, даже когда Xcode в фоне. Кнопки отладчика, панелей, поиска, повтора тестов и холста — когда Xcode на переднем плане."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "build", "row": 0, "col": 0},
+        {"button": "run", "row": 0, "col": 1},
+        {"button": "test", "row": 0, "col": 2},
+        {"button": "stop", "row": 0, "col": 3},
+        {"button": "build-status", "row": 1, "col": 0},
+        {"button": "clean", "row": 1, "col": 2},
+        {"button": "breakpoints", "row": 1, "col": 3},
+        {"button": "continue", "row": 2, "col": 0},
+        {"button": "step-over", "row": 2, "col": 1},
+        {"button": "step-into", "row": 2, "col": 2},
+        {"button": "step-out", "row": 2, "col": 3},
+        {"button": "navigator", "row": 3, "col": 0},
+        {"button": "debug-area", "row": 3, "col": 1},
+        {"button": "inspector", "row": 3, "col": 2},
+        {"button": "canvas", "row": 3, "col": 3},
+        {"button": "open-quickly", "row": 4, "col": 0},
+        {"button": "find", "row": 4, "col": 1},
+        {"button": "derived-data", "row": 4, "col": 2},
+        {"button": "scheme", "row": 5, "col": 0},
+        {"button": "run-destination", "row": 5, "col": 1},
+        {"button": "test-again", "row": 5, "col": 2},
+        {"button": "refresh-canvas", "row": 5, "col": 3}
+      ]
+    }
+  ]
+}

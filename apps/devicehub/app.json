@@ -1,0 +1,631 @@
+{
+  "id": "devicehub",
+  "revision": 5,
+  "name": "Device Hub",
+  "bundleIds": [
+    "com.apple.dt.Devices"
+  ],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "shake",
+      "title": {
+        "en": "Shake",
+        "de": "Schütteln",
+        "es": "Agitar",
+        "fr": "Secouer",
+        "ru": "Встряхнуть"
+      },
+      "summary": {
+        "en": "Shakes the simulator, as if you shook the device",
+        "de": "Schüttelt den Simulator, als würdest du das Gerät schütteln",
+        "es": "Agita el simulador como si agitaras el dispositivo",
+        "fr": "Secoue le simulateur comme si vous secouiez l’appareil",
+        "ru": "Встряхивает симулятор, как будто вы встряхнули устройство"
+      },
+      "details": {
+        "en": "The simulator in Device Hub’s front window, or every running one when it shows none; works with Device Hub in the background. A connected device cannot be shaken.",
+        "de": "Der Simulator im vorderen Fenster von Device Hub oder, wenn dort keiner ist, jeder laufende; funktioniert mit Device Hub im Hintergrund. Ein angeschlossenes Gerät lässt sich nicht schütteln.",
+        "es": "El simulador de la ventana de delante de Device Hub o, si no hay ninguno, todos los que están en marcha; funciona con Device Hub en segundo plano. Un dispositivo conectado no se puede agitar.",
+        "fr": "Le simulateur de la fenêtre au premier plan de Device Hub ou, s’il n’y en a pas, tous ceux qui tournent ; marche avec Device Hub en arrière-plan. Un appareil connecté ne peut pas être secoué.",
+        "ru": "Симулятор из переднего окна Device Hub, а если его там нет — все запущенные; работает и с Device Hub в фоне. Подключённое устройство встряхнуть нельзя."
+      },
+      "tapAction": {
+        "en": "Shakes the simulator",
+        "de": "Schüttelt den Simulator",
+        "es": "Agita el simulador",
+        "fr": "Secoue le simulateur",
+        "ru": "Встряхивает симулятор"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "iphone.radiowaves.left.and.right"}},
+        "color": "#FFD60A",
+        "command": {"shellCommand": {"command": "@file:hub/ax.zsh\n@file:hub/booted.zsh\n@file:hub/shake.zsh"}}
+      }
+    },
+    {
+      "id": "home",
+      "title": {
+        "en": "Home",
+        "de": "Home",
+        "es": "Inicio",
+        "fr": "Accueil",
+        "ru": "Домой"
+      },
+      "summary": {
+        "en": "Goes to the Home Screen of the simulator or device",
+        "de": "Geht zum Home-Bildschirm des Simulators oder Geräts",
+        "es": "Va a la pantalla de inicio del simulador o dispositivo",
+        "fr": "Affiche l’écran d’accueil du simulateur ou de l’appareil",
+        "ru": "Открывает экран «Домой» симулятора или устройства"
+      },
+      "details": {
+        "en": "Controls › Home in Device Hub: the Home button or swipe of the device in its front window. Brings Device Hub to the front.",
+        "de": "Controls › Home in Device Hub: die Home-Taste oder das Wischen des Geräts im vorderen Fenster. Holt Device Hub nach vorne.",
+        "es": "Controls › Home de Device Hub: el botón o gesto de inicio del dispositivo de la ventana de delante. Trae Device Hub al frente.",
+        "fr": "Controls › Home de Device Hub : le bouton ou le geste d’accueil de l’appareil de la fenêtre au premier plan. Met Device Hub au premier plan.",
+        "ru": "Controls › Home в Device Hub: кнопка или жест «Домой» устройства в переднем окне. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Goes to the Home Screen",
+        "de": "Geht zum Home-Bildschirm",
+        "es": "Va a la pantalla de inicio",
+        "fr": "Affiche l’écran d’accueil",
+        "ru": "Открывает экран «Домой»"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "house"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item=Home\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "lock",
+      "title": {
+        "en": "Lock",
+        "de": "Sperren",
+        "es": "Bloquear",
+        "fr": "Verrouiller",
+        "ru": "Блокировка"
+      },
+      "summary": {
+        "en": "Locks the simulator or device, as its side button does",
+        "de": "Sperrt den Simulator oder das Gerät wie die Seitentaste",
+        "es": "Bloquea el simulador o dispositivo, como el botón lateral",
+        "fr": "Verrouille le simulateur ou l’appareil, comme le bouton latéral",
+        "ru": "Блокирует симулятор или устройство, как боковая кнопка"
+      },
+      "details": {
+        "en": "Controls › Lock in Device Hub, for the device in its front window. Brings Device Hub to the front.",
+        "de": "Controls › Lock in Device Hub, für das Gerät im vorderen Fenster. Holt Device Hub nach vorne.",
+        "es": "Controls › Lock de Device Hub, para el dispositivo de la ventana de delante. Trae Device Hub al frente.",
+        "fr": "Controls › Lock de Device Hub, pour l’appareil de la fenêtre au premier plan. Met Device Hub au premier plan.",
+        "ru": "Controls › Lock в Device Hub, для устройства в переднем окне. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Locks the device",
+        "de": "Sperrt das Gerät",
+        "es": "Bloquea el dispositivo",
+        "fr": "Verrouille l’appareil",
+        "ru": "Блокирует устройство"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "lock"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item=Lock\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "rotate-left",
+      "title": {
+        "en": "Rotate Left",
+        "de": "Links drehen",
+        "es": "Girar a la izquierda",
+        "fr": "Pivoter à gauche",
+        "ru": "Повернуть влево"
+      },
+      "summary": {
+        "en": "Turns the simulator or device a quarter turn to the left",
+        "de": "Dreht den Simulator oder das Gerät um 90° nach links",
+        "es": "Gira el simulador o dispositivo 90° a la izquierda",
+        "fr": "Fait pivoter le simulateur ou l’appareil de 90° vers la gauche",
+        "ru": "Поворачивает симулятор или устройство на 90° влево"
+      },
+      "details": {
+        "en": "Controls › Rotate Left in Device Hub, for the device in its front window; a device that does not turn, such as Apple Watch, refuses. Brings Device Hub to the front.",
+        "de": "Controls › Rotate Left in Device Hub, für das Gerät im vorderen Fenster; ein Gerät, das sich nicht dreht, etwa die Apple Watch, lehnt ab. Holt Device Hub nach vorne.",
+        "es": "Controls › Rotate Left de Device Hub, para el dispositivo de la ventana de delante; uno que no gira, como el Apple Watch, se niega. Trae Device Hub al frente.",
+        "fr": "Controls › Rotate Left de Device Hub, pour l’appareil de la fenêtre au premier plan ; un appareil qui ne pivote pas, comme l’Apple Watch, refuse. Met Device Hub au premier plan.",
+        "ru": "Controls › Rotate Left в Device Hub, для устройства в переднем окне; устройство, которое не поворачивается, например Apple Watch, откажет. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Turns it to the left",
+        "de": "Dreht es nach links",
+        "es": "Lo gira a la izquierda",
+        "fr": "Le fait pivoter vers la gauche",
+        "ru": "Поворачивает влево"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rotate.left"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item='Rotate Left'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "rotate-right",
+      "title": {
+        "en": "Rotate Right",
+        "de": "Rechts drehen",
+        "es": "Girar a la derecha",
+        "fr": "Pivoter à droite",
+        "ru": "Повернуть вправо"
+      },
+      "summary": {
+        "en": "Turns the simulator or device a quarter turn to the right",
+        "de": "Dreht den Simulator oder das Gerät um 90° nach rechts",
+        "es": "Gira el simulador o dispositivo 90° a la derecha",
+        "fr": "Fait pivoter le simulateur ou l’appareil de 90° vers la droite",
+        "ru": "Поворачивает симулятор или устройство на 90° вправо"
+      },
+      "details": {
+        "en": "Controls › Rotate Right in Device Hub, for the device in its front window; a device that does not turn, such as Apple Watch, refuses. Brings Device Hub to the front.",
+        "de": "Controls › Rotate Right in Device Hub, für das Gerät im vorderen Fenster; ein Gerät, das sich nicht dreht, etwa die Apple Watch, lehnt ab. Holt Device Hub nach vorne.",
+        "es": "Controls › Rotate Right de Device Hub, para el dispositivo de la ventana de delante; uno que no gira, como el Apple Watch, se niega. Trae Device Hub al frente.",
+        "fr": "Controls › Rotate Right de Device Hub, pour l’appareil de la fenêtre au premier plan ; un appareil qui ne pivote pas, comme l’Apple Watch, refuse. Met Device Hub au premier plan.",
+        "ru": "Controls › Rotate Right в Device Hub, для устройства в переднем окне; устройство, которое не поворачивается, например Apple Watch, откажет. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Turns it to the right",
+        "de": "Dreht es nach rechts",
+        "es": "Lo gira a la derecha",
+        "fr": "Le fait pivoter vers la droite",
+        "ru": "Поворачивает вправо"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rotate.right"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item='Rotate Right'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "screenshot",
+      "title": {
+        "en": "Screenshot",
+        "de": "Screenshot",
+        "es": "Captura",
+        "fr": "Capture d’écran",
+        "ru": "Снимок экрана"
+      },
+      "summary": {
+        "en": "A screenshot of the simulator or device",
+        "de": "Ein Bildschirmfoto des Simulators oder Geräts",
+        "es": "Una captura de pantalla del simulador o dispositivo",
+        "fr": "Une capture d’écran du simulateur ou de l’appareil",
+        "ru": "Снимок экрана симулятора или устройства"
+      },
+      "details": {
+        "en": "Controls › Screenshot in Device Hub, for the device in its front window; the picture goes where Device Hub saves its screenshots. Brings Device Hub to the front.",
+        "de": "Controls › Screenshot in Device Hub, für das Gerät im vorderen Fenster; das Bild landet dort, wo Device Hub seine Bildschirmfotos sichert. Holt Device Hub nach vorne.",
+        "es": "Controls › Screenshot de Device Hub, para el dispositivo de la ventana de delante; la imagen va donde Device Hub guarda sus capturas. Trae Device Hub al frente.",
+        "fr": "Controls › Screenshot de Device Hub, pour l’appareil de la fenêtre au premier plan ; l’image va là où Device Hub enregistre ses captures. Met Device Hub au premier plan.",
+        "ru": "Controls › Screenshot в Device Hub, для устройства в переднем окне; снимок сохраняется туда же, куда Device Hub сохраняет свои. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Takes a screenshot",
+        "de": "Macht ein Bildschirmfoto",
+        "es": "Hace una captura",
+        "fr": "Fait une capture d’écran",
+        "ru": "Делает снимок экрана"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "camera.viewfinder"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item=Screenshot\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "record",
+      "title": {
+        "en": "Record Screen",
+        "de": "Aufnahme",
+        "es": "Grabar pantalla",
+        "fr": "Enregistrer l’écran",
+        "ru": "Запись экрана"
+      },
+      "summary": {
+        "en": "Starts or stops a screen recording of the simulator or device",
+        "de": "Startet oder stoppt eine Bildschirmaufnahme des Simulators oder Geräts",
+        "es": "Inicia o detiene una grabación de pantalla del simulador o dispositivo",
+        "fr": "Lance ou arrête un enregistrement de l’écran du simulateur ou de l’appareil",
+        "ru": "Начинает или останавливает запись экрана симулятора или устройства"
+      },
+      "details": {
+        "en": "Controls › Record Screen in Device Hub, for the device in its front window; the next tap is Stop Recording, and Device Hub saves the video. Brings Device Hub to the front.",
+        "de": "Controls › Record Screen in Device Hub, für das Gerät im vorderen Fenster; das nächste Tippen ist Stop Recording, und Device Hub sichert das Video. Holt Device Hub nach vorne.",
+        "es": "Controls › Record Screen de Device Hub, para el dispositivo de la ventana de delante; el siguiente toque es Stop Recording y Device Hub guarda el vídeo. Trae Device Hub al frente.",
+        "fr": "Controls › Record Screen de Device Hub, pour l’appareil de la fenêtre au premier plan ; le toucher suivant est Stop Recording, et Device Hub enregistre la vidéo. Met Device Hub au premier plan.",
+        "ru": "Controls › Record Screen в Device Hub, для устройства в переднем окне; следующее нажатие — Stop Recording, и Device Hub сохраняет видео. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Starts or stops the recording",
+        "de": "Startet oder stoppt die Aufnahme",
+        "es": "Inicia o detiene la grabación",
+        "fr": "Lance ou arrête l’enregistrement",
+        "ru": "Начинает или останавливает запись"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "record.circle"}},
+        "color": "#FF453A",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item='Record Screen|Stop Recording'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "keyboard",
+      "title": {
+        "en": "Keyboard",
+        "de": "Tastatur",
+        "es": "Teclado",
+        "fr": "Clavier",
+        "ru": "Клавиатура"
+      },
+      "summary": {
+        "en": "Shows or hides the on-screen keyboard",
+        "de": "Blendet die Bildschirmtastatur ein oder aus",
+        "es": "Muestra u oculta el teclado en pantalla",
+        "fr": "Affiche ou masque le clavier à l’écran",
+        "ru": "Показывает или скрывает экранную клавиатуру"
+      },
+      "details": {
+        "en": "Device › Keyboard › Toggle Software Keyboard in Device Hub, for the device in its front window. Brings Device Hub to the front.",
+        "de": "Device › Keyboard › Toggle Software Keyboard in Device Hub, für das Gerät im vorderen Fenster. Holt Device Hub nach vorne.",
+        "es": "Device › Keyboard › Toggle Software Keyboard de Device Hub, para el dispositivo de la ventana de delante. Trae Device Hub al frente.",
+        "fr": "Device › Keyboard › Toggle Software Keyboard de Device Hub, pour l’appareil de la fenêtre au premier plan. Met Device Hub au premier plan.",
+        "ru": "Device › Keyboard › Toggle Software Keyboard в Device Hub, для устройства в переднем окне. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Shows or hides the keyboard",
+        "de": "Blendet die Tastatur ein oder aus",
+        "es": "Muestra u oculta el teclado",
+        "fr": "Affiche ou masque le clavier",
+        "ru": "Показывает или скрывает клавиатуру"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "keyboard"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=press menu=Device sub=Keyboard item='Toggle Software Keyboard'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "appearance",
+      "title": {
+        "en": "Appearance",
+        "de": "Hell/Dunkel",
+        "es": "Apariencia",
+        "fr": "Apparence",
+        "ru": "Оформление"
+      },
+      "summary": {
+        "en": "Switches between light and dark appearance",
+        "de": "Wechselt zwischen hellem und dunklem Erscheinungsbild",
+        "es": "Cambia entre la apariencia clara y la oscura",
+        "fr": "Passe de l’apparence claire à la sombre et inversement",
+        "ru": "Переключает светлое и тёмное оформление"
+      },
+      "details": {
+        "en": "Device › Appearance › Toggle Appearance in Device Hub, for the device in its front window. Brings Device Hub to the front.",
+        "de": "Device › Appearance › Toggle Appearance in Device Hub, für das Gerät im vorderen Fenster. Holt Device Hub nach vorne.",
+        "es": "Device › Appearance › Toggle Appearance de Device Hub, para el dispositivo de la ventana de delante. Trae Device Hub al frente.",
+        "fr": "Device › Appearance › Toggle Appearance de Device Hub, pour l’appareil de la fenêtre au premier plan. Met Device Hub au premier plan.",
+        "ru": "Device › Appearance › Toggle Appearance в Device Hub, для устройства в переднем окне. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Switches light and dark",
+        "de": "Wechselt Hell und Dunkel",
+        "es": "Cambia entre claro y oscuro",
+        "fr": "Alterne clair et sombre",
+        "ru": "Переключает светлое и тёмное"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.lefthalf.filled"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=press menu=Device sub=Appearance item='Toggle Appearance'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "text-larger",
+      "title": {
+        "en": "Larger Text",
+        "de": "Größerer Text",
+        "es": "Texto más grande",
+        "fr": "Texte plus grand",
+        "ru": "Текст крупнее"
+      },
+      "summary": {
+        "en": "One step larger text on the simulator or device",
+        "de": "Eine Stufe größerer Text auf dem Simulator oder Gerät",
+        "es": "Texto un paso más grande en el simulador o dispositivo",
+        "fr": "Texte d’un cran plus grand sur le simulateur ou l’appareil",
+        "ru": "Текст на шаг крупнее на симуляторе или устройстве"
+      },
+      "details": {
+        "en": "Device › Accessibility › Increase Text Size in Device Hub, for the device in its front window: apps that follow Dynamic Type grow. Brings Device Hub to the front.",
+        "de": "Device › Accessibility › Increase Text Size in Device Hub, für das Gerät im vorderen Fenster: Apps mit dynamischer Schrift werden größer. Holt Device Hub nach vorne.",
+        "es": "Device › Accessibility › Increase Text Size de Device Hub, para el dispositivo de la ventana de delante: las apps con tipo dinámico crecen. Trae Device Hub al frente.",
+        "fr": "Device › Accessibility › Increase Text Size de Device Hub, pour l’appareil de la fenêtre au premier plan : les apps qui suivent la police dynamique grossissent. Met Device Hub au premier plan.",
+        "ru": "Device › Accessibility › Increase Text Size в Device Hub, для устройства в переднем окне: приложения с динамическим шрифтом становятся крупнее. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Makes the text larger",
+        "de": "Vergrößert den Text",
+        "es": "Agranda el texto",
+        "fr": "Agrandit le texte",
+        "ru": "Делает текст крупнее"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.larger"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=press menu=Device sub=Accessibility item='Increase Text Size'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "text-smaller",
+      "title": {
+        "en": "Smaller Text",
+        "de": "Kleinerer Text",
+        "es": "Texto más pequeño",
+        "fr": "Texte plus petit",
+        "ru": "Текст мельче"
+      },
+      "summary": {
+        "en": "One step smaller text on the simulator or device",
+        "de": "Eine Stufe kleinerer Text auf dem Simulator oder Gerät",
+        "es": "Texto un paso más pequeño en el simulador o dispositivo",
+        "fr": "Texte d’un cran plus petit sur le simulateur ou l’appareil",
+        "ru": "Текст на шаг мельче на симуляторе или устройстве"
+      },
+      "details": {
+        "en": "Device › Accessibility › Decrease Text Size in Device Hub, for the device in its front window: apps that follow Dynamic Type shrink. Brings Device Hub to the front.",
+        "de": "Device › Accessibility › Decrease Text Size in Device Hub, für das Gerät im vorderen Fenster: Apps mit dynamischer Schrift werden kleiner. Holt Device Hub nach vorne.",
+        "es": "Device › Accessibility › Decrease Text Size de Device Hub, para el dispositivo de la ventana de delante: las apps con tipo dinámico se encogen. Trae Device Hub al frente.",
+        "fr": "Device › Accessibility › Decrease Text Size de Device Hub, pour l’appareil de la fenêtre au premier plan : les apps qui suivent la police dynamique rapetissent. Met Device Hub au premier plan.",
+        "ru": "Device › Accessibility › Decrease Text Size в Device Hub, для устройства в переднем окне: приложения с динамическим шрифтом становятся мельче. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Makes the text smaller",
+        "de": "Verkleinert den Text",
+        "es": "Achica el texto",
+        "fr": "Réduit le texte",
+        "ru": "Делает текст мельче"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.smaller"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=press menu=Device sub=Accessibility item='Decrease Text Size'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "app-switcher",
+      "title": {
+        "en": "App Switcher",
+        "de": "App-Umschalter",
+        "es": "Selector de apps",
+        "fr": "Sélecteur d’apps",
+        "ru": "Смена приложений"
+      },
+      "summary": {
+        "en": "Opens the app switcher of the simulator or device",
+        "de": "Öffnet den App-Umschalter des Simulators oder Geräts",
+        "es": "Abre el selector de apps del simulador o dispositivo",
+        "fr": "Ouvre le sélecteur d’apps du simulateur ou de l’appareil",
+        "ru": "Открывает переключатель приложений симулятора или устройства"
+      },
+      "details": {
+        "en": "Controls › App Switcher in Device Hub, for the device in its front window. Brings Device Hub to the front.",
+        "de": "Controls › App Switcher in Device Hub, für das Gerät im vorderen Fenster. Holt Device Hub nach vorne.",
+        "es": "Controls › App Switcher de Device Hub, para el dispositivo de la ventana de delante. Trae Device Hub al frente.",
+        "fr": "Controls › App Switcher de Device Hub, pour l’appareil de la fenêtre au premier plan. Met Device Hub au premier plan.",
+        "ru": "Controls › App Switcher в Device Hub, для устройства в переднем окне. Выводит Device Hub на передний план."
+      },
+      "tapAction": {
+        "en": "Opens the app switcher",
+        "de": "Öffnet den App-Umschalter",
+        "es": "Abre el selector de apps",
+        "fr": "Ouvre le sélecteur d’apps",
+        "ru": "Открывает переключатель приложений"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.stack"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "action=press menu=Controls item='App Switcher'\n@file:hub/ax.zsh\n@file:hub/press.zsh"}}
+      }
+    },
+    {
+      "id": "simulators",
+      "title": {
+        "en": "Simulators",
+        "de": "Simulatoren",
+        "es": "Simuladores",
+        "fr": "Simulateurs",
+        "ru": "Симуляторы"
+      },
+      "summary": {
+        "en": "How many simulators are running on the Mac",
+        "de": "Wie viele Simulatoren auf dem Mac laufen",
+        "es": "Cuántos simuladores hay en marcha en el Mac",
+        "fr": "Combien de simulateurs tournent sur le Mac",
+        "ru": "Сколько симуляторов запущено на Mac"
+      },
+      "details": {
+        "en": "The simulators booted on this Mac, open in Device Hub or not, checked every few seconds. Each one keeps using memory until it is shut down.",
+        "de": "Die auf diesem Mac gestarteten Simulatoren, ob in Device Hub offen oder nicht, alle paar Sekunden geprüft. Jeder belegt Speicher, bis er ausgeschaltet wird.",
+        "es": "Los simuladores arrancados en este Mac, abiertos en Device Hub o no, revisados cada pocos segundos. Cada uno ocupa memoria hasta que se apaga.",
+        "fr": "Les simulateurs démarrés sur ce Mac, ouverts dans Device Hub ou non, relevés à quelques secondes d’intervalle. Chacun occupe de la mémoire jusqu’à son extinction.",
+        "ru": "Симуляторы, запущенные на этом Mac, — и открытые в Device Hub, и нет; число обновляется каждые несколько секунд. Каждый занимает память, пока его не выключат."
+      },
+      "tapAction": {
+        "en": "Opens Device Hub",
+        "de": "Öffnet Device Hub",
+        "es": "Abre Device Hub",
+        "fr": "Ouvre Device Hub",
+        "ru": "Открывает Device Hub"
+      },
+      "holdAction": {
+        "en": "⚠️ Shuts down every running simulator — what their apps had not saved is lost",
+        "de": "⚠️ Schaltet alle laufenden Simulatoren aus – was ihre Apps nicht gesichert hatten, geht verloren",
+        "es": "⚠️ Apaga todos los simuladores en marcha: se pierde lo que sus apps no habían guardado",
+        "fr": "⚠️ Éteint tous les simulateurs en cours : ce que leurs apps n’avaient pas enregistré est perdu",
+        "ru": "⚠️ Выключает все запущенные симуляторы — несохранённое в их приложениях пропадёт"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "iphone"}},
+        "color": "#0A84FF",
+        "command": {"launchApp": {"bundleIdentifier": "com.apple.dt.Devices"}},
+        "longPressCommand": {"shellCommand": {"command": "@file:simulators/shutdown.zsh"}},
+        "startupScript": "@file:simulators/startup.zsh",
+        "svgFace": {"source": "@file:simulators/rest.svg"}
+      },
+      "demoFace": {
+        "source": "@file:simulators/demo.svg"
+      }
+    },
+    {
+      "id": "open-url",
+      "title": {
+        "en": "Open URL",
+        "de": "Link öffnen",
+        "es": "Abrir enlace",
+        "fr": "Ouvrir le lien",
+        "ru": "Открыть ссылку"
+      },
+      "summary": {
+        "en": "Opens your link in the simulator, as a tap on it there would",
+        "de": "Öffnet deinen Link im Simulator, als hättest du dort darauf getippt",
+        "es": "Abre tu enlace en el simulador, como si lo tocaras allí",
+        "fr": "Ouvre votre lien dans le simulateur, comme si vous le touchiez là",
+        "ru": "Открывает вашу ссылку в симуляторе, как если бы вы нажали её там"
+      },
+      "details": {
+        "en": "Write the link in the first line of the button’s script: url=\"myapp://settings\". Opens in the simulator Device Hub shows, else in every running one; a connected device is not touched.",
+        "de": "Schreib den Link in die erste Zeile des Skripts der Taste: url=\"myapp://settings\". Er öffnet sich im Simulator, den Device Hub zeigt, sonst in jedem laufenden; ein angeschlossenes Gerät bleibt unberührt.",
+        "es": "Escribe el enlace en la primera línea del script del botón: url=\"myapp://settings\". Se abre en el simulador que muestra Device Hub o, si no, en todos los que están en marcha; un dispositivo conectado no se toca.",
+        "fr": "Écrivez le lien à la première ligne du script du bouton : url=\"myapp://settings\". Il s’ouvre dans le simulateur affiché par Device Hub, sinon dans tous ceux qui tournent ; un appareil connecté n’est pas touché.",
+        "ru": "Впишите ссылку в первую строку скрипта кнопки: url=\"myapp://settings\". Она откроется в симуляторе, который показывает Device Hub, иначе во всех запущенных; подключённое устройство не трогается."
+      },
+      "tapAction": {
+        "en": "Opens the link in the simulator",
+        "de": "Öffnet den Link im Simulator",
+        "es": "Abre el enlace en el simulador",
+        "fr": "Ouvre le lien dans le simulateur",
+        "ru": "Открывает ссылку в симуляторе"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "link"}},
+        "color": "#FFD60A",
+        "command": {"shellCommand": {"command": "url=\"\"   # ← the link to open in the simulator: url=\"myapp://settings\"\naction=openurl\n@file:hub/ax.zsh\n@file:hub/booted.zsh\n@file:hub/simulator.zsh"}}
+      }
+    },
+    {
+      "id": "status-bar",
+      "title": {
+        "en": "Clean Status Bar",
+        "de": "Saubere Statusleiste",
+        "es": "Barra de estado limpia",
+        "fr": "Barre d’état propre",
+        "ru": "Чистый статус-бар"
+      },
+      "summary": {
+        "en": "9:41, full battery and full bars for screenshots; hold to undo",
+        "de": "9:41, voller Akku und volle Balken für Screenshots; Halten macht es rückgängig",
+        "es": "9:41, batería y cobertura llenas para capturas; mantén pulsado para deshacer",
+        "fr": "9:41, batterie et barres pleines pour les captures ; maintenez pour annuler",
+        "ru": "9:41, полная батарея и полный сигнал для скриншотов; удержание — отменить"
+      },
+      "details": {
+        "en": "As in Apple’s screenshots, until you hold the button or the simulator restarts. For the simulator Device Hub shows, else every running one; a connected device is not touched.",
+        "de": "Wie auf Apples Screenshots, bis du die Taste hältst oder der Simulator neu startet. Für den Simulator, den Device Hub zeigt, sonst jeden laufenden; ein angeschlossenes Gerät bleibt unberührt.",
+        "es": "Como en las capturas de Apple, hasta que mantengas pulsado el botón o el simulador se reinicie. Para el simulador que muestra Device Hub o, si no, todos los que están en marcha; un dispositivo conectado no se toca.",
+        "fr": "Comme sur les captures d’Apple, jusqu’à un appui long sur le bouton ou au redémarrage du simulateur. Pour le simulateur affiché par Device Hub, sinon tous ceux qui tournent ; un appareil connecté n’est pas touché.",
+        "ru": "Как на скриншотах Apple — пока вы не удержите кнопку или симулятор не перезапустится. Для симулятора, который показывает Device Hub, иначе для всех запущенных; подключённое устройство не трогается."
+      },
+      "tapAction": {
+        "en": "Sets 9:41, a full battery and full bars",
+        "de": "Setzt 9:41, vollen Akku und volle Balken",
+        "es": "Pone 9:41, batería llena y cobertura completa",
+        "fr": "Affiche 9:41, batterie pleine et barres pleines",
+        "ru": "Ставит 9:41, полную батарею и полный сигнал"
+      },
+      "holdAction": {
+        "en": "Brings back the simulator’s real status bar",
+        "de": "Stellt die echte Statusleiste des Simulators wieder her",
+        "es": "Devuelve la barra de estado real del simulador",
+        "fr": "Rétablit la vraie barre d’état du simulateur",
+        "ru": "Возвращает настоящую строку состояния симулятора"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "battery.100percent"}},
+        "color": "#FFD60A",
+        "command": {"shellCommand": {"command": "action=bar\n@file:hub/ax.zsh\n@file:hub/booted.zsh\n@file:hub/simulator.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=clear\n@file:hub/ax.zsh\n@file:hub/booted.zsh\n@file:hub/simulator.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Device Hub",
+        "de": "Device Hub",
+        "es": "Device Hub",
+        "fr": "Device Hub",
+        "ru": "Device Hub"
+      },
+      "summary": {
+        "en": "Your simulators and devices at hand while your app runs",
+        "de": "Simulatoren und Geräte griffbereit, während deine App läuft",
+        "es": "Tus simuladores y dispositivos a mano mientras tu app se ejecuta",
+        "fr": "Vos simulateurs et appareils à portée de main pendant que votre app tourne",
+        "ru": "Симуляторы и устройства под рукой, пока работает ваше приложение"
+      },
+      "details": {
+        "en": "Most buttons press Device Hub’s menus for the device in its front window and bring Device Hub forward first: the menus work only there. Shake, Open URL and Clean Status Bar work in the background, for simulators only.",
+        "de": "Die meisten Tasten wählen Menübefehle von Device Hub für das Gerät im vorderen Fenster und holen Device Hub zuerst nach vorne – nur dort funktionieren sie. Schütteln, Link öffnen und Saubere Statusleiste wirken auch im Hintergrund, nur für Simulatoren.",
+        "es": "La mayoría de los botones usan los menús de Device Hub para el dispositivo de la ventana de delante y antes traen Device Hub al frente: solo ahí funcionan. Agitar, Abrir enlace y Barra de estado limpia funcionan en segundo plano, solo con simuladores.",
+        "fr": "La plupart des boutons utilisent les menus de Device Hub pour l’appareil de la fenêtre au premier plan et mettent d’abord Device Hub au premier plan : ils ne marchent que là. Secouer, Ouvrir le lien et Barre d’état propre marchent en arrière-plan, pour les simulateurs seulement.",
+        "ru": "Большинство кнопок нажимают пункты меню Device Hub для устройства в переднем окне и сначала выводят Device Hub на передний план: только там эти пункты работают. «Встряхнуть», «Открыть ссылку» и «Чистый статус-бар» работают и в фоне, только с симуляторами."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "shake", "row": 0, "col": 0},
+        {"button": "home", "row": 0, "col": 1},
+        {"button": "rotate-left", "row": 0, "col": 2},
+        {"button": "rotate-right", "row": 0, "col": 3},
+        {"button": "screenshot", "row": 1, "col": 0},
+        {"button": "record", "row": 1, "col": 1},
+        {"button": "keyboard", "row": 1, "col": 2},
+        {"button": "appearance", "row": 1, "col": 3},
+        {"button": "text-larger", "row": 2, "col": 0},
+        {"button": "text-smaller", "row": 2, "col": 1},
+        {"button": "app-switcher", "row": 2, "col": 2},
+        {"button": "lock", "row": 2, "col": 3},
+        {"button": "simulators", "row": 3, "col": 0},
+        {"widget": "memory", "row": 3, "col": 1},
+        {"button": "open-url", "row": 3, "col": 2},
+        {"button": "status-bar", "row": 3, "col": 3}
+      ]
+    }
+  ]
+}

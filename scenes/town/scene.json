@@ -1,0 +1,66 @@
+{
+  "id": "town",
+  "revision": 10,
+  "title": {
+    "en": "Mac Town",
+    "de": "Mac-Stadt",
+    "es": "Ciudad Mac",
+    "fr": "Ville Mac",
+    "ru": "Мак-город"
+  },
+  "summary": {
+    "en": "A neon city built from the apps on your Mac",
+    "de": "Eine Neonstadt aus den Apps auf deinem Mac",
+    "es": "Una ciudad de neón hecha con las apps de tu Mac",
+    "fr": "Une ville néon faite des apps de votre Mac",
+    "ru": "Неоновый город из приложений на вашем Mac"
+  },
+  "details": {
+    "en": "Your most recent apps are buildings with their names in neon: the more memory an app uses, the taller it is, and the more processor, the more it steams. The app in front glows brightest; tap a building to switch to it. Cars fill the street as the Mac gets busier, a maglev carries the network, and while Claude Code or Codex runs, an airship with drones cruises overhead. The sky follows your Mac’s clock; in landscape the town becomes one long street.",
+    "de": "Deine zuletzt benutzten Apps sind Gebäude mit ihrem Namen in Neon: Je mehr Arbeitsspeicher eine App belegt, desto höher ist sie, und je mehr Rechenleistung, desto stärker dampft sie. Die App im Vordergrund leuchtet am hellsten; tippe auf ein Gebäude, um zu seiner App zu wechseln. Autos füllen die Straße, je mehr der Mac zu tun hat, eine Magnetbahn trägt das Netzwerk, und solange Claude Code oder Codex läuft, kreuzt ein Luftschiff mit Drohnen über der Stadt. Der Himmel folgt der Uhr deines Mac; im Querformat wird die Stadt zu einer langen Straße.",
+    "es": "Las últimas apps que has usado son edificios con su nombre en neón: cuanta más memoria usa una app, más alto es su edificio, y cuanto más procesador, más vapor echa. La app en primer plano brilla más; toca un edificio para pasar a su app. Los coches llenan la calle cuanto más trabaja el Mac, un tren maglev lleva la red y, mientras Claude Code o Codex están en marcha, un dirigible con drones sobrevuela la ciudad. El cielo sigue el reloj de tu Mac; en horizontal, la ciudad se convierte en una larga calle.",
+    "fr": "Les dernières apps utilisées sont des immeubles avec leur nom en néon : plus une app utilise de mémoire, plus son immeuble est haut, et plus elle sollicite le processeur, plus il fume. L’app au premier plan brille le plus ; touchez un immeuble pour basculer vers son app. Les voitures remplissent la rue quand le Mac travaille dur, un train maglev porte le réseau et, tant que Claude Code ou Codex tourne, un dirigeable entouré de drones survole la ville. Le ciel suit l’horloge de votre Mac ; à l’horizontale, la ville devient une longue rue.",
+    "ru": "Последние приложения, которыми вы пользовались, — дома с неоновыми вывесками: чем больше памяти занимает приложение, тем выше дом, а чем больше оно ест процессора, тем больше над ним пара. Активное приложение светится ярче всех; нажмите на дом, чтобы переключиться на его приложение. Чем больше занят Mac, тем больше машин на улице, монорельс возит сеть, а пока запущены Claude Code или Codex, над городом летает дирижабль с дронами. Небо меняется по часам Mac, а если повернуть телефон, город становится одной длинной улицей."
+  },
+  "cover": {
+    "source": "@file:cover.svg",
+    "fit": "cover"
+  },
+  "tiles": {
+    "columns": 6,
+    "rows": 8,
+    "title": {
+      "en": "Mac Town",
+      "de": "Mac-Stadt",
+      "es": "Ciudad Mac",
+      "fr": "Ville Mac",
+      "ru": "Мак-город"
+    },
+    "tapAction": {
+      "en": "On a building: switches to its app; in the sky: fireworks",
+      "de": "Auf einem Gebäude: wechselt zu seiner App; am Himmel: Feuerwerk",
+      "es": "En un edificio: pasa a su app; en el cielo: fuegos artificiales",
+      "fr": "Sur un immeuble : bascule vers son app ; dans le ciel : un feu d’artifice",
+      "ru": "На доме: переключает на его приложение; в небе: фейерверк"
+    },
+    "button": {
+      "icon": {
+        "sfSymbol": {
+          "name": "building.2.fill"
+        }
+      },
+      "color": "#BF5AF2",
+      "command": {
+        "shellCommand": {
+          "command": "@file:tap.zsh"
+        }
+      }
+    },
+    "engine": {
+      "row": 0,
+      "col": 0,
+      "startupScript": "@file:engine.zsh"
+    },
+    "faces": "@file:faces.json"
+  }
+}

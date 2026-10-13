@@ -1,0 +1,577 @@
+{
+  "id": "telegram",
+  "revision": 5,
+  "name": "Telegram",
+  "bundleIds": ["ru.keepcoder.Telegram"],
+  "category": "communication",
+  "buttons": [
+    {
+      "id": "unread",
+      "title": {"en": "Unread", "de": "Ungelesen", "es": "Sin leer", "fr": "Non lus", "ru": "Непрочитанные"},
+      "summary": {
+        "en": "Telegram’s badge on your phone: how much is unread",
+        "de": "Das Telegram-Kennzeichen auf dem Telefon: wie viel ungelesen ist",
+        "es": "El globo de Telegram en el teléfono: cuánto queda sin leer",
+        "fr": "La pastille de Telegram sur le téléphone : ce qui reste non lu",
+        "ru": "Наклейка Telegram на телефоне: сколько непрочитанного"
+      },
+      "details": {
+        "en": "The number on Telegram’s Dock icon, checked every few seconds: unread messages, or unread chats if Telegram is set to count those. A dash means Telegram is closed.",
+        "de": "Die Zahl am Dock-Symbol von Telegram, alle paar Sekunden geprüft: ungelesene Nachrichten oder, je nach Einstellung in Telegram, ungelesene Chats. Ein Strich: Telegram ist geschlossen.",
+        "es": "El número del icono de Telegram en el Dock, revisado cada pocos segundos: mensajes sin leer o, según los ajustes de Telegram, chats sin leer. Una raya: Telegram está cerrado.",
+        "fr": "Le nombre sur l’icône de Telegram dans le Dock, relevé toutes les trois secondes environ : messages non lus ou, selon les réglages de Telegram, discussions non lues. Un tiret : Telegram est fermé.",
+        "ru": "Число с наклейки на значке Telegram в Dock, проверяется каждые несколько секунд: непрочитанные сообщения или, если так настроено в Telegram, чаты. Прочерк — Telegram закрыт."
+      },
+      "tapAction": {
+        "en": "Opens Telegram",
+        "de": "Öffnet Telegram",
+        "es": "Abre Telegram",
+        "fr": "Ouvre Telegram",
+        "ru": "Открывает Telegram"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "paperplane"}},
+        "color": "#2AABEE",
+        "command": {"launchApp": {"bundleIdentifier": "ru.keepcoder.Telegram"}},
+        "startupScript": "@file:badge/startup.zsh",
+        "svgFace": {"source": "@file:badge/rest.svg"}
+      },
+      "demoFace": {"source": "@file:badge/demo.svg"}
+    },
+    {
+      "id": "quick-search",
+      "title": {"en": "Quick Search", "de": "Schnellsuche", "es": "Búsqueda rápida", "fr": "Recherche rapide", "ru": "Быстрый поиск"},
+      "summary": {
+        "en": "Jumps to a chat by its name (⌘K)",
+        "de": "Springt per Name zu einem Chat (⌘K)",
+        "es": "Salta a un chat por su nombre (⌘K)",
+        "fr": "Ouvre une discussion par son nom (⌘K)",
+        "ru": "Переходит к чату по названию (⌘K)"
+      },
+      "details": {
+        "en": "Telegram’s Quick Search window: type part of a chat’s name and press Return to open it. Works while Telegram is in front.",
+        "de": "Das Fenster Schnellsuche von Telegram: einen Teil des Chatnamens eingeben und Return drücken, um den Chat zu öffnen. Funktioniert, wenn Telegram vorne ist.",
+        "es": "La ventana Búsqueda rápida de Telegram: escribe parte del nombre de un chat y pulsa Retorno para abrirlo. Funciona cuando Telegram está delante.",
+        "fr": "La fenêtre Recherche rapide de Telegram : tapez une partie du nom d’une discussion, puis appuyez sur Retour pour l’ouvrir. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Окно «Быстрый поиск» Telegram: наберите часть названия чата и нажмите Return, чтобы его открыть. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Quick Search",
+        "de": "Öffnet die Schnellsuche",
+        "es": "Abre Búsqueda rápida",
+        "fr": "Ouvre Recherche rapide",
+        "ru": "Открывает быстрый поиск"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass.circle"}},
+        "color": "#2AABEE",
+        "command": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "search",
+      "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
+      "summary": {
+        "en": "Searches all your chats and messages (⇧⌘F)",
+        "de": "Durchsucht alle deine Chats und Nachrichten (⇧⌘F)",
+        "es": "Busca en todos tus chats y mensajes (⇧⌘F)",
+        "fr": "Cherche dans toutes vos discussions et messages (⇧⌘F)",
+        "ru": "Ищет по всем чатам и сообщениям (⇧⌘F)"
+      },
+      "details": {
+        "en": "Telegram’s Global Search, the box above the chat list: it finds chats, people and messages across all your chats. Works while Telegram is in front.",
+        "de": "Die globale Suche von Telegram, das Feld über der Chatliste: Sie findet Chats, Personen und Nachrichten in all deinen Chats. Funktioniert, wenn Telegram vorne ist.",
+        "es": "La búsqueda global de Telegram, el cuadro sobre la lista de chats: encuentra chats, personas y mensajes en todos tus chats. Funciona cuando Telegram está delante.",
+        "fr": "La recherche globale de Telegram, le champ au-dessus de la liste : elle trouve discussions, personnes et messages dans toutes vos discussions. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Глобальный поиск Telegram, поле над списком чатов: находит чаты, людей и сообщения во всех ваших чатах. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Global Search",
+        "de": "Öffnet die globale Suche",
+        "es": "Abre la búsqueda global",
+        "fr": "Ouvre la recherche globale",
+        "ru": "Открывает глобальный поиск"
+      },
+      "holdAction": {
+        "en": "Searches the open chat’s messages (⌘F)",
+        "de": "Durchsucht die Nachrichten des offenen Chats (⌘F)",
+        "es": "Busca en los mensajes del chat abierto (⌘F)",
+        "fr": "Cherche dans les messages de la discussion ouverte (⌘F)",
+        "ru": "Ищет по сообщениям открытого чата (⌘F)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#2AABEE",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "saved",
+      "title": {"en": "Saved Messages", "de": "Gespeicherte Nachrichten", "es": "Mensajes guardados", "fr": "Messages enregistrés", "ru": "Избранное"},
+      "summary": {
+        "en": "Your own cloud chat for notes and forwards (⌘0)",
+        "de": "Dein eigener Cloud-Chat für Notizen und Weitergeleitetes (⌘0)",
+        "es": "Tu propio chat en la nube para notas y reenvíos (⌘0)",
+        "fr": "Votre discussion à vous dans le cloud, pour notes et transferts (⌘0)",
+        "ru": "Ваш облачный чат для заметок и пересылок (⌘0)"
+      },
+      "details": {
+        "en": "The chat with yourself, in the cloud on all your devices. In Telegram’s Forward or Share window, it sends the item there instead. Works while Telegram is in front.",
+        "de": "Der Chat mit dir selbst, in der Cloud auf all deinen Geräten. In den Fenstern „Weiterleiten“ und „Teilen“ von Telegram sendet die Taste das Gewählte stattdessen dorthin. Funktioniert, wenn Telegram vorne ist.",
+        "es": "El chat contigo mismo, en la nube y en todos tus dispositivos. En las ventanas Reenviar y Compartir de Telegram, envía ahí lo elegido. Funciona cuando Telegram está delante.",
+        "fr": "La discussion avec vous-même, dans le cloud sur tous vos appareils. Dans les fenêtres Transférer et Partager de Telegram, y envoie l’élément. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Чат с самим собой — в облаке, на всех ваших устройствах. В окнах Telegram «Переслать» и «Поделиться» кнопка отправляет туда выбранное. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Saved Messages",
+        "de": "Öffnet „Gespeicherte Nachrichten“",
+        "es": "Abre Mensajes guardados",
+        "fr": "Ouvre Messages enregistrés",
+        "ru": "Открывает «Избранное»"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bookmark"}},
+        "color": "#2AABEE",
+        "command": {"keystroke": {"_0": {"keyCode": 29, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "folder-1",
+      "title": {"en": "Folder 1", "de": "Ordner 1", "es": "Carpeta 1", "fr": "Dossier 1", "ru": "Папка 1"},
+      "summary": {
+        "en": "The first chat folder (⌘1)",
+        "de": "Der erste Chatordner (⌘1)",
+        "es": "La primera carpeta de chats (⌘1)",
+        "fr": "Le premier dossier (⌘1)",
+        "ru": "Первая папка с чатами (⌘1)"
+      },
+      "details": {
+        "en": "Folders go in Telegram’s order, All Chats first unless you moved it. With no folders, it opens the first chat of the list. Works while Telegram is in front.",
+        "de": "Die Ordner zählen in der Reihenfolge von Telegram, Alle Chats zuerst, wenn du ihn nicht verschoben hast. Ohne Ordner öffnet es den ersten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Las carpetas van en el orden de Telegram, Todos primero salvo que la hayas movido. Sin carpetas, abre el primer chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Les dossiers suivent l’ordre de Telegram, Tous en premier si vous ne l’avez pas déplacé. Sans dossiers, ouvre la première discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Папки считаются в порядке Telegram, «Все чаты» первыми, если вы их не переносили. Без папок открывается первый чат списка. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the first folder",
+        "de": "Öffnet den ersten Ordner",
+        "es": "Abre la primera carpeta",
+        "fr": "Ouvre le premier dossier",
+        "ru": "Открывает первую папку"
+      },
+      "holdAction": {
+        "en": "Opens the first chat of the list on screen (⌥⌘1)",
+        "de": "Öffnet den ersten Chat der gezeigten Liste (⌥⌘1)",
+        "es": "Abre el primer chat de la lista en pantalla (⌥⌘1)",
+        "fr": "Ouvre la première discussion de la liste affichée (⌥⌘1)",
+        "ru": "Открывает первый чат показанного списка (⌥⌘1)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "1.square"}},
+        "color": "#5AC8FA",
+        "command": {"keystroke": {"_0": {"keyCode": 18, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 18, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "folder-2",
+      "title": {"en": "Folder 2", "de": "Ordner 2", "es": "Carpeta 2", "fr": "Dossier 2", "ru": "Папка 2"},
+      "summary": {
+        "en": "The second chat folder (⌘2)",
+        "de": "Der zweite Chatordner (⌘2)",
+        "es": "La segunda carpeta de chats (⌘2)",
+        "fr": "Le deuxième dossier (⌘2)",
+        "ru": "Вторая папка с чатами (⌘2)"
+      },
+      "details": {
+        "en": "Folders go in Telegram’s order; with All Chats first, this is your first own one. With fewer folders, it opens the second chat of the list. Works while Telegram is in front.",
+        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein erster eigener. Mit weniger Ordnern öffnet es den zweiten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la primera tuya. Con menos carpetas, abre el segundo chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre premier à vous. Avec moins de dossiers, ouvre la deuxième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша первая своя. Если папок меньше, открывается второй чат списка. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the second folder",
+        "de": "Öffnet den zweiten Ordner",
+        "es": "Abre la segunda carpeta",
+        "fr": "Ouvre le deuxième dossier",
+        "ru": "Открывает вторую папку"
+      },
+      "holdAction": {
+        "en": "Opens the second chat of the list on screen (⌥⌘2)",
+        "de": "Öffnet den zweiten Chat der gezeigten Liste (⌥⌘2)",
+        "es": "Abre el segundo chat de la lista en pantalla (⌥⌘2)",
+        "fr": "Ouvre la deuxième discussion de la liste affichée (⌥⌘2)",
+        "ru": "Открывает второй чат показанного списка (⌥⌘2)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "2.square"}},
+        "color": "#5AC8FA",
+        "command": {"keystroke": {"_0": {"keyCode": 19, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 19, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "folder-3",
+      "title": {"en": "Folder 3", "de": "Ordner 3", "es": "Carpeta 3", "fr": "Dossier 3", "ru": "Папка 3"},
+      "summary": {
+        "en": "The third chat folder (⌘3)",
+        "de": "Der dritte Chatordner (⌘3)",
+        "es": "La tercera carpeta de chats (⌘3)",
+        "fr": "Le troisième dossier (⌘3)",
+        "ru": "Третья папка с чатами (⌘3)"
+      },
+      "details": {
+        "en": "Folders go in Telegram’s order; with All Chats first, this is your second own one. With fewer folders, it opens the third chat of the list. Works while Telegram is in front.",
+        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein zweiter eigener. Mit weniger Ordnern öffnet es den dritten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la segunda tuya. Con menos carpetas, abre el tercer chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre deuxième à vous. Avec moins de dossiers, ouvre la troisième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша вторая своя. Если папок меньше, открывается третий чат списка. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the third folder",
+        "de": "Öffnet den dritten Ordner",
+        "es": "Abre la tercera carpeta",
+        "fr": "Ouvre le troisième dossier",
+        "ru": "Открывает третью папку"
+      },
+      "holdAction": {
+        "en": "Opens the third chat of the list on screen (⌥⌘3)",
+        "de": "Öffnet den dritten Chat der gezeigten Liste (⌥⌘3)",
+        "es": "Abre el tercer chat de la lista en pantalla (⌥⌘3)",
+        "fr": "Ouvre la troisième discussion de la liste affichée (⌥⌘3)",
+        "ru": "Открывает третий чат показанного списка (⌥⌘3)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "3.square"}},
+        "color": "#5AC8FA",
+        "command": {"keystroke": {"_0": {"keyCode": 20, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 20, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "folder-4",
+      "title": {"en": "Folder 4", "de": "Ordner 4", "es": "Carpeta 4", "fr": "Dossier 4", "ru": "Папка 4"},
+      "summary": {
+        "en": "The fourth chat folder (⌘4)",
+        "de": "Der vierte Chatordner (⌘4)",
+        "es": "La cuarta carpeta de chats (⌘4)",
+        "fr": "Le quatrième dossier (⌘4)",
+        "ru": "Четвёртая папка с чатами (⌘4)"
+      },
+      "details": {
+        "en": "Folders go in Telegram’s order; with All Chats first, this is your third own one. With fewer folders, it opens the fourth chat of the list. Works while Telegram is in front.",
+        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein dritter eigener. Mit weniger Ordnern öffnet es den vierten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la tercera tuya. Con menos carpetas, abre el cuarto chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre troisième à vous. Avec moins de dossiers, ouvre la quatrième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша третья своя. Если папок меньше, открывается четвёртый чат списка. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the fourth folder",
+        "de": "Öffnet den vierten Ordner",
+        "es": "Abre la cuarta carpeta",
+        "fr": "Ouvre le quatrième dossier",
+        "ru": "Открывает четвёртую папку"
+      },
+      "holdAction": {
+        "en": "Opens the fourth chat of the list on screen (⌥⌘4)",
+        "de": "Öffnet den vierten Chat der gezeigten Liste (⌥⌘4)",
+        "es": "Abre el cuarto chat de la lista en pantalla (⌥⌘4)",
+        "fr": "Ouvre la quatrième discussion de la liste affichée (⌥⌘4)",
+        "ru": "Открывает четвёртый чат показанного списка (⌥⌘4)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "4.square"}},
+        "color": "#5AC8FA",
+        "command": {"keystroke": {"_0": {"keyCode": 21, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 21, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "next-chat",
+      "title": {"en": "Next Chat", "de": "Nächster Chat", "es": "Chat siguiente", "fr": "Discussion suivante", "ru": "Следующий чат"},
+      "summary": {
+        "en": "Goes one chat down the list (⌥↓)",
+        "de": "Geht in der Liste einen Chat nach unten (⌥↓)",
+        "es": "Baja un chat en la lista (⌥↓)",
+        "fr": "Descend d’une discussion dans la liste (⌥↓)",
+        "ru": "Переходит к чату ниже в списке (⌥↓)"
+      },
+      "details": {
+        "en": "Walks the chat list on screen, pinned chats first; after the last chat it starts again at the top. Works while Telegram is in front.",
+        "de": "Geht die gezeigte Chatliste durch, angeheftete Chats zuerst; nach dem letzten Chat geht es oben weiter. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Recorre la lista de chats en pantalla, los fijados primero; tras el último vuelve arriba. Funciona cuando Telegram está delante.",
+        "fr": "Parcourt la liste des discussions affichée, les épinglées d’abord ; après la dernière, repart du haut. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Идёт по показанному списку чатов, закреплённые первыми; после последнего чата начинает сверху. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the next chat",
+        "de": "Öffnet den nächsten Chat",
+        "es": "Abre el chat siguiente",
+        "fr": "Ouvre la discussion suivante",
+        "ru": "Открывает следующий чат"
+      },
+      "holdAction": {
+        "en": "Opens the previous chat (⌥↑)",
+        "de": "Öffnet den vorherigen Chat (⌥↑)",
+        "es": "Abre el chat anterior (⌥↑)",
+        "fr": "Ouvre la discussion précédente (⌥↑)",
+        "ru": "Открывает предыдущий чат (⌥↑)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.circle"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 125, "modifiers": ["option"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 126, "modifiers": ["option"]}}}
+      }
+    },
+    {
+      "id": "reply",
+      "title": {"en": "Reply", "de": "Antworten", "es": "Responder", "fr": "Répondre", "ru": "Ответить"},
+      "summary": {
+        "en": "Picks a message of the open chat to reply to (⌘↑)",
+        "de": "Wählt eine Nachricht des offenen Chats zum Antworten (⌘↑)",
+        "es": "Elige un mensaje del chat abierto para responder (⌘↑)",
+        "fr": "Choisit un message de la discussion ouverte auquel répondre (⌘↑)",
+        "ru": "Выбирает сообщение в открытом чате для ответа (⌘↑)"
+      },
+      "details": {
+        "en": "Each tap goes one message further back; what you type then goes as the reply only when you press Return. The message box must be empty. Works while Telegram is in front.",
+        "de": "Jedes Tippen geht eine Nachricht weiter zurück; was du dann schreibst, wird erst mit Return als Antwort gesendet. Das Eingabefeld muss leer sein. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Cada toque retrocede un mensaje; lo que escribas después se envía como respuesta solo al pulsar Retorno. El cuadro de mensaje debe estar vacío. Funciona cuando Telegram está delante.",
+        "fr": "Chaque appui remonte d’un message ; ce que vous tapez ensuite n’est envoyé en réponse que quand vous appuyez sur Retour. La zone de message doit être vide. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Каждое нажатие — на одно сообщение назад; набранное уйдёт ответом только по Return. Поле сообщения должно быть пустым. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Picks an older message to reply to",
+        "de": "Wählt eine ältere Nachricht zum Antworten",
+        "es": "Elige un mensaje anterior para responder",
+        "fr": "Choisit un message plus ancien auquel répondre",
+        "ru": "Выбирает для ответа более раннее сообщение"
+      },
+      "holdAction": {
+        "en": "Picks a newer message (⌘↓)",
+        "de": "Wählt eine neuere Nachricht (⌘↓)",
+        "es": "Elige un mensaje más reciente (⌘↓)",
+        "fr": "Choisit un message plus récent (⌘↓)",
+        "ru": "Выбирает более позднее сообщение (⌘↓)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrowshape.turn.up.left"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 126, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 125, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "edit-last",
+      "title": {"en": "Edit Last", "de": "Letzte bearbeiten", "es": "Editar último", "fr": "Modifier le dernier", "ru": "Изменить последнее"},
+      "summary": {
+        "en": "Edits your last message in the open chat (↑)",
+        "de": "Bearbeitet deine letzte Nachricht im offenen Chat (↑)",
+        "es": "Edita tu último mensaje en el chat abierto (↑)",
+        "fr": "Modifie votre dernier message dans la discussion ouverte (↑)",
+        "ru": "Редактирует ваше последнее сообщение в открытом чате (↑)"
+      },
+      "details": {
+        "en": "Your last message comes back into the message box; the change is saved only when you press Return. The box must be empty. Works while Telegram is in front.",
+        "de": "Deine letzte Nachricht kommt zurück ins Eingabefeld; die Änderung wird erst mit Return gespeichert. Das Feld muss leer sein. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Tu último mensaje vuelve al cuadro de mensaje; el cambio se guarda solo al pulsar Retorno. El cuadro debe estar vacío. Funciona cuando Telegram está delante.",
+        "fr": "Votre dernier message revient dans la zone de message ; la modification n’est enregistrée que quand vous appuyez sur Retour. La zone doit être vide. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Последнее сообщение возвращается в поле ввода; изменение сохранится только по Return. Поле должно быть пустым. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Edits your last message",
+        "de": "Bearbeitet deine letzte Nachricht",
+        "es": "Edita tu último mensaje",
+        "fr": "Modifie votre dernier message",
+        "ru": "Редактирует последнее сообщение"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pencil"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 126, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "attach",
+      "title": {"en": "Attach File", "de": "Datei anhängen", "es": "Adjuntar archivo", "fr": "Joindre un fichier", "ru": "Прикрепить файл"},
+      "summary": {
+        "en": "Picks files for the open chat (⌘O)",
+        "de": "Wählt Dateien für den offenen Chat (⌘O)",
+        "es": "Elige archivos para el chat abierto (⌘O)",
+        "fr": "Choisit des fichiers pour la discussion ouverte (⌘O)",
+        "ru": "Выбирает файлы для открытого чата (⌘O)"
+      },
+      "details": {
+        "en": "The chosen files wait in Telegram’s preview, with a field for a caption, until you click Send. Works while Telegram is in front.",
+        "de": "Die gewählten Dateien warten in der Vorschau von Telegram, mit einem Feld für eine Beschriftung, bis du auf Senden klickst. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Los archivos elegidos esperan en la vista previa de Telegram, con un campo para un comentario, hasta que hagas clic en Enviar. Funciona cuando Telegram está delante.",
+        "fr": "Les fichiers choisis attendent dans l’aperçu de Telegram, avec un champ de légende, jusqu’à ce que vous cliquiez sur Envoyer. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Выбранные файлы ждут в окне предпросмотра Telegram с полем для подписи, пока вы не нажмёте «Отправить». Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the file picker",
+        "de": "Öffnet die Dateiauswahl",
+        "es": "Abre el selector de archivos",
+        "fr": "Ouvre le sélecteur de fichiers",
+        "ru": "Открывает выбор файлов"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "paperclip"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "lock",
+      "title": {"en": "Lock", "de": "Sperren", "es": "Bloquear", "fr": "Verrouiller", "ru": "Блокировка"},
+      "summary": {
+        "en": "Locks Telegram with its passcode (⌘L)",
+        "de": "Sperrt Telegram mit dem Pincode (⌘L)",
+        "es": "Bloquea Telegram con su código (⌘L)",
+        "fr": "Verrouille Telegram avec son code (⌘L)",
+        "ru": "Блокирует Telegram код-паролем (⌘L)"
+      },
+      "details": {
+        "en": "Your chats stay hidden behind Telegram’s passcode until you type it. With no passcode set, it opens the screen to set one. Works while Telegram is in front.",
+        "de": "Deine Chats bleiben hinter dem Pincode von Telegram verborgen, bis du ihn eingibst. Ohne Pincode öffnet es die Seite, um einen festzulegen. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Tus chats quedan ocultos tras el código de bloqueo de Telegram hasta que lo escribas. Sin código, abre la pantalla para crear uno. Funciona cuando Telegram está delante.",
+        "fr": "Vos discussions restent cachées derrière le code d’accès de Telegram jusqu’à ce que vous le tapiez. Sans code, ouvre l’écran pour en définir un. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Чаты скрыты за код-паролем Telegram, пока вы его не введёте. Если код-пароль не задан, открывается экран, где его задают. Работает, когда Telegram на переднем плане."
+      },
+      "tapAction": {
+        "en": "Locks Telegram",
+        "de": "Sperrt Telegram",
+        "es": "Bloquea Telegram",
+        "fr": "Verrouille Telegram",
+        "ru": "Блокирует Telegram"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "lock"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "settings",
+      "title": {"en": "Settings", "de": "Einstellungen", "es": "Ajustes", "fr": "Paramètres", "ru": "Настройки"},
+      "summary": {
+        "en": "Telegram’s settings (⌘,)",
+        "de": "Die Einstellungen von Telegram (⌘,)",
+        "es": "Los ajustes de Telegram (⌘,)",
+        "fr": "Les paramètres de Telegram (⌘,)",
+        "ru": "Настройки Telegram (⌘,)"
+      },
+      "details": {
+        "en": "Telegram’s settings, from notifications to privacy. The tap works while Telegram is in front; the long press works from any app and brings Telegram forward.",
+        "de": "Die Einstellungen von Telegram, von Mitteilungen bis Privatsphäre. Tippen funktioniert, wenn Telegram vorne ist; langes Drücken aus jeder App und holt Telegram nach vorne.",
+        "es": "Los ajustes de Telegram, de las notificaciones a la privacidad. El toque funciona cuando Telegram está delante; la pulsación larga, desde cualquier app, y trae Telegram al frente.",
+        "fr": "Les paramètres de Telegram, des notifications à la confidentialité. Le toucher fonctionne quand Telegram est au premier plan ; l’appui long, depuis n’importe quelle app, et met Telegram au premier plan.",
+        "ru": "Настройки Telegram — от уведомлений до конфиденциальности. Нажатие работает, когда Telegram на переднем плане; долгое нажатие — из любого приложения и выводит Telegram вперёд."
+      },
+      "tapAction": {
+        "en": "Opens Settings",
+        "de": "Öffnet die Einstellungen",
+        "es": "Abre Ajustes",
+        "fr": "Ouvre les Paramètres",
+        "ru": "Открывает настройки"
+      },
+      "holdAction": {
+        "en": "Opens Active Sessions: every device signed in to your account",
+        "de": "Öffnet Sitzungen: alle Geräte, die bei deinem Konto angemeldet sind",
+        "es": "Abre Sesiones activas: cada dispositivo con tu cuenta iniciada",
+        "fr": "Ouvre Appareils actifs : tous ceux connectés à votre compte",
+        "ru": "Открывает «Активные сеансы»: все устройства, где выполнен вход в аккаунт"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "gearshape"}},
+        "color": "#8E8E93",
+        "command": {"keystroke": {"_0": {"keyCode": 43, "modifiers": ["command"]}}},
+        "longPressCommand": {"shellCommand": {"command": "@file:sessions.zsh"}}
+      }
+    },
+    {
+      "id": "open-chat",
+      "title": {"en": "Open Chat", "de": "Chat öffnen", "es": "Abrir chat", "fr": "Ouvrir la discussion", "ru": "Открыть чат"},
+      "summary": {
+        "en": "One chat you choose — a person, group, channel or bot — from any app",
+        "de": "Ein Chat deiner Wahl – Person, Gruppe, Kanal oder Bot – aus jeder App",
+        "es": "El chat que elijas (una persona, un grupo, un canal o un bot) desde cualquier app",
+        "fr": "La discussion de votre choix (personne, groupe, canal ou bot) depuis n’importe quelle app",
+        "ru": "Нужный чат — человек, группа, канал или бот — из любого приложения"
+      },
+      "details": {
+        "en": "Write the username without @ in the first line of the button’s script, as in t.me/username; until then, the button says so. Brings Telegram forward from any app, but doesn’t start it.",
+        "de": "Schreib den Benutzernamen ohne @ in die erste Zeile des Skripts der Taste, wie in t.me/benutzername; bis dahin sagt die Taste das. Holt Telegram aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Escribe el nombre de usuario sin @ en la primera línea del script del botón, como en t.me/usuario; hasta entonces, el botón te lo recuerda. Trae Telegram al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Écrivez le nom d’utilisateur sans @ à la première ligne du script du bouton, comme dans t.me/utilisateur ; d’ici là, le bouton vous le rappelle. Met Telegram au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Имя пользователя без @ впишите в первую строку скрипта кнопки, как в t.me/имя; пока его нет, кнопка об этом скажет. Выводит Telegram вперёд из любого приложения, но не запускает его."
+      },
+      "tapAction": {
+        "en": "Opens the chat of the username you set",
+        "de": "Öffnet den Chat des eingetragenen Benutzernamens",
+        "es": "Abre el chat del nombre de usuario que pusiste",
+        "fr": "Ouvre la discussion du nom d’utilisateur indiqué",
+        "ru": "Открывает чат с заданным именем пользователя"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "at"}},
+        "color": "#2AABEE",
+        "command": {"shellCommand": {"command": "user=''   # ← a username without @, as in t.me/username: a person, group, channel or bot\n@file:chat.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Telegram", "de": "Telegram", "es": "Telegram", "fr": "Telegram", "ru": "Telegram"},
+      "summary": {
+        "en": "Catch up, search and get around Telegram from your phone",
+        "de": "Nachlesen, suchen und durch Telegram springen – vom Telefon aus",
+        "es": "Ponte al día, busca y muévete por Telegram desde el teléfono",
+        "fr": "Rattrapez le fil, cherchez et naviguez dans Telegram depuis votre téléphone",
+        "ru": "Непрочитанное, поиск и переходы по Telegram с телефона"
+      },
+      "details": {
+        "en": "The buttons work while Telegram is in front, Open Chat from any app; Unread shows the badge of its Dock icon and fits on any other page too.",
+        "de": "Die Tasten funktionieren, wenn Telegram vorne ist, „Chat öffnen“ aus jeder App; Ungelesen zeigt das Kennzeichen am Dock-Symbol und passt auch auf jede andere Seite.",
+        "es": "Los botones funcionan con Telegram delante, y Abrir chat desde cualquier app; Sin leer muestra el globo de su icono del Dock y sirve también en cualquier otra página.",
+        "fr": "Les boutons fonctionnent quand Telegram est au premier plan, Ouvrir la discussion depuis n’importe quelle app ; Non lus affiche la pastille de son icône du Dock et va aussi sur toute autre page.",
+        "ru": "Кнопки работают, когда Telegram на переднем плане, а «Открыть чат» — из любого приложения; «Непрочитанные» показывают наклейку со значка в Dock и подойдут для любой другой страницы."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "unread", "row": 0, "col": 0},
+        {"button": "quick-search", "row": 0, "col": 1},
+        {"button": "search", "row": 0, "col": 2},
+        {"button": "saved", "row": 0, "col": 3},
+        {"button": "folder-1", "row": 1, "col": 0},
+        {"button": "folder-2", "row": 1, "col": 1},
+        {"button": "folder-3", "row": 1, "col": 2},
+        {"button": "folder-4", "row": 1, "col": 3},
+        {"button": "next-chat", "row": 2, "col": 0},
+        {"button": "reply", "row": 2, "col": 1},
+        {"button": "edit-last", "row": 2, "col": 2},
+        {"button": "attach", "row": 2, "col": 3},
+        {"button": "lock", "row": 3, "col": 0},
+        {"button": "settings", "row": 3, "col": 1},
+        {"button": "open-chat", "row": 3, "col": 2}
+      ]
+    }
+  ]
+}

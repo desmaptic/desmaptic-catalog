@@ -1,0 +1,70 @@
+{
+  "id": "reminders-today",
+  "revision": 5,
+  "kind": "widget",
+  "title": {
+    "en": "Reminders",
+    "de": "Erinnerungen",
+    "es": "Recordatorios",
+    "fr": "Rappels",
+    "ru": "Напоминания"
+  },
+  "summary": {
+    "en": "What is due today at a glance: how many, how many overdue, and the first three",
+    "de": "Das heute Fällige auf einen Blick: wie viele, wie viele überfällig und die ersten drei",
+    "es": "Lo de hoy de un vistazo: cuántos, cuántos atrasados y los tres primeros",
+    "fr": "Ce qui est dû aujourd’hui d’un coup d’œil : combien, combien en retard et les trois premiers",
+    "ru": "Дела на сегодня одним взглядом: сколько, сколько просрочено и первые три"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "The big number counts open reminders due today or earlier; the pink clock, how many are overdue. Below, the first three, overdue first, with their time or date.",
+    "de": "Die große Zahl zählt offene Erinnerungen, die heute oder früher fällig sind, die pinke Uhr die überfälligen. Darunter die ersten drei, überfällige zuerst, mit Uhrzeit oder Datum.",
+    "es": "El número grande cuenta los recordatorios pendientes para hoy o antes; el reloj rosa, cuántos están atrasados. Debajo, los tres primeros, los atrasados antes, con su hora o fecha.",
+    "fr": "Le grand nombre compte les rappels non terminés dus aujourd’hui ou avant ; l’horloge rose, ceux en retard. Dessous, les trois premiers, en retard d’abord, avec leur heure ou leur date.",
+    "ru": "Большое число — незавершённые напоминания на сегодня и раньше, розовые часы — сколько из них просрочено. Ниже — первые три, просроченные сначала, со временем или датой."
+  },
+  "tapAction": {
+    "en": "Opens Reminders on the Today list; without access, its privacy settings",
+    "de": "Öffnet Erinnerungen mit der Liste „Heute“, ohne Zugriff die Datenschutzeinstellungen dafür",
+    "es": "Abre Recordatorios en la lista Hoy; sin acceso, sus ajustes de privacidad",
+    "fr": "Ouvre Rappels sur la liste Aujourd’hui ; sans accès, ses réglages de confidentialité",
+    "ru": "Открывает список «Сегодня» в «Напоминаниях», а без доступа — настройки конфиденциальности"
+  },
+  "holdAction": {
+    "en": "Opens Reminders on the Scheduled list",
+    "de": "Öffnet Erinnerungen mit der Liste „Geplant“",
+    "es": "Abre Recordatorios en la lista Programados",
+    "fr": "Ouvre Rappels sur la liste Programmés",
+    "ru": "Открывает список «В планах» в «Напоминаниях»"
+  },
+  "permissions": [
+    "reminders"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "checklist"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "openURL": {
+        "url": "x-apple-reminderkit://scheduled"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

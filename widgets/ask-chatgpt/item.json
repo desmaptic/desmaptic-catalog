@@ -1,0 +1,55 @@
+{
+  "id": "ask-chatgpt",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Ask ChatGPT…",
+    "de": "ChatGPT fragen…",
+    "es": "Preguntar a ChatGPT…",
+    "fr": "Demander à ChatGPT…",
+    "ru": "Спросить ChatGPT…"
+  },
+  "summary": {
+    "en": "Type a question on the phone and a new ChatGPT chat with it opens in the Mac’s browser",
+    "de": "Tippe eine Frage auf dem Telefon – im Browser des Mac öffnet sich damit ein neuer ChatGPT-Chat",
+    "es": "Escribe una pregunta en el teléfono y se abre con ella un chat nuevo de ChatGPT en el navegador del Mac",
+    "fr": "Saisissez une question sur le téléphone : un nouveau chat ChatGPT s’ouvre avec elle dans le navigateur du Mac",
+    "ru": "Наберите вопрос на телефоне — в браузере Mac откроется новый чат ChatGPT с этим вопросом"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. Opens chatgpt.com in the Mac’s default browser, signed in there or not.",
+    "de": "Nichts einzurichten. Öffnet chatgpt.com im Standardbrowser des Mac, ob du dort angemeldet bist oder nicht.",
+    "es": "No hay nada que configurar. Abre chatgpt.com en el navegador predeterminado del Mac, con tu sesión iniciada allí o sin ella.",
+    "fr": "Rien à configurer. Ouvre chatgpt.com dans le navigateur par défaut du Mac, que vous y soyez connecté ou non.",
+    "ru": "Настраивать ничего не нужно. Открывает chatgpt.com в браузере Mac по умолчанию — со входом в аккаунт или без."
+  },
+  "tapAction": {
+    "en": "Asks for a question and opens a new ChatGPT chat with it",
+    "de": "Fragt nach einer Frage und öffnet damit einen neuen ChatGPT-Chat",
+    "es": "Pide una pregunta y abre con ella un chat nuevo de ChatGPT",
+    "fr": "Demande une question et ouvre avec elle un nouveau chat ChatGPT",
+    "ru": "Спрашивает вопрос и открывает с ним новый чат ChatGPT"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "bubble.left.and.bubble.right"
+      }
+    },
+    "color": "#10A37F",
+    "command": {
+      "openURL": {
+        "url": "https://chatgpt.com/?q={{INPUT}}"
+      }
+    },
+    "input": {
+      "question": "What to ask ChatGPT?",
+      "placeholder": "A question",
+      "multiline": true
+    }
+  }
+}

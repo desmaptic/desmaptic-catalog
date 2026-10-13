@@ -1,0 +1,57 @@
+{
+  "id": "top-process",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Top Process",
+    "de": "Top-Prozess",
+    "es": "Proceso más activo",
+    "fr": "Top processus",
+    "ru": "Топ-процесс"
+  },
+  "summary": {
+    "en": "The process using the most CPU right now, and how hard it works",
+    "de": "Der Prozess, der gerade die meiste CPU-Last erzeugt, und wie viel",
+    "es": "El proceso que más CPU usa ahora mismo y cuánto",
+    "fr": "Le processus qui sollicite le plus le processeur en ce moment, et à quel point",
+    "ru": "Процесс, который сейчас сильнее всех грузит процессор, и насколько"
+  },
+  "colSpan": 2,
+  "rowSpan": 1,
+  "details": {
+    "en": "The app or process using the most CPU; it changes only when another is clearly busier. 100% is one full core, so a heavy task can show 200% or more. Pink from 90%.",
+    "de": "Die App oder der Prozess mit der höchsten CPU-Last; gewechselt wird erst, wenn ein anderer deutlich mehr braucht. 100 % sind ein ganzer Kern, eine schwere Aufgabe kann also 200 % oder mehr zeigen. Ab 90 % pink.",
+    "es": "La app o el proceso que más CPU usa; solo cambia cuando otro trabaja claramente más. El 100 % es un núcleo entero, así que una tarea pesada puede marcar un 200 % o más. Rosa a partir del 90 %.",
+    "fr": "L’app ou le processus qui sollicite le plus le processeur ; il ne change que si un autre devient nettement plus actif. 100 % correspond à un cœur entier : une tâche lourde peut afficher 200 % ou plus. Rose dès 90 %.",
+    "ru": "Приложение или процесс, который больше всех грузит процессор; сменяется, только когда другой заметно обгоняет. 100 % — одно ядро целиком, поэтому тяжёлая задача может показать 200 % и больше. От 90 % — розовый."
+  },
+  "tapAction": {
+    "en": "Opens Activity Monitor on the Mac",
+    "de": "Öffnet die Aktivitätsanzeige auf dem Mac",
+    "es": "Abre Monitor de Actividad en el Mac",
+    "fr": "Ouvre Moniteur d’activité sur le Mac",
+    "ru": "Открывает Мониторинг системы на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "cpu"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "launchApp": {
+        "bundleIdentifier": "com.apple.ActivityMonitor"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg",
+      "landscapeSource": "@file:rest-landscape.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg",
+    "landscapeSource": "@file:demo-landscape.svg"
+  }
+}

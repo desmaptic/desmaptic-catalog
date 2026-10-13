@@ -1,0 +1,56 @@
+{
+  "id": "keep-awake",
+  "revision": 5,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "title": {
+    "en": "Keep Awake",
+    "de": "Wach halten",
+    "es": "Mantener activo",
+    "fr": "Garder éveillé",
+    "ru": "Не спать"
+  },
+  "summary": {
+    "en": "Keeps the Mac from sleeping for a few hours, and shows until when",
+    "de": "Hält den Mac ein paar Stunden wach und zeigt, bis wann",
+    "es": "Impide que el Mac entre en reposo durante unas horas y muestra hasta cuándo",
+    "fr": "Empêche le Mac de se mettre en veille pendant quelques heures, et indique jusqu’à quand",
+    "ru": "Не даёт Mac уснуть несколько часов и показывает, до скольки"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Open eye: the Mac won’t sleep until the time shown, even with your phone away; the gauge empties toward it and turns pink in the last half hour. The display still sleeps as set, and closing the lid still puts the Mac to sleep.",
+    "de": "Offenes Auge: Der Mac schläft bis zur angezeigten Uhrzeit nicht ein, auch ohne Telefon; die Anzeige leert sich bis dahin und wird in der letzten halben Stunde pink. Das Display schläft wie eingestellt, und mit geschlossenem Deckel schläft der Mac trotzdem ein.",
+    "es": "Ojo abierto: el Mac no entra en reposo hasta la hora indicada, aunque el teléfono no esté cerca; el indicador se vacía hasta entonces y se vuelve rosa en la última media hora. La pantalla se apaga como siempre, y al cerrar la tapa el Mac entra en reposo igualmente.",
+    "fr": "Œil ouvert : le Mac ne se met pas en veille avant l’heure affichée, même sans le téléphone ; la jauge se vide jusque-là et vire au rose la dernière demi-heure. L’écran se met en veille comme d’habitude, et fermer le capot met quand même le Mac en veille.",
+    "ru": "Глаз открыт — Mac не уснёт до показанного времени, даже без телефона; шкала пустеет к нему и в последние полчаса розовеет. Экран засыпает как обычно, а с закрытой крышкой Mac всё равно уснёт."
+  },
+  "tapAction": {
+    "en": "Keeps the Mac awake for 3 hours; tap again to let it sleep",
+    "de": "Hält den Mac 3 Stunden wach; erneut tippen, damit er wieder schlafen darf",
+    "es": "Mantiene el Mac activo 3 horas; toca de nuevo para que pueda entrar en reposo",
+    "fr": "Garde le Mac éveillé pendant 3 heures ; touchez à nouveau pour le laisser se mettre en veille",
+    "ru": "Не даёт Mac уснуть 3 часа; повторное нажатие снова разрешает сон"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "eye"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "hours=3   # ← how long a tap keeps the Mac awake: 1 to 24 hours\n@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

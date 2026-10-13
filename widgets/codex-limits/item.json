@@ -1,0 +1,55 @@
+{
+  "id": "codex-limits",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Codex Limits",
+    "de": "Codex-Limits",
+    "es": "Límites de Codex",
+    "fr": "Limites Codex",
+    "ru": "Лимиты Codex"
+  },
+  "summary": {
+    "en": "How much of your Codex usage limits is used, and when they reset",
+    "de": "Wie viel deiner Codex-Nutzungslimits verbraucht ist und wann sie zurückgesetzt werden",
+    "es": "Cuánto has usado de tus límites de uso de Codex y cuándo se restablecen",
+    "fr": "La part utilisée de vos limites d’utilisation Codex, et quand elles se réinitialisent",
+    "ru": "Сколько израсходовано из ваших лимитов Codex и когда они обновятся"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "One column per limit: its length (5h, 7d, 30d) in the colour of its ring, how much is used and ↻ the time until it resets. Works with ChatGPT closed. A dash: signed out, or no answer.",
+    "de": "Eine Spalte pro Limit: seine Dauer (5h, 7d, 30d) in der Farbe seines Rings, wie viel verbraucht ist und ↻ die Zeit bis zum Zurücksetzen. Klappt auch bei geschlossenem ChatGPT. Ein Strich: abgemeldet oder keine Antwort.",
+    "es": "Una columna por límite: su duración (5h, 7d, 30d) en el color de su anillo, cuánto se ha usado y ↻ el tiempo hasta que se restablece. Funciona con ChatGPT cerrado. Una raya: sesión cerrada o sin respuesta.",
+    "fr": "Une colonne par limite : sa durée (5h, 7d, 30d) dans la couleur de son anneau, la part utilisée et ↻ le temps avant sa réinitialisation. Fonctionne même avec ChatGPT fermé. Un tiret : déconnecté, ou pas de réponse.",
+    "ru": "По колонке на лимит: его срок (5h, 7d, 30d) цветом своего кольца, сколько израсходовано и ↻ время до обновления. Работает и при закрытом ChatGPT. Прочерк — вы не вошли или нет ответа."
+  },
+  "tapAction": {
+    "en": "Reads the limits again and brings ChatGPT to the front if it’s open",
+    "de": "Liest die Limits neu und holt ChatGPT nach vorne, wenn es geöffnet ist",
+    "es": "Vuelve a leer los límites y trae ChatGPT al frente si está abierto",
+    "fr": "Relit les limites et met ChatGPT au premier plan s’il est ouvert",
+    "ru": "Заново читает лимиты и выводит ChatGPT на передний план, если он открыт"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "gauge.with.dots.needle.33percent"
+      }
+    },
+    "color": "#5E5CE6",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

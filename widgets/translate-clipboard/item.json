@@ -1,0 +1,60 @@
+{
+  "id": "translate-clipboard",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Translate",
+    "de": "Übersetzen",
+    "es": "Traducir",
+    "fr": "Traduire",
+    "ru": "Перевести"
+  },
+  "summary": {
+    "en": "Opens the text you copied on the Mac in Google Translate, in one tap",
+    "de": "Öffnet den auf dem Mac kopierten Text mit einem Tippen in Google Übersetzer",
+    "es": "Abre con un toque en el Traductor de Google el texto que copiaste en el Mac",
+    "fr": "Ouvre d’un simple toucher dans Google Traduction le texte copié sur le Mac",
+    "ru": "Одним нажатием открывает скопированный на Mac текст в Google Переводчике"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Opens the text in Google Translate in your browser: up to 5000 characters, fewer in non-Latin scripts. No text, or a password from a password manager: the button flashes red and sends nothing.",
+    "de": "Öffnet den Text im Google Übersetzer im Browser: bis zu 5000 Zeichen, bei nichtlateinischen Schriften weniger. Kein Text oder ein Passwort aus einem Passwortmanager: Die Taste blinkt rot und sendet nichts.",
+    "es": "Abre el texto en el Traductor de Google en tu navegador: hasta 5000 caracteres, menos en alfabetos no latinos. Sin texto, o con una contraseña de un gestor de contraseñas, el botón parpadea en rojo y no envía nada.",
+    "fr": "Ouvre le texte dans Google Traduction dans votre navigateur : jusqu’à 5000 caractères, moins pour les écritures non latines. Sans texte, ou avec un mot de passe issu d’un gestionnaire, le bouton clignote en rouge et n’envoie rien.",
+    "ru": "Открывает текст в Google Переводчике в браузере: до 5000 символов, для нелатинских алфавитов — меньше. Нет текста или в буфере пароль из менеджера паролей — кнопка мигает красным и ничего не отправляет."
+  },
+  "tapAction": {
+    "en": "Translates the clipboard into your Mac’s language",
+    "de": "Übersetzt die Zwischenablage in die Sprache des Mac",
+    "es": "Traduce el portapapeles al idioma de tu Mac",
+    "fr": "Traduit le presse-papiers dans la langue de votre Mac",
+    "ru": "Переводит буфер обмена на язык Mac"
+  },
+  "holdAction": {
+    "en": "Translates into English; if your Mac is in English, into its second preferred language",
+    "de": "Übersetzt ins Englische; ist der Mac auf Englisch eingestellt, in seine zweite bevorzugte Sprache",
+    "es": "Traduce al inglés; si tu Mac está en inglés, a su segundo idioma preferido",
+    "fr": "Traduit en anglais ; si votre Mac est en anglais, dans sa deuxième langue préférée",
+    "ru": "Переводит на английский; если Mac на английском — на второй предпочитаемый язык"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "character.bubble"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "battery",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Battery",
+    "de": "Batterie",
+    "es": "Batería",
+    "fr": "Batterie",
+    "ru": "Аккумулятор"
+  },
+  "summary": {
+    "en": "The MacBook’s charge on a gauge; a bolt while charging, pink when it runs low",
+    "de": "Ladestand des MacBook als Anzeige; ein Blitz beim Laden, pink bei niedrigem Stand",
+    "es": "La carga del MacBook en un indicador; un rayo al cargar, rosa cuando queda poca",
+    "fr": "La charge du MacBook sur une jauge ; un éclair en charge, rose quand elle est faible",
+    "ru": "Заряд MacBook на шкале; молния во время зарядки, розовая шкала при низком заряде"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The charge in percent and the time left, or the time to full while charging. Bolt: charging; plug: on power. Pink at 20% and below unless charging. A desktop Mac shows only a plug.",
+    "de": "Ladestand in Prozent und Restlaufzeit, beim Laden die Zeit bis zur vollen Ladung. Blitz: lädt; Stecker: am Netzteil. Pink bei 20 % und darunter, außer beim Laden. Ein Desktop-Mac zeigt nur einen Stecker.",
+    "es": "La carga en porcentaje y el tiempo restante o, al cargar, el que falta para completarla. Rayo: cargando; enchufe: conectado a la corriente. Rosa al 20 % o menos si no se carga. Un Mac de escritorio solo muestra un enchufe.",
+    "fr": "La charge en pourcentage et l’autonomie restante, ou, en charge, le temps avant la charge complète. Éclair : en charge ; prise : sur secteur. Rose à 20 % et moins hors recharge. Un Mac de bureau n’affiche qu’une prise.",
+    "ru": "Заряд в процентах и сколько осталось работать, а при зарядке — сколько до полного. Молния — идёт зарядка, вилка — питание от сети. Розовый при 20 % и ниже, если не заряжается. На настольном Mac — только вилка."
+  },
+  "tapAction": {
+    "en": "Opens Battery settings on the Mac (Energy on a desktop Mac)",
+    "de": "Öffnet die Batterie-Einstellungen auf dem Mac (auf einem Desktop-Mac „Energie“)",
+    "es": "Abre los ajustes de Batería en el Mac (Energía en un Mac de escritorio)",
+    "fr": "Ouvre les réglages Batterie sur le Mac (Énergie sur un Mac de bureau)",
+    "ru": "Открывает настройки аккумулятора на Mac (на настольном Mac — «Энергия»)"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "battery.75"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "openURL": {
+        "url": "x-apple.systempreferences:com.apple.Battery-Settings.extension"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

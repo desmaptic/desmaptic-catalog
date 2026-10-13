@@ -1,0 +1,60 @@
+{
+  "id": "quit-all-apps",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Quit All Apps",
+    "de": "Alle Apps beenden",
+    "es": "Cerrar todas las apps",
+    "fr": "Quitter toutes les apps",
+    "ru": "Закрыть все"
+  },
+  "summary": {
+    "en": "Quits every open app except Finder; hold to hide all but the front one",
+    "de": "Beendet alle Apps außer dem Finder; Halten blendet alle außer der vorderen aus",
+    "es": "Cierra todas las apps salvo el Finder; mantén pulsado para ocultar todas menos la activa",
+    "fr": "Quitte toutes les apps sauf le Finder ; maintenez pour masquer tout sauf l’app active",
+    "ru": "Завершает все приложения, кроме Finder; удержание скрывает все, кроме активного"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Works like Quit in each app’s menu: apps with unsaved changes ask to save first. Only apps with a Dock icon are affected; menu bar utilities and background helpers stay open.",
+    "de": "Wie „Beenden“ im Menü der App: Apps mit ungesicherten Änderungen fragen zuerst, ob gesichert werden soll. Betroffen sind nur Apps mit Dock-Symbol; Menüleisten-Apps und Hintergrundprozesse laufen weiter.",
+    "es": "Como «Salir» en el menú de cada app: si hay cambios sin guardar, la app pregunta antes si guardarlos. Solo afecta a las apps con icono en el Dock; las utilidades de la barra de menús y los procesos en segundo plano siguen funcionando.",
+    "fr": "Comme « Quitter » dans le menu de chaque app : s’il y a des modifications non enregistrées, l’app propose d’abord de les enregistrer. Seules les apps avec une icône dans le Dock sont concernées ; les utilitaires de la barre des menus et les processus d’arrière-plan restent.",
+    "ru": "Как «Завершить» в меню приложения: при несохранённых изменениях оно сначала спросит, сохранить ли их. Затрагиваются только приложения со значком в Dock; утилиты в строке меню и фоновые процессы остаются."
+  },
+  "tapAction": {
+    "en": "Quits every open app except Finder",
+    "de": "Beendet alle geöffneten Apps außer dem Finder",
+    "es": "Cierra todas las apps abiertas salvo el Finder",
+    "fr": "Quitte toutes les apps ouvertes sauf le Finder",
+    "ru": "Завершает все открытые приложения, кроме Finder"
+  },
+  "holdAction": {
+    "en": "Hides every app except the one in front",
+    "de": "Blendet alle Apps außer der vorderen aus",
+    "es": "Oculta todas las apps menos la que está delante",
+    "fr": "Masque toutes les apps sauf celle au premier plan",
+    "ru": "Скрывает все приложения, кроме активного"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "xmark.app"
+      }
+    },
+    "color": "#FF375F",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    }
+  }
+}

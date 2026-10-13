@@ -1,0 +1,71 @@
+{
+  "id": "calendar",
+  "revision": 7,
+  "kind": "widget",
+  "title": {
+    "en": "Calendar",
+    "de": "Kalender",
+    "es": "Calendario",
+    "fr": "Calendrier",
+    "ru": "Календарь"
+  },
+  "summary": {
+    "en": "Today’s meeting in progress or the next one, with a countdown; tap to join the call",
+    "de": "Der laufende oder nächste Termin von heute mit Countdown; tippen, um dem Call beizutreten",
+    "es": "La reunión de hoy en curso o la siguiente, con cuenta atrás; toca para unirte a la llamada",
+    "fr": "La réunion du jour en cours ou la suivante, avec compte à rebours ; touchez pour rejoindre l’appel",
+    "ru": "Текущая или ближайшая встреча на сегодня с обратным отсчётом; нажмите, чтобы войти в звонок"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "The current meeting and time left, or today’s next one with a countdown; below, the one after. With nothing left today, the date. Pink 5 minutes before the start, plus a notification to join if it has a call link.",
+    "de": "Der laufende Termin mit Restzeit oder der nächste von heute mit Countdown, darunter der danach. Ist heute nichts mehr, das Datum. 5 Minuten vor Beginn pink, dazu eine Mitteilung zum Beitreten, falls es einen Link zum Call gibt.",
+    "es": "La reunión en curso y el tiempo que queda, o la siguiente de hoy con cuenta atrás; debajo, la posterior. Si hoy no queda ninguna, la fecha. Rosa 5 minutos antes de empezar, y una notificación para unirte si tiene enlace de llamada.",
+    "fr": "La réunion en cours et le temps restant, ou la prochaine du jour avec un compte à rebours ; en dessous, la suivante. S’il n’y a plus rien aujourd’hui, la date. Rose 5 minutes avant le début, avec une notification pour rejoindre l’appel s’il y a un lien.",
+    "ru": "Текущая встреча и сколько до её конца или ближайшая сегодня с обратным отсчётом, ниже — следующая за ней. Если сегодня встреч больше нет — число месяца. За 5 минут до начала — розовый и, если есть ссылка на звонок, уведомление, чтобы подключиться."
+  },
+  "tapAction": {
+    "en": "Joins the call of the meeting shown, or opens Calendar when it has no link",
+    "de": "Tritt dem Call des angezeigten Termins bei oder öffnet „Kalender“, wenn es keinen Link gibt",
+    "es": "Te une a la llamada de la reunión mostrada o abre Calendario si no hay enlace",
+    "fr": "Rejoint l’appel de la réunion affichée, ou ouvre Calendrier s’il n’y a pas de lien",
+    "ru": "Подключает к звонку показанной встречи, а если ссылки нет — открывает Календарь"
+  },
+  "holdAction": {
+    "en": "Opens Calendar on the Mac",
+    "de": "Öffnet die App „Kalender“ auf dem Mac",
+    "es": "Abre Calendario en el Mac",
+    "fr": "Ouvre Calendrier sur le Mac",
+    "ru": "Открывает Календарь на Mac"
+  },
+  "permissions": [
+    "calendar",
+    "notifications"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "calendar"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "launchApp": {
+        "bundleIdentifier": "com.apple.iCal"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

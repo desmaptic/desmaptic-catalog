@@ -1,0 +1,72 @@
+{
+  "id": "now-playing",
+  "revision": 6,
+  "kind": "widget",
+  "title": {
+    "en": "Now Playing",
+    "de": "Jetzt läuft",
+    "es": "En reproducción",
+    "fr": "À l’écoute",
+    "ru": "Сейчас играет"
+  },
+  "summary": {
+    "en": "What Music or Spotify is playing, over a live spectrum of the Mac’s sound",
+    "de": "Was in Musik oder Spotify läuft, über einem Live-Spektrum des Mac-Tons",
+    "es": "Lo que suena en Música o Spotify, sobre un espectro en directo del sonido del Mac",
+    "fr": "Ce que joue Musique ou Spotify, sur un spectre en direct du son du Mac",
+    "ru": "Что играет в «Музыке» или Spotify — поверх живого спектра звука на Mac"
+  },
+  "details": {
+    "en": "The track in Music or Spotify and its progress, over bars that move with the Mac’s sound. Dimmed text means paused; ♫ is another app’s sound, ♪ silence, 🔒 no access to the player.",
+    "de": "Der Titel in Musik oder Spotify mit Fortschritt, über Balken, die sich mit dem Ton des Mac bewegen. Blasser Text heißt Pause; ♫ ist Ton einer anderen App, ♪ Stille, 🔒 kein Zugriff auf den Player.",
+    "es": "La canción de Música o Spotify y su progreso, sobre barras que se mueven con el sonido del Mac. El texto atenuado indica pausa; ♫ es sonido de otra app, ♪, silencio, y 🔒, sin acceso al reproductor.",
+    "fr": "Le morceau de Musique ou Spotify et sa progression, sur des barres qui bougent avec le son du Mac. Un texte estompé signifie pause ; ♫ : le son d’une autre app, ♪ : le silence, 🔒 : pas d’accès au lecteur.",
+    "ru": "Трек из «Музыки» или Spotify и его прогресс — поверх столбиков, которые двигаются со звуком Mac. Бледный текст — пауза; ♫ — звук другого приложения, ♪ — тишина, 🔒 — нет доступа к плееру."
+  },
+  "tapAction": {
+    "en": "Plays or pauses, like the play key on the keyboard",
+    "de": "Spielt ab oder pausiert, wie die Wiedergabetaste der Tastatur",
+    "es": "Reproduce o pausa, como la tecla de reproducción del teclado",
+    "fr": "Lance ou met en pause la lecture, comme la touche lecture du clavier",
+    "ru": "Включает воспроизведение или паузу, как медиаклавиша на клавиатуре"
+  },
+  "holdAction": {
+    "en": "Mutes or unmutes the Mac",
+    "de": "Schaltet den Ton des Mac aus oder ein",
+    "es": "Silencia el Mac o reactiva su sonido",
+    "fr": "Coupe ou rétablit le son du Mac",
+    "ru": "Выключает или включает звук на Mac"
+  },
+  "permissions": [
+    "systemAudio",
+    "automation",
+    "accessibility"
+  ],
+  "colSpan": 2,
+  "rowSpan": 2,
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "music.note"
+      }
+    },
+    "color": "#FF375F",
+    "command": {
+      "systemAction": {
+        "_0": "playPause"
+      }
+    },
+    "longPressCommand": {
+      "appleScript": {
+        "code": "set volume output muted not (output muted of (get volume settings))"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

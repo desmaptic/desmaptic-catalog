@@ -1,0 +1,647 @@
+{
+  "id": "figma",
+  "revision": 6,
+  "name": "Figma",
+  "bundleIds": ["com.figma.Desktop"],
+  "category": "design",
+  "buttons": [
+    {
+      "id": "move",
+      "title": {"en": "Move", "de": "Verschieben", "es": "Mover", "fr": "Déplacer", "ru": "Курсор"},
+      "summary": {
+        "en": "Picks the Move tool (V)",
+        "de": "Wählt das Werkzeug Verschieben (V)",
+        "es": "Elige la herramienta Mover (V)",
+        "fr": "Choisit l’outil Déplacer (V)",
+        "ru": "Инструмент Move (V)"
+      },
+      "details": {
+        "en": "Selects, moves and resizes layers on the canvas. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Ebenen auf der Arbeitsfläche auswählen, verschieben und skalieren. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Selecciona, mueve y cambia el tamaño de las capas del lienzo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Sélectionne, déplace et redimensionne les calques du canevas. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Выделяет, двигает и масштабирует слои на холсте. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Move tool",
+        "de": "Wählt das Werkzeug Verschieben",
+        "es": "Elige la herramienta Mover",
+        "fr": "Choisit l’outil Déplacer",
+        "ru": "Включает инструмент Move"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "cursorarrow"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 9, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "frame",
+      "title": {"en": "Frame", "de": "Rahmen", "es": "Marco", "fr": "Cadre", "ru": "Фрейм"},
+      "summary": {
+        "en": "Picks the Frame tool (F)",
+        "de": "Wählt das Rahmen-Werkzeug (F)",
+        "es": "Elige la herramienta Marco (F)",
+        "fr": "Choisit l’outil Cadre (F)",
+        "ru": "Инструмент Frame (F)"
+      },
+      "details": {
+        "en": "Drag to draw a frame, or pick a device size in the right sidebar. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Zum Zeichnen eines Rahmens ziehen oder in der rechten Seitenleiste eine Gerätegröße wählen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Arrastra para dibujar un marco o elige el tamaño de un dispositivo en la barra lateral derecha. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Faites glisser pour tracer un cadre, ou choisissez une taille d’appareil dans la barre latérale droite. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Потяните, чтобы нарисовать фрейм, или выберите размер устройства в правой панели. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Frame tool",
+        "de": "Wählt das Rahmen-Werkzeug",
+        "es": "Elige la herramienta Marco",
+        "fr": "Choisit l’outil Cadre",
+        "ru": "Включает инструмент Frame"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "number"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "rectangle",
+      "title": {"en": "Rectangle", "de": "Rechteck", "es": "Rectángulo", "fr": "Rectangle", "ru": "Фигура"},
+      "summary": {
+        "en": "Picks the Rectangle tool (R)",
+        "de": "Wählt das Rechteck-Werkzeug (R)",
+        "es": "Elige la herramienta Rectángulo (R)",
+        "fr": "Choisit l’outil Rectangle (R)",
+        "ru": "Инструмент Rectangle (R)"
+      },
+      "details": {
+        "en": "Drag to draw a rectangle; hold Shift for a square. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Ziehen zeichnet ein Rechteck, mit gedrückter Umschalttaste ein Quadrat. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Arrastra para dibujar un rectángulo; con Mayúsculas, un cuadrado. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Faites glisser pour tracer un rectangle ; avec Maj, un carré. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Потяните, чтобы нарисовать прямоугольник, с Shift — квадрат. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Rectangle tool",
+        "de": "Wählt das Rechteck-Werkzeug",
+        "es": "Elige la herramienta Rectángulo",
+        "fr": "Choisit l’outil Rectangle",
+        "ru": "Включает инструмент Rectangle"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 15, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "text",
+      "title": {"en": "Text", "de": "Text", "es": "Texto", "fr": "Texte", "ru": "Текст"},
+      "summary": {
+        "en": "Picks the Text tool (T)",
+        "de": "Wählt das Text-Werkzeug (T)",
+        "es": "Elige la herramienta Texto (T)",
+        "fr": "Choisit l’outil Texte (T)",
+        "ru": "Инструмент Text (T)"
+      },
+      "details": {
+        "en": "Click to start typing, or drag for a text box of fixed width. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Klicken und lostippen, oder ziehen für ein Textfeld mit fester Breite. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Haz clic para escribir o arrastra para un cuadro de texto de ancho fijo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Cliquez pour écrire, ou faites glisser pour une zone de texte de largeur fixe. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Щёлкните и печатайте или потяните — получится блок текста фиксированной ширины. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Text tool",
+        "de": "Wählt das Text-Werkzeug",
+        "es": "Elige la herramienta Texto",
+        "fr": "Choisit l’outil Texte",
+        "ru": "Включает инструмент Text"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "auto-layout",
+      "title": {"en": "Auto Layout", "de": "Auto-Layout", "es": "Diseño automático", "fr": "Disposition automatique", "ru": "Auto Layout"},
+      "summary": {
+        "en": "Adds auto layout (⇧A); hold to remove it",
+        "de": "Fügt Auto-Layout hinzu (⇧A); Halten entfernt es",
+        "es": "Añade diseño automático (⇧A); mantén pulsado para quitarlo",
+        "fr": "Ajoute la disposition automatique (⇧A) ; maintenez pour la retirer",
+        "ru": "Добавляет Auto Layout (⇧A); удержание — убирает"
+      },
+      "details": {
+        "en": "Wraps the selected layers in an auto layout frame, or turns a selected frame into one. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Packt die ausgewählten Ebenen in einen Auto-Layout-Rahmen oder macht einen ausgewählten Rahmen dazu. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Envuelve las capas seleccionadas en un marco con diseño automático o se lo aplica al marco seleccionado. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Place les calques sélectionnés dans un cadre en disposition automatique, ou l’applique au cadre sélectionné. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Оборачивает выделенные слои во фрейм с Auto Layout или включает его у выделенного фрейма. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Adds auto layout",
+        "de": "Fügt Auto-Layout hinzu",
+        "es": "Añade diseño automático",
+        "fr": "Ajoute la disposition automatique",
+        "ru": "Добавляет Auto Layout"
+      },
+      "holdAction": {
+        "en": "Removes auto layout (⌥⇧A)",
+        "de": "Entfernt Auto-Layout (⌥⇧A)",
+        "es": "Quita el diseño automático (⌥⇧A)",
+        "fr": "Retire la disposition automatique (⌥⇧A)",
+        "ru": "Убирает Auto Layout (⌥⇧A)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.split.3x1"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 0, "modifiers": ["shift"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 0, "modifiers": ["option", "shift"]}}}
+      }
+    },
+    {
+      "id": "component",
+      "title": {"en": "Create Component", "de": "Komponente erstellen", "es": "Crear componente", "fr": "Créer un composant", "ru": "Создать компонент"},
+      "summary": {
+        "en": "Makes the selection a component (⌥⌘K); hold to detach an instance",
+        "de": "Macht die Auswahl zur Komponente (⌥⌘K); Halten löst eine Instanz",
+        "es": "Convierte la selección en componente (⌥⌘K); mantén pulsado para separar una instancia",
+        "fr": "Fait de la sélection un composant (⌥⌘K) ; maintenez pour détacher une instance",
+        "ru": "Делает из выделения компонент (⌥⌘K); удержание — отвязывает экземпляр"
+      },
+      "details": {
+        "en": "The selected layers become a component; its instances then follow every change to it. Works while Figma is in front.",
+        "de": "Die ausgewählten Ebenen werden zur Komponente; ihre Instanzen übernehmen dann jede Änderung. Funktioniert, wenn Figma vorne ist.",
+        "es": "Las capas seleccionadas se convierten en un componente; sus instancias siguen luego cada cambio. Funciona cuando Figma está delante.",
+        "fr": "Les calques sélectionnés deviennent un composant ; ses instances suivent ensuite chaque modification. Fonctionne quand Figma est au premier plan.",
+        "ru": "Выделенные слои становятся компонентом; его экземпляры потом повторяют каждое изменение. Работает, когда Figma на переднем плане."
+      },
+      "tapAction": {
+        "en": "Creates a component",
+        "de": "Erstellt eine Komponente",
+        "es": "Crea un componente",
+        "fr": "Crée un composant",
+        "ru": "Создаёт компонент"
+      },
+      "holdAction": {
+        "en": "Detaches the selected instance from its component (⌥⌘B)",
+        "de": "Löst die ausgewählte Instanz von ihrer Komponente (⌥⌘B)",
+        "es": "Separa la instancia seleccionada de su componente (⌥⌘B)",
+        "fr": "Détache l’instance sélectionnée de son composant (⌥⌘B)",
+        "ru": "Отвязывает выделенный экземпляр от компонента (⌥⌘B)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.grid.cross"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "group",
+      "title": {"en": "Group", "de": "Gruppieren", "es": "Agrupar", "fr": "Grouper", "ru": "Группа"},
+      "summary": {
+        "en": "Groups the selection (⌘G); hold to ungroup",
+        "de": "Gruppiert die Auswahl (⌘G); Halten hebt die Gruppierung auf",
+        "es": "Agrupa la selección (⌘G); mantén pulsado para desagrupar",
+        "fr": "Groupe la sélection (⌘G) ; maintenez pour dégrouper",
+        "ru": "Группирует выделение (⌘G); удержание — разгруппировывает"
+      },
+      "details": {
+        "en": "The selected layers move, resize and hide together as one group. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Die ausgewählten Ebenen werden als eine Gruppe gemeinsam verschoben, skaliert und ausgeblendet. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Las capas seleccionadas se mueven, cambian de tamaño y se ocultan juntas, como un grupo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Les calques sélectionnés se déplacent, se redimensionnent et se masquent ensemble, en un groupe. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Выделенные слои двигаются, масштабируются и скрываются вместе, одной группой. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Groups the selected layers",
+        "de": "Gruppiert die ausgewählten Ebenen",
+        "es": "Agrupa las capas seleccionadas",
+        "fr": "Groupe les calques sélectionnés",
+        "ru": "Группирует выделенные слои"
+      },
+      "holdAction": {
+        "en": "Ungroups the selection (⇧⌘G)",
+        "de": "Hebt die Gruppierung auf (⇧⌘G)",
+        "es": "Desagrupa la selección (⇧⌘G)",
+        "fr": "Dégroupe la sélection (⇧⌘G)",
+        "ru": "Разгруппировывает выделение (⇧⌘G)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.3.group"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "frame-selection",
+      "title": {"en": "Frame Selection", "de": "Einrahmen", "es": "Enmarcar", "fr": "Encadrer", "ru": "Во фрейм"},
+      "summary": {
+        "en": "Puts the selection in a frame (⌥⌘G)",
+        "de": "Setzt die Auswahl in einen Rahmen (⌥⌘G)",
+        "es": "Pone la selección en un marco (⌥⌘G)",
+        "fr": "Place la sélection dans un cadre (⌥⌘G)",
+        "ru": "Помещает выделение во фрейм (⌥⌘G)"
+      },
+      "details": {
+        "en": "A new frame fits around the selected layers, ready for auto layout, a fill or clipping. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Ein neuer Rahmen legt sich um die ausgewählten Ebenen – bereit für Auto-Layout, eine Füllung oder Beschneiden. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Un marco nuevo se ajusta a las capas seleccionadas, listo para diseño automático, un relleno o un recorte. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Un nouveau cadre entoure les calques sélectionnés, prêt pour la disposition automatique, un remplissage ou un masquage. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Вокруг выделенных слоёв появляется новый фрейм — для Auto Layout, заливки или обрезки. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Frames the selected layers",
+        "de": "Rahmt die ausgewählten Ebenen ein",
+        "es": "Enmarca las capas seleccionadas",
+        "fr": "Encadre les calques sélectionnés",
+        "ru": "Помещает выделенные слои во фрейм"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "viewfinder"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "pen",
+      "title": {"en": "Pen", "de": "Zeichenstift", "es": "Pluma", "fr": "Plume", "ru": "Перо"},
+      "summary": {
+        "en": "Picks the Pen tool (P)",
+        "de": "Wählt den Zeichenstift (P)",
+        "es": "Elige la herramienta Pluma (P)",
+        "fr": "Choisit l’outil Plume (P)",
+        "ru": "Инструмент Pen (P)"
+      },
+      "details": {
+        "en": "Click to place points, drag to bend the path between them. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Klicken setzt Punkte, Ziehen biegt den Pfad dazwischen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Haz clic para poner puntos y arrastra para curvar el trazado entre ellos. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Cliquez pour placer des points, faites glisser pour courber le tracé entre eux. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Щелчки ставят точки, перетаскивание изгибает контур между ними. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Pen tool",
+        "de": "Wählt den Zeichenstift",
+        "es": "Elige la herramienta Pluma",
+        "fr": "Choisit l’outil Plume",
+        "ru": "Включает инструмент Pen"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "point.topleft.down.to.point.bottomright.curvepath"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "comment",
+      "title": {"en": "Comment", "de": "Kommentar", "es": "Comentario", "fr": "Commentaire", "ru": "Коммент"},
+      "summary": {
+        "en": "Picks the Comment tool (C)",
+        "de": "Wählt das Kommentar-Werkzeug (C)",
+        "es": "Elige la herramienta Comentario (C)",
+        "fr": "Choisit l’outil Commentaire (C)",
+        "ru": "Инструмент Comment (C)"
+      },
+      "details": {
+        "en": "Shows the file’s comments; click anywhere to leave a new one. Works while Figma is in front and you are not typing in text or a field.",
+        "de": "Zeigt die Kommentare der Datei; ein Klick irgendwo hinterlässt einen neuen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Muestra los comentarios del archivo; haz clic en cualquier sitio para dejar uno nuevo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
+        "fr": "Affiche les commentaires du fichier ; cliquez n’importe où pour en laisser un. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "ru": "Показывает комментарии файла; щёлкните в любом месте, чтобы оставить новый. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+      },
+      "tapAction": {
+        "en": "Picks the Comment tool",
+        "de": "Wählt das Kommentar-Werkzeug",
+        "es": "Elige la herramienta Comentario",
+        "fr": "Choisit l’outil Commentaire",
+        "ru": "Включает инструмент Comment"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubble.left"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 8, "modifiers": []}}}
+      }
+    },
+    {
+      "id": "actions",
+      "title": {"en": "Actions", "de": "Aktionen", "es": "Acciones", "fr": "Actions", "ru": "Действия"},
+      "summary": {
+        "en": "Finds any command or plugin by name (⌘P)",
+        "de": "Findet jeden Befehl und jedes Plug-in über den Namen (⌘P)",
+        "es": "Busca cualquier comando o plugin por su nombre (⌘P)",
+        "fr": "Trouve une commande ou un plug-in par son nom (⌘P)",
+        "ru": "Любая команда или плагин по названию (⌘P)"
+      },
+      "details": {
+        "en": "Figma’s Actions menu: type part of a name and press Return. Works while Figma is in front.",
+        "de": "Das Aktionen-Menü von Figma: einen Teil des Namens tippen und mit Return ausführen. Funktioniert, wenn Figma vorne ist.",
+        "es": "El menú Acciones de Figma: escribe parte del nombre y pulsa Retorno. Funciona cuando Figma está delante.",
+        "fr": "Le menu Actions de Figma : tapez une partie du nom, puis Retour. Fonctionne quand Figma est au premier plan.",
+        "ru": "Меню Actions в Figma: наберите часть названия и нажмите Return. Работает, когда Figma на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Actions menu",
+        "de": "Öffnet das Aktionen-Menü",
+        "es": "Abre el menú Acciones",
+        "fr": "Ouvre le menu Actions",
+        "ru": "Открывает меню Actions"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "run-plugin",
+      "title": {"en": "Last Plugin", "de": "Letztes Plug-in", "es": "Último plugin", "fr": "Dernier plug-in", "ru": "Последний плагин"},
+      "summary": {
+        "en": "Runs the last plugin again (⌥⌘P)",
+        "de": "Startet das letzte Plug-in erneut (⌥⌘P)",
+        "es": "Vuelve a ejecutar el último plugin (⌥⌘P)",
+        "fr": "Relance le dernier plug-in (⌥⌘P)",
+        "ru": "Снова запускает последний плагин (⌥⌘P)"
+      },
+      "details": {
+        "en": "Repeats the plugin command you ran last, without looking it up again. Works while Figma is in front.",
+        "de": "Wiederholt den zuletzt ausgeführten Plug-in-Befehl, ohne ihn erneut zu suchen. Funktioniert, wenn Figma vorne ist.",
+        "es": "Repite el último comando de plugin que ejecutaste, sin buscarlo otra vez. Funciona cuando Figma está delante.",
+        "fr": "Répète la dernière commande de plug-in lancée, sans la rechercher. Fonctionne quand Figma est au premier plan.",
+        "ru": "Повторяет последнюю запущенную команду плагина — искать её заново не нужно. Работает, когда Figma на переднем плане."
+      },
+      "tapAction": {
+        "en": "Runs the last plugin again",
+        "de": "Startet das letzte Plug-in erneut",
+        "es": "Vuelve a ejecutar el último plugin",
+        "fr": "Relance le dernier plug-in",
+        "ru": "Снова запускает последний плагин"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "puzzlepiece.extension"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "zoom-fit",
+      "title": {"en": "Zoom to Fit", "de": "Alles zeigen", "es": "Ver todo", "fr": "Tout afficher", "ru": "Показать всё"},
+      "summary": {
+        "en": "Zooms to show all of the page; hold for 100%",
+        "de": "Zoomt, bis die ganze Seite zu sehen ist; halten für 100 %",
+        "es": "Hace zoom para ver toda la página; mantén pulsado para el 100 %",
+        "fr": "Zoome pour voir toute la page ; maintenez pour 100 %",
+        "ru": "Масштаб, при котором видна вся страница; удержание — 100 %"
+      },
+      "details": {
+        "en": "Clicks View › Zoom to fit in Figma’s menu: its key, 1 or ⇧1, depends on a Figma preference. Needs Figma in front, set to English.",
+        "de": "Klickt View › Zoom to fit im Menü von Figma: Die Taste dafür, 1 oder ⇧1, hängt von einer Figma-Einstellung ab. Figma muss vorne und auf Englisch eingestellt sein.",
+        "es": "Pulsa View › Zoom to fit en el menú de Figma: su tecla, 1 o ⇧1, depende de un ajuste de Figma. Figma debe estar delante y en inglés.",
+        "fr": "Clique sur View › Zoom to fit dans le menu de Figma : sa touche, 1 ou ⇧1, dépend d’un réglage de Figma. Figma doit être au premier plan et en anglais.",
+        "ru": "Нажимает View › Zoom to fit в меню Figma: клавиша для него, 1 или ⇧1, зависит от настройки Figma. Figma должна быть на переднем плане и на английском."
+      },
+      "tapAction": {
+        "en": "Zooms to fit the whole page",
+        "de": "Zoomt auf die ganze Seite",
+        "es": "Ajusta el zoom a toda la página",
+        "fr": "Ajuste le zoom à toute la page",
+        "ru": "Показывает всю страницу"
+      },
+      "holdAction": {
+        "en": "Zooms to 100% (View › Zoom to 100%)",
+        "de": "Zoomt auf 100 % (View › Zoom to 100%)",
+        "es": "Pone el zoom al 100 % (View › Zoom to 100%)",
+        "fr": "Règle le zoom sur 100 % (View › Zoom to 100%)",
+        "ru": "Масштаб 100 % (View › Zoom to 100%)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.left.and.arrow.down.right"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "menu=View item='Zoom to fit'\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "menu=View item='Zoom to 100%'\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "zoom-selection",
+      "title": {"en": "Zoom to Selection", "de": "Auf Auswahl zoomen", "es": "Zoom a la selección", "fr": "Zoom sur la sélection", "ru": "К выделению"},
+      "summary": {
+        "en": "Zooms in on the selected layers",
+        "de": "Zoomt auf die ausgewählten Ebenen",
+        "es": "Hace zoom a las capas seleccionadas",
+        "fr": "Zoome sur les calques sélectionnés",
+        "ru": "Приближает выделенные слои"
+      },
+      "details": {
+        "en": "Clicks View › Zoom to selection in Figma’s menu: its key, 2 or ⇧2, depends on a Figma preference. Needs Figma in front, set to English.",
+        "de": "Klickt View › Zoom to selection im Menü von Figma: Die Taste dafür, 2 oder ⇧2, hängt von einer Figma-Einstellung ab. Figma muss vorne und auf Englisch eingestellt sein.",
+        "es": "Pulsa View › Zoom to selection en el menú de Figma: su tecla, 2 o ⇧2, depende de un ajuste de Figma. Figma debe estar delante y en inglés.",
+        "fr": "Clique sur View › Zoom to selection dans le menu de Figma : sa touche, 2 ou ⇧2, dépend d’un réglage de Figma. Figma doit être au premier plan et en anglais.",
+        "ru": "Нажимает View › Zoom to selection в меню Figma: клавиша для него, 2 или ⇧2, зависит от настройки Figma. Figma должна быть на переднем плане и на английском."
+      },
+      "tapAction": {
+        "en": "Zooms to the selection",
+        "de": "Zoomt auf die Auswahl",
+        "es": "Hace zoom a la selección",
+        "fr": "Zoome sur la sélection",
+        "ru": "Приближает выделение"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.magnifyingglass"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "menu=View item='Zoom to selection'\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "hide-ui",
+      "title": {"en": "Show/Hide UI", "de": "UI ein-/ausblenden", "es": "Mostrar/ocultar UI", "fr": "Afficher/masquer l’UI", "ru": "Показать/скрыть UI"},
+      "summary": {
+        "en": "Hides the panels to leave only the canvas (⌘.)",
+        "de": "Blendet die Bereiche aus, nur die Arbeitsfläche bleibt (⌘.)",
+        "es": "Oculta los paneles y deja solo el lienzo (⌘.)",
+        "fr": "Masque les panneaux pour ne garder que le canevas (⌘.)",
+        "ru": "Прячет панели, остаётся только холст (⌘.)"
+      },
+      "details": {
+        "en": "Tap again to bring the toolbar and sidebars back. Works while Figma is in front, with any keyboard but AZERTY.",
+        "de": "Erneut tippen holt Werkzeugleiste und Seitenleisten zurück. Funktioniert, wenn Figma vorne ist, mit jeder Tastatur außer AZERTY.",
+        "es": "Toca otra vez para recuperar la barra de herramientas y las laterales. Funciona cuando Figma está delante, con cualquier teclado salvo AZERTY.",
+        "fr": "Touchez encore pour retrouver la barre d’outils et les barres latérales. Fonctionne quand Figma est au premier plan, avec tout clavier sauf AZERTY.",
+        "ru": "Повторное нажатие возвращает панель инструментов и боковые панели. Работает, когда Figma на переднем плане, с любой раскладкой, кроме AZERTY."
+      },
+      "tapAction": {
+        "en": "Shows or hides Figma’s panels",
+        "de": "Blendet die Bereiche von Figma ein oder aus",
+        "es": "Muestra u oculta los paneles de Figma",
+        "fr": "Affiche ou masque les panneaux de Figma",
+        "ru": "Показывает или прячет панели Figma"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.left"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 47, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "present",
+      "title": {"en": "Present", "de": "Präsentieren", "es": "Presentar", "fr": "Présenter", "ru": "Презентация"},
+      "summary": {
+        "en": "Plays the prototype (⌥⌘↩)",
+        "de": "Spielt den Prototyp ab (⌥⌘↩)",
+        "es": "Reproduce el prototipo (⌥⌘↩)",
+        "fr": "Lance le prototype (⌥⌘↩)",
+        "ru": "Запускает прототип (⌥⌘↩)"
+      },
+      "details": {
+        "en": "Opens the page’s prototype in presentation view, in a new tab. Works while Figma is in front.",
+        "de": "Öffnet den Prototyp der Seite in der Präsentationsansicht, in einem neuen Tab. Funktioniert, wenn Figma vorne ist.",
+        "es": "Abre el prototipo de la página en la vista de presentación, en una pestaña nueva. Funciona cuando Figma está delante.",
+        "fr": "Ouvre le prototype de la page en mode présentation, dans un nouvel onglet. Fonctionne quand Figma est au premier plan.",
+        "ru": "Открывает прототип страницы в режиме презентации, в новой вкладке. Работает, когда Figma на переднем плане."
+      },
+      "tapAction": {
+        "en": "Presents the prototype",
+        "de": "Präsentiert den Prototyp",
+        "es": "Presenta el prototipo",
+        "fr": "Présente le prototype",
+        "ru": "Показывает прототип"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "play.rectangle"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "new-file",
+      "title": {"en": "New Design File", "de": "Neue Datei", "es": "Archivo nuevo", "fr": "Nouveau fichier", "ru": "Новый файл"},
+      "summary": {
+        "en": "Starts a new design file; hold for a FigJam board",
+        "de": "Legt eine neue Design-Datei an; halten für ein FigJam-Board",
+        "es": "Crea un archivo de diseño nuevo; mantén pulsado para una pizarra de FigJam",
+        "fr": "Crée un nouveau fichier de design ; maintenez pour un tableau FigJam",
+        "ru": "Создаёт новый файл дизайна; удержание — доску FigJam"
+      },
+      "details": {
+        "en": "Opens a new, untitled file in a new Figma tab, from any app and on any keyboard layout; starts Figma if it is closed.",
+        "de": "Öffnet eine neue, unbenannte Datei in einem neuen Figma-Tab, aus jeder App und mit jeder Tastaturbelegung; startet Figma, wenn es geschlossen ist.",
+        "es": "Abre un archivo nuevo sin título en una pestaña nueva de Figma, desde cualquier app y con cualquier distribución de teclado; abre Figma si está cerrado.",
+        "fr": "Ouvre un nouveau fichier sans titre dans un nouvel onglet Figma, depuis n’importe quelle app et avec toute disposition de clavier ; lance Figma s’il est fermé.",
+        "ru": "Открывает новый файл без названия в новой вкладке Figma — из любого приложения и при любой раскладке; запускает Figma, если она закрыта."
+      },
+      "tapAction": {
+        "en": "Starts a new design file",
+        "de": "Legt eine neue Design-Datei an",
+        "es": "Crea un archivo de diseño nuevo",
+        "fr": "Crée un nouveau fichier de design",
+        "ru": "Создаёт новый файл дизайна"
+      },
+      "holdAction": {
+        "en": "Starts a new FigJam board",
+        "de": "Legt ein neues FigJam-Board an",
+        "es": "Crea una pizarra de FigJam nueva",
+        "fr": "Crée un nouveau tableau FigJam",
+        "ru": "Создаёт новую доску FigJam"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.badge.plus"}},
+        "color": "#F24E1E",
+        "command": {"shellCommand": {"command": "action=new-design\n@file:link.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=new-board\n@file:link.zsh"}}
+      }
+    },
+    {
+      "id": "open-file",
+      "title": {"en": "Open File", "de": "Datei öffnen", "es": "Abrir archivo", "fr": "Ouvrir le fichier", "ru": "Открыть файл"},
+      "summary": {
+        "en": "Opens a file you work on every day, or switches to its tab",
+        "de": "Öffnet eine Datei, an der du täglich arbeitest, oder wechselt zu ihrem Tab",
+        "es": "Abre un archivo con el que trabajas a diario o cambia a su pestaña",
+        "fr": "Ouvre un fichier sur lequel vous travaillez chaque jour, ou passe à son onglet",
+        "ru": "Открывает файл, с которым вы работаете каждый день, или переключает на его вкладку"
+      },
+      "details": {
+        "en": "Put the file’s Share link (Copy link: https://www.figma.com/design/…, board or slides) in the first line of the button’s script; until then the button says where. Works from any app; starts Figma if it is closed.",
+        "de": "Trag den Link der Datei aus Figma (https://www.figma.com/design/…, board oder slides) in die erste Zeile des Skripts der Taste ein; bis dahin sagt die Taste, wo. Funktioniert aus jeder App; startet Figma, wenn es geschlossen ist.",
+        "es": "Pon el enlace del archivo copiado de Figma (https://www.figma.com/design/…, board o slides) en la primera línea del script del botón; hasta entonces el botón dice dónde. Funciona desde cualquier app y abre Figma si está cerrado.",
+        "fr": "Indiquez le lien du fichier copié depuis Figma (https://www.figma.com/design/…, board ou slides) à la première ligne du script du bouton ; d’ici là, le bouton dit où. Fonctionne depuis n’importe quelle app et lance Figma s’il est fermé.",
+        "ru": "Ссылку Share на файл (Copy link: https://www.figma.com/design/…, board или slides) впишите в первую строку скрипта кнопки; пока её нет, кнопка подскажет, где её задать. Работает из любого приложения и запускает Figma, если она закрыта."
+      },
+      "tapAction": {
+        "en": "Opens your file in Figma",
+        "de": "Öffnet deine Datei in Figma",
+        "es": "Abre tu archivo en Figma",
+        "fr": "Ouvre votre fichier dans Figma",
+        "ru": "Открывает ваш файл в Figma"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.right.square"}},
+        "color": "#F24E1E",
+        "command": {"shellCommand": {"command": "link=\"\"   # ← your file’s Share link, copied from Figma, e.g. \"https://www.figma.com/design/…/My-file\"\naction=file\n@file:link.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Figma", "de": "Figma", "es": "Figma", "fr": "Figma", "ru": "Figma"},
+      "summary": {
+        "en": "Tools, layout, zoom and files from your phone",
+        "de": "Werkzeuge, Layout, Zoom und Dateien vom Telefon aus",
+        "es": "Herramientas, diseño, zoom y archivos desde el teléfono",
+        "fr": "Outils, mise en page, zoom et fichiers depuis votre téléphone",
+        "ru": "Инструменты, вёрстка, масштаб и файлы с телефона"
+      },
+      "details": {
+        "en": "Most buttons work while Figma is in front, many only while you are not typing in text or a field; New Design File and Open File work from any app. The two zoom buttons click Figma’s menu, which must be in English.",
+        "de": "Die meisten Tasten funktionieren, wenn Figma vorne ist, viele nur, wenn gerade kein Text oder Feld bearbeitet wird; Neue Datei und Datei öffnen klappen aus jeder App. Die zwei Zoom-Tasten klicken ins Menü von Figma, das englisch sein muss.",
+        "es": "Casi todos los botones funcionan cuando Figma está delante, muchos solo si no se escribe en un texto o un campo; Archivo nuevo y Abrir archivo funcionan desde cualquier app. Los dos botones de zoom pulsan el menú de Figma, que debe estar en inglés.",
+        "fr": "La plupart des boutons fonctionnent quand Figma est au premier plan, beaucoup hors saisie dans un texte ou un champ ; Nouveau fichier et Ouvrir le fichier fonctionnent depuis n’importe quelle app. Les deux boutons de zoom cliquent dans le menu de Figma, qui doit être en anglais.",
+        "ru": "Большинство кнопок работают, когда Figma на переднем плане, многие — только когда вы не набираете текст в слое или поле; «Новый файл» и «Открыть файл» работают из любого приложения. Две кнопки масштаба нажимают пункты меню Figma — оно должно быть на английском."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "move", "row": 0, "col": 0},
+        {"button": "frame", "row": 0, "col": 1},
+        {"button": "rectangle", "row": 0, "col": 2},
+        {"button": "text", "row": 0, "col": 3},
+        {"button": "auto-layout", "row": 1, "col": 0},
+        {"button": "component", "row": 1, "col": 1},
+        {"button": "group", "row": 1, "col": 2},
+        {"button": "frame-selection", "row": 1, "col": 3},
+        {"button": "pen", "row": 2, "col": 0},
+        {"button": "comment", "row": 2, "col": 1},
+        {"button": "actions", "row": 2, "col": 2},
+        {"button": "run-plugin", "row": 2, "col": 3},
+        {"button": "zoom-fit", "row": 3, "col": 0},
+        {"button": "zoom-selection", "row": 3, "col": 1},
+        {"button": "hide-ui", "row": 3, "col": 2},
+        {"button": "present", "row": 3, "col": 3},
+        {"widget": "pipette", "row": 4, "col": 0},
+        {"button": "new-file", "row": 4, "col": 1},
+        {"button": "open-file", "row": 4, "col": 2}
+      ]
+    }
+  ]
+}

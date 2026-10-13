@@ -1,0 +1,639 @@
+{
+  "id": "fork",
+  "revision": 4,
+  "name": "Fork",
+  "bundleIds": ["com.DanPristupov.Fork"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "fetch",
+      "title": {"en": "Fetch", "de": "Fetch", "es": "Fetch", "fr": "Fetch", "ru": "Fetch"},
+      "summary": {
+        "en": "Fetches right away; hold for the Fetch dialog",
+        "de": "Führt sofort einen Fetch aus; Halten öffnet den Fetch-Dialog",
+        "es": "Hace fetch al instante; mantén pulsado para el diálogo Fetch",
+        "fr": "Lance un fetch immédiatement ; maintenez pour la fenêtre Fetch",
+        "ru": "Сразу выполняет fetch; удержание — окно Fetch"
+      },
+      "details": {
+        "en": "Repository › Quick Fetch (⌥⇧⌘F): new commits and branches come down from the remote; your files and branches stay as they are. Works while Fork is in front.",
+        "de": "Repository › Quick Fetch (⌥⇧⌘F): Neue Commits und Branches kommen vom Remote, deine Dateien und Branches bleiben, wie sie sind. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Quick Fetch (⌥⇧⌘F): baja los commits y las ramas nuevos del remoto; tus archivos y ramas quedan como están. Funciona cuando Fork está delante.",
+        "fr": "Repository › Quick Fetch (⌥⇧⌘F) : les nouveaux commits et branches arrivent du dépôt distant ; vos fichiers et branches restent tels quels. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Quick Fetch (⌥⇧⌘F): новые коммиты и ветки загружаются с удалённого репозитория, ваши файлы и ветки не меняются. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Fetches right away",
+        "de": "Führt sofort einen Fetch aus",
+        "es": "Hace fetch al instante",
+        "fr": "Lance un fetch immédiatement",
+        "ru": "Сразу выполняет fetch"
+      },
+      "holdAction": {
+        "en": "Opens Fetch… to pick the remote and options (⇧⌘F)",
+        "de": "Öffnet Fetch… zur Wahl von Remote und Optionen (⇧⌘F)",
+        "es": "Abre Fetch… para elegir el remoto y las opciones (⇧⌘F)",
+        "fr": "Ouvre Fetch… pour choisir le dépôt distant et les options (⇧⌘F)",
+        "ru": "Открывает Fetch… — выбор удалённого репозитория и параметров (⇧⌘F)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.circle"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["option", "shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "pull",
+      "title": {"en": "Pull", "de": "Pull", "es": "Pull", "fr": "Pull", "ru": "Pull"},
+      "summary": {
+        "en": "Opens the Pull dialog; hold to pull right away",
+        "de": "Öffnet den Pull-Dialog; Halten pullt sofort",
+        "es": "Abre el diálogo Pull; mantén pulsado para hacer pull al instante",
+        "fr": "Ouvre la fenêtre Pull ; maintenez pour un pull immédiat",
+        "ru": "Открывает окно Pull; удержание — pull сразу"
+      },
+      "details": {
+        "en": "Repository › Pull… (⇧⌘L) shows the branch and whether to rebase instead of merge; nothing changes until you press Pull there. Works while Fork is in front.",
+        "de": "Repository › Pull… (⇧⌘L) zeigt den Branch und ob per Rebase statt Merge; nichts ändert sich, bis du dort auf Pull klickst. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Pull… (⇧⌘L) muestra la rama y si hacer rebase en vez de merge; nada cambia hasta que pulses Pull ahí. Funciona cuando Fork está delante.",
+        "fr": "Repository › Pull… (⇧⌘L) montre la branche et s’il faut un rebase plutôt qu’un merge ; rien ne change avant que vous cliquiez sur Pull. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Pull… (⇧⌘L) показывает ветку и выбор rebase вместо merge; ничего не меняется, пока там не нажата кнопка Pull. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Pull dialog",
+        "de": "Öffnet den Pull-Dialog",
+        "es": "Abre el diálogo Pull",
+        "fr": "Ouvre la fenêtre Pull",
+        "ru": "Открывает окно Pull"
+      },
+      "holdAction": {
+        "en": "Pulls right away, without the dialog (Quick Pull, ⌥⇧⌘L)",
+        "de": "Pullt sofort, ohne Dialog (Quick Pull, ⌥⇧⌘L)",
+        "es": "Hace pull al instante, sin el diálogo (Quick Pull, ⌥⇧⌘L)",
+        "fr": "Fait un pull immédiat, sans la fenêtre (Quick Pull, ⌥⇧⌘L)",
+        "ru": "Сразу выполняет pull, без окна (Quick Pull, ⌥⇧⌘L)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.to.line"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["option", "shift", "command"]}}}
+      }
+    },
+    {
+      "id": "push",
+      "title": {"en": "Push", "de": "Push", "es": "Push", "fr": "Push", "ru": "Push"},
+      "summary": {
+        "en": "Opens the Push dialog; hold to push right away",
+        "de": "Öffnet den Push-Dialog; Halten pusht sofort",
+        "es": "Abre el diálogo Push; mantén pulsado para hacer push al instante",
+        "fr": "Ouvre la fenêtre Push ; maintenez pour un push immédiat",
+        "ru": "Открывает окно Push; удержание — push сразу"
+      },
+      "details": {
+        "en": "Repository › Push… (⇧⌘P) shows which branch goes to which remote; nothing leaves the Mac until you press Push there. Works while Fork is in front.",
+        "de": "Repository › Push… (⇧⌘P) zeigt, welcher Branch zu welchem Remote geht; nichts verlässt den Mac, bis du dort auf Push klickst. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Push… (⇧⌘P) muestra qué rama va a qué remoto; nada sale del Mac hasta que pulses Push ahí. Funciona cuando Fork está delante.",
+        "fr": "Repository › Push… (⇧⌘P) montre quelle branche part vers quel dépôt distant ; rien ne quitte le Mac avant que vous cliquiez sur Push. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Push… (⇧⌘P) показывает, какая ветка уйдёт в какой удалённый репозиторий; ничего не отправляется, пока там не нажата кнопка Push. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Push dialog",
+        "de": "Öffnet den Push-Dialog",
+        "es": "Abre el diálogo Push",
+        "fr": "Ouvre la fenêtre Push",
+        "ru": "Открывает окно Push"
+      },
+      "holdAction": {
+        "en": "⚠️ Pushes right away, without the dialog (Quick Push, ⌥⇧⌘P)",
+        "de": "⚠️ Pusht sofort, ohne Dialog (Quick Push, ⌥⇧⌘P)",
+        "es": "⚠️ Hace push al instante, sin el diálogo (Quick Push, ⌥⇧⌘P)",
+        "fr": "⚠️ Fait un push immédiat, sans la fenêtre (Quick Push, ⌥⇧⌘P)",
+        "ru": "⚠️ Сразу выполняет push, без окна (Quick Push, ⌥⇧⌘P)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.to.line"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["option", "shift", "command"]}}}
+      }
+    },
+    {
+      "id": "commit",
+      "title": {"en": "Commit", "de": "Commit", "es": "Commit", "fr": "Commit", "ru": "Commit"},
+      "summary": {
+        "en": "Commits the staged changes (⌘↩); hold to commit and push",
+        "de": "Committet die gestagten Änderungen (⌘↩); Halten committet und pusht",
+        "es": "Hace commit de los cambios preparados (⌘↩); mantén pulsado para commit y push",
+        "fr": "Fait un commit des modifications indexées (⌘↩) ; maintenez pour commit et push",
+        "ru": "Коммитит проиндексированные изменения (⌘↩); удержание — commit и push"
+      },
+      "details": {
+        "en": "Uses the message typed in Changes. With “Automatically push on commit” on in Fork’s settings, a tap pushes as well. Works while Fork is in front.",
+        "de": "Nutzt die Nachricht, die in Changes steht. Ist in den Einstellungen von Fork „Automatically push on commit“ an, pusht auch ein Tippen. Funktioniert, wenn Fork vorne ist.",
+        "es": "Usa el mensaje escrito en Changes. Con «Automatically push on commit» activado en los ajustes de Fork, un toque también hace push. Funciona cuando Fork está delante.",
+        "fr": "Utilise le message saisi dans Changes. Si « Automatically push on commit » est coché dans les réglages de Fork, un toucher fait aussi un push. Fonctionne quand Fork est au premier plan.",
+        "ru": "Берёт сообщение, набранное в Changes. Если в настройках Fork включено «Automatically push on commit», нажатие ещё и выполняет push. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Commits the staged changes",
+        "de": "Committet die gestagten Änderungen",
+        "es": "Hace commit de los cambios preparados",
+        "fr": "Fait un commit des modifications indexées",
+        "ru": "Коммитит проиндексированные изменения"
+      },
+      "holdAction": {
+        "en": "⚠️ Commits and pushes (⇧⌘↩)",
+        "de": "⚠️ Committet und pusht (⇧⌘↩)",
+        "es": "⚠️ Hace commit y push (⇧⌘↩)",
+        "fr": "⚠️ Fait un commit puis un push (⇧⌘↩)",
+        "ru": "⚠️ Коммитит и выполняет push (⇧⌘↩)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "checkmark.circle"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 36, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "changes",
+      "title": {"en": "Changes", "de": "Änderungen", "es": "Cambios", "fr": "Modifications", "ru": "Изменения"},
+      "summary": {
+        "en": "Shows the uncommitted changes (⌘1)",
+        "de": "Zeigt die nicht committeten Änderungen (⌘1)",
+        "es": "Muestra los cambios sin commit (⌘1)",
+        "fr": "Affiche les modifications non commitées (⌘1)",
+        "ru": "Показывает незакоммиченные изменения (⌘1)"
+      },
+      "details": {
+        "en": "View › Show Uncommitted Changes (⌘1); tapped again, it puts the cursor in the commit message. Works while Fork is in front.",
+        "de": "View › Show Uncommitted Changes (⌘1); ein zweites Tippen setzt den Cursor in die Commit-Nachricht. Funktioniert, wenn Fork vorne ist.",
+        "es": "View › Show Uncommitted Changes (⌘1); un segundo toque pone el cursor en el mensaje del commit. Funciona cuando Fork está delante.",
+        "fr": "View › Show Uncommitted Changes (⌘1) ; un second toucher place le curseur dans le message de commit. Fonctionne quand Fork est au premier plan.",
+        "ru": "View › Show Uncommitted Changes (⌘1); повторное нажатие ставит курсор в сообщение коммита. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the uncommitted changes",
+        "de": "Zeigt die nicht committeten Änderungen",
+        "es": "Muestra los cambios sin commit",
+        "fr": "Affiche les modifications non commitées",
+        "ru": "Показывает незакоммиченные изменения"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pencil.and.list.clipboard"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 18, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "stage-all",
+      "title": {"en": "Stage All", "de": "Alles stagen", "es": "Preparar todo", "fr": "Tout indexer", "ru": "Всё в индекс"},
+      "summary": {
+        "en": "Stages every change, or unstages them all (⌥⇧⌘S)",
+        "de": "Stagt alle Änderungen oder nimmt alle aus dem Staging (⌥⇧⌘S)",
+        "es": "Prepara todos los cambios o los saca todos del área de preparación (⌥⇧⌘S)",
+        "fr": "Indexe toutes les modifications, ou les désindexe toutes (⌥⇧⌘S)",
+        "ru": "Добавляет все изменения в индекс или убирает все из индекса (⌥⇧⌘S)"
+      },
+      "details": {
+        "en": "The same as Fork’s Stage All button in Changes: when everything is staged already, it unstages it all. Works while Fork is in front.",
+        "de": "Wie die Schaltfläche Stage All in Changes: Ist schon alles gestagt, nimmt sie alles wieder aus dem Staging. Funktioniert, wenn Fork vorne ist.",
+        "es": "Como el botón Stage All de Fork en Changes: si ya está todo preparado, lo saca todo del área de preparación. Funciona cuando Fork está delante.",
+        "fr": "Comme le bouton Stage All de Fork dans Changes : si tout est déjà indexé, il désindexe tout. Fonctionne quand Fork est au premier plan.",
+        "ru": "Как кнопка Stage All в Changes: если всё уже в индексе, убирает всё из индекса. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Stages or unstages all changes",
+        "de": "Stagt alle Änderungen oder nimmt sie aus dem Staging",
+        "es": "Prepara todos los cambios o los saca del área de preparación",
+        "fr": "Indexe ou désindexe toutes les modifications",
+        "ru": "Добавляет все изменения в индекс или убирает их из индекса"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "tray.and.arrow.down"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 1, "modifiers": ["option", "shift", "command"]}}}
+      }
+    },
+    {
+      "id": "stash",
+      "title": {"en": "Stash", "de": "Stash", "es": "Stash", "fr": "Stash", "ru": "Stash"},
+      "summary": {
+        "en": "Puts your changes aside in a stash (⇧⌘H)",
+        "de": "Legt deine Änderungen in einem Stash beiseite (⇧⌘H)",
+        "es": "Guarda tus cambios aparte en un stash (⇧⌘H)",
+        "fr": "Met vos modifications de côté dans un stash (⇧⌘H)",
+        "ru": "Откладывает изменения в stash (⇧⌘H)"
+      },
+      "details": {
+        "en": "Repository › Save Stash… (⇧⌘H) asks for a message first; the changes come back when you apply the stash. Works while Fork is in front.",
+        "de": "Repository › Save Stash… (⇧⌘H) fragt zuerst nach einer Nachricht; die Änderungen kommen zurück, wenn du den Stash anwendest. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Save Stash… (⇧⌘H) pide antes un mensaje; los cambios vuelven al aplicar el stash. Funciona cuando Fork está delante.",
+        "fr": "Repository › Save Stash… (⇧⌘H) demande d’abord un message ; les modifications reviennent quand vous appliquez le stash. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Save Stash… (⇧⌘H) сначала спрашивает сообщение; изменения вернутся, когда вы примените stash. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Save Stash",
+        "de": "Öffnet Save Stash",
+        "es": "Abre Save Stash",
+        "fr": "Ouvre Save Stash",
+        "ru": "Открывает Save Stash"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "archivebox"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 4, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "refresh",
+      "title": {"en": "Refresh", "de": "Aktualisieren", "es": "Actualizar", "fr": "Actualiser", "ru": "Обновить"},
+      "summary": {
+        "en": "Rereads the repository (⌘R)",
+        "de": "Liest das Repository neu ein (⌘R)",
+        "es": "Vuelve a leer el repositorio (⌘R)",
+        "fr": "Relit le dépôt (⌘R)",
+        "ru": "Перечитывает репозиторий (⌘R)"
+      },
+      "details": {
+        "en": "View › Refresh (⌘R), for a change made outside Fork that does not show yet. Works while Fork is in front.",
+        "de": "View › Refresh (⌘R), für eine Änderung außerhalb von Fork, die noch nicht zu sehen ist. Funktioniert, wenn Fork vorne ist.",
+        "es": "View › Refresh (⌘R), para un cambio hecho fuera de Fork que aún no aparece. Funciona cuando Fork está delante.",
+        "fr": "View › Refresh (⌘R), pour une modification faite hors de Fork qui n’apparaît pas encore. Fonctionne quand Fork est au premier plan.",
+        "ru": "View › Refresh (⌘R) — если изменение, сделанное вне Fork, ещё не видно. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Refreshes the repository",
+        "de": "Aktualisiert das Repository",
+        "es": "Actualiza el repositorio",
+        "fr": "Actualise le dépôt",
+        "ru": "Обновляет репозиторий"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "all-commits",
+      "title": {"en": "All Commits", "de": "Alle Commits", "es": "Todos los commits", "fr": "Tous les commits", "ru": "Все коммиты"},
+      "summary": {
+        "en": "Shows the commit graph (⌘2); hold to jump to HEAD",
+        "de": "Zeigt den Commit-Graphen (⌘2); Halten springt zu HEAD",
+        "es": "Muestra el grafo de commits (⌘2); mantén pulsado para ir a HEAD",
+        "fr": "Affiche le graphe des commits (⌘2) ; maintenez pour aller à HEAD",
+        "ru": "Показывает граф коммитов (⌘2); удержание — переход к HEAD"
+      },
+      "details": {
+        "en": "View › Show All Commits (⌘2): the commits of all branches in one graph. Works while Fork is in front.",
+        "de": "View › Show All Commits (⌘2): die Commits aller Branches in einem Graphen. Funktioniert, wenn Fork vorne ist.",
+        "es": "View › Show All Commits (⌘2): los commits de todas las ramas en un solo grafo. Funciona cuando Fork está delante.",
+        "fr": "View › Show All Commits (⌘2) : les commits de toutes les branches dans un seul graphe. Fonctionne quand Fork est au premier plan.",
+        "ru": "View › Show All Commits (⌘2): коммиты всех веток в одном графе. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows all commits",
+        "de": "Zeigt alle Commits",
+        "es": "Muestra todos los commits",
+        "fr": "Affiche tous les commits",
+        "ru": "Показывает все коммиты"
+      },
+      "holdAction": {
+        "en": "Selects the HEAD commit (View › Show HEAD, ⌘0)",
+        "de": "Wählt den HEAD-Commit aus (View › Show HEAD, ⌘0)",
+        "es": "Selecciona el commit HEAD (View › Show HEAD, ⌘0)",
+        "fr": "Sélectionne le commit HEAD (View › Show HEAD, ⌘0)",
+        "ru": "Выделяет коммит HEAD (View › Show HEAD, ⌘0)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "point.3.connected.trianglepath.dotted"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 19, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 29, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "search",
+      "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
+      "summary": {
+        "en": "Searches the commits (⌘F)",
+        "de": "Durchsucht die Commits (⌘F)",
+        "es": "Busca en los commits (⌘F)",
+        "fr": "Cherche dans les commits (⌘F)",
+        "ru": "Ищет по коммитам (⌘F)"
+      },
+      "details": {
+        "en": "Edit › Find › Find… (⌘F): in All Commits, search by SHA, author or message. Works while Fork is in front.",
+        "de": "Edit › Find › Find… (⌘F): In All Commits suchst du nach SHA, Autor oder Nachricht. Funktioniert, wenn Fork vorne ist.",
+        "es": "Edit › Find › Find… (⌘F): en All Commits, busca por SHA, autor o mensaje. Funciona cuando Fork está delante.",
+        "fr": "Edit › Find › Find… (⌘F) : dans All Commits, recherche par SHA, auteur ou message. Fonctionne quand Fork est au premier plan.",
+        "ru": "Edit › Find › Find… (⌘F): в All Commits — поиск по SHA, автору или сообщению. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the search",
+        "de": "Öffnet die Suche",
+        "es": "Abre la búsqueda",
+        "fr": "Ouvre la recherche",
+        "ru": "Открывает поиск"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "checkout",
+      "title": {"en": "Checkout", "de": "Checkout", "es": "Checkout", "fr": "Checkout", "ru": "Checkout"},
+      "summary": {
+        "en": "Switches to another branch (⌘B)",
+        "de": "Wechselt zu einem anderen Branch (⌘B)",
+        "es": "Cambia a otra rama (⌘B)",
+        "fr": "Passe sur une autre branche (⌘B)",
+        "ru": "Переключает на другую ветку (⌘B)"
+      },
+      "details": {
+        "en": "Repository › Checkout Branch… (⌘B): type part of a branch’s name and pick it from the list. Works while Fork is in front.",
+        "de": "Repository › Checkout Branch… (⌘B): Gib einen Teil des Branch-Namens ein und wähle ihn aus der Liste. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Checkout Branch… (⌘B): escribe parte del nombre de la rama y elígela de la lista. Funciona cuando Fork está delante.",
+        "fr": "Repository › Checkout Branch… (⌘B) : tapez une partie du nom de la branche et choisissez-la dans la liste. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Checkout Branch… (⌘B): введите часть имени ветки и выберите её в списке. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the branch list",
+        "de": "Öffnet die Branch-Liste",
+        "es": "Abre la lista de ramas",
+        "fr": "Ouvre la liste des branches",
+        "ru": "Открывает список веток"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.triangle.swap"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "new-branch",
+      "title": {"en": "New Branch", "de": "Neuer Branch", "es": "Nueva rama", "fr": "Nouvelle branche", "ru": "Новая ветка"},
+      "summary": {
+        "en": "Creates a branch (⇧⌘B); hold for a tag",
+        "de": "Erstellt einen Branch (⇧⌘B); halten für einen Tag",
+        "es": "Crea una rama (⇧⌘B); mantén pulsado para una etiqueta",
+        "fr": "Crée une branche (⇧⌘B) ; maintenez pour un tag",
+        "ru": "Создаёт ветку (⇧⌘B); удержание — тег"
+      },
+      "details": {
+        "en": "Repository › New Branch… (⇧⌘B) asks for a name and whether to check it out; nothing is created until you confirm. Works while Fork is in front.",
+        "de": "Repository › New Branch… (⇧⌘B) fragt nach einem Namen und ob ausgecheckt werden soll; erstellt wird erst nach deiner Bestätigung. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › New Branch… (⇧⌘B) pide un nombre y si hacer checkout; nada se crea hasta que confirmes. Funciona cuando Fork está delante.",
+        "fr": "Repository › New Branch… (⇧⌘B) demande un nom et s’il faut faire un checkout ; rien n’est créé avant votre confirmation. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › New Branch… (⇧⌘B) спрашивает имя и нужен ли checkout; ничего не создаётся без подтверждения. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens New Branch",
+        "de": "Öffnet New Branch",
+        "es": "Abre New Branch",
+        "fr": "Ouvre New Branch",
+        "ru": "Открывает New Branch"
+      },
+      "holdAction": {
+        "en": "Opens New Tag (⇧⌘G)",
+        "de": "Öffnet New Tag (⇧⌘G)",
+        "es": "Abre New Tag (⇧⌘G)",
+        "fr": "Ouvre New Tag (⇧⌘G)",
+        "ru": "Открывает New Tag (⇧⌘G)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.triangle.branch"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "quick-launch",
+      "title": {"en": "Quick Launch", "de": "Quick Launch", "es": "Quick Launch", "fr": "Quick Launch", "ru": "Quick Launch"},
+      "summary": {
+        "en": "Opens Fork’s command palette (⌘P)",
+        "de": "Öffnet die Befehlspalette von Fork (⌘P)",
+        "es": "Abre la paleta de comandos de Fork (⌘P)",
+        "fr": "Ouvre la palette de commandes de Fork (⌘P)",
+        "ru": "Открывает палитру команд Fork (⌘P)"
+      },
+      "details": {
+        "en": "File › Quick Launch… (⌘P): type to open a repository or run a Fork command. Works while Fork is in front.",
+        "de": "File › Quick Launch… (⌘P): Gib etwas ein, um ein Repository zu öffnen oder einen Befehl von Fork auszuführen. Funktioniert, wenn Fork vorne ist.",
+        "es": "File › Quick Launch… (⌘P): escribe para abrir un repositorio o ejecutar un comando de Fork. Funciona cuando Fork está delante.",
+        "fr": "File › Quick Launch… (⌘P) : tapez pour ouvrir un dépôt ou lancer une commande de Fork. Fonctionne quand Fork est au premier plan.",
+        "ru": "File › Quick Launch… (⌘P): начните вводить, чтобы открыть репозиторий или выполнить команду Fork. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Quick Launch",
+        "de": "Öffnet Quick Launch",
+        "es": "Abre Quick Launch",
+        "fr": "Ouvre Quick Launch",
+        "ru": "Открывает Quick Launch"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "terminal",
+      "title": {"en": "Open in Terminal", "de": "Im Terminal öffnen", "es": "Abrir en el terminal", "fr": "Ouvrir dans un terminal", "ru": "Открыть в терминале"},
+      "summary": {
+        "en": "Opens the repository folder in a terminal (⌃⌘T)",
+        "de": "Öffnet den Repository-Ordner im Terminal (⌃⌘T)",
+        "es": "Abre la carpeta del repositorio en un terminal (⌃⌘T)",
+        "fr": "Ouvre le dossier du dépôt dans un terminal (⌃⌘T)",
+        "ru": "Открывает папку репозитория в терминале (⌃⌘T)"
+      },
+      "details": {
+        "en": "Repository › Open in Terminal (⌃⌘T), in the app chosen as Terminal Client in Fork’s settings. Works while Fork is in front.",
+        "de": "Repository › Open in Terminal (⌃⌘T), in der App, die in den Einstellungen von Fork als Terminal Client gewählt ist. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Open in Terminal (⌃⌘T), en la app elegida como Terminal Client en los ajustes de Fork. Funciona cuando Fork está delante.",
+        "fr": "Repository › Open in Terminal (⌃⌘T), dans l’app choisie comme Terminal Client dans les réglages de Fork. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Open in Terminal (⌃⌘T) — в приложении, выбранном как Terminal Client в настройках Fork. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a terminal in the repository",
+        "de": "Öffnet ein Terminal im Repository",
+        "es": "Abre un terminal en el repositorio",
+        "fr": "Ouvre un terminal dans le dépôt",
+        "ru": "Открывает терминал в репозитории"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "terminal"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "finder",
+      "title": {"en": "Show in Finder", "de": "Im Finder anzeigen", "es": "Mostrar en el Finder", "fr": "Afficher dans le Finder", "ru": "Показать в Finder"},
+      "summary": {
+        "en": "Shows the repository folder in Finder (⌃⌘O)",
+        "de": "Zeigt den Repository-Ordner im Finder (⌃⌘O)",
+        "es": "Muestra la carpeta del repositorio en el Finder (⌃⌘O)",
+        "fr": "Affiche le dossier du dépôt dans le Finder (⌃⌘O)",
+        "ru": "Показывает папку репозитория в Finder (⌃⌘O)"
+      },
+      "details": {
+        "en": "Repository › Show in Finder (⌃⌘O): a Finder window with the repository’s working folder. Works while Fork is in front.",
+        "de": "Repository › Show in Finder (⌃⌘O): ein Finder-Fenster mit dem Arbeitsordner des Repositorys. Funktioniert, wenn Fork vorne ist.",
+        "es": "Repository › Show in Finder (⌃⌘O): una ventana del Finder con la carpeta de trabajo del repositorio. Funciona cuando Fork está delante.",
+        "fr": "Repository › Show in Finder (⌃⌘O) : une fenêtre du Finder avec le dossier de travail du dépôt. Fonctionne quand Fork est au premier plan.",
+        "ru": "Repository › Show in Finder (⌃⌘O): окно Finder с рабочей папкой репозитория. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the repository folder",
+        "de": "Öffnet den Repository-Ordner",
+        "es": "Abre la carpeta del repositorio",
+        "fr": "Ouvre le dossier du dépôt",
+        "ru": "Открывает папку репозитория"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the right (⌃⇥); hold for the left",
+        "de": "Wechselt zum Tab rechts (⌃⇥); halten für den linken",
+        "es": "Pasa a la pestaña de la derecha (⌃⇥); mantén pulsado para la de la izquierda",
+        "fr": "Passe à l’onglet de droite (⌃⇥) ; maintenez pour celui de gauche",
+        "ru": "Переключает на вкладку справа (⌃⇥); удержание — слева"
+      },
+      "details": {
+        "en": "Each Fork tab holds one repository: this is how you move between them. Works while Fork is in front.",
+        "de": "Jeder Tab von Fork enthält ein Repository – so wechselst du zwischen ihnen. Funktioniert, wenn Fork vorne ist.",
+        "es": "Cada pestaña de Fork tiene un repositorio: así pasas de uno a otro. Funciona cuando Fork está delante.",
+        "fr": "Chaque onglet de Fork contient un dépôt : c’est ainsi que vous passez de l’un à l’autre. Fonctionne quand Fork est au premier plan.",
+        "ru": "В каждой вкладке Fork — свой репозиторий: так между ними и переключаются. Работает, когда Fork на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the next tab",
+        "de": "Zeigt den nächsten Tab",
+        "es": "Muestra la pestaña siguiente",
+        "fr": "Affiche l’onglet suivant",
+        "ru": "Показывает следующую вкладку"
+      },
+      "holdAction": {
+        "en": "Shows the previous tab (⌃⇧⇥)",
+        "de": "Zeigt den vorherigen Tab (⌃⇧⇥)",
+        "es": "Muestra la pestaña anterior (⌃⇧⇥)",
+        "fr": "Affiche l’onglet précédent (⌃⇧⇥)",
+        "ru": "Показывает предыдущую вкладку (⌃⇧⇥)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.right.square"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "open-repo",
+      "title": {"en": "Open Repo", "de": "Repo öffnen", "es": "Abrir repo", "fr": "Ouvrir le dépôt", "ru": "Открыть репозиторий"},
+      "summary": {
+        "en": "Opens your repository in Fork; hold for its uncommitted changes",
+        "de": "Öffnet dein Repository in Fork; Halten zeigt seine nicht committeten Änderungen",
+        "es": "Abre tu repositorio en Fork; mantén pulsado para sus cambios sin commit",
+        "fr": "Ouvre votre dépôt dans Fork ; maintenez pour ses modifications non commitées",
+        "ru": "Открывает ваш репозиторий в Fork; удержание — его незакоммиченные изменения"
+      },
+      "details": {
+        "en": "Set the repository’s folder on the first line of the Tap script: repo=\"~/Projects/app\". Works from any app and starts Fork if it’s closed; the long press opens the repository the tap opened last.",
+        "de": "Trag den Ordner des Repositorys in der ersten Zeile des Skripts unter „Tippen“ ein: repo=\"~/Projects/app\". Klappt aus jeder App und startet Fork, falls es geschlossen ist; Halten öffnet das zuletzt per Tippen geöffnete Repository.",
+        "es": "Indica la carpeta del repositorio en la primera línea del script del toque: repo=\"~/Projects/app\". Funciona desde cualquier app y abre Fork si está cerrado; mantener pulsado abre el último repositorio que abrió el toque.",
+        "fr": "Indiquez le dossier du dépôt à la première ligne du script du toucher : repo=\"~/Projects/app\". Marche depuis toute app et lance Fork s’il est fermé ; l’appui long ouvre le dernier dépôt ouvert par le toucher.",
+        "ru": "Укажите папку репозитория в первой строке скрипта нажатия: repo=\"~/Projects/app\". Работает из любого приложения и запускает Fork, если он закрыт; удержание открывает репозиторий, который последним открыло нажатие."
+      },
+      "tapAction": {
+        "en": "Opens the repository’s commits",
+        "de": "Öffnet die Commits des Repositorys",
+        "es": "Abre los commits del repositorio",
+        "fr": "Ouvre les commits du dépôt",
+        "ru": "Открывает коммиты репозитория"
+      },
+      "holdAction": {
+        "en": "Opens the repository’s uncommitted changes",
+        "de": "Öffnet die nicht committeten Änderungen des Repositorys",
+        "es": "Abre los cambios sin commit del repositorio",
+        "fr": "Ouvre les modifications non commitées du dépôt",
+        "ru": "Открывает незакоммиченные изменения репозитория"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "repo=\"\"   # ← your repository's folder, such as ~/Projects/app\naction=log\n@file:repo.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=status\n@file:repo.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Fork", "de": "Fork", "es": "Fork", "fr": "Fork", "ru": "Fork"},
+      "summary": {
+        "en": "Fetch, pull, push and commit from your phone",
+        "de": "Fetch, Pull, Push und Commit vom Telefon aus",
+        "es": "Fetch, pull, push y commit desde el teléfono",
+        "fr": "Fetch, pull, push et commit depuis votre téléphone",
+        "ru": "Fetch, Pull, Push и Commit с телефона"
+      },
+      "details": {
+        "en": "Open Repo works from any app and starts Fork if it’s closed. The other buttons press Fork’s shortcuts: they work while Fork is in front and act on its current repository tab. Fork’s menus are in English only.",
+        "de": "Repo öffnen klappt aus jeder App und startet Fork, falls es geschlossen ist. Die anderen Tasten drücken die Kurzbefehle von Fork: Sie funktionieren, wenn Fork vorne ist, und wirken im aktuellen Repository-Tab. Die Menüs von Fork gibt es nur auf Englisch.",
+        "es": "Abrir repo funciona desde cualquier app y abre Fork si está cerrado. Los demás botones pulsan los atajos de Fork: funcionan cuando Fork está delante y actúan en la pestaña del repositorio actual. Los menús de Fork solo están en inglés.",
+        "fr": "Ouvrir le dépôt marche depuis toute app et lance Fork s’il est fermé. Les autres boutons utilisent les raccourcis de Fork : ils fonctionnent quand Fork est au premier plan et agissent sur l’onglet de dépôt actif. Les menus de Fork sont uniquement en anglais.",
+        "ru": "«Открыть репозиторий» работает из любого приложения и запускает Fork, если он закрыт. Остальные кнопки нажимают сочетания клавиш Fork: работают, когда Fork на переднем плане, и действуют в текущей вкладке репозитория. Меню Fork есть только на английском."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "fetch", "row": 0, "col": 0},
+        {"button": "pull", "row": 0, "col": 1},
+        {"button": "push", "row": 0, "col": 2},
+        {"button": "commit", "row": 0, "col": 3},
+        {"button": "changes", "row": 1, "col": 0},
+        {"button": "stage-all", "row": 1, "col": 1},
+        {"button": "stash", "row": 1, "col": 2},
+        {"button": "refresh", "row": 1, "col": 3},
+        {"button": "all-commits", "row": 2, "col": 0},
+        {"button": "search", "row": 2, "col": 1},
+        {"button": "checkout", "row": 2, "col": 2},
+        {"button": "new-branch", "row": 2, "col": 3},
+        {"button": "quick-launch", "row": 3, "col": 0},
+        {"button": "terminal", "row": 3, "col": 1},
+        {"button": "finder", "row": 3, "col": 2},
+        {"button": "next-tab", "row": 3, "col": 3},
+        {"button": "open-repo", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

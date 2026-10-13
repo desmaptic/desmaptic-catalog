@@ -1,0 +1,616 @@
+{
+  "id": "jetbrains",
+  "revision": 4,
+  "name": "JetBrains IDE",
+  "bundleIds": ["com.jetbrains.intellij", "com.jetbrains.intellij.ce", "com.jetbrains.pycharm", "com.jetbrains.pycharm.ce", "com.jetbrains.WebStorm", "com.jetbrains.goland", "com.jetbrains.PhpStorm", "com.jetbrains.rubymine", "com.jetbrains.CLion", "com.jetbrains.rustrover"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "run",
+      "title": {"en": "Run", "de": "Ausführen", "es": "Ejecutar", "fr": "Exécuter", "ru": "Запуск"},
+      "summary": {
+        "en": "Runs the selected configuration; hold to pick one",
+        "de": "Startet die gewählte Konfiguration; halten zum Auswählen",
+        "es": "Ejecuta la configuración elegida; mantén pulsado para elegir",
+        "fr": "Lance la configuration choisie ; maintenez pour choisir",
+        "ru": "Запускает выбранную конфигурацию; удержание — выбор"
+      },
+      "details": {
+        "en": "Like ⌃R for the configuration in the toolbar, but clicked in the Run menu, so a focused terminal never gets the key. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Wie ⌃R für die Konfiguration in der Symbolleiste, aber über das Menü Run, sodass ein fokussiertes Terminal die Taste nie bekommt. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Como ⌃R para la configuración de la barra de herramientas, pero desde el menú Run: un terminal con el foco nunca recibe la tecla. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Comme ⌃R pour la configuration de la barre d’outils, mais par le menu Run : un terminal qui a le focus ne reçoit jamais la touche. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Как ⌃R для конфигурации на панели инструментов, но через меню Run, так что терминал в фокусе не получит клавишу. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Runs the selected configuration",
+        "de": "Startet die gewählte Konfiguration",
+        "es": "Ejecuta la configuración elegida",
+        "fr": "Lance la configuration choisie",
+        "ru": "Запускает выбранную конфигурацию"
+      },
+      "holdAction": {
+        "en": "Lists the configurations to run one (Run…)",
+        "de": "Listet die Konfigurationen zum Starten auf (Run…)",
+        "es": "Muestra las configuraciones para ejecutar una (Run…)",
+        "fr": "Liste les configurations pour en lancer une (Run…)",
+        "ru": "Показывает список конфигураций для запуска (Run…)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "play.fill"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "item=run\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=run-choose\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "debug",
+      "title": {"en": "Debug", "de": "Debuggen", "es": "Depurar", "fr": "Déboguer", "ru": "Отладка"},
+      "summary": {
+        "en": "Debugs the selected configuration; hold to pick one",
+        "de": "Debuggt die gewählte Konfiguration; halten zum Auswählen",
+        "es": "Depura la configuración elegida; mantén pulsado para elegir",
+        "fr": "Débogue la configuration choisie ; maintenez pour choisir",
+        "ru": "Отлаживает выбранную конфигурацию; удержание — выбор"
+      },
+      "details": {
+        "en": "Like ⌃D, but clicked in the Run menu: in a focused terminal, ⌃D would end the program running there. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Wie ⌃D, aber über das Menü Run: In einem fokussierten Terminal würde ⌃D das Programm darin beenden. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Como ⌃D, pero desde el menú Run: en un terminal con el foco, ⌃D cerraría el programa que corre en él. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Comme ⌃D, mais par le menu Run : dans un terminal qui a le focus, ⌃D terminerait le programme qui y tourne. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Как ⌃D, но через меню Run: в терминале в фокусе ⌃D завершил бы запущенную там программу. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Starts debugging the selected configuration",
+        "de": "Debuggt die gewählte Konfiguration",
+        "es": "Depura la configuración elegida",
+        "fr": "Débogue la configuration choisie",
+        "ru": "Запускает отладку выбранной конфигурации"
+      },
+      "holdAction": {
+        "en": "Lists the configurations to debug one (Debug…)",
+        "de": "Listet die Konfigurationen zum Debuggen auf (Debug…)",
+        "es": "Muestra las configuraciones para depurar una (Debug…)",
+        "fr": "Liste les configurations pour en déboguer une (Debug…)",
+        "ru": "Показывает список конфигураций для отладки (Debug…)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "ant.fill"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "item=debug\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=debug-choose\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "resume",
+      "title": {"en": "Resume", "de": "Fortsetzen", "es": "Reanudar", "fr": "Reprendre", "ru": "Продолжить"},
+      "summary": {
+        "en": "Runs on to the next breakpoint (⌥⌘R)",
+        "de": "Läuft bis zum nächsten Haltepunkt weiter (⌥⌘R)",
+        "es": "Continúa hasta el siguiente punto de interrupción (⌥⌘R)",
+        "fr": "Continue jusqu’au point d’arrêt suivant (⌥⌘R)",
+        "ru": "Выполняет программу до следующей точки останова (⌥⌘R)"
+      },
+      "details": {
+        "en": "Resume Program: a program paused in the debugger runs on until the next breakpoint. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Resume Program: Ein im Debugger angehaltenes Programm läuft bis zum nächsten Haltepunkt weiter. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Resume Program: un programa detenido en el depurador sigue hasta el siguiente punto de interrupción. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Resume Program : un programme arrêté dans le débogueur continue jusqu’au point d’arrêt suivant. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Resume Program: программа, остановленная в отладчике, выполняется до следующей точки останова. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Resumes the program",
+        "de": "Setzt das Programm fort",
+        "es": "Reanuda el programa",
+        "fr": "Reprend le programme",
+        "ru": "Продолжает выполнение программы"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "playpause.fill"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "item=resume\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "stop",
+      "title": {"en": "Stop", "de": "Stopp", "es": "Detener", "fr": "Arrêter", "ru": "Стоп"},
+      "summary": {
+        "en": "Stops what the IDE is running (⌘F2)",
+        "de": "Stoppt, was die IDE ausführt (⌘F2)",
+        "es": "Detiene lo que ejecuta el IDE (⌘F2)",
+        "fr": "Arrête ce que l’IDE exécute (⌘F2)",
+        "ru": "Останавливает то, что запустила IDE (⌘F2)"
+      },
+      "details": {
+        "en": "Run › Stop: ends the program or debug session started from the IDE; with several running, the IDE asks which. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Run › Stop: beendet das Programm oder die Debug-Sitzung, die aus der IDE gestartet wurde; laufen mehrere, fragt die IDE, welches. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Run › Stop: termina el programa o la sesión de depuración iniciados desde el IDE; si hay varios, el IDE pregunta cuál. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Run › Stop : termine le programme ou la session de débogage lancés depuis l’IDE ; s’il y en a plusieurs, l’IDE demande lequel. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Run › Stop: завершает программу или сеанс отладки, запущенные из IDE; если их несколько, IDE спросит, какой. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Stops what is running",
+        "de": "Stoppt, was gerade läuft",
+        "es": "Detiene lo que esté en marcha",
+        "fr": "Arrête ce qui tourne",
+        "ru": "Останавливает то, что запущено"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "stop.fill"}},
+        "color": "#FF375F",
+        "command": {"shellCommand": {"command": "item=stop\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "search-everywhere",
+      "title": {"en": "Search Everywhere", "de": "Überall suchen", "es": "Buscar en todo", "fr": "Rechercher partout", "ru": "Искать везде"},
+      "summary": {
+        "en": "Classes, files, symbols, actions and settings in one search",
+        "de": "Klassen, Dateien, Symbole, Aktionen und Einstellungen in einer Suche",
+        "es": "Clases, archivos, símbolos, acciones y ajustes en una búsqueda",
+        "fr": "Classes, fichiers, symboles, actions et réglages en une recherche",
+        "ru": "Классы, файлы, символы, действия и настройки в одном поиске"
+      },
+      "details": {
+        "en": "What pressing Shift twice opens, clicked in Navigate › Search Everywhere. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Was zweimal Umschalt öffnet, über Navigate › Search Everywhere. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Lo que abre pulsar Mayúsculas dos veces, desde Navigate › Search Everywhere. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Ce qu’ouvre un double appui sur Maj, par Navigate › Search Everywhere. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "То, что открывает двойное нажатие Shift, — через Navigate › Search Everywhere. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Opens Search Everywhere",
+        "de": "Öffnet Search Everywhere",
+        "es": "Abre Search Everywhere",
+        "fr": "Ouvre Search Everywhere",
+        "ru": "Открывает Search Everywhere"
+      },
+      "holdAction": {
+        "en": "Opens Find Action (⇧⌘A)",
+        "de": "Öffnet Find Action (⇧⌘A)",
+        "es": "Abre Find Action (⇧⌘A)",
+        "fr": "Ouvre Find Action (⇧⌘A)",
+        "ru": "Открывает Find Action (⇧⌘A)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "item=search-everywhere\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=find-action\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "recent-files",
+      "title": {"en": "Recent Files", "de": "Letzte Dateien", "es": "Archivos recientes", "fr": "Fichiers récents", "ru": "Недавние файлы"},
+      "summary": {
+        "en": "The files opened last (⌘E)",
+        "de": "Die zuletzt geöffneten Dateien (⌘E)",
+        "es": "Los últimos archivos abiertos (⌘E)",
+        "fr": "Les derniers fichiers ouverts (⌘E)",
+        "ru": "Последние открытые файлы (⌘E)"
+      },
+      "details": {
+        "en": "The last files you opened and the tool windows; type to filter, Return opens. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Die zuletzt geöffneten Dateien und die Toolfenster; Tippen filtert, Return öffnet. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Los últimos archivos abiertos y las ventanas de herramientas; escribe para filtrar, Retorno abre. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "Les derniers fichiers ouverts et les fenêtres d’outils ; tapez pour filtrer, Retour ouvre. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Последние открытые файлы и окна инструментов; набор текста фильтрует, Return открывает. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Shows the recent files",
+        "de": "Zeigt die letzten Dateien",
+        "es": "Muestra los archivos recientes",
+        "fr": "Affiche les fichiers récents",
+        "ru": "Показывает недавние файлы"
+      },
+      "holdAction": {
+        "en": "Shows the recent places in the code (⇧⌘E)",
+        "de": "Zeigt die letzten Stellen im Code (⇧⌘E)",
+        "es": "Muestra los últimos lugares del código (⇧⌘E)",
+        "fr": "Affiche les derniers endroits du code (⇧⌘E)",
+        "ru": "Показывает недавние места в коде (⇧⌘E)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "clock.arrow.circlepath"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 14, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 14, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "find-in-files",
+      "title": {"en": "Find in Files", "de": "In Dateien suchen", "es": "Buscar en archivos", "fr": "Rechercher du texte", "ru": "Поиск в файлах"},
+      "summary": {
+        "en": "Searches text across the project (⇧⌘F)",
+        "de": "Sucht Text im ganzen Projekt (⇧⌘F)",
+        "es": "Busca texto en todo el proyecto (⇧⌘F)",
+        "fr": "Cherche du texte dans tout le projet (⇧⌘F)",
+        "ru": "Ищет текст по всему проекту (⇧⌘F)"
+      },
+      "details": {
+        "en": "Text in every file of the project, with regular expressions, file masks and scopes. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Text in allen Dateien des Projekts, auch mit regulären Ausdrücken, Dateimasken und Bereichen. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Texto en todos los archivos del proyecto, con expresiones regulares, máscaras de archivo y ámbitos. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "Du texte dans tous les fichiers du projet, avec expressions régulières, masques de fichiers et portées. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Текст во всех файлах проекта, в том числе регулярными выражениями, по маске файлов и области. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens Find in Files",
+        "de": "Öffnet Find in Files",
+        "es": "Abre Find in Files",
+        "fr": "Ouvre Find in Files",
+        "ru": "Открывает Find in Files"
+      },
+      "holdAction": {
+        "en": "Opens Replace in Files (⇧⌘R); nothing changes until you confirm",
+        "de": "Öffnet Replace in Files (⇧⌘R); nichts ändert sich, bevor du bestätigst",
+        "es": "Abre Replace in Files (⇧⌘R); nada cambia hasta que confirmes",
+        "fr": "Ouvre Replace in Files (⇧⌘R) ; rien ne change avant votre confirmation",
+        "ru": "Открывает Replace in Files (⇧⌘R); без подтверждения ничего не изменится"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.text.magnifyingglass"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["shift", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "declaration",
+      "title": {"en": "Go to Declaration", "de": "Zur Deklaration", "es": "Ir a la declaración", "fr": "Aller à la déclaration", "ru": "К объявлению"},
+      "summary": {
+        "en": "Jumps to where the name at the caret is declared (⌘B)",
+        "de": "Springt dorthin, wo der Name am Cursor deklariert ist (⌘B)",
+        "es": "Salta a donde se declara el nombre del cursor (⌘B)",
+        "fr": "Va là où le nom sous le curseur est déclaré (⌘B)",
+        "ru": "Переходит к объявлению имени под курсором (⌘B)"
+      },
+      "details": {
+        "en": "Navigate › Declaration or Usages: from a declaration, it lists the usages instead. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Navigate › Declaration or Usages: Steht der Cursor auf der Deklaration, listet es stattdessen die Verwendungen. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Navigate › Declaration or Usages: desde una declaración, muestra en cambio sus usos. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Navigate › Declaration or Usages : depuis une déclaration, liste plutôt ses usages. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Navigate › Declaration or Usages: если курсор уже на объявлении, покажет использования. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Goes to the declaration",
+        "de": "Springt zur Deklaration",
+        "es": "Va a la declaración",
+        "fr": "Va à la déclaration",
+        "ru": "Переходит к объявлению"
+      },
+      "holdAction": {
+        "en": "Goes to the implementations (⌥⌘B)",
+        "de": "Springt zu den Implementierungen (⌥⌘B)",
+        "es": "Va a las implementaciones (⌥⌘B)",
+        "fr": "Va aux implémentations (⌥⌘B)",
+        "ru": "Переходит к реализациям (⌥⌘B)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.turn.down.right"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "item=declaration\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=implementation\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "breakpoint",
+      "title": {"en": "Breakpoint", "de": "Haltepunkt", "es": "Punto de interrupción", "fr": "Point d’arrêt", "ru": "Точка останова"},
+      "summary": {
+        "en": "Sets or removes a breakpoint on the caret’s line (⌘F8)",
+        "de": "Setzt oder entfernt einen Haltepunkt in der Cursorzeile (⌘F8)",
+        "es": "Pone o quita un punto de interrupción en la línea del cursor (⌘F8)",
+        "fr": "Pose ou retire un point d’arrêt sur la ligne du curseur (⌘F8)",
+        "ru": "Ставит или убирает точку останова на строке с курсором (⌘F8)"
+      },
+      "details": {
+        "en": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint in the same menu brings back one removed by mistake. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint im selben Menü holt einen versehentlich entfernten zurück. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint, en el mismo menú, recupera uno quitado por error. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Run › Toggle Breakpoint › Line Breakpoint ; Restore Breakpoint, dans le même menu, rétablit un point retiré par erreur. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint в том же меню вернёт случайно убранную точку. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Toggles a line breakpoint",
+        "de": "Schaltet einen Haltepunkt um",
+        "es": "Alterna un punto de interrupción",
+        "fr": "Bascule un point d’arrêt",
+        "ru": "Ставит или убирает точку останова"
+      },
+      "holdAction": {
+        "en": "Shows all breakpoints (⇧⌘F8)",
+        "de": "Zeigt alle Haltepunkte (⇧⌘F8)",
+        "es": "Muestra todos los puntos de interrupción (⇧⌘F8)",
+        "fr": "Affiche tous les points d’arrêt (⇧⌘F8)",
+        "ru": "Показывает все точки останова (⇧⌘F8)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.fill"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "item=breakpoint\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=view-breakpoints\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "step-over",
+      "title": {"en": "Step Over", "de": "Step Over", "es": "Step Over", "fr": "Step Over", "ru": "Шаг с обходом"},
+      "summary": {
+        "en": "Runs the current line (F8)",
+        "de": "Führt die aktuelle Zeile aus (F8)",
+        "es": "Ejecuta la línea actual (F8)",
+        "fr": "Exécute la ligne en cours (F8)",
+        "ru": "Выполняет текущую строку (F8)"
+      },
+      "details": {
+        "en": "Runs the current line and stops at the next one, without going into the methods it calls. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Führt die aktuelle Zeile aus und hält an der nächsten, ohne in aufgerufene Methoden zu gehen. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Ejecuta la línea actual y se detiene en la siguiente, sin entrar en los métodos que llama. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Exécute la ligne en cours et s’arrête à la suivante, sans entrer dans les méthodes appelées. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Выполняет текущую строку и останавливается на следующей, не заходя в вызываемые методы. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Steps over the current line",
+        "de": "Führt die Zeile aus, ohne hineinzugehen",
+        "es": "Avanza una línea sin entrar en métodos",
+        "fr": "Avance d’une ligne sans entrer dans les méthodes",
+        "ru": "Выполняет строку, не заходя в методы"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrowshape.bounce.right"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "item=step-over\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "step-into",
+      "title": {"en": "Step Into", "de": "Step Into", "es": "Step Into", "fr": "Step Into", "ru": "Шаг с заходом"},
+      "summary": {
+        "en": "Goes into the method called on this line (F7)",
+        "de": "Geht in die Methode, die diese Zeile aufruft (F7)",
+        "es": "Entra en el método que llama esta línea (F7)",
+        "fr": "Entre dans la méthode appelée sur cette ligne (F7)",
+        "ru": "Заходит в метод, вызванный на этой строке (F7)"
+      },
+      "details": {
+        "en": "Stops at the first line of the method the current line calls. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Hält in der ersten Zeile der Methode, die die aktuelle Zeile aufruft. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Se detiene en la primera línea del método que llama la línea actual. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "S’arrête à la première ligne de la méthode appelée par la ligne en cours. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Останавливается на первой строке метода, который вызывает текущая строка. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Steps into the call",
+        "de": "Geht in den Aufruf",
+        "es": "Entra en la llamada",
+        "fr": "Entre dans l’appel",
+        "ru": "Заходит в вызов"
+      },
+      "holdAction": {
+        "en": "Smart Step Into: pick which call on the line to enter (⇧F7)",
+        "de": "Smart Step Into: wählen, in welchen Aufruf der Zeile es geht (⇧F7)",
+        "es": "Smart Step Into: elige en qué llamada de la línea entrar (⇧F7)",
+        "fr": "Smart Step Into : choisir l’appel de la ligne où entrer (⇧F7)",
+        "ru": "Smart Step Into: выбор, в какой вызов на строке зайти (⇧F7)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.to.line"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "item=step-into\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "item=smart-step-into\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "step-out",
+      "title": {"en": "Step Out", "de": "Step Out", "es": "Step Out", "fr": "Step Out", "ru": "Шаг с выходом"},
+      "summary": {
+        "en": "Finishes this method, back to its caller (⇧F8)",
+        "de": "Beendet die Methode, zurück zum Aufrufer (⇧F8)",
+        "es": "Termina el método y vuelve a quien lo llamó (⇧F8)",
+        "fr": "Termine la méthode et revient à l’appelant (⇧F8)",
+        "ru": "Доводит метод до конца и возвращается к вызову (⇧F8)"
+      },
+      "details": {
+        "en": "Runs the rest of the current method and stops where it was called. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Führt den Rest der Methode aus und hält dort, wo sie aufgerufen wurde. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Ejecuta el resto del método actual y se detiene donde se llamó. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Exécute le reste de la méthode en cours et s’arrête là où elle a été appelée. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Выполняет остаток текущего метода и останавливается там, откуда он был вызван. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Steps out of the method",
+        "de": "Verlässt die Methode",
+        "es": "Sale del método",
+        "fr": "Sort de la méthode",
+        "ru": "Выходит из метода"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.to.line"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "item=step-out\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "reformat",
+      "title": {"en": "Reformat Code", "de": "Code formatieren", "es": "Formatear código", "fr": "Reformater le code", "ru": "Формат кода"},
+      "summary": {
+        "en": "Formats the file by the code style (⌥⌘L)",
+        "de": "Formatiert die Datei nach dem Codestil (⌥⌘L)",
+        "es": "Da formato al archivo según el estilo de código (⌥⌘L)",
+        "fr": "Met en forme le fichier selon le style de code (⌥⌘L)",
+        "ru": "Форматирует файл по стилю кода (⌥⌘L)"
+      },
+      "details": {
+        "en": "The whole file, or only the selection, by the project’s code style; ⌘Z undoes it. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Die ganze Datei oder nur die Auswahl, nach dem Codestil des Projekts; ⌘Z macht es rückgängig. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Todo el archivo o solo la selección, según el estilo de código del proyecto; ⌘Z lo deshace. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "Tout le fichier, ou seulement la sélection, selon le style de code du projet ; ⌘Z l’annule. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Весь файл или только выделение — по стилю кода проекта; ⌘Z отменит. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Reformats the code",
+        "de": "Formatiert den Code",
+        "es": "Da formato al código",
+        "fr": "Reformate le code",
+        "ru": "Форматирует код"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "text.alignleft"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "rename",
+      "title": {"en": "Rename", "de": "Umbenennen", "es": "Cambiar nombre", "fr": "Renommer", "ru": "Новое имя"},
+      "summary": {
+        "en": "Renames the symbol at the caret everywhere (⇧F6)",
+        "de": "Benennt das Symbol am Cursor überall um (⇧F6)",
+        "es": "Cambia el nombre del símbolo del cursor en todas partes (⇧F6)",
+        "fr": "Renomme partout le symbole sous le curseur (⇧F6)",
+        "ru": "Переименовывает символ под курсором везде (⇧F6)"
+      },
+      "details": {
+        "en": "Refactor › Rename…: type the new name and press Return; every use changes with it. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Refactor › Rename…: neuen Namen tippen und Return drücken; alle Verwendungen ändern sich mit. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Refactor › Rename…: escribe el nombre nuevo y pulsa Retorno; todos los usos cambian con él. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Refactor › Rename… : tapez le nouveau nom puis Retour ; tous les usages changent avec lui. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Refactor › Rename…: введите новое имя и нажмите Return — все использования изменятся вместе с ним. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Renames the symbol",
+        "de": "Benennt das Symbol um",
+        "es": "Cambia el nombre del símbolo",
+        "fr": "Renomme le symbole",
+        "ru": "Переименовывает символ"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pencil"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "item=rename\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "commit",
+      "title": {"en": "Commit", "de": "Commit", "es": "Commit", "fr": "Commit", "ru": "Коммит"},
+      "summary": {
+        "en": "Opens the commit view (⌘K); hold to push",
+        "de": "Öffnet die Commit-Ansicht (⌘K); halten für Push",
+        "es": "Abre la vista de commit (⌘K); mantén pulsado para hacer push",
+        "fr": "Ouvre la vue de commit (⌘K) ; maintenez pour pousser",
+        "ru": "Открывает окно коммита (⌘K); удержание — Push"
+      },
+      "details": {
+        "en": "Git › Commit… shows your changes and a message field; nothing is committed until you press Commit. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Git › Commit… zeigt die Änderungen und ein Feld für die Nachricht; committet wird erst, wenn du Commit drückst. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Git › Commit… muestra los cambios y un campo para el mensaje; nada se confirma hasta que pulses Commit. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Git › Commit… affiche les modifications et un champ de message ; rien n’est validé avant que vous appuyiez sur Commit. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Git › Commit… показывает изменения и поле для сообщения; коммит будет, только когда вы нажмёте Commit. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+      },
+      "tapAction": {
+        "en": "Opens the commit view",
+        "de": "Öffnet die Commit-Ansicht",
+        "es": "Abre la vista de commit",
+        "fr": "Ouvre la vue de commit",
+        "ru": "Открывает окно коммита"
+      },
+      "holdAction": {
+        "en": "Opens the Push dialog (⇧⌘K); nothing is pushed until you confirm",
+        "de": "Öffnet den Push-Dialog (⇧⌘K); gepusht wird erst nach deiner Bestätigung",
+        "es": "Abre el diálogo Push (⇧⌘K); no se envía nada hasta que confirmes",
+        "fr": "Ouvre la fenêtre Push (⇧⌘K) ; rien n’est poussé avant votre confirmation",
+        "ru": "Открывает окно Push (⇧⌘K); без подтверждения ничего не отправится"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "checkmark.circle"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "item=commit\n@file:menu/click.zsh"}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "terminal",
+      "title": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
+      "summary": {
+        "en": "Shows or hides the IDE’s terminal (⌥F12)",
+        "de": "Blendet das Terminal der IDE ein oder aus (⌥F12)",
+        "es": "Muestra u oculta el terminal del IDE (⌥F12)",
+        "fr": "Affiche ou masque le terminal de l’IDE (⌥F12)",
+        "ru": "Показывает или прячет терминал IDE (⌥F12)"
+      },
+      "details": {
+        "en": "The Terminal tool window, opened in the project folder; tapped while the terminal has focus, it hides it. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Das Toolfenster Terminal, im Projektordner geöffnet; hat das Terminal den Fokus, blendet ein Tippen es aus. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "La ventana de herramientas Terminal, abierta en la carpeta del proyecto; si el terminal tiene el foco, la oculta. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "La fenêtre d’outils Terminal, ouverte dans le dossier du projet ; si le terminal a le focus, elle se masque. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Окно инструментов Terminal в папке проекта; если терминал в фокусе, нажатие его спрячет. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Shows or hides the terminal",
+        "de": "Blendet das Terminal ein oder aus",
+        "es": "Muestra u oculta el terminal",
+        "fr": "Affiche ou masque le terminal",
+        "ru": "Показывает или прячет терминал"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "terminal"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 111, "modifiers": ["option"]}}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "JetBrains", "de": "JetBrains", "es": "JetBrains", "fr": "JetBrains", "ru": "JetBrains"},
+      "summary": {
+        "en": "Run, debug, find and commit in IntelliJ IDEA, PyCharm, WebStorm and more",
+        "de": "Ausführen, debuggen, suchen und committen in IntelliJ IDEA, PyCharm, WebStorm und mehr",
+        "es": "Ejecuta, depura, busca y haz commit en IntelliJ IDEA, PyCharm, WebStorm y más",
+        "fr": "Exécuter, déboguer, chercher et committer dans IntelliJ IDEA, PyCharm, WebStorm et d’autres",
+        "ru": "Запуск, отладка, поиск и коммиты в IntelliJ IDEA, PyCharm, WebStorm и других"
+      },
+      "details": {
+        "en": "Most buttons click the IDE’s menus (in English, its default), so a focused terminal never gets their keys. Recent Files, Find in Files, Reformat Code, Terminal and the long press of Commit use the default macOS keymap.",
+        "de": "Die meisten Tasten klicken in die Menüs der IDE (auf Englisch, ihre Standardsprache), sodass kein Tastenkürzel in einem fokussierten Terminal landet. Letzte Dateien, In Dateien suchen, Code formatieren, Terminal und langes Drücken auf Commit nutzen die Standard-Tastenkürzel für macOS.",
+        "es": "La mayoría de los botones usan los menús del IDE (en inglés, su idioma predeterminado), así que un terminal con el foco nunca recibe sus teclas. Archivos recientes, Buscar en archivos, Formatear código, Terminal y la pulsación larga de Commit usan los atajos predeterminados de macOS.",
+        "fr": "La plupart des boutons cliquent dans les menus de l’IDE (en anglais, sa langue par défaut) : un terminal qui a le focus ne reçoit donc jamais leurs touches. Fichiers récents, Rechercher du texte, Reformater le code, Terminal et l’appui long sur Commit utilisent les raccourcis macOS par défaut.",
+        "ru": "Большинство кнопок нажимают пункты меню IDE (на английском, как по умолчанию), поэтому терминал в фокусе не получит их клавиш. «Недавние файлы», «Поиск в файлах», «Формат кода», «Терминал» и долгое нажатие на «Коммит» используют стандартные сочетания клавиш macOS."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "run", "row": 0, "col": 0},
+        {"button": "debug", "row": 0, "col": 1},
+        {"button": "resume", "row": 0, "col": 2},
+        {"button": "stop", "row": 0, "col": 3},
+        {"button": "search-everywhere", "row": 1, "col": 0},
+        {"button": "recent-files", "row": 1, "col": 1},
+        {"button": "find-in-files", "row": 1, "col": 2},
+        {"button": "declaration", "row": 1, "col": 3},
+        {"button": "breakpoint", "row": 2, "col": 0},
+        {"button": "step-over", "row": 2, "col": 1},
+        {"button": "step-into", "row": 2, "col": 2},
+        {"button": "step-out", "row": 2, "col": 3},
+        {"button": "reformat", "row": 3, "col": 0},
+        {"button": "rename", "row": 3, "col": 1},
+        {"button": "commit", "row": 3, "col": 2},
+        {"button": "terminal", "row": 3, "col": 3}
+      ]
+    }
+  ]
+}

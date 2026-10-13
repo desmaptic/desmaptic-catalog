@@ -1,0 +1,616 @@
+{
+  "id": "arc",
+  "revision": 7,
+  "name": "Arc",
+  "bundleIds": ["company.thebrowser.Browser"],
+  "category": "browsers",
+  "buttons": [
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Retour", "ru": "Назад"},
+      "summary": {
+        "en": "Goes back a page, even with Arc in the background",
+        "de": "Eine Seite zurück, auch wenn Arc im Hintergrund ist",
+        "es": "Vuelve a la página anterior, aunque Arc esté en segundo plano",
+        "fr": "Revient à la page précédente, même avec Arc en arrière-plan",
+        "ru": "На страницу назад, даже когда Arc в фоне"
+      },
+      "details": {
+        "en": "Like Arc’s ← button, for the current tab of the front Arc window — even while another app is in front.",
+        "de": "Wie die Schaltfläche ← in Arc, für den aktuellen Tab des vorderen Arc-Fensters – auch wenn eine andere App vorne ist.",
+        "es": "Como el botón ← de Arc, para la pestaña actual de la ventana principal de Arc, aunque estés en otra app.",
+        "fr": "Comme le bouton ← d’Arc, pour l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant.",
+        "ru": "Как кнопка ← в Arc: для текущей вкладки переднего окна Arc, даже если вы в другом приложении."
+      },
+      "tapAction": {
+        "en": "Goes back a page",
+        "de": "Geht eine Seite zurück",
+        "es": "Vuelve a la página anterior",
+        "fr": "Revient à la page précédente",
+        "ru": "Возвращает на предыдущую страницу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=back\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "forward",
+      "title": {"en": "Forward", "de": "Vorwärts", "es": "Adelante", "fr": "Avancer", "ru": "Вперёд"},
+      "summary": {
+        "en": "Goes forward a page, even with Arc in the background",
+        "de": "Eine Seite vorwärts, auch wenn Arc im Hintergrund ist",
+        "es": "Avanza a la página siguiente, aunque Arc esté en segundo plano",
+        "fr": "Passe à la page suivante, même avec Arc en arrière-plan",
+        "ru": "На страницу вперёд, даже когда Arc в фоне"
+      },
+      "details": {
+        "en": "Like Arc’s → button, for the current tab of the front Arc window — even while another app is in front.",
+        "de": "Wie die Schaltfläche → in Arc, für den aktuellen Tab des vorderen Arc-Fensters – auch wenn eine andere App vorne ist.",
+        "es": "Como el botón → de Arc, para la pestaña actual de la ventana principal de Arc, aunque estés en otra app.",
+        "fr": "Comme le bouton → d’Arc, pour l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant.",
+        "ru": "Как кнопка → в Arc: для текущей вкладки переднего окна Arc, даже если вы в другом приложении."
+      },
+      "tapAction": {
+        "en": "Goes forward a page",
+        "de": "Geht eine Seite vorwärts",
+        "es": "Avanza a la página siguiente",
+        "fr": "Passe à la page suivante",
+        "ru": "Переходит на следующую страницу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.forward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=forward\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "refresh",
+      "title": {"en": "Refresh", "de": "Aktualisieren", "es": "Actualizar", "fr": "Actualiser", "ru": "Обновить"},
+      "summary": {
+        "en": "Refreshes the page; hold to refresh without the cache",
+        "de": "Aktualisiert die Seite; Halten lädt sie ohne Cache neu",
+        "es": "Actualiza la página; mantén pulsado para hacerlo sin la caché",
+        "fr": "Actualise la page ; maintenez pour l’actualiser sans le cache",
+        "ru": "Обновляет страницу; удержание — без кеша"
+      },
+      "details": {
+        "en": "Works on the current tab of the front Arc window, even while another app is in front. A long press brings Arc to the front and clicks View › Force Refresh the Page.",
+        "de": "Wirkt auf den aktuellen Tab des vorderen Arc-Fensters, auch wenn eine andere App vorne ist. Langes Drücken holt Arc nach vorne und klickt auf View › Force Refresh the Page.",
+        "es": "Actúa sobre la pestaña actual de la ventana principal de Arc, aunque estés en otra app. La pulsación larga trae Arc al frente y hace clic en View › Force Refresh the Page.",
+        "fr": "Agit sur l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant. L’appui long met Arc au premier plan et clique sur View › Force Refresh the Page.",
+        "ru": "Действует на текущую вкладку переднего окна Arc, даже если вы в другом приложении. Долгое нажатие выводит Arc на передний план и нажимает View › Force Refresh the Page."
+      },
+      "tapAction": {
+        "en": "Refreshes the page",
+        "de": "Aktualisiert die Seite",
+        "es": "Actualiza la página",
+        "fr": "Actualise la page",
+        "ru": "Обновляет страницу"
+      },
+      "holdAction": {
+        "en": "Forces a refresh, skipping the cache",
+        "de": "Erzwingt das Aktualisieren ohne Cache",
+        "es": "Fuerza la actualización sin la caché",
+        "fr": "Force l’actualisation sans le cache",
+        "ru": "Принудительно обновляет без кеша"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=refresh\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=force-refresh\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "Opens the Command Bar for a new tab",
+        "de": "Öffnet die Command Bar für einen neuen Tab",
+        "es": "Abre la Command Bar para una pestaña nueva",
+        "fr": "Ouvre la Command Bar pour un nouvel onglet",
+        "ru": "Открывает Command Bar для новой вкладки"
+      },
+      "details": {
+        "en": "Arc comes to the front with its Command Bar: type an address, a search or an Arc command and press Return.",
+        "de": "Arc kommt mit der Command Bar nach vorne: Adresse, Suchbegriff oder Arc-Befehl eingeben und Return drücken.",
+        "es": "Arc pasa al frente con su Command Bar: escribe una dirección, una búsqueda o un comando de Arc y pulsa Retorno.",
+        "fr": "Arc passe au premier plan avec sa Command Bar : tapez une adresse, une recherche ou une commande d’Arc, puis appuyez sur Retour.",
+        "ru": "Arc выходит на передний план с Command Bar: введите адрес, запрос или команду Arc и нажмите Return."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=new-tab\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {"en": "Previous Tab", "de": "Vorheriger Tab", "es": "Pestaña anterior", "fr": "Onglet précédent", "ru": "Предыдущая вкладка"},
+      "summary": {
+        "en": "Switches to the tab above in the sidebar",
+        "de": "Wechselt zum Tab darüber in der Seitenleiste",
+        "es": "Pasa a la pestaña de arriba en la barra lateral",
+        "fr": "Passe à l’onglet du dessus dans la barre latérale",
+        "ru": "Переключает на вкладку выше в боковой панели"
+      },
+      "details": {
+        "en": "Brings Arc to the front and clicks Tabs › Previous Tab in its menu.",
+        "de": "Holt Arc nach vorne und klickt in seinem Menü auf Tabs › Previous Tab.",
+        "es": "Trae Arc al frente y hace clic en Tabs › Previous Tab en su menú.",
+        "fr": "Met Arc au premier plan et clique sur Tabs › Previous Tab dans son menu.",
+        "ru": "Выводит Arc на передний план и нажимает Tabs › Previous Tab в его меню."
+      },
+      "tapAction": {
+        "en": "Switches to the previous tab",
+        "de": "Wechselt zum vorherigen Tab",
+        "es": "Pasa a la pestaña anterior",
+        "fr": "Passe à l’onglet précédent",
+        "ru": "Переключает на предыдущую вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.square"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=previous-tab\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the tab below in the sidebar",
+        "de": "Wechselt zum Tab darunter in der Seitenleiste",
+        "es": "Pasa a la pestaña de abajo en la barra lateral",
+        "fr": "Passe à l’onglet du dessous dans la barre latérale",
+        "ru": "Переключает на вкладку ниже в боковой панели"
+      },
+      "details": {
+        "en": "Brings Arc to the front and clicks Tabs › Next Tab in its menu.",
+        "de": "Holt Arc nach vorne und klickt in seinem Menü auf Tabs › Next Tab.",
+        "es": "Trae Arc al frente y hace clic en Tabs › Next Tab en su menú.",
+        "fr": "Met Arc au premier plan et clique sur Tabs › Next Tab dans son menu.",
+        "ru": "Выводит Arc на передний план и нажимает Tabs › Next Tab в его меню."
+      },
+      "tapAction": {
+        "en": "Switches to the next tab",
+        "de": "Wechselt zum nächsten Tab",
+        "es": "Pasa a la pestaña siguiente",
+        "fr": "Passe à l’onglet suivant",
+        "ru": "Переключает на следующую вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.square"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=next-tab\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "pin-tab",
+      "title": {"en": "Pin Tab", "de": "Tab anheften", "es": "Fijar pestaña", "fr": "Épingler l’onglet", "ru": "Закрепить вкладку"},
+      "summary": {
+        "en": "Pins the current tab, or unpins it",
+        "de": "Heftet den aktuellen Tab an oder löst ihn",
+        "es": "Fija la pestaña actual o deja de fijarla",
+        "fr": "Épingle l’onglet actif, ou le désépingle",
+        "ru": "Закрепляет текущую вкладку или открепляет её"
+      },
+      "details": {
+        "en": "Tabs › Pin/Unpin Tab: a pinned tab stays in the sidebar and isn’t archived with your Today tabs. Brings Arc to the front first.",
+        "de": "Tabs › Pin/Unpin Tab: Ein angehefteter Tab bleibt in der Seitenleiste und wird nicht mit den Today-Tabs archiviert. Holt Arc zuerst nach vorne.",
+        "es": "Tabs › Pin/Unpin Tab: una pestaña fijada se queda en la barra lateral y no se archiva con las de Today. Primero trae Arc al frente.",
+        "fr": "Tabs › Pin/Unpin Tab : un onglet épinglé reste dans la barre latérale et n’est pas archivé avec ceux de Today. Met d’abord Arc au premier plan.",
+        "ru": "Tabs › Pin/Unpin Tab: закреплённая вкладка остаётся в боковой панели и не уходит в архив вместе с вкладками Today. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Pins or unpins the tab",
+        "de": "Heftet den Tab an oder löst ihn",
+        "es": "Fija la pestaña o deja de fijarla",
+        "fr": "Épingle ou désépingle l’onglet",
+        "ru": "Закрепляет или открепляет вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "pin"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=pin-tab\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "restore-tab",
+      "title": {"en": "Restore Tab", "de": "Tab wieder öffnen", "es": "Restaurar pestaña", "fr": "Restaurer l’onglet", "ru": "Вернуть вкладку"},
+      "summary": {
+        "en": "Brings back the tab you closed last",
+        "de": "Holt den zuletzt geschlossenen Tab zurück",
+        "es": "Recupera la última pestaña que cerraste",
+        "fr": "Rouvre le dernier onglet fermé",
+        "ru": "Возвращает последнюю закрытую вкладку"
+      },
+      "details": {
+        "en": "Brings Arc to the front and clicks File › Restore Last Closed Tab in its menu.",
+        "de": "Holt Arc nach vorne und klickt in seinem Menü auf File › Restore Last Closed Tab.",
+        "es": "Trae Arc al frente y hace clic en File › Restore Last Closed Tab en su menú.",
+        "fr": "Met Arc au premier plan et clique sur File › Restore Last Closed Tab dans son menu.",
+        "ru": "Выводит Arc на передний план и нажимает File › Restore Last Closed Tab в его меню."
+      },
+      "tapAction": {
+        "en": "Reopens the last closed tab",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder",
+        "es": "Reabre la última pestaña cerrada",
+        "fr": "Rouvre le dernier onglet fermé",
+        "ru": "Открывает последнюю закрытую вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.uturn.backward.square"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=restore-tab\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "previous-space",
+      "title": {"en": "Previous Space", "de": "Vorheriger Space", "es": "Space anterior", "fr": "Space précédent", "ru": "Предыдущий Space"},
+      "summary": {
+        "en": "Switches to the Space before this one",
+        "de": "Wechselt zum Space davor",
+        "es": "Pasa al Space anterior a este",
+        "fr": "Passe au Space avant celui-ci",
+        "ru": "Переключает на Space перед текущим"
+      },
+      "details": {
+        "en": "Spaces › Previous Space: the one to the left among the Space icons at the bottom of the sidebar. Brings Arc to the front first.",
+        "de": "Spaces › Previous Space: der links davon unter den Space-Symbolen unten in der Seitenleiste. Holt Arc zuerst nach vorne.",
+        "es": "Spaces › Previous Space: el de la izquierda entre los iconos de Spaces al pie de la barra lateral. Primero trae Arc al frente.",
+        "fr": "Spaces › Previous Space : celui de gauche parmi les icônes des Spaces en bas de la barre latérale. Met d’abord Arc au premier plan.",
+        "ru": "Spaces › Previous Space: соседний слева среди значков Spaces внизу боковой панели. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Switches to the previous Space",
+        "de": "Wechselt zum vorherigen Space",
+        "es": "Pasa al Space anterior",
+        "fr": "Passe au Space précédent",
+        "ru": "Переключает на предыдущий Space"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.left.circle"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=previous-space\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "next-space",
+      "title": {"en": "Next Space", "de": "Nächster Space", "es": "Space siguiente", "fr": "Space suivant", "ru": "Следующий Space"},
+      "summary": {
+        "en": "Switches to the Space after this one",
+        "de": "Wechselt zum Space danach",
+        "es": "Pasa al Space siguiente a este",
+        "fr": "Passe au Space après celui-ci",
+        "ru": "Переключает на Space после текущего"
+      },
+      "details": {
+        "en": "Spaces › Next Space: the one to the right among the Space icons at the bottom of the sidebar. Brings Arc to the front first.",
+        "de": "Spaces › Next Space: der rechts davon unter den Space-Symbolen unten in der Seitenleiste. Holt Arc zuerst nach vorne.",
+        "es": "Spaces › Next Space: el de la derecha entre los iconos de Spaces al pie de la barra lateral. Primero trae Arc al frente.",
+        "fr": "Spaces › Next Space : celui de droite parmi les icônes des Spaces en bas de la barre latérale. Met d’abord Arc au premier plan.",
+        "ru": "Spaces › Next Space: соседний справа среди значков Spaces внизу боковой панели. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Switches to the next Space",
+        "de": "Wechselt zum nächsten Space",
+        "es": "Pasa al Space siguiente",
+        "fr": "Passe au Space suivant",
+        "ru": "Переключает на следующий Space"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.right.circle"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=next-space\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "sidebar",
+      "title": {"en": "Sidebar", "de": "Seitenleiste", "es": "Barra lateral", "fr": "Barre latérale", "ru": "Боковая панель"},
+      "summary": {
+        "en": "Shows or hides the sidebar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или скрывает боковую панель"
+      },
+      "details": {
+        "en": "The column with your tabs and Spaces. Hide it to give the page the whole window. Brings Arc to the front first.",
+        "de": "Die Spalte mit Tabs und Spaces. Ausgeblendet gehört der Seite das ganze Fenster. Holt Arc zuerst nach vorne.",
+        "es": "La columna con tus pestañas y Spaces. Al ocultarla, la página ocupa toda la ventana. Primero trae Arc al frente.",
+        "fr": "La colonne de vos onglets et Spaces. Masquée, elle laisse toute la fenêtre à la page. Met d’abord Arc au premier plan.",
+        "ru": "Колонка с вкладками и Spaces. Когда она скрыта, страница занимает всё окно. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Shows or hides the sidebar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или скрывает боковую панель"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.left"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=sidebar\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "split-view",
+      "title": {"en": "Split View", "de": "Split View", "es": "Split View", "fr": "Split View", "ru": "Split View"},
+      "summary": {
+        "en": "Adds a pane beside the page; hold to take the page out of Split View",
+        "de": "Fügt neben der Seite einen Bereich hinzu; Halten löst die Seite aus Split View",
+        "es": "Añade un panel junto a la página; mantén pulsado para sacarla de Split View",
+        "fr": "Ajoute un volet à côté de la page ; maintenez pour la sortir de Split View",
+        "ru": "Добавляет панель рядом со страницей; удержание выносит её из Split View"
+      },
+      "details": {
+        "en": "Clicks View › Add Split View in Arc’s menu, so it works on any keyboard layout. Brings Arc to the front first.",
+        "de": "Klickt im Menü von Arc auf View › Add Split View und klappt so mit jeder Tastaturbelegung. Holt Arc zuerst nach vorne.",
+        "es": "Hace clic en View › Add Split View en el menú de Arc, así que funciona con cualquier distribución de teclado. Primero trae Arc al frente.",
+        "fr": "Clique sur View › Add Split View dans le menu d’Arc et fonctionne donc avec toute disposition de clavier. Met d’abord Arc au premier plan.",
+        "ru": "Нажимает View › Add Split View в меню Arc, поэтому работает при любой раскладке. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Adds a Split View pane",
+        "de": "Fügt einen Split-View-Bereich hinzu",
+        "es": "Añade un panel de Split View",
+        "fr": "Ajoute un volet Split View",
+        "ru": "Добавляет панель Split View"
+      },
+      "holdAction": {
+        "en": "Moves the page out of Split View into a tab of its own",
+        "de": "Löst die Seite aus Split View in einen eigenen Tab",
+        "es": "Saca la página de Split View a una pestaña propia",
+        "fr": "Sort la page de Split View dans son propre onglet",
+        "ru": "Выносит страницу из Split View в отдельную вкладку"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.split.2x1"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=split-view\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=separate\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "copy-url",
+      "title": {"en": "Copy URL", "de": "URL kopieren", "es": "Copiar URL", "fr": "Copier l’URL", "ru": "Скопировать URL"},
+      "summary": {
+        "en": "Copies the page’s address; hold for a Markdown link",
+        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
+        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
+        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
+        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+      },
+      "details": {
+        "en": "The address of the current tab of the front Arc window, ready to paste. Works even while another app is in front.",
+        "de": "Die Adresse des aktuellen Tabs im vorderen Arc-Fenster, bereit zum Einsetzen. Funktioniert auch, wenn eine andere App vorne ist.",
+        "es": "La dirección de la pestaña actual de la ventana principal de Arc, lista para pegar. Funciona aunque estés en otra app.",
+        "fr": "L’adresse de l’onglet actif de la fenêtre principale d’Arc, prête à coller. Fonctionne même quand une autre app est devant.",
+        "ru": "Адрес текущей вкладки переднего окна Arc — сразу для вставки. Работает, даже если вы в другом приложении."
+      },
+      "tapAction": {
+        "en": "Copies the page’s address",
+        "de": "Kopiert die Adresse der Seite",
+        "es": "Copia la dirección de la página",
+        "fr": "Copie l’adresse de la page",
+        "ru": "Копирует адрес страницы"
+      },
+      "holdAction": {
+        "en": "Copies a Markdown link: [title](address)",
+        "de": "Kopiert einen Markdown-Link: [Titel](Adresse)",
+        "es": "Copia un enlace Markdown: [título](dirección)",
+        "fr": "Copie un lien Markdown : [titre](adresse)",
+        "ru": "Копирует ссылку Markdown: [заголовок](адрес)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "link"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=copy-url\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=copy-markdown\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "little-arc",
+      "title": {"en": "Little Arc", "de": "Little Arc", "es": "Little Arc", "fr": "Little Arc", "ru": "Little Arc"},
+      "summary": {
+        "en": "Opens a Little Arc window",
+        "de": "Öffnet ein Little-Arc-Fenster",
+        "es": "Abre una ventana de Little Arc",
+        "fr": "Ouvre une fenêtre Little Arc",
+        "ru": "Открывает окно Little Arc"
+      },
+      "details": {
+        "en": "A small window for a quick search or a link, apart from your Spaces. Brings Arc to the front first.",
+        "de": "Ein kleines Fenster für eine schnelle Suche oder einen Link, abseits der Spaces. Holt Arc zuerst nach vorne.",
+        "es": "Una ventana pequeña para una búsqueda rápida o un enlace, aparte de tus Spaces. Primero trae Arc al frente.",
+        "fr": "Une petite fenêtre pour une recherche rapide ou un lien, à l’écart de vos Spaces. Met d’abord Arc au premier plan.",
+        "ru": "Маленькое окно для быстрого поиска или ссылки, отдельно от ваших Spaces. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Opens Little Arc",
+        "de": "Öffnet Little Arc",
+        "es": "Abre Little Arc",
+        "fr": "Ouvre Little Arc",
+        "ru": "Открывает Little Arc"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "macwindow.badge.plus"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=little-arc\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "capture",
+      "title": {"en": "Capture", "de": "Capture", "es": "Capture", "fr": "Capture", "ru": "Capture"},
+      "summary": {
+        "en": "Captures part of the page as an image; hold for the full page",
+        "de": "Nimmt einen Teil der Seite als Bild auf; halten für die ganze Seite",
+        "es": "Captura parte de la página como imagen; mantén pulsado para la página entera",
+        "fr": "Capture une partie de la page en image ; maintenez pour la page entière",
+        "ru": "Снимок части страницы; удержание — всей страницы"
+      },
+      "details": {
+        "en": "Clicks File › Capture… (⇧⌘2) in Arc’s menu, the same way on every keyboard layout. Brings Arc to the front first.",
+        "de": "Klickt im Menü von Arc auf File › Capture… (⇧⌘2), gleich mit jeder Tastaturbelegung. Holt Arc zuerst nach vorne.",
+        "es": "Hace clic en File › Capture… (⇧⌘2) en el menú de Arc, igual con cualquier distribución de teclado. Primero trae Arc al frente.",
+        "fr": "Clique sur File › Capture… (⇧⌘2) dans le menu d’Arc, de la même façon avec toute disposition de clavier. Met d’abord Arc au premier plan.",
+        "ru": "Нажимает File › Capture… (⇧⌘2) в меню Arc — одинаково при любой раскладке. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Starts a capture of part of the page",
+        "de": "Startet die Aufnahme eines Seitenteils",
+        "es": "Inicia la captura de parte de la página",
+        "fr": "Lance la capture d’une partie de la page",
+        "ru": "Начинает снимок части страницы"
+      },
+      "holdAction": {
+        "en": "Captures the whole page as an image",
+        "de": "Nimmt die ganze Seite als Bild auf",
+        "es": "Captura la página entera como imagen",
+        "fr": "Capture la page entière en image",
+        "ru": "Делает снимок всей страницы"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "camera.viewfinder"}},
+        "color": "#FFD60A",
+        "command": {"shellCommand": {"command": "action=capture\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=capture-page\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "dev-tools",
+      "title": {"en": "DevTools", "de": "DevTools", "es": "DevTools", "fr": "DevTools", "ru": "DevTools"},
+      "summary": {
+        "en": "Opens Developer Tools; hold for the Console",
+        "de": "Öffnet die Developer Tools; halten für die Konsole",
+        "es": "Abre Developer Tools; mantén pulsado para la consola",
+        "fr": "Ouvre les Developer Tools ; maintenez pour la console",
+        "ru": "Открывает Developer Tools; удержание — консоль"
+      },
+      "details": {
+        "en": "View › Developer › Developer Tools: the same tools as in Chrome, for the current tab. Brings Arc to the front first.",
+        "de": "View › Developer › Developer Tools: dieselben Werkzeuge wie in Chrome, für den aktuellen Tab. Holt Arc zuerst nach vorne.",
+        "es": "View › Developer › Developer Tools: las mismas herramientas que en Chrome, para la pestaña actual. Primero trae Arc al frente.",
+        "fr": "View › Developer › Developer Tools : les mêmes outils que dans Chrome, pour l’onglet actif. Met d’abord Arc au premier plan.",
+        "ru": "View › Developer › Developer Tools — те же инструменты, что в Chrome, для текущей вкладки. Сначала выводит Arc на передний план."
+      },
+      "tapAction": {
+        "en": "Opens or closes Developer Tools",
+        "de": "Öffnet oder schließt die Developer Tools",
+        "es": "Abre o cierra Developer Tools",
+        "fr": "Ouvre ou ferme les Developer Tools",
+        "ru": "Открывает или закрывает Developer Tools"
+      },
+      "holdAction": {
+        "en": "Opens or closes the JavaScript Console",
+        "de": "Öffnet oder schließt die JavaScript-Konsole",
+        "es": "Abre o cierra la consola de JavaScript",
+        "fr": "Ouvre ou ferme la console JavaScript",
+        "ru": "Открывает или закрывает консоль JavaScript"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.left.forwardslash.chevron.right"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=dev-tools\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=console\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "go-to-space",
+      "title": {"en": "Go to Space", "de": "Zum Space", "es": "Ir al Space", "fr": "Aller au Space", "ru": "Перейти в Space"},
+      "summary": {
+        "en": "Switches to the Space you name",
+        "de": "Wechselt zu dem Space, den du festlegst",
+        "es": "Pasa al Space que elijas",
+        "fr": "Passe au Space de votre choix",
+        "ru": "Переключает на выбранный вами Space"
+      },
+      "details": {
+        "en": "Type the Space’s name, as the sidebar shows it, in the first line of the button’s script; until then the button reminds you. Works even while another app is in front.",
+        "de": "Trag den Namen des Space, wie ihn die Seitenleiste zeigt, in die erste Zeile des Skripts der Taste ein; bis dahin erinnert dich die Taste daran. Funktioniert auch, wenn eine andere App vorne ist.",
+        "es": "Escribe el nombre del Space, tal como aparece en la barra lateral, en la primera línea del script del botón; hasta entonces, el botón te lo recuerda. Funciona aunque estés en otra app.",
+        "fr": "Saisissez le nom du Space, tel que l’affiche la barre latérale, à la première ligne du script du bouton ; d’ici là, le bouton vous le rappelle. Fonctionne même quand une autre app est devant.",
+        "ru": "Впишите имя Space, как в боковой панели, в первую строку скрипта кнопки; пока его нет, кнопка напомнит об этом. Работает, даже если вы в другом приложении."
+      },
+      "tapAction": {
+        "en": "Switches the front Arc window to that Space",
+        "de": "Wechselt im vorderen Arc-Fenster zu diesem Space",
+        "es": "Pasa la ventana principal de Arc a ese Space",
+        "fr": "Passe la fenêtre principale d’Arc à ce Space",
+        "ru": "Переключает переднее окно Arc на этот Space"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.stack"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "space=\"\"   # ← the Space to go to: its name as Arc’s sidebar shows it, for example space=\"Work\"\n@file:space.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Arc", "de": "Arc", "es": "Arc", "fr": "Arc", "ru": "Arc"},
+      "summary": {
+        "en": "Tabs, Spaces and Split View at hand",
+        "de": "Tabs, Spaces und Split View griffbereit",
+        "es": "Pestañas, Spaces y Split View a mano",
+        "fr": "Onglets, Spaces et Split View à portée de main",
+        "ru": "Вкладки, Spaces и Split View под рукой"
+      },
+      "details": {
+        "en": "Back, Forward, Refresh, Copy URL and Go to Space work even with Arc in the background. The other buttons bring Arc to the front and click its menu; if the item is greyed out there, the button shakes.",
+        "de": "Zurück, Vorwärts, Aktualisieren, URL kopieren und Zum Space klappen auch mit Arc im Hintergrund. Die übrigen Tasten holen Arc nach vorne und klicken in sein Menü; ist der Eintrag ausgegraut, wackelt die Taste.",
+        "es": "Atrás, Adelante, Actualizar, Copiar URL e Ir al Space funcionan aunque Arc esté en segundo plano. Los demás botones traen Arc al frente y hacen clic en su menú; si la opción está atenuada, el botón se sacude.",
+        "fr": "Retour, Avancer, Actualiser, Copier l’URL et Aller au Space fonctionnent même avec Arc en arrière-plan. Les autres boutons mettent Arc au premier plan et cliquent dans son menu ; si l’élément est grisé, le bouton tremble.",
+        "ru": "Назад, Вперёд, Обновить, Скопировать URL и Перейти в Space работают, даже когда Arc в фоне. Остальные кнопки выводят Arc на передний план и нажимают пункт его меню; если пункт недоступен, кнопка встряхивается."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "back", "row": 0, "col": 0},
+        {"button": "forward", "row": 0, "col": 1},
+        {"button": "refresh", "row": 0, "col": 2},
+        {"button": "new-tab", "row": 0, "col": 3},
+        {"button": "previous-tab", "row": 1, "col": 0},
+        {"button": "next-tab", "row": 1, "col": 1},
+        {"button": "pin-tab", "row": 1, "col": 2},
+        {"button": "restore-tab", "row": 1, "col": 3},
+        {"button": "previous-space", "row": 2, "col": 0},
+        {"button": "next-space", "row": 2, "col": 1},
+        {"button": "sidebar", "row": 2, "col": 2},
+        {"button": "split-view", "row": 2, "col": 3},
+        {"button": "copy-url", "row": 3, "col": 0},
+        {"button": "little-arc", "row": 3, "col": 1},
+        {"button": "capture", "row": 3, "col": 2},
+        {"button": "dev-tools", "row": 3, "col": 3},
+        {"button": "go-to-space", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

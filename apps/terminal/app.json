@@ -1,0 +1,447 @@
+{
+  "id": "terminal",
+  "revision": 6,
+  "name": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
+  "bundleIds": ["com.apple.Terminal"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "Opens a tab in the front window (⌘T)",
+        "de": "Öffnet einen Tab im vorderen Fenster (⌘T)",
+        "es": "Abre una pestaña en la ventana de delante (⌘T)",
+        "fr": "Ouvre un onglet dans la fenêtre au premier plan (⌘T)",
+        "ru": "Открывает вкладку в переднем окне (⌘T)"
+      },
+      "details": {
+        "en": "Shell › New Tab (⌘T). Long press is Close Tab (⌘W): Terminal doesn’t ask when nothing is running in the tab. Works while Terminal is in front.",
+        "de": "Shell › Neuer Tab (⌘T). Langes Drücken ist Tab schließen (⌘W): Läuft im Tab nichts, fragt Terminal nicht nach. Funktioniert, wenn Terminal vorne ist.",
+        "es": "Shell › Nueva pestaña (⌘T). Al mantener pulsado, Cerrar pestaña (⌘W): si no hay nada en marcha en la pestaña, Terminal no pregunta. Funciona cuando Terminal está delante.",
+        "fr": "Shell › Nouvel onglet (⌘T). L’appui long est Fermer l’onglet (⌘W) : si rien ne tourne dans l’onglet, Terminal ne demande pas de confirmation. Fonctionne quand Terminal est au premier plan.",
+        "ru": "Оболочка › Новая вкладка (⌘T). Удержание — «Закрыть вкладку» (⌘W): если во вкладке ничего не запущено, Терминал не переспрашивает. Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "holdAction": {
+        "en": "⚠️ Closes the tab, or the window if it’s the last tab",
+        "de": "⚠️ Schließt den Tab – oder das Fenster, wenn er der letzte ist",
+        "es": "⚠️ Cierra la pestaña, o la ventana si es la última",
+        "fr": "⚠️ Ferme l’onglet, ou la fenêtre s’il est le dernier",
+        "ru": "⚠️ Закрывает вкладку, а если она последняя — окно"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#32D74B",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 13, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {"en": "Previous Tab", "de": "Vorheriger Tab", "es": "Pestaña anterior", "fr": "Onglet précédent", "ru": "Предыдущая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the left (⌃⇧⇥)",
+        "de": "Wechselt zum Tab links davon (⌃⇧⇥)",
+        "es": "Pasa a la pestaña de la izquierda (⌃⇧⇥)",
+        "fr": "Passe à l’onglet de gauche (⌃⇧⇥)",
+        "ru": "Переключает на вкладку слева (⌃⇧⇥)"
+      },
+      "details": {
+        "en": "Window › Show Previous Tab (⌃⇧⇥). Works while Terminal is in front.",
+        "de": "Fenster › Vorherigen Tab anzeigen (⌃⇧⇥). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Ventana › Mostrar pestaña anterior (⌃⇧⇥). Funciona cuando Terminal está delante.",
+        "fr": "Fenêtre › Afficher l’onglet précédent (⌃⇧⇥). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Окно › Показать предыдущую вкладку (⌃⇧⇥). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the previous tab",
+        "de": "Zeigt den vorherigen Tab",
+        "es": "Muestra la pestaña anterior",
+        "fr": "Affiche l’onglet précédent",
+        "ru": "Показывает предыдущую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.left.square"}},
+        "color": "#32D74B",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the right (⌃⇥)",
+        "de": "Wechselt zum Tab rechts davon (⌃⇥)",
+        "es": "Pasa a la pestaña de la derecha (⌃⇥)",
+        "fr": "Passe à l’onglet de droite (⌃⇥)",
+        "ru": "Переключает на вкладку справа (⌃⇥)"
+      },
+      "details": {
+        "en": "Window › Show Next Tab (⌃⇥). Works while Terminal is in front.",
+        "de": "Fenster › Nächsten Tab anzeigen (⌃⇥). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Ventana › Mostrar pestaña siguiente (⌃⇥). Funciona cuando Terminal está delante.",
+        "fr": "Fenêtre › Afficher l’onglet suivant (⌃⇥). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Окно › Показать следующую вкладку (⌃⇥). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the next tab",
+        "de": "Zeigt den nächsten Tab",
+        "es": "Muestra la pestaña siguiente",
+        "fr": "Affiche l’onglet suivant",
+        "ru": "Показывает следующую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.right.square"}},
+        "color": "#32D74B",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control"]}}}
+      }
+    },
+    {
+      "id": "command-above",
+      "title": {"en": "Command Above", "de": "Befehl darüber", "es": "Comando de arriba", "fr": "Commande au-dessus", "ru": "Команда выше"},
+      "summary": {
+        "en": "Scrolls up to the previous command line (⌘↑)",
+        "de": "Scrollt zur Befehlszeile darüber (⌘↑)",
+        "es": "Sube a la línea de comando anterior (⌘↑)",
+        "fr": "Remonte à la ligne de commande précédente (⌘↑)",
+        "ru": "Прокручивает к строке предыдущей команды (⌘↑)"
+      },
+      "details": {
+        "en": "Terminal marks every command you run, so you can read a long output from its start. Edit › Navigate › Jump to Previous Mark (⌘↑). Works while Terminal is in front.",
+        "de": "Terminal markiert jeden Befehl, den du ausführst – so liest du lange Ausgaben von Anfang an. Bearbeiten › Navigieren › Zur vorherigen Markierung (⌘↑). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Terminal marca cada comando que ejecutas, así puedes leer una salida larga desde el principio. Edición › Navegar › Ir a la marca anterior (⌘↑). Funciona cuando Terminal está delante.",
+        "fr": "Terminal marque chaque commande que vous lancez : vous pouvez ainsi lire une longue sortie depuis son début. Édition › Naviguer › Aller à la marque précédente (⌘↑). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Терминал отмечает каждую запущенную команду, поэтому длинный вывод можно читать с начала. Правка › Навигация › Перейти к предыдущему маркеру (⌘↑). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Jumps to the command above",
+        "de": "Springt zum Befehl darüber",
+        "es": "Salta al comando de arriba",
+        "fr": "Remonte à la commande au-dessus",
+        "ru": "Переходит к команде выше"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.circle"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 126, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "command-below",
+      "title": {"en": "Command Below", "de": "Befehl darunter", "es": "Comando de abajo", "fr": "Commande en dessous", "ru": "Команда ниже"},
+      "summary": {
+        "en": "Scrolls down to the next command line (⌘↓)",
+        "de": "Scrollt zur Befehlszeile darunter (⌘↓)",
+        "es": "Baja a la línea de comando siguiente (⌘↓)",
+        "fr": "Descend à la ligne de commande suivante (⌘↓)",
+        "ru": "Прокручивает к строке следующей команды (⌘↓)"
+      },
+      "details": {
+        "en": "Moves down through the commands Terminal has marked. Edit › Navigate › Jump to Next Mark (⌘↓). Works while Terminal is in front.",
+        "de": "Geht abwärts durch die Befehle, die Terminal markiert hat. Bearbeiten › Navigieren › Zur nächsten Markierung (⌘↓). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Baja por los comandos que Terminal ha marcado. Edición › Navegar › Ir a la marca siguiente (⌘↓). Funciona cuando Terminal está delante.",
+        "fr": "Descend de commande en commande parmi celles que Terminal a marquées. Édition › Naviguer › Aller à la marque suivante (⌘↓). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Спускается по командам, которые отметил Терминал. Правка › Навигация › Перейти к следующему маркеру (⌘↓). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Jumps to the command below",
+        "de": "Springt zum Befehl darunter",
+        "es": "Salta al comando de abajo",
+        "fr": "Descend à la commande en dessous",
+        "ru": "Переходит к команде ниже"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.circle"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 125, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {"en": "New Window", "de": "Neues Fenster", "es": "Nueva ventana", "fr": "Nouvelle fenêtre", "ru": "Новое окно"},
+      "summary": {
+        "en": "A new Terminal window, from any app",
+        "de": "Ein neues Terminal-Fenster, aus jeder App",
+        "es": "Una ventana nueva de Terminal, desde cualquier app",
+        "fr": "Une nouvelle fenêtre Terminal, depuis n’importe quelle app",
+        "ru": "Новое окно Терминала из любого приложения"
+      },
+      "details": {
+        "en": "In your home folder. Brings Terminal to the front, and starts it if it isn’t running.",
+        "de": "Im Benutzerordner. Holt Terminal nach vorne und startet es, falls es nicht läuft.",
+        "es": "En tu carpeta de inicio. Trae Terminal al frente y lo abre si no está abierto.",
+        "fr": "Dans votre dossier de départ. Met Terminal au premier plan et le lance s’il n’est pas ouvert.",
+        "ru": "В домашней папке. Выводит Терминал на передний план и запускает его, если он не открыт."
+      },
+      "tapAction": {
+        "en": "Opens a new window",
+        "de": "Öffnet ein neues Fenster",
+        "es": "Abre una ventana nueva",
+        "fr": "Ouvre une nouvelle fenêtre",
+        "ru": "Открывает новое окно"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "macwindow.badge.plus"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "where=home\n@file:open-window.zsh"}}
+      }
+    },
+    {
+      "id": "finder-folder",
+      "title": {"en": "Finder Folder", "de": "Finder-Ordner", "es": "Carpeta del Finder", "fr": "Dossier du Finder", "ru": "Папка Finder"},
+      "summary": {
+        "en": "A new window in the folder open in Finder",
+        "de": "Ein neues Fenster im Ordner, der im Finder offen ist",
+        "es": "Una ventana nueva en la carpeta abierta en el Finder",
+        "fr": "Une nouvelle fenêtre dans le dossier ouvert dans le Finder",
+        "ru": "Новое окно в папке, открытой в Finder"
+      },
+      "details": {
+        "en": "The folder of the front Finder window, or the desktop when none is open. Works from any app and starts Terminal if needed.",
+        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Funktioniert aus jeder App und startet Terminal bei Bedarf.",
+        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Funciona desde cualquier app y abre Terminal si hace falta.",
+        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Fonctionne depuis n’importe quelle app et lance Terminal au besoin.",
+        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Работает из любого приложения и при необходимости запускает Терминал."
+      },
+      "tapAction": {
+        "en": "Opens Terminal in that folder",
+        "de": "Öffnet Terminal in diesem Ordner",
+        "es": "Abre Terminal en esa carpeta",
+        "fr": "Ouvre Terminal dans ce dossier",
+        "ru": "Открывает Терминал в этой папке"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "apple.terminal"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "where=finder\n@file:open-window.zsh"}}
+      }
+    },
+    {
+      "id": "show-in-finder",
+      "title": {"en": "Show in Finder", "de": "Im Finder anzeigen", "es": "Mostrar en el Finder", "fr": "Afficher dans le Finder", "ru": "Показать в Finder"},
+      "summary": {
+        "en": "Opens the front tab’s folder in Finder",
+        "de": "Öffnet den Ordner des vorderen Tabs im Finder",
+        "es": "Abre en el Finder la carpeta de la pestaña de delante",
+        "fr": "Ouvre dans le Finder le dossier de l’onglet au premier plan",
+        "ru": "Открывает в Finder папку передней вкладки"
+      },
+      "details": {
+        "en": "The folder of the command running in the tab, or of the shell when nothing is running. Works with Terminal in the background too.",
+        "de": "Der Ordner des Befehls, der im Tab läuft, oder der der Shell, wenn nichts läuft. Funktioniert auch mit Terminal im Hintergrund.",
+        "es": "La carpeta del comando que se ejecuta en la pestaña, o la del shell si no hay nada en marcha. Funciona también con Terminal en segundo plano.",
+        "fr": "Le dossier de la commande qui tourne dans l’onglet, ou celui du shell si rien ne tourne. Fonctionne aussi avec Terminal en arrière-plan.",
+        "ru": "Папка команды, запущенной во вкладке, или папка оболочки, если ничего не запущено. Работает и когда Терминал в фоне."
+      },
+      "tapAction": {
+        "en": "Opens the folder in Finder",
+        "de": "Öffnet den Ordner im Finder",
+        "es": "Abre la carpeta en el Finder",
+        "fr": "Ouvre le dossier dans le Finder",
+        "ru": "Открывает папку в Finder"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "@file:show-in-finder.zsh"}}
+      }
+    },
+    {
+      "id": "find",
+      "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
+      "summary": {
+        "en": "Searches the text of the tab (⌘F)",
+        "de": "Durchsucht den Text des Tabs (⌘F)",
+        "es": "Busca en el texto de la pestaña (⌘F)",
+        "fr": "Cherche dans le texte de l’onglet (⌘F)",
+        "ru": "Ищет по тексту вкладки (⌘F)"
+      },
+      "details": {
+        "en": "Searches the scrollback too. Edit › Find › Find… (⌘F); long press is Edit › Clear to Start (⌘K). Works while Terminal is in front.",
+        "de": "Sucht auch im Zeilenpuffer. Bearbeiten › Suchen › Suchen … (⌘F); langes Drücken ist Bearbeiten › Bis zum Start löschen (⌘K). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Busca también en las líneas anteriores. Edición › Buscar › Buscar… (⌘F); al mantener pulsado, Edición › Borrar hasta principio (⌘K). Funciona cuando Terminal está delante.",
+        "fr": "Cherche aussi dans le défilement arrière. Édition › Rechercher › Rechercher… (⌘F) ; l’appui long est Édition › Effacer jusqu’au début (⌘K). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Ищет и в буфере строк. Правка › Поиск › Найти… (⌘F); удержание — Правка › Очистить до начала (⌘K). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the find bar",
+        "de": "Öffnet die Suchleiste",
+        "es": "Abre la barra de búsqueda",
+        "fr": "Ouvre la barre de recherche",
+        "ru": "Открывает панель поиска"
+      },
+      "holdAction": {
+        "en": "⚠️ Clears the window, scrollback included",
+        "de": "⚠️ Leert das Fenster samt Zeilenpuffer",
+        "es": "⚠️ Borra la ventana y las líneas anteriores",
+        "fr": "⚠️ Vide la fenêtre, défilement arrière compris",
+        "ru": "⚠️ Очищает окно вместе с буфером строк"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 40, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "smaller",
+      "title": {"en": "Smaller", "de": "Kleiner", "es": "Más pequeño", "fr": "Réduire", "ru": "Уменьшить"},
+      "summary": {
+        "en": "Makes the text smaller (⌘-); hold for the default size",
+        "de": "Verkleinert die Schrift (⌘-); halten für die Standardgröße",
+        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño por omisión",
+        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille par défaut",
+        "ru": "Уменьшает шрифт (⌘-); удержание — размер по умолчанию"
+      },
+      "details": {
+        "en": "View › Smaller (⌘-), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
+        "de": "Darstellung › Kleiner (⌘-), beim Halten Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Visualización › Más pequeño (⌘-) y, al mantener pulsado, Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
+        "fr": "Présentation › Réduire (⌘-), et en maintenant Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Вид › Уменьшить (⌘-), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes the text smaller",
+        "de": "Verkleinert die Schrift",
+        "es": "Reduce el texto",
+        "fr": "Réduit le texte",
+        "ru": "Уменьшает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the default size",
+        "de": "Zurück zur Standardgröße",
+        "es": "Vuelve al tamaño por omisión",
+        "fr": "Revient à la taille par défaut",
+        "ru": "Возвращает размер по умолчанию"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.smaller"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 27, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 29, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "bigger",
+      "title": {"en": "Bigger", "de": "Größer", "es": "Más grande", "fr": "Agrandir", "ru": "Увеличить"},
+      "summary": {
+        "en": "Makes the text bigger (⌘+); hold for the default size",
+        "de": "Vergrößert die Schrift (⌘+); halten für die Standardgröße",
+        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño por omisión",
+        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille par défaut",
+        "ru": "Увеличивает шрифт (⌘+); удержание — размер по умолчанию"
+      },
+      "details": {
+        "en": "View › Bigger (⌘+), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
+        "de": "Darstellung › Größer (⌘+), beim Halten Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Visualización › Más grande (⌘+) y, al mantener pulsado, Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
+        "fr": "Présentation › Agrandir (⌘+), et en maintenant Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Вид › Увеличить (⌘+), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes the text bigger",
+        "de": "Vergrößert die Schrift",
+        "es": "Agranda el texto",
+        "fr": "Agrandit le texte",
+        "ru": "Увеличивает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the default size",
+        "de": "Zurück zur Standardgröße",
+        "es": "Vuelve al tamaño por omisión",
+        "fr": "Revient à la taille par défaut",
+        "ru": "Возвращает размер по умолчанию"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.larger"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 69, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 29, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "run-command",
+      "title": {"en": "Run Command", "de": "Befehl ausführen", "es": "Ejecutar comando", "fr": "Lancer une commande", "ru": "Запустить команду"},
+      "summary": {
+        "en": "A new Terminal window that runs your command, from any app",
+        "de": "Ein neues Terminal-Fenster, das deinen Befehl ausführt, aus jeder App",
+        "es": "Una ventana nueva de Terminal que ejecuta tu comando, desde cualquier app",
+        "fr": "Une nouvelle fenêtre Terminal qui exécute votre commande, depuis n’importe quelle app",
+        "ru": "Новое окно Терминала с вашей командой из любого приложения"
+      },
+      "details": {
+        "en": "Such as cd ~/Projects/app && claude: set it on the first line of the button’s script. It runs in your shell, as if you typed it. Starts Terminal if needed.",
+        "de": "Etwa cd ~/Projects/app && claude: Trag ihn in der ersten Zeile des Skripts der Taste ein. Er läuft in deiner Shell, als hättest du ihn getippt. Startet Terminal bei Bedarf.",
+        "es": "Como cd ~/Projects/app && claude: ponlo en la primera línea del script del botón. Se ejecuta en tu shell, como si lo escribieras. Abre Terminal si hace falta.",
+        "fr": "Comme cd ~/Projects/app && claude : indiquez-la à la première ligne du script du bouton. Elle s’exécute dans votre shell, comme si vous la tapiez. Lance Terminal au besoin.",
+        "ru": "Например, cd ~/Projects/app && claude — задайте её в первой строке скрипта кнопки. Она выполняется в вашей оболочке, как набранная вручную. При необходимости запускает Терминал."
+      },
+      "tapAction": {
+        "en": "Runs the command in a new window",
+        "de": "Führt den Befehl in einem neuen Fenster aus",
+        "es": "Ejecuta el comando en una ventana nueva",
+        "fr": "Exécute la commande dans une nouvelle fenêtre",
+        "ru": "Выполняет команду в новом окне"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "play.rectangle"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "cmd=''   # ← the command to run, e.g. cd ~/Projects/app && claude\n@file:run-command.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
+      "summary": {
+        "en": "Tabs, folders and commands at a tap",
+        "de": "Tabs, Ordner und Befehle auf Knopfdruck",
+        "es": "Pestañas, carpetas y comandos con un toque",
+        "fr": "Onglets, dossiers et commandes d’un toucher",
+        "ru": "Вкладки, папки и команды в одно касание"
+      },
+      "details": {
+        "en": "New Window, Run Command, Finder Folder and Show in Finder work from any app. The other buttons work while Terminal is in front.",
+        "de": "Neues Fenster, Befehl ausführen, Finder-Ordner und Im Finder anzeigen funktionieren aus jeder App. Die anderen Tasten, wenn Terminal vorne ist.",
+        "es": "Nueva ventana, Ejecutar comando, Carpeta del Finder y Mostrar en el Finder funcionan desde cualquier app. Los demás botones, cuando Terminal está delante.",
+        "fr": "Nouvelle fenêtre, Lancer une commande, Dossier du Finder et Afficher dans le Finder fonctionnent depuis n’importe quelle app. Les autres boutons, quand Terminal est au premier plan.",
+        "ru": "«Новое окно», «Запустить команду», «Папка Finder» и «Показать в Finder» работают из любого приложения. Остальные кнопки — когда Терминал на переднем плане."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "new-tab", "row": 0, "col": 0},
+        {"button": "previous-tab", "row": 0, "col": 1},
+        {"button": "next-tab", "row": 0, "col": 2},
+        {"button": "new-window", "row": 0, "col": 3},
+        {"button": "find", "row": 1, "col": 0},
+        {"button": "command-above", "row": 1, "col": 1},
+        {"button": "command-below", "row": 1, "col": 2},
+        {"button": "run-command", "row": 1, "col": 3},
+        {"button": "finder-folder", "row": 2, "col": 0},
+        {"button": "show-in-finder", "row": 2, "col": 1},
+        {"button": "smaller", "row": 2, "col": 2},
+        {"button": "bigger", "row": 2, "col": 3}
+      ]
+    }
+  ]
+}

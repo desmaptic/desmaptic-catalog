@@ -1,0 +1,987 @@
+{
+  "id": "finder",
+  "revision": 6,
+  "name": "Finder",
+  "bundleIds": [
+    "com.apple.finder"
+  ],
+  "category": "productivity",
+  "buttons": [
+    {
+      "id": "downloads",
+      "title": {
+        "en": "Downloads",
+        "de": "Downloads",
+        "es": "Descargas",
+        "fr": "Fichiers téléchargés",
+        "ru": "Загрузки"
+      },
+      "summary": {
+        "en": "Opens Downloads in Finder, from any app",
+        "de": "Öffnet „Downloads“ im Finder, aus jeder App",
+        "es": "Abre Descargas en el Finder desde cualquier app",
+        "fr": "Ouvre Téléchargements dans le Finder, depuis n’importe quelle app",
+        "ru": "Открывает «Загрузки» в Finder из любого приложения"
+      },
+      "details": {
+        "en": "Go › Downloads (⌥⌘L), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
+        "de": "Gehe zu › Downloads (⌥⌘L), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
+        "es": "Ir › Descargas (⌥⌘L), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
+        "fr": "Aller › Téléchargements (⌥⌘L), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
+        "ru": "Переход › Загрузки (⌥⌘L), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+      },
+      "tapAction": {
+        "en": "Opens Downloads",
+        "de": "Öffnet „Downloads“",
+        "es": "Abre Descargas",
+        "fr": "Ouvre Téléchargements",
+        "ru": "Открывает «Загрузки»"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.down.circle"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=downloads\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "desktop",
+      "title": {
+        "en": "Desktop",
+        "de": "Schreibtisch",
+        "es": "Escritorio",
+        "fr": "Bureau",
+        "ru": "Рабочий стол"
+      },
+      "summary": {
+        "en": "Opens the Desktop folder in Finder, from any app",
+        "de": "Öffnet den Ordner „Schreibtisch“ im Finder, aus jeder App",
+        "es": "Abre la carpeta Escritorio en el Finder desde cualquier app",
+        "fr": "Ouvre le dossier Bureau dans le Finder, depuis n’importe quelle app",
+        "ru": "Открывает папку «Рабочий стол» в Finder из любого приложения"
+      },
+      "details": {
+        "en": "Go › Desktop (⇧⌘D), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
+        "de": "Gehe zu › Schreibtisch (⇧⌘D), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
+        "es": "Ir › Escritorio (⇧⌘D), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
+        "fr": "Aller › Bureau (⇧⌘D), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
+        "ru": "Переход › Рабочий стол (⇧⌘D), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+      },
+      "tapAction": {
+        "en": "Opens the Desktop folder",
+        "de": "Öffnet den Ordner „Schreibtisch“",
+        "es": "Abre la carpeta Escritorio",
+        "fr": "Ouvre le dossier Bureau",
+        "ru": "Открывает папку «Рабочий стол»"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "menubar.dock.rectangle"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=desktop\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "documents",
+      "title": {
+        "en": "Documents",
+        "de": "Dokumente",
+        "es": "Documentos",
+        "fr": "Documents",
+        "ru": "Документы"
+      },
+      "summary": {
+        "en": "Opens Documents in Finder, from any app",
+        "de": "Öffnet „Dokumente“ im Finder, aus jeder App",
+        "es": "Abre Documentos en el Finder desde cualquier app",
+        "fr": "Ouvre Documents dans le Finder, depuis n’importe quelle app",
+        "ru": "Открывает «Документы» в Finder из любого приложения"
+      },
+      "details": {
+        "en": "Go › Documents (⇧⌘O), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
+        "de": "Gehe zu › Dokumente (⇧⌘O), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
+        "es": "Ir › Documentos (⇧⌘O), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
+        "fr": "Aller › Documents (⇧⌘O), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
+        "ru": "Переход › Документы (⇧⌘O), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+      },
+      "tapAction": {
+        "en": "Opens Documents",
+        "de": "Öffnet „Dokumente“",
+        "es": "Abre Documentos",
+        "fr": "Ouvre Documents",
+        "ru": "Открывает «Документы»"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "doc"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=documents\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "home",
+      "title": {
+        "en": "Home",
+        "de": "Benutzer-Ordner",
+        "es": "Inicio",
+        "fr": "Départ",
+        "ru": "Личное"
+      },
+      "summary": {
+        "en": "Opens your home folder in Finder, from any app",
+        "de": "Öffnet deinen Benutzerordner im Finder, aus jeder App",
+        "es": "Abre tu carpeta de inicio en el Finder desde cualquier app",
+        "fr": "Ouvre votre dossier de départ dans le Finder, depuis n’importe quelle app",
+        "ru": "Открывает вашу личную папку в Finder из любого приложения"
+      },
+      "details": {
+        "en": "Go › Home (⇧⌘H), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
+        "de": "Gehe zu › Benutzerordner (⇧⌘H), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
+        "es": "Ir › Inicio (⇧⌘H), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
+        "fr": "Aller › Départ (⇧⌘H), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
+        "ru": "Переход › Личное (⇧⌘H), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+      },
+      "tapAction": {
+        "en": "Opens your home folder",
+        "de": "Öffnet deinen Benutzerordner",
+        "es": "Abre tu carpeta de inicio",
+        "fr": "Ouvre votre dossier de départ",
+        "ru": "Открывает вашу личную папку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "house"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=home\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "applications",
+      "title": {
+        "en": "Applications",
+        "de": "Programme",
+        "es": "Aplicaciones",
+        "fr": "Applications",
+        "ru": "Программы"
+      },
+      "summary": {
+        "en": "Opens Applications in Finder, from any app; hold for Utilities",
+        "de": "Öffnet „Programme“ im Finder, aus jeder App; halten für „Dienstprogramme“",
+        "es": "Abre Aplicaciones en el Finder desde cualquier app; mantén pulsado para Utilidades",
+        "fr": "Ouvre Applications dans le Finder, depuis n’importe quelle app ; maintenez pour Utilitaires",
+        "ru": "Открывает «Программы» в Finder из любого приложения; удержание — «Утилиты»"
+      },
+      "details": {
+        "en": "Go › Applications (⇧⌘A), and Go › Utilities (⇧⌘U) on hold, from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
+        "de": "Gehe zu › Programme (⇧⌘A), beim Halten Gehe zu › Dienstprogramme (⇧⌘U), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
+        "es": "Ir › Aplicaciones (⇧⌘A) y, al mantener pulsado, Ir › Utilidades (⇧⌘U), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
+        "fr": "Aller › Applications (⇧⌘A), et en maintenant Aller › Utilitaires (⇧⌘U), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
+        "ru": "Переход › Программы (⇧⌘A), а при удержании — Переход › Утилиты (⇧⌘U), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+      },
+      "tapAction": {
+        "en": "Opens Applications",
+        "de": "Öffnet „Programme“",
+        "es": "Abre Aplicaciones",
+        "fr": "Ouvre Applications",
+        "ru": "Открывает «Программы»"
+      },
+      "holdAction": {
+        "en": "Opens Utilities",
+        "de": "Öffnet „Dienstprogramme“",
+        "es": "Abre Utilidades",
+        "fr": "Ouvre Utilitaires",
+        "ru": "Открывает «Утилиты»"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.grid.3x3"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=applications\n@file:go.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "place=utilities\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "icloud-drive",
+      "title": {
+        "en": "iCloud Drive",
+        "de": "iCloud Drive",
+        "es": "iCloud Drive",
+        "fr": "iCloud Drive",
+        "ru": "iCloud Drive"
+      },
+      "summary": {
+        "en": "Opens iCloud Drive in Finder, from any app",
+        "de": "Öffnet iCloud Drive im Finder, aus jeder App",
+        "es": "Abre iCloud Drive en el Finder desde cualquier app",
+        "fr": "Ouvre iCloud Drive dans le Finder, depuis n’importe quelle app",
+        "ru": "Открывает iCloud Drive в Finder из любого приложения"
+      },
+      "details": {
+        "en": "Go › iCloud Drive (⇧⌘I), from any app: with Finder in front its window goes there, otherwise a new Finder window opens. It needs iCloud Drive turned on.",
+        "de": "Gehe zu › iCloud Drive (⇧⌘I), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster. iCloud Drive muss eingeschaltet sein.",
+        "es": "Ir › iCloud Drive (⇧⌘I), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder. iCloud Drive tiene que estar activado.",
+        "fr": "Aller › iCloud Drive (⇧⌘I), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre. iCloud Drive doit être activé.",
+        "ru": "Переход › iCloud Drive (⇧⌘I), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder. iCloud Drive должен быть включён."
+      },
+      "tapAction": {
+        "en": "Opens iCloud Drive",
+        "de": "Öffnet iCloud Drive",
+        "es": "Abre iCloud Drive",
+        "fr": "Ouvre iCloud Drive",
+        "ru": "Открывает iCloud Drive"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "icloud"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "place=icloud-drive\n@file:go.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {
+        "en": "New Window",
+        "de": "Neues Fenster",
+        "es": "Nueva ventana",
+        "fr": "Nouvelle fenêtre",
+        "ru": "Новое окно"
+      },
+      "summary": {
+        "en": "A new Finder window, from any app; hold for a new tab",
+        "de": "Ein neues Finder-Fenster, aus jeder App; halten für einen neuen Tab",
+        "es": "Una ventana nueva del Finder desde cualquier app; mantén pulsado para una pestaña nueva",
+        "fr": "Une nouvelle fenêtre Finder, depuis n’importe quelle app ; maintenez pour un nouvel onglet",
+        "ru": "Новое окно Finder из любого приложения; удержание — новая вкладка"
+      },
+      "details": {
+        "en": "File › New Finder Window (⌘N), from any app, and Finder comes to the front. The new tab (File › New Tab, ⌘T) needs Finder in front.",
+        "de": "Ablage › Neues Fenster (⌘N), aus jeder App, und der Finder kommt nach vorne. Der neue Tab (Ablage › Neuer Tab, ⌘T) braucht den Finder vorne.",
+        "es": "Archivo › Nueva ventana del Finder (⌘N), desde cualquier app, y el Finder pasa delante. La pestaña nueva (Archivo › Nueva pestaña, ⌘T) necesita el Finder delante.",
+        "fr": "Fichier › Nouvelle fenêtre Finder (⌘N), depuis n’importe quelle app, et le Finder passe au premier plan. Le nouvel onglet (Fichier › Nouvel onglet, ⌘T) demande le Finder au premier plan.",
+        "ru": "Файл › Новое окно Finder (⌘N) из любого приложения, и Finder выходит на передний план. Новой вкладке (Файл › Новая вкладка, ⌘T) нужен Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new Finder window",
+        "de": "Öffnet ein neues Finder-Fenster",
+        "es": "Abre una ventana nueva del Finder",
+        "fr": "Ouvre une nouvelle fenêtre Finder",
+        "ru": "Открывает новое окно Finder"
+      },
+      "holdAction": {
+        "en": "Opens a new tab in the Finder window in front",
+        "de": "Öffnet einen neuen Tab im vorderen Finder-Fenster",
+        "es": "Abre una pestaña nueva en la ventana del Finder de delante",
+        "fr": "Ouvre un nouvel onglet dans la fenêtre Finder au premier plan",
+        "ru": "Открывает новую вкладку в переднем окне Finder"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "macwindow.badge.plus"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "place=window\n@file:go.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=new-tab\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "new-folder",
+      "title": {
+        "en": "New Folder",
+        "de": "Neuer Ordner",
+        "es": "Nueva carpeta",
+        "fr": "Nouveau dossier",
+        "ru": "Новая папка"
+      },
+      "summary": {
+        "en": "Makes a folder where you are (⇧⌘N)",
+        "de": "Legt einen Ordner an, wo du gerade bist (⇧⌘N)",
+        "es": "Crea una carpeta donde estás (⇧⌘N)",
+        "fr": "Crée un dossier là où vous êtes (⇧⌘N)",
+        "ru": "Создаёт папку там, где вы сейчас (⇧⌘N)"
+      },
+      "details": {
+        "en": "File › New Folder (⇧⌘N): in the window in front, or on the desktop, with its name ready to type. Works while Finder is in front.",
+        "de": "Ablage › Neuer Ordner (⇧⌘N): im vorderen Fenster oder auf dem Schreibtisch, der Name ist gleich zum Tippen bereit. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Archivo › Nueva carpeta (⇧⌘N): en la ventana de delante o en el escritorio, con el nombre listo para escribir. Funciona cuando el Finder está delante.",
+        "fr": "Fichier › Nouveau dossier (⇧⌘N) : dans la fenêtre au premier plan ou sur le bureau, avec le nom prêt à être saisi. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Файл › Новая папка (⇧⌘N): в переднем окне или на рабочем столе, имя сразу можно ввести. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes a new folder",
+        "de": "Legt einen neuen Ordner an",
+        "es": "Crea una carpeta nueva",
+        "fr": "Crée un nouveau dossier",
+        "ru": "Создаёт новую папку"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "folder.badge.plus"
+          }
+        },
+        "color": "#32D74B",
+        "command": {
+          "shellCommand": {
+            "command": "action=new-folder\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "back",
+      "title": {
+        "en": "Back",
+        "de": "Zurück",
+        "es": "Atrás",
+        "fr": "Précédent",
+        "ru": "Назад"
+      },
+      "summary": {
+        "en": "The folder you were in before, on any keyboard layout",
+        "de": "Der Ordner davor, mit jeder Tastaturbelegung",
+        "es": "La carpeta anterior, con cualquier teclado",
+        "fr": "Le dossier précédent, avec tout clavier",
+        "ru": "Предыдущая папка — при любой раскладке"
+      },
+      "details": {
+        "en": "Clicks Go › Back in Finder’s menu, so it works on any keyboard layout. Works while Finder is in front.",
+        "de": "Klickt im Menü des Finders auf Gehe zu › Zurück und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Hace clic en Ir › Atrás en el menú del Finder, así que funciona con cualquier distribución de teclado. Funciona cuando el Finder está delante.",
+        "fr": "Clique sur Aller › Précédent dans le menu du Finder : ainsi, le bouton marche avec toute disposition de clavier. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Нажимает Переход › Назад в меню Finder, поэтому работает при любой раскладке. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the previous folder",
+        "de": "Zeigt den vorherigen Ordner",
+        "es": "Muestra la carpeta anterior",
+        "fr": "Affiche le dossier précédent",
+        "ru": "Показывает предыдущую папку"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.backward"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=back\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "forward",
+      "title": {
+        "en": "Forward",
+        "de": "Vorwärts",
+        "es": "Adelante",
+        "fr": "Suivant",
+        "ru": "Вперёд"
+      },
+      "summary": {
+        "en": "Forward again after Back, on any keyboard layout",
+        "de": "Wieder vorwärts nach „Zurück“, mit jeder Tastaturbelegung",
+        "es": "Avanza de nuevo tras Atrás, con cualquier teclado",
+        "fr": "Avance de nouveau après Précédent, avec tout clavier",
+        "ru": "Снова вперёд после «Назад» — при любой раскладке"
+      },
+      "details": {
+        "en": "Clicks Go › Forward in Finder’s menu, so it works on any keyboard layout. Works while Finder is in front.",
+        "de": "Klickt im Menü des Finders auf Gehe zu › Vorwärts und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Hace clic en Ir › Adelante en el menú del Finder, así que funciona con cualquier distribución de teclado. Funciona cuando el Finder está delante.",
+        "fr": "Clique sur Aller › Suivant dans le menu du Finder : ainsi, le bouton marche avec toute disposition de clavier. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Нажимает Переход › Вперед в меню Finder, поэтому работает при любой раскладке. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes forward again",
+        "de": "Geht wieder vorwärts",
+        "es": "Vuelve a avanzar",
+        "fr": "Avance de nouveau",
+        "ru": "Снова переходит вперёд"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.forward"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=forward\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "go-to-folder",
+      "title": {
+        "en": "Go to Folder",
+        "de": "Gehe zu Ordner",
+        "es": "Ir a la carpeta",
+        "fr": "Aller au dossier",
+        "ru": "Переход к папке"
+      },
+      "summary": {
+        "en": "Type a path to go to (⇧⌘G); hold to connect to a server",
+        "de": "Pfad eintippen und hin (⇧⌘G); halten für „Mit Server verbinden“",
+        "es": "Escribe una ruta para ir (⇧⌘G); mantén pulsado para conectarte a un servidor",
+        "fr": "Saisissez un chemin (⇧⌘G) ; maintenez pour vous connecter à un serveur",
+        "ru": "Ввести путь и перейти (⇧⌘G); удержание — подключение к серверу"
+      },
+      "details": {
+        "en": "Go › Go to Folder… (⇧⌘G), and Go › Connect to Server… (⌘K) on hold. Works while Finder is in front.",
+        "de": "Gehe zu › Gehe zu Ordner … (⇧⌘G), beim Halten Gehe zu › Mit Server verbinden … (⌘K). Funktioniert, wenn der Finder vorne ist.",
+        "es": "Ir › Ir a la carpeta… (⇧⌘G) y, al mantener pulsado, Ir › Conectarse a un servidor… (⌘K). Funciona cuando el Finder está delante.",
+        "fr": "Aller › Aller au dossier… (⇧⌘G), et en maintenant Aller › Se connecter au serveur… (⌘K). Fonctionne quand le Finder est au premier plan.",
+        "ru": "Переход › Переход к папке… (⇧⌘G), а при удержании — Переход › Подключение к серверу… (⌘K). Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Asks for a folder’s path",
+        "de": "Fragt nach dem Pfad eines Ordners",
+        "es": "Pide la ruta de una carpeta",
+        "fr": "Demande le chemin d’un dossier",
+        "ru": "Спрашивает путь к папке"
+      },
+      "holdAction": {
+        "en": "Opens Connect to Server",
+        "de": "Öffnet „Mit Server verbinden“",
+        "es": "Abre Conectarse a un servidor",
+        "fr": "Ouvre « Se connecter au serveur »",
+        "ru": "Открывает «Подключение к серверу»"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.right.circle"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=go-to-folder\n@file:menu/click.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=connect\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "copy-path",
+      "title": {
+        "en": "Copy Path",
+        "de": "Pfad kopieren",
+        "es": "Copiar ruta",
+        "fr": "Copier le chemin",
+        "ru": "Скопировать путь"
+      },
+      "summary": {
+        "en": "Copies the path of what is selected (⌥⌘C)",
+        "de": "Kopiert den Pfad der Auswahl (⌥⌘C)",
+        "es": "Copia la ruta de lo seleccionado (⌥⌘C)",
+        "fr": "Copie le chemin de la sélection (⌥⌘C)",
+        "ru": "Копирует путь выбранного (⌥⌘C)"
+      },
+      "details": {
+        "en": "Edit › Copy as Pathname (⌥⌘C): the paths of the selected items, or of the folder in front when nothing is selected. Works while Finder is in front.",
+        "de": "Bearbeiten › Als Pfadname kopieren (⌥⌘C): die Pfade der ausgewählten Objekte oder, ohne Auswahl, der des vorderen Ordners. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Edición › Copiar como ruta (⌥⌘C): las rutas de los ítems seleccionados o, sin selección, la de la carpeta de delante. Funciona cuando el Finder está delante.",
+        "fr": "Édition › Copier en tant que nom de chemin (⌥⌘C) : les chemins des éléments sélectionnés ou, sans sélection, celui du dossier au premier plan. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Правка › Скопировать путь (⌥⌘C): пути выбранных объектов, а если ничего не выбрано — путь передней папки. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Copies the path",
+        "de": "Kopiert den Pfad",
+        "es": "Copia la ruta",
+        "fr": "Copie le chemin",
+        "ru": "Копирует путь"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "doc.on.clipboard"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=copy-path\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "icons",
+      "title": {
+        "en": "Icons",
+        "de": "Symbole",
+        "es": "Iconos",
+        "fr": "Icônes",
+        "ru": "Значки"
+      },
+      "summary": {
+        "en": "The window as icons; hold for gallery",
+        "de": "Fenster als Symbole; halten für Galerie",
+        "es": "La ventana como iconos; mantén pulsado para galería",
+        "fr": "La fenêtre par icônes ; maintenez pour la galerie",
+        "ru": "Окно значками; удержание — галерея"
+      },
+      "details": {
+        "en": "Clicks View › as Icons (⌘1) in Finder’s menu, and View › as Gallery (⌘4) on hold, on any keyboard layout. Works while Finder is in front.",
+        "de": "Klickt im Menü des Finders auf Darstellung › Als Symbole (⌘1), beim Halten Darstellung › Als Galerie (⌘4) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Hace clic en Visualización › Como iconos (⌘1) en el menú del Finder y, al mantener pulsado, en Visualización › Como galería (⌘4), con cualquier teclado. Funciona cuando el Finder está delante.",
+        "fr": "Clique sur Présentation › Par icônes (⌘1) dans le menu du Finder, et en maintenant sur Présentation › Par galerie d’icônes (⌘4), avec tout clavier. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Нажимает Вид › Значки (⌘1) в меню Finder, а при удержании — Вид › Галерея (⌘4), при любой раскладке. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows items as icons",
+        "de": "Zeigt Objekte als Symbole",
+        "es": "Muestra los ítems como iconos",
+        "fr": "Affiche les éléments par icônes",
+        "ru": "Показывает объекты значками"
+      },
+      "holdAction": {
+        "en": "Shows items as a gallery",
+        "de": "Zeigt Objekte als Galerie",
+        "es": "Muestra los ítems como galería",
+        "fr": "Affiche les éléments par galerie d’icônes",
+        "ru": "Показывает объекты галереей"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.grid.2x2"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "shellCommand": {
+            "command": "action=icons\n@file:menu/click.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=gallery\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "list",
+      "title": {
+        "en": "List",
+        "de": "Liste",
+        "es": "Lista",
+        "fr": "Liste",
+        "ru": "Список"
+      },
+      "summary": {
+        "en": "The window as a list",
+        "de": "Fenster als Liste",
+        "es": "La ventana como lista",
+        "fr": "La fenêtre par liste",
+        "ru": "Окно списком"
+      },
+      "details": {
+        "en": "Clicks View › as List (⌘2) in Finder’s menu, on any keyboard layout. Works while Finder is in front.",
+        "de": "Klickt im Menü des Finders auf Darstellung › Als Liste (⌘2) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Hace clic en Visualización › Como lista (⌘2) en el menú del Finder, con cualquier teclado. Funciona cuando el Finder está delante.",
+        "fr": "Clique sur Présentation › Par liste (⌘2) dans le menu du Finder, avec tout clavier. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Нажимает Вид › Список (⌘2) в меню Finder, при любой раскладке. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows items as a list",
+        "de": "Zeigt Objekte als Liste",
+        "es": "Muestra los ítems como lista",
+        "fr": "Affiche les éléments par liste",
+        "ru": "Показывает объекты списком"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "list.bullet"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "shellCommand": {
+            "command": "action=list\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "columns",
+      "title": {
+        "en": "Columns",
+        "de": "Spalten",
+        "es": "Columnas",
+        "fr": "Colonnes",
+        "ru": "Колонки"
+      },
+      "summary": {
+        "en": "The window in columns",
+        "de": "Fenster in Spalten",
+        "es": "La ventana en columnas",
+        "fr": "La fenêtre par colonnes",
+        "ru": "Окно колонками"
+      },
+      "details": {
+        "en": "Clicks View › as Columns (⌘3) in Finder’s menu, on any keyboard layout. Works while Finder is in front.",
+        "de": "Klickt im Menü des Finders auf Darstellung › Als Spalten (⌘3) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Hace clic en Visualización › Como columnas (⌘3) en el menú del Finder, con cualquier teclado. Funciona cuando el Finder está delante.",
+        "fr": "Clique sur Présentation › Par colonnes (⌘3) dans le menu du Finder, avec tout clavier. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Нажимает Вид › Колонки (⌘3) в меню Finder, при любой раскладке. Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows items in columns",
+        "de": "Zeigt Objekte in Spalten",
+        "es": "Muestra los ítems en columnas",
+        "fr": "Affiche les éléments par colonnes",
+        "ru": "Показывает объекты колонками"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.split.3x1"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "shellCommand": {
+            "command": "action=columns\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "hidden-files",
+      "title": {
+        "en": "Hidden Files",
+        "de": "Unsichtbare Dateien",
+        "es": "Archivos ocultos",
+        "fr": "Fichiers masqués",
+        "ru": "Скрытые файлы"
+      },
+      "summary": {
+        "en": "Shows or hides hidden files (⇧⌘.)",
+        "de": "Blendet unsichtbare Dateien ein oder aus (⇧⌘.)",
+        "es": "Muestra u oculta los archivos ocultos (⇧⌘.)",
+        "fr": "Affiche ou masque les fichiers masqués (⇧⌘.)",
+        "ru": "Показывает или скрывает скрытые файлы (⇧⌘.)"
+      },
+      "details": {
+        "en": "Files macOS hides, such as .zshrc and the Library folder. Works while Finder is in front.",
+        "de": "Dateien, die macOS ausblendet, etwa .zshrc und der Ordner „Library“. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Archivos que macOS oculta, como .zshrc y la carpeta Biblioteca. Funciona cuando el Finder está delante.",
+        "fr": "Les fichiers que macOS masque, comme .zshrc et le dossier Bibliothèque. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Файлы, которые macOS скрывает, например .zshrc и папка «Библиотека». Работает, когда Finder на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides hidden files",
+        "de": "Blendet unsichtbare Dateien ein oder aus",
+        "es": "Muestra u oculta los archivos ocultos",
+        "fr": "Affiche ou masque les fichiers masqués",
+        "ru": "Показывает или скрывает скрытые файлы"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "eye"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 47,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "eject-all",
+      "title": {
+        "en": "Eject All",
+        "de": "Alle auswerfen",
+        "es": "Expulsar todo",
+        "fr": "Tout éjecter",
+        "ru": "Извлечь все"
+      },
+      "summary": {
+        "en": "Ejects every external disk before you unplug or leave, from any app",
+        "de": "Wirft alle externen Laufwerke aus, bevor du absteckst oder gehst – aus jeder App",
+        "es": "Expulsa todos los discos externos antes de desconectar o irte, desde cualquier app",
+        "fr": "Éjecte tous les disques externes avant de débrancher ou de partir, depuis n’importe quelle app",
+        "ru": "Извлекает все внешние диски, прежде чем отключить их или уйти, из любого приложения"
+      },
+      "details": {
+        "en": "File › Eject All (⌥⌘E), from any app: external drives, disk images and servers. A disk an app is still using stays, and the button names it.",
+        "de": "Ablage › Alle auswerfen (⌥⌘E), aus jeder App: externe Laufwerke, Festplatten-Images und Server. Ein Laufwerk, das eine App noch benutzt, bleibt, und die Taste nennt es.",
+        "es": "Archivo › Expulsar todo (⌥⌘E), desde cualquier app: discos externos, imágenes de disco y servidores. Un disco que alguna app aún usa se queda, y el botón dice cuál.",
+        "fr": "Fichier › Tout éjecter (⌥⌘E), depuis n’importe quelle app : disques externes, images disque et serveurs. Un disque qu’une app utilise encore reste, et le bouton le nomme.",
+        "ru": "Файл › Извлечь все тома (⌥⌘E), из любого приложения: внешние диски, образы дисков и серверы. Диск, который ещё занят приложением, остаётся, и кнопка называет его."
+      },
+      "tapAction": {
+        "en": "Ejects every disk Finder can eject",
+        "de": "Wirft alle Laufwerke aus, die der Finder auswerfen kann",
+        "es": "Expulsa todos los discos que el Finder puede expulsar",
+        "fr": "Éjecte tous les disques que le Finder peut éjecter",
+        "ru": "Извлекает все диски, которые Finder может извлечь"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "eject"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "@file:eject.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Finder",
+        "de": "Finder",
+        "es": "Finder",
+        "fr": "Finder",
+        "ru": "Finder"
+      },
+      "summary": {
+        "en": "Your folders and Eject All from any app, and Finder’s views and paths at a tap",
+        "de": "Deine Ordner und „Alle auswerfen“ aus jeder App, dazu Darstellungen und Pfade des Finders",
+        "es": "Tus carpetas y Expulsar todo desde cualquier app, y las vistas y rutas del Finder con un toque",
+        "fr": "Vos dossiers et Tout éjecter depuis n’importe quelle app, et les présentations et chemins du Finder",
+        "ru": "Ваши папки и «Извлечь все» из любого приложения, а также виды и пути Finder"
+      },
+      "details": {
+        "en": "The folder buttons, New Window and Eject All work from any app; the others while Finder is in front. Finder comes to the front whenever you click the desktop, so “Open with Finder” starts off.",
+        "de": "Die Ordnertasten, „Neues Fenster“ und „Alle auswerfen“ funktionieren aus jeder App, die übrigen, wenn der Finder vorne ist. Der Finder kommt bei jedem Klick auf den Schreibtisch nach vorne, daher ist „Mit Finder öffnen“ zunächst aus.",
+        "es": "Los botones de carpetas, Nueva ventana y Expulsar todo funcionan desde cualquier app; los demás, cuando el Finder está delante. El Finder pasa delante cada vez que haces clic en el escritorio, así que «Abrir con Finder» empieza desactivado.",
+        "fr": "Les boutons de dossiers, Nouvelle fenêtre et Tout éjecter fonctionnent depuis n’importe quelle app ; les autres, quand le Finder est au premier plan. Le Finder passe au premier plan à chaque clic sur le bureau : « Ouvrir avec Finder » est donc désactivé au départ.",
+        "ru": "Кнопки папок, «Новое окно» и «Извлечь все» работают из любого приложения, остальные — когда Finder на переднем плане. Finder выходит вперёд при каждом щелчке по рабочему столу, поэтому «Открывать с приложением Finder» сначала выключено."
+      },
+      "bindByDefault": false,
+      "placements": [
+        {
+          "button": "downloads",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "desktop",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "documents",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "home",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "applications",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "icloud-drive",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "new-window",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "new-folder",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "back",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "forward",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "go-to-folder",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "copy-path",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "icons",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "list",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "columns",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "hidden-files",
+          "row": 3,
+          "col": 3
+        },
+        {
+          "button": "eject-all",
+          "row": 4,
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

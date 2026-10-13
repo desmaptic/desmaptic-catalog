@@ -1,0 +1,1135 @@
+{
+  "id": "discord",
+  "revision": 8,
+  "name": "Discord",
+  "bundleIds": [
+    "com.hnc.Discord"
+  ],
+  "category": "communication",
+  "buttons": [
+    {
+      "id": "mute",
+      "title": {
+        "en": "Mute",
+        "de": "Mikrofon",
+        "es": "Silenciar",
+        "fr": "Rendre muet",
+        "ru": "Микрофон"
+      },
+      "summary": {
+        "en": "Mutes or unmutes you in Discord and shows whether your mic is on",
+        "de": "Schaltet dein Mikrofon in Discord stumm oder wieder ein und zeigt, ob es an ist",
+        "es": "Silencia o reactiva tu micrófono en Discord y muestra si está activo",
+        "fr": "Coupe ou réactive votre micro dans Discord et montre son état",
+        "ru": "Выключает и включает микрофон в Discord и показывает, включён ли он"
+      },
+      "details": {
+        "en": "Green: mic on; red: muted, also while deafened or when switched in Discord. Unmuting while deafened turns the sound back on. Grey: Discord or its window is closed. Works in the background.",
+        "de": "Grün: Mikrofon an; rot: stumm, auch bei ausgeschaltetem Ton oder nach Umschalten in Discord. Einschalten bei ausgeschaltetem Ton bringt auch den Ton zurück. Grau: Discord oder sein Fenster ist zu. Funktioniert im Hintergrund.",
+        "es": "Verde: micrófono activo; rojo: silenciado, también si estás ensordecido o lo cambias en Discord. Reactivarlo ensordecido devuelve el sonido. Gris: Discord o su ventana está cerrado. Funciona en segundo plano.",
+        "fr": "Vert : micro actif ; rouge : coupé, y compris en sourdine ou s’il est changé dans Discord. Le réactiver en sourdine rétablit le son. Gris : Discord ou sa fenêtre est fermé. Fonctionne en arrière-plan.",
+        "ru": "Зелёная — микрофон включён, красная — выключен, в том числе при выключенном звуке или из самого Discord. Включение микрофона вернёт и звук. Серая — Discord или его окно закрыты. Работает в фоне."
+      },
+      "tapAction": {
+        "en": "Mutes or unmutes you",
+        "de": "Schaltet dein Mikrofon aus oder ein",
+        "es": "Silencia o activa tu micrófono",
+        "fr": "Coupe ou rétablit votre micro",
+        "ru": "Выключает или включает микрофон"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "mic"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=mute\n@file:voice/discord.zsh\n@file:voice/press.zsh"
+          }
+        },
+        "startupScript": "kind=mute\n@file:voice/discord.zsh\n@file:voice/live.zsh"
+      }
+    },
+    {
+      "id": "deafen",
+      "title": {
+        "en": "Deafen",
+        "de": "Ein- und Ausgabe",
+        "es": "Ensordecer",
+        "fr": "Mettre en sourdine",
+        "ru": "Динамики"
+      },
+      "summary": {
+        "en": "Turns off everything you hear in Discord, your mic too, and shows whether it is off",
+        "de": "Schaltet alles aus, was du in Discord hörst, samt Mikrofon, und zeigt, ob es aus ist",
+        "es": "Silencia todo lo que oyes en Discord, también tu micrófono, y muestra si está silenciado",
+        "fr": "Coupe tout ce que vous entendez dans Discord, micro compris, et montre si c’est coupé",
+        "ru": "Выключает всё, что вы слышите в Discord, вместе с микрофоном, и показывает, выключен ли звук"
+      },
+      "details": {
+        "en": "Green: you hear Discord; red: deafened, also when you switch it in Discord itself. Undeafening leaves the mic as it was. Grey while Discord or its window is closed. Works with Discord in the background.",
+        "de": "Grün: du hörst Discord; rot: Ton aus, auch wenn du es in Discord selbst umschaltest. Schaltest du den Ton wieder ein, bleibt das Mikrofon, wie es war. Grau, solange Discord oder sein Fenster zu ist. Klappt auch mit Discord im Hintergrund.",
+        "es": "Verde: oyes Discord; rojo: ensordecido, también si lo cambias en el propio Discord. Al quitarlo, el micrófono queda como estaba. Gris con Discord o su ventana cerrados. Funciona con Discord en segundo plano.",
+        "fr": "Vert : vous entendez Discord ; rouge : son coupé, même si vous le changez dans Discord. Une fois le son rétabli, le micro reste comme avant. Gris quand Discord ou sa fenêtre est fermé. Fonctionne avec Discord en arrière-plan.",
+        "ru": "Зелёная — звук Discord слышен, красная — выключен, в том числе из самого Discord. Когда звук вернётся, микрофон останется как был. Серая, пока Discord или его окно закрыты. Работает, когда Discord в фоне."
+      },
+      "tapAction": {
+        "en": "Deafens or undeafens you",
+        "de": "Schaltet Ein- und Ausgabe aus oder ein",
+        "es": "Te ensordece o te devuelve el sonido",
+        "fr": "Met en sourdine ou rétablit le son",
+        "ru": "Выключает или включает звук"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "headphones"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=deafen\n@file:voice/discord.zsh\n@file:voice/press.zsh"
+          }
+        },
+        "startupScript": "kind=deafen\n@file:voice/discord.zsh\n@file:voice/live.zsh"
+      }
+    },
+    {
+      "id": "call",
+      "title": {
+        "en": "Current Call",
+        "de": "Aktueller Anruf",
+        "es": "Llamada actual",
+        "fr": "Appel en cours",
+        "ru": "Текущий звонок"
+      },
+      "summary": {
+        "en": "Goes to the voice channel or call you are in (⌥⇧⌘V)",
+        "de": "Springt zum Sprachkanal oder Anruf, in dem du bist (⌥⇧⌘V)",
+        "es": "Va al canal de voz o la llamada en la que estás (⌥⇧⌘V)",
+        "fr": "Va au salon vocal ou à l’appel où vous êtes (⌥⇧⌘V)",
+        "ru": "Переходит в голосовой канал или звонок, где вы сейчас (⌥⇧⌘V)"
+      },
+      "details": {
+        "en": "From anywhere in Discord back to the people you are talking to; outside a call nothing happens. Works while Discord is in front.",
+        "de": "Von überall in Discord zurück zu denen, mit denen du sprichst; ohne Anruf passiert nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Desde cualquier parte de Discord, de vuelta con quienes hablas; fuera de una llamada no hace nada. Funciona cuando Discord está delante.",
+        "fr": "D’où que vous soyez dans Discord, retour vers ceux à qui vous parlez ; hors appel, rien ne se passe. Fonctionne quand Discord est au premier plan.",
+        "ru": "Из любого места Discord — обратно к тем, с кем вы говорите; вне звонка ничего не делает. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the current call",
+        "de": "Öffnet den aktuellen Anruf",
+        "es": "Abre la llamada actual",
+        "fr": "Ouvre l’appel en cours",
+        "ru": "Открывает текущий звонок"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "phone"
+          }
+        },
+        "color": "#57F287",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 9,
+              "modifiers": [
+                "option",
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "soundboard",
+      "title": {
+        "en": "Soundboard",
+        "de": "Soundboard",
+        "es": "Panel de sonidos",
+        "fr": "Soundboard",
+        "ru": "Звуковая панель"
+      },
+      "summary": {
+        "en": "Opens the soundboard in a voice channel (⇧⌘B)",
+        "de": "Öffnet das Soundboard im Sprachkanal (⇧⌘B)",
+        "es": "Abre el panel de sonidos en un canal de voz (⇧⌘B)",
+        "fr": "Ouvre le Soundboard dans un salon vocal (⇧⌘B)",
+        "ru": "Открывает звуковую панель в голосовом канале (⇧⌘B)"
+      },
+      "details": {
+        "en": "Short sounds everyone in the call hears; only while you are in a voice channel or call. Works while Discord is in front.",
+        "de": "Kurze Sounds, die alle im Anruf hören; nur, wenn du in einem Sprachkanal oder Anruf bist. Funktioniert, wenn Discord vorne ist.",
+        "es": "Sonidos cortos que oyen todos en la llamada; solo si estás en un canal de voz o una llamada. Funciona cuando Discord está delante.",
+        "fr": "De courts sons que tout l’appel entend ; seulement dans un salon vocal ou un appel. Fonctionne quand Discord est au premier plan.",
+        "ru": "Короткие звуки, которые слышат все в звонке; только когда вы в голосовом канале или звонке. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens or closes the soundboard",
+        "de": "Öffnet oder schließt das Soundboard",
+        "es": "Abre o cierra el panel de sonidos",
+        "fr": "Ouvre ou ferme le Soundboard",
+        "ru": "Открывает или закрывает звуковую панель"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "waveform"
+          }
+        },
+        "color": "#57F287",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 11,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "mentions",
+      "title": {
+        "en": "Mentions",
+        "de": "Erwähnungen",
+        "es": "Menciones",
+        "fr": "Mentions",
+        "ru": "Упоминания"
+      },
+      "summary": {
+        "en": "Discord’s badge on your phone: how many mentions and DMs wait",
+        "de": "Das Discord-Kennzeichen auf dem Telefon: wie viele Erwähnungen und DMs warten",
+        "es": "El globo de Discord en el teléfono: cuántas menciones y MD esperan",
+        "fr": "La pastille de Discord sur le téléphone : combien de mentions et de MP attendent",
+        "ru": "Наклейка Discord на телефоне: сколько ждёт упоминаний и личных сообщений"
+      },
+      "details": {
+        "en": "The number on Discord’s Dock icon: mentions, DMs and requests. A dot means other unread messages, a dash that Discord is closed. The long press works while Discord is in front.",
+        "de": "Die Zahl am Dock-Symbol von Discord: Erwähnungen, DMs und Anfragen. Ein Punkt heißt: andere ungelesene Nachrichten, ein Strich: Discord ist geschlossen. Langes Drücken wirkt, wenn Discord vorne ist.",
+        "es": "El número del icono de Discord en el Dock: menciones, MD y solicitudes. Un punto indica otros mensajes sin leer; una raya, que Discord está cerrado. Mantener pulsado funciona con Discord delante.",
+        "fr": "Le nombre sur l’icône de Discord dans le Dock : mentions, MP et demandes. Un point signale d’autres messages non lus, un tiret que Discord est fermé. L’appui long agit quand Discord est au premier plan.",
+        "ru": "Число с наклейки на значке Discord в Dock: упоминания, ЛС и запросы. Точка — другие непрочитанные сообщения, прочерк — Discord закрыт. Долгое нажатие работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Brings Discord to the front",
+        "de": "Holt Discord nach vorne",
+        "es": "Trae Discord al frente",
+        "fr": "Met Discord au premier plan",
+        "ru": "Выводит Discord на передний план"
+      },
+      "holdAction": {
+        "en": "Goes to the next channel with unread mentions (⌥⇧⌘↓)",
+        "de": "Springt zum nächsten Kanal mit ungelesenen Erwähnungen (⌥⇧⌘↓)",
+        "es": "Va al siguiente canal con menciones sin leer (⌥⇧⌘↓)",
+        "fr": "Passe au salon suivant ayant des mentions non lues (⌥⇧⌘↓)",
+        "ru": "Переходит к следующему каналу с непрочитанными упоминаниями (⌥⇧⌘↓)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "at"
+          }
+        },
+        "color": "#5865F2",
+        "command": {
+          "launchApp": {
+            "bundleIdentifier": "com.hnc.Discord"
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 125,
+              "modifiers": [
+                "option",
+                "shift",
+                "command"
+              ]
+            }
+          }
+        },
+        "startupScript": "@file:badge/startup.zsh",
+        "svgFace": {
+          "source": "@file:badge/rest.svg"
+        }
+      },
+      "demoFace": {
+        "source": "@file:badge/demo.svg"
+      }
+    },
+    {
+      "id": "next-unread",
+      "title": {
+        "en": "Next Unread",
+        "de": "Nächster ungelesener",
+        "es": "Siguiente no leído",
+        "fr": "Salon non lu suivant",
+        "ru": "Следующее новое"
+      },
+      "summary": {
+        "en": "Goes to the next channel with unread messages (⌥⇧↓)",
+        "de": "Springt zum nächsten Kanal mit ungelesenen Nachrichten (⌥⇧↓)",
+        "es": "Va al siguiente canal con mensajes sin leer (⌥⇧↓)",
+        "fr": "Passe au salon suivant qui a des messages non lus (⌥⇧↓)",
+        "ru": "Переходит к следующему каналу с непрочитанным (⌥⇧↓)"
+      },
+      "details": {
+        "en": "Goes through the unread channels one at a time, muted servers left out: a few taps and you’ve seen everything new. Works while Discord is in front.",
+        "de": "Geht die ungelesenen Kanäle einzeln durch, stummgeschaltete Server ausgenommen: ein paarmal tippen, und du hast alles Neue gesehen. Funktioniert, wenn Discord vorne ist.",
+        "es": "Recorre los canales sin leer uno a uno, sin los servidores silenciados: con unos toques ves todo lo nuevo. Funciona cuando Discord está delante.",
+        "fr": "Parcourt les salons non lus un par un, hors serveurs rendus muets : en quelques appuis, vous avez tout vu. Fonctionne quand Discord est au premier plan.",
+        "ru": "Идёт по непрочитанным каналам по одному, кроме заглушённых серверов: несколько нажатий — и вы видели всё новое. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes to the next unread channel",
+        "de": "Springt zum nächsten ungelesenen Kanal",
+        "es": "Va al siguiente canal sin leer",
+        "fr": "Passe au salon non lu suivant",
+        "ru": "Переходит к следующему непрочитанному каналу"
+      },
+      "holdAction": {
+        "en": "Goes to the previous unread channel (⌥⇧↑)",
+        "de": "Springt zum vorherigen ungelesenen Kanal (⌥⇧↑)",
+        "es": "Va al canal sin leer anterior (⌥⇧↑)",
+        "fr": "Revient au salon non lu précédent (⌥⇧↑)",
+        "ru": "Переходит к предыдущему непрочитанному каналу (⌥⇧↑)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.down.circle"
+          }
+        },
+        "color": "#5865F2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 125,
+              "modifiers": [
+                "option",
+                "shift"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 126,
+              "modifiers": [
+                "option",
+                "shift"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "mark-read",
+      "title": {
+        "en": "Mark Server Read",
+        "de": "Server gelesen",
+        "es": "Servidor leído",
+        "fr": "Serveur lu",
+        "ru": "Сервер прочитан"
+      },
+      "summary": {
+        "en": "Marks the whole open server read (⇧Esc)",
+        "de": "Markiert den ganzen offenen Server als gelesen (⇧Esc)",
+        "es": "Marca como leído todo el servidor abierto (⇧Esc)",
+        "fr": "Marque tout le serveur ouvert comme lu (⇧Esc)",
+        "ru": "Отмечает прочитанным весь открытый сервер (⇧Esc)"
+      },
+      "details": {
+        "en": "Every channel of the server on screen, without opening them; in DMs it does nothing. Works while Discord is in front.",
+        "de": "Alle Kanäle des angezeigten Servers, ohne sie zu öffnen; in Direktnachrichten passiert nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Todos los canales del servidor en pantalla, sin abrirlos; en los MD no hace nada. Funciona cuando Discord está delante.",
+        "fr": "Tous les salons du serveur affiché, sans les ouvrir ; dans les MP, rien ne se passe. Fonctionne quand Discord est au premier plan.",
+        "ru": "Все каналы сервера на экране, не открывая их; в личных сообщениях ничего не делает. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Marks the open server read",
+        "de": "Markiert den offenen Server als gelesen",
+        "es": "Marca como leído el servidor abierto",
+        "fr": "Marque le serveur ouvert comme lu",
+        "ru": "Отмечает прочитанным открытый сервер"
+      },
+      "holdAction": {
+        "en": "⚠️ Esc: declines a ringing call, drops an unsaved message edit or closes what is open; with nothing open, marks the channel read",
+        "de": "⚠️ Esc: lehnt einen eingehenden Anruf ab, verwirft eine ungespeicherte Bearbeitung oder schließt Offenes; ist nichts offen, wird der Kanal als gelesen markiert",
+        "es": "⚠️ Esc: rechaza una llamada entrante, descarta una edición sin guardar o cierra lo abierto; si no hay nada abierto, marca el canal como leído",
+        "fr": "⚠️ Esc : refuse un appel entrant, abandonne une modification non enregistrée ou ferme ce qui est ouvert ; sinon, marque le salon comme lu",
+        "ru": "⚠️ Esc: отклоняет входящий звонок, отменяет несохранённую правку или закрывает открытое; если ничего не открыто, отмечает канал прочитанным"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "checkmark.circle"
+          }
+        },
+        "color": "#5865F2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 53,
+              "modifiers": [
+                "shift"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 53,
+              "modifiers": []
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "oldest-unread",
+      "title": {
+        "en": "Oldest Unread",
+        "de": "Älteste ungelesene",
+        "es": "No leído más antiguo",
+        "fr": "Plus ancien non lu",
+        "ru": "Первое новое"
+      },
+      "summary": {
+        "en": "Jumps to the oldest unread message in the channel (⇧Page Up)",
+        "de": "Springt zur ältesten ungelesenen Nachricht im Kanal (⇧Page Up)",
+        "es": "Salta al mensaje sin leer más antiguo del canal (⇧Page Up)",
+        "fr": "Saute au plus ancien message non lu du salon (⇧Page Up)",
+        "ru": "Переходит к самому старому непрочитанному сообщению (⇧Page Up)"
+      },
+      "details": {
+        "en": "Scrolls back to where you stopped reading, so you read the channel in order from there. Works while Discord is in front.",
+        "de": "Scrollt zurück bis dorthin, wo du aufgehört hast zu lesen, damit du ab da der Reihe nach liest. Funktioniert, wenn Discord vorne ist.",
+        "es": "Vuelve hasta donde dejaste de leer, para leer el canal en orden desde ahí. Funciona cuando Discord está delante.",
+        "fr": "Remonte là où vous avez arrêté de lire, pour lire le salon dans l’ordre à partir de là. Fonctionne quand Discord est au premier plan.",
+        "ru": "Прокручивает назад до места, где вы остановились, чтобы читать канал по порядку. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Jumps to the oldest unread message",
+        "de": "Springt zur ältesten ungelesenen Nachricht",
+        "es": "Salta al mensaje sin leer más antiguo",
+        "fr": "Saute au plus ancien message non lu",
+        "ru": "Переходит к первому непрочитанному сообщению"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.up.to.line"
+          }
+        },
+        "color": "#5865F2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 116,
+              "modifiers": [
+                "shift"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "quick-switcher",
+      "title": {
+        "en": "Quick Switcher",
+        "de": "Quick Switcher",
+        "es": "Quick Switcher",
+        "fr": "Navigation rapide",
+        "ru": "Quick Switcher"
+      },
+      "summary": {
+        "en": "Jumps to any server, channel or DM by name (⌘K)",
+        "de": "Springt über den Namen zu jedem Server, Kanal oder DM (⌘K)",
+        "es": "Salta a cualquier servidor, canal o MD por su nombre (⌘K)",
+        "fr": "Accède à n’importe quel serveur, salon ou MP par son nom (⌘K)",
+        "ru": "Переходит к любому серверу, каналу или ЛС по названию (⌘K)"
+      },
+      "details": {
+        "en": "Type part of a name and press Return; start with @ for people, # for channels, * for servers. Works while Discord is in front.",
+        "de": "Einen Teil des Namens eingeben und Return drücken; mit @ für Personen, # für Kanäle, * für Server beginnen. Funktioniert, wenn Discord vorne ist.",
+        "es": "Escribe parte de un nombre y pulsa Retorno; empieza con @ para personas, # para canales, * para servidores. Funciona cuando Discord está delante.",
+        "fr": "Tapez une partie du nom, puis appuyez sur Retour ; commencez par @ pour les personnes, # pour les salons, * pour les serveurs. Fonctionne quand Discord est au premier plan.",
+        "ru": "Наберите часть названия и нажмите Return; @ в начале — люди, # — каналы, * — серверы. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the Quick Switcher",
+        "de": "Öffnet den Quick Switcher",
+        "es": "Abre el Quick Switcher",
+        "fr": "Ouvre la navigation rapide",
+        "ru": "Открывает Quick Switcher"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass.circle"
+          }
+        },
+        "color": "#EB459E",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 40,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "direct-messages",
+      "title": {
+        "en": "Direct Messages",
+        "de": "DMs",
+        "es": "Mensajes directos",
+        "fr": "Messages privés",
+        "ru": "Личные сообщения"
+      },
+      "summary": {
+        "en": "Opens your DMs and friends list in Discord",
+        "de": "Öffnet deine DMs und die Freundesliste in Discord",
+        "es": "Abre tus MD y la lista de amigos en Discord",
+        "fr": "Ouvre vos MP et la liste d’amis dans Discord",
+        "ru": "Открывает личные сообщения и список друзей в Discord"
+      },
+      "details": {
+        "en": "Discord’s home, with all your conversations. The tap brings Discord to the front from any app; the long press works while Discord is in front.",
+        "de": "Die Startseite von Discord mit all deinen Unterhaltungen. Tippen holt Discord aus jeder App nach vorne; langes Drücken wirkt, wenn Discord vorne ist.",
+        "es": "El inicio de Discord, con todas tus conversaciones. El toque trae Discord al frente desde cualquier app; mantener pulsado funciona con Discord delante.",
+        "fr": "L’accueil de Discord, avec toutes vos conversations. Le toucher met Discord au premier plan depuis n’importe quelle app ; l’appui long agit quand Discord est au premier plan.",
+        "ru": "Главная Discord со всеми вашими беседами. Нажатие выводит Discord вперёд из любого приложения; удержание работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Direct Messages",
+        "de": "Öffnet die Direktnachrichten",
+        "es": "Abre los mensajes directos",
+        "fr": "Ouvre les messages privés",
+        "ru": "Открывает личные сообщения"
+      },
+      "holdAction": {
+        "en": "Switches between DMs and the last server (⌥⌘→)",
+        "de": "Wechselt zwischen DMs und dem letzten Server (⌥⌘→)",
+        "es": "Alterna entre los MD y el último servidor (⌥⌘→)",
+        "fr": "Bascule entre les MP et le dernier serveur (⌥⌘→)",
+        "ru": "Переключает между ЛС и последним сервером (⌥⌘→)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "bubble.left.and.bubble.right"
+          }
+        },
+        "color": "#EB459E",
+        "command": {
+          "shellCommand": {
+            "command": "@file:home.zsh"
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 124,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "next-server",
+      "title": {
+        "en": "Next Server",
+        "de": "Nächster Server",
+        "es": "Siguiente servidor",
+        "fr": "Serveur suivant",
+        "ru": "Следующий сервер"
+      },
+      "summary": {
+        "en": "Goes to the next server in your list (⌥⌘↓)",
+        "de": "Wechselt zum nächsten Server deiner Liste (⌥⌘↓)",
+        "es": "Va al siguiente servidor de tu lista (⌥⌘↓)",
+        "fr": "Passe au serveur suivant de votre liste (⌥⌘↓)",
+        "ru": "Переходит к следующему серверу в списке (⌥⌘↓)"
+      },
+      "details": {
+        "en": "Walks down the server list on the left, Direct Messages included, and round again. Works while Discord is in front.",
+        "de": "Geht die Serverliste links von oben nach unten durch, Direktnachrichten inklusive, und wieder von vorn. Funktioniert, wenn Discord vorne ist.",
+        "es": "Baja por la lista de servidores de la izquierda, mensajes directos incluidos, y vuelve a empezar. Funciona cuando Discord está delante.",
+        "fr": "Descend la liste des serveurs à gauche, messages privés compris, puis recommence. Fonctionne quand Discord est au premier plan.",
+        "ru": "Идёт вниз по списку серверов слева, включая личные сообщения, и снова с начала. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes to the next server",
+        "de": "Wechselt zum nächsten Server",
+        "es": "Va al siguiente servidor",
+        "fr": "Passe au serveur suivant",
+        "ru": "Переходит к следующему серверу"
+      },
+      "holdAction": {
+        "en": "Goes to the previous server (⌥⌘↑)",
+        "de": "Wechselt zum vorherigen Server (⌥⌘↑)",
+        "es": "Va al servidor anterior (⌥⌘↑)",
+        "fr": "Revient au serveur précédent (⌥⌘↑)",
+        "ru": "Переходит к предыдущему серверу (⌥⌘↑)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.stack"
+          }
+        },
+        "color": "#EB459E",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 125,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 126,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "next-channel",
+      "title": {
+        "en": "Next Channel",
+        "de": "Nächster Kanal",
+        "es": "Siguiente canal",
+        "fr": "Salon suivant",
+        "ru": "Следующий канал"
+      },
+      "summary": {
+        "en": "Goes to the next channel in the list (⌥↓)",
+        "de": "Springt zum nächsten Kanal der Liste (⌥↓)",
+        "es": "Va al siguiente canal de la lista (⌥↓)",
+        "fr": "Passe au salon suivant de la liste (⌥↓)",
+        "ru": "Переходит к следующему каналу в списке (⌥↓)"
+      },
+      "details": {
+        "en": "Walks the open server’s channels in order, read or not, and round again; in DMs it walks your conversations. Works while Discord is in front.",
+        "de": "Geht die Kanäle des offenen Servers der Reihe nach durch, gelesen oder nicht, und wieder von vorn; in DMs die Unterhaltungen. Funktioniert, wenn Discord vorne ist.",
+        "es": "Recorre en orden los canales del servidor abierto, leídos o no, y vuelve a empezar; en los MD, tus conversaciones. Funciona cuando Discord está delante.",
+        "fr": "Parcourt dans l’ordre les salons du serveur ouvert, lus ou non, puis recommence ; dans les MP, vos conversations. Fonctionne quand Discord est au premier plan.",
+        "ru": "Идёт по каналам открытого сервера по порядку, прочитанным и нет, и снова с начала; в ЛС — по беседам. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes to the next channel",
+        "de": "Springt zum nächsten Kanal",
+        "es": "Va al siguiente canal",
+        "fr": "Passe au salon suivant",
+        "ru": "Переходит к следующему каналу"
+      },
+      "holdAction": {
+        "en": "Goes to the previous channel (⌥↑)",
+        "de": "Springt zum vorherigen Kanal (⌥↑)",
+        "es": "Va al canal anterior (⌥↑)",
+        "fr": "Revient au salon précédent (⌥↑)",
+        "ru": "Переходит к предыдущему каналу (⌥↑)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "number"
+          }
+        },
+        "color": "#EB459E",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 125,
+              "modifiers": [
+                "option"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 126,
+              "modifiers": [
+                "option"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "search",
+      "title": {
+        "en": "Search",
+        "de": "Suchen",
+        "es": "Buscar",
+        "fr": "Rechercher",
+        "ru": "Поиск"
+      },
+      "summary": {
+        "en": "Searches the messages of the open channel (⌘F)",
+        "de": "Durchsucht die Nachrichten des offenen Kanals (⌘F)",
+        "es": "Busca en los mensajes del canal abierto (⌘F)",
+        "fr": "Cherche dans les messages du salon ouvert (⌘F)",
+        "ru": "Ищет по сообщениям открытого канала (⌘F)"
+      },
+      "details": {
+        "en": "Discord’s search, already set to the open channel or DM; type what to find and press Return. Works while Discord is in front.",
+        "de": "Die Discord-Suche, schon auf den offenen Kanal oder die DM gesetzt; Suchbegriff eingeben und Return drücken. Funktioniert, wenn Discord vorne ist.",
+        "es": "La búsqueda de Discord, ya ajustada al canal o MD abierto; escribe qué buscar y pulsa Retorno. Funciona cuando Discord está delante.",
+        "fr": "La recherche de Discord, déjà réglée sur le salon ou MP ouvert ; tapez ce que vous cherchez, puis appuyez sur Retour. Fonctionne quand Discord est au premier plan.",
+        "ru": "Поиск Discord, уже настроенный на открытый канал или ЛС; введите, что искать, и нажмите Return. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Searches the open channel",
+        "de": "Durchsucht den offenen Kanal",
+        "es": "Busca en el canal abierto",
+        "fr": "Cherche dans le salon ouvert",
+        "ru": "Ищет в открытом канале"
+      },
+      "holdAction": {
+        "en": "Searches the whole server or all DMs (⇧⌘F)",
+        "de": "Durchsucht den ganzen Server oder alle DMs (⇧⌘F)",
+        "es": "Busca en todo el servidor o en todos los MD (⇧⌘F)",
+        "fr": "Cherche dans tout le serveur ou tous les MP (⇧⌘F)",
+        "ru": "Ищет по всему серверу или во всех ЛС (⇧⌘F)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass"
+          }
+        },
+        "color": "#FEE75C",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 3,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 3,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "inbox",
+      "title": {
+        "en": "Inbox",
+        "de": "Posteingang",
+        "es": "Bandeja de entrada",
+        "fr": "Boîte de réception",
+        "ru": "Входящие"
+      },
+      "summary": {
+        "en": "Shows your mentions and unread messages in one list (⌘I)",
+        "de": "Zeigt deine Erwähnungen und ungelesenen Nachrichten in einer Liste (⌘I)",
+        "es": "Muestra tus menciones y mensajes sin leer en una lista (⌘I)",
+        "fr": "Montre vos mentions et messages non lus dans une seule liste (⌘I)",
+        "ru": "Показывает упоминания и непрочитанное одним списком (⌘I)"
+      },
+      "details": {
+        "en": "Discord’s Inbox, opened or closed. Works while Discord is in front and the message box is empty: with text in it, ⌘I makes the text italic.",
+        "de": "Der Posteingang von Discord, geöffnet oder geschlossen. Funktioniert, wenn Discord vorne ist und das Nachrichtenfeld leer: mit Text darin macht ⌘I ihn kursiv.",
+        "es": "La bandeja de entrada de Discord, abierta o cerrada. Funciona con Discord delante y el cuadro de mensaje vacío: con texto, ⌘I lo pone en cursiva.",
+        "fr": "La boîte de réception de Discord, ouverte ou fermée. Fonctionne quand Discord est au premier plan et le champ de message vide : avec du texte, ⌘I le met en italique.",
+        "ru": "«Входящие» Discord: открывает и закрывает. Работает, когда Discord на переднем плане, а поле сообщения пусто: с текстом ⌘I делает его курсивом."
+      },
+      "tapAction": {
+        "en": "Opens or closes the Inbox",
+        "de": "Öffnet oder schließt den Posteingang",
+        "es": "Abre o cierra la bandeja de entrada",
+        "fr": "Ouvre ou ferme la boîte de réception",
+        "ru": "Открывает или закрывает «Входящие»"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "tray"
+          }
+        },
+        "color": "#FEE75C",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 34,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "pins",
+      "title": {
+        "en": "Pinned Messages",
+        "de": "Angepinnte Nachrichten",
+        "es": "Mensajes fijados",
+        "fr": "Messages épinglés",
+        "ru": "Закреплено"
+      },
+      "summary": {
+        "en": "Shows the messages pinned in the open channel (⌘P)",
+        "de": "Zeigt die angepinnten Nachrichten im offenen Kanal (⌘P)",
+        "es": "Muestra los mensajes fijados del canal abierto (⌘P)",
+        "fr": "Montre les messages épinglés du salon ouvert (⌘P)",
+        "ru": "Показывает закреплённые сообщения открытого канала (⌘P)"
+      },
+      "details": {
+        "en": "The pins of the channel or DM on screen, opened or closed; click one to jump to it. Works while Discord is in front.",
+        "de": "Die angepinnten Nachrichten des angezeigten Kanals oder der DM, geöffnet oder geschlossen; ein Klick springt hin. Funktioniert, wenn Discord vorne ist.",
+        "es": "Los mensajes fijados del canal o MD en pantalla, abiertos o cerrados; haz clic en uno para ir a él. Funciona cuando Discord está delante.",
+        "fr": "Les messages épinglés du salon ou MP affiché, ouverts ou fermés ; un clic y mène. Fonctionne quand Discord est au premier plan.",
+        "ru": "Закреплённые сообщения канала или ЛС на экране: открывает и закрывает; щелчок переносит к сообщению. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens or closes the pinned messages",
+        "de": "Öffnet oder schließt die angepinnten Nachrichten",
+        "es": "Abre o cierra los mensajes fijados",
+        "fr": "Ouvre ou ferme les messages épinglés",
+        "ru": "Открывает или закрывает закреплённые сообщения"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "pin"
+          }
+        },
+        "color": "#FEE75C",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 35,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emoji",
+      "title": {
+        "en": "Emoji",
+        "de": "Emoji",
+        "es": "Emojis",
+        "fr": "Émoji",
+        "ru": "Эмодзи"
+      },
+      "summary": {
+        "en": "Opens the emoji picker of the message box (⌘E)",
+        "de": "Öffnet die Emojiauswahl des Nachrichtenfelds (⌘E)",
+        "es": "Abre el selector de emojis del cuadro de mensaje (⌘E)",
+        "fr": "Ouvre le sélecteur d’émojis du champ de message (⌘E)",
+        "ru": "Открывает меню эмодзи в поле сообщения (⌘E)"
+      },
+      "details": {
+        "en": "Pick one with the mouse or type its name; it goes into the message you are writing, nothing is sent. Works while Discord is in front.",
+        "de": "Eins mit der Maus wählen oder den Namen tippen; es landet in der Nachricht, die du schreibst, gesendet wird nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Elige uno con el ratón o escribe su nombre; va al mensaje que escribes, no se envía nada. Funciona cuando Discord está delante.",
+        "fr": "Choisissez-en un à la souris ou tapez son nom ; il va dans le message en cours, rien n’est envoyé. Fonctionne quand Discord est au premier plan.",
+        "ru": "Выберите мышью или наберите название — эмодзи встанет в сообщение, которое вы пишете; ничего не отправляется. Работает, когда Discord на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens or closes the emoji picker",
+        "de": "Öffnet oder schließt die Emojiauswahl",
+        "es": "Abre o cierra el selector de emojis",
+        "fr": "Ouvre ou ferme le sélecteur d’émojis",
+        "ru": "Открывает или закрывает меню эмодзи"
+      },
+      "holdAction": {
+        "en": "Opens the GIF picker (⌘G)",
+        "de": "Öffnet die GIF-Auswahl (⌘G)",
+        "es": "Abre el selector de GIF (⌘G)",
+        "fr": "Ouvre le sélecteur de GIF (⌘G)",
+        "ru": "Открывает меню GIF (⌘G)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "face.smiling"
+          }
+        },
+        "color": "#FEE75C",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 14,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 5,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "open-channel",
+      "title": {
+        "en": "Open Channel",
+        "de": "Kanal öffnen",
+        "es": "Abrir canal",
+        "fr": "Ouvrir le salon",
+        "ru": "Открыть канал"
+      },
+      "summary": {
+        "en": "One channel or DM you choose, from any app",
+        "de": "Ein Kanal oder eine DM deiner Wahl, aus jeder App",
+        "es": "El canal o MD que elijas, desde cualquier app",
+        "fr": "Le salon ou le MP de votre choix, depuis n’importe quelle app",
+        "ru": "Нужный канал или личный чат — из любого приложения"
+      },
+      "details": {
+        "en": "Paste its link in the first line of the button’s script: Copy Link on a channel, Copy Message Link on a message in a DM; until then, the button says so. Brings Discord forward from any app, but doesn’t start it.",
+        "de": "Füge seinen Link in die erste Zeile des Skripts der Taste ein: „Link kopieren“ am Kanal, „Nachrichtenlink kopieren“ an einer Nachricht in der DM; bis dahin sagt die Taste das. Holt Discord aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Pega su enlace en la primera línea del script del botón: «Copiar enlace» en un canal, «Copiar enlace del mensaje» en un mensaje del MD; hasta entonces, el botón te lo recuerda. Trae Discord al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Collez son lien à la première ligne du script du bouton : « Copier le lien » sur un salon, « Copier le lien du message » sur un message du MP ; d’ici là, le bouton vous le rappelle. Met Discord au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Вставьте его ссылку в первую строку скрипта кнопки: «Копировать ссылку» у канала, «Копировать ссылку на сообщение» у сообщения в личном чате; пока её нет, кнопка об этом скажет. Выводит Discord вперёд из любого приложения, но не запускает его."
+      },
+      "tapAction": {
+        "en": "Opens the channel of the link you set",
+        "de": "Öffnet den Kanal des eingetragenen Links",
+        "es": "Abre el canal del enlace que pusiste",
+        "fr": "Ouvre le salon du lien indiqué",
+        "ru": "Открывает канал по заданной ссылке"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "link"
+          }
+        },
+        "color": "#5865F2",
+        "command": {
+          "shellCommand": {
+            "command": "link=''   # ← paste a channel's Copy Link, or Copy Message Link of a message in a DM\n@file:channel.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Discord",
+        "de": "Discord",
+        "es": "Discord",
+        "fr": "Discord",
+        "ru": "Discord"
+      },
+      "summary": {
+        "en": "Mute, catch up and get around Discord from your phone",
+        "de": "Stummschalten, nachlesen und durch Discord springen – vom Telefon aus",
+        "es": "Silencia, ponte al día y muévete por Discord desde el teléfono",
+        "fr": "Coupez le micro, rattrapez le fil et naviguez dans Discord depuis votre téléphone",
+        "ru": "Микрофон, непрочитанное и переходы по Discord с телефона"
+      },
+      "details": {
+        "en": "Mute and Deafen show Discord’s state and work with Discord in the background; the other buttons work while Discord is in front. Direct Messages and Open Channel bring it forward from any app. Mentions shows the badge of Discord’s Dock icon.",
+        "de": "„Mikrofon“ und „Ein- und Ausgabe“ zeigen den Zustand in Discord und klappen im Hintergrund; die übrigen Tasten funktionieren, wenn Discord vorne ist. DMs und „Kanal öffnen“ holen Discord aus jeder App nach vorne. Erwähnungen zeigt das Kennzeichen am Dock-Symbol von Discord.",
+        "es": "«Silenciar» y «Ensordecer» muestran el estado de Discord y funcionan en segundo plano; los demás botones, con Discord delante. Mensajes directos y Abrir canal lo traen al frente desde cualquier app. Menciones muestra el globo del icono de Discord en el Dock.",
+        "fr": "« Rendre muet » et « Mettre en sourdine » montrent l’état de Discord et fonctionnent en arrière-plan ; les autres boutons, quand Discord est au premier plan. Messages privés et Ouvrir le salon le mettent au premier plan depuis n’importe quelle app. Mentions affiche la pastille de l’icône de Discord dans le Dock.",
+        "ru": "«Микрофон» и «Динамики» показывают состояние Discord и работают, когда он в фоне; остальные кнопки — когда Discord на переднем плане. «Личные сообщения» и «Открыть канал» выводят его вперёд из любого приложения. «Упоминания» показывают наклейку со значка Discord в Dock."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "mute",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "deafen",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "call",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "soundboard",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "mentions",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "next-unread",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "mark-read",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "oldest-unread",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "quick-switcher",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "direct-messages",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "next-server",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "next-channel",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "search",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "inbox",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "pins",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "emoji",
+          "row": 3,
+          "col": 3
+        },
+        {
+          "button": "open-channel",
+          "row": 4,
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "speed-test",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Speed Test",
+    "de": "Speedtest",
+    "es": "Test de velocidad",
+    "fr": "Test de débit",
+    "ru": "Тест скорости"
+  },
+  "summary": {
+    "en": "Internet speed on a tap, measured by macOS: download big, upload below",
+    "de": "Internetgeschwindigkeit per Tippen, gemessen von macOS: Download groß, Upload darunter",
+    "es": "Velocidad de internet con un toque, medida por macOS: descarga en grande, subida debajo",
+    "fr": "Débit Internet d’un simple toucher, mesuré par macOS : descendant en grand, montant dessous",
+    "ru": "Скорость интернета по нажатию, измеряет macOS: скачивание крупно, отдача под ним"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The last test: download ↓ large, upload ↑ small; pink means under 10 Mbps. While a test runs, it takes up the whole connection.",
+    "de": "Download ↓ groß und Upload ↑ klein aus dem letzten Test; Pink heißt unter 10 Mbps. Solange ein Test läuft, lastet er die Verbindung voll aus.",
+    "es": "La descarga ↓ en grande y la subida ↑ en pequeño de la última prueba; el rosa indica menos de 10 Mbps. Mientras dura una prueba, ocupa toda la conexión.",
+    "fr": "Le débit descendant ↓ en grand et montant ↑ en petit du dernier test ; le rose signifie moins de 10 Mbps. Pendant un test, la connexion est entièrement occupée.",
+    "ru": "Итог последнего замера: крупно скачивание ↓, мелко отдача ↑; розовый — меньше 10 Mbps. Пока идёт замер, он занимает весь канал."
+  },
+  "tapAction": {
+    "en": "Runs a speed test (about 20 seconds)",
+    "de": "Startet einen Speedtest (etwa 20 Sekunden)",
+    "es": "Hace una prueba de velocidad (unos 20 segundos)",
+    "fr": "Lance un test de débit (environ 20 secondes)",
+    "ru": "Запускает замер скорости (около 20 секунд)"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "speedometer"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

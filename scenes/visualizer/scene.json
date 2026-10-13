@@ -1,0 +1,69 @@
+{
+  "id": "visualizer",
+  "revision": 10,
+  "title": {
+    "en": "Visualizer",
+    "de": "Visualizer",
+    "es": "Visualizador",
+    "fr": "Visualiseur",
+    "ru": "Визуализатор"
+  },
+  "summary": {
+    "en": "The sound your Mac plays, across the whole page",
+    "de": "Der Klang deines Mac auf der ganzen Seite",
+    "es": "El sonido de tu Mac en toda la página",
+    "fr": "Le son de votre Mac sur toute la page",
+    "ru": "Звук Mac на всю страницу"
+  },
+  "details": {
+    "en": "Bars, an amoeba, lava or a curve move to whatever your Mac plays — music, a video, a call. Tap anywhere to show the controls for a few seconds: switch the effect or the colours, or turn it off. Made for landscape; held upright, the picture turns with the phone. The first time the page opens, the Mac asks for permission to capture its sound.",
+    "de": "Balken, eine Amöbe, Lava oder eine Kurve bewegen sich zu allem, was dein Mac abspielt – Musik, ein Video, ein Anruf. Tippe irgendwo, um für ein paar Sekunden die Steuerung zu zeigen: Effekt oder Farben wechseln oder ausschalten. Gemacht fürs Querformat; hochkant dreht sich das Bild mit dem Telefon. Beim ersten Öffnen der Seite fragt der Mac nach der Erlaubnis, seinen Ton aufzunehmen.",
+    "es": "Barras, una ameba, lava o una curva se mueven con todo lo que suena en tu Mac: música, un vídeo, una llamada. Toca en cualquier lugar para ver los controles unos segundos: cambia el efecto o los colores, o apágalo. Pensado para horizontal; en vertical, la imagen gira con el teléfono. La primera vez que abras la página, el Mac pedirá permiso para capturar su sonido.",
+    "fr": "Des barres, une amibe, de la lave ou une courbe bougent au rythme de tout ce que joue votre Mac — musique, vidéo, appel. Touchez n’importe où pour afficher les commandes quelques secondes : changez l’effet ou les couleurs, ou éteignez-le. Pensé pour l’horizontale ; à la verticale, l’image tourne avec le téléphone. La première fois que la page s’ouvre, le Mac demande l’autorisation d’enregistrer son son.",
+    "ru": "Столбики, амёба, лава или кривая движутся подо всё, что играет на Mac: музыку, видео, звонок. Нажмите в любом месте — на несколько секунд появятся кнопки: сменить эффект или цвета, выключить. Сделан для горизонтального положения; если держать телефон вертикально, картинка поворачивается вместе с ним. Когда страница откроется впервые, Mac спросит разрешение записывать свой звук."
+  },
+  "cover": {
+    "source": "@file:cover.svg",
+    "fit": "cover"
+  },
+  "tiles": {
+    "columns": 6,
+    "rows": 8,
+    "title": {
+      "en": "Visualizer",
+      "de": "Visualizer",
+      "es": "Visualizador",
+      "fr": "Visualiseur",
+      "ru": "Визуализатор"
+    },
+    "tapAction": {
+      "en": "Shows the controls: effect, colours, on and off",
+      "de": "Zeigt die Steuerung: Effekt, Farben, an und aus",
+      "es": "Muestra los controles: efecto, colores, encender y apagar",
+      "fr": "Affiche les commandes : effet, couleurs, marche et arrêt",
+      "ru": "Показывает кнопки: эффект, цвета, включение и выключение"
+    },
+    "permissions": [
+      "systemAudio"
+    ],
+    "button": {
+      "icon": {
+        "sfSymbol": {
+          "name": "waveform"
+        }
+      },
+      "color": "#5E5CE6",
+      "command": {
+        "shellCommand": {
+          "command": "@file:tap.zsh"
+        }
+      }
+    },
+    "engine": {
+      "row": 0,
+      "col": 0,
+      "startupScript": "@file:engine.zsh"
+    },
+    "faces": "@file:faces.json"
+  }
+}

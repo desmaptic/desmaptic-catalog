@@ -1,0 +1,55 @@
+{
+  "id": "disk-free",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Disk Free",
+    "de": "Freier Speicher",
+    "es": "Espacio libre",
+    "fr": "Espace libre",
+    "ru": "Свободно на диске"
+  },
+  "summary": {
+    "en": "Free space on the startup disk, as Finder counts it",
+    "de": "Freier Platz auf dem Startvolume, wie im Finder",
+    "es": "Espacio libre en el disco de arranque, como en el Finder",
+    "fr": "Espace libre sur le disque de démarrage, comme dans le Finder",
+    "ru": "Свободное место на системном диске, как в Finder"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Free space on the startup disk, counted the way Finder does (including space macOS can free up). Read it like a fuel gauge: the less is left, the closer the dot is to the pink end.",
+    "de": "Freier Platz auf dem Startvolume, gezählt wie im Finder (samt Speicher, den macOS freigeben kann). Wie eine Tankanzeige: Je weniger übrig ist, desto näher rückt der Punkt ans pinke Ende.",
+    "es": "Espacio libre en el disco de arranque, contado como en el Finder (incluido lo que macOS puede liberar). Se lee como un indicador de combustible: cuanto menos queda, más se acerca el punto al extremo rosa.",
+    "fr": "L’espace libre sur le disque de démarrage, compté comme dans le Finder (y compris ce que macOS peut libérer). Comme une jauge de carburant : moins il en reste, plus le point approche de l’extrémité rose.",
+    "ru": "Свободное место на системном диске — как считает Finder, вместе с тем, что macOS может освободить. Читается как бензобак: чем меньше места, тем ближе точка к розовому концу."
+  },
+  "tapAction": {
+    "en": "Opens Storage settings on the Mac",
+    "de": "Öffnet die Speicher-Einstellungen auf dem Mac",
+    "es": "Abre los ajustes de Almacenamiento en el Mac",
+    "fr": "Ouvre les réglages Stockage sur le Mac",
+    "ru": "Открывает настройки хранилища на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "internaldrive"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "openURL": {
+        "url": "x-apple.systempreferences:com.apple.settings.Storage"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

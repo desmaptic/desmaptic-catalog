@@ -1,0 +1,67 @@
+{
+  "id": "reactions",
+  "revision": 5,
+  "kind": "widget",
+  "title": {
+    "en": "Reactions",
+    "de": "Reaktionen",
+    "es": "Reacciones",
+    "fr": "Réactions",
+    "ru": "Реакции"
+  },
+  "summary": {
+    "en": "Sends emoji floating up the Mac’s screen, like reactions on a call",
+    "de": "Lässt Emojis über den Mac-Bildschirm aufsteigen, wie Reaktionen im Videocall",
+    "es": "Hace subir emojis por la pantalla del Mac, como las reacciones en una videollamada",
+    "fr": "Fait monter des emojis sur l’écran du Mac, comme les réactions en visio",
+    "ru": "Пускает эмодзи вверх по экрану Mac, как реакции в созвоне"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "A handful float up from the bottom of the display the pointer is on, over every window; clicks go through. To change or add emoji, edit the first line of Advanced › Startup Script.",
+    "de": "Eine Handvoll steigt vom unteren Rand des Displays mit dem Zeiger auf, über allen Fenstern; Klicks gehen hindurch. Um Emojis zu ändern oder hinzuzufügen, bearbeite die erste Zeile unter Erweitert › Startskript.",
+    "es": "Un puñado sube desde el borde inferior de la pantalla donde está el puntero, sobre todas las ventanas; los clics los atraviesan. Para cambiar o añadir emojis, edita la primera línea de Avanzado › Script de inicio.",
+    "fr": "Une poignée monte du bas de l’écran où se trouve le pointeur, au-dessus de toutes les fenêtres ; les clics passent au travers. Pour changer ou ajouter des emojis, modifiez la première ligne de Avancé › Script de démarrage.",
+    "ru": "Несколько штук всплывают снизу экрана, где указатель, поверх всех окон; клики проходят сквозь них. Чтобы сменить или добавить эмодзи, измените первую строку в Дополнительно › Стартовый скрипт."
+  },
+  "tapAction": {
+    "en": "Sends the emoji shown on the button",
+    "de": "Schickt das Emoji, das die Taste zeigt",
+    "es": "Envía el emoji que muestra el botón",
+    "fr": "Envoie l’emoji affiché sur le bouton",
+    "ru": "Отправляет эмодзи, который на кнопке"
+  },
+  "holdAction": {
+    "en": "Switches to the next emoji",
+    "de": "Wechselt zum nächsten Emoji",
+    "es": "Cambia al siguiente emoji",
+    "fr": "Passe à l’emoji suivant",
+    "ru": "Переключает на следующий эмодзи"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "face.smiling"
+      }
+    },
+    "color": "#FF9F0A",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

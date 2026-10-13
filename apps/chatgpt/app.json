@@ -1,0 +1,781 @@
+{
+  "id": "chatgpt",
+  "revision": 6,
+  "name": "ChatGPT",
+  "bundleIds": [
+    "com.openai.codex"
+  ],
+  "category": "ai",
+  "buttons": [
+    {
+      "id": "new-chat",
+      "title": {
+        "en": "New Chat",
+        "de": "Neuer Chat",
+        "es": "Nuevo chat",
+        "fr": "Nouveau chat",
+        "ru": "Новый чат"
+      },
+      "summary": {
+        "en": "Starts a chat in Chat mode; hold for a temporary chat",
+        "de": "Startet einen Chat im Modus „Chat“; halten für einen temporären Chat",
+        "es": "Inicia un chat en el modo Chat; mantén pulsado para uno temporal",
+        "fr": "Lance un chat en mode Chat ; maintenez pour un chat éphémère",
+        "ru": "Начинает чат в режиме «Чат»; удержание — временный чат"
+      },
+      "details": {
+        "en": "Works even with ChatGPT in the background, and opens it if it is closed. A temporary chat stays out of your history; the long press needs ChatGPT in front, with its default shortcuts.",
+        "de": "Klappt auch mit ChatGPT im Hintergrund und öffnet es, wenn es geschlossen ist. Ein temporärer Chat erscheint nicht im Verlauf; Halten braucht ChatGPT vorne, mit den Standard-Tastenkürzeln.",
+        "es": "Funciona aunque ChatGPT esté en segundo plano y lo abre si está cerrado. Un chat temporal no aparece en el historial; mantener pulsado requiere ChatGPT delante, con sus atajos predeterminados.",
+        "fr": "Fonctionne même avec ChatGPT en arrière-plan, et l’ouvre s’il est fermé. Un chat éphémère n’apparaît pas dans l’historique ; l’appui long agit au premier plan, avec les raccourcis par défaut.",
+        "ru": "Работает, даже когда ChatGPT в фоне, и открывает его, если он закрыт. Временный чат не попадает в историю; удержанию ChatGPT нужен на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Starts a new chat in Chat mode",
+        "de": "Startet einen neuen Chat im Modus „Chat“",
+        "es": "Inicia un chat nuevo en el modo Chat",
+        "fr": "Lance un nouveau chat en mode Chat",
+        "ru": "Начинает новый чат в режиме «Чат»"
+      },
+      "holdAction": {
+        "en": "Starts a new temporary chat (⇧⌘N)",
+        "de": "Startet einen neuen temporären Chat (⇧⌘N)",
+        "es": "Inicia un nuevo chat temporal (⇧⌘N)",
+        "fr": "Lance un nouveau chat éphémère (⇧⌘N)",
+        "ru": "Начинает новый временный чат (⇧⌘N)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.and.pencil"
+          }
+        },
+        "color": "#10A37F",
+        "command": {
+          "shellCommand": {
+            "command": "action=chat\n@file:link.zsh"
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 45,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "work",
+      "title": {
+        "en": "Work",
+        "de": "Work",
+        "es": "Work",
+        "fr": "Work",
+        "ru": "Работа"
+      },
+      "summary": {
+        "en": "Starts a chat in Work mode",
+        "de": "Startet einen Chat im Modus „Work“",
+        "es": "Inicia un chat en el modo Work",
+        "fr": "Lance un chat en mode Work",
+        "ru": "Начинает чат в режиме «Работа»"
+      },
+      "details": {
+        "en": "Work mode gets tasks done with your files and apps; not every plan has it. Works even with ChatGPT in the background, and opens it if it is closed.",
+        "de": "Im Modus „Work“ erledigt ChatGPT Aufgaben mit deinen Dateien und Apps; nicht jeder Tarif hat ihn. Klappt auch mit ChatGPT im Hintergrund und öffnet es, wenn es geschlossen ist.",
+        "es": "El modo Work completa tareas con tus archivos y aplicaciones; no está en todos los planes. Funciona aunque ChatGPT esté en segundo plano y lo abre si está cerrado.",
+        "fr": "Le mode Work accomplit des tâches avec vos fichiers et applications ; tous les forfaits ne l’ont pas. Fonctionne même avec ChatGPT en arrière-plan, et l’ouvre s’il est fermé.",
+        "ru": "В режиме «Работа» ChatGPT выполняет задачи с вашими файлами и приложениями; он есть не на всех тарифах. Работает, даже когда ChatGPT в фоне, и открывает его, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Starts a new chat in Work mode",
+        "de": "Startet einen neuen Chat im Modus „Work“",
+        "es": "Inicia un chat nuevo en el modo Work",
+        "fr": "Lance un nouveau chat en mode Work",
+        "ru": "Начинает новый чат в режиме «Работа»"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "briefcase"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=work\n@file:link.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "codex",
+      "title": {
+        "en": "Codex",
+        "de": "Codex",
+        "es": "Codex",
+        "fr": "Codex",
+        "ru": "Codex"
+      },
+      "summary": {
+        "en": "Starts a Codex chat; hold for one outside any project",
+        "de": "Startet einen Codex-Chat; halten für einen außerhalb eines Projekts",
+        "es": "Inicia un chat de Codex; mantén pulsado para uno fuera de los proyectos",
+        "fr": "Lance un chat Codex ; maintenez pour un chat hors projet",
+        "ru": "Начинает чат Codex; удержание — вне проектов"
+      },
+      "details": {
+        "en": "The coding agent: pick a project and describe the task. Works even with ChatGPT in the background and opens it if closed; the long press needs it in front, with default shortcuts.",
+        "de": "Der Coding-Agent: Projekt wählen, dann die Aufgabe beschreiben. Klappt auch mit ChatGPT im Hintergrund und öffnet es, wenn es geschlossen ist; Halten braucht es vorne, mit den Standard-Tastenkürzeln.",
+        "es": "El agente de programación: elige un proyecto y describe la tarea. Funciona con ChatGPT en segundo plano y lo abre si está cerrado; mantener pulsado lo requiere delante, con los atajos predeterminados.",
+        "fr": "L’agent de programmation : choisissez un projet et décrivez la tâche. Fonctionne avec ChatGPT en arrière-plan et l’ouvre s’il est fermé ; l’appui long agit au premier plan, avec les raccourcis par défaut.",
+        "ru": "Агент для программирования: выберите проект и опишите задачу. Работает, даже когда ChatGPT в фоне, и открывает его, если он закрыт; удержанию он нужен на переднем плане, со стандартными сочетаниями."
+      },
+      "tapAction": {
+        "en": "Starts a new chat in Codex",
+        "de": "Startet einen neuen Chat in Codex",
+        "es": "Inicia un chat nuevo en Codex",
+        "fr": "Lance un nouveau chat dans Codex",
+        "ru": "Начинает новый чат в Codex"
+      },
+      "holdAction": {
+        "en": "Starts a new standalone chat, outside any project (⌥⌘O)",
+        "de": "Startet einen neuen eigenständigen Chat außerhalb eines Projekts (⌥⌘O)",
+        "es": "Inicia un nuevo chat independiente, fuera de los proyectos (⌥⌘O)",
+        "fr": "Lance un nouveau chat hors projet (⌥⌘O)",
+        "ru": "Начинает новый отдельный чат вне проектов (⌥⌘O)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.left.forwardslash.chevron.right"
+          }
+        },
+        "color": "#5E5CE6",
+        "command": {
+          "shellCommand": {
+            "command": "action=codex\n@file:link.zsh"
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 31,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "search",
+      "title": {
+        "en": "Search",
+        "de": "Suche",
+        "es": "Buscar",
+        "fr": "Rechercher",
+        "ru": "Поиск"
+      },
+      "summary": {
+        "en": "Finds a chat or a command; hold to search the open chat",
+        "de": "Findet einen Chat oder Befehl; halten, um im offenen Chat zu suchen",
+        "es": "Encuentra un chat o un comando; mantén pulsado para buscar en el chat abierto",
+        "fr": "Trouve un chat ou une commande ; maintenez pour chercher dans le chat ouvert",
+        "ru": "Находит чат или команду; удержание — поиск в открытом чате"
+      },
+      "details": {
+        "en": "Type a few words and press Return to open a chat or run a command. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Ein paar Wörter tippen und Return drücken, um einen Chat zu öffnen oder einen Befehl auszuführen. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Escribe unas palabras y pulsa Retorno para abrir un chat o ejecutar un comando. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Tapez quelques mots et appuyez sur Retour pour ouvrir un chat ou lancer une commande. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Введите несколько слов и нажмите Return, чтобы открыть чат или выполнить команду. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens or closes Search (⌘K)",
+        "de": "Öffnet oder schließt die Suche (⌘K)",
+        "es": "Abre o cierra Buscar (⌘K)",
+        "fr": "Ouvre ou ferme Rechercher (⌘K)",
+        "ru": "Открывает или закрывает поиск (⌘K)"
+      },
+      "holdAction": {
+        "en": "Finds text in the open chat (⌘F)",
+        "de": "Sucht im offenen Chat (⌘F)",
+        "es": "Busca en el chat abierto (⌘F)",
+        "fr": "Cherche dans le chat ouvert (⌘F)",
+        "ru": "Ищет в открытом чате (⌘F)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 40,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 3,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "voice",
+      "title": {
+        "en": "Voice",
+        "de": "Sprachchat",
+        "es": "Voz",
+        "fr": "Mode vocal",
+        "ru": "Голос"
+      },
+      "summary": {
+        "en": "Starts or stops a voice chat",
+        "de": "Startet oder beendet einen Sprachchat",
+        "es": "Inicia o detiene el chat de voz",
+        "fr": "Lance ou arrête le chat vocal",
+        "ru": "Начинает или завершает голосовой чат"
+      },
+      "details": {
+        "en": "Talk with ChatGPT out loud; macOS asks once whether ChatGPT may use the microphone. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Mit ChatGPT sprechen; macOS fragt einmal, ob ChatGPT das Mikrofon verwenden darf. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Habla con ChatGPT en voz alta; macOS pregunta una vez si ChatGPT puede usar el micrófono. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Parlez à ChatGPT à voix haute ; macOS demande une fois si ChatGPT peut utiliser le micro. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Разговор с ChatGPT вслух; macOS один раз спросит, можно ли ChatGPT пользоваться микрофоном. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Starts or stops a voice chat (⌃⇧V)",
+        "de": "Startet oder beendet einen Sprachchat (⌃⇧V)",
+        "es": "Inicia o detiene el chat de voz (⌃⇧V)",
+        "fr": "Lance ou arrête le chat vocal (⌃⇧V)",
+        "ru": "Начинает или завершает голосовой чат (⌃⇧V)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "waveform"
+          }
+        },
+        "color": "#40C8E0",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 9,
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "model",
+      "title": {
+        "en": "Model",
+        "de": "Modell",
+        "es": "Modelo",
+        "fr": "Modèle",
+        "ru": "Модель"
+      },
+      "summary": {
+        "en": "Opens the model picker",
+        "de": "Öffnet die Modellauswahl",
+        "es": "Abre el selector de modelos",
+        "fr": "Ouvre le sélecteur de modèle",
+        "ru": "Открывает выбор модели"
+      },
+      "details": {
+        "en": "Pick the model for the next message and, where offered, its reasoning effort. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Das Modell für die nächste Nachricht wählen und, wo angeboten, den Denkaufwand. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Elige el modelo del próximo mensaje y, si se ofrece, su esfuerzo de razonamiento. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Choisissez le modèle du prochain message et, s’il est proposé, l’effort de raisonnement. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Выбор модели для следующего сообщения и, где есть, уровня рассуждений. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the model picker (⌃⇧M)",
+        "de": "Öffnet die Modellauswahl (⌃⇧M)",
+        "es": "Abre el selector de modelos (⌃⇧M)",
+        "fr": "Ouvre le sélecteur de modèle (⌃⇧M)",
+        "ru": "Открывает выбор модели (⌃⇧M)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sparkles"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 46,
+              "modifiers": [
+                "control",
+                "shift"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sidebar",
+      "title": {
+        "en": "Sidebar",
+        "de": "Seitenleiste",
+        "es": "Barra lateral",
+        "fr": "Barre latérale",
+        "ru": "Боковая панель"
+      },
+      "summary": {
+        "en": "Shows or hides the sidebar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или скрывает боковую панель"
+      },
+      "details": {
+        "en": "Your chats, projects and the ChatGPT | Codex switch live there; hide it for a wider chat. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Dort sind deine Chats, Projekte und der Wechsel ChatGPT | Codex; ausgeblendet wird der Chat breiter. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Ahí están tus chats, proyectos y el selector ChatGPT | Codex; ocúltala para ensanchar el chat. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Vos chats, vos projets et le sélecteur ChatGPT | Codex s’y trouvent ; masquez-la pour élargir le chat. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Там ваши чаты, проекты и переключатель ChatGPT | Codex; без неё чат шире. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Shows or hides the sidebar (⌘B)",
+        "de": "Blendet die Seitenleiste ein oder aus (⌘B)",
+        "es": "Muestra u oculta la barra lateral (⌘B)",
+        "fr": "Affiche ou masque la barre latérale (⌘B)",
+        "ru": "Показывает или скрывает боковую панель (⌘B)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sidebar.left"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 11,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "review",
+      "title": {
+        "en": "Review",
+        "de": "Prüfung",
+        "es": "Revisión",
+        "fr": "Révision",
+        "ru": "Проверка"
+      },
+      "summary": {
+        "en": "Shows or hides Review for the current chat",
+        "de": "Blendet die Prüfung für den aktuellen Chat ein oder aus",
+        "es": "Muestra u oculta Revisión en el chat actual",
+        "fr": "Affiche ou masque la révision du chat actuel",
+        "ru": "Показывает или скрывает панель проверки текущего чата"
+      },
+      "details": {
+        "en": "The changes in a Codex chat’s project, file by file, beside the chat. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Die Änderungen im Projekt eines Codex-Chats, Datei für Datei, neben dem Chat. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Los cambios del proyecto de un chat de Codex, archivo por archivo, junto al chat. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Les modifications du projet d’un chat Codex, fichier par fichier, à côté du chat. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Изменения в проекте чата Codex, по файлам, рядом с чатом. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Shows or hides Review (⌥⌘B)",
+        "de": "Blendet die Prüfung ein oder aus (⌥⌘B)",
+        "es": "Muestra u oculta Revisión (⌥⌘B)",
+        "fr": "Affiche ou masque la révision (⌥⌘B)",
+        "ru": "Показывает или скрывает панель проверки (⌥⌘B)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "plus.forwardslash.minus"
+          }
+        },
+        "color": "#5E5CE6",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 11,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "previous",
+      "title": {
+        "en": "Previous Chat",
+        "de": "Vorheriger Chat",
+        "es": "Chat anterior",
+        "fr": "Chat précédent",
+        "ru": "Предыдущий чат"
+      },
+      "summary": {
+        "en": "Opens the chat above in the sidebar",
+        "de": "Öffnet den Chat darüber in der Seitenleiste",
+        "es": "Abre el chat de arriba en la barra lateral",
+        "fr": "Ouvre le chat au-dessus dans la barre latérale",
+        "ru": "Открывает чат выше в боковой панели"
+      },
+      "details": {
+        "en": "Goes up the sidebar one chat at a time; in a panel with tabs it goes round the tabs. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Geht in der Seitenleiste Chat für Chat nach oben; in einem Bereich mit Tabs wechselt es die Tabs. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Sube por la barra lateral chat a chat; en un panel con pestañas cambia de pestaña. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Remonte la barre latérale chat par chat ; dans un panneau à onglets, passe d’un onglet à l’autre. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Идёт вверх по боковой панели, чат за чатом; в панели с вкладками переключает вкладки. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the previous chat (⌥⌘←)",
+        "de": "Öffnet den vorherigen Chat (⌥⌘←)",
+        "es": "Abre el chat anterior (⌥⌘←)",
+        "fr": "Ouvre le chat précédent (⌥⌘←)",
+        "ru": "Открывает предыдущий чат (⌥⌘←)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.up"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 123,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "next",
+      "title": {
+        "en": "Next Chat",
+        "de": "Nächster Chat",
+        "es": "Siguiente chat",
+        "fr": "Chat suivant",
+        "ru": "Следующий чат"
+      },
+      "summary": {
+        "en": "Opens the chat below in the sidebar",
+        "de": "Öffnet den Chat darunter in der Seitenleiste",
+        "es": "Abre el chat de abajo en la barra lateral",
+        "fr": "Ouvre le chat en dessous dans la barre latérale",
+        "ru": "Открывает чат ниже в боковой панели"
+      },
+      "details": {
+        "en": "Goes down the sidebar one chat at a time; in a panel with tabs it goes round the tabs. Works while ChatGPT is in front, with its default shortcuts.",
+        "de": "Geht in der Seitenleiste Chat für Chat nach unten; in einem Bereich mit Tabs wechselt es die Tabs. Funktioniert, wenn ChatGPT vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Baja por la barra lateral chat a chat; en un panel con pestañas cambia de pestaña. Funciona cuando ChatGPT está delante, con sus atajos predeterminados.",
+        "fr": "Descend la barre latérale chat par chat ; dans un panneau à onglets, passe d’un onglet à l’autre. Fonctionne quand ChatGPT est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Идёт вниз по боковой панели, чат за чатом; в панели с вкладками переключает вкладки. Работает, когда ChatGPT на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the next chat (⌥⌘→)",
+        "de": "Öffnet den nächsten Chat (⌥⌘→)",
+        "es": "Abre el siguiente chat (⌥⌘→)",
+        "fr": "Ouvre le chat suivant (⌥⌘→)",
+        "ru": "Открывает следующий чат (⌥⌘→)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.down"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 124,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "unread",
+      "title": {
+        "en": "Unread Chats",
+        "de": "Ungelesene Chats",
+        "es": "Chats no leídos",
+        "fr": "Chats non lus",
+        "ru": "Непрочитанные чаты"
+      },
+      "summary": {
+        "en": "ChatGPT’s badge on your phone: how many chats are unread",
+        "de": "Das ChatGPT-Kennzeichen auf dem Telefon: wie viele Chats Neues haben",
+        "es": "El globo de ChatGPT en el teléfono: cuántos chats tienen novedades",
+        "fr": "La pastille de ChatGPT sur le téléphone : combien de chats ont du nouveau",
+        "ru": "Наклейка ChatGPT на телефоне: в скольких чатах есть новое"
+      },
+      "details": {
+        "en": "The number on ChatGPT’s Dock icon: chats with unread replies, plus new scheduled task runs. A dash means ChatGPT is closed. The long press needs it in front, with default shortcuts.",
+        "de": "Die Zahl am Dock-Symbol von ChatGPT: Chats mit ungelesenen Antworten und neue Läufe geplanter Aufgaben. Ein Strich heißt: ChatGPT ist geschlossen. Halten braucht es vorne, mit den Standard-Tastenkürzeln.",
+        "es": "El número del icono de ChatGPT en el Dock: chats con respuestas sin leer y nuevas ejecuciones de tareas programadas. Una raya: ChatGPT está cerrado. Mantener pulsado lo requiere delante, con los atajos predeterminados.",
+        "fr": "Le nombre sur l’icône de ChatGPT dans le Dock : chats aux réponses non lues et nouvelles exécutions de tâches planifiées. Un tiret : ChatGPT est fermé. L’appui long agit au premier plan, avec les raccourcis par défaut.",
+        "ru": "Число с наклейки на значке ChatGPT в Dock: чаты с непрочитанными ответами и новые запуски запланированных задач. Прочерк — ChatGPT закрыт. Удержанию он нужен на переднем плане, со стандартными сочетаниями."
+      },
+      "tapAction": {
+        "en": "Brings ChatGPT to the front",
+        "de": "Holt ChatGPT nach vorne",
+        "es": "Trae ChatGPT al frente",
+        "fr": "Met ChatGPT au premier plan",
+        "ru": "Выводит ChatGPT на передний план"
+      },
+      "holdAction": {
+        "en": "Opens the next chat needing attention (⌥⌘A)",
+        "de": "Öffnet den nächsten Chat mit Handlungsbedarf (⌥⌘A)",
+        "es": "Abre el siguiente chat que requiere atención (⌥⌘A)",
+        "fr": "Ouvre le chat suivant requérant votre attention (⌥⌘A)",
+        "ru": "Открывает следующий чат, требующий внимания (⌥⌘A)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "bubble.left.and.bubble.right"
+          }
+        },
+        "color": "#10A37F",
+        "command": {
+          "launchApp": {
+            "bundleIdentifier": "com.openai.codex"
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 0,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        },
+        "startupScript": "@file:unread/startup.zsh",
+        "svgFace": {
+          "source": "@file:unread/rest.svg"
+        }
+      },
+      "demoFace": {
+        "source": "@file:unread/demo.svg"
+      }
+    },
+    {
+      "id": "settings",
+      "title": {
+        "en": "Settings",
+        "de": "Einstellungen",
+        "es": "Configuración",
+        "fr": "Paramètres",
+        "ru": "Настройки"
+      },
+      "summary": {
+        "en": "Opens ChatGPT’s settings",
+        "de": "Öffnet die Einstellungen von ChatGPT",
+        "es": "Abre la configuración de ChatGPT",
+        "fr": "Ouvre les paramètres de ChatGPT",
+        "ru": "Открывает настройки ChatGPT"
+      },
+      "details": {
+        "en": "Account, personalization, voice, keyboard shortcuts, Codex and more. Works even with ChatGPT in the background, as long as it is open.",
+        "de": "Konto, Personalisierung, Stimme, Tastaturkürzel, Codex und mehr. Klappt auch mit ChatGPT im Hintergrund, solange es geöffnet ist.",
+        "es": "Cuenta, personalización, voz, atajos de teclado, Codex y más. Funciona aunque ChatGPT esté en segundo plano, siempre que esté abierto.",
+        "fr": "Compte, personnalisation, mode vocal, raccourcis clavier, Codex et plus. Fonctionne même avec ChatGPT en arrière-plan, tant qu’il est ouvert.",
+        "ru": "Учётная запись, персонализация, голос, сочетания клавиш, Codex и другое. Работает, даже когда ChatGPT в фоне, если он открыт."
+      },
+      "tapAction": {
+        "en": "Opens the settings",
+        "de": "Öffnet die Einstellungen",
+        "es": "Abre la configuración",
+        "fr": "Ouvre les paramètres",
+        "ru": "Открывает настройки"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "gearshape"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=settings\n@file:link.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "ChatGPT",
+        "de": "ChatGPT",
+        "es": "ChatGPT",
+        "fr": "ChatGPT",
+        "ru": "ChatGPT"
+      },
+      "summary": {
+        "en": "Chat, Work and Codex at hand from your phone",
+        "de": "Chat, Work und Codex griffbereit vom Telefon aus",
+        "es": "Chat, Work y Codex a mano desde el teléfono",
+        "fr": "Chat, Work et Codex à portée de main depuis le téléphone",
+        "ru": "«Чат», «Работа» и Codex под рукой с телефона"
+      },
+      "details": {
+        "en": "New Chat, Work, Codex, Settings and Codex Limits work even with ChatGPT in the background; the other buttons need it in front, with its default shortcuts.",
+        "de": "Neuer Chat, Work, Codex, Einstellungen und Codex-Limits klappen auch mit ChatGPT im Hintergrund; die übrigen Tasten brauchen es vorne, mit den Standard-Tastenkürzeln.",
+        "es": "Nuevo chat, Work, Codex, Configuración y Límites de Codex funcionan aunque ChatGPT esté en segundo plano; los demás botones lo necesitan delante, con sus atajos predeterminados.",
+        "fr": "Nouveau chat, Work, Codex, Paramètres et Limites Codex fonctionnent même avec ChatGPT en arrière-plan ; les autres boutons quand il est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "«Новый чат», «Работа», Codex, «Настройки» и «Лимиты Codex» работают, даже когда ChatGPT в фоне; остальным кнопкам он нужен на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "new-chat",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "work",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "codex",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "search",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "voice",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "model",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "sidebar",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "review",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "previous",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "next",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "unread",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "settings",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "widget": "codex-limits",
+          "row": 3,
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

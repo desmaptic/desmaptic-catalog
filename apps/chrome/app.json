@@ -1,0 +1,600 @@
+{
+  "id": "chrome",
+  "revision": 4,
+  "name": "Google Chrome",
+  "bundleIds": ["com.google.Chrome"],
+  "category": "browsers",
+  "buttons": [
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Volver", "fr": "Retour", "ru": "Назад"},
+      "summary": {
+        "en": "Goes back a page, even with Chrome in the background",
+        "de": "Eine Seite zurück, auch wenn Chrome im Hintergrund ist",
+        "es": "Vuelve a la página anterior, aunque Chrome esté en segundo plano",
+        "fr": "Revient à la page précédente, même avec Chrome en arrière-plan",
+        "ru": "На страницу назад, даже когда Chrome в фоне"
+      },
+      "details": {
+        "en": "Like the ← button in Chrome’s toolbar, for the current tab of the front Chrome window — even while another app is in front.",
+        "de": "Wie der Pfeil ← in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters – auch wenn eine andere App vorne ist.",
+        "es": "Como el botón ← de la barra de Chrome, en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app.",
+        "fr": "Comme le bouton ← de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant.",
+        "ru": "Как кнопка ← на панели Chrome — для текущей вкладки переднего окна Chrome, даже когда впереди другое приложение."
+      },
+      "tapAction": {
+        "en": "Goes back a page",
+        "de": "Geht eine Seite zurück",
+        "es": "Vuelve a la página anterior",
+        "fr": "Revient à la page précédente",
+        "ru": "Возвращает на предыдущую страницу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=back\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "forward",
+      "title": {"en": "Forward", "de": "Vorwärts", "es": "Adelante", "fr": "Avancer", "ru": "Вперёд"},
+      "summary": {
+        "en": "Goes forward a page, even with Chrome in the background",
+        "de": "Eine Seite vorwärts, auch wenn Chrome im Hintergrund ist",
+        "es": "Avanza a la página siguiente, aunque Chrome esté en segundo plano",
+        "fr": "Passe à la page suivante, même avec Chrome en arrière-plan",
+        "ru": "На страницу вперёд, даже когда Chrome в фоне"
+      },
+      "details": {
+        "en": "Like the → button in Chrome’s toolbar, for the current tab of the front Chrome window — even while another app is in front.",
+        "de": "Wie der Pfeil → in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters – auch wenn eine andere App vorne ist.",
+        "es": "Como el botón → de la barra de Chrome, en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app.",
+        "fr": "Comme le bouton → de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant.",
+        "ru": "Как кнопка → на панели Chrome — для текущей вкладки переднего окна Chrome, даже когда впереди другое приложение."
+      },
+      "tapAction": {
+        "en": "Goes forward a page",
+        "de": "Geht eine Seite vorwärts",
+        "es": "Avanza a la página siguiente",
+        "fr": "Passe à la page suivante",
+        "ru": "Переходит на следующую страницу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.forward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=forward\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "reload",
+      "title": {"en": "Reload", "de": "Neu laden", "es": "Volver a cargar", "fr": "Actualiser", "ru": "Обновить"},
+      "summary": {
+        "en": "Reloads the page; hold to force a reload that skips the cache",
+        "de": "Lädt die Seite neu; Halten erzwingt das Neuladen ohne Cache",
+        "es": "Vuelve a cargar la página; mantén pulsado para forzar la recarga sin caché",
+        "fr": "Actualise la page ; maintenez pour forcer l’actualisation sans cache",
+        "ru": "Обновляет страницу; удержание — принудительно, без кеша"
+      },
+      "details": {
+        "en": "A tap reaches the current tab of the front Chrome window even while another app is in front; a hold works while Chrome is in front.",
+        "de": "Tippen wirkt auf den aktuellen Tab des vorderen Chrome-Fensters, auch wenn eine andere App vorne ist; Halten funktioniert, wenn Chrome vorne ist.",
+        "es": "El toque actúa en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app; mantener pulsado funciona cuando Chrome está delante.",
+        "fr": "Le toucher agit sur l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant ; l’appui long fonctionne quand Chrome est au premier plan.",
+        "ru": "Нажатие доходит до текущей вкладки переднего окна Chrome, даже когда впереди другое приложение; удержание работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Reloads the page",
+        "de": "Lädt die Seite neu",
+        "es": "Vuelve a cargar la página",
+        "fr": "Actualise la page",
+        "ru": "Обновляет страницу"
+      },
+      "holdAction": {
+        "en": "Forces a reload, skipping the cache (⇧⌘R)",
+        "de": "Erzwingt das Neuladen ohne Cache (⇧⌘R)",
+        "es": "Fuerza la recarga sin la caché (⇧⌘R)",
+        "fr": "Force l’actualisation sans le cache (⇧⌘R)",
+        "ru": "Принудительно обновляет без кеша (⇧⌘R)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=reload\n@file:action.zsh"}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "Opens a new tab and brings Chrome forward",
+        "de": "Öffnet einen neuen Tab und holt Chrome nach vorn",
+        "es": "Abre una pestaña nueva y trae Chrome al frente",
+        "fr": "Ouvre un nouvel onglet et met Chrome au premier plan",
+        "ru": "Открывает новую вкладку и выводит Chrome вперёд"
+      },
+      "details": {
+        "en": "In the front Chrome window, or in a new one if none is open. Chrome comes forward, ready for an address or a search.",
+        "de": "Im vorderen Chrome-Fenster oder in einem neuen, wenn keins offen ist. Chrome kommt nach vorn, bereit für eine Adresse oder eine Suche.",
+        "es": "En la ventana de Chrome que está delante, o en una nueva si no hay ninguna. Chrome pasa al frente, listo para una dirección o una búsqueda.",
+        "fr": "Dans la fenêtre Chrome au premier plan, ou dans une nouvelle si aucune n’est ouverte. Chrome passe devant, prêt pour une adresse ou une recherche.",
+        "ru": "В переднем окне Chrome или в новом, если открытых нет. Chrome выходит вперёд — можно сразу вводить адрес или запрос."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=new-tab\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {"en": "Previous Tab", "de": "Vorheriger Tab", "es": "Pestaña anterior", "fr": "Onglet précédent", "ru": "Предыдущая вкладка"},
+      "summary": {
+        "en": "Switches to the previous tab (⌥⌘←)",
+        "de": "Wechselt zum vorherigen Tab (⌥⌘←)",
+        "es": "Pasa a la pestaña anterior (⌥⌘←)",
+        "fr": "Passe à l’onglet précédent (⌥⌘←)",
+        "ru": "Переключает на предыдущую вкладку (⌥⌘←)"
+      },
+      "details": {
+        "en": "The tab just before the current one in the tab strip. Works while Chrome is in front.",
+        "de": "Der Tab direkt vor dem aktuellen in der Tableiste. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La pestaña justo antes de la actual en la barra de pestañas. Funciona cuando Chrome está delante.",
+        "fr": "L’onglet juste avant l’onglet actif dans la barre d’onglets. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Вкладка перед текущей в полосе вкладок. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches to the previous tab",
+        "de": "Wechselt zum vorherigen Tab",
+        "es": "Pasa a la pestaña anterior",
+        "fr": "Passe à l’onglet précédent",
+        "ru": "Переключает на предыдущую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.left.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 123, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the next tab (⌥⌘→)",
+        "de": "Wechselt zum nächsten Tab (⌥⌘→)",
+        "es": "Pasa a la pestaña siguiente (⌥⌘→)",
+        "fr": "Passe à l’onglet suivant (⌥⌘→)",
+        "ru": "Переключает на следующую вкладку (⌥⌘→)"
+      },
+      "details": {
+        "en": "The tab just after the current one in the tab strip. Works while Chrome is in front.",
+        "de": "Der Tab direkt nach dem aktuellen in der Tableiste. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La pestaña justo después de la actual en la barra de pestañas. Funciona cuando Chrome está delante.",
+        "fr": "L’onglet juste après l’onglet actif dans la barre d’onglets. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Вкладка после текущей в полосе вкладок. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches to the next tab",
+        "de": "Wechselt zum nächsten Tab",
+        "es": "Pasa a la pestaña siguiente",
+        "fr": "Passe à l’onglet suivant",
+        "ru": "Переключает на следующую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.right.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 124, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "reopen-tab",
+      "title": {"en": "Reopen Tab", "de": "Tab wieder öffnen", "es": "Reabrir pestaña", "fr": "Rouvrir l’onglet", "ru": "Вернуть вкладку"},
+      "summary": {
+        "en": "Reopens the tab you closed last (⇧⌘T)",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder (⇧⌘T)",
+        "es": "Vuelve a abrir la última pestaña cerrada (⇧⌘T)",
+        "fr": "Rouvre le dernier onglet fermé (⇧⌘T)",
+        "ru": "Открывает последнюю закрытую вкладку (⇧⌘T)"
+      },
+      "details": {
+        "en": "Brings back the last closed tab or window with its history; tap again for the one before. Works while Chrome is in front.",
+        "de": "Holt den zuletzt geschlossenen Tab oder das Fenster samt Verlauf zurück; erneut tippen für den davor. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Recupera la última pestaña o ventana cerrada con su historial; toca otra vez para la anterior. Funciona cuando Chrome está delante.",
+        "fr": "Rétablit le dernier onglet ou la dernière fenêtre fermés avec leur historique ; touchez encore pour le précédent. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Возвращает последнюю закрытую вкладку или окно вместе с историей; нажмите ещё раз — вернётся предыдущая. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Reopens the last closed tab",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder",
+        "es": "Vuelve a abrir la última pestaña cerrada",
+        "fr": "Rouvre le dernier onglet fermé",
+        "ru": "Открывает последнюю закрытую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.uturn.backward.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "search-tabs",
+      "title": {"en": "Search Tabs", "de": "Tabs suchen", "es": "Buscar pestañas", "fr": "Recherche d’onglets", "ru": "Поиск по вкладкам"},
+      "summary": {
+        "en": "Finds an open tab by its title (⇧⌘A)",
+        "de": "Findet einen offenen Tab über den Titel (⇧⌘A)",
+        "es": "Encuentra una pestaña abierta por su título (⇧⌘A)",
+        "fr": "Trouve un onglet ouvert par son titre (⇧⌘A)",
+        "ru": "Находит открытую вкладку по названию (⇧⌘A)"
+      },
+      "details": {
+        "en": "Type part of a tab’s title or address and press Return to jump to it; recently closed tabs are listed too. Works while Chrome is in front.",
+        "de": "Einen Teil des Titels oder der Adresse tippen und mit Return hinspringen; kürzlich geschlossene Tabs stehen auch in der Liste. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Escribe parte del título o la dirección y pulsa Retorno para ir a ella; también aparecen las pestañas cerradas hace poco. Funciona cuando Chrome está delante.",
+        "fr": "Tapez une partie du titre ou de l’adresse, puis Retour pour y aller ; les onglets fermés récemment sont aussi listés. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Наберите часть названия или адреса и нажмите Return, чтобы перейти; недавно закрытые вкладки тоже в списке. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the tab search",
+        "de": "Öffnet die Tabsuche",
+        "es": "Abre la búsqueda de pestañas",
+        "fr": "Ouvre la recherche d’onglets",
+        "ru": "Открывает поиск по вкладкам"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.and.text.magnifyingglass"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 0, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "find",
+      "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
+      "summary": {
+        "en": "Finds text on the page (⌘F)",
+        "de": "Sucht Text auf der Seite (⌘F)",
+        "es": "Busca texto en la página (⌘F)",
+        "fr": "Cherche du texte dans la page (⌘F)",
+        "ru": "Ищет текст на странице (⌘F)"
+      },
+      "details": {
+        "en": "Type a word to highlight every match on the page; Return goes to the next one. Works while Chrome is in front.",
+        "de": "Ein Wort tippen, um alle Treffer auf der Seite zu markieren; Return springt zum nächsten. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Escribe una palabra para resaltar todas las coincidencias de la página; Retorno lleva a la siguiente. Funciona cuando Chrome está delante.",
+        "fr": "Tapez un mot pour surligner toutes les occurrences dans la page ; Retour passe à la suivante. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Наберите слово — все совпадения на странице подсветятся; Return переходит к следующему. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the find bar",
+        "de": "Öffnet die Suchleiste",
+        "es": "Abre la barra de búsqueda",
+        "fr": "Ouvre la barre de recherche",
+        "ru": "Открывает панель поиска"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "text.magnifyingglass"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "bookmark",
+      "title": {"en": "Add Bookmark", "de": "Lesezeichen erstellen", "es": "Añadir a marcadores", "fr": "Ajouter aux favoris", "ru": "В закладки"},
+      "summary": {
+        "en": "Bookmarks the current page (⌘D)",
+        "de": "Erstellt ein Lesezeichen für die Seite (⌘D)",
+        "es": "Guarda la página en marcadores (⌘D)",
+        "fr": "Ajoute la page aux favoris (⌘D)",
+        "ru": "Добавляет страницу в закладки (⌘D)"
+      },
+      "details": {
+        "en": "Saves the page at once; the bubble that opens lets you rename it or pick a folder. On a page already bookmarked, only the bubble opens. Works while Chrome is in front.",
+        "de": "Speichert die Seite sofort; in der Blase lassen sich Name und Ordner ändern. Hat die Seite schon ein Lesezeichen, öffnet sich nur die Blase. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Guarda la página al momento; en la burbuja puedes cambiar el nombre o la carpeta. Si la página ya está en marcadores, solo se abre la burbuja. Funciona cuando Chrome está delante.",
+        "fr": "Enregistre la page aussitôt ; la bulle permet de la renommer ou de choisir un dossier. Si la page est déjà en favori, seule la bulle s’ouvre. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Сохраняет страницу сразу; в появившемся окошке можно поменять название или папку. Если страница уже в закладках, откроется только окошко. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Bookmarks the page",
+        "de": "Erstellt ein Lesezeichen",
+        "es": "Guarda la página en marcadores",
+        "fr": "Ajoute la page aux favoris",
+        "ru": "Добавляет страницу в закладки"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "star"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 2, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "bookmarks-bar",
+      "title": {"en": "Bookmarks Bar", "de": "Lesezeichen-Leiste", "es": "Barra de marcadores", "fr": "Barre de favoris", "ru": "Панель закладок"},
+      "summary": {
+        "en": "Shows or hides the bookmarks bar (⇧⌘B)",
+        "de": "Blendet die Lesezeichenleiste ein oder aus (⇧⌘B)",
+        "es": "Muestra u oculta la barra de marcadores (⇧⌘B)",
+        "fr": "Affiche ou masque la barre de favoris (⇧⌘B)",
+        "ru": "Показывает или прячет панель закладок (⇧⌘B)"
+      },
+      "details": {
+        "en": "The row of your bookmarks under the address bar — Always Show Bookmarks Bar in Chrome’s View menu. Works while Chrome is in front.",
+        "de": "Die Reihe der Lesezeichen unter der Adressleiste – „Lesezeichenleiste immer anzeigen“ im Chrome-Menü „Darstellung“. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La fila de marcadores bajo la barra de direcciones: «Mostrar siempre la barra de marcadores» en el menú Visualización de Chrome. Funciona cuando Chrome está delante.",
+        "fr": "La rangée de vos favoris sous la barre d’adresse — « Toujours afficher la barre de favoris » dans le menu Présentation de Chrome. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Ряд закладок под адресной строкой — «Всегда показывать панель закладок» в меню «Вид» Chrome. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the bookmarks bar",
+        "de": "Blendet die Lesezeichenleiste ein oder aus",
+        "es": "Muestra u oculta la barra de marcadores",
+        "fr": "Affiche ou masque la barre de favoris",
+        "ru": "Показывает или прячет панель закладок"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.topthird.inset.filled"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 11, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "dev-tools",
+      "title": {"en": "DevTools", "de": "DevTools", "es": "DevTools", "fr": "DevTools", "ru": "DevTools"},
+      "summary": {
+        "en": "Opens Developer Tools (⌥⌘I); hold for the Console",
+        "de": "Öffnet die Entwicklertools (⌥⌘I); Halten öffnet die Konsole",
+        "es": "Abre DevTools (⌥⌘I); mantén pulsado para la consola",
+        "fr": "Ouvre les outils pour les développeurs (⌥⌘I) ; maintenez pour la console",
+        "ru": "Открывает инструменты разработчика (⌥⌘I); удержание — консоль"
+      },
+      "details": {
+        "en": "Chrome’s Developer Tools for the current tab — Elements, Console, Network and the rest. Works while Chrome is in front.",
+        "de": "Die Entwicklertools von Chrome für den aktuellen Tab – Elemente, Konsole, Netzwerk und mehr. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Las DevTools de Chrome para la pestaña actual: Elementos, Consola, Red y el resto. Funciona cuando Chrome está delante.",
+        "fr": "Les outils pour les développeurs de Chrome pour l’onglet actif : Éléments, Console, Réseau et le reste. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Инструменты разработчика Chrome для текущей вкладки: «Элементы», «Консоль», «Сеть» и остальное. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens or closes Developer Tools",
+        "de": "Öffnet oder schließt die Entwicklertools",
+        "es": "Abre o cierra DevTools",
+        "fr": "Ouvre ou ferme les outils pour les développeurs",
+        "ru": "Открывает или закрывает инструменты разработчика"
+      },
+      "holdAction": {
+        "en": "Opens or closes the JavaScript Console (⌥⌘J)",
+        "de": "Öffnet oder schließt die JavaScript-Konsole (⌥⌘J)",
+        "es": "Abre o cierra la consola JavaScript (⌥⌘J)",
+        "fr": "Ouvre ou ferme la console JavaScript (⌥⌘J)",
+        "ru": "Открывает или закрывает консоль JavaScript (⌥⌘J)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.left.forwardslash.chevron.right"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 38, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {"en": "New Window", "de": "Neues Fenster", "es": "Nueva ventana", "fr": "Nouvelle fenêtre", "ru": "Новое окно"},
+      "summary": {
+        "en": "Opens a new Chrome window and brings Chrome forward",
+        "de": "Öffnet ein neues Chrome-Fenster und holt Chrome nach vorn",
+        "es": "Abre una ventana nueva de Chrome y trae Chrome al frente",
+        "fr": "Ouvre une nouvelle fenêtre Chrome et met Chrome au premier plan",
+        "ru": "Открывает новое окно Chrome и выводит Chrome вперёд"
+      },
+      "details": {
+        "en": "Works even while another app is in front: Chrome comes forward with the new window, ready for an address or a search.",
+        "de": "Klappt auch, wenn eine andere App vorne ist: Chrome kommt mit dem neuen Fenster nach vorn, bereit für eine Adresse oder eine Suche.",
+        "es": "Funciona aunque haya otra app delante: Chrome pasa al frente con la ventana nueva, listo para una dirección o una búsqueda.",
+        "fr": "Fonctionne même quand une autre app est devant : Chrome passe au premier plan avec la nouvelle fenêtre, prêt pour une adresse ou une recherche.",
+        "ru": "Работает, даже когда впереди другое приложение: Chrome выходит вперёд с новым окном — можно сразу вводить адрес или запрос."
+      },
+      "tapAction": {
+        "en": "Opens a new window",
+        "de": "Öffnet ein neues Fenster",
+        "es": "Abre una ventana nueva",
+        "fr": "Ouvre une nouvelle fenêtre",
+        "ru": "Открывает новое окно"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "macwindow.badge.plus"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=new-window\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "incognito",
+      "title": {"en": "Incognito", "de": "Inkognito", "es": "Incógnito", "fr": "Navigation privée", "ru": "Инкогнито"},
+      "summary": {
+        "en": "Opens a new Incognito window",
+        "de": "Öffnet ein neues Inkognitofenster",
+        "es": "Abre una ventana nueva de Incógnito",
+        "fr": "Ouvre une nouvelle fenêtre de navigation privée",
+        "ru": "Открывает новое окно в режиме инкогнито"
+      },
+      "details": {
+        "en": "Chrome forgets the history, cookies and site data of Incognito windows once you close them all. Chrome comes forward, even from another app.",
+        "de": "Chrome vergisst Verlauf, Cookies und Websitedaten der Inkognitofenster, sobald alle geschlossen sind. Chrome kommt nach vorn, auch aus einer anderen App.",
+        "es": "Chrome olvida el historial, las cookies y los datos de sitios de las ventanas de Incógnito al cerrarlas todas. Chrome pasa al frente, aunque haya otra app delante.",
+        "fr": "Chrome oublie l’historique, les cookies et les données de site des fenêtres de navigation privée une fois toutes fermées. Chrome passe au premier plan, même depuis une autre app.",
+        "ru": "Chrome забывает историю, cookie и данные сайтов окон инкогнито, когда все они закрыты. Chrome выходит вперёд, даже из другого приложения."
+      },
+      "tapAction": {
+        "en": "Opens an Incognito window",
+        "de": "Öffnet ein Inkognitofenster",
+        "es": "Abre una ventana de Incógnito",
+        "fr": "Ouvre une fenêtre de navigation privée",
+        "ru": "Открывает окно инкогнито"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "eyeglasses"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=incognito\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "history",
+      "title": {"en": "History", "de": "Verlauf", "es": "Historial", "fr": "Historique", "ru": "История"},
+      "summary": {
+        "en": "Opens your browsing history (⌘Y)",
+        "de": "Öffnet den Browserverlauf (⌘Y)",
+        "es": "Abre el historial de navegación (⌘Y)",
+        "fr": "Ouvre l’historique de navigation (⌘Y)",
+        "ru": "Открывает историю браузера (⌘Y)"
+      },
+      "details": {
+        "en": "The History page, with the sites you visited and a search box; if it’s already open, Chrome switches to it. Works while Chrome is in front.",
+        "de": "Die Seite „Verlauf“ mit den besuchten Websites und einem Suchfeld; ist sie schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La página Historial, con los sitios visitados y un buscador; si ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
+        "fr": "La page Historique, avec les sites visités et un champ de recherche ; si elle est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Страница «История» с посещёнными сайтами и поиском; если она уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens History",
+        "de": "Öffnet den Verlauf",
+        "es": "Abre el historial",
+        "fr": "Ouvre l’historique",
+        "ru": "Открывает историю"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "clock.arrow.circlepath"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 16, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "downloads",
+      "title": {"en": "Downloads", "de": "Downloads", "es": "Descargas", "fr": "Fichiers téléchargés", "ru": "Скачанные файлы"},
+      "summary": {
+        "en": "Opens the list of downloads (⇧⌘J)",
+        "de": "Öffnet die Liste der Downloads (⇧⌘J)",
+        "es": "Abre la lista de descargas (⇧⌘J)",
+        "fr": "Ouvre la liste des téléchargements (⇧⌘J)",
+        "ru": "Открывает список скачанных файлов (⇧⌘J)"
+      },
+      "details": {
+        "en": "Everything Chrome downloaded, with search and Show in Finder; if the page is already open, Chrome switches to it. Works while Chrome is in front.",
+        "de": "Alles, was Chrome heruntergeladen hat, mit Suche und „Im Finder anzeigen“; ist die Seite schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Todo lo que Chrome ha descargado, con búsqueda y «Mostrar en Finder»; si la página ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
+        "fr": "Tout ce que Chrome a téléchargé, avec recherche et « Afficher dans le Finder » ; si la page est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Всё, что скачал Chrome, с поиском и «Показать в Finder»; если страница уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Downloads",
+        "de": "Öffnet die Downloads",
+        "es": "Abre las descargas",
+        "fr": "Ouvre les téléchargements",
+        "ru": "Открывает скачанные файлы"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.down.circle"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 38, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "copy-url",
+      "title": {"en": "Copy URL", "de": "URL kopieren", "es": "Copiar URL", "fr": "Copier l’URL", "ru": "Скопировать URL"},
+      "summary": {
+        "en": "Copies the page’s address; hold for a Markdown link",
+        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
+        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
+        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
+        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+      },
+      "details": {
+        "en": "The address of the current tab of the front Chrome window, ready to paste. Works even while another app is in front.",
+        "de": "Die Adresse des aktuellen Tabs im vorderen Chrome-Fenster, bereit zum Einsetzen. Funktioniert auch, wenn eine andere App vorne ist.",
+        "es": "La dirección de la pestaña actual de la ventana principal de Chrome, lista para pegar. Funciona aunque estés en otra app.",
+        "fr": "L’adresse de l’onglet actif de la fenêtre principale de Chrome, prête à coller. Fonctionne même quand une autre app est devant.",
+        "ru": "Адрес текущей вкладки переднего окна Chrome — сразу для вставки. Работает, даже если вы в другом приложении."
+      },
+      "tapAction": {
+        "en": "Copies the page’s address",
+        "de": "Kopiert die Adresse der Seite",
+        "es": "Copia la dirección de la página",
+        "fr": "Copie l’adresse de la page",
+        "ru": "Копирует адрес страницы"
+      },
+      "holdAction": {
+        "en": "Copies a Markdown link: [title](address)",
+        "de": "Kopiert einen Markdown-Link: [Titel](Adresse)",
+        "es": "Copia un enlace Markdown: [título](dirección)",
+        "fr": "Copie un lien Markdown : [titre](adresse)",
+        "ru": "Копирует ссылку Markdown: [заголовок](адрес)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "link"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=copy-url\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=copy-markdown\n@file:action.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Chrome", "de": "Chrome", "es": "Chrome", "fr": "Chrome", "ru": "Chrome"},
+      "summary": {
+        "en": "Tabs, pages and DevTools at hand",
+        "de": "Tabs, Seiten und DevTools griffbereit",
+        "es": "Pestañas, páginas y DevTools a mano",
+        "fr": "Onglets, pages et DevTools à portée de main",
+        "ru": "Вкладки, страницы и DevTools под рукой"
+      },
+      "details": {
+        "en": "Going back and forward, reloading, copying the address and opening tabs and windows work even with Chrome in the background. The other buttons work while Chrome is in front.",
+        "de": "Zurück, vorwärts, neu laden, die Adresse kopieren und neue Tabs und Fenster öffnen klappt auch mit Chrome im Hintergrund. Die übrigen Tasten funktionieren, wenn Chrome vorne ist.",
+        "es": "Ir atrás y adelante, volver a cargar, copiar la dirección y abrir pestañas y ventanas funcionan aunque Chrome esté en segundo plano. Los demás botones, cuando Chrome está delante.",
+        "fr": "Revenir en arrière, avancer, actualiser, copier l’adresse et ouvrir onglets et fenêtres fonctionnent même avec Chrome en arrière-plan. Les autres boutons, quand Chrome est au premier plan.",
+        "ru": "Назад и вперёд, обновление страницы, копирование адреса, новые вкладки и окна работают, даже когда Chrome в фоне. Остальные кнопки — когда Chrome на переднем плане."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "back", "row": 0, "col": 0},
+        {"button": "forward", "row": 0, "col": 1},
+        {"button": "reload", "row": 0, "col": 2},
+        {"button": "new-tab", "row": 0, "col": 3},
+        {"button": "previous-tab", "row": 1, "col": 0},
+        {"button": "next-tab", "row": 1, "col": 1},
+        {"button": "reopen-tab", "row": 1, "col": 2},
+        {"button": "search-tabs", "row": 1, "col": 3},
+        {"button": "find", "row": 2, "col": 0},
+        {"button": "bookmark", "row": 2, "col": 1},
+        {"button": "bookmarks-bar", "row": 2, "col": 2},
+        {"button": "dev-tools", "row": 2, "col": 3},
+        {"button": "new-window", "row": 3, "col": 0},
+        {"button": "incognito", "row": 3, "col": 1},
+        {"button": "history", "row": 3, "col": 2},
+        {"button": "downloads", "row": 3, "col": 3},
+        {"button": "copy-url", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

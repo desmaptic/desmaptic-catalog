@@ -1,0 +1,49 @@
+{
+  "id": "cat",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Cat",
+    "de": "Katze",
+    "es": "Gato",
+    "fr": "Chat",
+    "ru": "Котик"
+  },
+  "summary": {
+    "en": "Lets a little cat loose on the Mac’s screen",
+    "de": "Lässt eine kleine Katze auf den Mac-Bildschirm los",
+    "es": "Suelta un gatito en la pantalla del Mac",
+    "fr": "Lâche un petit chat sur l’écran du Mac",
+    "ru": "Выпускает котика на экран Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "A pixel cat chases the pointer over every display; when the pointer rests, it washes and dozes off. Clicks go through it. It leaves after an hour; till then the button is orange.",
+    "de": "Eine Pixelkatze jagt den Zeiger über jedes Display; ruht der Zeiger, putzt sie sich und döst ein. Klicks gehen durch sie hindurch. Nach einer Stunde geht sie, bis dahin ist die Taste orange.",
+    "es": "Un gato de píxeles persigue el puntero por todas las pantallas; si el puntero se para, se lava y se duerme. Los clics lo atraviesan. Se va a la hora; hasta entonces el botón está naranja.",
+    "fr": "Un chat en pixels poursuit le pointeur sur chaque écran ; quand le pointeur s’arrête, il fait sa toilette et s’endort. Les clics passent au travers. Il part au bout d’une heure ; d’ici là, le bouton est orange.",
+    "ru": "Пиксельный котик бегает за курсором по всем дисплеям; когда курсор замирает, умывается и засыпает. Клики проходят сквозь него. Через час уходит сам, а до тех пор кнопка оранжевая."
+  },
+  "tapAction": {
+    "en": "Lets the cat out; another tap calls it home",
+    "de": "Lässt die Katze hinaus; erneutes Tippen ruft sie heim",
+    "es": "Suelta al gato; otro toque lo llama a casa",
+    "fr": "Lâche le chat ; un autre toucher le rappelle",
+    "ru": "Выпускает котика; повторное нажатие зовёт его домой"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "cat.fill"
+      }
+    },
+    "color": "#8E8E93",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh"
+  }
+}

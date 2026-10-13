@@ -1,0 +1,61 @@
+{
+  "id": "fireworks",
+  "revision": 5,
+  "kind": "widget",
+  "title": {
+    "en": "Fireworks",
+    "de": "Feuerwerk",
+    "es": "Fuegos artificiales",
+    "fr": "Feu d’artifice",
+    "ru": "Салют"
+  },
+  "summary": {
+    "en": "Sets off fireworks over the Mac’s screen",
+    "de": "Zündet ein Feuerwerk auf dem Mac-Bildschirm",
+    "es": "Lanza fuegos artificiales en la pantalla del Mac",
+    "fr": "Tire un feu d’artifice sur l’écran du Mac",
+    "ru": "Запускает салют на экране Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Rockets rise on the display under the pointer and burst into peonies, rings and golden willows above all windows; clicks go through. The button turns gold during the show.",
+    "de": "Raketen steigen auf dem Display mit dem Zeiger auf und zerplatzen über allen Fenstern zu Päonien, Ringen und goldenen Weiden; Klicks gehen hindurch. Während der Show ist die Taste golden.",
+    "es": "Los cohetes suben en la pantalla donde está el puntero y estallan en peonías, anillos y sauces dorados sobre todas las ventanas; los clics los atraviesan. El botón se vuelve dorado durante el espectáculo.",
+    "fr": "Les fusées montent sur l’écran où se trouve le pointeur et éclatent en pivoines, anneaux et saules dorés au-dessus de toutes les fenêtres ; les clics passent au travers. Le bouton devient doré pendant le spectacle.",
+    "ru": "Ракеты взлетают на экране, где указатель, и раскрываются пионами, кольцами и золотыми ивами поверх всех окон; клики проходят сквозь них. Пока идёт салют, кнопка золотая."
+  },
+  "tapAction": {
+    "en": "Launches a salvo of rockets; each tap adds another",
+    "de": "Startet eine Salve Raketen; jedes Tippen schickt eine weitere",
+    "es": "Lanza una salva de cohetes; cada toque añade otra",
+    "fr": "Lance une salve de fusées ; chaque toucher en ajoute une",
+    "ru": "Запускает залп ракет; каждое нажатие добавляет ещё один"
+  },
+  "holdAction": {
+    "en": "The grand finale: about six seconds of rockets, most from the sides",
+    "de": "Das große Finale: rund sechs Sekunden Raketen, die meisten von den Seiten",
+    "es": "El gran final: unos seis segundos de cohetes, la mayoría desde los lados",
+    "fr": "Le bouquet final : environ six secondes de fusées, surtout depuis les côtés",
+    "ru": "Большой финал: около шести секунд ракет, больше всего с краёв"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "fireworks"
+      }
+    },
+    "color": "#FF375F",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh"
+  }
+}

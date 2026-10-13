@@ -1,0 +1,57 @@
+{
+  "id": "accessories",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Accessories",
+    "de": "Zubehör",
+    "es": "Accesorios",
+    "fr": "Accessoires",
+    "ru": "Аксессуары"
+  },
+  "summary": {
+    "en": "Battery of the Bluetooth keyboard, mouse and trackpad; pink at 20%",
+    "de": "Akku von Bluetooth-Tastatur, -Maus und -Trackpad; pink bei 20 %",
+    "es": "Batería del teclado, el ratón y el trackpad Bluetooth; rosa al 20 %",
+    "fr": "Batterie du clavier, de la souris et du trackpad Bluetooth ; rose à 20 %",
+    "ru": "Заряд Bluetooth-клавиатуры, мыши и трекпада; от 20 % розовый"
+  },
+  "colSpan": 2,
+  "rowSpan": 1,
+  "details": {
+    "en": "Battery of the Bluetooth keyboard, mouse and trackpad; pink at 20% or below, dim when none is connected. Devices on a cable or not reporting their battery are left out.",
+    "de": "Akku von Bluetooth-Tastatur, -Maus und -Trackpad; pink bei 20 % und weniger, blass, wenn keins verbunden ist. Geräte am Kabel oder ohne Akkuangabe werden weggelassen.",
+    "es": "La batería del teclado, el ratón y el trackpad Bluetooth; rosa al 20 % o menos, tenue si no hay ninguno conectado. Los dispositivos por cable o que no indican su batería no aparecen.",
+    "fr": "La batterie du clavier, de la souris et du trackpad Bluetooth ; rose à 20 % ou moins, estompée si aucun n’est connecté. Les appareils branchés par câble ou qui n’indiquent pas leur batterie ne sont pas affichés.",
+    "ru": "Заряд Bluetooth-клавиатуры, мыши и трекпада; от 20 % и ниже — розовый, тусклый — ничего не подключено. Устройства на кабеле или не сообщающие заряд не показываются."
+  },
+  "tapAction": {
+    "en": "Opens Bluetooth settings on the Mac",
+    "de": "Öffnet die Bluetooth-Einstellungen auf dem Mac",
+    "es": "Abre los ajustes de Bluetooth en el Mac",
+    "fr": "Ouvre les réglages Bluetooth sur le Mac",
+    "ru": "Открывает настройки Bluetooth на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "keyboard"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "openURL": {
+        "url": "x-apple.systempreferences:com.apple.BluetoothSettings"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg",
+      "landscapeSource": "@file:rest-landscape.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg",
+    "landscapeSource": "@file:demo-landscape.svg"
+  }
+}

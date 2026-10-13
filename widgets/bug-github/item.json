@@ -1,0 +1,61 @@
+{
+  "id": "bug-github",
+  "revision": 3,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Bug on GitHub…",
+    "de": "Bug auf GitHub…",
+    "es": "Bug en GitHub…",
+    "fr": "Bug sur GitHub…",
+    "ru": "Баг в GitHub…"
+  },
+  "summary": {
+    "en": "Describe a bug on the phone: a GitHub issue with the branch, last commit and browser tab from the Mac",
+    "de": "Beschreib einen Bug auf dem Telefon: ein GitHub-Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
+    "es": "Describe un bug en el teléfono: un issue en GitHub con la rama, el último commit y la pestaña del Mac",
+    "fr": "Décrivez un bug sur le téléphone : une issue GitHub avec la branche, le dernier commit et l’onglet du Mac",
+    "ru": "Опишите баг на телефоне — issue в GitHub с веткой, последним коммитом и вкладкой браузера с Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The first line is the title; the Mac adds branch, last commit, front app and browser tab. “+ screenshot” copies the simulator’s screen for the next issue. Needs the GitHub CLI: the button says how.",
+    "de": "Die erste Zeile ist der Titel; der Mac fügt Branch, letzten Commit, App im Vordergrund und Browser-Tab hinzu. „+ screenshot“ kopiert den Simulator für das nächste Issue. Braucht die GitHub CLI: Die Taste sagt, wie.",
+    "es": "La primera línea es el título; el Mac añade rama, último commit, app en primer plano y pestaña del navegador. «+ screenshot» copia la pantalla del simulador para el siguiente issue. Necesita la CLI de GitHub: el botón dice cómo.",
+    "fr": "La première ligne est le titre ; le Mac ajoute branche, dernier commit, app au premier plan et onglet du navigateur. « + screenshot » copie l’écran du simulateur pour l’issue suivante. Il faut la CLI GitHub : le bouton dit comment.",
+    "ru": "Первая строка — заголовок; Mac добавит ветку, последний коммит, переднее приложение и вкладку браузера. «+ screenshot» скопирует экран симулятора для следующего issue. Нужен GitHub CLI: кнопка подскажет, как."
+  },
+  "tapAction": {
+    "en": "Asks what broke and files it on GitHub",
+    "de": "Fragt, was kaputt ist, und legt es auf GitHub an",
+    "es": "Pregunta qué se ha roto y lo registra en GitHub",
+    "fr": "Demande ce qui est cassé et le signale sur GitHub",
+    "ru": "Спрашивает, что сломалось, и заводит issue в GitHub"
+  },
+  "permissions": [
+    "automation"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "ladybug.fill"
+      }
+    },
+    "color": "#8E8E93",
+    "command": {
+      "shellCommand": {
+        "command": "folder=\"\"   # ← your project’s repository folder: a full path or one starting with ~/, e.g. \"~/Developer/my-app\"\n@file:report.zsh\n@file:github.zsh"
+      }
+    },
+    "input": {
+      "question": "What broke?",
+      "placeholder": "The title on the first line, details below",
+      "quickReplies": [
+        "+ screenshot"
+      ],
+      "multiline": true
+    }
+  }
+}

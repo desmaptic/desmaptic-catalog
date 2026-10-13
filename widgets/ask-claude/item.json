@@ -1,0 +1,55 @@
+{
+  "id": "ask-claude",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Ask Claude…",
+    "de": "Claude fragen…",
+    "es": "Preguntar a Claude…",
+    "fr": "Demander à Claude…",
+    "ru": "Спросить Claude…"
+  },
+  "summary": {
+    "en": "Type a question on the phone and a new Claude chat with it opens on the Mac",
+    "de": "Tippe eine Frage auf dem Telefon – auf dem Mac öffnet sich damit ein neuer Claude-Chat",
+    "es": "Escribe una pregunta en el teléfono y se abre con ella un chat nuevo de Claude en el Mac",
+    "fr": "Saisissez une question sur le téléphone : un nouveau chat Claude s’ouvre avec elle sur le Mac",
+    "ru": "Наберите вопрос на телефоне — на Mac откроется новый чат Claude с этим вопросом"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. Opens in the Claude app, starting it if it’s closed; on a Mac without it, on claude.ai in the default browser.",
+    "de": "Nichts einzurichten. Öffnet sich in der Claude-App und startet sie, wenn sie geschlossen ist; auf einem Mac ohne sie auf claude.ai im Standardbrowser.",
+    "es": "No hay nada que configurar. Se abre en la app Claude y la inicia si está cerrada; en un Mac sin ella, en claude.ai en el navegador predeterminado.",
+    "fr": "Rien à configurer. S’ouvre dans l’app Claude, qu’il lance si elle est fermée ; sur un Mac sans elle, sur claude.ai dans le navigateur par défaut.",
+    "ru": "Настраивать ничего не нужно. Открывается в приложении Claude и запускает его, если оно закрыто; на Mac без него — на claude.ai в браузере по умолчанию."
+  },
+  "tapAction": {
+    "en": "Asks for a question and opens a new Claude chat with it",
+    "de": "Fragt nach einer Frage und öffnet damit einen neuen Claude-Chat",
+    "es": "Pide una pregunta y abre con ella un chat nuevo de Claude",
+    "fr": "Demande une question et ouvre avec elle un nouveau chat Claude",
+    "ru": "Спрашивает вопрос и открывает с ним новый чат Claude"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "text.bubble"
+      }
+    },
+    "color": "#D97757",
+    "command": {
+      "shellCommand": {
+        "command": "@file:ask.zsh"
+      }
+    },
+    "input": {
+      "question": "What to ask Claude?",
+      "placeholder": "A question",
+      "multiline": true
+    }
+  }
+}

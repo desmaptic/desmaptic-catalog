@@ -1,0 +1,624 @@
+{
+  "id": "ghostty",
+  "revision": 5,
+  "name": "Ghostty",
+  "bundleIds": ["com.mitchellh.ghostty"],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "A tab in the front window, from any app; hold to close the terminal in front",
+        "de": "Ein Tab im vorderen Fenster, aus jeder App; Halten schließt das vordere Terminal",
+        "es": "Una pestaña en la ventana de delante, desde cualquier app; mantén pulsado para cerrar el terminal de delante",
+        "fr": "Un onglet dans la fenêtre au premier plan, depuis n’importe quelle app ; maintenez pour fermer le terminal au premier plan",
+        "ru": "Вкладка в переднем окне из любого приложения; удержание закрывает передний терминал"
+      },
+      "details": {
+        "en": "Like File › New Tab (⌘T), in the front terminal’s folder; Ghostty comes forward. The long press works only while Ghostty is in front; ⌘Z undoes it within 5 s (Ghostty’s default).",
+        "de": "Wie File › New Tab (⌘T), im Ordner des vorderen Terminals; Ghostty kommt nach vorne. Langes Drücken wirkt nur, wenn Ghostty vorne ist; ⌘Z macht es innerhalb von 5 s rückgängig (Standard von Ghostty).",
+        "es": "Como File › New Tab (⌘T), en la carpeta del terminal de delante; Ghostty pasa al frente. Mantener pulsado solo funciona con Ghostty delante; ⌘Z lo deshace en los 5 s siguientes (valor por omisión de Ghostty).",
+        "fr": "Comme File › New Tab (⌘T), dans le dossier du terminal au premier plan ; Ghostty passe au premier plan. L’appui long n’agit que si Ghostty est au premier plan ; ⌘Z l’annule dans les 5 s (réglage par défaut de Ghostty).",
+        "ru": "Как File › New Tab (⌘T), в папке переднего терминала; Ghostty выходит на передний план. Удержание действует, только когда Ghostty на переднем плане; ⌘Z отменяет его в течение 5 с (так по умолчанию в Ghostty)."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "holdAction": {
+        "en": "⚠️ Closes the terminal in front and what runs in it (File › Close); Ghostty asks first while a command runs",
+        "de": "⚠️ Schließt das vordere Terminal samt dem, was darin läuft (File › Close); läuft noch ein Befehl, fragt Ghostty vorher",
+        "es": "⚠️ Cierra el terminal de delante y lo que se ejecuta en él (File › Close); si aún corre un comando, Ghostty pregunta antes",
+        "fr": "⚠️ Ferme le terminal au premier plan et ce qui s’y exécute (File › Close) ; si une commande tourne encore, Ghostty demande d’abord",
+        "ru": "⚠️ Закрывает передний терминал вместе с тем, что в нём запущено (File › Close); если команда ещё работает, Ghostty сначала спросит"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#32D74B",
+        "command": {"shellCommand": {"command": "action=tab\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=close\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {"en": "Previous Tab", "de": "Vorheriger Tab", "es": "Pestaña anterior", "fr": "Onglet précédent", "ru": "Предыдущая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the left",
+        "de": "Wechselt zum Tab links davon",
+        "es": "Pasa a la pestaña de la izquierda",
+        "fr": "Passe à l’onglet de gauche",
+        "ru": "Переключает на вкладку слева"
+      },
+      "details": {
+        "en": "Works whatever Ghostty’s keys are bound to (⌃⇧⇥ by default). From the first tab it goes round to the last. Works from any app.",
+        "de": "Klappt, egal wie die Tasten von Ghostty belegt sind (standardmäßig ⌃⇧⇥). Vom ersten Tab geht es zum letzten. Funktioniert aus jeder App.",
+        "es": "Sirve sean cuales sean los atajos de Ghostty (⌃⇧⇥ por omisión). Desde la primera pestaña pasa a la última. Funciona desde cualquier app.",
+        "fr": "Marche quels que soient les raccourcis de Ghostty (⌃⇧⇥ par défaut). Depuis le premier onglet, il passe au dernier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Срабатывает, как бы ни были назначены клавиши Ghostty (по умолчанию ⌃⇧⇥). С первой вкладки переходит на последнюю. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Shows the previous tab",
+        "de": "Zeigt den vorherigen Tab",
+        "es": "Muestra la pestaña anterior",
+        "fr": "Affiche l’onglet précédent",
+        "ru": "Показывает предыдущую вкладку"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.left.square"}},
+        "color": "#32D74B",
+        "command": {"shellCommand": {"command": "action=previous-tab\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the right",
+        "de": "Wechselt zum Tab rechts davon",
+        "es": "Pasa a la pestaña de la derecha",
+        "fr": "Passe à l’onglet de droite",
+        "ru": "Переключает на вкладку справа"
+      },
+      "details": {
+        "en": "Works whatever Ghostty’s keys are bound to (⌃⇥ by default). From the last tab it goes round to the first. Works from any app.",
+        "de": "Klappt, egal wie die Tasten von Ghostty belegt sind (standardmäßig ⌃⇥). Vom letzten Tab geht es zum ersten. Funktioniert aus jeder App.",
+        "es": "Sirve sean cuales sean los atajos de Ghostty (⌃⇥ por omisión). Desde la última pestaña pasa a la primera. Funciona desde cualquier app.",
+        "fr": "Marche quels que soient les raccourcis de Ghostty (⌃⇥ par défaut). Depuis le dernier onglet, il passe au premier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Срабатывает, как бы ни были назначены клавиши Ghostty (по умолчанию ⌃⇥). С последней вкладки переходит на первую. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Shows the next tab",
+        "de": "Zeigt den nächsten Tab",
+        "es": "Muestra la pestaña siguiente",
+        "fr": "Affiche l’onglet suivant",
+        "ru": "Показывает следующую вкладку"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.right.square"}},
+        "color": "#32D74B",
+        "command": {"shellCommand": {"command": "action=next-tab\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {"en": "New Window", "de": "Neues Fenster", "es": "Nueva ventana", "fr": "Nouvelle fenêtre", "ru": "Новое окно"},
+      "summary": {
+        "en": "A new Ghostty window, from any app",
+        "de": "Ein neues Ghostty-Fenster, aus jeder App",
+        "es": "Una ventana nueva de Ghostty, desde cualquier app",
+        "fr": "Une nouvelle fenêtre Ghostty, depuis n’importe quelle app",
+        "ru": "Новое окно Ghostty из любого приложения"
+      },
+      "details": {
+        "en": "Like File › New Window (⌘N), in the folder of the terminal in front; Ghostty comes forward. When Ghostty isn’t running, the tap starts it.",
+        "de": "Wie File › New Window (⌘N), im Ordner des vorderen Terminals; Ghostty kommt nach vorne. Läuft Ghostty nicht, startet es der Tipp.",
+        "es": "Como File › New Window (⌘N), en la carpeta del terminal de delante; Ghostty pasa al frente. Si Ghostty no está abierto, el toque lo abre.",
+        "fr": "Comme File › New Window (⌘N), dans le dossier du terminal au premier plan ; Ghostty passe au premier plan. Si Ghostty n’est pas ouvert, le toucher le lance.",
+        "ru": "Как File › New Window (⌘N), в папке переднего терминала; Ghostty выходит на передний план. Если Ghostty не запущен, нажатие запускает его."
+      },
+      "tapAction": {
+        "en": "Opens a new window",
+        "de": "Öffnet ein neues Fenster",
+        "es": "Abre una ventana nueva",
+        "fr": "Ouvre une nouvelle fenêtre",
+        "ru": "Открывает новое окно"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "macwindow.badge.plus"}},
+        "color": "#32D74B",
+        "command": {"shellCommand": {"command": "action=window\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "split-right",
+      "title": {"en": "Split Right", "de": "Rechts teilen", "es": "Dividir a la derecha", "fr": "Diviser à droite", "ru": "Разделить вправо"},
+      "summary": {
+        "en": "A new split to the right of the terminal in front",
+        "de": "Ein neuer Bereich rechts vom vorderen Terminal",
+        "es": "Una división nueva a la derecha del terminal de delante",
+        "fr": "Un nouveau panneau à droite du terminal au premier plan",
+        "ru": "Новая панель справа от переднего терминала"
+      },
+      "details": {
+        "en": "File › Split Right (⌘D); the new split gets the focus. Works from any app.",
+        "de": "File › Split Right (⌘D); der neue Bereich erhält den Fokus. Funktioniert aus jeder App.",
+        "es": "File › Split Right (⌘D); la nueva división recibe el foco. Funciona desde cualquier app.",
+        "fr": "File › Split Right (⌘D) ; le nouveau panneau reçoit le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "File › Split Right (⌘D); фокус переходит на новую панель. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Adds a split on the right",
+        "de": "Fügt rechts einen Bereich hinzu",
+        "es": "Añade una división a la derecha",
+        "fr": "Ajoute un panneau à droite",
+        "ru": "Добавляет панель справа"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.split.2x1"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=split-right\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "split-down",
+      "title": {"en": "Split Down", "de": "Unten teilen", "es": "Dividir abajo", "fr": "Diviser en bas", "ru": "Разделить вниз"},
+      "summary": {
+        "en": "A new split below the terminal in front",
+        "de": "Ein neuer Bereich unter dem vorderen Terminal",
+        "es": "Una división nueva debajo del terminal de delante",
+        "fr": "Un nouveau panneau sous le terminal au premier plan",
+        "ru": "Новая панель под передним терминалом"
+      },
+      "details": {
+        "en": "File › Split Down (⇧⌘D); the new split gets the focus. Works from any app.",
+        "de": "File › Split Down (⇧⌘D); der neue Bereich erhält den Fokus. Funktioniert aus jeder App.",
+        "es": "File › Split Down (⇧⌘D); la nueva división recibe el foco. Funciona desde cualquier app.",
+        "fr": "File › Split Down (⇧⌘D) ; le nouveau panneau reçoit le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "File › Split Down (⇧⌘D); фокус переходит на новую панель. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Adds a split below",
+        "de": "Fügt unten einen Bereich hinzu",
+        "es": "Añade una división debajo",
+        "fr": "Ajoute un panneau en dessous",
+        "ru": "Добавляет панель снизу"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.split.1x2"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=split-down\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "next-split",
+      "title": {"en": "Next Split", "de": "Nächster Bereich", "es": "División siguiente", "fr": "Panneau suivant", "ru": "Следующая панель"},
+      "summary": {
+        "en": "Moves to the next split; hold for the previous one",
+        "de": "Wechselt zum nächsten Bereich; halten für den vorherigen",
+        "es": "Pasa a la división siguiente; mantén pulsado para la anterior",
+        "fr": "Passe au panneau suivant ; maintenez pour le précédent",
+        "ru": "Переходит к следующей панели; удержание — к предыдущей"
+      },
+      "details": {
+        "en": "Window › Select Next Split (⌘]), with any keyboard layout. Works from any app.",
+        "de": "Window › Select Next Split (⌘]), mit jeder Tastaturbelegung. Funktioniert aus jeder App.",
+        "es": "Window › Select Next Split (⌘]), con cualquier distribución de teclado. Funciona desde cualquier app.",
+        "fr": "Window › Select Next Split (⌘]), avec n’importe quelle disposition de clavier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Window › Select Next Split (⌘]), при любой раскладке. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Selects the next split",
+        "de": "Wählt den nächsten Bereich",
+        "es": "Selecciona la división siguiente",
+        "fr": "Sélectionne le panneau suivant",
+        "ru": "Выбирает следующую панель"
+      },
+      "holdAction": {
+        "en": "Selects the previous split",
+        "de": "Wählt den vorherigen Bereich",
+        "es": "Selecciona la división anterior",
+        "fr": "Sélectionne le panneau précédent",
+        "ru": "Выбирает предыдущую панель"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.2.swap"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=next-split\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=previous-split\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "zoom-split",
+      "title": {"en": "Zoom Split", "de": "Bereich maximieren", "es": "Maximizar división", "fr": "Agrandir le panneau", "ru": "Развернуть панель"},
+      "summary": {
+        "en": "The split in front fills the tab (⇧⌘↩)",
+        "de": "Der vordere Bereich füllt den Tab (⇧⌘↩)",
+        "es": "La división de delante ocupa toda la pestaña (⇧⌘↩)",
+        "fr": "Le panneau au premier plan occupe tout l’onglet (⇧⌘↩)",
+        "ru": "Передняя панель занимает всю вкладку (⇧⌘↩)"
+      },
+      "details": {
+        "en": "Window › Zoom Split (⇧⌘↩): the tab’s other splits are hidden, not closed, and come back on the next tap. Works from any app.",
+        "de": "Window › Zoom Split (⇧⌘↩): Die anderen Bereiche des Tabs werden ausgeblendet, nicht geschlossen, und kommen beim nächsten Tipp zurück. Funktioniert aus jeder App.",
+        "es": "Window › Zoom Split (⇧⌘↩): las demás divisiones de la pestaña se ocultan, no se cierran, y vuelven con el siguiente toque. Funciona desde cualquier app.",
+        "fr": "Window › Zoom Split (⇧⌘↩) : les autres panneaux de l’onglet sont masqués, pas fermés, et reviennent au toucher suivant. Fonctionne depuis n’importe quelle app.",
+        "ru": "Window › Zoom Split (⇧⌘↩): остальные панели вкладки скрываются, а не закрываются, и возвращаются при следующем нажатии. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Zooms or restores the split",
+        "de": "Maximiert den Bereich oder stellt ihn wieder her",
+        "es": "Maximiza o restaura la división",
+        "fr": "Agrandit ou rétablit le panneau",
+        "ru": "Разворачивает или возвращает панель"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.left.and.arrow.down.right"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=zoom-split\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "find",
+      "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
+      "summary": {
+        "en": "Searches the terminal’s text (⌘F); hold to clear it",
+        "de": "Durchsucht den Text des Terminals (⌘F); Halten leert ihn",
+        "es": "Busca en el texto del terminal (⌘F); mantén pulsado para borrarlo",
+        "fr": "Cherche dans le texte du terminal (⌘F) ; maintenez pour l’effacer",
+        "ru": "Ищет по тексту терминала (⌘F); удержание очищает его"
+      },
+      "details": {
+        "en": "Edit › Find › Find… (⌘F) in the front terminal. Searches the scrollback too. Works from any app; the long press only while Ghostty is in front.",
+        "de": "Edit › Find › Find… (⌘F) im vorderen Terminal. Sucht auch im Zeilenpuffer. Funktioniert aus jeder App, langes Drücken nur, wenn Ghostty vorne ist.",
+        "es": "Edit › Find › Find… (⌘F) en el terminal de delante. Busca también en las líneas anteriores. Funciona desde cualquier app; mantener pulsado, solo con Ghostty delante.",
+        "fr": "Edit › Find › Find… (⌘F) dans le terminal au premier plan. Cherche aussi dans le défilement arrière. Fonctionne depuis n’importe quelle app ; l’appui long, seulement si Ghostty est au premier plan.",
+        "ru": "Edit › Find › Find… (⌘F) в переднем терминале. Ищет и в буфере строк. Работает из любого приложения, удержание — только когда Ghostty на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the search bar",
+        "de": "Öffnet die Suchleiste",
+        "es": "Abre la barra de búsqueda",
+        "fr": "Ouvre la barre de recherche",
+        "ru": "Открывает строку поиска"
+      },
+      "holdAction": {
+        "en": "⚠️ Clears the terminal’s screen and scrollback for good (⌘K)",
+        "de": "⚠️ Leert Bildschirm und Zeilenpuffer des Terminals endgültig (⌘K)",
+        "es": "⚠️ Borra para siempre la pantalla del terminal y sus líneas anteriores (⌘K)",
+        "fr": "⚠️ Efface définitivement l’écran du terminal et son défilement arrière (⌘K)",
+        "ru": "⚠️ Безвозвратно очищает экран терминала и буфер строк (⌘K)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=find\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=clear\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "command-palette",
+      "title": {"en": "Command Palette", "de": "Befehle", "es": "Paleta de comandos", "fr": "Palette de commandes", "ru": "Палитра команд"},
+      "summary": {
+        "en": "Every Ghostty command, searchable (⇧⌘P)",
+        "de": "Alle Befehle von Ghostty, durchsuchbar (⇧⌘P)",
+        "es": "Todos los comandos de Ghostty, con búsqueda (⇧⌘P)",
+        "fr": "Toutes les commandes de Ghostty, avec recherche (⇧⌘P)",
+        "ru": "Все команды Ghostty с поиском (⇧⌘P)"
+      },
+      "details": {
+        "en": "View › Command Palette (⇧⌘P): type part of a command’s name to run it, including those without a key. Works from any app.",
+        "de": "View › Command Palette (⇧⌘P): Tippe einen Teil des Befehlsnamens ein, um ihn auszuführen – auch Befehle ohne Taste. Funktioniert aus jeder App.",
+        "es": "View › Command Palette (⇧⌘P): escribe parte del nombre de un comando para ejecutarlo, también los que no tienen atajo. Funciona desde cualquier app.",
+        "fr": "View › Command Palette (⇧⌘P) : tapez une partie du nom d’une commande pour la lancer, même sans raccourci. Fonctionne depuis n’importe quelle app.",
+        "ru": "View › Command Palette (⇧⌘P): введите часть названия команды, чтобы выполнить её, — даже без сочетания клавиш. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Opens or closes the palette",
+        "de": "Öffnet oder schließt die Palette",
+        "es": "Abre o cierra la paleta",
+        "fr": "Ouvre ou ferme la palette",
+        "ru": "Открывает или закрывает палитру"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=palette\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "quick-terminal",
+      "title": {"en": "Quick Terminal", "de": "Quick Terminal", "es": "Quick Terminal", "fr": "Quick Terminal", "ru": "Quick Terminal"},
+      "summary": {
+        "en": "Ghostty’s drop-down terminal, from any app",
+        "de": "Das Drop-down-Terminal von Ghostty, aus jeder App",
+        "es": "El terminal desplegable de Ghostty, desde cualquier app",
+        "fr": "Le terminal déroulant de Ghostty, depuis n’importe quelle app",
+        "ru": "Выпадающий терминал Ghostty из любого приложения"
+      },
+      "details": {
+        "en": "View › Quick Terminal: a terminal that slides in over any app and away again; Ghostty has no key for it unless you set one. The other buttons act on the window behind it.",
+        "de": "View › Quick Terminal: ein Terminal, das über jeder App einfährt und wieder verschwindet; eine Taste dafür gibt es nur, wenn du eine festlegst. Die anderen Tasten wirken auf das Fenster dahinter.",
+        "es": "View › Quick Terminal: un terminal que se desliza sobre cualquier app y vuelve a irse; no tiene atajo salvo que tú le asignes uno. Los demás botones actúan en la ventana de detrás.",
+        "fr": "View › Quick Terminal : un terminal qui glisse par-dessus n’importe quelle app puis repart ; il n’a de raccourci que si vous lui en attribuez un. Les autres boutons agissent sur la fenêtre derrière.",
+        "ru": "View › Quick Terminal: терминал, который выезжает поверх любого приложения и уезжает обратно; своей клавиши у него нет, пока вы её не назначите. Остальные кнопки действуют на окно за ним."
+      },
+      "tapAction": {
+        "en": "Shows or hides the quick terminal",
+        "de": "Blendet das Quick Terminal ein oder aus",
+        "es": "Muestra u oculta el Quick Terminal",
+        "fr": "Affiche ou masque le Quick Terminal",
+        "ru": "Показывает или прячет Quick Terminal"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.topthird.inset.filled"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=quick-terminal\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "reload-config",
+      "title": {"en": "Reload Config", "de": "Konfiguration neu laden", "es": "Recargar configuración", "fr": "Recharger la configuration", "ru": "Перечитать конфиг"},
+      "summary": {
+        "en": "Applies your config file’s changes (⇧⌘,); hold to open it",
+        "de": "Übernimmt Änderungen der Konfigurationsdatei (⇧⌘,); Halten öffnet sie",
+        "es": "Aplica los cambios del archivo de configuración (⇧⌘,); mantén pulsado para abrirlo",
+        "fr": "Applique les modifications du fichier de configuration (⇧⌘,) ; maintenez pour l’ouvrir",
+        "ru": "Применяет изменения файла конфигурации (⇧⌘,); удержание открывает его"
+      },
+      "details": {
+        "en": "Ghostty › Reload Configuration (⇧⌘,), from any app: Ghostty applies what it can while running, and shows any errors in the file.",
+        "de": "Ghostty › Reload Configuration (⇧⌘,), aus jeder App: Ghostty übernimmt, was im laufenden Betrieb geht, und zeigt Fehler in der Datei an.",
+        "es": "Ghostty › Reload Configuration (⇧⌘,), desde cualquier app: Ghostty aplica lo que puede sin reiniciarse y muestra los errores del archivo.",
+        "fr": "Ghostty › Reload Configuration (⇧⌘,), depuis n’importe quelle app : Ghostty applique ce qu’il peut sans redémarrer et signale les erreurs du fichier.",
+        "ru": "Ghostty › Reload Configuration (⇧⌘,) из любого приложения: Ghostty применяет то, что можно без перезапуска, и показывает ошибки в файле."
+      },
+      "tapAction": {
+        "en": "Reloads the config",
+        "de": "Lädt die Konfiguration neu",
+        "es": "Recarga la configuración",
+        "fr": "Recharge la configuration",
+        "ru": "Перечитывает конфигурацию"
+      },
+      "holdAction": {
+        "en": "Opens the config file in your text editor (⌘,)",
+        "de": "Öffnet die Konfigurationsdatei im Texteditor (⌘,)",
+        "es": "Abre el archivo de configuración en tu editor de texto (⌘,)",
+        "fr": "Ouvre le fichier de configuration dans votre éditeur de texte (⌘,)",
+        "ru": "Открывает файл конфигурации в текстовом редакторе (⌘,)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "gearshape.arrow.triangle.2.circlepath"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=reload-config\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=open-config\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "finder-folder",
+      "title": {"en": "Finder Folder", "de": "Finder-Ordner", "es": "Carpeta del Finder", "fr": "Dossier du Finder", "ru": "Папка Finder"},
+      "summary": {
+        "en": "A new tab in the folder open in Finder",
+        "de": "Ein neuer Tab im Ordner, der im Finder offen ist",
+        "es": "Una pestaña nueva en la carpeta abierta en el Finder",
+        "fr": "Un nouvel onglet dans le dossier ouvert dans le Finder",
+        "ru": "Новая вкладка в папке, открытой в Finder"
+      },
+      "details": {
+        "en": "The folder of the front Finder window, or the desktop when none is open. If Ghostty has no window, it opens one. Works from any app and starts Ghostty if needed.",
+        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Hat Ghostty kein Fenster, öffnet es eins. Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
+        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Si Ghostty no tiene ventanas, abre una. Funciona desde cualquier app y abre Ghostty si hace falta.",
+        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Si Ghostty n’a pas de fenêtre, il en ouvre une. Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
+        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Если у Ghostty нет окон, откроется новое. Работает из любого приложения и при необходимости запускает Ghostty."
+      },
+      "tapAction": {
+        "en": "Opens Ghostty in that folder",
+        "de": "Öffnet Ghostty in diesem Ordner",
+        "es": "Abre Ghostty en esa carpeta",
+        "fr": "Ouvre Ghostty dans ce dossier",
+        "ru": "Открывает Ghostty в этой папке"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "terminal"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "@file:finder-folder.zsh"}}
+      }
+    },
+    {
+      "id": "show-in-finder",
+      "title": {"en": "Show in Finder", "de": "Im Finder anzeigen", "es": "Mostrar en el Finder", "fr": "Afficher dans le Finder", "ru": "Показать в Finder"},
+      "summary": {
+        "en": "Opens the front terminal’s folder in Finder",
+        "de": "Öffnet den Ordner des vorderen Terminals im Finder",
+        "es": "Abre en el Finder la carpeta del terminal de delante",
+        "fr": "Ouvre dans le Finder le dossier du terminal au premier plan",
+        "ru": "Открывает в Finder папку переднего терминала"
+      },
+      "details": {
+        "en": "The shell’s folder as of its last prompt, as Ghostty’s shell integration reports it. Works with Ghostty in the background too.",
+        "de": "Der Ordner der Shell beim letzten Prompt, wie ihn die Shell-Integration von Ghostty meldet. Funktioniert auch mit Ghostty im Hintergrund.",
+        "es": "La carpeta del shell en su último prompt, según la comunica la integración de Ghostty con el shell. Funciona también con Ghostty en segundo plano.",
+        "fr": "Le dossier du shell à sa dernière invite, tel que le signale l’intégration de Ghostty au shell. Fonctionne aussi avec Ghostty en arrière-plan.",
+        "ru": "Папка, в которой была оболочка при последнем приглашении, — о ней сообщает интеграция Ghostty с оболочкой. Работает и когда Ghostty в фоне."
+      },
+      "tapAction": {
+        "en": "Opens the folder in Finder",
+        "de": "Öffnet den Ordner im Finder",
+        "es": "Abre la carpeta en el Finder",
+        "fr": "Ouvre le dossier dans le Finder",
+        "ru": "Открывает папку в Finder"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "folder"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "@file:show-in-finder.zsh"}}
+      }
+    },
+    {
+      "id": "smaller",
+      "title": {"en": "Smaller", "de": "Kleiner", "es": "Más pequeño", "fr": "Réduire", "ru": "Уменьшить"},
+      "summary": {
+        "en": "Makes the text smaller (⌘-); hold for the config’s size",
+        "de": "Verkleinert die Schrift (⌘-); halten für die Größe aus der Konfiguration",
+        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño de la configuración",
+        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille de la configuration",
+        "ru": "Уменьшает шрифт (⌘-); удержание — размер из конфигурации"
+      },
+      "details": {
+        "en": "View › Decrease Font Size (⌘-), for the terminal in front only. Works from any app.",
+        "de": "View › Decrease Font Size (⌘-), nur für das vordere Terminal. Funktioniert aus jeder App.",
+        "es": "View › Decrease Font Size (⌘-), solo para el terminal de delante. Funciona desde cualquier app.",
+        "fr": "View › Decrease Font Size (⌘-), pour le seul terminal au premier plan. Fonctionne depuis n’importe quelle app.",
+        "ru": "View › Decrease Font Size (⌘-), только для переднего терминала. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Makes the text smaller",
+        "de": "Verkleinert die Schrift",
+        "es": "Reduce el texto",
+        "fr": "Réduit le texte",
+        "ru": "Уменьшает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the config’s size (⌘0)",
+        "de": "Zurück zur Größe aus der Konfiguration (⌘0)",
+        "es": "Vuelve al tamaño de la configuración (⌘0)",
+        "fr": "Revient à la taille de la configuration (⌘0)",
+        "ru": "Возвращает размер из конфигурации (⌘0)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.smaller"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=smaller\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=default-size\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "bigger",
+      "title": {"en": "Bigger", "de": "Größer", "es": "Más grande", "fr": "Agrandir", "ru": "Увеличить"},
+      "summary": {
+        "en": "Makes the text bigger (⌘+); hold for the config’s size",
+        "de": "Vergrößert die Schrift (⌘+); halten für die Größe aus der Konfiguration",
+        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño de la configuración",
+        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille de la configuration",
+        "ru": "Увеличивает шрифт (⌘+); удержание — размер из конфигурации"
+      },
+      "details": {
+        "en": "View › Increase Font Size (⌘+), for the terminal in front only. Works from any app.",
+        "de": "View › Increase Font Size (⌘+), nur für das vordere Terminal. Funktioniert aus jeder App.",
+        "es": "View › Increase Font Size (⌘+), solo para el terminal de delante. Funciona desde cualquier app.",
+        "fr": "View › Increase Font Size (⌘+), pour le seul terminal au premier plan. Fonctionne depuis n’importe quelle app.",
+        "ru": "View › Increase Font Size (⌘+), только для переднего терминала. Работает из любого приложения."
+      },
+      "tapAction": {
+        "en": "Makes the text bigger",
+        "de": "Vergrößert die Schrift",
+        "es": "Agranda el texto",
+        "fr": "Agrandit le texte",
+        "ru": "Увеличивает шрифт"
+      },
+      "holdAction": {
+        "en": "Back to the config’s size (⌘0)",
+        "de": "Zurück zur Größe aus der Konfiguration (⌘0)",
+        "es": "Vuelve al tamaño de la configuración (⌘0)",
+        "fr": "Revient à la taille de la configuration (⌘0)",
+        "ru": "Возвращает размер из конфигурации (⌘0)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "textformat.size.larger"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=bigger\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=default-size\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "project-tab",
+      "title": {"en": "Project Tab", "de": "Projekt-Tab", "es": "Pestaña de proyecto", "fr": "Onglet projet", "ru": "Вкладка проекта"},
+      "summary": {
+        "en": "A new tab in your project folder that runs a command right away",
+        "de": "Ein neuer Tab in deinem Projektordner, der gleich einen Befehl ausführt",
+        "es": "Una pestaña nueva en la carpeta de tu proyecto que ejecuta un comando al momento",
+        "fr": "Un nouvel onglet dans le dossier de votre projet, qui lance aussitôt une commande",
+        "ru": "Новая вкладка в папке проекта, где сразу запускается команда"
+      },
+      "details": {
+        "en": "Set the folder on the first line of the button’s script and, on the second, what to type, such as claude (empty: nothing). Works from any app and starts Ghostty if needed.",
+        "de": "Den Ordner trägst du in der ersten Zeile des Skripts der Taste ein, in der zweiten, was getippt wird, etwa claude (leer: nichts). Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
+        "es": "Pon la carpeta en la primera línea del script del botón y, en la segunda, lo que se escribe, como claude (vacío: nada). Funciona desde cualquier app y abre Ghostty si hace falta.",
+        "fr": "Indiquez le dossier à la première ligne du script du bouton et, à la deuxième, ce qui est saisi, comme claude (vide : rien). Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
+        "ru": "Папку задайте в первой строке скрипта кнопки, во второй — что ввести, например claude (пусто — ничего). Работает из любого приложения и при необходимости запускает Ghostty."
+      },
+      "tapAction": {
+        "en": "Opens a tab in the project folder",
+        "de": "Öffnet einen Tab im Projektordner",
+        "es": "Abre una pestaña en la carpeta del proyecto",
+        "fr": "Ouvre un onglet dans le dossier du projet",
+        "ru": "Открывает вкладку в папке проекта"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.rectangle.on.folder"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "folder=\"\"   # ← your project folder, e.g. ~/Projects/app\ninput=\"\"    # ← what to type once it starts, e.g. claude; empty: nothing\n@file:project-tab.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Ghostty", "de": "Ghostty", "es": "Ghostty", "fr": "Ghostty", "ru": "Ghostty"},
+      "summary": {
+        "en": "Tabs, splits, the quick terminal and your project at a tap",
+        "de": "Tabs, Bereiche, das Quick Terminal und dein Projekt auf Knopfdruck",
+        "es": "Pestañas, divisiones, el Quick Terminal y tu proyecto con un toque",
+        "fr": "Onglets, panneaux, Quick Terminal et votre projet d’un toucher",
+        "ru": "Вкладки, панели, Quick Terminal и ваш проект в одно касание"
+      },
+      "details": {
+        "en": "Every button works from any app and on any keyboard layout; the long presses that close or clear a terminal, only while Ghostty is in front. Project Tab’s folder and command are set in its script. Ghostty’s menus are in English only.",
+        "de": "Jede Taste funktioniert aus jeder App und mit jeder Tastaturbelegung; das Halten zum Schließen oder Leeren eines Terminals nur, wenn Ghostty vorne ist. Ordner und Befehl von Projekt-Tab stehen in seinem Skript. Die Menüs von Ghostty gibt es nur auf Englisch.",
+        "es": "Todos los botones funcionan desde cualquier app y con cualquier distribución de teclado; mantener pulsado para cerrar o borrar un terminal, solo con Ghostty delante. La carpeta y el comando de Pestaña de proyecto se ponen en su script. Los menús de Ghostty solo están en inglés.",
+        "fr": "Tous les boutons fonctionnent depuis n’importe quelle app et avec n’importe quelle disposition de clavier ; les appuis longs qui ferment ou effacent un terminal, seulement quand Ghostty est au premier plan. Le dossier et la commande d’Onglet projet se règlent dans son script. Les menus de Ghostty sont uniquement en anglais.",
+        "ru": "Все кнопки работают из любого приложения и с любой раскладкой; удержание, закрывающее или очищающее терминал, — только когда Ghostty на переднем плане. Папка и команда «Вкладки проекта» задаются в её скрипте. Меню Ghostty есть только на английском."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "new-tab", "row": 0, "col": 0},
+        {"button": "previous-tab", "row": 0, "col": 1},
+        {"button": "next-tab", "row": 0, "col": 2},
+        {"button": "new-window", "row": 0, "col": 3},
+        {"button": "split-right", "row": 1, "col": 0},
+        {"button": "split-down", "row": 1, "col": 1},
+        {"button": "next-split", "row": 1, "col": 2},
+        {"button": "zoom-split", "row": 1, "col": 3},
+        {"button": "find", "row": 2, "col": 0},
+        {"button": "command-palette", "row": 2, "col": 1},
+        {"button": "quick-terminal", "row": 2, "col": 2},
+        {"button": "reload-config", "row": 2, "col": 3},
+        {"button": "finder-folder", "row": 3, "col": 0},
+        {"button": "show-in-finder", "row": 3, "col": 1},
+        {"button": "smaller", "row": 3, "col": 2},
+        {"button": "bigger", "row": 3, "col": 3},
+        {"button": "project-tab", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

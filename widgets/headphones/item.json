@@ -1,0 +1,57 @@
+{
+  "id": "headphones",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Headphones",
+    "de": "Kopfhörer",
+    "es": "Auriculares",
+    "fr": "Écouteurs",
+    "ru": "Наушники"
+  },
+  "summary": {
+    "en": "Battery of the connected Bluetooth headphones: AirPods left, right and case; pink at 20%",
+    "de": "Akku der verbundenen Bluetooth-Kopfhörer: AirPods links, rechts und Case; pink bei 20 %",
+    "es": "Batería de los auriculares Bluetooth conectados: AirPods izquierdo, derecho y estuche; rosa al 20 %",
+    "fr": "Batterie des écouteurs Bluetooth connectés : AirPods gauche, droit et boîtier ; rose à 20 %",
+    "ru": "Заряд подключённых Bluetooth-наушников: у AirPods — левый, правый и футляр; от 20 % розовый"
+  },
+  "colSpan": 2,
+  "rowSpan": 1,
+  "details": {
+    "en": "Battery of the headphones connected to the Mac; AirPods show left (L), right (R) and the case. Pink at 20% or below, “—” means not reported, dim means nothing is connected.",
+    "de": "Akku der mit dem Mac verbundenen Kopfhörer; AirPods zeigen links (L), rechts (R) und das Case. Pink bei 20 % und weniger, „—“ heißt nicht gemeldet, blass heißt nichts verbunden.",
+    "es": "La batería de los auriculares conectados al Mac; los AirPods muestran izquierdo (L), derecho (R) y el estuche. Rosa al 20 % o menos; «—» indica que no se informa, y tenue, que no hay nada conectado.",
+    "fr": "La batterie des écouteurs connectés au Mac ; les AirPods affichent gauche (L), droit (R) et le boîtier. Rose à 20 % ou moins, « — » : niveau non indiqué, estompé : rien n’est connecté.",
+    "ru": "Заряд наушников, подключённых к Mac; у AirPods — левый (L), правый (R) и футляр. От 20 % и ниже — розовый, «—» — уровень не сообщается, тусклые — ничего не подключено."
+  },
+  "tapAction": {
+    "en": "Opens Bluetooth settings on the Mac",
+    "de": "Öffnet die Bluetooth-Einstellungen auf dem Mac",
+    "es": "Abre los ajustes de Bluetooth en el Mac",
+    "fr": "Ouvre les réglages Bluetooth sur le Mac",
+    "ru": "Открывает настройки Bluetooth на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "headphones"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "openURL": {
+        "url": "x-apple.systempreferences:com.apple.BluetoothSettings"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg",
+      "landscapeSource": "@file:rest-landscape.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg",
+    "landscapeSource": "@file:demo-landscape.svg"
+  }
+}

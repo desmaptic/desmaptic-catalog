@@ -1,0 +1,59 @@
+{
+  "id": "long-jobs",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Long Jobs",
+    "de": "Lange Aufgaben",
+    "es": "Tareas largas",
+    "fr": "Tâches longues",
+    "ru": "Долгая работа"
+  },
+  "summary": {
+    "en": "What runs on the Mac and for how long, and when the last jobs finished; hold to stop the top one",
+    "de": "Was auf dem Mac läuft und wie lange, und wann die letzten Aufgaben fertig wurden; Halten stoppt die oberste",
+    "es": "Qué se ejecuta en el Mac y desde hace cuánto, y cuándo terminaron las últimas tareas; mantén pulsado para detener la de más arriba",
+    "fr": "Ce qui tourne sur le Mac et depuis combien de temps, et quand les dernières tâches ont fini ; maintenez pour arrêter celle du haut",
+    "ru": "Что идёт на Mac и сколько, и во сколько закончились последние задачи; удержание останавливает верхнюю"
+  },
+  "colSpan": 2,
+  "rowSpan": 2,
+  "details": {
+    "en": "What runs on the Mac and for how long — builds, exports, a backup in percent, AI sessions — then what finished, ✓ or ✗ with the time. The programs it watches are the first line of its script.",
+    "de": "Was auf dem Mac läuft und wie lange – Builds, Exporte, ein Backup in Prozent, KI-Sitzungen –, dann was fertig wurde, ✓ oder ✗ mit der Uhrzeit. Welche Programme beobachtet werden, steht in der ersten Zeile des Skripts.",
+    "es": "Qué se ejecuta en el Mac y desde hace cuánto (compilaciones, exportaciones, una copia en porcentaje, sesiones de IA) y luego qué terminó, ✓ o ✗ con la hora. Los programas que vigila están en la primera línea del script.",
+    "fr": "Ce qui tourne sur le Mac et depuis combien de temps (compilations, exports, une sauvegarde en pourcentage, sessions d’IA), puis ce qui s’est terminé, ✓ ou ✗ avec l’heure. Les programmes surveillés sont sur la première ligne du script.",
+    "ru": "Что идёт на Mac и сколько — сборки, экспорт, бэкап в процентах, сессии ИИ, — а потом что закончилось, ✓ или ✗ со временем. Какие программы смотреть, задаёт первая строка скрипта."
+  },
+  "holdAction": {
+    "en": "⚠️ Stops the top job on the face that can be stopped: a program from the list or a Time Machine backup",
+    "de": "⚠️ Stoppt die oberste angezeigte Aufgabe, die sich stoppen lässt: ein Programm aus der Liste oder ein Time-Machine-Backup",
+    "es": "⚠️ Detiene la tarea de más arriba que se puede detener: un programa de la lista o una copia de Time Machine",
+    "fr": "⚠️ Arrête la tâche la plus haute qu’on peut arrêter : un programme de la liste ou une sauvegarde Time Machine",
+    "ru": "⚠️ Останавливает верхнюю из показанных задач, которые можно остановить: программу из списка или бэкап Time Machine"
+  },
+  "permissions": ["downloads"],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "hourglass"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "ping": {}
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

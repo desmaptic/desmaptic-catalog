@@ -1,0 +1,60 @@
+{
+  "id": "uuid",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "UUID",
+    "de": "UUID",
+    "es": "UUID",
+    "fr": "UUID",
+    "ru": "UUID"
+  },
+  "summary": {
+    "en": "A new UUID on the Mac’s clipboard in one tap",
+    "de": "Eine neue UUID mit einem Tippen in der Zwischenablage des Mac",
+    "es": "Un UUID nuevo en el portapapeles del Mac con un toque",
+    "fr": "Un nouvel UUID dans le presse-papiers du Mac, d’un simple toucher",
+    "ru": "Новый UUID в буфере обмена Mac одним нажатием"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "A version 7 UUID begins with the time it was made, so such IDs sort in the order they were created — handy as database keys.",
+    "de": "Eine UUID der Version 7 beginnt mit ihrem Erstellungszeitpunkt, daher lassen sich solche IDs chronologisch sortieren – praktisch als Datenbankschlüssel.",
+    "es": "Un UUID de la versión 7 empieza por el momento de su creación, así que estos identificadores se ordenan por fecha: útiles como claves de base de datos.",
+    "fr": "Un UUID de version 7 commence par l’instant de sa création : ces identifiants se trient donc par ordre de création, ce qui est pratique pour des clés de base de données.",
+    "ru": "UUID версии 7 начинается со времени создания, поэтому такие идентификаторы сортируются в порядке появления — удобно для ключей в базе данных."
+  },
+  "tapAction": {
+    "en": "Copies a new random UUID (version 4) to the Mac’s clipboard",
+    "de": "Kopiert eine neue zufällige UUID (Version 4) in die Zwischenablage des Mac",
+    "es": "Copia un nuevo UUID aleatorio (versión 4) al portapapeles del Mac",
+    "fr": "Copie un nouvel UUID aléatoire (version 4) dans le presse-papiers du Mac",
+    "ru": "Копирует в буфер обмена Mac новый случайный UUID (версия 4)"
+  },
+  "holdAction": {
+    "en": "Copies a new time-ordered UUID (version 7)",
+    "de": "Kopiert eine neue zeitlich sortierbare UUID (Version 7)",
+    "es": "Copia un nuevo UUID ordenado por tiempo (versión 7)",
+    "fr": "Copie un nouvel UUID ordonné chronologiquement (version 7)",
+    "ru": "Копирует новый UUID, упорядоченный по времени (версия 7)"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "number"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "version=4\n@file:copy.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "version=7\n@file:copy.zsh"
+      }
+    }
+  }
+}

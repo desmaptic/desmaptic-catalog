@@ -1,0 +1,58 @@
+{
+  "id": "new-note",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Note…",
+    "de": "Notiz…",
+    "es": "Nota…",
+    "fr": "Note…",
+    "ru": "Заметка…"
+  },
+  "summary": {
+    "en": "Type on the phone and the text becomes a new note in Notes on the Mac",
+    "de": "Tippe auf dem Telefon – der Text wird auf dem Mac zu einer neuen Notiz in Notizen",
+    "es": "Escribe en el teléfono y el texto se convierte en una nota nueva en Notas del Mac",
+    "fr": "Saisissez sur le téléphone : le texte devient une nouvelle note dans Notes sur le Mac",
+    "ru": "Наберите текст на телефоне — он станет новой заметкой в «Заметках» на Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. A new note in the default folder, its first line as the title; starts Notes when it’s closed. The first time, macOS asks to let Desmaptic Agent control Notes.",
+    "de": "Nichts einzurichten. Eine neue Notiz im Standardordner, die erste Zeile als Titel; startet Notizen, wenn es geschlossen ist. Beim ersten Mal fragt macOS, ob Desmaptic Agent Notizen steuern darf.",
+    "es": "No hay nada que configurar. Una nota nueva en la carpeta por omisión, con la primera línea como título; abre Notas si está cerrado. La primera vez, macOS pide permitir que Desmaptic Agent controle Notas.",
+    "fr": "Rien à configurer. Une nouvelle note dans le dossier par défaut, la première ligne comme titre ; lance Notes s’il est fermé. La première fois, macOS demande d’autoriser Desmaptic Agent à contrôler Notes.",
+    "ru": "Настраивать ничего не нужно. Новая заметка в папке по умолчанию, первая строка — название; запускает «Заметки», если они закрыты. В первый раз macOS спросит, разрешить ли Desmaptic Agent управлять «Заметками»."
+  },
+  "tapAction": {
+    "en": "Asks what to note and adds it as a new note",
+    "de": "Fragt, was notiert werden soll, und legt es als neue Notiz an",
+    "es": "Pregunta qué anotar y lo añade como nota nueva",
+    "fr": "Demande quoi noter et l’ajoute comme nouvelle note",
+    "ru": "Спрашивает, что записать, и добавляет это новой заметкой"
+  },
+  "permissions": [
+    "automation"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "note.text"
+      }
+    },
+    "color": "#FFD60A",
+    "command": {
+      "shellCommand": {
+        "command": "@file:add.zsh"
+      }
+    },
+    "input": {
+      "question": "What to note?",
+      "placeholder": "A thought, a list, a link",
+      "multiline": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "two-dice",
+  "revision": 4,
+  "kind": "widget",
+  "title": {
+    "en": "Two Dice",
+    "de": "Zwei Würfel",
+    "es": "Dos dados",
+    "fr": "Deux dés",
+    "ru": "Два кубика"
+  },
+  "summary": {
+    "en": "Throws two dice and shows their sum, for board games",
+    "de": "Wirft zwei Würfel und zeigt ihre Summe, für Brettspiele",
+    "es": "Lanza dos dados y muestra la suma, para juegos de mesa",
+    "fr": "Lance deux dés et affiche leur somme, pour les jeux de société",
+    "ru": "Бросает два кубика и показывает сумму — для настольных игр"
+  },
+  "colSpan": 2,
+  "rowSpan": 1,
+  "details": {
+    "en": "The dice tumble and land; the big number beside them is their sum. Each die is fair: every face is equally likely. Doubles glow gold.",
+    "de": "Die Würfel rollen und landen; die große Zahl daneben ist ihre Summe. Jeder Würfel ist fair: Jede Seite ist gleich wahrscheinlich. Ein Pasch leuchtet golden.",
+    "es": "Los dados ruedan y caen; el número grande a su lado es la suma. Cada dado es justo: todas las caras son igual de probables. Los dobles brillan en dorado.",
+    "fr": "Les dés roulent et retombent ; le grand nombre à côté est leur somme. Chaque dé est équitable : toutes les faces ont la même chance. Un double brille en doré.",
+    "ru": "Кубики катятся и падают, большое число рядом — их сумма. Каждый кубик честный: все грани равновероятны. Дубль светится золотом."
+  },
+  "tapAction": {
+    "en": "Throws both dice",
+    "de": "Wirft beide Würfel",
+    "es": "Lanza los dos dados",
+    "fr": "Lance les deux dés",
+    "ru": "Бросает оба кубика"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "dice.fill"
+      }
+    },
+    "color": "#30D158",
+    "command": {
+      "shellCommand": {
+        "command": "@file:two-dice.zsh"
+      }
+    },
+    "svgFace": {
+      "source": "@file:rest.svg",
+      "landscapeSource": "@file:rest-landscape.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg",
+    "landscapeSource": "@file:demo-landscape.svg"
+  }
+}

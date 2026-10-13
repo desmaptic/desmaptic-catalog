@@ -1,0 +1,378 @@
+{
+  "id": "teams",
+  "revision": 7,
+  "name": "Microsoft Teams",
+  "bundleIds": ["com.microsoft.teams2"],
+  "category": "communication",
+  "buttons": [
+    {
+      "id": "mic",
+      "title": {
+        "en": "Mic",
+        "de": "Mikrofon",
+        "es": "Micrófono",
+        "fr": "Micro",
+        "ru": "Микрофон"
+      },
+      "summary": {
+        "en": "Mutes or unmutes you in a Teams meeting and shows whether your mic is on",
+        "de": "Schaltet dein Mikrofon in einer Teams-Besprechung stumm oder wieder ein und zeigt, ob es an ist",
+        "es": "Silencia o reactiva tu micrófono en una reunión de Teams y muestra si está activo",
+        "fr": "Coupe ou réactive votre micro dans une réunion Teams et montre son état",
+        "ru": "Выключает и включает микрофон в собрании Teams и показывает, включён ли он"
+      },
+      "details": {
+        "en": "Green: your mic is on; red: muted — also when you switch it in Teams. Grey outside a meeting. Presses Teams’ own Mic button, with Teams in the background too.",
+        "de": "Grün: Mikrofon an; rot: stumm – auch wenn du es in Teams umschaltest. Grau außerhalb einer Besprechung. Drückt die Mikrofon-Schaltfläche von Teams, auch mit Teams im Hintergrund.",
+        "es": "Verde: micrófono activo; rojo: silenciado, también si lo cambias en Teams. Gris fuera de una reunión. Pulsa el botón de micrófono de Teams, también con Teams en segundo plano.",
+        "fr": "Vert : micro actif ; rouge : coupé, même si vous le changez dans Teams. Gris hors réunion. Appuie sur le bouton Micro de Teams, même avec Teams en arrière-plan.",
+        "ru": "Зелёная — микрофон включён, красная — выключен, в том числе если переключить его в самом Teams. Серая вне собрания. Нажимает кнопку микрофона в Teams, даже когда Teams в фоне."
+      },
+      "tapAction": {
+        "en": "Mutes or unmutes you",
+        "de": "Schaltet dein Mikrofon stumm oder wieder ein",
+        "es": "Silencia o reactiva tu micrófono",
+        "fr": "Coupe ou réactive votre micro",
+        "ru": "Выключает или включает микрофон"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "mic"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=mic\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}},
+        "startupScript": "kind=mic\n@file:meeting/teams.zsh\n@file:meeting/live.zsh"
+      }
+    },
+    {
+      "id": "camera",
+      "title": {
+        "en": "Camera",
+        "de": "Kamera",
+        "es": "Cámara",
+        "fr": "Caméra",
+        "ru": "Камера"
+      },
+      "summary": {
+        "en": "Turns your camera on or off in a Teams meeting and shows whether it is on",
+        "de": "Schaltet deine Kamera in einer Teams-Besprechung ein oder aus und zeigt, ob sie an ist",
+        "es": "Enciende o apaga tu cámara en una reunión de Teams y muestra si está encendida",
+        "fr": "Active ou désactive votre caméra dans une réunion Teams et montre son état",
+        "ru": "Включает и выключает камеру в собрании Teams и показывает, включена ли она"
+      },
+      "details": {
+        "en": "Green: your camera is on; red: off — also when you switch it in Teams. Grey and crossed out: Teams offers no camera now. Grey outside a meeting. Works with Teams in the background.",
+        "de": "Grün: Kamera an; rot: aus – auch wenn du sie in Teams umschaltest. Grau durchgestrichen: Teams bietet gerade keine Kamera. Grau außerhalb einer Besprechung. Klappt mit Teams im Hintergrund.",
+        "es": "Verde: cámara encendida; rojo: apagada, también si la cambias en Teams. Gris tachado: Teams no ofrece cámara ahora. Gris fuera de una reunión. Funciona con Teams en segundo plano.",
+        "fr": "Vert : caméra active ; rouge : désactivée, même si vous la changez dans Teams. Gris barré : Teams ne propose pas de caméra. Gris hors réunion. Fonctionne avec Teams en arrière-plan.",
+        "ru": "Зелёная — камера включена, красная — выключена, в том числе если переключить её в самом Teams. Серая зачёркнутая — Teams сейчас не даёт камеру. Серая вне собрания. Работает, когда Teams в фоне."
+      },
+      "tapAction": {
+        "en": "Turns your camera on or off",
+        "de": "Schaltet deine Kamera ein oder aus",
+        "es": "Enciende o apaga tu cámara",
+        "fr": "Active ou désactive votre caméra",
+        "ru": "Включает или выключает камеру"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "video"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=camera\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}},
+        "startupScript": "kind=camera\n@file:meeting/teams.zsh\n@file:meeting/live.zsh"
+      }
+    },
+    {
+      "id": "hand",
+      "title": {
+        "en": "Raise Hand",
+        "de": "Hand heben",
+        "es": "Levantar la mano",
+        "fr": "Lever la main",
+        "ru": "Поднять руку"
+      },
+      "summary": {
+        "en": "Raises or lowers your hand in a Teams meeting",
+        "de": "Hebt oder senkt deine Hand in einer Teams-Besprechung",
+        "es": "Levanta o baja tu mano en una reunión de Teams",
+        "fr": "Lève ou baisse votre main dans une réunion Teams",
+        "ru": "Поднимает или опускает руку в собрании Teams"
+      },
+      "details": {
+        "en": "Teams’ own Raise button, pressed with Teams in the background too: tap again to lower your hand. Teams, not this button, shows whether it is up.",
+        "de": "Die Schaltfläche „Heben“ von Teams, auch mit Teams im Hintergrund: Erneutes Tippen senkt die Hand. Ob sie oben ist, zeigt Teams, nicht diese Taste.",
+        "es": "El botón de levantar la mano de Teams, también con Teams en segundo plano: otro toque la baja. Si está levantada lo muestra Teams, no este botón.",
+        "fr": "Le bouton « Lever la main » de Teams, même avec Teams en arrière-plan : un autre toucher la baisse. C’est Teams, pas ce bouton, qui montre si elle est levée.",
+        "ru": "Кнопка «Поднять руку» из Teams, даже когда Teams в фоне: повторное нажатие опускает руку. Поднята ли она, показывает Teams, а не эта кнопка."
+      },
+      "tapAction": {
+        "en": "Raises or lowers your hand",
+        "de": "Hebt oder senkt deine Hand",
+        "es": "Levanta o baja tu mano",
+        "fr": "Lève ou baisse votre main",
+        "ru": "Поднимает или опускает руку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "hand.raised"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "action=hand\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}}
+      }
+    },
+    {
+      "id": "chat",
+      "title": {"en": "Chat", "de": "Chat", "es": "Chat", "fr": "Conversation", "ru": "Чат"},
+      "summary": {
+        "en": "Opens the meeting chat in Teams",
+        "de": "Öffnet den Besprechungschat in Teams",
+        "es": "Abre el chat de la reunión en Teams",
+        "fr": "Ouvre la conversation de la réunion dans Teams",
+        "ru": "Открывает чат собрания в Teams"
+      },
+      "details": {
+        "en": "Teams’ own Chat button in the meeting window, which comes forward so you can read it; tap again to close the panel.",
+        "de": "Die Chat-Schaltfläche im Besprechungsfenster von Teams; das Fenster kommt nach vorn, damit du lesen kannst. Erneutes Tippen schließt den Bereich.",
+        "es": "El botón Chat de la ventana de la reunión de Teams, que pasa al frente para que puedas leer; otro toque cierra el panel.",
+        "fr": "Le bouton Conversation de la fenêtre de réunion Teams, qui passe au premier plan pour la lecture ; un autre toucher ferme le volet.",
+        "ru": "Кнопка «Чат» в окне собрания Teams: окно выходит вперёд, чтобы можно было читать. Повторное нажатие закрывает панель."
+      },
+      "tapAction": {
+        "en": "Shows or hides the meeting chat",
+        "de": "Zeigt oder schließt den Besprechungschat",
+        "es": "Muestra u oculta el chat de la reunión",
+        "fr": "Affiche ou masque la conversation de la réunion",
+        "ru": "Показывает или скрывает чат собрания"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "bubble.left.and.bubble.right"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "action=chat\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}}
+      }
+    },
+    {
+      "id": "people",
+      "title": {"en": "People", "de": "Personen", "es": "Personas", "fr": "Participants", "ru": "Участники"},
+      "summary": {
+        "en": "Opens the list of people in the Teams meeting",
+        "de": "Öffnet die Teilnehmerliste der Teams-Besprechung",
+        "es": "Abre la lista de personas de la reunión de Teams",
+        "fr": "Ouvre la liste des participants de la réunion Teams",
+        "ru": "Открывает список участников собрания Teams"
+      },
+      "details": {
+        "en": "Teams’ own People button in the meeting window, which comes forward so you can see who is there; tap again to close the panel.",
+        "de": "Die Schaltfläche „Personen“ im Besprechungsfenster von Teams; das Fenster kommt nach vorn. Erneutes Tippen schließt den Bereich.",
+        "es": "El botón Personas de la ventana de la reunión de Teams, que pasa al frente para ver quién está; otro toque cierra el panel.",
+        "fr": "Le bouton Participants de la fenêtre de réunion Teams, qui passe au premier plan ; un autre toucher ferme le volet.",
+        "ru": "Кнопка «Участники» в окне собрания Teams: окно выходит вперёд, видно, кто в собрании. Повторное нажатие закрывает панель."
+      },
+      "tapAction": {
+        "en": "Shows or hides the people in the meeting",
+        "de": "Zeigt oder schließt die Teilnehmerliste",
+        "es": "Muestra u oculta las personas de la reunión",
+        "fr": "Affiche ou masque les participants",
+        "ru": "Показывает или скрывает участников"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "person.2"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "action=people\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}}
+      }
+    },
+    {
+      "id": "share",
+      "title": {
+        "en": "Share",
+        "de": "Teilen",
+        "es": "Compartir",
+        "fr": "Partager",
+        "ru": "Поделиться"
+      },
+      "summary": {
+        "en": "Starts or stops sharing in a Teams meeting",
+        "de": "Startet oder beendet das Teilen in einer Teams-Besprechung",
+        "es": "Empieza o deja de compartir en una reunión de Teams",
+        "fr": "Démarre ou arrête le partage dans une réunion Teams",
+        "ru": "Начинает или прекращает демонстрацию в собрании Teams"
+      },
+      "details": {
+        "en": "Brings the meeting window to the front and opens Teams’ Share, where you choose what to share. While you already share, the tap refuses: stop with a long press.",
+        "de": "Holt das Besprechungsfenster nach vorne und öffnet „Teilen“ von Teams, wo du wählst, was du teilst. Teilst du schon, lehnt die Taste das Tippen ab: Beenden mit langem Drücken.",
+        "es": "Trae la ventana de la reunión al frente y abre Compartir de Teams, donde eliges qué compartir. Si ya estás compartiendo, el botón rechaza el toque: para dejar de compartir, mantén pulsado.",
+        "fr": "Met la fenêtre de la réunion au premier plan et ouvre Partager de Teams, où vous choisissez quoi partager. Si vous partagez déjà, le bouton refuse le toucher : pour arrêter, faites un appui long.",
+        "ru": "Выводит окно собрания вперёд и открывает «Поделиться» в Teams, где вы выбираете, что показать. Если демонстрация уже идёт, кнопка откажет: остановить её можно долгим нажатием."
+      },
+      "tapAction": {
+        "en": "Opens Share in the meeting window",
+        "de": "Öffnet „Teilen“ im Besprechungsfenster",
+        "es": "Abre Compartir en la ventana de la reunión",
+        "fr": "Ouvre Partager dans la fenêtre de la réunion",
+        "ru": "Открывает «Поделиться» в окне собрания"
+      },
+      "holdAction": {
+        "en": "⚠️ Stops sharing",
+        "de": "⚠️ Beendet das Teilen",
+        "es": "⚠️ Deja de compartir",
+        "fr": "⚠️ Arrête le partage",
+        "ru": "⚠️ Прекращает демонстрацию"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.and.arrow.up"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "action=share\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=unshare\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}}
+      }
+    },
+    {
+      "id": "meeting",
+      "title": {
+        "en": "Meeting",
+        "de": "Besprechung",
+        "es": "Reunión",
+        "fr": "Réunion",
+        "ru": "Собрание"
+      },
+      "summary": {
+        "en": "Brings the Teams meeting window forward; hold to leave the meeting",
+        "de": "Holt das Fenster der Teams-Besprechung nach vorne; halten, um die Besprechung zu verlassen",
+        "es": "Trae al frente la ventana de la reunión de Teams; mantén pulsado para salir de la reunión",
+        "fr": "Met la fenêtre de la réunion Teams au premier plan ; maintenez pour quitter la réunion",
+        "ru": "Выводит вперёд окно собрания Teams; удержание — выйти из собрания"
+      },
+      "details": {
+        "en": "The long press clicks Teams’ Leave: you leave, and the meeting goes on for the others (a two-person call ends). If Teams asks first, answer there. Ending it for everyone is only in Teams.",
+        "de": "Langes Drücken klickt in Teams auf „Verlassen“: Du gehst, die Besprechung läuft für die anderen weiter (ein Anruf zu zweit endet). Fragt Teams nach, antworte dort. Für alle beenden geht nur in Teams.",
+        "es": "La pulsación larga pulsa «Salir» en Teams: tú sales y la reunión sigue para los demás (una llamada entre dos termina). Si Teams pregunta, responde allí. Finalizarla para todos solo se puede en Teams.",
+        "fr": "L’appui long clique sur « Quitter » dans Teams : vous partez, la réunion continue pour les autres (un appel à deux se termine). Si Teams demande confirmation, répondez-y. Seul Teams permet d’y mettre fin pour tous.",
+        "ru": "Удержание нажимает «Выйти» в Teams: вы уходите, а собрание идёт дальше для остальных (звонок вдвоём завершается). Если Teams переспросит, ответьте там. Завершить для всех можно только в Teams."
+      },
+      "tapAction": {
+        "en": "Brings the meeting window to the front",
+        "de": "Holt das Besprechungsfenster nach vorne",
+        "es": "Trae al frente la ventana de la reunión",
+        "fr": "Met la fenêtre de la réunion au premier plan",
+        "ru": "Выводит окно собрания на передний план"
+      },
+      "holdAction": {
+        "en": "⚠️ Leaves the meeting",
+        "de": "⚠️ Verlässt die Besprechung",
+        "es": "⚠️ Sale de la reunión",
+        "fr": "⚠️ Quitte la réunion",
+        "ru": "⚠️ Выходит из собрания"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.inset.filled.and.person.filled"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "action=show\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=leave\n@file:meeting/teams.zsh\n@file:meeting/press.zsh"}}
+      }
+    },
+    {
+      "id": "join",
+      "title": {
+        "en": "Join My Meeting",
+        "de": "Meine Besprechung",
+        "es": "Mi reunión",
+        "fr": "Ma réunion",
+        "ru": "Моё собрание"
+      },
+      "summary": {
+        "en": "Joins a meeting you go to often, such as a daily stand-up, from its link",
+        "de": "Tritt einer Besprechung bei, zu der du oft gehst, etwa dem täglichen Stand-up, über ihren Link",
+        "es": "Entra en una reunión a la que vas a menudo, como la diaria del equipo, desde su enlace",
+        "fr": "Rejoint une réunion où vous allez souvent, comme le point quotidien, depuis son lien",
+        "ru": "Входит по ссылке в собрание, куда вы ходите часто, например в ежедневную планёрку"
+      },
+      "details": {
+        "en": "Put the link from the meeting’s invite (https://teams.microsoft.com/l/meetup-join/…) in the first line of the button’s script; a short teams.microsoft.com/meet/… link does not work. Starts Teams when it is closed.",
+        "de": "Trag den Link aus der Einladung (https://teams.microsoft.com/l/meetup-join/…) in die erste Zeile des Skripts der Taste ein; ein kurzer Link teams.microsoft.com/meet/… klappt nicht. Startet Teams, wenn es geschlossen ist.",
+        "es": "Pon el enlace de la invitación (https://teams.microsoft.com/l/meetup-join/…) en la primera línea del script del botón; un enlace corto teams.microsoft.com/meet/… no sirve. Abre Teams si está cerrado.",
+        "fr": "Indiquez le lien de l’invitation (https://teams.microsoft.com/l/meetup-join/…) à la première ligne du script du bouton ; un lien court teams.microsoft.com/meet/… ne fonctionne pas. Lance Teams s’il est fermé.",
+        "ru": "Ссылку из приглашения (https://teams.microsoft.com/l/meetup-join/…) впишите в первую строку скрипта кнопки; короткая teams.microsoft.com/meet/… не подойдёт. Запускает Teams, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens your meeting in Teams",
+        "de": "Öffnet deine Besprechung in Teams",
+        "es": "Abre tu reunión en Teams",
+        "fr": "Ouvre votre réunion dans Teams",
+        "ru": "Открывает ваше собрание в Teams"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "door.left.hand.open"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "link=\"\"   # ← your meeting’s link from its invite: https://teams.microsoft.com/l/meetup-join/…\n@file:join.zsh"}}
+      }
+    },
+    {
+      "id": "status",
+      "title": {
+        "en": "Status",
+        "de": "Status",
+        "es": "Estado",
+        "fr": "État",
+        "ru": "Статус"
+      },
+      "summary": {
+        "en": "Sets your Teams status — Busy, Do not disturb, Be right back or Available — in one tap",
+        "de": "Setzt deinen Teams-Status – Beschäftigt, Nicht stören, Bin gleich zurück oder Verfügbar – mit einem Tippen",
+        "es": "Cambia tu estado de Teams (Ocupado, No molestar, Vuelvo enseguida o Disponible) con un toque",
+        "fr": "Change votre état Teams (Occupé, Ne pas déranger, De retour bientôt ou Disponible) d’un toucher",
+        "ru": "Меняет статус Teams — «Занят», «Не беспокоить», «Скоро вернусь» или «В сети» — одним нажатием"
+      },
+      "details": {
+        "en": "Runs the shortcut “Teams Busy”: make it in Shortcuts with Teams’ “Change Teams status”. One shortcut per status — name yours in the first line of the button’s script. Teams comes forward.",
+        "de": "Führt den Kurzbefehl „Teams Busy“ aus: Erstelle ihn in Kurzbefehle mit „Teams-Status ändern“ von Teams. Ein Kurzbefehl pro Status – sein Name steht in der ersten Zeile des Skripts der Taste. Teams kommt nach vorne.",
+        "es": "Ejecuta el atajo «Teams Busy»: créalo en Atajos con «Cambiar el estado de Teams», de Teams. Un atajo por estado: pon su nombre en la primera línea del script del botón. Teams pasa al frente.",
+        "fr": "Lance le raccourci « Teams Busy » : créez-le dans Raccourcis avec « Modifier l’état Teams » de Teams. Un raccourci par état : indiquez son nom à la première ligne du script du bouton. Teams passe au premier plan.",
+        "ru": "Запускает быструю команду «Teams Busy» — соберите её в «Быстрых командах» с действием Teams «Изменить статус Teams». По команде на статус: её имя — в первой строке скрипта кнопки. Teams выходит вперёд."
+      },
+      "tapAction": {
+        "en": "Runs your status shortcut",
+        "de": "Führt deinen Status-Kurzbefehl aus",
+        "es": "Ejecuta tu atajo de estado",
+        "fr": "Lance votre raccourci d’état",
+        "ru": "Запускает быструю команду статуса"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "person.crop.circle"}},
+        "color": "#5B5FC7",
+        "command": {"shellCommand": {"command": "shortcut=\"Teams Busy\"   # ← the name of your shortcut with Teams’ “Change Teams status”: one per status\n@file:status.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Teams", "de": "Teams", "es": "Teams", "fr": "Teams", "ru": "Teams"},
+      "summary": {
+        "en": "Mic, camera, hand and sharing for Teams meetings, your own meeting in a tap and your status",
+        "de": "Mikrofon, Kamera, Hand und Teilen für Teams-Besprechungen, deine eigene Besprechung mit einem Tippen und dein Status",
+        "es": "Micrófono, cámara, mano y compartir para reuniones de Teams, tu reunión con un toque y tu estado",
+        "fr": "Micro, caméra, main levée et partage pour les réunions Teams, votre réunion d’un toucher et votre état",
+        "ru": "Микрофон, камера, рука и демонстрация для собраний Teams, ваше собрание одним нажатием и статус"
+      },
+      "details": {
+        "en": "The meeting buttons press Teams’ own meeting controls, so they work with Teams behind other apps. Mic and Camera show whether they are on. Join My Meeting and Status work outside a meeting too; set each in the first line of its script.",
+        "de": "Die Besprechungstasten drücken die Besprechungssteuerung von Teams selbst und klappen daher auch mit Teams hinter anderen Apps. Mikrofon und Kamera zeigen, ob sie an sind. Meine Besprechung und Status klappen auch außerhalb einer Besprechung; eingestellt werden sie in der ersten Zeile ihres Skripts.",
+        "es": "Los botones de reunión pulsan los controles de reunión del propio Teams, así que funcionan con Teams detrás de otras apps. Micrófono y Cámara muestran si están activos. Mi reunión y Estado funcionan también fuera de una reunión; se ajustan en la primera línea de su script.",
+        "fr": "Les boutons de réunion appuient sur les contrôles de réunion de Teams lui-même : ils fonctionnent avec Teams derrière d’autres apps. Micro et Caméra montrent s’ils sont actifs. Ma réunion et État fonctionnent aussi hors réunion ; ils se règlent à la première ligne de leur script.",
+        "ru": "Кнопки собрания нажимают элементы управления собранием в самом Teams, поэтому работают, даже когда Teams за другими приложениями. «Микрофон» и «Камера» показывают, включены ли они. «Моё собрание» и «Статус» работают и вне собрания; настраиваются в первой строке своего скрипта."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "mic", "row": 0, "col": 0},
+        {"button": "camera", "row": 0, "col": 1},
+        {"button": "hand", "row": 0, "col": 2},
+        {"button": "share", "row": 0, "col": 3},
+        {"button": "chat", "row": 1, "col": 0},
+        {"button": "people", "row": 1, "col": 1},
+        {"button": "join", "row": 1, "col": 2},
+        {"button": "meeting", "row": 1, "col": 3},
+        {"button": "status", "row": 2, "col": 0}
+      ]
+    }
+  ]
+}

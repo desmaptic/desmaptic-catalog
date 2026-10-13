@@ -1,0 +1,57 @@
+{
+  "id": "type-text",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Type…",
+    "de": "Tippen…",
+    "es": "Escribir…",
+    "fr": "Saisir…",
+    "ru": "Напечатать…"
+  },
+  "summary": {
+    "en": "Type on the phone and the text is typed on the Mac, wherever its cursor is",
+    "de": "Tippe auf dem Telefon – der Text wird auf dem Mac dort eingegeben, wo der Cursor steht",
+    "es": "Escribe en el teléfono y el texto se escribe en el Mac, donde esté el cursor",
+    "fr": "Saisissez sur le téléphone : le texte est tapé sur le Mac, là où se trouve le curseur",
+    "ru": "Наберите текст на телефоне — он напечатается на Mac там, где стоит курсор"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. Typed into the app in front, as if from the Mac’s keyboard. The first time, macOS may ask to allow Desmaptic Agent under Accessibility.",
+    "de": "Nichts einzurichten. Wird in die App im Vordergrund getippt, als käme es von der Tastatur des Mac. Beim ersten Mal fragt macOS eventuell, ob Desmaptic Agent unter „Bedienungshilfen“ erlaubt wird.",
+    "es": "No hay nada que configurar. Se escribe en la app que está delante, como desde el teclado del Mac. La primera vez, macOS puede pedir que permitas Desmaptic Agent en Accesibilidad.",
+    "fr": "Rien à configurer. Le texte est tapé dans l’app au premier plan, comme au clavier du Mac. La première fois, macOS peut demander d’autoriser Desmaptic Agent dans Accessibilité.",
+    "ru": "Настраивать ничего не нужно. Текст печатается в приложение на переднем плане, как с клавиатуры Mac. В первый раз macOS может попросить разрешить Desmaptic Agent в разделе «Универсальный доступ»."
+  },
+  "tapAction": {
+    "en": "Asks for text and types it on the Mac",
+    "de": "Fragt nach einem Text und tippt ihn auf dem Mac",
+    "es": "Pide un texto y lo escribe en el Mac",
+    "fr": "Demande un texte et le tape sur le Mac",
+    "ru": "Спрашивает текст и печатает его на Mac"
+  },
+  "permissions": [
+    "accessibility"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "keyboard"
+      }
+    },
+    "color": "#5E5CE6",
+    "command": {
+      "textSnippet": {
+        "text": ""
+      }
+    },
+    "input": {
+      "question": "What to type on the Mac?",
+      "placeholder": "Text for where the cursor is"
+    }
+  }
+}

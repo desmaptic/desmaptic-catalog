@@ -1,0 +1,57 @@
+{
+  "id": "new-reminder",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Reminder…",
+    "de": "Erinnerung…",
+    "es": "Recordar…",
+    "fr": "Rappel…",
+    "ru": "Напомнить…"
+  },
+  "summary": {
+    "en": "Type on the phone and the text becomes a reminder in Reminders on the Mac",
+    "de": "Tippe auf dem Telefon – der Text wird auf dem Mac zu einer Erinnerung in Erinnerungen",
+    "es": "Escribe en el teléfono y el texto se convierte en un recordatorio en Recordatorios del Mac",
+    "fr": "Saisissez sur le téléphone : le texte devient un rappel dans Rappels sur le Mac",
+    "ru": "Наберите текст на телефоне — он станет напоминанием в «Напоминаниях» на Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. Goes to the default list set in Reminders, with no date; the first line is the title. The first time, macOS asks to give Desmaptic Agent access to Reminders.",
+    "de": "Nichts einzurichten. Landet ohne Datum in der Standardliste aus den Einstellungen von Erinnerungen; die erste Zeile ist der Titel. Beim ersten Mal fragt macOS, ob Desmaptic Agent auf Erinnerungen zugreifen darf.",
+    "es": "No hay nada que configurar. Va a la lista por omisión de los ajustes de Recordatorios, sin fecha; la primera línea es el título. La primera vez, macOS pide dar a Desmaptic Agent acceso a Recordatorios.",
+    "fr": "Rien à configurer. Arrive sans date dans la liste par défaut des réglages de Rappels ; la première ligne est le titre. La première fois, macOS demande d’autoriser Desmaptic Agent à accéder à Rappels.",
+    "ru": "Настраивать ничего не нужно. Попадает без даты в список по умолчанию из настроек «Напоминаний»; первая строка — название. В первый раз macOS спросит, дать ли Desmaptic Agent доступ к «Напоминаниям»."
+  },
+  "tapAction": {
+    "en": "Asks what to remind of and adds it as a reminder",
+    "de": "Fragt, woran erinnert werden soll, und fügt es als Erinnerung hinzu",
+    "es": "Pregunta qué recordar y lo añade como recordatorio",
+    "fr": "Demande quoi rappeler et l’ajoute comme rappel",
+    "ru": "Спрашивает, о чём напомнить, и добавляет это напоминанием"
+  },
+  "permissions": [
+    "reminders"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "checklist"
+      }
+    },
+    "color": "#FF9500",
+    "command": {
+      "shellCommand": {
+        "command": "@file:add.zsh"
+      }
+    },
+    "input": {
+      "question": "What to remind you of?",
+      "placeholder": "Buy milk"
+    }
+  }
+}

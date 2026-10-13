@@ -1,0 +1,942 @@
+{
+  "id": "notes",
+  "revision": 6,
+  "name": {
+    "en": "Notes",
+    "de": "Notizen",
+    "es": "Notas",
+    "fr": "Notes",
+    "ru": "Заметки"
+  },
+  "bundleIds": [
+    "com.apple.Notes"
+  ],
+  "category": "productivity",
+  "buttons": [
+    {
+      "id": "new",
+      "title": {
+        "en": "New Note",
+        "de": "Neue Notiz",
+        "es": "Nueva nota",
+        "fr": "Nouvelle note",
+        "ru": "Новая заметка"
+      },
+      "summary": {
+        "en": "Starts a new note in the folder shown (⌘N)",
+        "de": "Beginnt eine neue Notiz im angezeigten Ordner (⌘N)",
+        "es": "Empieza una nota nueva en la carpeta mostrada (⌘N)",
+        "fr": "Commence une nouvelle note dans le dossier affiché (⌘N)",
+        "ru": "Начинает новую заметку в открытой папке (⌘N)"
+      },
+      "details": {
+        "en": "File › New Note (⌘N): type it on the Mac. Brings Notes to the front — starting it when it’s closed — so it works from any page.",
+        "de": "Ablage › Neue Notiz (⌘N): Text am Mac eintippen. Holt Notizen nach vorne – und startet es, wenn es geschlossen ist –, darum klappt es auf jeder Seite.",
+        "es": "Archivo › Nueva nota (⌘N): escríbela en el Mac. Trae Notas al frente —y lo abre si está cerrado—, así que funciona en cualquier página.",
+        "fr": "Fichier › Nouvelle note (⌘N) : saisissez-la sur le Mac. Met Notes au premier plan, en le lançant s’il est fermé : fonctionne depuis n’importe quelle page.",
+        "ru": "Файл › Новая заметка (⌘N): текст набирается на Mac. Выводит «Заметки» на передний план и запускает приложение, если оно закрыто, — работает с любой страницы."
+      },
+      "tapAction": {
+        "en": "Starts a new note",
+        "de": "Beginnt eine neue Notiz",
+        "es": "Empieza una nota nueva",
+        "fr": "Commence une nouvelle note",
+        "ru": "Начинает новую заметку"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.and.pencil"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "action=new\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "from-clipboard",
+      "title": {
+        "en": "From Clipboard",
+        "de": "Kopierter Text",
+        "es": "Del portapapeles",
+        "fr": "Du presse-papiers",
+        "ru": "Из буфера"
+      },
+      "summary": {
+        "en": "Turns the text you copied on the Mac into a note, in one tap",
+        "de": "Macht aus dem auf dem Mac kopierten Text mit einem Tippen eine Notiz",
+        "es": "Convierte en nota el texto que copiaste en el Mac, con un toque",
+        "fr": "Transforme en note le texte copié sur le Mac, d’un simple toucher",
+        "ru": "Одним нажатием превращает скопированный на Mac текст в заметку"
+      },
+      "details": {
+        "en": "A new note in the default folder: the text as copied, its first line as the title. A password from a password manager is refused. Starts Notes when it’s closed.",
+        "de": "Eine neue Notiz im Standardordner: der Text wie kopiert, die erste Zeile als Titel. Ein Passwort aus einem Passwortmanager wird abgelehnt. Startet Notizen, wenn es geschlossen ist.",
+        "es": "Una nota nueva en la carpeta por omisión: el texto tal como se copió, con la primera línea como título. Las contraseñas de un gestor de contraseñas se rechazan. Abre Notas si está cerrado.",
+        "fr": "Une nouvelle note dans le dossier par défaut : le texte tel qu’il a été copié, la première ligne comme titre. Un mot de passe venant d’un gestionnaire de mots de passe est refusé. Lance Notes s’il est fermé.",
+        "ru": "Новая заметка в папке по умолчанию: текст как скопирован, первая строка — название. Пароль из менеджера паролей не добавляется. Запускает «Заметки», если они закрыты."
+      },
+      "tapAction": {
+        "en": "Adds the copied text as a note",
+        "de": "Fügt den kopierten Text als Notiz hinzu",
+        "es": "Añade el texto copiado como nota",
+        "fr": "Ajoute le texte copié comme note",
+        "ru": "Добавляет скопированный текст как заметку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "doc.on.clipboard"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "@file:add/note.zsh\n@file:add/clipboard.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "read-later",
+      "title": {
+        "en": "Read Later",
+        "de": "Später lesen",
+        "es": "Leer después",
+        "fr": "Lire plus tard",
+        "ru": "Прочитать позже"
+      },
+      "summary": {
+        "en": "Saves the page open in your browser as a note to read later",
+        "de": "Sichert die im Browser geöffnete Seite als Notiz zum späteren Lesen",
+        "es": "Guarda la página abierta en el navegador como nota para leerla después",
+        "fr": "Enregistre la page ouverte dans le navigateur comme note à lire plus tard",
+        "ru": "Сохраняет открытую в браузере страницу как заметку, чтобы прочитать позже"
+      },
+      "details": {
+        "en": "The current tab of Safari, Chrome or Arc, whichever is in front of the others: its title and link, in the default folder. Incognito windows of Chrome and Arc are refused. Starts Notes when it’s closed.",
+        "de": "Der aktuelle Tab von Safari, Chrome oder Arc – der Browser, der vor den anderen liegt –, mit Titel und Link, im Standardordner. Inkognito-Fenster von Chrome und Arc werden abgelehnt. Startet Notizen, wenn es geschlossen ist.",
+        "es": "La pestaña actual de Safari, Chrome o Arc, el que esté delante de los otros: su título y enlace, en la carpeta por omisión. Las ventanas de incógnito de Chrome y Arc se rechazan. Abre Notas si está cerrado.",
+        "fr": "L’onglet actuel de Safari, Chrome ou Arc, celui qui est devant les autres : son titre et son lien, dans le dossier par défaut. Les fenêtres de navigation privée de Chrome et Arc sont refusées. Lance Notes s’il est fermé.",
+        "ru": "Текущая вкладка Safari, Chrome или Arc — того браузера, что впереди остальных: название и ссылка, в папке по умолчанию. Окна инкогнито Chrome и Arc не сохраняются. Запускает «Заметки», если они закрыты."
+      },
+      "tapAction": {
+        "en": "Adds the page in your browser as a note",
+        "de": "Fügt die Seite im Browser als Notiz hinzu",
+        "es": "Añade la página del navegador como nota",
+        "fr": "Ajoute la page du navigateur comme note",
+        "ru": "Добавляет страницу из браузера как заметку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "eyeglasses"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "@file:add/note.zsh\n@file:add/read-later.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "open-note",
+      "title": {
+        "en": "Open Note",
+        "de": "Notiz öffnen",
+        "es": "Abrir nota",
+        "fr": "Ouvrir la note",
+        "ru": "Открыть заметку"
+      },
+      "summary": {
+        "en": "Opens the note you keep coming back to",
+        "de": "Öffnet die Notiz, zu der du immer wieder zurückkehrst",
+        "es": "Abre la nota a la que siempre vuelves",
+        "fr": "Ouvre la note à laquelle vous revenez sans cesse",
+        "ru": "Открывает заметку, к которой вы всё время возвращаетесь"
+      },
+      "details": {
+        "en": "Write its name — its first line, as the note list shows it — on the first line of the button’s script; until then, the button says so. Starts Notes when it’s closed.",
+        "de": "Trag ihren Namen – ihre erste Zeile, wie die Notizliste sie zeigt – in der ersten Zeile des Skripts der Taste ein; bis dahin sagt die Taste das. Startet Notizen, wenn es geschlossen ist.",
+        "es": "Pon su nombre —su primera línea, como la muestra la lista de notas— en la primera línea del script del botón; hasta entonces, el botón te lo recuerda. Abre Notas si está cerrado.",
+        "fr": "Indiquez son nom — sa première ligne, telle que la liste des notes l’affiche — à la première ligne du script du bouton ; d’ici là, le bouton vous le rappelle. Lance Notes s’il est fermé.",
+        "ru": "Задайте её название — первую строку, как в списке заметок, — в первой строке скрипта кнопки; пока его нет, кнопка об этом скажет. Запускает «Заметки», если они закрыты."
+      },
+      "tapAction": {
+        "en": "Opens the note you set",
+        "de": "Öffnet die eingetragene Notiz",
+        "es": "Abre la nota que pusiste",
+        "fr": "Ouvre la note indiquée",
+        "ru": "Открывает заданную заметку"
+      },
+      "permissions": [
+        "automation"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "note.text"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "note=''   # ← the note's name: its first line, as the note list shows it, e.g. note='Shopping List'\n@file:open-note.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "search",
+      "title": {
+        "en": "Search",
+        "de": "Suchen",
+        "es": "Buscar",
+        "fr": "Rechercher",
+        "ru": "Поиск"
+      },
+      "summary": {
+        "en": "Searches all your notes (⌥⌘F); hold to find in the note (⌘F)",
+        "de": "Durchsucht alle Notizen (⌥⌘F); halten: in der Notiz suchen (⌘F)",
+        "es": "Busca en todas las notas (⌥⌘F); mantén pulsado para buscar en la nota (⌘F)",
+        "fr": "Recherche dans toutes les notes (⌥⌘F) ; maintenez pour chercher dans la note (⌘F)",
+        "ru": "Ищет по всем заметкам (⌥⌘F); удержание — поиск в заметке (⌘F)"
+      },
+      "details": {
+        "en": "Edit › Find › Note List Search (⌥⌘F) or Find (⌘F): type on the Mac. Brings Notes to the front — starting it when it’s closed — so it works from any page.",
+        "de": "Bearbeiten › Suchen › Notizenliste durchsuchen (⌥⌘F) oder Suchen (⌘F): am Mac eintippen. Holt Notizen nach vorne – und startet es, wenn es geschlossen ist –, darum klappt es auf jeder Seite.",
+        "es": "Edición › Buscar › Buscar en la lista de notas (⌥⌘F) o Buscar (⌘F): escribe en el Mac. Trae Notas al frente —y lo abre si está cerrado—, así que funciona en cualquier página.",
+        "fr": "Édition › Rechercher › Rechercher dans la liste de notes (⌥⌘F) ou Rechercher (⌘F) : tapez sur le Mac. Met Notes au premier plan, en le lançant s’il est fermé : fonctionne depuis n’importe quelle page.",
+        "ru": "Правка › Поиск › Поиск в списке заметок (⌥⌘F) или Найти (⌘F): текст набирается на Mac. Выводит «Заметки» на передний план и запускает приложение, если оно закрыто, — работает с любой страницы."
+      },
+      "tapAction": {
+        "en": "Searches all notes",
+        "de": "Durchsucht alle Notizen",
+        "es": "Busca en todas las notas",
+        "fr": "Recherche dans toutes les notes",
+        "ru": "Ищет по всем заметкам"
+      },
+      "holdAction": {
+        "en": "Finds text in the note",
+        "de": "Sucht in der Notiz",
+        "es": "Busca en la nota",
+        "fr": "Cherche dans la note",
+        "ru": "Ищет текст в заметке"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=search\n@file:menu/press.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=find\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "folders",
+      "title": {
+        "en": "Folders",
+        "de": "Ordner",
+        "es": "Carpetas",
+        "fr": "Dossiers",
+        "ru": "Папки"
+      },
+      "summary": {
+        "en": "Shows or hides the folder list (⌃⌘S)",
+        "de": "Blendet die Ordnerliste ein oder aus (⌃⌘S)",
+        "es": "Muestra u oculta la lista de carpetas (⌃⌘S)",
+        "fr": "Affiche ou masque la liste des dossiers (⌃⌘S)",
+        "ru": "Показывает или скрывает список папок (⌃⌘S)"
+      },
+      "details": {
+        "en": "View › Hide Folders or Show Folders (⌃⌘S). Brings Notes to the front — starting it when it’s closed — so it works from any page.",
+        "de": "Darstellung › Ordner ausblenden oder Ordner einblenden (⌃⌘S). Holt Notizen nach vorne – und startet es, wenn es geschlossen ist –, darum klappt es auf jeder Seite.",
+        "es": "Visualización › Ocultar carpetas o Mostrar carpetas (⌃⌘S). Trae Notas al frente —y lo abre si está cerrado—, así que funciona en cualquier página.",
+        "fr": "Présentation › Masquer les dossiers ou Afficher les dossiers (⌃⌘S). Met Notes au premier plan, en le lançant s’il est fermé : fonctionne depuis n’importe quelle page.",
+        "ru": "Вид › Скрыть папки или Показать папки (⌃⌘S). Выводит «Заметки» на передний план и запускает приложение, если оно закрыто, — работает с любой страницы."
+      },
+      "tapAction": {
+        "en": "Shows or hides the folders",
+        "de": "Blendet die Ordner ein oder aus",
+        "es": "Muestra u oculta las carpetas",
+        "fr": "Affiche ou masque les dossiers",
+        "ru": "Показывает или скрывает папки"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sidebar.left"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=folders\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "title": {
+        "en": "Gallery View",
+        "de": "Als Galerie",
+        "es": "Como galería",
+        "fr": "Par galerie",
+        "ru": "Показать как галерею"
+      },
+      "summary": {
+        "en": "Shows the notes as a gallery of previews (⌘2)",
+        "de": "Zeigt die Notizen als Galerie mit Vorschauen (⌘2)",
+        "es": "Muestra las notas como una galería de vistas previas (⌘2)",
+        "fr": "Affiche les notes en galerie d’aperçus (⌘2)",
+        "ru": "Показывает заметки галереей миниатюр (⌘2)"
+      },
+      "details": {
+        "en": "View › as Gallery (⌘2). Brings Notes to the front — starting it when it’s closed — so it works from any page.",
+        "de": "Darstellung › Als Galerie (⌘2). Holt Notizen nach vorne – und startet es, wenn es geschlossen ist –, darum klappt es auf jeder Seite.",
+        "es": "Visualización › Como galería (⌘2). Trae Notas al frente —y lo abre si está cerrado—, así que funciona en cualquier página.",
+        "fr": "Présentation › Par galerie (⌘2). Met Notes au premier plan, en le lançant s’il est fermé : fonctionne depuis n’importe quelle page.",
+        "ru": "Вид › Галерея (⌘2). Выводит «Заметки» на передний план и запускает приложение, если оно закрыто, — работает с любой страницы."
+      },
+      "tapAction": {
+        "en": "Shows the notes as a gallery",
+        "de": "Zeigt die Notizen als Galerie",
+        "es": "Muestra las notas como galería",
+        "fr": "Affiche les notes en galerie",
+        "ru": "Показывает заметки галереей"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.grid.2x2"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=gallery\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "list",
+      "title": {
+        "en": "List View",
+        "de": "Als Liste",
+        "es": "Como lista",
+        "fr": "Par liste",
+        "ru": "Показать как список"
+      },
+      "summary": {
+        "en": "Shows the notes as a list (⌘1)",
+        "de": "Zeigt die Notizen als Liste (⌘1)",
+        "es": "Muestra las notas como una lista (⌘1)",
+        "fr": "Affiche les notes en liste (⌘1)",
+        "ru": "Показывает заметки списком (⌘1)"
+      },
+      "details": {
+        "en": "View › as List (⌘1). Brings Notes to the front — starting it when it’s closed — so it works from any page.",
+        "de": "Darstellung › Als Liste (⌘1). Holt Notizen nach vorne – und startet es, wenn es geschlossen ist –, darum klappt es auf jeder Seite.",
+        "es": "Visualización › Como lista (⌘1). Trae Notas al frente —y lo abre si está cerrado—, así que funciona en cualquier página.",
+        "fr": "Présentation › Par liste (⌘1). Met Notes au premier plan, en le lançant s’il est fermé : fonctionne depuis n’importe quelle page.",
+        "ru": "Вид › Список (⌘1). Выводит «Заметки» на передний план и запускает приложение, если оно закрыто, — работает с любой страницы."
+      },
+      "tapAction": {
+        "en": "Shows the notes as a list",
+        "de": "Zeigt die Notizen als Liste",
+        "es": "Muestra las notas como lista",
+        "fr": "Affiche les notes en liste",
+        "ru": "Показывает заметки списком"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "list.bullet"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=list\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "pin",
+      "title": {
+        "en": "Pin Note",
+        "de": "Notiz anpinnen",
+        "es": "Fijar nota",
+        "fr": "Épingler la note",
+        "ru": "Закрепить заметку"
+      },
+      "summary": {
+        "en": "Pins the selected note at the top of its folder, or unpins it",
+        "de": "Pinnt die ausgewählte Notiz oben im Ordner an oder löst sie",
+        "es": "Fija la nota seleccionada arriba de su carpeta o la desfija",
+        "fr": "Épingle la note sélectionnée en haut de son dossier, ou la détache",
+        "ru": "Закрепляет выбранную заметку вверху папки или открепляет её"
+      },
+      "details": {
+        "en": "File › Pin Note (Unpin Note on a pinned one) for the note selected in Notes. Works while Notes is in front.",
+        "de": "Ablage › Notiz anpinnen (bei einer angepinnten: Notiz lösen) für die ausgewählte Notiz. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Archivo › Fijar nota (Desfijar nota si ya está fijada) para la nota seleccionada. Funciona cuando Notas está delante.",
+        "fr": "Fichier › Épingler la note (Détacher la note si elle l’est déjà) pour la note sélectionnée. Fonctionne quand Notes est au premier plan.",
+        "ru": "Файл › Закрепить заметку (у закреплённой — Открепить заметку) для выбранной заметки. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Pins or unpins the selected note",
+        "de": "Pinnt die ausgewählte Notiz an oder löst sie",
+        "es": "Fija o desfija la nota seleccionada",
+        "fr": "Épingle ou détache la note sélectionnée",
+        "ru": "Закрепляет или открепляет выбранную заметку"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "pin"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=pin\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "checklist",
+      "title": {
+        "en": "Checklist",
+        "de": "Checkliste",
+        "es": "Lista de control",
+        "fr": "Liste de pointage",
+        "ru": "Контрольный список"
+      },
+      "summary": {
+        "en": "Turns the lines at the cursor into a checklist (⇧⌘L)",
+        "de": "Macht die Zeilen am Cursor zur Checkliste (⇧⌘L)",
+        "es": "Convierte en lista de control las líneas del cursor (⇧⌘L)",
+        "fr": "Transforme en liste de pointage les lignes au curseur (⇧⌘L)",
+        "ru": "Превращает строки у курсора в контрольный список (⇧⌘L)"
+      },
+      "details": {
+        "en": "Format › Checklist (⇧⌘L) for the line with the cursor or the selected lines. Works while Notes is in front.",
+        "de": "Format › Checkliste (⇧⌘L) für die Zeile mit dem Cursor oder die ausgewählten Zeilen. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Lista (⇧⌘L) para la línea del cursor o las líneas seleccionadas. Funciona cuando Notas está delante.",
+        "fr": "Format › Liste de pointage (⇧⌘L) pour la ligne du curseur ou les lignes sélectionnées. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Контрольный список (⇧⌘L) для строки с курсором или выделенных строк. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Makes a checklist",
+        "de": "Macht eine Checkliste",
+        "es": "Crea una lista de control",
+        "fr": "Crée une liste de pointage",
+        "ru": "Делает контрольный список"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "checklist"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=checklist\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "check",
+      "title": {
+        "en": "Mark as Checked",
+        "de": "Als erledigt markieren",
+        "es": "Añadir marca",
+        "fr": "Cocher",
+        "ru": "Поставить отметку"
+      },
+      "summary": {
+        "en": "Ticks the checklist item at the cursor, or unticks it (⇧⌘U)",
+        "de": "Hakt den Checklisteneintrag am Cursor ab oder nimmt den Haken weg (⇧⌘U)",
+        "es": "Marca el ítem de lista del cursor o le quita la marca (⇧⌘U)",
+        "fr": "Coche l’élément de liste au curseur, ou le décoche (⇧⌘U)",
+        "ru": "Отмечает пункт контрольного списка у курсора или снимает отметку (⇧⌘U)"
+      },
+      "details": {
+        "en": "Format › Mark as Checked (⇧⌘U; Mark as Unchecked on a ticked item) for the checklist items at the cursor or selected. Works while Notes is in front.",
+        "de": "Format › Als erledigt markieren (⇧⌘U; bei einem abgehakten: Als nicht erledigt markieren) für die Einträge am Cursor oder ausgewählte. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Añadir marca (⇧⌘U; Eliminar marca si ya está marcado) para los ítems del cursor o seleccionados. Funciona cuando Notas está delante.",
+        "fr": "Format › Cocher (⇧⌘U ; Décocher sur un élément coché) pour les éléments au curseur ou sélectionnés. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Поставить отметку (⇧⌘U; у отмеченного — Убрать отметку) для пунктов у курсора или выделенных. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Ticks or unticks the checklist item",
+        "de": "Hakt den Eintrag ab oder nimmt den Haken weg",
+        "es": "Marca o desmarca el ítem de lista",
+        "fr": "Coche ou décoche l’élément de liste",
+        "ru": "Ставит или снимает отметку у пункта списка"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "checkmark.circle"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=check\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "table",
+      "title": {
+        "en": "Table",
+        "de": "Tabelle",
+        "es": "Tabla",
+        "fr": "Tableau",
+        "ru": "Таблица"
+      },
+      "summary": {
+        "en": "Adds a table at the cursor (⌥⌘T)",
+        "de": "Fügt am Cursor eine Tabelle ein (⌥⌘T)",
+        "es": "Añade una tabla en el cursor (⌥⌘T)",
+        "fr": "Ajoute un tableau au curseur (⌥⌘T)",
+        "ru": "Вставляет таблицу у курсора (⌥⌘T)"
+      },
+      "details": {
+        "en": "Format › Table (⌥⌘T) in the note being written. Works while Notes is in front.",
+        "de": "Format › Tabelle (⌥⌘T) in der Notiz, die du schreibst. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Tabla (⌥⌘T) en la nota que estás escribiendo. Funciona cuando Notas está delante.",
+        "fr": "Format › Tableau (⌥⌘T) dans la note en cours. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Таблица (⌥⌘T) в заметке, которую вы пишете. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Adds a table",
+        "de": "Fügt eine Tabelle ein",
+        "es": "Añade una tabla",
+        "fr": "Ajoute un tableau",
+        "ru": "Вставляет таблицу"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "tablecells"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=table\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "link",
+      "title": {
+        "en": "Add Link",
+        "de": "Link hinzufügen",
+        "es": "Añadir enlace",
+        "fr": "Ajouter un lien",
+        "ru": "Добавить ссылку"
+      },
+      "summary": {
+        "en": "Adds a link to the selected text (⌘K)",
+        "de": "Verlinkt den ausgewählten Text (⌘K)",
+        "es": "Añade un enlace al texto seleccionado (⌘K)",
+        "fr": "Ajoute un lien au texte sélectionné (⌘K)",
+        "ru": "Добавляет ссылку к выделенному тексту (⌘K)"
+      },
+      "details": {
+        "en": "Edit › Add Link (⌘K): Notes asks for the address, typed on the Mac. Works while Notes is in front.",
+        "de": "Bearbeiten › Link hinzufügen (⌘K): Notizen fragt nach der Adresse, am Mac einzutippen. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Edición › Añadir enlace (⌘K): Notas pide la dirección, que se escribe en el Mac. Funciona cuando Notas está delante.",
+        "fr": "Édition › Ajouter un lien (⌘K) : Notes demande l’adresse, à taper sur le Mac. Fonctionne quand Notes est au premier plan.",
+        "ru": "Правка › Добавить ссылку (⌘K): «Заметки» спросят адрес, он набирается на Mac. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Adds a link",
+        "de": "Fügt einen Link hinzu",
+        "es": "Añade un enlace",
+        "fr": "Ajoute un lien",
+        "ru": "Добавляет ссылку"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "link"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "shellCommand": {
+            "command": "action=link\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "title",
+      "title": {
+        "en": "Title",
+        "de": "Titel",
+        "es": "Título",
+        "fr": "Titre",
+        "ru": "Название"
+      },
+      "summary": {
+        "en": "Sets the paragraph at the cursor in the Title style (⇧⌘T)",
+        "de": "Setzt den Absatz am Cursor im Stil „Titel“ (⇧⌘T)",
+        "es": "Aplica el estilo Título al párrafo del cursor (⇧⌘T)",
+        "fr": "Applique le style Titre au paragraphe du curseur (⇧⌘T)",
+        "ru": "Оформляет абзац у курсора стилем «Название» (⇧⌘T)"
+      },
+      "details": {
+        "en": "Format › Title (⇧⌘T) for the paragraph with the cursor or the selected ones. Works while Notes is in front.",
+        "de": "Format › Titel (⇧⌘T) für den Absatz mit dem Cursor oder die ausgewählten. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Título (⇧⌘T) para el párrafo del cursor o los seleccionados. Funciona cuando Notas está delante.",
+        "fr": "Format › Titre (⇧⌘T) pour le paragraphe du curseur ou ceux sélectionnés. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Название (⇧⌘T) для абзаца с курсором или выделенных абзацев. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Sets the Title style",
+        "de": "Setzt den Stil „Titel“",
+        "es": "Aplica el estilo Título",
+        "fr": "Applique le style Titre",
+        "ru": "Применяет стиль «Название»"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "textformat.size.larger"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "action=title\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "heading",
+      "title": {
+        "en": "Heading",
+        "de": "Überschrift",
+        "es": "Encabezado",
+        "fr": "Sous-titre",
+        "ru": "Заголовок"
+      },
+      "summary": {
+        "en": "Sets the paragraph at the cursor in the Heading style (⇧⌘H)",
+        "de": "Setzt den Absatz am Cursor im Stil „Überschrift“ (⇧⌘H)",
+        "es": "Aplica el estilo Encabezamiento al párrafo del cursor (⇧⌘H)",
+        "fr": "Applique le style Sous-titre au paragraphe du curseur (⇧⌘H)",
+        "ru": "Оформляет абзац у курсора стилем «Заголовок» (⇧⌘H)"
+      },
+      "details": {
+        "en": "Format › Heading (⇧⌘H) for the paragraph with the cursor or the selected ones. Works while Notes is in front.",
+        "de": "Format › Überschrift (⇧⌘H) für den Absatz mit dem Cursor oder die ausgewählten. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Encabezamiento (⇧⌘H) para el párrafo del cursor o los seleccionados. Funciona cuando Notas está delante.",
+        "fr": "Format › Sous-titre (⇧⌘H) pour le paragraphe du curseur ou ceux sélectionnés. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Заголовок (⇧⌘H) для абзаца с курсором или выделенных абзацев. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Sets the Heading style",
+        "de": "Setzt den Stil „Überschrift“",
+        "es": "Aplica el estilo Encabezamiento",
+        "fr": "Applique le style Sous-titre",
+        "ru": "Применяет стиль «Заголовок»"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "textformat"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "action=heading\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "subheading",
+      "title": {
+        "en": "Subheading",
+        "de": "Unter-Überschrift",
+        "es": "Subtítulo",
+        "fr": "Titre secondaire",
+        "ru": "Подзаг."
+      },
+      "summary": {
+        "en": "Sets the paragraph at the cursor in the Subheading style (⇧⌘J)",
+        "de": "Setzt den Absatz am Cursor im Stil „Unterüberschrift“ (⇧⌘J)",
+        "es": "Aplica el estilo Subtítulo al párrafo del cursor (⇧⌘J)",
+        "fr": "Applique le style Titre secondaire au paragraphe du curseur (⇧⌘J)",
+        "ru": "Оформляет абзац у курсора стилем «Подзаголовок» (⇧⌘J)"
+      },
+      "details": {
+        "en": "Format › Subheading (⇧⌘J) for the paragraph with the cursor or the selected ones. Works while Notes is in front.",
+        "de": "Format › Unterüberschrift (⇧⌘J) für den Absatz mit dem Cursor oder die ausgewählten. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Subtítulo (⇧⌘J) para el párrafo del cursor o los seleccionados. Funciona cuando Notas está delante.",
+        "fr": "Format › Titre secondaire (⇧⌘J) pour le paragraphe du curseur ou ceux sélectionnés. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Подзаголовок (⇧⌘J) для абзаца с курсором или выделенных абзацев. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Sets the Subheading style",
+        "de": "Setzt den Stil „Unterüberschrift“",
+        "es": "Aplica el estilo Subtítulo",
+        "fr": "Applique le style Titre secondaire",
+        "ru": "Применяет стиль «Подзаголовок»"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "textformat.size.smaller"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "action=subheading\n@file:menu/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "body",
+      "title": {
+        "en": "Body",
+        "de": "Text",
+        "es": "Cuerpo",
+        "fr": "Corps",
+        "ru": "Блок текста"
+      },
+      "summary": {
+        "en": "Sets the paragraph at the cursor in the Body style (⇧⌘B)",
+        "de": "Setzt den Absatz am Cursor im Stil „Text“ (⇧⌘B)",
+        "es": "Aplica el estilo Cuerpo al párrafo del cursor (⇧⌘B)",
+        "fr": "Applique le style Corps au paragraphe du curseur (⇧⌘B)",
+        "ru": "Оформляет абзац у курсора стилем «Блок текста» (⇧⌘B)"
+      },
+      "details": {
+        "en": "Format › Body (⇧⌘B) for the paragraph with the cursor or the selected ones. Works while Notes is in front.",
+        "de": "Format › Text (⇧⌘B) für den Absatz mit dem Cursor oder die ausgewählten. Funktioniert, wenn Notizen vorne ist.",
+        "es": "Formato › Cuerpo (⇧⌘B) para el párrafo del cursor o los seleccionados. Funciona cuando Notas está delante.",
+        "fr": "Format › Corps (⇧⌘B) pour le paragraphe du curseur ou ceux sélectionnés. Fonctionne quand Notes est au premier plan.",
+        "ru": "Формат › Блок текста (⇧⌘B) для абзаца с курсором или выделенных абзацев. Работает, когда «Заметки» на переднем плане."
+      },
+      "tapAction": {
+        "en": "Sets the Body style",
+        "de": "Setzt den Stil „Text“",
+        "es": "Aplica el estilo Cuerpo",
+        "fr": "Applique le style Corps",
+        "ru": "Применяет стиль «Блок текста»"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "text.alignleft"
+          }
+        },
+        "color": "#FFD60A",
+        "command": {
+          "shellCommand": {
+            "command": "action=body\n@file:menu/press.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Notes",
+        "de": "Notizen",
+        "es": "Notas",
+        "fr": "Notes",
+        "ru": "Заметки"
+      },
+      "summary": {
+        "en": "Save what’s on your Mac as a note in one tap, and format the note you’re writing",
+        "de": "Was auf dem Mac ist, mit einem Tippen als Notiz sichern – und die Notiz formatieren, die du schreibst",
+        "es": "Guarda en una nota lo que hay en tu Mac con un toque y da formato a la nota que escribes",
+        "fr": "Enregistrez en note ce qui est sur votre Mac d’un toucher, et mettez en forme la note en cours",
+        "ru": "Сохранить то, что на Mac, в заметку одним нажатием и оформить заметку, которую вы пишете"
+      },
+      "details": {
+        "en": "From Clipboard, Read Later and Open Note work from any page. New Note, Search and the view buttons bring Notes to the front. The others work while Notes is in front.",
+        "de": "Kopierter Text, Später lesen und Notiz öffnen funktionieren auf jeder Seite. Neue Notiz, Suchen und die Ansichtstasten holen Notizen nach vorne. Die übrigen funktionieren, wenn Notizen vorne ist.",
+        "es": "Del portapapeles, Leer después y Abrir nota funcionan en cualquier página. Nueva nota, Buscar y los botones de vista traen Notas al frente. Los demás funcionan cuando Notas está delante.",
+        "fr": "Du presse-papiers, Lire plus tard et Ouvrir la note fonctionnent depuis n’importe quelle page. Nouvelle note, Rechercher et les boutons d’affichage mettent Notes au premier plan. Les autres fonctionnent quand Notes est au premier plan.",
+        "ru": "«Из буфера», «Прочитать позже» и «Открыть заметку» работают с любой страницы. «Новая заметка», «Поиск» и кнопки вида выводят «Заметки» на передний план. Остальные работают, когда «Заметки» на переднем плане."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "new",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "from-clipboard",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "read-later",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "search",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "folders",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "gallery",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "list",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "pin",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "checklist",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "check",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "table",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "link",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "title",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "heading",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "subheading",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "body",
+          "row": 3,
+          "col": 3
+        },
+        {
+          "button": "open-note",
+          "row": 4,
+          "col": 0
+        }
+      ]
+    }
+  ]
+}

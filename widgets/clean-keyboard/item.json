@@ -1,0 +1,51 @@
+{
+  "id": "clean-keyboard",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Clean Keyboard",
+    "de": "Tastatur reinigen",
+    "es": "Limpiar teclado",
+    "fr": "Nettoyer le clavier",
+    "ru": "Почистить клавиатуру"
+  },
+  "summary": {
+    "en": "Locks the Mac’s keyboard for a minute so you can wipe it",
+    "de": "Sperrt die Tastatur des Mac für eine Minute, damit du sie abwischen kannst",
+    "es": "Bloquea el teclado del Mac un minuto para que puedas limpiarlo",
+    "fr": "Verrouille le clavier du Mac une minute pour que vous puissiez le nettoyer",
+    "ru": "Блокирует клавиатуру Mac на минуту, чтобы её можно было протереть"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Keys, including modifiers and media keys, do nothing until you tap again or the minute is up; the button counts down. The power button and Touch ID still work.",
+    "de": "Tasten, auch Sonder- und Medientasten, reagieren nicht, bis du erneut tippst oder die Minute um ist; die Taste zählt herunter. Ein-/Ausschalter und Touch ID funktionieren weiter.",
+    "es": "Las teclas, incluidas las de modificación y las multimedia, no responden hasta que vuelvas a tocar o pase el minuto; el botón muestra la cuenta atrás. El botón de encendido y Touch ID siguen funcionando.",
+    "fr": "Les touches, y compris les touches de modification et multimédias, ne répondent plus jusqu’à ce que vous touchiez à nouveau ou que la minute soit écoulée ; le bouton affiche le compte à rebours. Le bouton d’alimentation et Touch ID fonctionnent toujours.",
+    "ru": "Клавиши, в том числе модификаторы и мультимедийные, не работают, пока вы не нажмёте снова или не пройдёт минута; кнопка показывает обратный отсчёт. Кнопка питания и Touch ID продолжают работать."
+  },
+  "tapAction": {
+    "en": "Locks the keyboard for a minute; a second tap unlocks it",
+    "de": "Sperrt die Tastatur für eine Minute; erneutes Tippen entsperrt sie",
+    "es": "Bloquea el teclado un minuto; otro toque lo desbloquea",
+    "fr": "Verrouille le clavier une minute ; touchez à nouveau pour le déverrouiller",
+    "ru": "Блокирует клавиатуру на минуту; повторное нажатие разблокирует"
+  },
+  "permissions": [
+    "accessibility"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "keyboard"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "systemAction": {
+        "_0": "cleanKeyboard"
+      }
+    }
+  }
+}

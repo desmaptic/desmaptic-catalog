@@ -1,0 +1,55 @@
+{
+  "id": "mac-screen",
+  "revision": 1,
+  "kind": "widget",
+  "title": {
+    "en": "Mac Screen",
+    "de": "Mac-Bildschirm",
+    "es": "Pantalla del Mac",
+    "fr": "Écran du Mac",
+    "ru": "Экран Mac"
+  },
+  "summary": {
+    "en": "Whether the Mac’s screen is unlocked or locked, and since when",
+    "de": "Ob der Bildschirm des Mac entsperrt oder gesperrt ist, und seit wann",
+    "es": "Si la pantalla del Mac está desbloqueada o bloqueada, y desde cuándo",
+    "fr": "Si l’écran du Mac est déverrouillé ou verrouillé, et depuis quand",
+    "ru": "Открыт экран Mac или заблокирован, и с какого времени"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Says whether the Mac’s screen is unlocked or locked, and since when: cyan while locked, pink while anyone at the Mac could use it. The words come in the Mac’s language.",
+    "de": "Zeigt, ob der Bildschirm des Mac entsperrt oder gesperrt ist, und seit wann: cyan, wenn gesperrt, pink, solange jeder am Mac ihn benutzen könnte. Die Wörter erscheinen in der Sprache des Mac.",
+    "es": "Indica si la pantalla del Mac está desbloqueada o bloqueada, y desde cuándo: cian si está bloqueada, rosa mientras cualquiera frente al Mac podría usarlo. Las palabras aparecen en el idioma del Mac.",
+    "fr": "Indique si l’écran du Mac est déverrouillé ou verrouillé, et depuis quand : cyan s’il est verrouillé, rose tant que n’importe qui devant le Mac pourrait s’en servir. Les mots s’affichent dans la langue du Mac.",
+    "ru": "Показывает, открыт экран Mac или заблокирован, и с какого времени: голубой — заблокирован, розовый — пока за Mac может сесть кто угодно. Слова — на языке Mac."
+  },
+  "tapAction": {
+    "en": "Locks the Mac’s screen; does nothing when it is already locked",
+    "de": "Sperrt den Bildschirm des Mac; ist er schon gesperrt, passiert nichts",
+    "es": "Bloquea la pantalla del Mac; si ya está bloqueada, no hace nada",
+    "fr": "Verrouille l’écran du Mac ; s’il est déjà verrouillé, ne fait rien",
+    "ru": "Блокирует экран Mac; если он уже заблокирован, ничего не делает"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "lock.fill"
+      }
+    },
+    "color": "#5E5CE6",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

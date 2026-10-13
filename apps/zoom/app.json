@@ -1,0 +1,896 @@
+{
+  "id": "zoom",
+  "revision": 9,
+  "name": "Zoom",
+  "bundleIds": [
+    "us.zoom.xos"
+  ],
+  "category": "communication",
+  "buttons": [
+    {
+      "id": "mic",
+      "title": {
+        "en": "Microphone",
+        "de": "Mikrofon",
+        "es": "Micrófono",
+        "fr": "Microphone",
+        "ru": "Микрофон"
+      },
+      "summary": {
+        "en": "Mutes or unmutes you and shows whether Zoom hears you",
+        "de": "Schaltet dich stumm oder laut und zeigt, ob Zoom dich hört",
+        "es": "Silencia o reactiva tu audio y muestra si Zoom te oye",
+        "fr": "Coupe ou rétablit votre son et montre si Zoom vous entend",
+        "ru": "Выключает и включает звук и показывает, слышит ли вас Zoom"
+      },
+      "details": {
+        "en": "Green while Zoom hears you, red and crossed out while you are muted, grey outside a meeting. With no audio joined, a tap opens Zoom’s Join audio. Works with Zoom in the background.",
+        "de": "Grün, solange Zoom dich hört, rot und durchgestrichen, solange du stumm bist, grau außerhalb eines Meetings. Ohne Audio öffnet ein Tippen „An Audio teilnehmen“ von Zoom. Klappt mit Zoom im Hintergrund.",
+        "es": "Verde mientras Zoom te oye, rojo y tachado mientras estás silenciado, gris fuera de una reunión. Sin audio conectado, un toque abre «Conectar audio» de Zoom. Funciona con Zoom en segundo plano.",
+        "fr": "Vert tant que Zoom vous entend, rouge et barré quand votre son est coupé, gris hors réunion. Sans audio connecté, un toucher ouvre « Participer à l’audio » de Zoom. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Зелёная, пока Zoom вас слышит, красная и перечёркнутая, пока звук выключен, серая вне конференции. Если звук не подключён, нажатие открывает «Подключить звук» в Zoom. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Mutes or unmutes you",
+        "de": "Schaltet dich stumm oder laut",
+        "es": "Silencia o reactiva tu audio",
+        "fr": "Coupe ou rétablit votre son",
+        "ru": "Выключает или включает звук"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "mic"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onMuteAudio:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        },
+        "startupScript": "mode=mic\n@file:meeting/ax.zsh\n@file:meeting/live.zsh"
+      }
+    },
+    {
+      "id": "video",
+      "title": {
+        "en": "Video",
+        "de": "Video",
+        "es": "Vídeo",
+        "fr": "Vidéo",
+        "ru": "Видео"
+      },
+      "summary": {
+        "en": "Starts or stops your video and shows whether it is on",
+        "de": "Startet oder beendet dein Video und zeigt, ob es läuft",
+        "es": "Inicia o detiene tu vídeo y muestra si está activo",
+        "fr": "Démarre ou arrête votre vidéo et montre si elle est active",
+        "ru": "Включает и выключает видео и показывает, включено ли оно"
+      },
+      "details": {
+        "en": "Green while your video is on, red and crossed out while it is off, grey outside a meeting. Works with Zoom in the background.",
+        "de": "Grün, solange dein Video läuft, rot und durchgestrichen, solange es aus ist, grau außerhalb eines Meetings. Klappt mit Zoom im Hintergrund.",
+        "es": "Verde mientras tu vídeo está activo, rojo y tachado mientras está apagado, gris fuera de una reunión. Funciona con Zoom en segundo plano.",
+        "fr": "Vert tant que votre vidéo est active, rouge et barré quand elle est arrêtée, gris hors réunion. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Зелёная, пока видео включено, красная и перечёркнутая, пока выключено, серая вне конференции. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Starts or stops your video",
+        "de": "Startet oder beendet dein Video",
+        "es": "Inicia o detiene tu vídeo",
+        "fr": "Démarre ou arrête votre vidéo",
+        "ru": "Включает или выключает видео"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "video"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onMuteVideo:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        },
+        "startupScript": "mode=camera\n@file:meeting/ax.zsh\n@file:meeting/live.zsh"
+      }
+    },
+    {
+      "id": "share",
+      "title": {
+        "en": "Share Screen",
+        "de": "Bildschirm freigeben",
+        "es": "Compartir pantalla",
+        "fr": "Partager l’écran",
+        "ru": "Показ экрана"
+      },
+      "summary": {
+        "en": "Starts or stops sharing and shows whether you share",
+        "de": "Startet oder beendet die Freigabe und zeigt, ob du freigibst",
+        "es": "Empieza o deja de compartir y muestra si compartes",
+        "fr": "Lance ou arrête le partage et montre si vous partagez",
+        "ru": "Начинает и останавливает демонстрацию и показывает, идёт ли она"
+      },
+      "details": {
+        "en": "Green while you share. A tap brings Zoom forward with its window for choosing what to share; while you share, it stops sharing. Works with Zoom in the background.",
+        "de": "Grün, solange du freigibst. Ein Tippen holt Zoom mit dem Fenster zur Auswahl der Freigabe nach vorne; während einer Freigabe beendet es sie. Klappt mit Zoom im Hintergrund.",
+        "es": "Verde mientras compartes. Un toque trae Zoom al frente con su ventana para elegir qué compartir; si ya compartes, deja de compartir. Funciona con Zoom en segundo plano.",
+        "fr": "Vert tant que vous partagez. Un toucher met Zoom au premier plan avec sa fenêtre pour choisir quoi partager ; pendant un partage, il l’arrête. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Зелёная, пока идёт демонстрация. Нажатие выводит Zoom вперёд с окном выбора, что показать; во время демонстрации — останавливает её. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Starts or stops sharing",
+        "de": "Startet oder beendet die Freigabe",
+        "es": "Empieza o deja de compartir",
+        "fr": "Lance ou arrête le partage",
+        "ru": "Начинает или останавливает демонстрацию"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.inset.filled.and.person.filled"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onShare:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        },
+        "startupScript": "mode=share\n@file:meeting/ax.zsh\n@file:meeting/live.zsh"
+      }
+    },
+    {
+      "id": "meeting",
+      "title": {
+        "en": "Meeting",
+        "de": "Meeting",
+        "es": "Reunión",
+        "fr": "Réunion",
+        "ru": "Конференция"
+      },
+      "summary": {
+        "en": "Brings the meeting forward; hold to leave it",
+        "de": "Holt das Meeting nach vorne; halten, um es zu verlassen",
+        "es": "Trae la reunión al frente; mantén pulsado para salir de ella",
+        "fr": "Met la réunion au premier plan ; maintenez pour la quitter",
+        "ru": "Выводит конференцию вперёд; удержание — выйти из неё"
+      },
+      "details": {
+        "en": "Holding closes Zoom’s meeting window, as its close button does: Zoom asks whether to leave (a host also gets “End meeting for all”), unless “Ask me to confirm when I leave a meeting” is off in its settings.",
+        "de": "Halten schließt das Meeting-Fenster von Zoom wie dessen Schließen-Taste: Zoom fragt, ob du gehen willst (Hosts auch „Das Meeting für alle beenden“) – außer die Bestätigung beim Verlassen ist in den Einstellungen aus.",
+        "es": "Mantener pulsado cierra la ventana de la reunión de Zoom como su botón de cerrar: Zoom pregunta si quieres salir (el anfitrión ve también «Finalizar la reunión para todos»), salvo que hayas desactivado esa confirmación en sus ajustes.",
+        "fr": "Maintenir ferme la fenêtre de réunion de Zoom comme son bouton de fermeture : Zoom demande si vous voulez partir (l’hôte voit aussi « Mettre fin à la réunion pour tous »), sauf si cette confirmation est désactivée dans ses paramètres.",
+        "ru": "Удержание закрывает окно конференции Zoom, как его кнопка закрытия: Zoom спрашивает, выйти ли (организатор видит и «Завершить конференцию для всех»), если подтверждение при выходе не выключено в настройках."
+      },
+      "tapAction": {
+        "en": "Brings the meeting window forward",
+        "de": "Holt das Meeting-Fenster nach vorne",
+        "es": "Trae al frente la ventana de la reunión",
+        "fr": "Met la fenêtre de réunion au premier plan",
+        "ru": "Выводит окно конференции вперёд"
+      },
+      "holdAction": {
+        "en": "⚠️ Leaves the meeting — Zoom asks first",
+        "de": "⚠️ Verlässt das Meeting – Zoom fragt zuerst",
+        "es": "⚠️ Sale de la reunión: Zoom pregunta antes",
+        "fr": "⚠️ Quitte la réunion — Zoom demande d’abord",
+        "ru": "⚠️ Выход из конференции — Zoom сначала спросит"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "phone.down.fill"
+          }
+        },
+        "color": "#E02828",
+        "command": {
+          "shellCommand": {
+            "command": "action=show\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=leave\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "participants",
+      "title": {
+        "en": "Participants",
+        "de": "Teilnehmer",
+        "es": "Participantes",
+        "fr": "Participants",
+        "ru": "Участники"
+      },
+      "summary": {
+        "en": "Opens or closes the participants panel",
+        "de": "Öffnet oder schließt den Teilnehmerbereich",
+        "es": "Abre o cierra el panel de participantes",
+        "fr": "Ouvre ou ferme le panneau des participants",
+        "ru": "Открывает и закрывает панель участников"
+      },
+      "details": {
+        "en": "View › Show participants. Opening the panel brings the meeting window forward; closing it leaves you where you are. Works with Zoom in the background.",
+        "de": "Anzeigen › Teilnehmer anzeigen. Beim Öffnen kommt das Meeting-Fenster nach vorne, beim Schließen bleibst du, wo du bist. Klappt mit Zoom im Hintergrund.",
+        "es": "Ver › Mostrar participantes. Al abrir el panel, la ventana de la reunión pasa al frente; al cerrarlo, te quedas donde estás. Funciona con Zoom en segundo plano.",
+        "fr": "Afficher › Afficher les participants. L’ouverture met la fenêtre de réunion au premier plan ; la fermeture vous laisse où vous êtes. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Посмотреть › Показать участников. При открытии панели окно конференции выходит вперёд, при закрытии вы остаётесь, где были. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Shows or hides the participants",
+        "de": "Blendet die Teilnehmer ein oder aus",
+        "es": "Muestra u oculta a los participantes",
+        "fr": "Affiche ou masque les participants",
+        "ru": "Показывает или скрывает участников"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "person.2"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onManageParticipants:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "chat",
+      "title": {
+        "en": "Chat",
+        "de": "Chat",
+        "es": "Chat",
+        "fr": "Chat",
+        "ru": "Чат"
+      },
+      "summary": {
+        "en": "Opens or closes the meeting chat",
+        "de": "Öffnet oder schließt den Meeting-Chat",
+        "es": "Abre o cierra el chat de la reunión",
+        "fr": "Ouvre ou ferme le chat de la réunion",
+        "ru": "Открывает и закрывает чат конференции"
+      },
+      "details": {
+        "en": "View › Show chat. Opening the chat brings the meeting window forward, ready to type; closing it leaves you where you are. Works with Zoom in the background.",
+        "de": "Anzeigen › Chat anzeigen. Beim Öffnen kommt das Meeting-Fenster zum Schreiben nach vorne, beim Schließen bleibst du, wo du bist. Klappt mit Zoom im Hintergrund.",
+        "es": "Ver › Mostrar chat. Al abrir el chat, la ventana de la reunión pasa al frente para escribir; al cerrarlo, te quedas donde estás. Funciona con Zoom en segundo plano.",
+        "fr": "Afficher › Afficher le chat. L’ouverture met la fenêtre de réunion au premier plan, prête pour écrire ; la fermeture vous laisse où vous êtes. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Посмотреть › Показать чат. При открытии окно конференции выходит вперёд, можно писать; при закрытии вы остаётесь, где были. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Shows or hides the chat",
+        "de": "Blendet den Chat ein oder aus",
+        "es": "Muestra u oculta el chat",
+        "fr": "Affiche ou masque le chat",
+        "ru": "Показывает или скрывает чат"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "bubble.left.and.bubble.right"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onChat:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "raise-hand",
+      "title": {
+        "en": "Raise Hand",
+        "de": "Hand heben",
+        "es": "Levantar la mano",
+        "fr": "Lever la main",
+        "ru": "Поднять руку"
+      },
+      "summary": {
+        "en": "Raises or lowers your hand (⌥Y)",
+        "de": "Hebt oder senkt deine Hand (⌥Y)",
+        "es": "Levanta o baja la mano (⌥Y)",
+        "fr": "Lève ou baisse votre main (⌥Y)",
+        "ru": "Поднимает или опускает руку (⌥Y)"
+      },
+      "details": {
+        "en": "Brings Zoom’s meeting window to the front, then presses Zoom’s default shortcut there. If you changed it in Zoom’s Keyboard shortcuts, the button misses.",
+        "de": "Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel von Zoom. Hast du es in den Tastaturkürzeln von Zoom geändert, geht die Taste ins Leere.",
+        "es": "Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado de Zoom. Si lo cambiaste en los métodos abreviados de Zoom, el botón no tendrá efecto.",
+        "fr": "Met la fenêtre de réunion de Zoom au premier plan, puis y appuie sur le raccourci par défaut de Zoom. Si vous l’avez modifié dans ses raccourcis clavier, le bouton n’aura aucun effet.",
+        "ru": "Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш Zoom по умолчанию. Если вы изменили его в сочетаниях клавиш Zoom, кнопка не сработает."
+      },
+      "tapAction": {
+        "en": "Raises or lowers your hand",
+        "de": "Hebt oder senkt deine Hand",
+        "es": "Levanta o baja la mano",
+        "fr": "Lève ou baisse votre main",
+        "ru": "Поднимает или опускает руку"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "hand.raised"
+          }
+        },
+        "color": "#F5A623",
+        "command": {
+          "shellCommand": {
+            "command": "action=key key=raise-hand\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "view",
+      "title": {
+        "en": "Gallery View",
+        "de": "Galerie",
+        "es": "Vista de galería",
+        "fr": "Vue galerie",
+        "ru": "Вид галереи"
+      },
+      "summary": {
+        "en": "Switches between gallery and speaker view",
+        "de": "Wechselt zwischen Galerie- und Sprecheransicht",
+        "es": "Cambia entre la vista de galería y la del orador",
+        "fr": "Bascule entre vue galerie et affichage intervenant",
+        "ru": "Переключает вид галереи и вид докладчика"
+      },
+      "details": {
+        "en": "Meeting › Gallery view, or Speaker view while the gallery shows. Works with Zoom in the background.",
+        "de": "Meeting › Galerieansicht oder, solange die Galerie zu sehen ist, Sprecheransicht. Klappt mit Zoom im Hintergrund.",
+        "es": "Reunión › Vista de galería o, mientras se ve la galería, Vista del orador. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Vue galerie ou, quand la galerie est affichée, Affichage intervenant. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Вид галереи или, пока показана галерея, Вид докладчика. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Switches the view",
+        "de": "Wechselt die Ansicht",
+        "es": "Cambia la vista",
+        "fr": "Change l’affichage",
+        "ru": "Переключает вид"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.grid.2x2"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onSwitchViewMode:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "thumbs-up",
+      "title": {
+        "en": "Thumbs Up",
+        "de": "Daumen hoch",
+        "es": "Pulgar arriba",
+        "fr": "Pouce levé",
+        "ru": "Палец вверх"
+      },
+      "summary": {
+        "en": "Sends a thumbs-up reaction to the meeting (⌥⌘5)",
+        "de": "Sendet die Reaktion „Daumen hoch“ ins Meeting (⌥⌘5)",
+        "es": "Envía la reacción «pulgar hacia arriba» a la reunión (⌥⌘5)",
+        "fr": "Envoie la réaction « pouce levé » à la réunion (⌥⌘5)",
+        "ru": "Отправляет реакцию «палец вверх» в конференцию (⌥⌘5)"
+      },
+      "details": {
+        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
+        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
+        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
+        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
+        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+      },
+      "tapAction": {
+        "en": "Sends 👍",
+        "de": "Sendet 👍",
+        "es": "Envía 👍",
+        "fr": "Envoie 👍",
+        "ru": "Отправляет 👍"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "emoji": {
+            "_0": "👍"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=key key=thumbs-up\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "clap",
+      "title": {
+        "en": "Clap",
+        "de": "Klatschen",
+        "es": "Aplausos",
+        "fr": "Applaudir",
+        "ru": "Хлопки"
+      },
+      "summary": {
+        "en": "Sends a clapping reaction to the meeting (⌥⌘4)",
+        "de": "Sendet die Reaktion „Klatschen“ ins Meeting (⌥⌘4)",
+        "es": "Envía la reacción «aplausos» a la reunión (⌥⌘4)",
+        "fr": "Envoie la réaction « applaudir » à la réunion (⌥⌘4)",
+        "ru": "Отправляет реакцию «аплодисменты» в конференцию (⌥⌘4)"
+      },
+      "details": {
+        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
+        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
+        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
+        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
+        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+      },
+      "tapAction": {
+        "en": "Sends 👏",
+        "de": "Sendet 👏",
+        "es": "Envía 👏",
+        "fr": "Envoie 👏",
+        "ru": "Отправляет 👏"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "emoji": {
+            "_0": "👏"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=key key=clap\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "heart",
+      "title": {
+        "en": "Heart",
+        "de": "Herz",
+        "es": "Corazón",
+        "fr": "Cœur",
+        "ru": "Сердце"
+      },
+      "summary": {
+        "en": "Sends a heart reaction to the meeting (⌥⌘6)",
+        "de": "Sendet die Reaktion „Herz“ ins Meeting (⌥⌘6)",
+        "es": "Envía la reacción «corazón» a la reunión (⌥⌘6)",
+        "fr": "Envoie la réaction « cœur » à la réunion (⌥⌘6)",
+        "ru": "Отправляет реакцию «сердце» в конференцию (⌥⌘6)"
+      },
+      "details": {
+        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
+        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
+        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
+        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
+        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+      },
+      "tapAction": {
+        "en": "Sends ❤️",
+        "de": "Sendet ❤️",
+        "es": "Envía ❤️",
+        "fr": "Envoie ❤️",
+        "ru": "Отправляет ❤️"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "emoji": {
+            "_0": "❤️"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=key key=heart\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "invite-link",
+      "title": {
+        "en": "Invite Link",
+        "de": "Link kopieren",
+        "es": "Enlace de invitación",
+        "fr": "Lien d’invitation",
+        "ru": "Ссылка приглашения"
+      },
+      "summary": {
+        "en": "Copies the meeting’s invite link",
+        "de": "Kopiert den Einladungslink des Meetings",
+        "es": "Copia el enlace de invitación de la reunión",
+        "fr": "Copie le lien d’invitation de la réunion",
+        "ru": "Копирует ссылку приглашения на конференцию"
+      },
+      "details": {
+        "en": "Meeting › Copy invite link: paste it into a chat or an email on the Mac. Works with Zoom in the background.",
+        "de": "Meeting › Einladungslink kopieren: zum Einfügen in einen Chat oder eine E-Mail auf dem Mac. Klappt mit Zoom im Hintergrund.",
+        "es": "Reunión › Copiar enlace de invitación: pégalo en un chat o un correo en el Mac. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Copier le lien d’invitation : collez-le dans un chat ou un e-mail sur le Mac. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Копировать ссылку приглашения: вставьте её в чат или письмо на Mac. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Copies the invite link",
+        "de": "Kopiert den Einladungslink",
+        "es": "Copia el enlace de invitación",
+        "fr": "Copie le lien d’invitation",
+        "ru": "Копирует ссылку приглашения"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "link"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onCopyInviteLink:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "full-screen",
+      "title": {
+        "en": "Full Screen",
+        "de": "Vollbild",
+        "es": "Pantalla completa",
+        "fr": "Plein écran",
+        "ru": "Полный экран"
+      },
+      "summary": {
+        "en": "Puts the meeting window in full screen or back",
+        "de": "Schaltet das Meeting-Fenster in den Vollbildmodus und zurück",
+        "es": "Pone la ventana de la reunión a pantalla completa y la devuelve",
+        "fr": "Passe la fenêtre de réunion en plein écran et inversement",
+        "ru": "Разворачивает окно конференции на весь экран и обратно"
+      },
+      "details": {
+        "en": "Meeting › Fullscreen, or Exit fullscreen. Works with Zoom in the background.",
+        "de": "Meeting › Zu Vollbildmodus wechseln oder Vollbild schließen. Klappt mit Zoom im Hintergrund.",
+        "es": "Reunión › Cambiar a pantalla completa o Salir de pantalla completa. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Passer en mode plein écran ou Quitter le mode plein écran. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Войти в полноэкранный режим или выйти из него. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Enters or leaves full screen",
+        "de": "Wechselt in den Vollbildmodus oder zurück",
+        "es": "Entra o sale de pantalla completa",
+        "fr": "Entre ou sort du plein écran",
+        "ru": "Включает или выключает полный экран"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.up.left.and.arrow.down.right"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onSwitchFullscreen:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "minimal",
+      "title": {
+        "en": "Minimal View",
+        "de": "Minimal-Ansicht",
+        "es": "Vista mínima",
+        "fr": "Affichage minimal",
+        "ru": "Мини-окно"
+      },
+      "summary": {
+        "en": "Shrinks the meeting to a small window or back",
+        "de": "Verkleinert das Meeting auf ein kleines Fenster und zurück",
+        "es": "Reduce la reunión a una ventana pequeña y la devuelve",
+        "fr": "Réduit la réunion à une petite fenêtre et inversement",
+        "ru": "Сворачивает конференцию в маленькое окно и обратно"
+      },
+      "details": {
+        "en": "Meeting › Enter minimal view: a small window that stays above your other windows. Works with Zoom in the background.",
+        "de": "Meeting › Gehen Sie auf Minimal-Ansicht: ein kleines Fenster, das über deinen anderen Fenstern bleibt. Klappt mit Zoom im Hintergrund.",
+        "es": "Reunión › Cambiar a vista mínima: una ventana pequeña que queda sobre las demás. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Passer en affichage minimal : une petite fenêtre qui reste au-dessus des autres. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Войти в минимальное представление: маленькое окно поверх остальных окон. Работает, когда Zoom в фоне."
+      },
+      "tapAction": {
+        "en": "Enters or leaves minimal view",
+        "de": "Wechselt in die Minimal-Ansicht oder zurück",
+        "es": "Entra o sale de la vista mínima",
+        "fr": "Entre ou sort de l’affichage minimal",
+        "ru": "Включает или выключает мини-окно"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "pip"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onSwitchMinimalVideo:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "record",
+      "title": {
+        "en": "Record",
+        "de": "Aufzeichnen",
+        "es": "Grabar",
+        "fr": "Enregistrer",
+        "ru": "Запись"
+      },
+      "summary": {
+        "en": "Starts recording the meeting to the cloud; hold to record on this Mac",
+        "de": "Startet die Aufzeichnung des Meetings in der Cloud; halten, um auf diesem Mac aufzuzeichnen",
+        "es": "Empieza a grabar la reunión en la nube; mantén pulsado para grabar en este Mac",
+        "fr": "Lance l’enregistrement de la réunion dans le cloud ; maintenez pour enregistrer sur ce Mac",
+        "ru": "Начинает запись конференции в облако; удержание — записывать на этот Mac"
+      },
+      "details": {
+        "en": "Meeting › Record to the cloud, or Record to this computer when held, as the host or with the host’s leave. While Zoom already records, it says so. Works with Zoom in the background; Zoom comes forward when it asks or explains something before it records.",
+        "de": "Meeting › In der Cloud aufzeichnen, beim Halten „Auf diesem Computer aufzeichnen“ – als Host oder mit Erlaubnis des Hosts. Läuft schon eine Aufzeichnung, sagt die Taste das. Klappt mit Zoom im Hintergrund; fragt oder erklärt Zoom vor der Aufzeichnung etwas, kommt es nach vorn.",
+        "es": "Reunión › Grabar en la nube, o «Grabar en este equipo» al mantener pulsado, como anfitrión o con su permiso. Si Zoom ya graba, lo dice. Funciona con Zoom en segundo plano; si Zoom pregunta o avisa de algo antes de grabar, pasa al frente.",
+        "fr": "Réunion › Enregistrement dans le cloud, ou « Enregistrer sur cet ordinateur » en maintenant, en tant qu’hôte ou avec son accord. Si Zoom enregistre déjà, le bouton le signale. Fonctionne avec Zoom en arrière-plan ; si Zoom demande ou signale quelque chose avant d’enregistrer, il passe au premier plan.",
+        "ru": "Конференция › Запись в облако, при удержании — «Записывать на этот компьютер»; организатору или с его разрешения. Если запись уже идёт, кнопка так и скажет. Работает, когда Zoom в фоне; если перед записью Zoom что-то спрашивает или сообщает, он выходит вперёд."
+      },
+      "tapAction": {
+        "en": "Starts a cloud recording",
+        "de": "Startet eine Cloud-Aufzeichnung",
+        "es": "Empieza a grabar en la nube",
+        "fr": "Lance un enregistrement dans le cloud",
+        "ru": "Начинает запись в облако"
+      },
+      "holdAction": {
+        "en": "Starts recording on this Mac",
+        "de": "Startet die Aufzeichnung auf diesem Mac",
+        "es": "Empieza a grabar en este Mac",
+        "fr": "Lance l’enregistrement sur ce Mac",
+        "ru": "Начинает запись на этот Mac"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "record.circle"
+          }
+        },
+        "color": "#E02828",
+        "command": {
+          "shellCommand": {
+            "command": "action=press item=onCloudRecord:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=press item=onLocalRecord:\n@file:meeting/ax.zsh\n@file:meeting/press.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "join",
+      "title": {
+        "en": "Join My Meeting",
+        "de": "Mein Meeting",
+        "es": "Mi reunión",
+        "fr": "Ma réunion",
+        "ru": "Моя конференция"
+      },
+      "summary": {
+        "en": "Joins your own meeting — your personal room or a recurring one — by its ID",
+        "de": "Tritt deinem eigenen Meeting bei – deinem persönlichen Raum oder einem wiederkehrenden – über die ID",
+        "es": "Entra en tu propia reunión (tu sala personal o una periódica) por su ID",
+        "fr": "Rejoint votre propre réunion (votre salle personnelle ou une réunion récurrente) par son ID",
+        "ru": "Входит в вашу конференцию — личную комнату или повторяющуюся — по идентификатору"
+      },
+      "details": {
+        "en": "Put the meeting ID, and its passcode if it has one, in the first line of the button’s script. Works outside a meeting too, with Zoom in the background; starts Zoom when it is closed.",
+        "de": "Trag die Meeting-ID und, falls es einen gibt, den Kenncode in die erste Zeile des Skripts der Taste ein. Klappt auch außerhalb eines Meetings, mit Zoom im Hintergrund; startet Zoom, wenn es geschlossen ist.",
+        "es": "Pon el ID de la reunión y, si lo tiene, su código de acceso en la primera línea del script del botón. Funciona también fuera de una reunión, con Zoom en segundo plano; abre Zoom si está cerrado.",
+        "fr": "Indiquez l’ID de réunion et, s’il y en a un, son code secret à la première ligne du script du bouton. Fonctionne aussi hors réunion, avec Zoom en arrière-plan ; lance Zoom s’il est fermé.",
+        "ru": "Идентификатор конференции и, если он есть, код доступа впишите в первую строку скрипта кнопки. Работает и вне конференции, когда Zoom в фоне; запускает Zoom, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Joins your meeting",
+        "de": "Tritt deinem Meeting bei",
+        "es": "Entra en tu reunión",
+        "fr": "Rejoint votre réunion",
+        "ru": "Входит в вашу конференцию"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "door.left.hand.open"
+          }
+        },
+        "color": "#0B5CFF",
+        "command": {
+          "shellCommand": {
+            "command": "id=\"\"; pwd=\"\"   # ← your meeting ID (as 123 456 7890) and its passcode, if it has one\n@file:join.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Zoom",
+        "de": "Zoom",
+        "es": "Zoom",
+        "fr": "Zoom",
+        "ru": "Zoom"
+      },
+      "summary": {
+        "en": "Microphone, video, sharing and recording for your Zoom meetings, and joining your own",
+        "de": "Mikrofon, Video, Freigabe und Aufzeichnung für deine Zoom-Meetings – und der Weg in dein eigenes",
+        "es": "Micrófono, vídeo, pantalla compartida y grabación para tus reuniones de Zoom, y entrar en la tuya",
+        "fr": "Micro, vidéo, partage et enregistrement pour vos réunions Zoom, et l’accès à la vôtre",
+        "ru": "Микрофон, видео, демонстрация и запись для конференций Zoom — и вход в вашу"
+      },
+      "details": {
+        "en": "Microphone, Video and Share Screen show whether they are on. Most buttons work with Zoom in the background; Raise Hand and the reactions bring its meeting window to the front first. Join My Meeting works outside a meeting too.",
+        "de": "Mikrofon, Video und Bildschirm freigeben zeigen, ob sie an sind. Die meisten Tasten klappen mit Zoom im Hintergrund; Hand heben und die Reaktionen holen zuerst das Meeting-Fenster nach vorne. Mein Meeting klappt auch außerhalb eines Meetings.",
+        "es": "Micrófono, Vídeo y Compartir pantalla muestran si están activos. Casi todos los botones funcionan con Zoom en segundo plano; Levantar la mano y las reacciones traen antes al frente la ventana de la reunión. Mi reunión funciona también fuera de una reunión.",
+        "fr": "Microphone, Vidéo et Partager l’écran montrent s’ils sont actifs. La plupart des boutons fonctionnent avec Zoom en arrière-plan ; Lever la main et les réactions mettent d’abord la fenêtre de réunion au premier plan. Ma réunion fonctionne aussi hors réunion.",
+        "ru": "«Микрофон», «Видео» и «Показ экрана» показывают, включены ли они. Большинство кнопок работают, когда Zoom в фоне; «Поднять руку» и реакции сначала выводят окно конференции вперёд. «Моя конференция» работает и вне конференции."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "mic",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "video",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "share",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "meeting",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "participants",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "chat",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "raise-hand",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "view",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "thumbs-up",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "clap",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "heart",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "invite-link",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "full-screen",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "minimal",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "record",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "join",
+          "row": 3,
+          "col": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "garland",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Garland",
+    "de": "Lichterkette",
+    "es": "Guirnalda",
+    "fr": "Guirlande",
+    "ru": "Гирлянда"
+  },
+  "summary": {
+    "en": "Hangs a twinkling New Year garland along the top of the Mac’s screens",
+    "de": "Hängt eine funkelnde Lichterkette oben an die Bildschirme des Mac",
+    "es": "Cuelga una guirnalda de luces de Año Nuevo en lo alto de las pantallas del Mac",
+    "fr": "Accroche une guirlande lumineuse de fête en haut des écrans du Mac",
+    "ru": "Вешает новогоднюю гирлянду вдоль верхнего края экранов Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Hangs under the menu bar of every display, over all windows; clicks go through. Goes out by itself after an hour. Look (lush or slim), modes, colours, timer: the first lines of Advanced › Startup Script.",
+    "de": "Hängt unter der Menüleiste jedes Displays, über allen Fenstern; Klicks gehen hindurch. Geht nach einer Stunde von selbst aus. Aussehen (lush oder slim), Modi, Farben, Timer: die ersten Zeilen unter Erweitert › Startskript.",
+    "es": "Cuelga bajo la barra de menús de cada pantalla, sobre todas las ventanas; los clics la atraviesan. Se apaga sola al cabo de una hora. Aspecto (lush o slim), modos, colores, temporizador: las primeras líneas de Avanzado › Script de inicio.",
+    "fr": "Pend sous la barre des menus de chaque écran, au-dessus de toutes les fenêtres ; les clics passent au travers. S’éteint d’elle-même au bout d’une heure. Aspect (lush ou slim), modes, couleurs, minuterie : les premières lignes de Avancé › Script de démarrage.",
+    "ru": "Висит под строкой меню каждого экрана, поверх всех окон; клики проходят сквозь неё. Гаснет сама через час. Вид (lush или slim), режимы, цвета, таймер — в первых строках Дополнительно › Стартовый скрипт."
+  },
+  "tapAction": {
+    "en": "Lights the garland or puts it out",
+    "de": "Schaltet die Lichterkette ein oder aus",
+    "es": "Enciende o apaga la guirnalda",
+    "fr": "Allume ou éteint la guirlande",
+    "ru": "Зажигает или гасит гирлянду"
+  },
+  "holdAction": {
+    "en": "Switches the mode: colour waves, warm white, twinkle",
+    "de": "Wechselt den Modus: Farbwellen, Warmweiß, Funkeln",
+    "es": "Cambia el modo: olas de color, blanco cálido, centelleo",
+    "fr": "Change de mode : vagues de couleur, blanc chaud, scintillement",
+    "ru": "Меняет режим: цветные волны, тёплый белый, мерцание"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "lightbulb.fill"
+      }
+    },
+    "color": "#30D158",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

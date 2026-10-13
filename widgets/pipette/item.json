@@ -1,0 +1,60 @@
+{
+  "id": "pipette",
+  "revision": 2,
+  "kind": "widget",
+  "title": {
+    "en": "Eyedropper",
+    "de": "Pipette",
+    "es": "Cuentagotas",
+    "fr": "Pipette",
+    "ru": "Пипетка"
+  },
+  "summary": {
+    "en": "Any pixel’s hex on the Mac’s clipboard",
+    "de": "Der Hex-Wert eines beliebigen Pixels in der Zwischenablage des Mac",
+    "es": "El hex de cualquier píxel, en el portapapeles del Mac",
+    "fr": "Le code hex de n’importe quel pixel dans le presse-papiers du Mac",
+    "ru": "Hex любого пикселя — в буфере обмена Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The Mac shows a magnifier: click a pixel, and its sRGB hex goes to the clipboard and onto the button.",
+    "de": "Der Mac zeigt eine Lupe: Klicke auf ein Pixel, und sein sRGB-Hex-Wert landet in der Zwischenablage und auf der Taste.",
+    "es": "El Mac muestra una lupa: haz clic en un píxel y su hex en sRGB pasa al portapapeles y al botón.",
+    "fr": "Le Mac affiche une loupe : cliquez sur un pixel, et son code hex sRGB va dans le presse-papiers et sur le bouton.",
+    "ru": "Mac показывает лупу: щёлкните по пикселю — его hex в sRGB окажется в буфере обмена и на кнопке."
+  },
+  "tapAction": {
+    "en": "Opens the magnifier on the Mac; Esc cancels",
+    "de": "Öffnet die Lupe auf dem Mac; Esc bricht ab",
+    "es": "Abre la lupa en el Mac; Esc cancela",
+    "fr": "Ouvre la loupe sur le Mac ; Esc annule",
+    "ru": "Открывает лупу на Mac; Esc — отмена"
+  },
+  "holdAction": {
+    "en": "Copies the last picked color again",
+    "de": "Kopiert die zuletzt gewählte Farbe erneut",
+    "es": "Vuelve a copiar el último color elegido",
+    "fr": "Recopie la dernière couleur choisie",
+    "ru": "Снова копирует последний выбранный цвет"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "eyedropper"
+      }
+    },
+    "color": "#8E8E93",
+    "command": {
+      "systemAction": {
+        "_0": "pickColor"
+      }
+    },
+    "longPressCommand": {
+      "systemAction": {
+        "_0": "copyLastColor"
+      }
+    }
+  }
+}

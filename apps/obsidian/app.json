@@ -1,0 +1,621 @@
+{
+  "id": "obsidian",
+  "revision": 5,
+  "name": "Obsidian",
+  "bundleIds": ["md.obsidian"],
+  "category": "productivity",
+  "buttons": [
+    {
+      "id": "quick-switcher",
+      "title": {"en": "Quick Switcher", "de": "Schnell öffnen", "es": "Selector rápido", "fr": "Sélecteur rapide", "ru": "Быстрый переход"},
+      "summary": {
+        "en": "Opens any note by name (⌘O)",
+        "de": "Öffnet jede Notiz über ihren Namen (⌘O)",
+        "es": "Abre cualquier nota por su nombre (⌘O)",
+        "fr": "Ouvre n’importe quelle note par son nom (⌘O)",
+        "ru": "Открывает любую заметку по названию (⌘O)"
+      },
+      "details": {
+        "en": "Type a few letters of a note’s name and press Return; with no match, Return creates the note. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Ein paar Buchstaben des Namens tippen und Return drücken; ohne Treffer legt Return die Notiz an. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Escribe unas letras del nombre de una nota y pulsa Retorno; sin coincidencias, Retorno la crea. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Tapez quelques lettres du nom d’une note, puis Retour ; sans résultat, Retour crée la note. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Наберите несколько букв названия и нажмите Return; если такой заметки нет, Return её создаст. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the Quick switcher",
+        "de": "Öffnet die Schnellauswahl",
+        "es": "Abre el selector rápido",
+        "fr": "Ouvre le sélecteur rapide",
+        "ru": "Открывает быстрый переход"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.text.magnifyingglass"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 31, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "command-palette",
+      "title": {"en": "Command Palette", "de": "Befehle", "es": "Paleta de comandos", "fr": "Palette de commandes", "ru": "Палитра команд"},
+      "summary": {
+        "en": "Runs any Obsidian command by name (⌘P)",
+        "de": "Führt jeden Obsidian-Befehl über seinen Namen aus (⌘P)",
+        "es": "Ejecuta cualquier comando de Obsidian por su nombre (⌘P)",
+        "fr": "Lance n’importe quelle commande d’Obsidian par son nom (⌘P)",
+        "ru": "Запускает любую команду Obsidian по названию (⌘P)"
+      },
+      "details": {
+        "en": "Type part of a command’s name and press Return — plugins’ commands included. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Einen Teil des Befehlsnamens tippen und Return drücken – auch Befehle von Erweiterungen. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Escribe parte del nombre de un comando y pulsa Retorno; también los de los complementos. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Tapez une partie du nom d’une commande, puis Retour ; celles des modules aussi. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Наберите часть названия команды и нажмите Return — команды плагинов тоже здесь. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the Command palette",
+        "de": "Öffnet die Befehlspalette",
+        "es": "Abre la paleta de comandos",
+        "fr": "Ouvre la palette de commandes",
+        "ru": "Открывает палитру команд"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "command"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 35, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "search",
+      "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
+      "summary": {
+        "en": "Searches all files of the vault; hold for the open note",
+        "de": "Durchsucht alle Dateien des Vaults; halten für die offene Notiz",
+        "es": "Busca en todos los archivos de la bóveda; mantén pulsado para la nota abierta",
+        "fr": "Cherche dans tous les fichiers du coffre ; maintenez pour la note ouverte",
+        "ru": "Ищет во всех файлах хранилища; удержание — в открытой заметке"
+      },
+      "details": {
+        "en": "Search in all files opens in the left sidebar, even with Obsidian in the background. The long press needs Obsidian in front, with its default hotkeys.",
+        "de": "„In allen Dateien suchen“ öffnet sich in der linken Seitenleiste, auch mit Obsidian im Hintergrund. Halten braucht Obsidian vorne, mit den Standard-Tastenkürzeln.",
+        "es": "«Buscar en todos los archivos» se abre en la barra lateral izquierda, aunque Obsidian esté en segundo plano. Mantener pulsado requiere Obsidian delante, con los atajos predeterminados.",
+        "fr": "« Rechercher dans tous les fichiers » s’ouvre dans la barre latérale gauche, même avec Obsidian en arrière-plan. L’appui long demande Obsidian au premier plan, avec ses raccourcis par défaut.",
+        "ru": "«Искать во всех файлах» открывается в левой панели, даже когда Obsidian в фоне. Для удержания Obsidian должен быть на переднем плане, со стандартными сочетаниями клавиш."
+      },
+      "tapAction": {
+        "en": "Opens Search in all files",
+        "de": "Öffnet „In allen Dateien suchen“",
+        "es": "Abre «Buscar en todos los archivos»",
+        "fr": "Ouvre « Rechercher dans tous les fichiers »",
+        "ru": "Открывает поиск во всех файлах"
+      },
+      "holdAction": {
+        "en": "Searches the open note (⌘F)",
+        "de": "Sucht in der offenen Notiz (⌘F)",
+        "es": "Busca en la nota abierta (⌘F)",
+        "fr": "Cherche dans la note ouverte (⌘F)",
+        "ru": "Ищет в открытой заметке (⌘F)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "magnifyingglass"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "action=search\n@file:uri.zsh"}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "graph",
+      "title": {"en": "Graph View", "de": "Graph-Ansicht", "es": "Vista gráfica", "fr": "Vue graphique", "ru": "Граф"},
+      "summary": {
+        "en": "Shows how your notes link to each other (⌘G)",
+        "de": "Zeigt, wie deine Notizen verlinkt sind (⌘G)",
+        "es": "Muestra cómo se enlazan tus notas (⌘G)",
+        "fr": "Montre comment vos notes sont liées (⌘G)",
+        "ru": "Показывает, как связаны ваши заметки (⌘G)"
+      },
+      "details": {
+        "en": "Every note as a dot, joined to the notes it links to; click one to open it. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Jede Notiz als Punkt, verbunden mit den Notizen, auf die sie verlinkt; ein Klick öffnet sie. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Cada nota es un punto unido a las notas que enlaza; haz clic en una para abrirla. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Chaque note est un point relié aux notes vers lesquelles elle renvoie ; cliquez sur l’une d’elles pour l’ouvrir. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Каждая заметка — точка, соединённая с заметками, на которые ссылается; щелчок открывает её. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the Graph view",
+        "de": "Öffnet die Graph-Ansicht",
+        "es": "Abre la vista gráfica",
+        "fr": "Ouvre la vue graphique",
+        "ru": "Открывает граф"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "point.3.connected.trianglepath.dotted"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 5, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "new-note",
+      "title": {"en": "New Note", "de": "Neue Notiz", "es": "Nueva nota", "fr": "Nouvelle note", "ru": "Новая заметка"},
+      "summary": {
+        "en": "Creates a note in a new tab; hold to create it to the right",
+        "de": "Erstellt eine Notiz in einem neuen Tab; halten für rechts daneben",
+        "es": "Crea una nota en una pestaña nueva; mantén pulsado para crearla a la derecha",
+        "fr": "Crée une note dans un nouvel onglet ; maintenez pour la créer à droite",
+        "ru": "Создаёт заметку в новой вкладке; удержание — в области справа"
+      },
+      "details": {
+        "en": "An “Untitled” note in the folder set for new notes, its name ready to type. Works even with Obsidian in the background.",
+        "de": "Eine Notiz „Unbenannt“ im Ordner für neue Notizen, der Name bereit zum Tippen. Funktioniert auch mit Obsidian im Hintergrund.",
+        "es": "Una nota «Sin título» en la carpeta de las notas nuevas, con el nombre listo para escribir. Funciona aunque Obsidian esté en segundo plano.",
+        "fr": "Une note « Sans titre » dans le dossier des nouvelles notes, son nom prêt à être saisi. Fonctionne même avec Obsidian en arrière-plan.",
+        "ru": "Заметка «Без названия» в папке для новых заметок, название сразу можно вводить. Работает, даже когда Obsidian в фоне."
+      },
+      "tapAction": {
+        "en": "Creates a note in a new tab",
+        "de": "Erstellt eine Notiz in einem neuen Tab",
+        "es": "Crea una nota en una pestaña nueva",
+        "fr": "Crée une note dans un nouvel onglet",
+        "ru": "Создаёт заметку в новой вкладке"
+      },
+      "holdAction": {
+        "en": "Creates a note to the right",
+        "de": "Erstellt eine Notiz rechts daneben",
+        "es": "Crea una nota a la derecha",
+        "fr": "Crée une note à droite",
+        "ru": "Создаёт заметку в области справа"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.and.pencil"}},
+        "color": "#7F6DF2",
+        "command": {"shellCommand": {"command": "action=new\n@file:uri.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=new-split\n@file:uri.zsh"}}
+      }
+    },
+    {
+      "id": "daily-note",
+      "title": {"en": "Daily Note", "de": "Tagesnotiz", "es": "Nota diaria", "fr": "Note quotidienne", "ru": "Сегодняшняя заметка"},
+      "summary": {
+        "en": "Opens today’s daily note, created the first time",
+        "de": "Öffnet die heutige Notiz, beim ersten Mal neu angelegt",
+        "es": "Abre la nota de hoy, creada la primera vez",
+        "fr": "Ouvre la note du jour, créée la première fois",
+        "ru": "Открывает заметку на сегодня, в первый раз создаёт её"
+      },
+      "details": {
+        "en": "The note of the Daily notes core plugin (on by default), in its folder and from its template. Works even with Obsidian in the background.",
+        "de": "Die Notiz der Obsidian-Erweiterung „Tägliche Notizen“ (standardmäßig an), in ihrem Ordner und aus ihrer Vorlage. Funktioniert auch mit Obsidian im Hintergrund.",
+        "es": "La nota del complemento principal Notas diarias (activado de serie), en su carpeta y con su plantilla. Funciona aunque Obsidian esté en segundo plano.",
+        "fr": "La note du module principal Notes quotidiennes (activé par défaut), dans son dossier et selon son modèle. Fonctionne même avec Obsidian en arrière-plan.",
+        "ru": "Заметка встроенного плагина «Ежедневные заметки» (включён по умолчанию), в его папке и по его шаблону. Работает, даже когда Obsidian в фоне."
+      },
+      "tapAction": {
+        "en": "Opens today’s daily note",
+        "de": "Öffnet die heutige Notiz",
+        "es": "Abre la nota de hoy",
+        "fr": "Ouvre la note du jour",
+        "ru": "Открывает сегодняшнюю заметку"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "calendar"}},
+        "color": "#7F6DF2",
+        "command": {"shellCommand": {"command": "action=daily\n@file:uri.zsh"}}
+      }
+    },
+    {
+      "id": "open-note",
+      "title": {"en": "Open Note", "de": "Notiz öffnen", "es": "Abrir nota", "fr": "Ouvrir la note", "ru": "Открыть заметку"},
+      "summary": {
+        "en": "Opens the note you choose, in the vault you choose",
+        "de": "Öffnet die Notiz deiner Wahl im Vault deiner Wahl",
+        "es": "Abre la nota que elijas, en la bóveda que elijas",
+        "fr": "Ouvre la note de votre choix, dans le coffre de votre choix",
+        "ru": "Открывает нужную заметку в нужном хранилище"
+      },
+      "details": {
+        "en": "Write the vault’s name and the note’s path, without .md, on the first line of the button’s script; until then, the button says so. Starts Obsidian if it’s closed.",
+        "de": "Trag den Namen des Vaults und den Pfad der Notiz ohne .md in der ersten Zeile des Skripts der Taste ein; bis dahin sagt die Taste das. Startet Obsidian, wenn es geschlossen ist.",
+        "es": "Pon el nombre de la bóveda y la ruta de la nota, sin .md, en la primera línea del script del botón; hasta entonces, el botón te lo recuerda. Abre Obsidian si está cerrado.",
+        "fr": "Indiquez le nom du coffre et le chemin de la note, sans .md, à la première ligne du script du bouton ; d’ici là, le bouton vous le rappelle. Lance Obsidian s’il est fermé.",
+        "ru": "Задайте имя хранилища и путь заметки без .md в первой строке скрипта кнопки; пока их нет, кнопка об этом скажет. Запускает Obsidian, если он закрыт."
+      },
+      "tapAction": {
+        "en": "Opens the note you set",
+        "de": "Öffnet die eingetragene Notiz",
+        "es": "Abre la nota que pusiste",
+        "fr": "Ouvre la note indiquée",
+        "ru": "Открывает заданную заметку"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.text"}},
+        "color": "#7F6DF2",
+        "command": {"shellCommand": {"command": "vault='' note=''   # ← the vault's name (its folder's name) and the note's path in it without .md, e.g. vault='Personal' note='Home'\n@file:open-note.zsh"}}
+      }
+    },
+    {
+      "id": "task",
+      "title": {"en": "Task", "de": "Aufgabe", "es": "Tarea", "fr": "Tâche", "ru": "Задача"},
+      "summary": {
+        "en": "Turns the line into a task, then ticks it off (⌘L)",
+        "de": "Macht die Zeile zur Aufgabe und hakt sie dann ab (⌘L)",
+        "es": "Convierte la línea en tarea y luego la marca (⌘L)",
+        "fr": "Fait de la ligne une tâche, puis la coche (⌘L)",
+        "ru": "Делает строку задачей, затем отмечает её выполненной (⌘L)"
+      },
+      "details": {
+        "en": "The line with the cursor becomes “- [ ]”; the next tap ticks it off, the one after unticks it. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Die Zeile mit dem Cursor wird zu „- [ ]“; erneutes Tippen hakt sie ab, ein weiteres nimmt den Haken weg. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "La línea del cursor pasa a «- [ ]»; el siguiente toque la marca y el otro la desmarca. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "La ligne du curseur devient « - [ ] » ; le toucher suivant la coche, celui d’après la décoche. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Строка с курсором становится «- [ ]»; следующее нажатие ставит галочку, ещё одно снимает её. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Makes the line a task or ticks it",
+        "de": "Macht die Zeile zur Aufgabe oder hakt sie ab",
+        "es": "Convierte la línea en tarea o la marca",
+        "fr": "Fait de la ligne une tâche ou la coche",
+        "ru": "Делает строку задачей или отмечает её"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "checkmark.square"}},
+        "color": "#7F6DF2",
+        "command": {"keystroke": {"_0": {"keyCode": 37, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "reading-view",
+      "title": {"en": "Reading View", "de": "Leseansicht", "es": "Modo lectura", "fr": "Mode lecture", "ru": "Просмотр"},
+      "summary": {
+        "en": "Switches the note between editing and reading (⌘E)",
+        "de": "Wechselt die Notiz zwischen Bearbeiten und Lesen (⌘E)",
+        "es": "Cambia la nota entre edición y lectura (⌘E)",
+        "fr": "Bascule la note entre édition et lecture (⌘E)",
+        "ru": "Переключает заметку между редактированием и просмотром (⌘E)"
+      },
+      "details": {
+        "en": "Reading view shows the note without Markdown. Works while Obsidian is in front; the tap, with its default hotkeys.",
+        "de": "Die Leseansicht zeigt die Notiz ohne Markdown. Funktioniert, wenn Obsidian vorne ist; Tippen mit den Standard-Tastenkürzeln.",
+        "es": "El modo lectura muestra la nota sin Markdown. Funciona cuando Obsidian está delante; el toque, con los atajos predeterminados.",
+        "fr": "Le mode lecture montre la note sans Markdown. Fonctionne quand Obsidian est au premier plan ; le toucher, avec ses raccourcis par défaut.",
+        "ru": "В режиме просмотра заметка видна без Markdown. Работает, когда Obsidian на переднем плане; нажатие — при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Switches between editing and Reading view",
+        "de": "Wechselt zwischen Bearbeiten und Leseansicht",
+        "es": "Cambia entre edición y modo lectura",
+        "fr": "Bascule entre édition et mode lecture",
+        "ru": "Переключает между редактированием и просмотром"
+      },
+      "holdAction": {
+        "en": "Switches editing between Live Preview and Source mode",
+        "de": "Wechselt beim Bearbeiten zwischen Live-Vorschau und Quellcode-Ansicht",
+        "es": "Cambia la edición entre vista previa y modo fuente",
+        "fr": "Bascule l’édition entre aperçu en direct et mode source",
+        "ru": "Переключает редактор между динамическим просмотром и исходным кодом"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "book"}},
+        "color": "#7F6DF2",
+        "command": {"keystroke": {"_0": {"keyCode": 14, "modifiers": ["command"]}}},
+        "longPressCommand": {"shellCommand": {"command": "action=source-mode\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Retour", "ru": "Назад"},
+      "summary": {
+        "en": "Back to the note you had open before (⌥⌘←)",
+        "de": "Zurück zur vorher geöffneten Notiz (⌥⌘←)",
+        "es": "Vuelve a la nota que tenías abierta antes (⌥⌘←)",
+        "fr": "Revient à la note ouverte juste avant (⌥⌘←)",
+        "ru": "Возвращает к предыдущей открытой заметке (⌥⌘←)"
+      },
+      "details": {
+        "en": "Obsidian’s Navigate back, through the tab’s history as in a browser. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Obsidians „Zurück navigieren“, durch den Verlauf des Tabs wie im Browser. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "El comando «Navegar atrás» de Obsidian, por el historial de la pestaña como en un navegador. Funciona cuando Obsidian está delante, con sus atajos predeterminados.",
+        "fr": "La commande « Naviguer en arrière » d’Obsidian, dans l’historique de l’onglet comme dans un navigateur. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "«Вернуться назад» Obsidian — по истории вкладки, как в браузере. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Goes back",
+        "de": "Geht zurück",
+        "es": "Vuelve atrás",
+        "fr": "Revient en arrière",
+        "ru": "Возвращает назад"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 123, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "forward",
+      "title": {"en": "Forward", "de": "Vorwärts", "es": "Adelante", "fr": "Avancer", "ru": "Вперёд"},
+      "summary": {
+        "en": "Forward again after going back (⌥⌘→)",
+        "de": "Wieder vorwärts nach dem Zurückgehen (⌥⌘→)",
+        "es": "Avanza de nuevo tras volver atrás (⌥⌘→)",
+        "fr": "Avance de nouveau après un retour (⌥⌘→)",
+        "ru": "Снова вперёд после возврата назад (⌥⌘→)"
+      },
+      "details": {
+        "en": "Obsidian’s Navigate forward, through the tab’s history as in a browser. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Obsidians „Vorwärts navigieren“, durch den Verlauf des Tabs wie im Browser. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "El comando «Navegar adelante» de Obsidian, por el historial de la pestaña como en un navegador. Funciona cuando Obsidian está delante, con sus atajos predeterminados.",
+        "fr": "La commande « Naviguer vers l’avant » d’Obsidian, dans l’historique de l’onglet comme dans un navigateur. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "«Перейти вперёд» Obsidian — по истории вкладки, как в браузере. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Goes forward",
+        "de": "Geht vorwärts",
+        "es": "Avanza",
+        "fr": "Avance",
+        "ru": "Переходит вперёд"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.forward"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 124, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the next tab (⌃⇥)",
+        "de": "Wechselt zum nächsten Tab (⌃⇥)",
+        "es": "Pasa a la pestaña siguiente (⌃⇥)",
+        "fr": "Passe à l’onglet suivant (⌃⇥)",
+        "ru": "Переключает на следующую вкладку (⌃⇥)"
+      },
+      "details": {
+        "en": "Goes round the tabs of the tab group you are in. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Geht die Tabs der aktuellen Tabgruppe der Reihe nach durch. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Recorre las pestañas del grupo en el que estás. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Parcourt les onglets du groupe où vous êtes. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Перебирает вкладки текущей группы по кругу. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Switches to the next tab",
+        "de": "Wechselt zum nächsten Tab",
+        "es": "Pasa a la pestaña siguiente",
+        "fr": "Passe à l’onglet suivant",
+        "ru": "Переключает на следующую вкладку"
+      },
+      "holdAction": {
+        "en": "Switches to the previous tab (⌃⇧⇥)",
+        "de": "Wechselt zum vorherigen Tab (⌃⇧⇥)",
+        "es": "Pasa a la pestaña anterior (⌃⇧⇥)",
+        "fr": "Passe à l’onglet précédent (⌃⇧⇥)",
+        "ru": "Переключает на предыдущую вкладку (⌃⇧⇥)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.right.square"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "Opens an empty tab (⌘T); hold to reopen the last closed one",
+        "de": "Öffnet einen leeren Tab (⌘T); Halten öffnet den zuletzt geschlossenen",
+        "es": "Abre una pestaña vacía (⌘T); mantén pulsado para reabrir la última cerrada",
+        "fr": "Ouvre un onglet vide (⌘T) ; maintenez pour rouvrir le dernier fermé",
+        "ru": "Открывает пустую вкладку (⌘T); удержание возвращает закрытую"
+      },
+      "details": {
+        "en": "An empty tab in the tab group you are in, with shortcuts to open or create a note. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Ein leerer Tab in der aktuellen Tabgruppe, mit Links zum Öffnen oder Anlegen einer Notiz. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Una pestaña vacía en el grupo actual, con accesos para abrir o crear una nota. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Un onglet vide dans le groupe actuel, avec des liens pour ouvrir ou créer une note. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Пустая вкладка в текущей группе, со ссылками, чтобы открыть или создать заметку. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "holdAction": {
+        "en": "Reopens the tab you closed last (⇧⌘T)",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder (⇧⌘T)",
+        "es": "Reabre la última pestaña cerrada (⇧⌘T)",
+        "fr": "Rouvre le dernier onglet fermé (⇧⌘T)",
+        "ru": "Возвращает последнюю закрытую вкладку (⇧⌘T)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#5E5CE6",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "left-sidebar",
+      "title": {"en": "Left Sidebar", "de": "Linke Seitenleiste", "es": "Barra lateral izquierda", "fr": "Barre latérale gauche", "ru": "Левая панель"},
+      "summary": {
+        "en": "Shows or hides the left sidebar: files, search, bookmarks",
+        "de": "Blendet die linke Seitenleiste ein oder aus: Dateien, Suche, Lesezeichen",
+        "es": "Muestra u oculta la barra lateral izquierda: archivos, búsqueda, marcadores",
+        "fr": "Affiche ou masque la barre latérale gauche : fichiers, recherche, signets",
+        "ru": "Показывает или скрывает левую панель: файлы, поиск, закладки"
+      },
+      "details": {
+        "en": "Where Files, Search and Bookmarks live. Works while Obsidian is in front, whatever its hotkeys.",
+        "de": "Hier liegen Dateiexplorer, Suche und Lesezeichen. Funktioniert, wenn Obsidian vorne ist, unabhängig von den Tastenkürzeln.",
+        "es": "Donde están el explorador de archivos, la búsqueda y los marcadores. Funciona cuando Obsidian está delante, sean cuales sean sus atajos.",
+        "fr": "Là où se trouvent l’explorateur de fichiers, la recherche et les signets. Fonctionne quand Obsidian est au premier plan, quels que soient ses raccourcis.",
+        "ru": "Здесь файловый менеджер, поиск и закладки. Работает, когда Obsidian на переднем плане, при любых сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Shows or hides the left sidebar",
+        "de": "Blendet die linke Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral izquierda",
+        "fr": "Affiche ou masque la barre latérale gauche",
+        "ru": "Показывает или скрывает левую панель"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.left"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=left-sidebar\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "right-sidebar",
+      "title": {"en": "Right Sidebar", "de": "Rechte Seitenleiste", "es": "Barra lateral derecha", "fr": "Barre latérale droite", "ru": "Правая панель"},
+      "summary": {
+        "en": "Shows or hides the right sidebar: backlinks, outline and more",
+        "de": "Blendet die rechte Seitenleiste ein oder aus: Rückverweise, Gliederung und mehr",
+        "es": "Muestra u oculta la barra lateral derecha: enlaces entrantes, esquema y más",
+        "fr": "Affiche ou masque la barre latérale droite : rétroliens, plan et plus",
+        "ru": "Показывает или скрывает правую панель: обратные ссылки, структура и другое"
+      },
+      "details": {
+        "en": "Where Backlinks and the Outline live. Works while Obsidian is in front, whatever its hotkeys.",
+        "de": "Hier liegen Rückverweise und Gliederung. Funktioniert, wenn Obsidian vorne ist, unabhängig von den Tastenkürzeln.",
+        "es": "Donde están los enlaces entrantes y el esquema. Funciona cuando Obsidian está delante, sean cuales sean sus atajos.",
+        "fr": "Là où se trouvent les rétroliens et le plan. Fonctionne quand Obsidian est au premier plan, quels que soient ses raccourcis.",
+        "ru": "Здесь обратные ссылки и структура. Работает, когда Obsidian на переднем плане, при любых сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Shows or hides the right sidebar",
+        "de": "Blendet die rechte Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral derecha",
+        "fr": "Affiche ou masque la barre latérale droite",
+        "ru": "Показывает или скрывает правую панель"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "sidebar.right"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=right-sidebar\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "split",
+      "title": {"en": "Split Right", "de": "Rechts teilen", "es": "Dividir a la derecha", "fr": "Fractionner à droite", "ru": "Разделить вправо"},
+      "summary": {
+        "en": "Opens the note a second time beside it; hold to split down",
+        "de": "Öffnet die Notiz ein zweites Mal daneben; Halten teilt nach unten",
+        "es": "Abre la nota otra vez a su lado; mantén pulsado para dividir abajo",
+        "fr": "Ouvre la note une seconde fois à côté ; maintenez pour fractionner vers le bas",
+        "ru": "Открывает заметку второй раз рядом; удержание делит вниз"
+      },
+      "details": {
+        "en": "Two panes side by side, to read one note while writing another. Works while Obsidian is in front, whatever its hotkeys.",
+        "de": "Zwei Bereiche nebeneinander, um eine Notiz zu lesen und eine andere zu schreiben. Funktioniert, wenn Obsidian vorne ist, unabhängig von den Tastenkürzeln.",
+        "es": "Dos paneles uno junto al otro, para leer una nota mientras escribes otra. Funciona cuando Obsidian está delante, sean cuales sean sus atajos.",
+        "fr": "Deux volets côte à côte, pour lire une note en écrivant une autre. Fonctionne quand Obsidian est au premier plan, quels que soient ses raccourcis.",
+        "ru": "Две области рядом: читать одну заметку и писать другую. Работает, когда Obsidian на переднем плане, при любых сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Splits the tab to the right",
+        "de": "Teilt den Tab nach rechts",
+        "es": "Divide la pestaña a la derecha",
+        "fr": "Fractionne l’onglet à droite",
+        "ru": "Делит вкладку вправо"
+      },
+      "holdAction": {
+        "en": "Splits the tab down",
+        "de": "Teilt den Tab nach unten",
+        "es": "Divide la pestaña hacia abajo",
+        "fr": "Fractionne l’onglet vers le bas",
+        "ru": "Делит вкладку вниз"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "rectangle.split.2x1"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "action=split-right\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=split-down\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "settings",
+      "title": {"en": "Settings", "de": "Einstellungen", "es": "Ajustes", "fr": "Paramètres", "ru": "Настройки"},
+      "summary": {
+        "en": "Opens Obsidian’s settings (⌘,)",
+        "de": "Öffnet die Einstellungen von Obsidian (⌘,)",
+        "es": "Abre los ajustes de Obsidian (⌘,)",
+        "fr": "Ouvre les paramètres d’Obsidian (⌘,)",
+        "ru": "Открывает настройки Obsidian (⌘,)"
+      },
+      "details": {
+        "en": "Editor, files, appearance, hotkeys and plugins, each on its own tab. Works while Obsidian is in front, with its default hotkeys.",
+        "de": "Editor, Dateien, Darstellung, Tastenkürzel und Erweiterungen, jeweils in einem eigenen Tab. Funktioniert, wenn Obsidian vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Editor, archivos, apariencia, atajos y complementos, cada uno en su pestaña. Funciona cuando Obsidian está delante, con los atajos de teclado predeterminados.",
+        "fr": "Éditeur, fichiers, apparence, raccourcis et modules, chacun dans son onglet. Fonctionne quand Obsidian est au premier plan, avec ses raccourcis clavier par défaut.",
+        "ru": "Редактор, файлы, оформление, сочетания клавиш и плагины — каждый раздел на своей вкладке. Работает, когда Obsidian на переднем плане, при стандартных сочетаниях клавиш."
+      },
+      "tapAction": {
+        "en": "Opens the settings",
+        "de": "Öffnet die Einstellungen",
+        "es": "Abre los ajustes",
+        "fr": "Ouvre les paramètres",
+        "ru": "Открывает настройки"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "gearshape"}},
+        "color": "#8E8E93",
+        "command": {"keystroke": {"_0": {"keyCode": 43, "modifiers": ["command"]}}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Obsidian", "de": "Obsidian", "es": "Obsidian", "fr": "Obsidian", "ru": "Obsidian"},
+      "summary": {
+        "en": "Find, write and get around your vault from your phone",
+        "de": "Vom Telefon aus finden, schreiben und durch den Vault navigieren",
+        "es": "Busca, escribe y muévete por tu bóveda desde el teléfono",
+        "fr": "Trouvez, écrivez et parcourez votre coffre depuis votre téléphone",
+        "ru": "Поиск, записи и переходы по хранилищу с телефона"
+      },
+      "details": {
+        "en": "Search, New Note, Daily Note and Open Note work even with Obsidian in the background (Open Note also starts it); the other buttons need it in front, most with its default hotkeys.",
+        "de": "Suchen, Neue Notiz, Tagesnotiz und Notiz öffnen klappen auch mit Obsidian im Hintergrund (Notiz öffnen startet es auch); die übrigen Tasten brauchen es vorne, die meisten mit den Standard-Tastenkürzeln.",
+        "es": "Buscar, Nueva nota, Nota diaria y Abrir nota funcionan aunque Obsidian esté en segundo plano (Abrir nota también lo abre); los demás botones lo necesitan delante, casi todos con sus atajos predeterminados.",
+        "fr": "Rechercher, Nouvelle note, Note quotidienne et Ouvrir la note fonctionnent même avec Obsidian en arrière-plan (Ouvrir la note le lance aussi) ; les autres fonctionnent quand il est au premier plan, la plupart avec ses raccourcis par défaut.",
+        "ru": "«Поиск», «Новая заметка», «Сегодняшняя заметка» и «Открыть заметку» работают, даже когда Obsidian в фоне («Открыть заметку» его и запускает); остальным кнопкам он нужен на переднем плане, большинству — со стандартными сочетаниями клавиш."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "quick-switcher", "row": 0, "col": 0},
+        {"button": "command-palette", "row": 0, "col": 1},
+        {"button": "search", "row": 0, "col": 2},
+        {"button": "graph", "row": 0, "col": 3},
+        {"button": "new-note", "row": 1, "col": 0},
+        {"button": "daily-note", "row": 1, "col": 1},
+        {"button": "task", "row": 1, "col": 2},
+        {"button": "reading-view", "row": 1, "col": 3},
+        {"button": "back", "row": 2, "col": 0},
+        {"button": "forward", "row": 2, "col": 1},
+        {"button": "next-tab", "row": 2, "col": 2},
+        {"button": "new-tab", "row": 2, "col": 3},
+        {"button": "left-sidebar", "row": 3, "col": 0},
+        {"button": "right-sidebar", "row": 3, "col": 1},
+        {"button": "split", "row": 3, "col": 2},
+        {"button": "settings", "row": 3, "col": 3},
+        {"button": "open-note", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

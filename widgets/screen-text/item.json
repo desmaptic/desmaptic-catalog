@@ -1,0 +1,64 @@
+{
+  "id": "screen-text",
+  "revision": 3,
+  "kind": "widget",
+  "title": {
+    "en": "Text from Screen",
+    "de": "Text vom Bildschirm",
+    "es": "Texto de la pantalla",
+    "fr": "Texte de l’écran",
+    "ru": "Текст с экрана"
+  },
+  "summary": {
+    "en": "The text in an area of the Mac’s screen, on its clipboard; hold to read a copied picture",
+    "de": "Der Text aus einem Bereich des Mac-Bildschirms in der Zwischenablage; Halten liest ein kopiertes Bild",
+    "es": "El texto de una zona de la pantalla del Mac, en su portapapeles; mantén pulsado para leer una imagen copiada",
+    "fr": "Le texte d’une zone de l’écran du Mac, dans son presse-papiers ; maintenez pour lire une image copiée",
+    "ru": "Текст из области экрана Mac — в его буфер обмена; удержание читает скопированную картинку"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Recognizes text in the languages macOS knows, top to bottom; a QR code gives its link, in its place among the lines. Nothing found: the button flashes red, and the clipboard keeps what it held — except a password copied before the selection.",
+    "de": "Erkennt Text in den Sprachen, die macOS kennt, von oben nach unten; ein QR-Code liefert seinen Link, an seiner Stelle zwischen den Zeilen. Nichts gefunden: Die Taste blinkt rot, und die Zwischenablage behält ihren Inhalt – außer einem Passwort, das vor der Auswahl kopiert wurde.",
+    "es": "Reconoce texto en los idiomas que conoce macOS, de arriba abajo; un código QR da su enlace, en su lugar entre las líneas. Si no encuentra nada, el botón parpadea en rojo y el portapapeles conserva lo que tenía, salvo una contraseña copiada antes de seleccionar.",
+    "fr": "Reconnaît le texte dans les langues que macOS connaît, de haut en bas ; un code QR donne son lien, à sa place parmi les lignes. Rien trouvé : le bouton clignote en rouge et le presse-papiers garde son contenu, sauf un mot de passe copié avant la sélection.",
+    "ru": "Распознаёт текст на языках, которые знает macOS, сверху вниз; QR-код превращается в свою ссылку — на своём месте среди строк. Ничего не нашлось — кнопка мигает красным, в буфере обмена остаётся прежнее, кроме пароля, скопированного до выделения."
+  },
+  "tapAction": {
+    "en": "Starts selecting an area on the Mac, as ⌃⇧⌘4 does, and copies its text; Esc cancels",
+    "de": "Startet auf dem Mac die Auswahl eines Bereichs wie ⌃⇧⌘4 und kopiert seinen Text; Esc bricht ab",
+    "es": "Empieza a seleccionar una zona en el Mac, como ⌃⇧⌘4, y copia su texto; Esc cancela",
+    "fr": "Lance la sélection d’une zone sur le Mac, comme ⌃⇧⌘4, et copie son texte ; Esc annule",
+    "ru": "Включает на Mac выделение области, как ⌃⇧⌘4, и копирует её текст; Esc — отмена"
+  },
+  "holdAction": {
+    "en": "Copies the text from the picture already on the Mac’s clipboard",
+    "de": "Kopiert den Text aus dem Bild, das schon in der Zwischenablage des Mac liegt",
+    "es": "Copia el texto de la imagen que ya está en el portapapeles del Mac",
+    "fr": "Copie le texte de l’image déjà dans le presse-papiers du Mac",
+    "ru": "Копирует текст с картинки, которая уже в буфере обмена Mac"
+  },
+  "permissions": [
+    "accessibility",
+    "automation"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "text.viewfinder"
+      }
+    },
+    "color": "#BF5AF2",
+    "command": {
+      "shellCommand": {
+        "command": "mode=select\n@file:screen-text.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "mode=clipboard\n@file:screen-text.zsh"
+      }
+    }
+  }
+}

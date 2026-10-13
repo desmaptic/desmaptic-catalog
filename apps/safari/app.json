@@ -1,0 +1,624 @@
+{
+  "id": "safari",
+  "revision": 6,
+  "name": "Safari",
+  "bundleIds": ["com.apple.Safari"],
+  "category": "browsers",
+  "buttons": [
+    {
+      "id": "back",
+      "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Page précédente", "ru": "Назад"},
+      "summary": {
+        "en": "Goes back a page, on any keyboard layout",
+        "de": "Eine Seite zurück, mit jeder Tastaturbelegung",
+        "es": "Vuelve a la página anterior, con cualquier teclado",
+        "fr": "Revient à la page précédente, avec tout clavier",
+        "ru": "На страницу назад — при любой раскладке"
+      },
+      "details": {
+        "en": "Clicks History › Back in Safari’s menu, so it works on any keyboard layout. Works while Safari is in front.",
+        "de": "Klickt im Menü von Safari auf Verlauf › Zurück und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn Safari vorne ist.",
+        "es": "Hace clic en Historial › Atrás en el menú de Safari, así que funciona con cualquier distribución de teclado. Funciona cuando Safari está delante.",
+        "fr": "Clique sur Historique › Page précédente dans le menu de Safari et fonctionne donc avec toute disposition de clavier. Fonctionne quand Safari est au premier plan.",
+        "ru": "Нажимает История › Назад в меню Safari, поэтому работает при любой раскладке. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes back a page",
+        "de": "Geht eine Seite zurück",
+        "es": "Vuelve a la página anterior",
+        "fr": "Revient à la page précédente",
+        "ru": "Возвращает на предыдущую страницу"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.backward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=back\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "forward",
+      "title": {"en": "Forward", "de": "Vorwärts", "es": "Adelante", "fr": "Page suivante", "ru": "Вперёд"},
+      "summary": {
+        "en": "Goes forward a page, on any keyboard layout",
+        "de": "Eine Seite vorwärts, mit jeder Tastaturbelegung",
+        "es": "Avanza a la página siguiente, con cualquier teclado",
+        "fr": "Passe à la page suivante, avec tout clavier",
+        "ru": "На страницу вперёд — при любой раскладке"
+      },
+      "details": {
+        "en": "Clicks History › Forward in Safari’s menu, so it works on any keyboard layout. Works while Safari is in front.",
+        "de": "Klickt im Menü von Safari auf Verlauf › Vorwärts und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn Safari vorne ist.",
+        "es": "Hace clic en Historial › Adelante en el menú de Safari, así que funciona con cualquier distribución de teclado. Funciona cuando Safari está delante.",
+        "fr": "Clique sur Historique › Page suivante dans le menu de Safari et fonctionne donc avec toute disposition de clavier. Fonctionne quand Safari est au premier plan.",
+        "ru": "Нажимает История › Вперед в меню Safari, поэтому работает при любой раскладке. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes forward a page",
+        "de": "Geht eine Seite vorwärts",
+        "es": "Avanza a la página siguiente",
+        "fr": "Passe à la page suivante",
+        "ru": "Переходит на следующую страницу"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "chevron.forward"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "action=forward\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "reload",
+      "title": {"en": "Reload", "de": "Neu laden", "es": "Volver a cargar", "fr": "Recharger", "ru": "Обновить"},
+      "summary": {
+        "en": "Reloads the page (⌘R); hold to reload it from the origin",
+        "de": "Lädt die Seite neu (⌘R); Halten lädt sie vom Ursprung",
+        "es": "Vuelve a cargar la página (⌘R); mantén pulsado para cargarla desde el origen",
+        "fr": "Recharge la page (⌘R) ; maintenez pour la recharger depuis son origine",
+        "ru": "Перезагружает страницу (⌘R); удержание — из источника"
+      },
+      "details": {
+        "en": "View › Reload Page (⌘R). From the origin, Safari fetches the page anew instead of using what it has cached. Works while Safari is in front.",
+        "de": "Darstellung › Seite neu laden (⌘R). Vom Ursprung holt Safari die Seite neu, statt Zwischengespeichertes zu verwenden. Funktioniert, wenn Safari vorne ist.",
+        "es": "Visualización › Volver a cargar página (⌘R). Desde el origen, Safari descarga la página de nuevo en lugar de usar lo que tiene en caché. Funciona cuando Safari está delante.",
+        "fr": "Présentation › Recharger la page (⌘R). Depuis son origine, Safari télécharge à nouveau la page au lieu d’utiliser ce qu’il a en cache. Fonctionne quand Safari est au premier plan.",
+        "ru": "Вид › Перезагрузить страницу (⌘R). Из источника Safari загружает страницу заново, не используя то, что лежит в кеше. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Reloads the page",
+        "de": "Lädt die Seite neu",
+        "es": "Vuelve a cargar la página",
+        "fr": "Recharge la page",
+        "ru": "Перезагружает страницу"
+      },
+      "holdAction": {
+        "en": "Reloads the page from the origin (⌥⌘R)",
+        "de": "Lädt die Seite vom Ursprung neu (⌥⌘R)",
+        "es": "Vuelve a cargar la página desde el origen (⌥⌘R)",
+        "fr": "Recharge la page depuis son origine (⌥⌘R)",
+        "ru": "Перезагружает страницу из источника (⌥⌘R)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "new-tab",
+      "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
+      "summary": {
+        "en": "Opens a new tab (⌘T)",
+        "de": "Öffnet einen neuen Tab (⌘T)",
+        "es": "Abre una pestaña nueva (⌘T)",
+        "fr": "Ouvre un nouvel onglet (⌘T)",
+        "ru": "Открывает новую вкладку (⌘T)"
+      },
+      "details": {
+        "en": "File › New Tab (⌘T), with what Safari’s settings choose for new tabs — the Start Page, for instance. Works while Safari is in front.",
+        "de": "Ablage › Neuer Tab (⌘T), mit dem, was in den Safari-Einstellungen für neue Tabs gewählt ist – etwa der Startseite. Funktioniert, wenn Safari vorne ist.",
+        "es": "Archivo › Nueva pestaña (⌘T), con lo que indiquen los ajustes de Safari para las pestañas nuevas, por ejemplo la página principal. Funciona cuando Safari está delante.",
+        "fr": "Fichier › Nouvel onglet (⌘T), avec ce que les réglages de Safari prévoient pour les nouveaux onglets, la page de démarrage par exemple. Fonctionne quand Safari est au premier plan.",
+        "ru": "Файл › Новая вкладка (⌘T) — с тем, что выбрано для новых вкладок в настройках Safari, например с начальной страницей. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.square.on.square"}},
+        "color": "#0A84FF",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "previous-tab",
+      "title": {"en": "Previous Tab", "de": "Vorheriger Tab", "es": "Pestaña anterior", "fr": "Onglet précédent", "ru": "Предыдущая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the left (⌃⇧⇥)",
+        "de": "Wechselt zum Tab links davon (⌃⇧⇥)",
+        "es": "Pasa a la pestaña de la izquierda (⌃⇧⇥)",
+        "fr": "Passe à l’onglet de gauche (⌃⇧⇥)",
+        "ru": "Переключает на вкладку слева (⌃⇧⇥)"
+      },
+      "details": {
+        "en": "Window › Show Previous Tab (⌃⇧⇥). Works while Safari is in front.",
+        "de": "Fenster › Vorherigen Tab anzeigen (⌃⇧⇥). Funktioniert, wenn Safari vorne ist.",
+        "es": "Ventana › Mostrar pestaña anterior (⌃⇧⇥). Funciona cuando Safari está delante.",
+        "fr": "Fenêtre › Afficher l’onglet précédent (⌃⇧⇥). Fonctionne quand Safari est au premier plan.",
+        "ru": "Окно › На предыдущую вкладку (⌃⇧⇥). Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches to the previous tab",
+        "de": "Wechselt zum vorherigen Tab",
+        "es": "Pasa a la pestaña anterior",
+        "fr": "Passe à l’onglet précédent",
+        "ru": "Переключает на предыдущую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.left.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control", "shift"]}}}
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
+      "summary": {
+        "en": "Switches to the tab on the right (⌃⇥)",
+        "de": "Wechselt zum Tab rechts davon (⌃⇥)",
+        "es": "Pasa a la pestaña de la derecha (⌃⇥)",
+        "fr": "Passe à l’onglet de droite (⌃⇥)",
+        "ru": "Переключает на вкладку справа (⌃⇥)"
+      },
+      "details": {
+        "en": "Window › Show Next Tab (⌃⇥). Works while Safari is in front.",
+        "de": "Fenster › Nächsten Tab anzeigen (⌃⇥). Funktioniert, wenn Safari vorne ist.",
+        "es": "Ventana › Mostrar pestaña siguiente (⌃⇥). Funciona cuando Safari está delante.",
+        "fr": "Fenêtre › Afficher l’onglet suivant (⌃⇥). Fonctionne quand Safari est au premier plan.",
+        "ru": "Окно › На следующую вкладку (⌃⇥). Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches to the next tab",
+        "de": "Wechselt zum nächsten Tab",
+        "es": "Pasa a la pestaña siguiente",
+        "fr": "Passe à l’onglet suivant",
+        "ru": "Переключает на следующую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.right.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 48, "modifiers": ["control"]}}}
+      }
+    },
+    {
+      "id": "reopen-tab",
+      "title": {"en": "Reopen Tab", "de": "Tab wieder öffnen", "es": "Reabrir pestaña", "fr": "Rouvrir l’onglet", "ru": "Вернуть вкладку"},
+      "summary": {
+        "en": "Reopens the tab you closed last (⇧⌘T)",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder (⇧⌘T)",
+        "es": "Vuelve a abrir la última pestaña cerrada (⇧⌘T)",
+        "fr": "Rouvre le dernier onglet fermé (⇧⌘T)",
+        "ru": "Открывает последнюю закрытую вкладку (⇧⌘T)"
+      },
+      "details": {
+        "en": "History › Reopen Last Closed Tab (⇧⌘T) — or the window, when a window was closed last. Works while Safari is in front.",
+        "de": "Verlauf › Zuletzt geschlossenen Tab erneut öffnen (⇧⌘T) – oder das Fenster, wenn zuletzt ein Fenster geschlossen wurde. Funktioniert, wenn Safari vorne ist.",
+        "es": "Historial › Volver a abrir la última pestaña cerrada (⇧⌘T), o la ventana, si lo último que se cerró fue una ventana. Funciona cuando Safari está delante.",
+        "fr": "Historique › Rouvrir le dernier onglet fermé (⇧⌘T), ou la fenêtre, si c’est une fenêtre qui a été fermée en dernier. Fonctionne quand Safari est au premier plan.",
+        "ru": "История › Открыть последнюю закрытую вкладку (⇧⌘T) — или окно, если последним закрыли окно. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Reopens the last closed tab",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder",
+        "es": "Vuelve a abrir la última pestaña cerrada",
+        "fr": "Rouvre le dernier onglet fermé",
+        "ru": "Возвращает последнюю закрытую вкладку"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.uturn.backward.square"}},
+        "color": "#30D158",
+        "command": {"keystroke": {"_0": {"keyCode": 17, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "tab-overview",
+      "title": {"en": "Tab Overview", "de": "Tabübersicht", "es": "Visión general de pestañas", "fr": "Aperçu des onglets", "ru": "Обзор вкладок"},
+      "summary": {
+        "en": "Shows every tab of the window as a thumbnail",
+        "de": "Zeigt alle Tabs des Fensters als Miniaturen",
+        "es": "Muestra todas las pestañas de la ventana en miniatura",
+        "fr": "Affiche tous les onglets de la fenêtre en vignettes",
+        "ru": "Показывает все вкладки окна миниатюрами"
+      },
+      "details": {
+        "en": "Clicks View › Show Tab Overview in Safari’s menu, so it works on any keyboard layout. Works while Safari is in front.",
+        "de": "Klickt im Menü von Safari auf Darstellung › Tabübersicht anzeigen und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn Safari vorne ist.",
+        "es": "Hace clic en Visualización › Mostrar la visión general de pestañas en el menú de Safari, así que funciona con cualquier distribución de teclado. Funciona cuando Safari está delante.",
+        "fr": "Clique sur Présentation › Afficher l’aperçu des onglets dans le menu de Safari et fonctionne donc avec toute disposition de clavier. Fonctionne quand Safari est au premier plan.",
+        "ru": "Нажимает Вид › Показать обзор вкладок в меню Safari, поэтому работает при любой раскладке. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides Tab Overview",
+        "de": "Blendet die Tabübersicht ein oder aus",
+        "es": "Muestra u oculta la visión general de pestañas",
+        "fr": "Affiche ou masque l’aperçu des onglets",
+        "ru": "Показывает или скрывает обзор вкладок"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "square.grid.2x2"}},
+        "color": "#30D158",
+        "command": {"shellCommand": {"command": "action=tab-overview\n@file:menu/click.zsh"}}
+      }
+    },
+    {
+      "id": "find",
+      "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
+      "summary": {
+        "en": "Finds text on the page (⌘F)",
+        "de": "Sucht Text auf der Seite (⌘F)",
+        "es": "Busca texto en la página (⌘F)",
+        "fr": "Cherche du texte dans la page (⌘F)",
+        "ru": "Ищет текст на странице (⌘F)"
+      },
+      "details": {
+        "en": "Edit › Find › Find… (⌘F): type a word to highlight every match on the page; Return goes to the next one. Works while Safari is in front.",
+        "de": "Bearbeiten › Suchen › Suchen … (⌘F): ein Wort tippen, um alle Treffer auf der Seite zu markieren; Return springt zum nächsten. Funktioniert, wenn Safari vorne ist.",
+        "es": "Edición › Buscar › Buscar… (⌘F): escribe una palabra para resaltar todas las coincidencias de la página; Retorno pasa a la siguiente. Funciona cuando Safari está delante.",
+        "fr": "Édition › Rechercher › Rechercher… (⌘F) : tapez un mot pour surligner toutes les occurrences dans la page ; Retour passe à la suivante. Fonctionne quand Safari est au premier plan.",
+        "ru": "Правка › Поиск › Найти… (⌘F): наберите слово — все совпадения на странице подсветятся; Return переходит к следующему. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Starts a search on the page",
+        "de": "Startet die Suche auf der Seite",
+        "es": "Inicia la búsqueda en la página",
+        "fr": "Lance la recherche dans la page",
+        "ru": "Начинает поиск по странице"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "text.magnifyingglass"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 3, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "reader",
+      "title": {"en": "Reader", "de": "Reader", "es": "Lector", "fr": "Lecteur", "ru": "Для чтения"},
+      "summary": {
+        "en": "Shows the article without clutter (⇧⌘R)",
+        "de": "Zeigt den Artikel ohne Ablenkung (⇧⌘R)",
+        "es": "Muestra el artículo sin distracciones (⇧⌘R)",
+        "fr": "Affiche l’article sans distractions (⇧⌘R)",
+        "ru": "Показывает статью без лишнего (⇧⌘R)"
+      },
+      "details": {
+        "en": "View › Show Reader (⇧⌘R): the article alone, without ads and menus. Only on pages Safari can show in Reader. Works while Safari is in front.",
+        "de": "Darstellung › Reader einblenden (⇧⌘R): nur der Artikel, ohne Werbung und Menüs. Nur auf Seiten, die Safari im Reader zeigen kann. Funktioniert, wenn Safari vorne ist.",
+        "es": "Visualización › Mostrar lector (⇧⌘R): solo el artículo, sin anuncios ni menús. Solo en páginas que Safari puede mostrar en el lector. Funciona cuando Safari está delante.",
+        "fr": "Présentation › Afficher le lecteur (⇧⌘R) : l’article seul, sans publicités ni menus. Seulement sur les pages que Safari peut afficher dans le lecteur. Fonctionne quand Safari est au premier plan.",
+        "ru": "Вид › Показать режим «Для чтения» (⇧⌘R): только статья, без рекламы и меню. Лишь на страницах, которые Safari может так показать. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides Reader",
+        "de": "Blendet den Reader ein oder aus",
+        "es": "Muestra u oculta el lector",
+        "fr": "Affiche ou masque le lecteur",
+        "ru": "Включает или выключает режим «Для чтения»"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "doc.plaintext"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 15, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "bookmark",
+      "title": {"en": "Add Bookmark", "de": "Lesezeichen hinzufügen", "es": "Añadir marcador", "fr": "Ajouter un signet", "ru": "В закладки"},
+      "summary": {
+        "en": "Bookmarks the page (⌘D); hold for the bookmarks sidebar",
+        "de": "Legt ein Lesezeichen an (⌘D); halten für die Seitenleiste",
+        "es": "Añade la página a marcadores (⌘D); mantén pulsado para la barra lateral",
+        "fr": "Ajoute la page aux signets (⌘D) ; maintenez pour la barre latérale",
+        "ru": "Добавляет страницу в закладки (⌘D); удержание — боковое меню"
+      },
+      "details": {
+        "en": "Bookmarks › Add Bookmark… (⌘D): pick a folder and a name, then Add. Works while Safari is in front.",
+        "de": "Lesezeichen › Lesezeichen hinzufügen … (⌘D): Ordner und Namen wählen, dann „Hinzufügen“. Funktioniert, wenn Safari vorne ist.",
+        "es": "Marcadores › Añadir marcador… (⌘D): elige una carpeta y un nombre y pulsa Añadir. Funciona cuando Safari está delante.",
+        "fr": "Signets › Ajouter un signet… (⌘D) : choisissez un dossier et un nom, puis Ajouter. Fonctionne quand Safari est au premier plan.",
+        "ru": "Закладки › Добавить в закладки… (⌘D): выберите папку и название, затем «Добавить». Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Adds a bookmark for the page",
+        "de": "Legt ein Lesezeichen für die Seite an",
+        "es": "Añade un marcador de la página",
+        "fr": "Ajoute un signet pour la page",
+        "ru": "Добавляет закладку на страницу"
+      },
+      "holdAction": {
+        "en": "Shows or hides the bookmarks sidebar (⌃⌘1)",
+        "de": "Blendet die Seitenleiste für Lesezeichen ein oder aus (⌃⌘1)",
+        "es": "Muestra u oculta la barra lateral de marcadores (⌃⌘1)",
+        "fr": "Affiche ou masque la barre latérale des signets (⌃⌘1)",
+        "ru": "Показывает или скрывает боковое меню закладок (⌃⌘1)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "book"}},
+        "color": "#FFD60A",
+        "command": {"keystroke": {"_0": {"keyCode": 2, "modifiers": ["command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 18, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "reading-list",
+      "title": {"en": "Reading List", "de": "Leseliste", "es": "Lista de lectura", "fr": "Liste de lecture", "ru": "Список для чтения"},
+      "summary": {
+        "en": "Saves the page to read later; hold for the Reading List",
+        "de": "Merkt die Seite zum Lesen vor; halten für die Leseliste",
+        "es": "Guarda la página para leerla después; mantén pulsado para ver la lista",
+        "fr": "Garde la page pour plus tard ; maintenez pour la liste de lecture",
+        "ru": "Сохраняет страницу на потом; удержание — список для чтения"
+      },
+      "details": {
+        "en": "A tap adds the current tab of the front Safari window to the Reading List, even while another app is in front; a hold works while Safari is in front.",
+        "de": "Tippen legt den aktuellen Tab des vorderen Safari-Fensters in die Leseliste, auch wenn eine andere App vorne ist; Halten funktioniert, wenn Safari vorne ist.",
+        "es": "El toque añade a la lista de lectura la pestaña actual de la ventana de Safari que está delante, aunque estés en otra app; mantener pulsado funciona cuando Safari está delante.",
+        "fr": "Le toucher ajoute à la liste de lecture l’onglet actif de la fenêtre Safari au premier plan, même quand une autre app est devant ; l’appui long fonctionne quand Safari est au premier plan.",
+        "ru": "Нажатие добавляет в список для чтения текущую вкладку переднего окна Safari, даже когда впереди другое приложение; удержание работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Adds the page to the Reading List",
+        "de": "Legt die Seite in die Leseliste",
+        "es": "Añade la página a la lista de lectura",
+        "fr": "Ajoute la page à la liste de lecture",
+        "ru": "Добавляет страницу в список для чтения"
+      },
+      "holdAction": {
+        "en": "Shows or hides the Reading List sidebar (⌃⌘2)",
+        "de": "Blendet die Seitenleiste für die Leseliste ein oder aus (⌃⌘2)",
+        "es": "Muestra u oculta la barra lateral de la lista de lectura (⌃⌘2)",
+        "fr": "Affiche ou masque la barre latérale de la liste de lecture (⌃⌘2)",
+        "ru": "Показывает или скрывает боковое меню списка для чтения (⌃⌘2)"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "eyeglasses"}},
+        "color": "#FFD60A",
+        "command": {"shellCommand": {"command": "action=reading-list\n@file:action.zsh"}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 19, "modifiers": ["control", "command"]}}}
+      }
+    },
+    {
+      "id": "copy-link",
+      "title": {"en": "Copy Link", "de": "Link kopieren", "es": "Copiar enlace", "fr": "Copier le lien", "ru": "Скопировать ссылку"},
+      "summary": {
+        "en": "Copies the page’s address; hold for a Markdown link",
+        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
+        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
+        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
+        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+      },
+      "details": {
+        "en": "The address of the current tab in the front Safari window, ready to paste. Works even while another app is in front.",
+        "de": "Die Adresse des aktuellen Tabs im vorderen Safari-Fenster, bereit zum Einsetzen. Funktioniert auch, wenn eine andere App vorne ist.",
+        "es": "La dirección de la pestaña actual de la ventana de Safari que está delante, lista para pegar. Funciona aunque estés en otra app.",
+        "fr": "L’adresse de l’onglet actif de la fenêtre Safari au premier plan, prête à coller. Fonctionne même quand une autre app est devant.",
+        "ru": "Адрес текущей вкладки переднего окна Safari — сразу для вставки. Работает, даже когда впереди другое приложение."
+      },
+      "tapAction": {
+        "en": "Copies the page’s address",
+        "de": "Kopiert die Adresse der Seite",
+        "es": "Copia la dirección de la página",
+        "fr": "Copie l’adresse de la page",
+        "ru": "Копирует адрес страницы"
+      },
+      "holdAction": {
+        "en": "Copies a Markdown link: [title](address)",
+        "de": "Kopiert einen Markdown-Link: [Titel](Adresse)",
+        "es": "Copia un enlace Markdown: [título](dirección)",
+        "fr": "Copie un lien Markdown : [titre](adresse)",
+        "ru": "Копирует ссылку Markdown: [заголовок](адрес)"
+      },
+      "permissions": ["automation"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "link"}},
+        "color": "#64D2FF",
+        "command": {"shellCommand": {"command": "action=copy-link\n@file:action.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=copy-markdown\n@file:action.zsh"}}
+      }
+    },
+    {
+      "id": "new-window",
+      "title": {"en": "New Window", "de": "Neues Fenster", "es": "Nueva ventana", "fr": "Nouvelle fenêtre", "ru": "Новое окно"},
+      "summary": {
+        "en": "Opens a new Safari window (⌘N)",
+        "de": "Öffnet ein neues Safari-Fenster (⌘N)",
+        "es": "Abre una ventana nueva de Safari (⌘N)",
+        "fr": "Ouvre une nouvelle fenêtre Safari (⌘N)",
+        "ru": "Открывает новое окно Safari (⌘N)"
+      },
+      "details": {
+        "en": "File › New Window (⌘N), with what Safari’s settings choose for new windows. Works while Safari is in front.",
+        "de": "Ablage › Neues Fenster (⌘N), mit dem, was in den Safari-Einstellungen für neue Fenster gewählt ist. Funktioniert, wenn Safari vorne ist.",
+        "es": "Archivo › Nueva ventana (⌘N), con lo que indiquen los ajustes de Safari para las ventanas nuevas. Funciona cuando Safari está delante.",
+        "fr": "Fichier › Nouvelle fenêtre (⌘N), avec ce que les réglages de Safari prévoient pour les nouvelles fenêtres. Fonctionne quand Safari est au premier plan.",
+        "ru": "Файл › Новое окно (⌘N) — с тем, что выбрано для новых окон в настройках Safari. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new window",
+        "de": "Öffnet ein neues Fenster",
+        "es": "Abre una ventana nueva",
+        "fr": "Ouvre une nouvelle fenêtre",
+        "ru": "Открывает новое окно"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "macwindow.badge.plus"}},
+        "color": "#64D2FF",
+        "command": {"keystroke": {"_0": {"keyCode": 45, "modifiers": ["command"]}}}
+      }
+    },
+    {
+      "id": "private-window",
+      "title": {"en": "Private Window", "de": "Privates Fenster", "es": "Ventana privada", "fr": "Fenêtre privée", "ru": "Частное окно"},
+      "summary": {
+        "en": "Opens a new private window (⇧⌘N)",
+        "de": "Öffnet ein neues privates Fenster (⇧⌘N)",
+        "es": "Abre una ventana privada nueva (⇧⌘N)",
+        "fr": "Ouvre une nouvelle fenêtre privée (⇧⌘N)",
+        "ru": "Открывает новое частное окно (⇧⌘N)"
+      },
+      "details": {
+        "en": "File › New Private Window (⇧⌘N): Safari doesn’t remember the pages you visit there. Works while Safari is in front.",
+        "de": "Ablage › Neues privates Fenster (⇧⌘N): Safari merkt sich die dort besuchten Seiten nicht. Funktioniert, wenn Safari vorne ist.",
+        "es": "Archivo › Nueva ventana privada (⇧⌘N): Safari no recuerda las páginas que visitas en ella. Funciona cuando Safari está delante.",
+        "fr": "Fichier › Nouvelle fenêtre privée (⇧⌘N) : Safari ne garde pas en mémoire les pages que vous y visitez. Fonctionne quand Safari est au premier plan.",
+        "ru": "Файл › Новое частное окно (⇧⌘N): Safari не запоминает страницы, которые вы в нём открываете. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a private window",
+        "de": "Öffnet ein privates Fenster",
+        "es": "Abre una ventana privada",
+        "fr": "Ouvre une fenêtre privée",
+        "ru": "Открывает частное окно"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "eye.slash"}},
+        "color": "#BF5AF2",
+        "command": {"keystroke": {"_0": {"keyCode": 45, "modifiers": ["shift", "command"]}}}
+      }
+    },
+    {
+      "id": "web-inspector",
+      "title": {"en": "Web Inspector", "de": "Web Inspector", "es": "Inspector web", "fr": "Inspecteur web", "ru": "Веб-инспектор"},
+      "summary": {
+        "en": "Opens Web Inspector (⌥⌘I); hold for the console",
+        "de": "Öffnet die Webinformationen (⌥⌘I); halten für die Konsole",
+        "es": "Abre el inspector web (⌥⌘I); mantén pulsado para la consola",
+        "fr": "Ouvre l’inspecteur web (⌥⌘I) ; maintenez pour la console",
+        "ru": "Открывает веб-инспектор (⌥⌘I); удержание — консоль"
+      },
+      "details": {
+        "en": "Develop › Show Web Inspector (⌥⌘I). Needs the Develop menu: Safari Settings › Advanced › Show features for web developers. Works while Safari is in front.",
+        "de": "Entwickler › Webinformationen einblenden (⌥⌘I). Braucht das Menü „Entwickler“: Safari-Einstellungen › Erweitert › „Funktionen für Web-Entwickler anzeigen“. Funktioniert, wenn Safari vorne ist.",
+        "es": "Desarrollo › Mostrar inspector web (⌥⌘I). Necesita el menú Desarrollo: Ajustes de Safari › Avanzado › «Mostrar funciones para desarrolladores web». Funciona cuando Safari está delante.",
+        "fr": "Développement › Afficher l’inspecteur web (⌥⌘I). Il faut le menu Développement : Réglages de Safari › Avancés › « Afficher les fonctionnalités pour les développeurs web ». Fonctionne quand Safari est au premier plan.",
+        "ru": "Разработка › Показать веб-инспектор (⌥⌘I). Нужно меню «Разработка»: Настройки Safari › Дополнения › «Показывать функции для веб-разработчиков». Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Web Inspector",
+        "de": "Öffnet die Webinformationen",
+        "es": "Abre el inspector web",
+        "fr": "Ouvre l’inspecteur web",
+        "ru": "Открывает веб-инспектор"
+      },
+      "holdAction": {
+        "en": "Opens the JavaScript Console (⌥⌘C)",
+        "de": "Öffnet die JavaScript-Konsole (⌥⌘C)",
+        "es": "Abre la consola de JavaScript (⌥⌘C)",
+        "fr": "Ouvre la console JavaScript (⌥⌘C)",
+        "ru": "Открывает консоль JavaScript (⌥⌘C)"
+      },
+      "permissions": ["accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "scope"}},
+        "color": "#FF9F0A",
+        "command": {"keystroke": {"_0": {"keyCode": 34, "modifiers": ["option", "command"]}}},
+        "longPressCommand": {"keystroke": {"_0": {"keyCode": 8, "modifiers": ["option", "command"]}}}
+      }
+    },
+    {
+      "id": "mute-tab",
+      "title": {"en": "Mute Tab", "de": "Tab stumm", "es": "Silenciar pestaña", "fr": "Couper le son", "ru": "Без звука"},
+      "summary": {
+        "en": "Mutes the current tab; hold to mute all the others",
+        "de": "Schaltet das aktuelle Tab stumm; halten, um die anderen stummzuschalten",
+        "es": "Silencia la pestaña actual; mantén pulsado para silenciar las demás",
+        "fr": "Coupe le son de l’onglet actuel ; maintenez pour couper celui des autres",
+        "ru": "Выключает звук текущей вкладки; удержание — звук остальных"
+      },
+      "details": {
+        "en": "Clicks Window › Mute Current Tab in Safari’s menu, or Mute Other Tabs on a hold; the same press again turns the sound back on. Works while Safari is in front.",
+        "de": "Klickt im Menü von Safari auf Fenster › Aktuelles Tab stummschalten, beim Halten auf Andere Tabs stummschalten; dasselbe noch einmal schaltet den Ton wieder ein. Funktioniert, wenn Safari vorne ist.",
+        "es": "Hace clic en Ventana › Silenciar pestaña actual en el menú de Safari, o en Desactivar el sonido del resto de pestañas al mantener pulsado; repetirlo devuelve el sonido. Funciona cuando Safari está delante.",
+        "fr": "Clique sur Fenêtre › Couper le son de l’onglet actuel dans le menu de Safari, ou sur Couper le son des autres onglets en maintenant ; refaire le même geste rétablit le son. Fonctionne quand Safari est au premier plan.",
+        "ru": "Нажимает Окно › Выключить звук на текущей вкладке в меню Safari, при удержании — Выключить звук на остальных вкладках; повторное нажатие возвращает звук. Работает, когда Safari на переднем плане."
+      },
+      "tapAction": {
+        "en": "Mutes or unmutes the current tab",
+        "de": "Schaltet das aktuelle Tab stumm oder wieder laut",
+        "es": "Silencia la pestaña actual o le devuelve el sonido",
+        "fr": "Coupe ou rétablit le son de l’onglet actuel",
+        "ru": "Выключает или возвращает звук текущей вкладки"
+      },
+      "holdAction": {
+        "en": "Mutes or unmutes all the other tabs",
+        "de": "Schaltet alle anderen Tabs stumm oder wieder laut",
+        "es": "Silencia las demás pestañas o les devuelve el sonido",
+        "fr": "Coupe ou rétablit le son des autres onglets",
+        "ru": "Выключает или возвращает звук остальных вкладок"
+      },
+      "permissions": ["automation", "accessibility"],
+      "button": {
+        "icon": {"sfSymbol": {"name": "speaker.slash"}},
+        "color": "#FF9F0A",
+        "command": {"shellCommand": {"command": "action=mute-tab\n@file:menu/click.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "action=mute-others\n@file:menu/click.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "Safari", "de": "Safari", "es": "Safari", "fr": "Safari", "ru": "Safari"},
+      "summary": {
+        "en": "Tabs, pages and the Reading List at hand",
+        "de": "Tabs, Seiten und Leseliste griffbereit",
+        "es": "Pestañas, páginas y lista de lectura a mano",
+        "fr": "Onglets, pages et liste de lecture à portée de main",
+        "ru": "Вкладки, страницы и список для чтения под рукой"
+      },
+      "details": {
+        "en": "Copy Link and adding to the Reading List work even with Safari in the background. The other buttons work while Safari is in front.",
+        "de": "Link kopieren und das Hinzufügen zur Leseliste klappen auch mit Safari im Hintergrund. Die übrigen Tasten funktionieren, wenn Safari vorne ist.",
+        "es": "Copiar enlace y añadir a la lista de lectura funcionan aunque Safari esté en segundo plano. Los demás botones, cuando Safari está delante.",
+        "fr": "Copier le lien et l’ajout à la liste de lecture fonctionnent même avec Safari en arrière-plan. Les autres boutons, quand Safari est au premier plan.",
+        "ru": "«Скопировать ссылку» и добавление в список для чтения работают, даже когда Safari в фоне. Остальные кнопки — когда Safari на переднем плане."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {"button": "back", "row": 0, "col": 0},
+        {"button": "forward", "row": 0, "col": 1},
+        {"button": "reload", "row": 0, "col": 2},
+        {"button": "new-tab", "row": 0, "col": 3},
+        {"button": "previous-tab", "row": 1, "col": 0},
+        {"button": "next-tab", "row": 1, "col": 1},
+        {"button": "reopen-tab", "row": 1, "col": 2},
+        {"button": "tab-overview", "row": 1, "col": 3},
+        {"button": "find", "row": 2, "col": 0},
+        {"button": "reader", "row": 2, "col": 1},
+        {"button": "bookmark", "row": 2, "col": 2},
+        {"button": "reading-list", "row": 2, "col": 3},
+        {"button": "copy-link", "row": 3, "col": 0},
+        {"button": "new-window", "row": 3, "col": 1},
+        {"button": "private-window", "row": 3, "col": 2},
+        {"button": "web-inspector", "row": 3, "col": 3},
+        {"button": "mute-tab", "row": 4, "col": 0}
+      ]
+    }
+  ]
+}

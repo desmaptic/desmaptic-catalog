@@ -1,0 +1,1052 @@
+{
+  "id": "postman",
+  "revision": 4,
+  "name": "Postman",
+  "bundleIds": [
+    "com.postmanlabs.mac"
+  ],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "send",
+      "title": {
+        "en": "Send",
+        "de": "Senden",
+        "es": "Enviar",
+        "fr": "Envoyer",
+        "ru": "Отправить"
+      },
+      "summary": {
+        "en": "Sends the open request (⌘↩); hold to save the response to a file",
+        "de": "Sendet die offene Anfrage (⌘↩); halten, um die Antwort als Datei zu speichern",
+        "es": "Envía la solicitud abierta (⌘↩); mantén pulsado para guardar la respuesta en un archivo",
+        "fr": "Envoie la requête ouverte (⌘↩) ; maintenez pour enregistrer la réponse dans un fichier",
+        "ru": "Отправляет открытый запрос (⌘↩); удержание — сохранить ответ в файл"
+      },
+      "details": {
+        "en": "The same as the Send button of the request tab in front. Works while Postman is in front.",
+        "de": "Wie die Schaltfläche Send im vorderen Anfrage-Tab. Funktioniert, wenn Postman vorne ist.",
+        "es": "Lo mismo que el botón Send de la pestaña de solicitud de delante. Funciona cuando Postman está delante.",
+        "fr": "Comme le bouton Send de l’onglet de requête au premier plan. Fonctionne quand Postman est au premier plan.",
+        "ru": "То же, что кнопка Send во вкладке запроса на переднем плане. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Sends the request",
+        "de": "Sendet die Anfrage",
+        "es": "Envía la solicitud",
+        "fr": "Envoie la requête",
+        "ru": "Отправляет запрос"
+      },
+      "holdAction": {
+        "en": "Sends it and saves the response to a file (⌥⌘↩)",
+        "de": "Sendet sie und speichert die Antwort als Datei (⌥⌘↩)",
+        "es": "La envía y guarda la respuesta en un archivo (⌥⌘↩)",
+        "fr": "L’envoie et enregistre la réponse dans un fichier (⌥⌘↩)",
+        "ru": "Отправляет и сохраняет ответ в файл (⌥⌘↩)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "paperplane.fill"
+          }
+        },
+        "color": "#FF6C37",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 36,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 36,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "save",
+      "title": {
+        "en": "Save",
+        "de": "Speichern",
+        "es": "Guardar",
+        "fr": "Enregistrer",
+        "ru": "Сохранить"
+      },
+      "summary": {
+        "en": "Saves the open request (⌘S); hold for Save As",
+        "de": "Speichert die offene Anfrage (⌘S); halten für Save As",
+        "es": "Guarda la solicitud abierta (⌘S); mantén pulsado para Save As",
+        "fr": "Enregistre la requête ouverte (⌘S) ; maintenez pour Save As",
+        "ru": "Сохраняет открытый запрос (⌘S); удержание — Save As"
+      },
+      "details": {
+        "en": "If the request isn’t in a collection yet, Postman asks where to save it. Works while Postman is in front.",
+        "de": "Ist die Anfrage noch in keiner Collection, fragt Postman, wohin sie soll. Funktioniert, wenn Postman vorne ist.",
+        "es": "Si la solicitud aún no está en ninguna colección, Postman pregunta dónde guardarla. Funciona cuando Postman está delante.",
+        "fr": "Si la requête n’est encore dans aucune collection, Postman demande où l’enregistrer. Fonctionne quand Postman est au premier plan.",
+        "ru": "Если запрос ещё не в коллекции, Postman спросит, куда его сохранить. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Saves the request",
+        "de": "Speichert die Anfrage",
+        "es": "Guarda la solicitud",
+        "fr": "Enregistre la requête",
+        "ru": "Сохраняет запрос"
+      },
+      "holdAction": {
+        "en": "Saves a copy under another name or in another collection (⇧⌘S)",
+        "de": "Speichert eine Kopie unter anderem Namen oder in einer anderen Collection (⇧⌘S)",
+        "es": "Guarda una copia con otro nombre o en otra colección (⇧⌘S)",
+        "fr": "Enregistre une copie sous un autre nom ou dans une autre collection (⇧⌘S)",
+        "ru": "Сохраняет копию под другим именем или в другой коллекции (⇧⌘S)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.and.arrow.down"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 1,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 1,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "url",
+      "title": {
+        "en": "Request URL",
+        "de": "Anfrage-URL",
+        "es": "URL de solicitud",
+        "fr": "URL de la requête",
+        "ru": "URL запроса"
+      },
+      "summary": {
+        "en": "Puts the cursor in the request’s URL (⌘L)",
+        "de": "Setzt den Cursor in die URL der Anfrage (⌘L)",
+        "es": "Pone el cursor en la URL de la solicitud (⌘L)",
+        "fr": "Place le curseur dans l’URL de la requête (⌘L)",
+        "ru": "Ставит курсор в адрес запроса (⌘L)"
+      },
+      "details": {
+        "en": "Ready to type or paste a new address for the open request. Works while Postman is in front.",
+        "de": "Bereit, eine neue Adresse für die offene Anfrage zu tippen oder einzufügen. Funktioniert, wenn Postman vorne ist.",
+        "es": "Lista para escribir o pegar una dirección nueva para la solicitud abierta. Funciona cuando Postman está delante.",
+        "fr": "Prêt à taper ou coller une nouvelle adresse pour la requête ouverte. Fonctionne quand Postman est au premier plan.",
+        "ru": "Можно сразу набрать или вставить новый адрес открытого запроса. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Goes to the URL field",
+        "de": "Springt ins URL-Feld",
+        "es": "Va al campo de la URL",
+        "fr": "Va au champ URL",
+        "ru": "Переходит к полю адреса"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "link"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 37,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "environment",
+      "title": {
+        "en": "Environment",
+        "de": "Umgebung",
+        "es": "Entorno",
+        "fr": "Env.",
+        "ru": "Окружение"
+      },
+      "summary": {
+        "en": "Opens the list of environments to switch to another (⌥E)",
+        "de": "Öffnet die Liste der Umgebungen, um zu wechseln (⌥E)",
+        "es": "Abre la lista de entornos para cambiar de uno a otro (⌥E)",
+        "fr": "Ouvre la liste des environnements pour en changer (⌥E)",
+        "ru": "Открывает список окружений, чтобы сменить текущее (⌥E)"
+      },
+      "details": {
+        "en": "Switches between sets of variables, such as local, staging and production. Works while Postman is in front.",
+        "de": "Wechselt zwischen Variablensätzen wie local, staging und production. Funktioniert, wenn Postman vorne ist.",
+        "es": "Cambia entre conjuntos de variables, como local, staging y production. Funciona cuando Postman está delante.",
+        "fr": "Passe d’un environnement (jeu de variables) à l’autre, comme local, staging et production. Fonctionne quand Postman est au premier plan.",
+        "ru": "Переключает наборы переменных, например local, staging и production. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the environment selector",
+        "de": "Öffnet die Umgebungsauswahl",
+        "es": "Abre el selector de entorno",
+        "fr": "Ouvre le sélecteur d’environnement",
+        "ru": "Открывает выбор окружения"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "server.rack"
+          }
+        },
+        "color": "#FF9F0A",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 14,
+              "modifiers": [
+                "option"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "new-tab",
+      "title": {
+        "en": "New Tab",
+        "de": "Neuer Tab",
+        "es": "Nueva pestaña",
+        "fr": "Nouvel onglet",
+        "ru": "Новая вкладка"
+      },
+      "summary": {
+        "en": "Opens an empty request in a new tab (⌘T); hold closes the tab in front",
+        "de": "Öffnet eine leere Anfrage in einem neuen Tab (⌘T); Halten schließt den vorderen Tab",
+        "es": "Abre una solicitud vacía en una pestaña nueva (⌘T); mantén pulsado para cerrar la de delante",
+        "fr": "Ouvre une requête vide dans un nouvel onglet (⌘T) ; maintenez pour fermer l’onglet au premier plan",
+        "ru": "Открывает пустой запрос в новой вкладке (⌘T); удержание закрывает переднюю вкладку"
+      },
+      "details": {
+        "en": "Postman asks about unsaved changes before closing only if you are signed in and “Always ask when closing unsaved tabs” is on. Works while Postman is in front.",
+        "de": "Nach ungespeicherten Änderungen fragt Postman beim Schließen nur, wenn du angemeldet bist und „Always ask when closing unsaved tabs“ an ist. Funktioniert, wenn Postman vorne ist.",
+        "es": "Al cerrar, Postman solo pregunta por los cambios sin guardar si has iniciado sesión y «Always ask when closing unsaved tabs» está activado. Funciona cuando Postman está delante.",
+        "fr": "À la fermeture, Postman ne propose d’enregistrer les modifications que si vous êtes connecté et que « Always ask when closing unsaved tabs » est activé. Fonctionne quand Postman est au premier plan.",
+        "ru": "При закрытии Postman спрашивает о несохранённых изменениях, только если вы вошли в аккаунт и включено «Always ask when closing unsaved tabs». Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a new tab",
+        "de": "Öffnet einen neuen Tab",
+        "es": "Abre una pestaña nueva",
+        "fr": "Ouvre un nouvel onglet",
+        "ru": "Открывает новую вкладку"
+      },
+      "holdAction": {
+        "en": "⚠️ Closes the tab in front; unsaved changes may be lost (⌘W)",
+        "de": "⚠️ Schließt den vorderen Tab; ungespeicherte Änderungen können verloren gehen (⌘W)",
+        "es": "⚠️ Cierra la pestaña de delante; los cambios sin guardar pueden perderse (⌘W)",
+        "fr": "⚠️ Ferme l’onglet au premier plan ; les modifications non enregistrées peuvent être perdues (⌘W)",
+        "ru": "⚠️ Закрывает переднюю вкладку; несохранённые изменения могут пропасть (⌘W)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "plus.square.on.square"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 17,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 13,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "reopen-tab",
+      "title": {
+        "en": "Reopen Tab",
+        "de": "Tab wieder öffnen",
+        "es": "Reabrir pestaña",
+        "fr": "Rouvrir l’onglet",
+        "ru": "Вернуть вкладку"
+      },
+      "summary": {
+        "en": "Brings back the tab you closed last (⇧⌘T)",
+        "de": "Holt den zuletzt geschlossenen Tab zurück (⇧⌘T)",
+        "es": "Recupera la última pestaña que cerraste (⇧⌘T)",
+        "fr": "Rouvre le dernier onglet fermé (⇧⌘T)",
+        "ru": "Возвращает последнюю закрытую вкладку (⇧⌘T)"
+      },
+      "details": {
+        "en": "Postman’s Reopen Last Closed Tab, for a tab closed by mistake. Works while Postman is in front.",
+        "de": "„Reopen Last Closed Tab“ von Postman, für einen versehentlich geschlossenen Tab. Funktioniert, wenn Postman vorne ist.",
+        "es": "«Reopen Last Closed Tab» de Postman, para una pestaña cerrada por error. Funciona cuando Postman está delante.",
+        "fr": "« Reopen Last Closed Tab » de Postman, pour un onglet fermé par erreur. Fonctionne quand Postman est au premier plan.",
+        "ru": "«Reopen Last Closed Tab» в Postman — для вкладки, закрытой по ошибке. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Reopens the tab you closed last",
+        "de": "Öffnet den zuletzt geschlossenen Tab wieder",
+        "es": "Reabre la última pestaña que cerraste",
+        "fr": "Rouvre le dernier onglet fermé",
+        "ru": "Снова открывает последнюю закрытую вкладку"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "arrow.uturn.backward.square"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 17,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "next-tab",
+      "title": {
+        "en": "Next Tab",
+        "de": "Nächster Tab",
+        "es": "Pestaña siguiente",
+        "fr": "Onglet suivant",
+        "ru": "Следующая вкладка"
+      },
+      "summary": {
+        "en": "Switches to the tab on the right; hold for the one on the left",
+        "de": "Wechselt zum Tab rechts; halten für den Tab links",
+        "es": "Pasa a la pestaña de la derecha; mantén pulsado para la de la izquierda",
+        "fr": "Passe à l’onglet de droite ; maintenez pour celui de gauche",
+        "ru": "Переключает на вкладку справа; удержание — на вкладку слева"
+      },
+      "details": {
+        "en": "Clicks Window › Next Tab in Postman’s menu, so any keyboard layout will do. Works while Postman is in front.",
+        "de": "Klickt im Menü von Postman auf Window › Next Tab, daher passt jede Tastaturbelegung. Funktioniert, wenn Postman vorne ist.",
+        "es": "Pulsa Window › Next Tab en el menú de Postman, así que sirve cualquier distribución de teclado. Funciona cuando Postman está delante.",
+        "fr": "Clique sur Window › Next Tab dans le menu de Postman : toute disposition de clavier convient. Fonctionne quand Postman est au premier plan.",
+        "ru": "Нажимает Window › Next Tab в меню Postman, поэтому подойдёт любая раскладка. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows the next tab",
+        "de": "Zeigt den nächsten Tab",
+        "es": "Muestra la pestaña siguiente",
+        "fr": "Affiche l’onglet suivant",
+        "ru": "Показывает следующую вкладку"
+      },
+      "holdAction": {
+        "en": "Shows the previous tab (Window › Previous Tab)",
+        "de": "Zeigt den vorherigen Tab (Window › Previous Tab)",
+        "es": "Muestra la pestaña anterior (Window › Previous Tab)",
+        "fr": "Affiche l’onglet précédent (Window › Previous Tab)",
+        "ru": "Показывает предыдущую вкладку (Window › Previous Tab)"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "chevron.right.square"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=next-tab\n@file:menu/click.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=previous-tab\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "search-tabs",
+      "title": {
+        "en": "Search Tabs",
+        "de": "Tabs durchsuchen",
+        "es": "Buscar pestañas",
+        "fr": "Chercher un onglet",
+        "ru": "Поиск вкладок"
+      },
+      "summary": {
+        "en": "Finds an open tab by its name (⇧⌘A)",
+        "de": "Findet einen offenen Tab über seinen Namen (⇧⌘A)",
+        "es": "Busca una pestaña abierta por su nombre (⇧⌘A)",
+        "fr": "Trouve un onglet ouvert par son nom (⇧⌘A)",
+        "ru": "Ищет открытую вкладку по названию (⇧⌘A)"
+      },
+      "details": {
+        "en": "For many open requests: type part of a tab’s name and pick it from the list. Works while Postman is in front.",
+        "de": "Bei vielen offenen Anfragen: Gib einen Teil des Tab-Namens ein und wähle ihn in der Liste. Funktioniert, wenn Postman vorne ist.",
+        "es": "Para muchas solicitudes abiertas: escribe parte del nombre de una pestaña y elígela en la lista. Funciona cuando Postman está delante.",
+        "fr": "Pour de nombreuses requêtes ouvertes : tapez une partie du nom d’un onglet et choisissez-le dans la liste. Fonctionne quand Postman est au premier plan.",
+        "ru": "Когда открыто много запросов: наберите часть названия вкладки и выберите её в списке. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the tab search",
+        "de": "Öffnet die Tab-Suche",
+        "es": "Abre la búsqueda de pestañas",
+        "fr": "Ouvre la recherche d’onglets",
+        "ru": "Открывает поиск по вкладкам"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.and.text.magnifyingglass"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 0,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "search",
+      "title": {
+        "en": "Search",
+        "de": "Suchen",
+        "es": "Buscar",
+        "fr": "Rechercher",
+        "ru": "Поиск"
+      },
+      "summary": {
+        "en": "Searches workspaces, collections and requests (⌘K); hold for this workspace only",
+        "de": "Durchsucht Workspaces, Collections und Anfragen (⌘K); halten nur für diesen Workspace",
+        "es": "Busca en espacios de trabajo, colecciones y solicitudes (⌘K); mantén pulsado para buscar solo en este",
+        "fr": "Cherche dans les espaces de travail, collections et requêtes (⌘K) ; maintenez pour celui-ci seulement",
+        "ru": "Ищет по рабочим пространствам, коллекциям и запросам (⌘K); удержание — только в текущем"
+      },
+      "details": {
+        "en": "Postman’s search box at the top of the window. Works while Postman is in front.",
+        "de": "Das Suchfeld oben im Fenster von Postman. Funktioniert, wenn Postman vorne ist.",
+        "es": "El cuadro de búsqueda de arriba en la ventana de Postman. Funciona cuando Postman está delante.",
+        "fr": "Le champ de recherche en haut de la fenêtre de Postman. Fonctionne quand Postman est au premier plan.",
+        "ru": "Поле поиска вверху окна Postman. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Postman’s search",
+        "de": "Öffnet die Suche von Postman",
+        "es": "Abre la búsqueda de Postman",
+        "fr": "Ouvre la recherche de Postman",
+        "ru": "Открывает поиск Postman"
+      },
+      "holdAction": {
+        "en": "Searches only the current workspace (⌥⌘K)",
+        "de": "Sucht nur im aktuellen Workspace (⌥⌘K)",
+        "es": "Busca solo en el espacio de trabajo actual (⌥⌘K)",
+        "fr": "Cherche seulement dans l’espace de travail actuel (⌥⌘K)",
+        "ru": "Ищет только в текущем рабочем пространстве (⌥⌘K)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "magnifyingglass"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 40,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 40,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "find",
+      "title": {
+        "en": "Find & Replace",
+        "de": "Suchen & Ersetzen",
+        "es": "Buscar y reemplazar",
+        "fr": "Rechercher et remplacer",
+        "ru": "Найти и заменить"
+      },
+      "summary": {
+        "en": "Finds text in the workspace’s collections and environments (⇧⌘F)",
+        "de": "Findet Text in den Collections und Umgebungen des Workspace (⇧⌘F)",
+        "es": "Encuentra texto en las colecciones y entornos del espacio de trabajo (⇧⌘F)",
+        "fr": "Trouve du texte dans les collections et environnements de l’espace de travail (⇧⌘F)",
+        "ru": "Ищет текст в коллекциях и окружениях рабочего пространства (⇧⌘F)"
+      },
+      "details": {
+        "en": "The Find tab at the bottom of the window, which can also replace what it finds. Works while Postman is in front.",
+        "de": "Der Tab Find unten im Fenster, der Gefundenes auch ersetzen kann. Funktioniert, wenn Postman vorne ist.",
+        "es": "La pestaña Find en la parte inferior de la ventana, que también reemplaza lo encontrado. Funciona cuando Postman está delante.",
+        "fr": "L’onglet Find en bas de la fenêtre, qui peut aussi remplacer ce qu’il trouve. Fonctionne quand Postman est au premier plan.",
+        "ru": "Вкладка Find внизу окна: она может и заменить найденное. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides Find",
+        "de": "Blendet Find ein oder aus",
+        "es": "Muestra u oculta Find",
+        "fr": "Affiche ou masque Find",
+        "ru": "Показывает или прячет Find"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "text.magnifyingglass"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 3,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "sidebar",
+      "title": {
+        "en": "Sidebar",
+        "de": "Seitenleiste",
+        "es": "Barra lateral",
+        "fr": "Barre latérale",
+        "ru": "Боковая панель"
+      },
+      "summary": {
+        "en": "Shows or hides the sidebar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или прячет боковую панель"
+      },
+      "details": {
+        "en": "Clicks View › Toggle Sidebar in Postman’s menu, so any keyboard layout will do. Works while Postman is in front.",
+        "de": "Klickt im Menü von Postman auf View › Toggle Sidebar, daher passt jede Tastaturbelegung. Funktioniert, wenn Postman vorne ist.",
+        "es": "Pulsa View › Toggle Sidebar en el menú de Postman, así que sirve cualquier distribución de teclado. Funciona cuando Postman está delante.",
+        "fr": "Clique sur View › Toggle Sidebar dans le menu de Postman : toute disposition de clavier convient. Fonctionne quand Postman est au premier plan.",
+        "ru": "Нажимает View › Toggle Sidebar в меню Postman, поэтому подойдёт любая раскладка. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Shows or hides the sidebar",
+        "de": "Blendet die Seitenleiste ein oder aus",
+        "es": "Muestra u oculta la barra lateral",
+        "fr": "Affiche ou masque la barre latérale",
+        "ru": "Показывает или прячет боковую панель"
+      },
+      "permissions": [
+        "automation",
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sidebar.leading"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=sidebar\n@file:menu/click.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "two-pane",
+      "title": {
+        "en": "Two-Pane View",
+        "de": "Zwei Bereiche",
+        "es": "Dos paneles",
+        "fr": "Deux volets",
+        "ru": "Две панели"
+      },
+      "summary": {
+        "en": "Puts the response beside the request or below it (⌥⌘V)",
+        "de": "Zeigt die Antwort neben der Anfrage oder darunter (⌥⌘V)",
+        "es": "Pone la respuesta junto a la solicitud o debajo (⌥⌘V)",
+        "fr": "Place la réponse à côté de la requête ou dessous (⌥⌘V)",
+        "ru": "Ставит ответ рядом с запросом или под ним (⌥⌘V)"
+      },
+      "details": {
+        "en": "View › Toggle Two-Pane View: side by side suits a wide screen, one above the other a narrow window. Works while Postman is in front.",
+        "de": "View › Toggle Two-Pane View: nebeneinander für breite Bildschirme, untereinander für schmale Fenster. Funktioniert, wenn Postman vorne ist.",
+        "es": "View › Toggle Two-Pane View: lado a lado para una pantalla ancha, uno sobre otro para una ventana estrecha. Funciona cuando Postman está delante.",
+        "fr": "View › Toggle Two-Pane View : côte à côte pour un écran large, l’un sous l’autre pour une fenêtre étroite. Fonctionne quand Postman est au premier plan.",
+        "ru": "View › Toggle Two-Pane View: рядом — для широкого экрана, одно под другим — для узкого окна. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Switches the layout",
+        "de": "Wechselt die Anordnung",
+        "es": "Cambia la disposición",
+        "fr": "Change la disposition",
+        "ru": "Переключает расположение"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "rectangle.split.2x1"
+          }
+        },
+        "color": "#64D2FF",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 9,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "console",
+      "title": {
+        "en": "Console",
+        "de": "Konsole",
+        "es": "Consola",
+        "fr": "Console",
+        "ru": "Консоль"
+      },
+      "summary": {
+        "en": "Opens the Postman Console (⌥⌘C); hold to clear it",
+        "de": "Öffnet die Postman Console (⌥⌘C); halten zum Leeren",
+        "es": "Abre la Postman Console (⌥⌘C); mantén pulsado para vaciarla",
+        "fr": "Ouvre la Postman Console (⌥⌘C) ; maintenez pour la vider",
+        "ru": "Открывает Postman Console (⌥⌘C); удержание — очистить"
+      },
+      "details": {
+        "en": "Every request as it was sent and the response that came back: headers, body and console.log from scripts. Works while Postman is in front.",
+        "de": "Jede Anfrage, wie sie gesendet wurde, und die Antwort darauf: Header, Body und console.log aus Skripten. Funktioniert, wenn Postman vorne ist.",
+        "es": "Cada solicitud tal como se envió y la respuesta que volvió: cabeceras, cuerpo y console.log de los scripts. Funciona cuando Postman está delante.",
+        "fr": "Chaque requête telle qu’envoyée et la réponse reçue : en-têtes, corps et console.log des scripts. Fonctionne quand Postman est au premier plan.",
+        "ru": "Каждый запрос — каким он ушёл, и ответ, который вернулся: заголовки, тело и console.log скриптов. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens the console",
+        "de": "Öffnet die Konsole",
+        "es": "Abre la consola",
+        "fr": "Ouvre la console",
+        "ru": "Открывает консоль"
+      },
+      "holdAction": {
+        "en": "⚠️ Clears the console’s log (⇧⌘K)",
+        "de": "⚠️ Leert das Protokoll der Konsole (⇧⌘K)",
+        "es": "⚠️ Vacía el registro de la consola (⇧⌘K)",
+        "fr": "⚠️ Vide le journal de la console (⇧⌘K)",
+        "ru": "⚠️ Очищает журнал консоли (⇧⌘K)"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "terminal"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 8,
+              "modifiers": [
+                "option",
+                "command"
+              ]
+            }
+          }
+        },
+        "longPressCommand": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 40,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "runner",
+      "title": {
+        "en": "Runner",
+        "de": "Runner",
+        "es": "Runner",
+        "fr": "Runner",
+        "ru": "Runner"
+      },
+      "summary": {
+        "en": "Opens the Collection Runner in a new tab (⇧⌘R)",
+        "de": "Öffnet den Collection Runner in einem neuen Tab (⇧⌘R)",
+        "es": "Abre el Collection Runner en una pestaña nueva (⇧⌘R)",
+        "fr": "Ouvre le Collection Runner dans un nouvel onglet (⇧⌘R)",
+        "ru": "Открывает Collection Runner в новой вкладке (⇧⌘R)"
+      },
+      "details": {
+        "en": "Drop in a collection or folder and set the iterations; nothing runs until you press Run. Works while Postman is in front.",
+        "de": "Zieh eine Collection oder einen Ordner hinein und leg die Durchläufe fest; los geht es erst, wenn du auf Run klickst. Funktioniert, wenn Postman vorne ist.",
+        "es": "Arrastra una colección o carpeta y fija las iteraciones; nada se ejecuta hasta pulsar Run. Funciona cuando Postman está delante.",
+        "fr": "Glissez une collection ou un dossier et réglez les itérations ; rien ne s’exécute avant Run. Fonctionne quand Postman est au premier plan.",
+        "ru": "Перетащите коллекцию или папку и задайте число итераций; ничего не запустится, пока не нажмёте Run. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens a Runner tab",
+        "de": "Öffnet einen Runner-Tab",
+        "es": "Abre una pestaña de Runner",
+        "fr": "Ouvre un onglet Runner",
+        "ru": "Открывает вкладку Runner"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "play.rectangle.on.rectangle"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 15,
+              "modifiers": [
+                "shift",
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "import",
+      "title": {
+        "en": "Import",
+        "de": "Importieren",
+        "es": "Importar",
+        "fr": "Importer",
+        "ru": "Импорт"
+      },
+      "summary": {
+        "en": "Brings in cURL, OpenAPI, collections and files (⌘O)",
+        "de": "Holt cURL, OpenAPI, Collections und Dateien herein (⌘O)",
+        "es": "Trae cURL, OpenAPI, colecciones y archivos (⌘O)",
+        "fr": "Importe cURL, OpenAPI, collections et fichiers (⌘O)",
+        "ru": "Импортирует cURL, OpenAPI, коллекции и файлы (⌘O)"
+      },
+      "details": {
+        "en": "Paste a cURL command or a link, or drop files: Postman turns them into requests and collections. Works while Postman is in front.",
+        "de": "Einen cURL-Befehl oder Link einfügen oder Dateien hineinziehen: Postman macht daraus Anfragen und Collections. Funktioniert, wenn Postman vorne ist.",
+        "es": "Pega un comando cURL o un enlace, o suelta archivos: Postman los convierte en solicitudes y colecciones. Funciona cuando Postman está delante.",
+        "fr": "Collez une commande cURL ou un lien, ou déposez des fichiers : Postman en fait des requêtes et des collections. Fonctionne quand Postman est au premier plan.",
+        "ru": "Вставьте команду cURL или ссылку либо перетащите файлы — Postman превратит их в запросы и коллекции. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Import",
+        "de": "Öffnet den Import",
+        "es": "Abre la importación",
+        "fr": "Ouvre l’importation",
+        "ru": "Открывает импорт"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "square.and.arrow.down.on.square"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 31,
+              "modifiers": [
+                "command"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "agent",
+      "title": {
+        "en": "Agent Mode",
+        "de": "Agent Mode",
+        "es": "Agent Mode",
+        "fr": "Agent Mode",
+        "ru": "Agent Mode"
+      },
+      "summary": {
+        "en": "Opens Postman’s AI assistant (⌃⌥P)",
+        "de": "Öffnet den KI-Assistenten von Postman (⌃⌥P)",
+        "es": "Abre el asistente de IA de Postman (⌃⌥P)",
+        "fr": "Ouvre l’assistant IA de Postman (⌃⌥P)",
+        "ru": "Открывает ИИ-помощника Postman (⌃⌥P)"
+      },
+      "details": {
+        "en": "Agent Mode, or Postbot where Agent Mode is off: ask it to write tests, fix a request or explain a response. Works while Postman is in front.",
+        "de": "Agent Mode oder, wo Agent Mode aus ist, Postbot: Lass dir Tests schreiben, eine Anfrage reparieren oder eine Antwort erklären. Funktioniert, wenn Postman vorne ist.",
+        "es": "Agent Mode, o Postbot donde Agent Mode está desactivado: pídele que escriba tests, arregle una solicitud o explique una respuesta. Funciona cuando Postman está delante.",
+        "fr": "Agent Mode, ou Postbot là où Agent Mode est désactivé : demandez-lui d’écrire des tests, de corriger une requête ou d’expliquer une réponse. Fonctionne quand Postman est au premier plan.",
+        "ru": "Agent Mode, а где он выключен — Postbot: попросите написать тесты, исправить запрос или объяснить ответ. Работает, когда Postman на переднем плане."
+      },
+      "tapAction": {
+        "en": "Opens Agent Mode",
+        "de": "Öffnet Agent Mode",
+        "es": "Abre Agent Mode",
+        "fr": "Ouvre Agent Mode",
+        "ru": "Открывает Agent Mode"
+      },
+      "permissions": [
+        "accessibility"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "sparkles"
+          }
+        },
+        "color": "#BF5AF2",
+        "command": {
+          "keystroke": {
+            "_0": {
+              "keyCode": 35,
+              "modifiers": [
+                "control",
+                "option"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Postman",
+        "de": "Postman",
+        "es": "Postman",
+        "fr": "Postman",
+        "ru": "Postman"
+      },
+      "summary": {
+        "en": "Send, save and switch requests from your phone",
+        "de": "Anfragen senden, speichern und wechseln vom Telefon aus",
+        "es": "Envía, guarda y cambia de solicitud desde el teléfono",
+        "fr": "Envoyez, enregistrez et changez de requête depuis votre téléphone",
+        "ru": "Отправлять, сохранять и переключать запросы с телефона"
+      },
+      "details": {
+        "en": "The buttons work while Postman is in front, with its keyboard shortcuts on and unchanged (Settings › Shortcuts). Next Tab and Sidebar click Postman’s menu instead.",
+        "de": "Die Tasten funktionieren, wenn Postman vorne ist und seine Tastenkürzel eingeschaltet und unverändert sind (Settings › Shortcuts). Nächster Tab und Seitenleiste klicken stattdessen ins Menü von Postman.",
+        "es": "Los botones funcionan cuando Postman está delante, con sus atajos de teclado activados y sin cambios (Settings › Shortcuts). Pestaña siguiente y Barra lateral usan el menú de Postman.",
+        "fr": "Les boutons fonctionnent quand Postman est au premier plan, avec ses raccourcis clavier activés et d’origine (Settings › Shortcuts). Onglet suivant et Barre latérale cliquent dans le menu de Postman.",
+        "ru": "Кнопки работают, когда Postman на переднем плане, а его сочетания клавиш включены и не изменены (Settings › Shortcuts). «Следующая вкладка» и «Боковая панель» нажимают пункты меню Postman."
+      },
+      "bindByDefault": true,
+      "placements": [
+        {
+          "button": "send",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "save",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "url",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "environment",
+          "row": 0,
+          "col": 3
+        },
+        {
+          "button": "new-tab",
+          "row": 1,
+          "col": 0
+        },
+        {
+          "button": "reopen-tab",
+          "row": 1,
+          "col": 1
+        },
+        {
+          "button": "next-tab",
+          "row": 1,
+          "col": 2
+        },
+        {
+          "button": "search-tabs",
+          "row": 1,
+          "col": 3
+        },
+        {
+          "button": "search",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "button": "find",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "button": "sidebar",
+          "row": 2,
+          "col": 2
+        },
+        {
+          "button": "two-pane",
+          "row": 2,
+          "col": 3
+        },
+        {
+          "button": "console",
+          "row": 3,
+          "col": 0
+        },
+        {
+          "button": "runner",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "button": "import",
+          "row": 3,
+          "col": 2
+        },
+        {
+          "button": "agent",
+          "row": 3,
+          "col": 3
+        }
+      ]
+    }
+  ]
+}

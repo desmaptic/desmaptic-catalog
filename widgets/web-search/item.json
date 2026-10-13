@@ -1,0 +1,54 @@
+{
+  "id": "web-search",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Search…",
+    "de": "Suchen…",
+    "es": "Buscar…",
+    "fr": "Rechercher…",
+    "ru": "Найти…"
+  },
+  "summary": {
+    "en": "Type what to look for on the phone and the search opens in the Mac’s browser",
+    "de": "Tippe auf dem Telefon, wonach du suchst – die Suche öffnet sich im Browser des Mac",
+    "es": "Escribe en el teléfono lo que buscas y la búsqueda se abre en el navegador del Mac",
+    "fr": "Saisissez sur le téléphone ce que vous cherchez : la recherche s’ouvre dans le navigateur du Mac",
+    "ru": "Наберите на телефоне, что найти, — поиск откроется в браузере Mac"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "Nothing to set up. Searches Google in a new tab of the Mac’s default browser.",
+    "de": "Nichts einzurichten. Sucht mit Google in einem neuen Tab des Standardbrowsers des Mac.",
+    "es": "No hay nada que configurar. Busca en Google en una pestaña nueva del navegador predeterminado del Mac.",
+    "fr": "Rien à configurer. Cherche sur Google dans un nouvel onglet du navigateur par défaut du Mac.",
+    "ru": "Настраивать ничего не нужно. Ищет в Google в новой вкладке браузера Mac по умолчанию."
+  },
+  "tapAction": {
+    "en": "Asks what to look for and searches for it on the Mac",
+    "de": "Fragt, wonach gesucht werden soll, und sucht es auf dem Mac",
+    "es": "Pregunta qué buscar y lo busca en el Mac",
+    "fr": "Demande quoi chercher et le recherche sur le Mac",
+    "ru": "Спрашивает, что найти, и ищет это на Mac"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "magnifyingglass"
+      }
+    },
+    "color": "#64D2FF",
+    "command": {
+      "openURL": {
+        "url": "https://www.google.com/search?q={{INPUT}}"
+      }
+    },
+    "input": {
+      "question": "What to search for?",
+      "placeholder": "Words to search for"
+    }
+  }
+}
