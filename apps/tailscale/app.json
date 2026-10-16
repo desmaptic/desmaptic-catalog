@@ -1,0 +1,284 @@
+{
+  "id": "tailscale",
+  "revision": 1,
+  "name": {
+    "en": "Tailscale",
+    "de": "Tailscale",
+    "es": "Tailscale",
+    "fr": "Tailscale",
+    "ru": "Tailscale"
+  },
+  "bundleIds": [
+    "io.tailscale.ipn.macsys",
+    "io.tailscale.ipn.macos"
+  ],
+  "category": "development",
+  "buttons": [
+    {
+      "id": "power",
+      "title": {
+        "en": "Tailscale",
+        "de": "Tailscale",
+        "es": "Tailscale",
+        "fr": "Tailscale",
+        "ru": "Tailscale"
+      },
+      "summary": {
+        "en": "Whether this Mac is on your tailnet, as the button’s color; hold to turn Tailscale off",
+        "de": "Ob dieser Mac in deinem Tailnet ist, als Farbe der Taste; halten, um Tailscale auszuschalten",
+        "es": "Si este Mac está en tu tailnet, como color del botón; mantén pulsado para apagar Tailscale",
+        "fr": "Si ce Mac est sur votre tailnet, en couleur sur le bouton ; maintenez pour désactiver Tailscale",
+        "ru": "Цвет кнопки показывает, подключён ли Mac к вашему tailnet; удержание — выключить Tailscale"
+      },
+      "details": {
+        "en": "Shows at a glance whether your other devices can reach the Mac. Green while it’s on your tailnet, orange while it connects or waits for you to sign in.",
+        "de": "Zeigt auf einen Blick, ob deine anderen Geräte den Mac erreichen. Grün, solange er in deinem Tailnet ist, orange, solange er sich verbindet oder auf deine Anmeldung wartet.",
+        "es": "Muestra de un vistazo si tus otros dispositivos llegan al Mac. Verde mientras está en tu tailnet y naranja mientras se conecta o espera que inicies sesión.",
+        "fr": "Montre d’un coup d’œil si vos autres appareils peuvent joindre le Mac. Vert quand il est sur votre tailnet, orange pendant qu’il se connecte ou attend que vous vous identifiiez.",
+        "ru": "Сразу видно, доступен ли Mac с других ваших устройств. Кнопка зелёная, когда он в вашем tailnet, и оранжевая, пока он подключается или ждёт входа в аккаунт."
+      },
+      "tapAction": {
+        "en": "Turns Tailscale on, keeping the local network reachable",
+        "de": "Schaltet Tailscale ein, das lokale Netzwerk bleibt erreichbar",
+        "es": "Enciende Tailscale sin cortar la red local",
+        "fr": "Active Tailscale sans couper le réseau local",
+        "ru": "Включает Tailscale, не отрезая локальную сеть"
+      },
+      "holdAction": {
+        "en": "⚠️ Turns Tailscale off, unless your phone reaches the Mac through it",
+        "de": "⚠️ Schaltet Tailscale aus, außer dein Telefon erreicht den Mac darüber",
+        "es": "⚠️ Apaga Tailscale, salvo si tu teléfono llega al Mac a través de él",
+        "fr": "⚠️ Désactive Tailscale, sauf si votre téléphone joint le Mac par son biais",
+        "ru": "⚠️ Выключает Tailscale, если телефон связан с Mac не через него"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "point.3.connected.trianglepath.dotted"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=up\n@file:ts.zsh\n@file:action.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=down\n@file:ts.zsh\n@file:action.zsh"
+          }
+        },
+        "startupScript": "what=power\n@file:ts.zsh\n@file:live.zsh"
+      }
+    },
+    {
+      "id": "exit-node",
+      "title": {
+        "en": "Exit Node",
+        "de": "Exit-Node",
+        "es": "Nodo de salida",
+        "fr": "Nœud de sortie",
+        "ru": "Выходной узел"
+      },
+      "summary": {
+        "en": "Sends the Mac’s traffic through an exit node of your tailnet and shows which one; hold to send it out directly again",
+        "de": "Leitet den Verkehr des Mac über einen Exit-Node deines Tailnets und zeigt, welchen; halten, um ihn wieder direkt zu senden",
+        "es": "Envía el tráfico del Mac por un nodo de salida de tu tailnet y muestra cuál; mantén pulsado para volver a enviarlo directamente",
+        "fr": "Fait passer le trafic du Mac par un nœud de sortie de votre tailnet et montre lequel ; maintenez pour le renvoyer directement",
+        "ru": "Пускает трафик Mac через выходной узел вашего tailnet и показывает, через какой; удержание — снова напрямую"
+      },
+      "details": {
+        "en": "Green with the node’s name while the Mac’s traffic goes through it, orange if the node is offline. Set the node in the button’s settings, or leave it empty and Tailscale picks the best one.",
+        "de": "Grün mit dem Namen des Nodes, solange der Verkehr des Mac über ihn läuft, orange, wenn er offline ist. Den Node legst du in den Einstellungen der Taste fest. Bleibt das Feld leer, wählt Tailscale den besten.",
+        "es": "Verde con el nombre del nodo mientras el tráfico del Mac pasa por él y naranja si el nodo está sin conexión. Elige el nodo en los ajustes del botón o déjalo vacío para que Tailscale elija el mejor.",
+        "fr": "Vert avec le nom du nœud quand le trafic du Mac passe par lui, orange si le nœud est hors ligne. Choisissez le nœud dans les réglages du bouton, ou laissez vide pour que Tailscale prenne le meilleur.",
+        "ru": "Зелёная с именем узла, пока трафик Mac идёт через него, и оранжевая, если узел не в сети. Узел укажите в настройках кнопки, а если оставить поле пустым, Tailscale выберет лучший сам."
+      },
+      "tapAction": {
+        "en": "Turns the exit node on, keeping the local network reachable",
+        "de": "Schaltet den Exit-Node ein, das lokale Netzwerk bleibt erreichbar",
+        "es": "Activa el nodo de salida sin cortar la red local",
+        "fr": "Active le nœud de sortie sans couper le réseau local",
+        "ru": "Включает выходной узел, не отрезая локальную сеть"
+      },
+      "holdAction": {
+        "en": "⚠️ Turns the exit node off: the Mac’s traffic goes out directly again",
+        "de": "⚠️ Schaltet den Exit-Node aus: Der Verkehr des Mac geht wieder direkt hinaus",
+        "es": "⚠️ Desactiva el nodo de salida: el tráfico del Mac vuelve a salir directamente",
+        "fr": "⚠️ Désactive le nœud de sortie : le trafic du Mac sort de nouveau directement",
+        "ru": "⚠️ Выключает выходной узел: трафик Mac снова идёт напрямую"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "globe"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=exit-on node=\"\"   # ← the exit node: its name or Tailscale IP; empty: the best one Tailscale picks\n@file:ts.zsh\n@file:action.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=exit-off\n@file:ts.zsh\n@file:action.zsh"
+          }
+        },
+        "startupScript": "what=exit\n@file:ts.zsh\n@file:live.zsh"
+      }
+    },
+    {
+      "id": "netcheck",
+      "title": {
+        "en": "Network Check",
+        "de": "Netzcheck",
+        "es": "Revisar red",
+        "fr": "Test réseau",
+        "ru": "Проверка сети"
+      },
+      "summary": {
+        "en": "Checks the Mac’s connection the way Tailscale sees it: the nearest relay and its latency",
+        "de": "Prüft die Verbindung des Mac so, wie Tailscale sie sieht: das nächste Relay und seine Latenz",
+        "es": "Revisa la conexión del Mac tal como la ve Tailscale: el relé más cercano y su latencia",
+        "fr": "Vérifie la connexion du Mac telle que Tailscale la voit : le relais le plus proche et sa latence",
+        "ru": "Проверяет связь Mac так, как её видит Tailscale: ближайший ретранслятор и задержка до него"
+      },
+      "details": {
+        "en": "Shows the nearest relay and its latency for a few seconds. Orange with a tortoise means UDP is blocked, so traffic takes the slower relays. The full result comes to your phone.",
+        "de": "Zeigt ein paar Sekunden lang das nächste Relay und seine Latenz. Orange mit einer Schildkröte heißt, dass UDP blockiert ist und der Verkehr über die langsameren Relays läuft. Das ganze Ergebnis kommt aufs Telefon.",
+        "es": "Muestra unos segundos el relé más cercano y su latencia. Naranja con una tortuga significa que UDP está bloqueado y el tráfico va por los relés, más lentos. El resultado completo llega al teléfono.",
+        "fr": "Affiche quelques secondes le relais le plus proche et sa latence. Orange avec une tortue signifie qu’UDP est bloqué et que le trafic passe par les relais, plus lents. Le résultat complet arrive sur le téléphone.",
+        "ru": "На несколько секунд показывает ближайший ретранслятор и задержку. Оранжевая с черепахой значит, что UDP заблокирован и трафик идёт через более медленные ретрансляторы. Полный результат придёт на телефон."
+      },
+      "tapAction": {
+        "en": "Runs the check",
+        "de": "Startet die Prüfung",
+        "es": "Hace la revisión",
+        "fr": "Lance la vérification",
+        "ru": "Запускает проверку"
+      },
+      "permissions": [
+        "notifications"
+      ],
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "antenna.radiowaves.left.and.right"
+          }
+        },
+        "color": "#0A84FF",
+        "command": {
+          "shellCommand": {
+            "command": "action=netcheck\n@file:ts.zsh\n@file:action.zsh"
+          }
+        }
+      }
+    },
+    {
+      "id": "account",
+      "title": {
+        "en": "Account",
+        "de": "Konto",
+        "es": "Cuenta",
+        "fr": "Compte",
+        "ru": "Аккаунт"
+      },
+      "summary": {
+        "en": "Shows which Tailscale account this Mac uses; hold to switch to the next one",
+        "de": "Zeigt, welches Tailscale-Konto dieser Mac nutzt; halten, um zum nächsten zu wechseln",
+        "es": "Muestra qué cuenta de Tailscale usa este Mac; mantén pulsado para cambiar a la siguiente",
+        "fr": "Montre quel compte Tailscale ce Mac utilise ; maintenez pour passer au suivant",
+        "ru": "Показывает, какой аккаунт Tailscale использует Mac; удержание — переключиться на следующий"
+      },
+      "details": {
+        "en": "To always switch to one account, set it in the button’s settings. Leave it empty to go to the next one. Add accounts from Tailscale’s menu on the Mac.",
+        "de": "Soll die Taste immer zu einem bestimmten Konto wechseln, trag es in ihren Einstellungen ein. Bleibt das Feld leer, wechselt sie zum nächsten. Konten fügst du über das Tailscale-Menü auf dem Mac hinzu.",
+        "es": "Para cambiar siempre a una cuenta, ponla en los ajustes del botón. Si lo dejas vacío, pasa a la siguiente. Añade cuentas desde el menú de Tailscale en el Mac.",
+        "fr": "Pour toujours passer au même compte, indiquez-le dans les réglages du bouton. Laissé vide, il passe au suivant. Ajoutez des comptes depuis le menu de Tailscale sur le Mac.",
+        "ru": "Чтобы всегда переключаться на один аккаунт, укажите его в настройках кнопки. Если оставить поле пустым, кнопка выберет следующий. Аккаунты добавляются в меню Tailscale на Mac."
+      },
+      "tapAction": {
+        "en": "Shows the account in use",
+        "de": "Zeigt das aktive Konto",
+        "es": "Muestra la cuenta en uso",
+        "fr": "Affiche le compte utilisé",
+        "ru": "Показывает текущий аккаунт"
+      },
+      "holdAction": {
+        "en": "⚠️ Switches to the next account, unless your phone reaches the Mac through Tailscale",
+        "de": "⚠️ Wechselt zum nächsten Konto, außer dein Telefon erreicht den Mac über Tailscale",
+        "es": "⚠️ Cambia a la siguiente cuenta, salvo si tu teléfono llega al Mac a través de Tailscale",
+        "fr": "⚠️ Passe au compte suivant, sauf si votre téléphone joint le Mac via Tailscale",
+        "ru": "⚠️ Переключает на следующий аккаунт, если телефон связан с Mac не через Tailscale"
+      },
+      "button": {
+        "icon": {
+          "sfSymbol": {
+            "name": "person.crop.circle"
+          }
+        },
+        "color": "#8E8E93",
+        "command": {
+          "shellCommand": {
+            "command": "action=account\n@file:ts.zsh\n@file:action.zsh"
+          }
+        },
+        "longPressCommand": {
+          "shellCommand": {
+            "command": "action=switch account=\"\"   # ← the account to switch to: its tailnet, e-mail or nickname; empty: the next one signed in\n@file:ts.zsh\n@file:action.zsh"
+          }
+        }
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {
+        "en": "Tailscale",
+        "de": "Tailscale",
+        "es": "Tailscale",
+        "fr": "Tailscale",
+        "ru": "Tailscale"
+      },
+      "summary": {
+        "en": "Turn Tailscale on and off, pick an exit node and check the connection, with its live status",
+        "de": "Tailscale ein- und ausschalten, einen Exit-Node wählen und die Verbindung prüfen, mit Live-Status",
+        "es": "Enciende y apaga Tailscale, elige un nodo de salida y revisa la conexión, con su estado en vivo",
+        "fr": "Activez et désactivez Tailscale, choisissez un nœud de sortie et vérifiez la connexion, avec son état en direct",
+        "ru": "Включение и выключение Tailscale, выходной узел и проверка сети, с живым статусом"
+      },
+      "details": {
+        "en": "Needs the Tailscale app from tailscale.com or the App Store, signed in. There’s nothing else to install. The buttons won’t cut your phone off from the Mac.",
+        "de": "Braucht die Tailscale-App von tailscale.com oder aus dem App Store, angemeldet. Sonst musst du nichts installieren. Die Tasten trennen dein Telefon nicht vom Mac.",
+        "es": "Necesita la app de Tailscale de tailscale.com o del App Store, con la sesión iniciada. No hay que instalar nada más. Los botones no dejan tu teléfono sin conexión con el Mac.",
+        "fr": "Il faut l’app Tailscale de tailscale.com ou de l’App Store, connectée. Rien d’autre à installer. Les boutons ne coupent pas votre téléphone du Mac.",
+        "ru": "Нужно приложение Tailscale с tailscale.com или из App Store, с выполненным входом. Больше ничего ставить не нужно. Кнопки не отрежут телефон от Mac."
+      },
+      "bindByDefault": false,
+      "placements": [
+        {
+          "button": "power",
+          "row": 0,
+          "col": 0
+        },
+        {
+          "button": "exit-node",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "button": "netcheck",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "button": "account",
+          "row": 0,
+          "col": 3
+        }
+      ]
+    }
+  ]
+}

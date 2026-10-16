@@ -1,6 +1,6 @@
 {
   "id": "bug-linear",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -12,20 +12,20 @@
     "ru": "Баг в Linear…"
   },
   "summary": {
-    "en": "Describe a bug on the phone: a Linear issue with the branch, last commit and browser tab from the Mac",
-    "de": "Beschreib einen Bug auf dem Telefon: ein Linear-Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
-    "es": "Describe un bug en el teléfono: una incidencia en Linear con la rama, el último commit y la pestaña del Mac",
-    "fr": "Décrivez un bug sur le téléphone : un ticket Linear avec la branche, le dernier commit et l’onglet du Mac",
-    "ru": "Опишите баг на телефоне — задача в Linear с веткой, последним коммитом и вкладкой браузера с Mac"
+    "en": "Describe a bug on the phone and get a Linear issue with the branch, last commit and browser tab from the Mac",
+    "de": "Beschreib einen Bug auf dem Telefon, und in Linear entsteht ein Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
+    "es": "Describe un bug en el teléfono y tendrás una incidencia en Linear con la rama, el último commit y la pestaña del navegador del Mac",
+    "fr": "Décrivez un bug sur le téléphone pour créer un ticket Linear avec la branche, le dernier commit et l’onglet du navigateur du Mac",
+    "ru": "Опишите баг на телефоне, и в Linear появится задача с веткой, последним коммитом и вкладкой браузера с Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The first line is the title; the Mac adds branch, last commit, front app and browser tab. “+ screenshot” adds the simulator’s screen to the next report. Needs a Linear API key: the button says how.",
-    "de": "Die erste Zeile ist der Titel; der Mac fügt Branch, letzten Commit, App im Vordergrund und Browser-Tab hinzu. „+ screenshot“ legt dem nächsten Bericht den Simulator bei. Braucht einen Linear-API-Schlüssel: Die Taste sagt, wie.",
-    "es": "La primera línea es el título; el Mac añade rama, último commit, app en primer plano y pestaña del navegador. «+ screenshot» añade la pantalla del simulador al siguiente informe. Necesita una clave API de Linear: el botón dice cómo.",
-    "fr": "La première ligne est le titre ; le Mac ajoute branche, dernier commit, app au premier plan et onglet du navigateur. « + screenshot » joint l’écran du simulateur au rapport suivant. Il faut une clé d’API Linear : le bouton dit comment.",
-    "ru": "Первая строка — заголовок; Mac добавит ветку, последний коммит, переднее приложение и вкладку браузера. «+ screenshot» приложит экран симулятора к следующему отчёту. Нужен API-ключ Linear: кнопка подскажет, как."
+    "en": "The first line becomes the title, and the Mac adds the branch, last commit, front app and browser tab. “+ screenshot” adds the simulator’s screen to your next issue. It needs a Linear API key, and the button tells you how to add it.",
+    "de": "Die erste Zeile wird zum Titel, und der Mac fügt Branch, letzten Commit, die App im Vordergrund und den Browser-Tab hinzu. „+ Screenshot“ legt den Bildschirm des Simulators deinem nächsten Issue bei. Nötig ist ein Linear-API-Schlüssel, und die Taste sagt dir, wie du ihn hinzufügst.",
+    "es": "La primera línea será el título, y el Mac añade la rama, el último commit, la app en primer plano y la pestaña del navegador. «+ captura» adjunta la pantalla del simulador a tu próxima incidencia. Hace falta una clave API de Linear, y el botón te explica cómo añadirla.",
+    "fr": "La première ligne devient le titre, et le Mac ajoute la branche, le dernier commit, l’app au premier plan et l’onglet du navigateur. « + capture d’écran » joint l’écran du simulateur à votre prochain ticket. Il faut une clé d’API Linear, et le bouton explique comment l’ajouter.",
+    "ru": "Первая строка станет заголовком, а Mac добавит ветку, последний коммит, активное приложение и вкладку браузера. «+ скриншот» приложит экран симулятора к следующей задаче. Нужен API-ключ Linear, и кнопка подскажет, как его добавить."
   },
   "tapAction": {
     "en": "Asks what broke and files it in Linear",
@@ -50,10 +50,28 @@
       }
     },
     "input": {
-      "question": "What broke?",
-      "placeholder": "The title on the first line, details below",
+      "question": {
+        "en": "What broke?",
+        "de": "Was ist kaputt?",
+        "es": "¿Qué se ha roto?",
+        "fr": "Qu’est-ce qui est cassé ?",
+        "ru": "Что сломалось?"
+      },
+      "placeholder": {
+        "en": "The title on the first line, details below",
+        "de": "Titel in der ersten Zeile, Details darunter",
+        "es": "El título en la primera línea, los detalles debajo",
+        "fr": "Le titre sur la première ligne, les détails en dessous",
+        "ru": "Заголовок в первой строке, подробности ниже"
+      },
       "quickReplies": [
-        "+ screenshot"
+        {
+          "en": "+ screenshot",
+          "de": "+ Screenshot",
+          "es": "+ captura",
+          "fr": "+ capture d’écran",
+          "ru": "+ скриншот"
+        }
       ],
       "multiline": true
     }

@@ -15,7 +15,7 @@ zmodload zsh/datetime zsh/zselect || { print -u2 -- "Teams: zsh modules datetime
 
 shortcut=${${shortcut##[[:space:]]##}%%[[:space:]]##}
 if [[ -z $shortcut ]]; then
-  print -u2 -- "Set the name of your status shortcut in the first line of this button's script"
+  print -u2 -- "Set the name of your status shortcut in this button’s settings"
   exit 1
 fi
 if [[ $shortcut == *[[:cntrl:]]* ]]; then
@@ -25,7 +25,7 @@ fi
 
 names=$(shortcuts list 2>/dev/null) || { print -u2 -- "Shortcuts did not answer"; exit 1 }
 if (( ! ${${(f)names}[(Ie)$shortcut]} )); then
-  print -ru2 -- "No shortcut \"$shortcut\": make it in Shortcuts with Microsoft Teams' \"Change Teams status\", or name yours in the first line of this button's script"
+  print -ru2 -- "No shortcut \"$shortcut\": make it in Shortcuts with Microsoft Teams’ \"Change Teams status\", or name yours in this button’s settings"
   exit 1
 fi
 

@@ -1,6 +1,6 @@
 {
   "id": "telegram",
-  "revision": 5,
+  "revision": 6,
   "name": "Telegram",
   "bundleIds": ["ru.keepcoder.Telegram"],
   "category": "communication",
@@ -9,18 +9,18 @@
       "id": "unread",
       "title": {"en": "Unread", "de": "Ungelesen", "es": "Sin leer", "fr": "Non lus", "ru": "Непрочитанные"},
       "summary": {
-        "en": "Telegram’s badge on your phone: how much is unread",
-        "de": "Das Telegram-Kennzeichen auf dem Telefon: wie viel ungelesen ist",
-        "es": "El globo de Telegram en el teléfono: cuánto queda sin leer",
-        "fr": "La pastille de Telegram sur le téléphone : ce qui reste non lu",
-        "ru": "Наклейка Telegram на телефоне: сколько непрочитанного"
+        "en": "How much is unread in Telegram",
+        "de": "Wie viel in Telegram ungelesen ist",
+        "es": "Cuánto queda sin leer en Telegram",
+        "fr": "Ce qui reste non lu dans Telegram",
+        "ru": "Сколько непрочитанного в Telegram"
       },
       "details": {
-        "en": "The number on Telegram’s Dock icon, checked every few seconds: unread messages, or unread chats if Telegram is set to count those. A dash means Telegram is closed.",
-        "de": "Die Zahl am Dock-Symbol von Telegram, alle paar Sekunden geprüft: ungelesene Nachrichten oder, je nach Einstellung in Telegram, ungelesene Chats. Ein Strich: Telegram ist geschlossen.",
-        "es": "El número del icono de Telegram en el Dock, revisado cada pocos segundos: mensajes sin leer o, según los ajustes de Telegram, chats sin leer. Una raya: Telegram está cerrado.",
-        "fr": "Le nombre sur l’icône de Telegram dans le Dock, relevé toutes les trois secondes environ : messages non lus ou, selon les réglages de Telegram, discussions non lues. Un tiret : Telegram est fermé.",
-        "ru": "Число с наклейки на значке Telegram в Dock, проверяется каждые несколько секунд: непрочитанные сообщения или, если так настроено в Telegram, чаты. Прочерк — Telegram закрыт."
+        "en": "The button shows the same number as on Telegram’s icon in the Dock. That’s unread messages, or unread chats if Telegram is set to count those. If Telegram is closed, it shows a dash.",
+        "de": "Die Taste zeigt dieselbe Zahl wie das Telegram-Symbol im Dock. Das sind ungelesene Nachrichten oder, je nach Einstellung in Telegram, ungelesene Chats. Ist Telegram geschlossen, zeigt sie einen Strich.",
+        "es": "El botón muestra el mismo número que el icono de Telegram en el Dock. Son los mensajes sin leer o, según los ajustes de Telegram, los chats sin leer. Si Telegram está cerrado, muestra una raya.",
+        "fr": "Le bouton affiche le même nombre que l’icône de Telegram dans le Dock. Ce sont les messages non lus ou, selon les paramètres de Telegram, les discussions non lues. Si Telegram est fermé, il affiche un tiret.",
+        "ru": "Кнопка показывает то же число, что на значке Telegram в Dock. Это непрочитанные сообщения или чаты, как выбрано в настройках Telegram. Если Telegram закрыт, на кнопке прочерк."
       },
       "tapAction": {
         "en": "Opens Telegram",
@@ -49,11 +49,11 @@
         "ru": "Переходит к чату по названию (⌘K)"
       },
       "details": {
-        "en": "Telegram’s Quick Search window: type part of a chat’s name and press Return to open it. Works while Telegram is in front.",
-        "de": "Das Fenster Schnellsuche von Telegram: einen Teil des Chatnamens eingeben und Return drücken, um den Chat zu öffnen. Funktioniert, wenn Telegram vorne ist.",
-        "es": "La ventana Búsqueda rápida de Telegram: escribe parte del nombre de un chat y pulsa Retorno para abrirlo. Funciona cuando Telegram está delante.",
-        "fr": "La fenêtre Recherche rapide de Telegram : tapez une partie du nom d’une discussion, puis appuyez sur Retour pour l’ouvrir. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Окно «Быстрый поиск» Telegram: наберите часть названия чата и нажмите Return, чтобы его открыть. Работает, когда Telegram на переднем плане."
+        "en": "Type part of a chat’s name and press Return to open it. The button doesn’t work with Dvorak or Colemak, because Telegram goes by key position. Works while Telegram is in front.",
+        "de": "Gib einen Teil des Chatnamens ein und drücke Return, um den Chat zu öffnen. Mit Dvorak oder Colemak funktioniert die Taste nicht, weil sich Telegram nach der Position auf der Tastatur richtet. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Escribe parte del nombre de un chat y pulsa Retorno para abrirlo. Con Dvorak o Colemak el botón no funciona, porque Telegram se fija en la posición de la tecla. Funciona cuando Telegram está delante.",
+        "fr": "Tapez une partie du nom d’une discussion, puis appuyez sur Retour pour l’ouvrir. Avec Dvorak ou Colemak, le bouton ne fonctionne pas, car Telegram se fie à la position de la touche. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Наберите часть названия чата и нажмите Return, чтобы его открыть. С раскладкой Dvorak или Colemak кнопка не сработает, потому что Telegram смотрит на место клавиши, а не на букву. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens Quick Search",
@@ -80,11 +80,11 @@
         "ru": "Ищет по всем чатам и сообщениям (⇧⌘F)"
       },
       "details": {
-        "en": "Telegram’s Global Search, the box above the chat list: it finds chats, people and messages across all your chats. Works while Telegram is in front.",
-        "de": "Die globale Suche von Telegram, das Feld über der Chatliste: Sie findet Chats, Personen und Nachrichten in all deinen Chats. Funktioniert, wenn Telegram vorne ist.",
-        "es": "La búsqueda global de Telegram, el cuadro sobre la lista de chats: encuentra chats, personas y mensajes en todos tus chats. Funciona cuando Telegram está delante.",
-        "fr": "La recherche globale de Telegram, le champ au-dessus de la liste : elle trouve discussions, personnes et messages dans toutes vos discussions. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Глобальный поиск Telegram, поле над списком чатов: находит чаты, людей и сообщения во всех ваших чатах. Работает, когда Telegram на переднем плане."
+        "en": "Global Search finds chats, people and messages. The button doesn’t work with Dvorak or Colemak, because Telegram goes by key position. Works while Telegram is in front.",
+        "de": "Die globale Suche findet Chats, Personen und Nachrichten. Mit Dvorak oder Colemak funktioniert die Taste nicht, weil sich Telegram nach der Position auf der Tastatur richtet. Funktioniert, wenn Telegram vorne ist.",
+        "es": "La búsqueda global encuentra chats, personas y mensajes. Con Dvorak o Colemak el botón no funciona, porque Telegram se fija en la posición de la tecla. Funciona cuando Telegram está delante.",
+        "fr": "La recherche globale trouve des discussions, des personnes et des messages. Avec Dvorak ou Colemak, le bouton ne fonctionne pas, car Telegram se fie à la position de la touche. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Глобальный поиск находит чаты, людей и сообщения. С раскладкой Dvorak или Colemak кнопка не сработает, потому что Telegram смотрит на место клавиши, а не на букву. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens Global Search",
@@ -115,15 +115,15 @@
         "en": "Your own cloud chat for notes and forwards (⌘0)",
         "de": "Dein eigener Cloud-Chat für Notizen und Weitergeleitetes (⌘0)",
         "es": "Tu propio chat en la nube para notas y reenvíos (⌘0)",
-        "fr": "Votre discussion à vous dans le cloud, pour notes et transferts (⌘0)",
+        "fr": "Votre propre discussion dans le cloud, pour vos notes et transferts (⌘0)",
         "ru": "Ваш облачный чат для заметок и пересылок (⌘0)"
       },
       "details": {
-        "en": "The chat with yourself, in the cloud on all your devices. In Telegram’s Forward or Share window, it sends the item there instead. Works while Telegram is in front.",
-        "de": "Der Chat mit dir selbst, in der Cloud auf all deinen Geräten. In den Fenstern „Weiterleiten“ und „Teilen“ von Telegram sendet die Taste das Gewählte stattdessen dorthin. Funktioniert, wenn Telegram vorne ist.",
-        "es": "El chat contigo mismo, en la nube y en todos tus dispositivos. En las ventanas Reenviar y Compartir de Telegram, envía ahí lo elegido. Funciona cuando Telegram está delante.",
-        "fr": "La discussion avec vous-même, dans le cloud sur tous vos appareils. Dans les fenêtres Transférer et Partager de Telegram, y envoie l’élément. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Чат с самим собой — в облаке, на всех ваших устройствах. В окнах Telegram «Переслать» и «Поделиться» кнопка отправляет туда выбранное. Работает, когда Telegram на переднем плане."
+        "en": "It’s your chat with yourself, synced to all your devices. In the Forward or Share window, the button sends the item to Saved Messages instead. Works while Telegram is in front.",
+        "de": "Das ist dein Chat mit dir selbst, synchronisiert auf all deinen Geräten. Im Fenster „Weiterleiten“ oder „Teilen“ sendet die Taste die Auswahl stattdessen an „Gespeicherte Nachrichten“. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Es tu chat contigo mismo, sincronizado en todos tus dispositivos. En la ventana «Reenviar» o «Compartir», el botón envía lo elegido a «Mensajes guardados». Funciona cuando Telegram está delante.",
+        "fr": "C’est votre discussion avec vous-même, synchronisée sur tous vos appareils. Dans la fenêtre « Transférer » ou « Partager », le bouton envoie l’élément choisi dans « Messages enregistrés ». Fonctionne quand Telegram est au premier plan.",
+        "ru": "Чат с самим собой хранится в облаке и есть на всех ваших устройствах. В окне «Переслать» или «Поделиться» кнопка отправит выбранное в «Избранное». Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens Saved Messages",
@@ -150,11 +150,11 @@
         "ru": "Первая папка с чатами (⌘1)"
       },
       "details": {
-        "en": "Folders go in Telegram’s order, All Chats first unless you moved it. With no folders, it opens the first chat of the list. Works while Telegram is in front.",
-        "de": "Die Ordner zählen in der Reihenfolge von Telegram, Alle Chats zuerst, wenn du ihn nicht verschoben hast. Ohne Ordner öffnet es den ersten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Las carpetas van en el orden de Telegram, Todos primero salvo que la hayas movido. Sin carpetas, abre el primer chat de la lista. Funciona cuando Telegram está delante.",
-        "fr": "Les dossiers suivent l’ordre de Telegram, Tous en premier si vous ne l’avez pas déplacé. Sans dossiers, ouvre la première discussion de la liste. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Папки считаются в порядке Telegram, «Все чаты» первыми, если вы их не переносили. Без папок открывается первый чат списка. Работает, когда Telegram на переднем плане."
+        "en": "The first folder is usually All Chats, unless you moved it. With no folders, the button opens the first chat in the list. Works while Telegram is in front.",
+        "de": "Der erste Ordner ist meist „Alle Chats“, wenn du ihn nicht verschoben hast. Ohne Ordner öffnet die Taste den ersten Chat in der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "La primera carpeta suele ser «Todos», salvo que la hayas movido. Sin carpetas, el botón abre el primer chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Le premier dossier est en général « Tous », sauf si vous l’avez déplacé. Sans dossiers, le bouton ouvre la première discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Первой обычно идёт папка «Все чаты», если вы её не передвигали. Если папок нет, откроется первый чат в списке. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the first folder",
@@ -164,11 +164,11 @@
         "ru": "Открывает первую папку"
       },
       "holdAction": {
-        "en": "Opens the first chat of the list on screen (⌥⌘1)",
-        "de": "Öffnet den ersten Chat der gezeigten Liste (⌥⌘1)",
+        "en": "Opens the first chat in the list on screen (⌥⌘1)",
+        "de": "Öffnet den ersten Chat in der angezeigten Liste (⌥⌘1)",
         "es": "Abre el primer chat de la lista en pantalla (⌥⌘1)",
         "fr": "Ouvre la première discussion de la liste affichée (⌥⌘1)",
-        "ru": "Открывает первый чат показанного списка (⌥⌘1)"
+        "ru": "Открывает первый чат в списке на экране (⌥⌘1)"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -189,11 +189,11 @@
         "ru": "Вторая папка с чатами (⌘2)"
       },
       "details": {
-        "en": "Folders go in Telegram’s order; with All Chats first, this is your first own one. With fewer folders, it opens the second chat of the list. Works while Telegram is in front.",
-        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein erster eigener. Mit weniger Ordnern öffnet es den zweiten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la primera tuya. Con menos carpetas, abre el segundo chat de la lista. Funciona cuando Telegram está delante.",
-        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre premier à vous. Avec moins de dossiers, ouvre la deuxième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша первая своя. Если папок меньше, открывается второй чат списка. Работает, когда Telegram на переднем плане."
+        "en": "If All Chats comes first, the button opens the first folder after it. If there aren’t that many folders, it opens the second chat in the list. Works while Telegram is in front.",
+        "de": "Steht der Ordner „Alle Chats“ an erster Stelle, öffnet die Taste den ersten Ordner danach. Gibt es nicht so viele Ordner, öffnet sie den zweiten Chat in der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si la carpeta «Todos» va primero, el botón abre la primera carpeta después de ella. Si no hay tantas carpetas, abre el segundo chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Si le dossier « Tous » vient en premier, le bouton ouvre le premier dossier après lui. S’il n’y a pas autant de dossiers, il ouvre la deuxième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если первой идёт папка «Все чаты», кнопка откроет первую папку после неё. Если столько папок нет, откроется второй чат в списке. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the second folder",
@@ -203,11 +203,11 @@
         "ru": "Открывает вторую папку"
       },
       "holdAction": {
-        "en": "Opens the second chat of the list on screen (⌥⌘2)",
-        "de": "Öffnet den zweiten Chat der gezeigten Liste (⌥⌘2)",
+        "en": "Opens the second chat in the list on screen (⌥⌘2)",
+        "de": "Öffnet den zweiten Chat in der angezeigten Liste (⌥⌘2)",
         "es": "Abre el segundo chat de la lista en pantalla (⌥⌘2)",
         "fr": "Ouvre la deuxième discussion de la liste affichée (⌥⌘2)",
-        "ru": "Открывает второй чат показанного списка (⌥⌘2)"
+        "ru": "Открывает второй чат в списке на экране (⌥⌘2)"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -228,11 +228,11 @@
         "ru": "Третья папка с чатами (⌘3)"
       },
       "details": {
-        "en": "Folders go in Telegram’s order; with All Chats first, this is your second own one. With fewer folders, it opens the third chat of the list. Works while Telegram is in front.",
-        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein zweiter eigener. Mit weniger Ordnern öffnet es den dritten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la segunda tuya. Con menos carpetas, abre el tercer chat de la lista. Funciona cuando Telegram está delante.",
-        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre deuxième à vous. Avec moins de dossiers, ouvre la troisième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша вторая своя. Если папок меньше, открывается третий чат списка. Работает, когда Telegram на переднем плане."
+        "en": "If All Chats comes first, the button opens the second folder after it. If there aren’t that many folders, it opens the third chat in the list. Works while Telegram is in front.",
+        "de": "Steht der Ordner „Alle Chats“ an erster Stelle, öffnet die Taste den zweiten Ordner danach. Gibt es nicht so viele Ordner, öffnet sie den dritten Chat in der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si la carpeta «Todos» va primero, el botón abre la segunda carpeta después de ella. Si no hay tantas carpetas, abre el tercer chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Si le dossier « Tous » vient en premier, le bouton ouvre le deuxième dossier après lui. S’il n’y a pas autant de dossiers, il ouvre la troisième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если первой идёт папка «Все чаты», кнопка откроет вторую папку после неё. Если столько папок нет, откроется третий чат в списке. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the third folder",
@@ -242,11 +242,11 @@
         "ru": "Открывает третью папку"
       },
       "holdAction": {
-        "en": "Opens the third chat of the list on screen (⌥⌘3)",
-        "de": "Öffnet den dritten Chat der gezeigten Liste (⌥⌘3)",
+        "en": "Opens the third chat in the list on screen (⌥⌘3)",
+        "de": "Öffnet den dritten Chat in der angezeigten Liste (⌥⌘3)",
         "es": "Abre el tercer chat de la lista en pantalla (⌥⌘3)",
         "fr": "Ouvre la troisième discussion de la liste affichée (⌥⌘3)",
-        "ru": "Открывает третий чат показанного списка (⌥⌘3)"
+        "ru": "Открывает третий чат в списке на экране (⌥⌘3)"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -267,11 +267,11 @@
         "ru": "Четвёртая папка с чатами (⌘4)"
       },
       "details": {
-        "en": "Folders go in Telegram’s order; with All Chats first, this is your third own one. With fewer folders, it opens the fourth chat of the list. Works while Telegram is in front.",
-        "de": "Die Ordner zählen in der Reihenfolge von Telegram; mit Alle Chats zuerst ist das dein dritter eigener. Mit weniger Ordnern öffnet es den vierten Chat der Liste. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Las carpetas van en el orden de Telegram; con Todos primero, esta es la tercera tuya. Con menos carpetas, abre el cuarto chat de la lista. Funciona cuando Telegram está delante.",
-        "fr": "Les dossiers suivent l’ordre de Telegram ; avec Tous en premier, c’est votre troisième à vous. Avec moins de dossiers, ouvre la quatrième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Папки считаются в порядке Telegram; если «Все чаты» первые, это ваша третья своя. Если папок меньше, открывается четвёртый чат списка. Работает, когда Telegram на переднем плане."
+        "en": "If All Chats comes first, the button opens the third folder after it. If there aren’t that many folders, it opens the fourth chat in the list. Works while Telegram is in front.",
+        "de": "Steht der Ordner „Alle Chats“ an erster Stelle, öffnet die Taste den dritten Ordner danach. Gibt es nicht so viele Ordner, öffnet sie den vierten Chat in der Liste. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si la carpeta «Todos» va primero, el botón abre la tercera carpeta después de ella. Si no hay tantas carpetas, abre el cuarto chat de la lista. Funciona cuando Telegram está delante.",
+        "fr": "Si le dossier « Tous » vient en premier, le bouton ouvre le troisième dossier après lui. S’il n’y a pas autant de dossiers, il ouvre la quatrième discussion de la liste. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если первой идёт папка «Все чаты», кнопка откроет третью папку после неё. Если столько папок нет, откроется четвёртый чат в списке. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the fourth folder",
@@ -281,11 +281,11 @@
         "ru": "Открывает четвёртую папку"
       },
       "holdAction": {
-        "en": "Opens the fourth chat of the list on screen (⌥⌘4)",
-        "de": "Öffnet den vierten Chat der gezeigten Liste (⌥⌘4)",
+        "en": "Opens the fourth chat in the list on screen (⌥⌘4)",
+        "de": "Öffnet den vierten Chat in der angezeigten Liste (⌥⌘4)",
         "es": "Abre el cuarto chat de la lista en pantalla (⌥⌘4)",
         "fr": "Ouvre la quatrième discussion de la liste affichée (⌥⌘4)",
-        "ru": "Открывает четвёртый чат показанного списка (⌥⌘4)"
+        "ru": "Открывает четвёртый чат в списке на экране (⌥⌘4)"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -306,11 +306,11 @@
         "ru": "Переходит к чату ниже в списке (⌥↓)"
       },
       "details": {
-        "en": "Walks the chat list on screen, pinned chats first; after the last chat it starts again at the top. Works while Telegram is in front.",
-        "de": "Geht die gezeigte Chatliste durch, angeheftete Chats zuerst; nach dem letzten Chat geht es oben weiter. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Recorre la lista de chats en pantalla, los fijados primero; tras el último vuelve arriba. Funciona cuando Telegram está delante.",
-        "fr": "Parcourt la liste des discussions affichée, les épinglées d’abord ; après la dernière, repart du haut. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Идёт по показанному списку чатов, закреплённые первыми; после последнего чата начинает сверху. Работает, когда Telegram на переднем плане."
+        "en": "Goes down the chat list on screen. After the last chat, it starts again at the top. Works while Telegram is in front.",
+        "de": "Geht die angezeigte Chatliste nach unten durch. Nach dem letzten Chat geht es oben weiter. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Recorre hacia abajo la lista de chats en pantalla. Después del último, vuelve arriba. Funciona cuando Telegram está delante.",
+        "fr": "Parcourt vers le bas la liste des discussions affichée. Après la dernière, le bouton repart du haut. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Идёт вниз по списку чатов на экране. После последнего чата снова начинает сверху. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the next chat",
@@ -338,18 +338,18 @@
       "id": "reply",
       "title": {"en": "Reply", "de": "Antworten", "es": "Responder", "fr": "Répondre", "ru": "Ответить"},
       "summary": {
-        "en": "Picks a message of the open chat to reply to (⌘↑)",
+        "en": "Picks a message in the open chat to reply to (⌘↑)",
         "de": "Wählt eine Nachricht des offenen Chats zum Antworten (⌘↑)",
         "es": "Elige un mensaje del chat abierto para responder (⌘↑)",
         "fr": "Choisit un message de la discussion ouverte auquel répondre (⌘↑)",
         "ru": "Выбирает сообщение в открытом чате для ответа (⌘↑)"
       },
       "details": {
-        "en": "Each tap goes one message further back; what you type then goes as the reply only when you press Return. The message box must be empty. Works while Telegram is in front.",
-        "de": "Jedes Tippen geht eine Nachricht weiter zurück; was du dann schreibst, wird erst mit Return als Antwort gesendet. Das Eingabefeld muss leer sein. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Cada toque retrocede un mensaje; lo que escribas después se envía como respuesta solo al pulsar Retorno. El cuadro de mensaje debe estar vacío. Funciona cuando Telegram está delante.",
-        "fr": "Chaque appui remonte d’un message ; ce que vous tapez ensuite n’est envoyé en réponse que quand vous appuyez sur Retour. La zone de message doit être vide. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Каждое нажатие — на одно сообщение назад; набранное уйдёт ответом только по Return. Поле сообщения должно быть пустым. Работает, когда Telegram на переднем плане."
+        "en": "If the message box is empty, each tap goes one message further back. Your reply is sent only when you press Return. Works while Telegram is in front.",
+        "de": "Ist das Eingabefeld leer, geht jedes Tippen eine Nachricht weiter zurück. Deine Antwort wird erst mit Return gesendet. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si el cuadro de mensaje está vacío, cada toque retrocede un mensaje. Tu respuesta solo se envía al pulsar Retorno. Funciona cuando Telegram está delante.",
+        "fr": "Si la zone de message est vide, chaque appui remonte d’un message. Votre réponse n’est envoyée que quand vous appuyez sur Retour. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если поле сообщения пустое, каждое нажатие сдвигает выбор на одно сообщение вверх. Ответ отправится, только когда вы нажмёте Return. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Picks an older message to reply to",
@@ -384,11 +384,11 @@
         "ru": "Редактирует ваше последнее сообщение в открытом чате (↑)"
       },
       "details": {
-        "en": "Your last message comes back into the message box; the change is saved only when you press Return. The box must be empty. Works while Telegram is in front.",
-        "de": "Deine letzte Nachricht kommt zurück ins Eingabefeld; die Änderung wird erst mit Return gespeichert. Das Feld muss leer sein. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Tu último mensaje vuelve al cuadro de mensaje; el cambio se guarda solo al pulsar Retorno. El cuadro debe estar vacío. Funciona cuando Telegram está delante.",
-        "fr": "Votre dernier message revient dans la zone de message ; la modification n’est enregistrée que quand vous appuyez sur Retour. La zone doit être vide. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Последнее сообщение возвращается в поле ввода; изменение сохранится только по Return. Поле должно быть пустым. Работает, когда Telegram на переднем плане."
+        "en": "If the message box is empty, your last message comes back into it for editing. The change is saved only when you press Return. Works while Telegram is in front.",
+        "de": "Ist das Eingabefeld leer, erscheint deine letzte Nachricht darin zum Bearbeiten. Die Änderung wird erst mit Return gespeichert. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si el cuadro de mensaje está vacío, tu último mensaje vuelve a él para editarlo. El cambio solo se guarda al pulsar Retorno. Funciona cuando Telegram está delante.",
+        "fr": "Si la zone de message est vide, votre dernier message y revient pour être modifié. La modification n’est enregistrée que quand vous appuyez sur Retour. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если поле сообщения пустое, ваше последнее сообщение вернётся в него для правки. Изменение сохранится, только когда вы нажмёте Return. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Edits your last message",
@@ -415,11 +415,11 @@
         "ru": "Выбирает файлы для открытого чата (⌘O)"
       },
       "details": {
-        "en": "The chosen files wait in Telegram’s preview, with a field for a caption, until you click Send. Works while Telegram is in front.",
-        "de": "Die gewählten Dateien warten in der Vorschau von Telegram, mit einem Feld für eine Beschriftung, bis du auf Senden klickst. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Los archivos elegidos esperan en la vista previa de Telegram, con un campo para un comentario, hasta que hagas clic en Enviar. Funciona cuando Telegram está delante.",
-        "fr": "Les fichiers choisis attendent dans l’aperçu de Telegram, avec un champ de légende, jusqu’à ce que vous cliquiez sur Envoyer. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Выбранные файлы ждут в окне предпросмотра Telegram с полем для подписи, пока вы не нажмёте «Отправить». Работает, когда Telegram на переднем плане."
+        "en": "The files you pick wait in a preview until you click Send. The button doesn’t work with Dvorak or Colemak, because Telegram goes by key position. Works while Telegram is in front.",
+        "de": "Die gewählten Dateien warten in einer Vorschau, bis du auf Senden klickst. Mit Dvorak oder Colemak funktioniert die Taste nicht, weil sich Telegram nach der Position auf der Tastatur richtet. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Los archivos elegidos esperan en una vista previa hasta que hagas clic en Enviar. Con Dvorak o Colemak el botón no funciona, porque Telegram se fija en la posición de la tecla. Funciona cuando Telegram está delante.",
+        "fr": "Les fichiers choisis attendent dans un aperçu jusqu’à ce que vous cliquiez sur Envoyer. Avec Dvorak ou Colemak, le bouton ne fonctionne pas, car Telegram se fie à la position de la touche. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Выбранные файлы ждут в окне предпросмотра, пока вы не нажмёте «Отправить». С раскладкой Dvorak или Colemak кнопка не сработает, потому что Telegram смотрит на место клавиши, а не на букву. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Opens the file picker",
@@ -446,11 +446,11 @@
         "ru": "Блокирует Telegram код-паролем (⌘L)"
       },
       "details": {
-        "en": "Your chats stay hidden behind Telegram’s passcode until you type it. With no passcode set, it opens the screen to set one. Works while Telegram is in front.",
-        "de": "Deine Chats bleiben hinter dem Pincode von Telegram verborgen, bis du ihn eingibst. Ohne Pincode öffnet es die Seite, um einen festzulegen. Funktioniert, wenn Telegram vorne ist.",
-        "es": "Tus chats quedan ocultos tras el código de bloqueo de Telegram hasta que lo escribas. Sin código, abre la pantalla para crear uno. Funciona cuando Telegram está delante.",
-        "fr": "Vos discussions restent cachées derrière le code d’accès de Telegram jusqu’à ce que vous le tapiez. Sans code, ouvre l’écran pour en définir un. Fonctionne quand Telegram est au premier plan.",
-        "ru": "Чаты скрыты за код-паролем Telegram, пока вы его не введёте. Если код-пароль не задан, открывается экран, где его задают. Работает, когда Telegram на переднем плане."
+        "en": "If you haven’t set a passcode, Telegram opens the screen to set one. The button doesn’t work with Dvorak or Colemak, because Telegram goes by key position. Works while Telegram is in front.",
+        "de": "Ohne Pincode öffnet Telegram die Seite, um einen festzulegen. Mit Dvorak oder Colemak funktioniert die Taste nicht, weil sich Telegram nach der Position auf der Tastatur richtet. Funktioniert, wenn Telegram vorne ist.",
+        "es": "Si no tienes código, Telegram abre la pantalla para crear uno. Con Dvorak o Colemak el botón no funciona, porque Telegram se fija en la posición de la tecla. Funciona cuando Telegram está delante.",
+        "fr": "Sans code, Telegram ouvre l’écran pour en définir un. Avec Dvorak ou Colemak, le bouton ne fonctionne pas, car Telegram se fie à la position de la touche. Fonctionne quand Telegram est au premier plan.",
+        "ru": "Если код-пароль не задан, Telegram откроет экран, где его можно задать. С раскладкой Dvorak или Colemak кнопка не сработает, потому что Telegram смотрит на место клавиши, а не на букву. Работает, когда Telegram на переднем плане."
       },
       "tapAction": {
         "en": "Locks Telegram",
@@ -477,11 +477,11 @@
         "ru": "Настройки Telegram (⌘,)"
       },
       "details": {
-        "en": "Telegram’s settings, from notifications to privacy. The tap works while Telegram is in front; the long press works from any app and brings Telegram forward.",
-        "de": "Die Einstellungen von Telegram, von Mitteilungen bis Privatsphäre. Tippen funktioniert, wenn Telegram vorne ist; langes Drücken aus jeder App und holt Telegram nach vorne.",
-        "es": "Los ajustes de Telegram, de las notificaciones a la privacidad. El toque funciona cuando Telegram está delante; la pulsación larga, desde cualquier app, y trae Telegram al frente.",
-        "fr": "Les paramètres de Telegram, des notifications à la confidentialité. Le toucher fonctionne quand Telegram est au premier plan ; l’appui long, depuis n’importe quelle app, et met Telegram au premier plan.",
-        "ru": "Настройки Telegram — от уведомлений до конфиденциальности. Нажатие работает, когда Telegram на переднем плане; долгое нажатие — из любого приложения и выводит Telegram вперёд."
+        "en": "The tap works while Telegram is in front. The long press works from any app and brings Telegram forward, but doesn’t start it.",
+        "de": "Tippen funktioniert, wenn Telegram vorne ist. Langes Drücken funktioniert aus jeder App und holt Telegram nach vorne, startet es aber nicht.",
+        "es": "El toque funciona cuando Telegram está delante. La pulsación larga funciona desde cualquier app y trae Telegram al frente, pero no lo abre si está cerrado.",
+        "fr": "Le toucher fonctionne quand Telegram est au premier plan. L’appui long fonctionne depuis n’importe quelle app et met Telegram au premier plan, sans le lancer.",
+        "ru": "Нажатие работает, когда Telegram на переднем плане. Долгое нажатие срабатывает из любого приложения и выводит Telegram вперёд, но не запускает его."
       },
       "tapAction": {
         "en": "Opens Settings",
@@ -493,9 +493,9 @@
       "holdAction": {
         "en": "Opens Active Sessions: every device signed in to your account",
         "de": "Öffnet Sitzungen: alle Geräte, die bei deinem Konto angemeldet sind",
-        "es": "Abre Sesiones activas: cada dispositivo con tu cuenta iniciada",
+        "es": "Abre Sesiones activas: todos los dispositivos con tu sesión iniciada",
         "fr": "Ouvre Appareils actifs : tous ceux connectés à votre compte",
-        "ru": "Открывает «Активные сеансы»: все устройства, где выполнен вход в аккаунт"
+        "ru": "Открывает «Активные сеансы»: все устройства, где вы вошли в аккаунт"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -509,18 +509,18 @@
       "id": "open-chat",
       "title": {"en": "Open Chat", "de": "Chat öffnen", "es": "Abrir chat", "fr": "Ouvrir la discussion", "ru": "Открыть чат"},
       "summary": {
-        "en": "One chat you choose — a person, group, channel or bot — from any app",
-        "de": "Ein Chat deiner Wahl – Person, Gruppe, Kanal oder Bot – aus jeder App",
-        "es": "El chat que elijas (una persona, un grupo, un canal o un bot) desde cualquier app",
-        "fr": "La discussion de votre choix (personne, groupe, canal ou bot) depuis n’importe quelle app",
-        "ru": "Нужный чат — человек, группа, канал или бот — из любого приложения"
+        "en": "Opens the chat, group, channel or bot you choose, from any app",
+        "de": "Öffnet einen Chat, eine Gruppe, einen Kanal oder Bot deiner Wahl aus jeder App",
+        "es": "Abre el chat, grupo, canal o bot que elijas desde cualquier app",
+        "fr": "Ouvre la discussion, le groupe, le canal ou le bot de votre choix depuis n’importe quelle app",
+        "ru": "Открывает нужный чат, группу, канал или бота из любого приложения"
       },
       "details": {
-        "en": "Write the username without @ in the first line of the button’s script, as in t.me/username; until then, the button says so. Brings Telegram forward from any app, but doesn’t start it.",
-        "de": "Schreib den Benutzernamen ohne @ in die erste Zeile des Skripts der Taste, wie in t.me/benutzername; bis dahin sagt die Taste das. Holt Telegram aus jeder App nach vorne, startet es aber nicht.",
-        "es": "Escribe el nombre de usuario sin @ en la primera línea del script del botón, como en t.me/usuario; hasta entonces, el botón te lo recuerda. Trae Telegram al frente desde cualquier app, pero no lo abre si está cerrado.",
-        "fr": "Écrivez le nom d’utilisateur sans @ à la première ligne du script du bouton, comme dans t.me/utilisateur ; d’ici là, le bouton vous le rappelle. Met Telegram au premier plan depuis n’importe quelle app, sans le lancer.",
-        "ru": "Имя пользователя без @ впишите в первую строку скрипта кнопки, как в t.me/имя; пока его нет, кнопка об этом скажет. Выводит Telegram вперёд из любого приложения, но не запускает его."
+        "en": "Handy for a chat you open often. Write its username in the button’s settings, as in t.me/username. The button brings Telegram forward from any app, but doesn’t start it.",
+        "de": "Praktisch für einen Chat, den du oft öffnest. Trag seinen Benutzernamen in den Einstellungen der Taste ein, wie in t.me/benutzername. Die Taste holt Telegram aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Útil para un chat que abres a menudo. Escribe su nombre de usuario en los ajustes del botón, como en t.me/usuario. El botón trae Telegram al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Pratique pour une discussion que vous ouvrez souvent. Indiquez son nom d’utilisateur dans les réglages du bouton, comme dans t.me/utilisateur. Le bouton met Telegram au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Пригодится для чата, который вы часто открываете. Впишите его имя пользователя в настройках кнопки, как в ссылке t.me/имя. Кнопка выводит Telegram вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens the chat of the username you set",
@@ -548,11 +548,11 @@
         "ru": "Непрочитанное, поиск и переходы по Telegram с телефона"
       },
       "details": {
-        "en": "The buttons work while Telegram is in front, Open Chat from any app; Unread shows the badge of its Dock icon and fits on any other page too.",
-        "de": "Die Tasten funktionieren, wenn Telegram vorne ist, „Chat öffnen“ aus jeder App; Ungelesen zeigt das Kennzeichen am Dock-Symbol und passt auch auf jede andere Seite.",
-        "es": "Los botones funcionan con Telegram delante, y Abrir chat desde cualquier app; Sin leer muestra el globo de su icono del Dock y sirve también en cualquier otra página.",
-        "fr": "Les boutons fonctionnent quand Telegram est au premier plan, Ouvrir la discussion depuis n’importe quelle app ; Non lus affiche la pastille de son icône du Dock et va aussi sur toute autre page.",
-        "ru": "Кнопки работают, когда Telegram на переднем плане, а «Открыть чат» — из любого приложения; «Непрочитанные» показывают наклейку со значка в Dock и подойдут для любой другой страницы."
+        "en": "Most buttons work while Telegram is in front. Open Chat and the Settings long press work from any app. Unread also works with Telegram in the background, so it’s handy on any page.",
+        "de": "Die meisten Tasten funktionieren, wenn Telegram vorne ist. „Chat öffnen“ und langes Drücken auf „Einstellungen“ lassen sich aus jeder App nutzen. „Ungelesen“ funktioniert auch mit Telegram im Hintergrund und passt deshalb auf jede Seite.",
+        "es": "Casi todos los botones funcionan cuando Telegram está delante. «Abrir chat» y la pulsación larga de «Ajustes» se pueden usar desde cualquier app. «Sin leer» funciona también con Telegram en segundo plano, así que sirve en cualquier página.",
+        "fr": "La plupart des boutons fonctionnent quand Telegram est au premier plan. « Ouvrir la discussion » et l’appui long sur « Paramètres » s’utilisent depuis n’importe quelle app. « Non lus » fonctionne aussi avec Telegram en arrière-plan et a donc sa place sur toutes les pages.",
+        "ru": "Почти все кнопки работают, когда Telegram на переднем плане. «Открыть чат» и долгое нажатие на «Настройки» срабатывают из любого приложения. «Непрочитанные» работают, даже когда Telegram в фоне, и пригодятся на любой странице."
       },
       "bindByDefault": true,
       "placements": [

@@ -1,6 +1,6 @@
 {
   "id": "battery",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Battery",
@@ -10,20 +10,20 @@
     "ru": "Аккумулятор"
   },
   "summary": {
-    "en": "The MacBook’s charge on a gauge; a bolt while charging, pink when it runs low",
-    "de": "Ladestand des MacBook als Anzeige; ein Blitz beim Laden, pink bei niedrigem Stand",
-    "es": "La carga del MacBook en un indicador; un rayo al cargar, rosa cuando queda poca",
-    "fr": "La charge du MacBook sur une jauge ; un éclair en charge, rose quand elle est faible",
-    "ru": "Заряд MacBook на шкале; молния во время зарядки, розовая шкала при низком заряде"
+    "en": "How much charge the MacBook has left and how long it will last",
+    "de": "Wie viel Ladung das MacBook noch hat und wie lange sie reicht",
+    "es": "Cuánta batería le queda al MacBook y cuánto durará",
+    "fr": "La charge restante du MacBook et combien de temps elle tiendra",
+    "ru": "Сколько заряда осталось у MacBook и на сколько его хватит"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The charge in percent and the time left, or the time to full while charging. Bolt: charging; plug: on power. Pink at 20% and below unless charging. A desktop Mac shows only a plug.",
-    "de": "Ladestand in Prozent und Restlaufzeit, beim Laden die Zeit bis zur vollen Ladung. Blitz: lädt; Stecker: am Netzteil. Pink bei 20 % und darunter, außer beim Laden. Ein Desktop-Mac zeigt nur einen Stecker.",
-    "es": "La carga en porcentaje y el tiempo restante o, al cargar, el que falta para completarla. Rayo: cargando; enchufe: conectado a la corriente. Rosa al 20 % o menos si no se carga. Un Mac de escritorio solo muestra un enchufe.",
-    "fr": "La charge en pourcentage et l’autonomie restante, ou, en charge, le temps avant la charge complète. Éclair : en charge ; prise : sur secteur. Rose à 20 % et moins hors recharge. Un Mac de bureau n’affiche qu’une prise.",
-    "ru": "Заряд в процентах и сколько осталось работать, а при зарядке — сколько до полного. Молния — идёт зарядка, вилка — питание от сети. Розовый при 20 % и ниже, если не заряжается. На настольном Mac — только вилка."
+    "en": "While charging, it shows the time until full. At 20% or less, when not charging, the gauge turns pink. A Mac without a battery shows just a plug.",
+    "de": "Beim Laden siehst du, wie lange es bis zur vollen Ladung dauert. Bei 20 % oder weniger wird die Anzeige pink, sofern der Mac nicht lädt. Ein Mac ohne Batterie zeigt nur einen Stecker.",
+    "es": "Mientras carga, muestra cuánto falta para completarse. Con un 20 % o menos y sin cargar, el indicador se pone rosa. Un Mac sin batería solo muestra un enchufe.",
+    "fr": "Pendant la recharge, il indique le temps avant la charge complète. À 20 % ou moins, hors recharge, la jauge passe au rose. Un Mac sans batterie n’affiche qu’une prise.",
+    "ru": "Во время зарядки видно, сколько осталось до полного заряда. Если заряда 20 % или меньше, а MacBook не заряжается, шкала станет розовой. На Mac без аккумулятора будет только значок вилки."
   },
   "tapAction": {
     "en": "Opens Battery settings on the Mac (Energy on a desktop Mac)",

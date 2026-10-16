@@ -1,6 +1,6 @@
 {
   "id": "new-mail",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -13,26 +13,26 @@
   },
   "summary": {
     "en": "Type on the phone and a new email with that text opens on the Mac, ready to address and send",
-    "de": "Tippe auf dem Telefon – auf dem Mac öffnet sich eine neue E-Mail mit dem Text, bereit zum Adressieren und Senden",
+    "de": "Tippe einen Text auf dem Telefon, und auf dem Mac öffnet sich damit eine neue E-Mail, die nur noch eine Adresse braucht",
     "es": "Escribe en el teléfono y en el Mac se abre un correo nuevo con ese texto, listo para poner la dirección y enviarlo",
-    "fr": "Saisissez sur le téléphone : un nouvel e-mail avec ce texte s’ouvre sur le Mac, prêt à adresser et à envoyer",
-    "ru": "Наберите текст на телефоне — на Mac откроется новое письмо с ним: останется указать адрес и отправить"
+    "fr": "Saisissez un texte sur le téléphone pour l’ouvrir sur le Mac dans un nouvel e-mail, où il ne manque que le destinataire",
+    "ru": "Наберите текст на телефоне, и он откроется на Mac в новом письме, где останется только указать адрес"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. Opens a draft with the text in the Mac’s default mail app, Mail unless you chose another, and starts it when it’s closed; you send the draft yourself. Mail with no account asks you to add one first.",
-    "de": "Nichts einzurichten. Öffnet einen Entwurf mit dem Text in der Standard-Mail-App des Mac, Mail, wenn du keine andere gewählt hast, und startet sie, wenn sie geschlossen ist; den Entwurf sendest du selbst. Mail ohne Account fragt zuerst nach einem.",
-    "es": "No hay nada que configurar. Abre un borrador con el texto en la app de correo predeterminada del Mac, Mail si no elegiste otra, y la abre si está cerrada; el borrador lo envías tú. Mail sin cuenta pide primero añadir una.",
-    "fr": "Rien à configurer. Ouvre un brouillon avec le texte dans l’app de messagerie par défaut du Mac, Mail si vous n’en avez pas choisi une autre, et la lance si elle est fermée ; vous envoyez le brouillon vous-même. Mail sans compte demande d’abord d’en ajouter un.",
-    "ru": "Настраивать ничего не нужно. Открывает черновик с текстом в почтовом приложении Mac по умолчанию — в «Почте», если вы не выбрали другое, — и запускает его, если оно закрыто; черновик вы отправляете сами. «Почта» без учётной записи сначала попросит её добавить."
+    "en": "Nothing to set up. The draft opens in the default mail app, usually Mail, and waits for you to send it. If Mail has no account yet, it asks you to add one first.",
+    "de": "Nichts einzurichten. Der Entwurf öffnet sich in der Standard-Mail-App, meist Mail, und wartet, bis du ihn abschickst. Hat Mail noch keinen Account, fragt sie zuerst danach.",
+    "es": "No hay nada que configurar. El borrador se abre en la app de correo predeterminada, normalmente Mail, y espera a que lo envíes. Si Mail aún no tiene ninguna cuenta, primero te pide añadir una.",
+    "fr": "Rien à configurer. Le brouillon s’ouvre dans l’app de messagerie par défaut, en général Mail, et attend que vous l’envoyiez. Si Mail n’a encore aucun compte, elle demande d’abord d’en ajouter un.",
+    "ru": "Настраивать ничего не нужно. Черновик откроется в почтовом приложении по умолчанию, обычно в «Почте», и будет ждать, пока вы его отправите. Если в «Почте» ещё нет учётной записи, она сначала попросит её добавить."
   },
   "tapAction": {
     "en": "Asks for text and opens a new email with it on the Mac",
     "de": "Fragt nach einem Text und öffnet damit eine neue E-Mail auf dem Mac",
     "es": "Pide un texto y abre con él un correo nuevo en el Mac",
     "fr": "Demande un texte et ouvre avec lui un nouvel e-mail sur le Mac",
-    "ru": "Спрашивает текст и открывает с ним новое письмо на Mac"
+    "ru": "Просит ввести текст и открывает с ним новое письмо на Mac"
   },
   "button": {
     "icon": {
@@ -47,8 +47,20 @@
       }
     },
     "input": {
-      "question": "What to write?",
-      "placeholder": "The email’s text",
+      "question": {
+        "en": "What to write?",
+        "de": "Was möchtest du schreiben?",
+        "es": "¿Qué quieres escribir?",
+        "fr": "Que voulez-vous écrire ?",
+        "ru": "Что написать?"
+      },
+      "placeholder": {
+        "en": "The email’s text",
+        "de": "Text der E-Mail",
+        "es": "Texto del correo",
+        "fr": "Texte de l’e-mail",
+        "ru": "Текст письма"
+      },
       "multiline": true
     }
   }

@@ -1,6 +1,6 @@
 {
   "id": "now-playing",
-  "revision": 6,
+  "revision": 7,
   "kind": "widget",
   "title": {
     "en": "Now Playing",
@@ -14,14 +14,14 @@
     "de": "Was in Musik oder Spotify läuft, über einem Live-Spektrum des Mac-Tons",
     "es": "Lo que suena en Música o Spotify, sobre un espectro en directo del sonido del Mac",
     "fr": "Ce que joue Musique ou Spotify, sur un spectre en direct du son du Mac",
-    "ru": "Что играет в «Музыке» или Spotify — поверх живого спектра звука на Mac"
+    "ru": "Трек из «Музыки» или Spotify на фоне живого спектра звука Mac"
   },
   "details": {
-    "en": "The track in Music or Spotify and its progress, over bars that move with the Mac’s sound. Dimmed text means paused; ♫ is another app’s sound, ♪ silence, 🔒 no access to the player.",
-    "de": "Der Titel in Musik oder Spotify mit Fortschritt, über Balken, die sich mit dem Ton des Mac bewegen. Blasser Text heißt Pause; ♫ ist Ton einer anderen App, ♪ Stille, 🔒 kein Zugriff auf den Player.",
-    "es": "La canción de Música o Spotify y su progreso, sobre barras que se mueven con el sonido del Mac. El texto atenuado indica pausa; ♫ es sonido de otra app, ♪, silencio, y 🔒, sin acceso al reproductor.",
-    "fr": "Le morceau de Musique ou Spotify et sa progression, sur des barres qui bougent avec le son du Mac. Un texte estompé signifie pause ; ♫ : le son d’une autre app, ♪ : le silence, 🔒 : pas d’accès au lecteur.",
-    "ru": "Трек из «Музыки» или Spotify и его прогресс — поверх столбиков, которые двигаются со звуком Mac. Бледный текст — пауза; ♫ — звук другого приложения, ♪ — тишина, 🔒 — нет доступа к плееру."
+    "en": "The track’s name and time, over bars that move with any sound the Mac plays. The text dims while paused. A lock means the Mac still needs your permission to access the player.",
+    "de": "Titel und Zeit des Songs, über Balken, die sich mit jedem Ton des Mac bewegen. In der Pause wird der Text blass. Ein Schloss heißt, dass der Mac noch deine Erlaubnis für den Zugriff auf den Player braucht.",
+    "es": "El nombre y el tiempo de la canción, sobre barras que se mueven con cualquier sonido del Mac. En pausa, el texto se atenúa. Un candado indica que el Mac aún necesita tu permiso para acceder al reproductor.",
+    "fr": "Le titre et l’avancement du morceau, sur des barres qui bougent avec tout son du Mac. En pause, le texte s’estompe. Un cadenas signifie que le Mac attend encore votre autorisation pour accéder au lecteur.",
+    "ru": "Название трека и время на фоне столбиков, которые двигаются с любым звуком Mac. На паузе текст тускнеет. Замок значит, что Mac ещё ждёт вашего разрешения на доступ к плееру."
   },
   "tapAction": {
     "en": "Plays or pauses, like the play key on the keyboard",

@@ -1,6 +1,6 @@
 {
   "id": "claude",
-  "revision": 7,
+  "revision": 8,
   "name": "Claude",
   "bundleIds": ["com.anthropic.claudefordesktop"],
   "category": "ai",
@@ -16,11 +16,11 @@
         "ru": "Новый чат; удержание — чат инкогнито"
       },
       "details": {
-        "en": "A new chat, even from Claude’s Code or Cowork side. The tap works with Claude in the background and starts it if closed; the long press needs Claude in front.",
-        "de": "Ein neuer Chat, auch aus dem Code- oder Cowork-Bereich von Claude. Tippen klappt mit Claude im Hintergrund und startet es, falls geschlossen; Halten braucht Claude vorne.",
-        "es": "Un chat nuevo, incluso desde Code o Cowork en Claude. El toque funciona con Claude en segundo plano y lo abre si está cerrado; mantener pulsado lo requiere delante.",
-        "fr": "Une nouvelle conversation, même depuis Code ou Cowork dans Claude. Le toucher fonctionne avec Claude en arrière-plan et le lance s’il est fermé ; l’appui long, quand il est au premier plan.",
-        "ru": "Новый чат, даже из разделов Code и Cowork. Нажатие работает, когда Claude в фоне, и запускает его, если он закрыт; удержанию Claude нужен на переднем плане."
+        "en": "The new chat opens even when you’re in Code or Cowork, and even with Claude in the background. If Claude is closed, a tap starts it. The hold needs Claude in front.",
+        "de": "Der neue Chat öffnet sich auch, wenn du gerade in Code oder Cowork bist, und auch mit Claude im Hintergrund. Ist Claude geschlossen, startet die Taste es beim Tippen. Halten braucht Claude vorne.",
+        "es": "El chat nuevo se abre aunque estés en Code o Cowork, e incluso con Claude en segundo plano. Si Claude está cerrado, al tocar se abre. Mantener pulsado requiere Claude delante.",
+        "fr": "La nouvelle conversation s’ouvre même si vous êtes dans Code ou Cowork, et même avec Claude en arrière-plan. Si Claude est fermé, le toucher le lance. Le maintien ne fonctionne que si Claude est au premier plan.",
+        "ru": "Новый чат откроется, даже если вы сейчас в Code или Cowork, и даже когда Claude в фоне. Если Claude закрыт, нажатие запустит его. Удержанию нужен Claude на переднем плане."
       },
       "tapAction": {
         "en": "Opens a new chat",
@@ -34,7 +34,7 @@
         "de": "Öffnet einen Inkognito-Chat, der nicht im Verlauf und in der Erinnerung landet (⇧⌘I)",
         "es": "Abre un chat de incógnito, que no queda en el historial ni en la memoria (⇧⌘I)",
         "fr": "Ouvre une conversation incognito, gardée hors de l’historique et de la mémoire (⇧⌘I)",
-        "ru": "Открывает чат инкогнито — он не попадёт в историю и память (⇧⌘I)"
+        "ru": "Открывает чат инкогнито, который не попадёт в историю и память (⇧⌘I)"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -55,11 +55,11 @@
         "ru": "Новая задача в Cowork"
       },
       "details": {
-        "en": "Cowork: Claude works through a longer task for you, with the folders and tools you give it. Works with Claude in the background; starts Claude if it is closed.",
-        "de": "Cowork: Claude arbeitet eine längere Aufgabe für dich ab, mit den Ordnern und Werkzeugen, die du ihm gibst. Klappt mit Claude im Hintergrund; startet Claude, falls geschlossen.",
-        "es": "Cowork: Claude se ocupa de una tarea más larga por ti, con las carpetas y herramientas que le des. Funciona con Claude en segundo plano; lo abre si está cerrado.",
-        "fr": "Cowork : Claude mène une tâche plus longue pour vous, avec les dossiers et outils que vous lui donnez. Fonctionne avec Claude en arrière-plan ; le lance s’il est fermé.",
-        "ru": "Cowork: Claude выполняет за вас задачу подлиннее — с папками и инструментами, которые вы ему дадите. Работает, когда Claude в фоне; запускает его, если он закрыт."
+        "en": "In Cowork, Claude works through a longer task for you, with the folders and tools you give it. Works even with Claude in the background, and starts Claude if it’s closed.",
+        "de": "In Cowork arbeitet Claude eine längere Aufgabe für dich ab, mit den Ordnern und Werkzeugen, die du ihm gibst. Funktioniert auch mit Claude im Hintergrund und startet Claude, wenn es geschlossen ist.",
+        "es": "En Cowork, Claude se ocupa de una tarea más larga por ti, con las carpetas y herramientas que le des. Funciona aunque Claude esté en segundo plano, y lo abre si está cerrado.",
+        "fr": "Dans Cowork, Claude mène une tâche plus longue pour vous, avec les dossiers et outils que vous lui donnez. Fonctionne même avec Claude en arrière-plan, et le lance s’il est fermé.",
+        "ru": "В Cowork Claude сам выполняет задачу подлиннее с папками и инструментами, которые вы ему дадите. Работает, даже когда Claude в фоне, и запускает его, если он закрыт."
       },
       "tapAction": {
         "en": "Opens a new Cowork task",
@@ -85,11 +85,11 @@
         "ru": "Новая сессия Claude Code"
       },
       "details": {
-        "en": "Claude Code in the app: pick a folder and describe the change; Claude works in it and shows the diff. Works with Claude in the background; starts Claude if it is closed.",
-        "de": "Claude Code in der App: Ordner wählen und die Änderung beschreiben; Claude arbeitet darin und zeigt den Diff. Klappt mit Claude im Hintergrund; startet Claude, falls geschlossen.",
-        "es": "Claude Code en la app: elige una carpeta y describe el cambio; Claude trabaja en ella y muestra el diff. Funciona con Claude en segundo plano; lo abre si está cerrado.",
-        "fr": "Claude Code dans l’app : choisissez un dossier et décrivez le changement ; Claude y travaille et montre le diff. Fonctionne avec Claude en arrière-plan ; le lance s’il est fermé.",
-        "ru": "Claude Code в приложении: выберите папку и опишите изменение — Claude работает в ней и показывает diff. Работает, когда Claude в фоне; запускает его, если он закрыт."
+        "en": "Pick a folder and describe the change, and Claude makes it and shows the diff. Works even with Claude in the background, and starts Claude if it’s closed.",
+        "de": "Wähl einen Ordner und beschreib die Änderung, dann setzt Claude sie um und zeigt den Diff. Funktioniert auch mit Claude im Hintergrund und startet Claude, wenn es geschlossen ist.",
+        "es": "Elige una carpeta y describe el cambio, y Claude lo hace y muestra el diff. Funciona aunque Claude esté en segundo plano, y lo abre si está cerrado.",
+        "fr": "Choisissez un dossier et décrivez le changement : Claude le fait et montre le diff. Fonctionne même avec Claude en arrière-plan, et le lance s’il est fermé.",
+        "ru": "Выберите папку и опишите, что изменить, а Claude сделает это и покажет diff. Работает, даже когда Claude в фоне, и запускает его, если он закрыт."
       },
       "tapAction": {
         "en": "Opens a new Code session",
@@ -115,18 +115,18 @@
         "ru": "Быстрый ввод Claude поверх любого приложения"
       },
       "details": {
-        "en": "Ask Claude without leaving the app you are in, as a click on Claude’s menu bar icon does. Needs that icon: Claude’s Menu bar setting, on by default.",
-        "de": "Claude fragen, ohne die App zu verlassen – wie ein Klick auf das Claude-Symbol in der Menüleiste. Dafür muss das Symbol da sein: Einstellung „Menüleiste“ in Claude, standardmäßig an.",
-        "es": "Pregunta a Claude sin salir de la app en la que estás, como al hacer clic en su icono de la barra de menús. Requiere ese icono: ajuste «Barra de menús» de Claude, activado de serie.",
-        "fr": "Interrogez Claude sans quitter l’app en cours, comme d’un clic sur son icône dans la barre des menus. Il faut cette icône : réglage « Barre de menus » de Claude, activé par défaut.",
-        "ru": "Спросить Claude, не уходя из текущего приложения, — как щелчок по значку Claude в строке меню. Нужен этот значок: настройка Claude «Menu bar», включена по умолчанию."
+        "en": "Ask Claude without leaving the app you’re in. The button works like a click on Claude’s menu bar icon, so the icon must be there (Claude’s Menu bar setting, on by default). If Claude is closed, the button won’t start it.",
+        "de": "Frag Claude, ohne die App zu verlassen. Die Taste wirkt wie ein Klick auf das Claude-Symbol in der Menüleiste, daher muss das Symbol da sein (Einstellung „Menüleiste“ in Claude, standardmäßig an). Ist Claude geschlossen, startet die Taste es nicht.",
+        "es": "Pregunta a Claude sin salir de la app en la que estás. El botón equivale a hacer clic en su icono de la barra de menús, así que el icono tiene que estar visible (ajuste «Barra de menús» de Claude, activado de serie). Si Claude está cerrado, el botón no lo abre.",
+        "fr": "Interrogez Claude sans quitter l’app en cours. Le bouton équivaut à un clic sur son icône dans la barre des menus, donc l’icône doit y être (réglage « Barre de menus » de Claude, activé par défaut). Si Claude est fermé, le bouton ne le lance pas.",
+        "ru": "Можно спросить Claude, не уходя из текущего приложения. Кнопка действует как щелчок по значку Claude в строке меню, поэтому значок должен быть на месте (настройка «Menu bar» в Claude, по умолчанию включена). Если Claude закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Opens Quick Entry, or closes it when it is open",
         "de": "Öffnet Quick Entry oder schließt es, wenn es offen ist",
         "es": "Abre Quick Entry o lo cierra si está abierto",
         "fr": "Ouvre Quick Entry, ou le ferme s’il est ouvert",
-        "ru": "Открывает быстрый ввод, а если он открыт — закрывает"
+        "ru": "Открывает быстрый ввод или закрывает его, если он уже открыт"
       },
       "permissions": ["automation", "accessibility"],
       "button": {
@@ -150,7 +150,7 @@
         "de": "Sprechen statt tippen: Der Text landet im Eingabefeld. Funktioniert, wenn Claude vorne ist, mit dem Standard-Tastaturkürzel fürs Diktieren.",
         "es": "Habla en lugar de escribir: el texto va al cuadro de mensaje. Funciona cuando Claude está delante, con el atajo de dictado predeterminado.",
         "fr": "Parlez au lieu de taper : le texte va dans la zone de message. Fonctionne quand Claude est au premier plan, avec son raccourci de dictée par défaut.",
-        "ru": "Говорите вместо того, чтобы печатать: текст попадёт в поле сообщения. Работает, когда Claude на переднем плане, со стандартным сочетанием для диктовки."
+        "ru": "Текст, который вы надиктуете, появится в поле сообщения. Работает, когда Claude на переднем плане, со стандартным сочетанием для диктовки."
       },
       "tapAction": {
         "en": "Starts dictation, or stops it",
@@ -208,11 +208,11 @@
         "ru": "Открывает меню моделей (⇧⌘.)"
       },
       "details": {
-        "en": "The menu by the message box: pick the Claude model that answers next. Works while Claude is in front.",
-        "de": "Das Menü am Eingabefeld: das Claude-Modell wählen, das als Nächstes antwortet. Funktioniert, wenn Claude vorne ist.",
-        "es": "El menú junto al cuadro de mensaje: elige el modelo de Claude que responderá. Funciona cuando Claude está delante.",
-        "fr": "Le menu près de la zone de message : choisissez le modèle Claude qui répondra. Fonctionne quand Claude est au premier plan.",
-        "ru": "Меню у поля сообщения: выберите модель Claude для следующего ответа. Работает, когда Claude на переднем плане."
+        "en": "In the menu by the message box, pick the Claude model that answers next. Works while Claude is in front.",
+        "de": "Wähl im Menü am Eingabefeld das Claude-Modell, das als Nächstes antwortet. Funktioniert, wenn Claude vorne ist.",
+        "es": "En el menú junto al cuadro de mensaje, elige el modelo de Claude que responderá. Funciona cuando Claude está delante.",
+        "fr": "Dans le menu près de la zone de message, choisissez le modèle Claude qui répondra. Fonctionne quand Claude est au premier plan.",
+        "ru": "В меню у поля сообщения выберите модель Claude, которая ответит следующей. Работает, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Opens the model menu",
@@ -239,11 +239,11 @@
         "ru": "Включает и выключает расширенное мышление (⇧⌘E)"
       },
       "details": {
-        "en": "With it on, Claude thinks longer before it answers: better on hard problems, slower. Works while Claude is in front.",
-        "de": "Eingeschaltet denkt Claude länger nach, bevor es antwortet: besser bei schweren Aufgaben, langsamer. Funktioniert, wenn Claude vorne ist.",
-        "es": "Activado, Claude piensa más antes de responder: mejor con problemas difíciles, más lento. Funciona cuando Claude está delante.",
-        "fr": "Activée, Claude réfléchit plus longtemps avant de répondre : mieux pour les problèmes difficiles, plus lent. Fonctionne quand Claude est au premier plan.",
-        "ru": "Когда включено, Claude дольше думает перед ответом: лучше для сложных задач, но медленнее. Работает, когда Claude на переднем плане."
+        "en": "With it on, Claude thinks longer before answering, which helps with hard problems but takes more time. Works while Claude is in front.",
+        "de": "Ist die Option eingeschaltet, denkt Claude länger nach, bevor es antwortet. Das hilft bei schweren Aufgaben, dauert aber länger. Funktioniert, wenn Claude vorne ist.",
+        "es": "Con la opción activada, Claude piensa más antes de responder. Ayuda con problemas difíciles, pero tarda más. Funciona cuando Claude está delante.",
+        "fr": "Quand l’option est activée, Claude réfléchit plus longtemps avant de répondre. C’est mieux pour les problèmes difficiles, mais plus lent. Fonctionne quand Claude est au premier plan.",
+        "ru": "Когда оно включено, Claude дольше думает перед ответом. Так лучше для сложных задач, но ответ придёт позже. Работает, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Turns extended thinking on or off",
@@ -270,11 +270,11 @@
         "ru": "Ищет по чатам и проектам (⇧⌘K)"
       },
       "details": {
-        "en": "Type to find a chat or project and jump to it; in Code it finds sessions. Works while Claude is in front.",
-        "de": "Tippen, um einen Chat oder ein Projekt zu finden und hinzuspringen; in Code findet es Sitzungen. Funktioniert, wenn Claude vorne ist.",
-        "es": "Escribe para encontrar un chat o proyecto e ir a él; en Code encuentra sesiones. Funciona cuando Claude está delante.",
-        "fr": "Tapez pour trouver une conversation ou un projet et y aller ; dans Code, ce sont les sessions. Fonctionne quand Claude est au premier plan.",
-        "ru": "Начните печатать, чтобы найти чат или проект и перейти к нему; в Code ищет сессии. Работает, когда Claude на переднем плане."
+        "en": "Type to find a chat or project and jump to it. In Code, it finds sessions. Works while Claude is in front.",
+        "de": "Gib etwas ein, um einen Chat oder ein Projekt zu finden und dorthin zu springen. In Code findet die Suche Sitzungen. Funktioniert, wenn Claude vorne ist.",
+        "es": "Escribe para encontrar un chat o proyecto e ir a él. En Code encuentra sesiones. Funciona cuando Claude está delante.",
+        "fr": "Tapez pour trouver une conversation ou un projet et y aller. Dans Code, la recherche porte sur les sessions. Fonctionne quand Claude est au premier plan.",
+        "ru": "Начните печатать, чтобы найти чат или проект и перейти к нему. В Code поиск идёт по сессиям. Работает, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Opens search",
@@ -340,11 +340,11 @@
         "ru": "Следующий чат; удержание — предыдущий"
       },
       "details": {
-        "en": "Steps through your chats — tasks in Cowork, sessions in Code. Clicks Claude’s Go menu, so it works on any keyboard; needs Claude in front.",
-        "de": "Geht deine Chats durch – in Cowork die Aufgaben, in Code die Sitzungen. Klickt das Menü „Gehe zu“ von Claude und klappt so mit jeder Tastatur; Claude muss vorne sein.",
-        "es": "Recorre tus chats: tareas en Cowork, sesiones en Code. Usa el menú Ir de Claude, así que funciona con cualquier teclado; Claude debe estar delante.",
-        "fr": "Parcourt vos conversations — les tâches dans Cowork, les sessions dans Code. Passe par le menu Aller de Claude et fonctionne donc avec tout clavier. Claude doit être au premier plan.",
-        "ru": "Перебирает чаты — в Cowork задачи, в Code сессии. Нажимает пункт в меню Claude «Переход», поэтому работает при любой раскладке; Claude должен быть на переднем плане."
+        "en": "In Cowork it steps through tasks, and in Code through sessions. Clicks Claude’s Go menu, so it works on any keyboard layout. Needs Claude in front.",
+        "de": "In Cowork geht die Taste die Aufgaben durch, in Code die Sitzungen. Klickt im Menü „Gehe zu“ von Claude, daher passt jede Tastaturbelegung. Claude muss vorne sein.",
+        "es": "En Cowork recorre las tareas, y en Code las sesiones. Usa el menú Ir de Claude, así que funciona con cualquier distribución de teclado. Claude debe estar delante.",
+        "fr": "Dans Cowork, il parcourt les tâches, et dans Code les sessions. Passe par le menu Aller de Claude et fonctionne donc avec tout clavier. Claude doit être au premier plan.",
+        "ru": "В Cowork перебирает задачи, а в Code сессии. Нажимает пункт в меню Claude «Переход», поэтому работает при любой раскладке. Claude должен быть на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the next chat",
@@ -484,7 +484,7 @@
         "de": "Die Dateien im Ordner der Sitzung, zum Öffnen und Lesen neben der Unterhaltung. Funktioniert in einer Code-Sitzung, wenn Claude vorne ist.",
         "es": "Los archivos de la carpeta de la sesión, para abrirlos y leerlos junto a la conversación. Funciona en una sesión de Code cuando Claude está delante.",
         "fr": "Les fichiers du dossier de la session, à ouvrir et lire à côté de la conversation. Fonctionne dans une session Code quand Claude est au premier plan.",
-        "ru": "Файлы из папки сессии — открыть и читать рядом с диалогом. Работает в сессии Code, когда Claude на переднем плане."
+        "ru": "Файлы из папки сессии можно открыть и читать рядом с диалогом. Работает в сессии Code, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the files",
@@ -511,11 +511,11 @@
         "ru": "Показывает или скрывает предпросмотр сессии Code"
       },
       "details": {
-        "en": "The live view of the app being built, named Browser or Preview in Claude. Clicks Claude’s View menu; needs a Code session and Claude in front.",
-        "de": "Die Live-Ansicht der App, die entsteht, in Claude „Browser“ oder „Vorschau“ genannt. Klickt das Menü „Ansicht“; braucht eine Code-Sitzung und Claude vorne.",
-        "es": "La vista en vivo de la app en desarrollo, llamada Navegador o Vista previa en Claude. Usa el menú Ver; requiere una sesión de Code y Claude delante.",
-        "fr": "La vue en direct de l’app en cours, appelée Navigateur ou Aperçu dans Claude. Passe par le menu Affichage ; il faut une session Code et Claude au premier plan.",
-        "ru": "Живой вид приложения, которое вы делаете, — в Claude это браузер или предпросмотр. Нажимает пункт в меню «Вид»; нужны сессия Code и Claude на переднем плане."
+        "en": "A live view of the app you’re building, called Browser or Preview in Claude. Works in a Code session while Claude is in front.",
+        "de": "Die Live-Ansicht der App, an der du baust, in Claude „Browser“ oder „Vorschau“ genannt. Funktioniert in einer Code-Sitzung, wenn Claude vorne ist.",
+        "es": "La vista en vivo de la app que estás creando, llamada Navegador o Vista previa en Claude. Funciona en una sesión de Code cuando Claude está delante.",
+        "fr": "La vue en direct de l’app que vous créez, appelée Navigateur ou Aperçu dans Claude. Fonctionne dans une session Code quand Claude est au premier plan.",
+        "ru": "Здесь видно, как выглядит приложение, которое вы делаете. В Claude эта панель называется браузером или предпросмотром. Работает в сессии Code, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the preview",
@@ -548,11 +548,11 @@
         "ru": "Открывает сессию, которая ждёт вашего ответа"
       },
       "details": {
-        "en": "The session that has waited longest for you to allow a step, Cowork tasks included; with none waiting, the Code start screen. Works with Claude in the background; starts Claude if it is closed.",
-        "de": "Die Sitzung, die am längsten auf deine Erlaubnis für einen Schritt wartet, Cowork-Aufgaben eingeschlossen; wartet keine, der Startbildschirm von Code. Klappt mit Claude im Hintergrund; startet Claude, falls geschlossen.",
-        "es": "La sesión que lleva más tiempo esperando tu permiso para un paso, tareas de Cowork incluidas; si no hay ninguna, la pantalla de inicio de Code. Funciona con Claude en segundo plano; lo abre si está cerrado.",
-        "fr": "La session qui attend depuis le plus longtemps votre accord pour une étape, tâches Cowork comprises ; sinon, l’écran d’accueil de Code. Fonctionne avec Claude en arrière-plan ; le lance s’il est fermé.",
-        "ru": "Сессия, которая дольше всех ждёт вашего разрешения на шаг, включая задачи Cowork; если таких нет — стартовый экран Code. Работает, когда Claude в фоне; запускает его, если он закрыт."
+        "en": "Opens the session or Cowork task that has waited longest for you to allow a step. With none waiting, you get the Code start screen. Works even with Claude in the background, and starts Claude if it’s closed.",
+        "de": "Öffnet die Sitzung oder Cowork-Aufgabe, die am längsten auf deine Erlaubnis für einen Schritt wartet. Wartet keine, kommt der Startbildschirm von Code. Funktioniert auch mit Claude im Hintergrund und startet Claude, wenn es geschlossen ist.",
+        "es": "Abre la sesión o tarea de Cowork que lleva más tiempo esperando tu permiso para un paso. Si no hay ninguna, verás la pantalla de inicio de Code. Funciona aunque Claude esté en segundo plano, y lo abre si está cerrado.",
+        "fr": "Ouvre la session ou la tâche Cowork qui attend depuis le plus longtemps votre accord pour une étape. S’il n’y en a aucune, vous arrivez sur l’écran d’accueil de Code. Fonctionne même avec Claude en arrière-plan, et le lance s’il est fermé.",
+        "ru": "Откроется сессия или задача Cowork, которая дольше всех ждёт вашего разрешения на следующий шаг. Если ждущих нет, откроется стартовый экран Code. Работает, даже когда Claude в фоне, и запускает его, если он закрыт."
       },
       "tapAction": {
         "en": "Opens the waiting session",
@@ -578,11 +578,11 @@
         "ru": "Возвращает к последней сессии Claude Code"
       },
       "details": {
-        "en": "Opens the Code session you worked in last; with none yet, the Code start screen. Works with Claude in the background; starts Claude if it is closed.",
-        "de": "Öffnet die Code-Sitzung, in der du zuletzt gearbeitet hast; gibt es noch keine, den Startbildschirm von Code. Klappt mit Claude im Hintergrund; startet Claude, falls geschlossen.",
-        "es": "Abre la sesión de Code en la que trabajaste por última vez; si aún no hay ninguna, la pantalla de inicio de Code. Funciona con Claude en segundo plano; lo abre si está cerrado.",
-        "fr": "Ouvre la dernière session Code où vous avez travaillé ; s’il n’y en a pas encore, l’écran d’accueil de Code. Fonctionne avec Claude en arrière-plan ; le lance s’il est fermé.",
-        "ru": "Открывает сессию Code, в которой вы работали последней; если их ещё нет — стартовый экран Code. Работает, когда Claude в фоне; запускает его, если он закрыт."
+        "en": "With no sessions yet, you get the Code start screen. Works even with Claude in the background, and starts Claude if it’s closed.",
+        "de": "Gibt es noch keine Sitzung, kommt der Startbildschirm von Code. Funktioniert auch mit Claude im Hintergrund und startet Claude, wenn es geschlossen ist.",
+        "es": "Si aún no hay sesiones, verás la pantalla de inicio de Code. Funciona aunque Claude esté en segundo plano, y lo abre si está cerrado.",
+        "fr": "S’il n’y a pas encore de session, vous arrivez sur l’écran d’accueil de Code. Fonctionne même avec Claude en arrière-plan, et le lance s’il est fermé.",
+        "ru": "Если сессий ещё нет, откроется стартовый экран Code. Работает, даже когда Claude в фоне, и запускает его, если он закрыт."
       },
       "tapAction": {
         "en": "Opens the last session",
@@ -614,11 +614,11 @@
         "ru": "Новая сессия Claude Code в папке вашего проекта"
       },
       "details": {
-        "en": "Set the folder on the first line of the tap script, as a full path or one starting with ~/; until then the button refuses and says where to set it. Works with Claude in the background; starts Claude if it is closed.",
-        "de": "Den Ordner trägst du in der ersten Zeile des Skripts unter „Tippen“ ein, als vollen Pfad oder mit ~/ am Anfang; bis dahin verweigert die Taste und sagt, wo. Klappt mit Claude im Hintergrund; startet Claude, falls geschlossen.",
-        "es": "Indica la carpeta en la primera línea del script de toque, con la ruta completa o empezando por ~/; hasta entonces el botón se niega y dice dónde ponerla. Funciona con Claude en segundo plano; lo abre si está cerrado.",
-        "fr": "Indiquez le dossier à la première ligne du script du toucher, en chemin complet ou commençant par ~/ ; d’ici là, le bouton refuse et dit où l’indiquer. Fonctionne avec Claude en arrière-plan ; le lance s’il est fermé.",
-        "ru": "Папку укажите в первой строке скрипта нажатия — полный путь или начиная с ~/; пока она не указана, кнопка отказывается и говорит, где её задать. Работает, когда Claude в фоне; запускает его, если он закрыт."
+        "en": "Set your project folder in the button’s settings, as a full path or one starting with ~/. Works even with Claude in the background, and starts Claude if it’s closed.",
+        "de": "Den Projektordner trägst du in den Einstellungen der Taste ein, als vollen Pfad oder mit ~/ am Anfang. Funktioniert auch mit Claude im Hintergrund und startet Claude, wenn es geschlossen ist.",
+        "es": "Pon la carpeta del proyecto en los ajustes del botón, con la ruta completa o empezando por ~/. Funciona aunque Claude esté en segundo plano, y lo abre si está cerrado.",
+        "fr": "Indiquez le dossier du projet dans les réglages du bouton : un chemin complet ou un chemin commençant par ~/. Fonctionne même avec Claude en arrière-plan, et le lance s’il est fermé.",
+        "ru": "Папку проекта укажите в настройках кнопки полным путём или путём, который начинается с ~/. Работает, даже когда Claude в фоне, и запускает его, если он закрыт."
       },
       "tapAction": {
         "en": "Opens a new Code session in your folder",
@@ -650,11 +650,11 @@
         "ru": "Возвращает последнюю закрытую сессию Code (⇧⌘T)"
       },
       "details": {
-        "en": "Brings back the Code session you closed last — File › Reopen Closed Session (⇧⌘T). Works while Claude is in front and shows Claude Code.",
-        "de": "Holt die zuletzt geschlossene Code-Sitzung zurück – Datei › Geschlossene Sitzung wieder öffnen (⇧⌘T). Funktioniert, wenn Claude vorne ist und Claude Code zeigt.",
-        "es": "Recupera la última sesión de Code que cerraste — Archivo › Reabrir sesión cerrada (⇧⌘T). Funciona cuando Claude está delante y muestra Claude Code.",
-        "fr": "Ramène la dernière session Code fermée — Fichier › Rouvrir la session fermée (⇧⌘T). Fonctionne quand Claude est au premier plan et affiche Claude Code.",
-        "ru": "Возвращает последнюю закрытую сессию Code — Файл › Восстановить закрытую сессию (⇧⌘T). Работает, когда Claude на переднем плане и показывает Claude Code."
+        "en": "Same as File › Reopen Closed Session (⇧⌘T). If no closed session is left, the button tells you. Works while Claude is in front and shows Claude Code.",
+        "de": "Wie Datei › Geschlossene Sitzung wieder öffnen (⇧⌘T). Ist keine geschlossene Sitzung mehr übrig, sagt dir das die Taste. Funktioniert, wenn Claude vorne ist und Claude Code zeigt.",
+        "es": "Lo mismo que Archivo › Reabrir sesión cerrada (⇧⌘T). Si no queda ninguna sesión cerrada, el botón te lo dice. Funciona cuando Claude está delante y muestra Claude Code.",
+        "fr": "Comme Fichier › Rouvrir la session fermée (⇧⌘T). S’il ne reste aucune session fermée, le bouton vous le dit. Fonctionne quand Claude est au premier plan et affiche Claude Code.",
+        "ru": "То же, что Файл › Восстановить закрытую сессию (⇧⌘T). Если закрытых сессий не осталось, кнопка скажет об этом. Работает, когда Claude на переднем плане и показывает Claude Code."
       },
       "tapAction": {
         "en": "Reopens the closed session",
@@ -687,11 +687,11 @@
         "ru": "Открывает палитру команд Claude (⌘K)"
       },
       "details": {
-        "en": "The same as a long press on “Search”, on any keyboard layout — View › Command Palette… (⌘K). Works while Claude is in front.",
-        "de": "Wie langes Drücken auf „Suchen“, auf jeder Tastaturbelegung – Ansicht › Befehlspalette… (⌘K). Funktioniert, wenn Claude vorne ist.",
-        "es": "Lo mismo que mantener pulsado «Buscar», con cualquier distribución de teclado — Ver › Paleta de comandos… (⌘K). Funciona cuando Claude está delante.",
-        "fr": "Comme un appui long sur « Rechercher », quelle que soit la disposition du clavier — Affichage › Palette de commandes… (⌘K). Fonctionne quand Claude est au premier plan.",
-        "ru": "То же, что долгое нажатие на «Поиск», при любой раскладке — Вид › Палитра команд… (⌘K). Работает, когда Claude на переднем плане."
+        "en": "Same as holding Search, but on any keyboard layout (View › Command Palette…). Works while Claude is in front.",
+        "de": "Wie „Suchen“ beim Halten, aber mit jeder Tastaturbelegung (Ansicht › Befehlspalette…). Funktioniert, wenn Claude vorne ist.",
+        "es": "Lo mismo que mantener pulsado «Buscar», pero con cualquier distribución de teclado (Ver › Paleta de comandos…). Funciona cuando Claude está delante.",
+        "fr": "Comme un appui long sur « Rechercher », mais quelle que soit la disposition du clavier (Affichage › Palette de commandes…). Fonctionne quand Claude est au premier plan.",
+        "ru": "То же, что удержание кнопки «Поиск», только при любой раскладке (Вид › Палитра команд…). Работает, когда Claude на переднем плане."
       },
       "tapAction": {
         "en": "Opens the command palette",
@@ -720,11 +720,11 @@
         "ru": "Чаты, быстрый ввод, диктовка и сессии Claude Code с телефона"
       },
       "details": {
-        "en": "The top row and the first three buttons of the fifth work even with Claude in the background; the others need it in front. The fourth row is for Code sessions, the fifth gets you back to them.",
-        "de": "Die oberste Reihe und die ersten drei Tasten der fünften klappen auch mit Claude im Hintergrund; die übrigen brauchen es vorne. Die vierte Reihe ist für Code-Sitzungen, die fünfte führt dich zu ihnen zurück.",
-        "es": "La fila de arriba y los tres primeros botones de la quinta funcionan aunque Claude esté en segundo plano; los demás lo necesitan delante. La cuarta fila es para sesiones de Code; la quinta te devuelve a ellas.",
-        "fr": "La rangée du haut et les trois premiers boutons de la cinquième fonctionnent même avec Claude en arrière-plan ; les autres, quand il est au premier plan. La quatrième rangée sert aux sessions Code, la cinquième à y revenir.",
-        "ru": "Верхний ряд и первые три кнопки пятого работают, даже когда Claude в фоне; остальным он нужен на переднем плане. Четвёртый ряд — для сессий Code, пятый возвращает к ним."
+        "en": "The top row and the first three buttons of the fifth work even with Claude in the background. The other buttons and all long presses need it in front. The fourth row is for Code sessions, and the fifth gets you back to them.",
+        "de": "Die oberste Reihe und die ersten drei Tasten der fünften funktionieren auch mit Claude im Hintergrund. Die übrigen Tasten und alle Aktionen beim Halten brauchen Claude vorne. Die vierte Reihe ist für Code-Sitzungen, und die fünfte bringt dich zu ihnen zurück.",
+        "es": "La fila de arriba y los tres primeros botones de la quinta funcionan aunque Claude esté en segundo plano. Los demás botones y todas las pulsaciones largas necesitan Claude delante. La cuarta fila es para sesiones de Code, y la quinta te devuelve a ellas.",
+        "fr": "La rangée du haut et les trois premiers boutons de la cinquième fonctionnent même avec Claude en arrière-plan. Les autres boutons et tous les appuis longs fonctionnent quand Claude est au premier plan. La quatrième rangée sert aux sessions Code, et la cinquième à y revenir.",
+        "ru": "Верхний ряд и первые три кнопки пятого работают, даже когда Claude в фоне. Остальным кнопкам и всем удержаниям нужен Claude на переднем плане. Четвёртый ряд управляет сессией Code, а пятый возвращает к сессиям."
       },
       "bindByDefault": true,
       "placements": [

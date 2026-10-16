@@ -1,6 +1,6 @@
 {
   "id": "bug-github",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -12,20 +12,20 @@
     "ru": "Баг в GitHub…"
   },
   "summary": {
-    "en": "Describe a bug on the phone: a GitHub issue with the branch, last commit and browser tab from the Mac",
-    "de": "Beschreib einen Bug auf dem Telefon: ein GitHub-Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
-    "es": "Describe un bug en el teléfono: un issue en GitHub con la rama, el último commit y la pestaña del Mac",
-    "fr": "Décrivez un bug sur le téléphone : une issue GitHub avec la branche, le dernier commit et l’onglet du Mac",
-    "ru": "Опишите баг на телефоне — issue в GitHub с веткой, последним коммитом и вкладкой браузера с Mac"
+    "en": "Describe a bug on the phone and get a GitHub issue with the branch, last commit and browser tab from the Mac",
+    "de": "Beschreib einen Bug auf dem Telefon, und auf GitHub entsteht ein Issue mit Branch, letztem Commit und Browser-Tab vom Mac",
+    "es": "Describe un bug en el teléfono y tendrás un issue en GitHub con la rama, el último commit y la pestaña del navegador del Mac",
+    "fr": "Décrivez un bug sur le téléphone pour créer une issue GitHub avec la branche, le dernier commit et l’onglet du navigateur du Mac",
+    "ru": "Опишите баг на телефоне, и в GitHub появится issue с веткой, последним коммитом и вкладкой браузера с Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The first line is the title; the Mac adds branch, last commit, front app and browser tab. “+ screenshot” copies the simulator’s screen for the next issue. Needs the GitHub CLI: the button says how.",
-    "de": "Die erste Zeile ist der Titel; der Mac fügt Branch, letzten Commit, App im Vordergrund und Browser-Tab hinzu. „+ screenshot“ kopiert den Simulator für das nächste Issue. Braucht die GitHub CLI: Die Taste sagt, wie.",
-    "es": "La primera línea es el título; el Mac añade rama, último commit, app en primer plano y pestaña del navegador. «+ screenshot» copia la pantalla del simulador para el siguiente issue. Necesita la CLI de GitHub: el botón dice cómo.",
-    "fr": "La première ligne est le titre ; le Mac ajoute branche, dernier commit, app au premier plan et onglet du navigateur. « + screenshot » copie l’écran du simulateur pour l’issue suivante. Il faut la CLI GitHub : le bouton dit comment.",
-    "ru": "Первая строка — заголовок; Mac добавит ветку, последний коммит, переднее приложение и вкладку браузера. «+ screenshot» скопирует экран симулятора для следующего issue. Нужен GitHub CLI: кнопка подскажет, как."
+    "en": "The first line becomes the title, and the Mac adds the branch, last commit, front app and browser tab. “+ screenshot” saves the simulator’s screen for your next issue, which then opens in the browser so you can paste the screenshot with ⌘V. It needs the GitHub CLI and your project folder, and the button tells you what’s missing.",
+    "de": "Die erste Zeile wird zum Titel, und der Mac fügt Branch, letzten Commit, die App im Vordergrund und den Browser-Tab hinzu. „+ Screenshot“ speichert den Bildschirm des Simulators für dein nächstes Issue, das sich dann im Browser öffnet, damit du den Screenshot mit ⌘V einfügen kannst. Nötig sind die GitHub CLI und dein Projektordner, und die Taste sagt dir, was fehlt.",
+    "es": "La primera línea será el título, y el Mac añade la rama, el último commit, la app en primer plano y la pestaña del navegador. «+ captura» guarda la pantalla del simulador para tu próximo issue, que luego se abre en el navegador para que pegues la captura con ⌘V. Hacen falta la CLI de GitHub y la carpeta del proyecto, y el botón te dice qué falta.",
+    "fr": "La première ligne devient le titre, et le Mac ajoute la branche, le dernier commit, l’app au premier plan et l’onglet du navigateur. « + capture d’écran » enregistre l’écran du simulateur pour votre prochaine issue, qui s’ouvre ensuite dans le navigateur pour que vous colliez la capture avec ⌘V. Il faut la CLI GitHub et le dossier du projet, et le bouton indique ce qui manque.",
+    "ru": "Первая строка станет заголовком, а Mac добавит ветку, последний коммит, активное приложение и вкладку браузера. «+ скриншот» сохранит экран симулятора для следующего issue, а когда его страница откроется в браузере, вставьте картинку через ⌘V. Нужны GitHub CLI и папка проекта, а чего не хватает, подскажет кнопка."
   },
   "tapAction": {
     "en": "Asks what broke and files it on GitHub",
@@ -50,10 +50,28 @@
       }
     },
     "input": {
-      "question": "What broke?",
-      "placeholder": "The title on the first line, details below",
+      "question": {
+        "en": "What broke?",
+        "de": "Was ist kaputt?",
+        "es": "¿Qué se ha roto?",
+        "fr": "Qu’est-ce qui est cassé ?",
+        "ru": "Что сломалось?"
+      },
+      "placeholder": {
+        "en": "The title on the first line, details below",
+        "de": "Titel in der ersten Zeile, Details darunter",
+        "es": "El título en la primera línea, los detalles debajo",
+        "fr": "Le titre sur la première ligne, les détails en dessous",
+        "ru": "Заголовок в первой строке, подробности ниже"
+      },
       "quickReplies": [
-        "+ screenshot"
+        {
+          "en": "+ screenshot",
+          "de": "+ Screenshot",
+          "es": "+ captura",
+          "fr": "+ capture d’écran",
+          "ru": "+ скриншот"
+        }
       ],
       "multiline": true
     }

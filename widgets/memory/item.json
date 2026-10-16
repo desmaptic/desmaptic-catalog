@@ -1,6 +1,6 @@
 {
   "id": "memory",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Memory",
@@ -10,20 +10,20 @@
     "ru": "Память"
   },
   "summary": {
-    "en": "How much memory is in use; glows pink when macOS reports memory pressure",
-    "de": "Wie viel Arbeitsspeicher belegt ist; leuchtet pink, wenn macOS Speicherdruck meldet",
-    "es": "Cuánta memoria está en uso; se ilumina en rosa cuando macOS indica presión de memoria",
-    "fr": "La mémoire utilisée ; s’allume en rose quand macOS signale une pression de la mémoire",
-    "ru": "Сколько памяти занято; светится розовым, когда macOS сообщает о нагрузке на память"
+    "en": "How much of the Mac’s memory is in use, and whether it’s enough",
+    "de": "Wie viel Arbeitsspeicher des Mac belegt ist und ob er reicht",
+    "es": "Cuánta memoria del Mac está en uso y si alcanza",
+    "fr": "La mémoire du Mac utilisée, et si elle suffit",
+    "ru": "Сколько памяти Mac занято и хватает ли её"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "How much of the Mac’s memory is in use. The colour is memory pressure, as in Activity Monitor: magenta — memory is getting tight, pink — it is running short and apps may slow down.",
-    "de": "Wie viel Arbeitsspeicher des Mac belegt ist. Die Farbe ist der Speicherdruck wie in der Aktivitätsanzeige: Magenta – der Speicher wird knapp, Pink – er reicht nicht mehr, Apps können langsamer werden.",
-    "es": "Cuánta memoria del Mac está en uso. El color es la presión de memoria, como en Monitor de Actividad: magenta, empieza a escasear; rosa, no alcanza y las apps pueden ir más lentas.",
-    "fr": "La part de mémoire du Mac utilisée. La couleur indique la pression de la mémoire, comme dans Moniteur d’activité : magenta, elle se raréfie ; rose, elle manque et les apps peuvent ralentir.",
-    "ru": "Сколько памяти Mac занято. Цвет — нагрузка на память, как в Мониторинге системы: пурпурный — памяти становится мало, розовый — её не хватает и приложения могут тормозить."
+    "en": "The gauge turns magenta when memory starts to run short, and pink when it’s so tight that apps may slow down. It’s the same memory pressure Activity Monitor shows in its Memory tab.",
+    "de": "Die Anzeige wird magenta, wenn der Speicher knapp wird, und pink, wenn er so knapp ist, dass Apps langsamer werden können. Es ist derselbe Speicherdruck wie im Tab „Speicher“ der Aktivitätsanzeige.",
+    "es": "El indicador se vuelve magenta cuando la memoria empieza a escasear y rosa cuando escasea tanto que las apps pueden ir lentas. Es la misma presión de memoria que muestra Monitor de Actividad en la pestaña Memoria.",
+    "fr": "La jauge passe au magenta quand la mémoire commence à manquer, et au rose quand elle manque au point de ralentir les apps. C’est la même pression de la mémoire que dans l’onglet Mémoire de Moniteur d’activité.",
+    "ru": "Шкала станет пурпурной, когда памяти начнёт не хватать, и розовой, когда её так мало, что приложения могут тормозить. Это та же нагрузка на память, что на вкладке «Память» в Мониторинге системы."
   },
   "tapAction": {
     "en": "Opens Activity Monitor on the Mac",

@@ -1,6 +1,6 @@
 {
   "id": "dog",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Dog",
@@ -19,18 +19,18 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "A pixel Australian Shepherd chases the pointer across displays; when the pointer rests, it pants and naps. Clicks pass through it. It leaves in an hour; till then the button is red.",
-    "de": "Ein Pixel-Australian-Shepherd jagt den Zeiger über jedes Display; ruht der Zeiger, hechelt er und döst ein. Klicks gehen durch ihn hindurch. Nach einer Stunde geht er, bis dahin ist die Taste rot.",
-    "es": "Un pastor australiano de píxeles persigue el puntero por todas las pantallas; si el puntero se para, jadea y se echa una siesta. Los clics lo atraviesan. Se va a la hora; hasta entonces el botón está rojo.",
-    "fr": "Un berger australien en pixels poursuit le pointeur sur chaque écran ; quand le pointeur s’arrête, il halète et fait la sieste. Les clics passent au travers. Il part au bout d’une heure ; d’ici là, le bouton est rouge.",
-    "ru": "Пиксельная австралийская овчарка бегает за курсором по всем дисплеям; когда курсор замирает, высовывает язык и засыпает. Клики проходят сквозь неё. Через час уходит сама, а до тех пор кнопка красная."
+    "en": "A pixel Australian Shepherd chases the pointer across every display, and when the pointer stops, it pants and naps. Clicks go through it. It goes home by itself after an hour, and until then the button is red.",
+    "de": "Ein Pixel-Australian-Shepherd jagt den Zeiger über jedes Display, und wenn der Zeiger stillsteht, hechelt er und döst ein. Klicks gehen durch ihn hindurch. Nach einer Stunde geht er von selbst nach Hause, bis dahin ist die Taste rot.",
+    "es": "Un pastor australiano de píxeles persigue el puntero por todas las pantallas, y cuando el puntero se para, jadea y se echa una siesta. Los clics lo atraviesan. A la hora vuelve solo a casa, y hasta entonces el botón está rojo.",
+    "fr": "Un berger australien en pixels poursuit le pointeur sur chaque écran, et quand le pointeur s’arrête, il halète et fait la sieste. Les clics passent au travers. Il rentre tout seul au bout d’une heure, et d’ici là le bouton est rouge.",
+    "ru": "Пиксельная австралийская овчарка бегает за курсором по всем дисплеям, а когда курсор замирает, высовывает язык и засыпает. Кликать она не мешает. Через час собачка сама уходит домой, а пока она гуляет, кнопка красная."
   },
   "tapAction": {
-    "en": "Lets the dog out; another tap calls it home",
-    "de": "Lässt den Hund hinaus; erneutes Tippen ruft ihn heim",
-    "es": "Suelta al perro; otro toque lo llama a casa",
-    "fr": "Lâche le chien ; un autre toucher le rappelle",
-    "ru": "Выпускает собачку; повторное нажатие зовёт её домой"
+    "en": "Lets the dog out, or calls it home",
+    "de": "Lässt den Hund hinaus oder ruft ihn heim",
+    "es": "Suelta al perro o lo llama a casa",
+    "fr": "Lâche le chien ou le rappelle",
+    "ru": "Выпускает собачку или зовёт её домой"
   },
   "button": {
     "icon": {

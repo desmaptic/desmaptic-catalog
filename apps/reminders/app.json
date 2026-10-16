@@ -1,6 +1,6 @@
 {
   "id": "reminders",
-  "revision": 5,
+  "revision": 6,
   "name": {
     "en": "Reminders",
     "de": "Erinnerungen",
@@ -27,14 +27,14 @@
         "de": "Macht aus dem auf dem Mac kopierten Text mit einem Tippen eine Erinnerung",
         "es": "Convierte en recordatorio el texto que copiaste en el Mac, con un toque",
         "fr": "Transforme en rappel le texte copié sur le Mac, d’un simple toucher",
-        "ru": "Одним нажатием превращает скопированный на Mac текст в напоминание"
+        "ru": "Одним нажатием превращает в напоминание текст, который вы скопировали на Mac"
       },
       "details": {
-        "en": "The first line becomes the title and the rest the notes, in the default list set in Reminders. A password copied from a password manager is refused.",
-        "de": "Die erste Zeile wird zum Titel, der Rest zu Notizen, in der Standardliste aus den Einstellungen von Erinnerungen. Ein aus einem Passwortmanager kopiertes Passwort wird abgelehnt.",
-        "es": "La primera línea es el título y el resto, las notas, en la lista por omisión de los ajustes de Recordatorios. Una contraseña copiada de un gestor de contraseñas se rechaza.",
-        "fr": "La première ligne devient le titre et le reste les notes, dans la liste par défaut des réglages de Rappels. Un mot de passe copié depuis un gestionnaire est refusé.",
-        "ru": "Первая строка становится названием, остальное — заметками, в списке по умолчанию из настроек «Напоминаний». Пароль из менеджера паролей не добавляется."
+        "en": "The first line becomes the title and the rest the notes. The reminder goes to the default list set in Reminders’ settings. A password copied from a password manager is refused.",
+        "de": "Die erste Zeile wird zum Titel, der Rest zu Notizen. Die Erinnerung landet in der Standardliste aus den Einstellungen von Erinnerungen. Ein Passwort aus einem Passwortmanager wird abgelehnt.",
+        "es": "La primera línea es el título y el resto, las notas. El recordatorio va a la lista por omisión de los ajustes de Recordatorios. Una contraseña copiada de un gestor de contraseñas se rechaza.",
+        "fr": "La première ligne devient le titre et le reste les notes. Le rappel va dans la liste par défaut définie dans les réglages de Rappels. Un mot de passe copié depuis un gestionnaire est refusé.",
+        "ru": "Первая строка становится названием, остальное — заметками. Напоминание попадёт в список по умолчанию из настроек «Напоминаний». Пароль из менеджера паролей не добавляется."
       },
       "tapAction": {
         "en": "Adds the copied text as a reminder",
@@ -74,14 +74,14 @@
         "de": "Sichert die im Browser geöffnete Seite als Erinnerung zum späteren Lesen",
         "es": "Guarda la página abierta en el navegador como recordatorio para leerla después",
         "fr": "Enregistre la page ouverte dans le navigateur comme rappel à lire plus tard",
-        "ru": "Сохраняет открытую в браузере страницу как напоминание прочитать позже"
+        "ru": "Сохраняет страницу из браузера как напоминание, чтобы прочитать её позже"
       },
       "details": {
-        "en": "The current tab of Safari, Chrome or Arc, whichever is in front of the others, with its link, in the default list. Incognito windows of Chrome and Arc are refused.",
-        "de": "Der aktuelle Tab von Safari, Chrome oder Arc – der Browser, der vor den anderen liegt – mit Link, in der Standardliste. Inkognito-Fenster von Chrome und Arc werden abgelehnt.",
-        "es": "La pestaña actual de Safari, Chrome o Arc, el que esté delante de los otros, con su enlace, en la lista por omisión. Las ventanas de incógnito de Chrome y Arc se rechazan.",
-        "fr": "L’onglet actuel de Safari, Chrome ou Arc, celui qui est devant les autres, avec son lien, dans la liste par défaut. Les fenêtres de navigation privée de Chrome et Arc sont refusées.",
-        "ru": "Текущая вкладка Safari, Chrome или Arc — того браузера, что впереди остальных, — со ссылкой, в списке по умолчанию. Окна инкогнито Chrome и Arc не сохраняются."
+        "en": "Takes the current tab of Safari, Chrome or Arc, whichever you used last, and saves it with its link to your default list. Incognito windows in Chrome and Arc are refused, but private Safari windows are saved like normal ones.",
+        "de": "Nimmt den aktuellen Tab von Safari, Chrome oder Arc, je nachdem, welchen Browser du zuletzt benutzt hast, und speichert ihn mit Link in der Standardliste. Inkognito-Fenster von Chrome und Arc werden abgelehnt, private Safari-Fenster aber wie normale gespeichert.",
+        "es": "Toma la pestaña actual de Safari, Chrome o Arc, el que hayas usado por última vez, y la guarda con su enlace en la lista por omisión. Las ventanas de incógnito de Chrome y Arc se rechazan, pero las privadas de Safari se guardan como las normales.",
+        "fr": "Prend l’onglet actuel de Safari, Chrome ou Arc, celui que vous avez utilisé en dernier, et l’enregistre avec son lien dans la liste par défaut. Les fenêtres de navigation privée de Chrome et Arc sont refusées, mais celles de Safari sont enregistrées comme les autres.",
+        "ru": "Берёт текущую вкладку Safari, Chrome или Arc, смотря каким из них вы пользовались последним. Напоминание со ссылкой на страницу попадёт в список по умолчанию. Окна инкогнито Chrome и Arc кнопка не сохраняет, а приватное окно Safari сохранит как обычное."
       },
       "tapAction": {
         "en": "Adds the page in your browser as a reminder",
@@ -125,11 +125,11 @@
         "ru": "Начинает новое напоминание в открытом списке (⌘N)"
       },
       "details": {
-        "en": "File › New Reminder (⌘N): type it on the Mac. Works while Reminders is in front.",
-        "de": "Ablage › Neue Erinnerung (⌘N): Text am Mac eintippen. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Archivo › Nuevo recordatorio (⌘N): escríbelo en el Mac. Funciona cuando Recordatorios está delante.",
-        "fr": "Fichier › Nouveau rappel (⌘N) : saisissez-le sur le Mac. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Файл › Новое напоминание (⌘N): текст набирается на Mac. Работает, когда «Напоминания» на переднем плане."
+        "en": "File › New Reminder (⌘N). Then type it on the Mac. Works while Reminders is in front.",
+        "de": "Ablage › Neue Erinnerung (⌘N). Den Text tippst du dann am Mac ein. Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Archivo › Nuevo recordatorio (⌘N). Luego solo tienes que escribirlo en el Mac. Funciona cuando Recordatorios está delante.",
+        "fr": "Fichier › Nouveau rappel (⌘N). Il ne reste qu’à le saisir sur le Mac. Fonctionne quand Rappels est au premier plan.",
+        "ru": "Файл › Новое напоминание (⌘N). Останется набрать его на Mac. Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Starts a new reminder",
@@ -177,11 +177,11 @@
         "ru": "Ищет по всем напоминаниям (⌘F)"
       },
       "details": {
-        "en": "Edit › Find (⌘F): the cursor lands in Reminders’ search field, ready to type on the Mac. Works while Reminders is in front.",
-        "de": "Bearbeiten › Suchen (⌘F): Der Cursor steht im Suchfeld von Erinnerungen, bereit zum Tippen am Mac. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Edición › Buscar (⌘F): el cursor se coloca en el campo de búsqueda de Recordatorios, listo para escribir en el Mac. Funciona cuando Recordatorios está delante.",
-        "fr": "Édition › Rechercher (⌘F) : le curseur se place dans le champ de recherche de Rappels, prêt à taper sur le Mac. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Правка › Найти (⌘F): курсор встаёт в поле поиска «Напоминаний» — можно печатать на Mac. Работает, когда «Напоминания» на переднем плане."
+        "en": "Edit › Find (⌘F). The cursor lands in Reminders’ search field, so you can type your search on the Mac right away. Works while Reminders is in front.",
+        "de": "Bearbeiten › Suchen (⌘F). Der Cursor steht dann im Suchfeld von Erinnerungen, und du kannst am Mac gleich lostippen. Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Edición › Buscar (⌘F). El cursor se coloca en el campo de búsqueda de Recordatorios y puedes escribir enseguida en el Mac. Funciona cuando Recordatorios está delante.",
+        "fr": "Édition › Rechercher (⌘F). Le curseur se place dans le champ de recherche de Rappels, et vous pouvez taper tout de suite sur le Mac. Fonctionne quand Rappels est au premier plan.",
+        "ru": "Правка › Найти (⌘F). Курсор встанет в поле поиска «Напоминаний», и запрос можно сразу набрать на Mac. Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Starts a search",
@@ -223,17 +223,17 @@
       },
       "summary": {
         "en": "Opens Reminders on the Scheduled list",
-        "de": "Öffnet Erinnerungen mit der Liste „Geplant“",
+        "de": "Öffnet in Erinnerungen die Liste „Geplant“",
         "es": "Abre Recordatorios en la lista Programados",
         "fr": "Ouvre Rappels sur la liste Programmés",
-        "ru": "Открывает «Напоминания» на списке «В планах»"
+        "ru": "Открывает в «Напоминаниях» список «В планах»"
       },
       "details": {
-        "en": "Every open reminder with a date, day by day. Works from any page and starts Reminders if it’s closed.",
-        "de": "Alle offenen Erinnerungen mit Datum, Tag für Tag. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
-        "es": "Todos los recordatorios pendientes con fecha, día a día. Funciona en cualquier página y abre Recordatorios si está cerrado.",
-        "fr": "Tous les rappels non terminés avec une date, jour par jour. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
-        "ru": "Все незавершённые напоминания с датой, по дням. Работает с любой страницы и запускает «Напоминания», если они закрыты."
+        "en": "Shows every open reminder with a date, day by day. Works from any page and starts Reminders if it’s closed.",
+        "de": "Zeigt alle offenen Erinnerungen mit Datum, Tag für Tag. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
+        "es": "Muestra todos los recordatorios pendientes con fecha, día a día. Funciona en cualquier página y abre Recordatorios si está cerrado.",
+        "fr": "Affiche tous les rappels non terminés avec une date, jour par jour. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
+        "ru": "Показывает все незавершённые напоминания с датой, по дням. Работает с любой страницы и запускает «Напоминания», если они закрыты."
       },
       "tapAction": {
         "en": "Opens the Scheduled list",
@@ -267,17 +267,17 @@
       },
       "summary": {
         "en": "Opens Reminders on the Flagged list",
-        "de": "Öffnet Erinnerungen mit der Liste „Markiert“",
+        "de": "Öffnet in Erinnerungen die Liste „Markiert“",
         "es": "Abre Recordatorios en la lista Marcados",
         "fr": "Ouvre Rappels sur la liste Avec drapeau",
-        "ru": "Открывает «Напоминания» на списке «С флажком»"
+        "ru": "Открывает в «Напоминаниях» список «С флажком»"
       },
       "details": {
-        "en": "Every open reminder with a flag. Works from any page and starts Reminders if it’s closed.",
-        "de": "Alle offenen Erinnerungen mit Markierung. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
-        "es": "Todos los recordatorios pendientes con marcador. Funciona en cualquier página y abre Recordatorios si está cerrado.",
-        "fr": "Tous les rappels non terminés avec un drapeau. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
-        "ru": "Все незавершённые напоминания с флажком. Работает с любой страницы и запускает «Напоминания», если они закрыты."
+        "en": "Shows every open reminder with a flag. Works from any page and starts Reminders if it’s closed.",
+        "de": "Zeigt alle offenen Erinnerungen mit Markierung. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
+        "es": "Muestra todos los recordatorios pendientes con marcador. Funciona en cualquier página y abre Recordatorios si está cerrado.",
+        "fr": "Affiche tous les rappels non terminés avec un drapeau. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
+        "ru": "Показывает все незавершённые напоминания с флажком. Работает с любой страницы и запускает «Напоминания», если они закрыты."
       },
       "tapAction": {
         "en": "Opens the Flagged list",
@@ -311,17 +311,17 @@
       },
       "summary": {
         "en": "Opens Reminders on the All list",
-        "de": "Öffnet Erinnerungen mit der Liste „Alle“",
+        "de": "Öffnet in Erinnerungen die Liste „Alle“",
         "es": "Abre Recordatorios en la lista Todos",
         "fr": "Ouvre Rappels sur la liste Tous",
-        "ru": "Открывает «Напоминания» на списке «Все»"
+        "ru": "Открывает в «Напоминаниях» список «Все»"
       },
       "details": {
-        "en": "Every open reminder of every list, list by list. Works from any page and starts Reminders if it’s closed.",
-        "de": "Alle offenen Erinnerungen aller Listen, Liste für Liste. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
-        "es": "Todos los recordatorios pendientes de todas las listas, lista a lista. Funciona en cualquier página y abre Recordatorios si está cerrado.",
-        "fr": "Tous les rappels non terminés de toutes les listes, liste par liste. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
-        "ru": "Все незавершённые напоминания всех списков, по спискам. Работает с любой страницы и запускает «Напоминания», если они закрыты."
+        "en": "Shows every open reminder, list by list. Works from any page and starts Reminders if it’s closed.",
+        "de": "Zeigt alle offenen Erinnerungen, Liste für Liste. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
+        "es": "Muestra todos los recordatorios pendientes, lista a lista. Funciona en cualquier página y abre Recordatorios si está cerrado.",
+        "fr": "Affiche tous les rappels non terminés, liste par liste. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
+        "ru": "Показывает все незавершённые напоминания, список за списком. Работает с любой страницы и запускает «Напоминания», если они закрыты."
       },
       "tapAction": {
         "en": "Opens the All list",
@@ -355,17 +355,17 @@
       },
       "summary": {
         "en": "Opens Reminders on the Completed list",
-        "de": "Öffnet Erinnerungen mit der Liste „Erledigt“",
+        "de": "Öffnet in Erinnerungen die Liste „Erledigt“",
         "es": "Abre Recordatorios en la lista Completados",
         "fr": "Ouvre Rappels sur la liste Terminés",
-        "ru": "Открывает «Напоминания» на списке «Завершено»"
+        "ru": "Открывает в «Напоминаниях» список «Завершено»"
       },
       "details": {
-        "en": "The reminders you have completed. Works from any page and starts Reminders if it’s closed.",
-        "de": "Die Erinnerungen, die du erledigt hast. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
-        "es": "Los recordatorios que has completado. Funciona en cualquier página y abre Recordatorios si está cerrado.",
-        "fr": "Les rappels que vous avez terminés. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
-        "ru": "Напоминания, которые вы завершили. Работает с любой страницы и запускает «Напоминания», если они закрыты."
+        "en": "Shows the reminders you’ve completed. Works from any page and starts Reminders if it’s closed.",
+        "de": "Zeigt die Erinnerungen, die du erledigt hast. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
+        "es": "Muestra los recordatorios que has completado. Funciona en cualquier página y abre Recordatorios si está cerrado.",
+        "fr": "Affiche les rappels que vous avez terminés. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
+        "ru": "Показывает напоминания, которые вы завершили. Работает с любой страницы и запускает «Напоминания», если они закрыты."
       },
       "tapAction": {
         "en": "Opens the Completed list",
@@ -399,17 +399,17 @@
       },
       "summary": {
         "en": "Opens Reminders on a list of your own",
-        "de": "Öffnet Erinnerungen mit einer deiner Listen",
+        "de": "Öffnet in Erinnerungen eine deiner Listen",
         "es": "Abre Recordatorios en una lista tuya",
         "fr": "Ouvre Rappels sur l’une de vos listes",
-        "ru": "Открывает «Напоминания» на вашем списке"
+        "ru": "Открывает в «Напоминаниях» один из ваших списков"
       },
       "details": {
-        "en": "Write the list’s name, as the sidebar shows it, on the first line of the button’s script; until then, the button says so. Works from any page and starts Reminders if it’s closed.",
-        "de": "Trag den Namen der Liste, wie die Seitenleiste ihn zeigt, in der ersten Zeile des Skripts der Taste ein; bis dahin sagt die Taste das. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
-        "es": "Pon el nombre de la lista, como lo muestra la barra lateral, en la primera línea del script del botón; hasta entonces, el botón te lo recuerda. Funciona en cualquier página y abre Recordatorios si está cerrado.",
-        "fr": "Indiquez le nom de la liste, tel que la barre latérale l’affiche, à la première ligne du script du bouton ; d’ici là, le bouton vous le rappelle. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
-        "ru": "Задайте имя списка, как в боковой панели, в первой строке скрипта кнопки; пока его нет, кнопка об этом скажет. Работает с любой страницы и запускает «Напоминания», если они закрыты."
+        "en": "Write the list’s name in the button’s settings, as the sidebar shows it. Works from any page and starts Reminders if it’s closed.",
+        "de": "Trag den Namen der Liste in den Einstellungen der Taste ein, so wie die Seitenleiste ihn zeigt. Funktioniert auf jeder Seite und startet Erinnerungen, wenn es geschlossen ist.",
+        "es": "Escribe el nombre de la lista en los ajustes del botón, tal como aparece en la barra lateral. Funciona en cualquier página y abre Recordatorios si está cerrado.",
+        "fr": "Indiquez le nom de la liste dans les réglages du bouton, tel que la barre latérale l’affiche. Fonctionne depuis n’importe quelle page et lance Rappels s’il est fermé.",
+        "ru": "Впишите в настройках кнопки название списка так, как оно написано в боковой панели. Работает с любой страницы и запускает «Напоминания», если они закрыты."
       },
       "tapAction": {
         "en": "Opens the list you set",
@@ -452,11 +452,11 @@
         "ru": "Отмечает выбранные напоминания как завершённые (⇧⌘C)"
       },
       "details": {
-        "en": "Edit › Mark as Completed (⇧⌘C) for the reminders selected in Reminders. Works while Reminders is in front.",
-        "de": "Bearbeiten › Erledigt (⇧⌘C) für die in Erinnerungen ausgewählten Erinnerungen. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Edición › Marcar como completado (⇧⌘C) para los recordatorios seleccionados. Funciona cuando Recordatorios está delante.",
-        "fr": "Édition › Marquer comme terminé (⇧⌘C) pour les rappels sélectionnés. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Правка › Отметить как завершенное (⇧⌘C) для выбранных напоминаний. Работает, когда «Напоминания» на переднем плане."
+        "en": "Edit › Mark as Completed (⇧⌘C). Works while Reminders is in front.",
+        "de": "Bearbeiten › Erledigt (⇧⌘C). Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Edición › Marcar como completado (⇧⌘C). Funciona cuando Recordatorios está delante.",
+        "fr": "Édition › Marquer comme terminé (⇧⌘C). Fonctionne quand Rappels est au premier plan.",
+        "ru": "Правка › Отметить как завершенное (⇧⌘C). Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Marks the selected reminders as completed",
@@ -493,17 +493,17 @@
       },
       "summary": {
         "en": "Moves the selected reminders to tomorrow (⌥⌘T); hold for next week",
-        "de": "Verschiebt die ausgewählten Erinnerungen auf morgen (⌥⌘T); halten: nächste Woche",
+        "de": "Verschiebt die ausgewählten Erinnerungen auf morgen (⌥⌘T); halten für nächste Woche",
         "es": "Pasa los recordatorios seleccionados a mañana (⌥⌘T); mantén pulsado para la semana que viene",
         "fr": "Reporte les rappels sélectionnés à demain (⌥⌘T) ; maintenez pour la semaine prochaine",
         "ru": "Переносит выбранные напоминания на завтра (⌥⌘T); удержание — на следующую неделю"
       },
       "details": {
-        "en": "Edit › Mark Due Date As › Tomorrow (⌥⌘T) or Next Week (⌥⌘K), for the reminders selected in Reminders. Works while Reminders is in front.",
-        "de": "Bearbeiten › Fälligkeitsdatum › Morgen (⌥⌘T) oder Nächste Woche (⌥⌘K) für die ausgewählten Erinnerungen. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Edición › Marcar fecha límite como › Mañana (⌥⌘T) o La semana que viene (⌥⌘K) para los recordatorios seleccionados. Funciona cuando Recordatorios está delante.",
-        "fr": "Édition › Marquer l’échéance comme › Demain (⌥⌘T) ou La semaine prochaine (⌥⌘K) pour les rappels sélectionnés. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Правка › Назначить дату завершения › Завтра (⌥⌘T) или На следующей неделе (⌥⌘K) для выбранных напоминаний. Работает, когда «Напоминания» на переднем плане."
+        "en": "Edit › Mark Due Date As › Tomorrow (⌥⌘T) or Next Week (⌥⌘K). Works while Reminders is in front.",
+        "de": "Bearbeiten › Fälligkeitsdatum › Morgen (⌥⌘T) oder Nächste Woche (⌥⌘K). Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Edición › Marcar fecha límite como › Mañana (⌥⌘T) o La semana que viene (⌥⌘K). Funciona cuando Recordatorios está delante.",
+        "fr": "Édition › Marquer l’échéance comme › Demain (⌥⌘T) ou La semaine prochaine (⌥⌘K). Fonctionne quand Rappels est au premier plan.",
+        "ru": "Правка › Назначить дату завершения › Завтра (⌥⌘T) или На следующей неделе (⌥⌘K). Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Sets the due date to tomorrow",
@@ -558,11 +558,11 @@
         "ru": "Ставит или снимает флажок у выбранных напоминаний (⇧⌘F)"
       },
       "details": {
-        "en": "Edit › Flag (⇧⌘F) for the reminders selected in Reminders: a flagged one loses its flag. Works while Reminders is in front.",
-        "de": "Bearbeiten › Markierung (⇧⌘F) für die ausgewählten Erinnerungen: Eine markierte verliert ihre Markierung. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Edición › Marcador (⇧⌘F) para los recordatorios seleccionados: uno marcado pierde el marcador. Funciona cuando Recordatorios está delante.",
-        "fr": "Édition › Marquer d’un drapeau (⇧⌘F) pour les rappels sélectionnés : un rappel marqué perd son drapeau. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Правка › Установить флажок (⇧⌘F) для выбранных напоминаний: с отмеченного флажок снимается. Работает, когда «Напоминания» на переднем плане."
+        "en": "Edit › Flag (⇧⌘F). Works while Reminders is in front.",
+        "de": "Bearbeiten › Markierung (⇧⌘F). Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Edición › Marcador (⇧⌘F). Funciona cuando Recordatorios está delante.",
+        "fr": "Édition › Marquer d’un drapeau (⇧⌘F). Fonctionne quand Rappels est au premier plan.",
+        "ru": "Правка › Установить флажок (⇧⌘F). Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Flags or unflags the selected reminders",
@@ -605,11 +605,11 @@
         "ru": "Показывает свойства выбранного напоминания (⌘I)"
       },
       "details": {
-        "en": "File › Show Info (⌘I): date, place, priority and more for the reminder selected in Reminders. Works while Reminders is in front.",
-        "de": "Ablage › Informationen einblenden (⌘I): Datum, Ort, Priorität und mehr zur ausgewählten Erinnerung. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Archivo › Mostrar información (⌘I): fecha, ubicación, prioridad y más del recordatorio seleccionado. Funciona cuando Recordatorios está delante.",
-        "fr": "Fichier › Afficher les informations (⌘I) : date, lieu, priorité et plus pour le rappel sélectionné. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Файл › Показать свойства (⌘I): дата, место, приоритет и другое у выбранного напоминания. Работает, когда «Напоминания» на переднем плане."
+        "en": "File › Show Info (⌘I). You’ll see the reminder’s date, location, priority and more. Works while Reminders is in front.",
+        "de": "Ablage › Informationen einblenden (⌘I). Du siehst Datum, Ort, Priorität und mehr. Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Archivo › Mostrar información (⌘I). Verás la fecha, la ubicación, la prioridad y más. Funciona cuando Recordatorios está delante.",
+        "fr": "Fichier › Afficher les informations (⌘I). Vous y voyez la date, le lieu, la priorité et plus encore. Fonctionne quand Rappels est au premier plan.",
+        "ru": "Файл › Показать свойства (⌘I). Вы увидите дату, место, приоритет и другое. Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Shows the selected reminder’s details",
@@ -652,11 +652,11 @@
         "ru": "Переносит просроченные напоминания открытого списка на сегодня (⌃⌘T)"
       },
       "details": {
-        "en": "Edit › Mark Due Date As › Mark All Overdue to Today (⌃⌘T); in Today, that is every overdue reminder. Works while Reminders is in front.",
-        "de": "Bearbeiten › Fälligkeitsdatum › Alle überfälligen als „Heute“ markieren (⌃⌘T); in „Heute“ sind das alle überfälligen Erinnerungen. Funktioniert, wenn Erinnerungen vorne ist.",
-        "es": "Edición › Marcar fecha límite como › Hoy para todos los recordatorios atrasados (⌃⌘T); en Hoy, son todos los atrasados. Funciona cuando Recordatorios está delante.",
-        "fr": "Édition › Marquer l’échéance comme › Marquer toutes les tâches en retard pour aujourd’hui (⌃⌘T) ; dans Aujourd’hui, ce sont tous les rappels en retard. Fonctionne quand Rappels est au premier plan.",
-        "ru": "Правка › Назначить дату завершения › Назначить все просроченные на сегодня (⌃⌘T); в списке «Сегодня» это все просроченные. Работает, когда «Напоминания» на переднем плане."
+        "en": "Edit › Mark Due Date As › Mark All Overdue to Today (⌃⌘T). With the Today list open, it moves every overdue reminder. Works while Reminders is in front.",
+        "de": "Bearbeiten › Fälligkeitsdatum › Alle überfälligen als „Heute“ markieren (⌃⌘T). Ist die Liste „Heute“ geöffnet, verschiebt die Taste alle überfälligen Erinnerungen. Funktioniert, wenn Erinnerungen vorne ist.",
+        "es": "Edición › Marcar fecha límite como › Hoy para todos los recordatorios atrasados (⌃⌘T). Con la lista Hoy abierta, pasa a hoy todos los recordatorios atrasados. Funciona cuando Recordatorios está delante.",
+        "fr": "Édition › Marquer l’échéance comme › Marquer toutes les tâches en retard pour aujourd’hui (⌃⌘T). Si la liste Aujourd’hui est ouverte, le bouton reporte tous les rappels en retard. Fonctionne quand Rappels est au premier plan.",
+        "ru": "Правка › Назначить дату завершения › Назначить все просроченные на сегодня (⌃⌘T). Если открыт список «Сегодня», кнопка перенесёт все просроченные напоминания. Работает, когда «Напоминания» на переднем плане."
       },
       "tapAction": {
         "en": "Moves overdue reminders to today",
@@ -694,18 +694,18 @@
         "ru": "Напоминания"
       },
       "summary": {
-        "en": "Today at a glance, and what is on your Mac into a reminder in one tap",
-        "de": "Heute auf einen Blick – und was auf dem Mac ist, mit einem Tippen als Erinnerung",
-        "es": "Hoy de un vistazo, y lo que hay en tu Mac, en un recordatorio con un toque",
-        "fr": "Aujourd’hui d’un coup d’œil, et ce qui est sur le Mac en rappel d’un toucher",
-        "ru": "Дела на сегодня одним взглядом и всё, что на Mac, — в напоминание одним нажатием"
+        "en": "What’s due today at a glance, and one-tap reminders from the clipboard or your browser",
+        "de": "Heute Fälliges auf einen Blick und neue Erinnerungen mit einem Tippen aus der Zwischenablage oder dem Browser",
+        "es": "Lo que vence hoy de un vistazo, y recordatorios con un toque desde el portapapeles o el navegador",
+        "fr": "Ce qui vous attend aujourd’hui d’un coup d’œil, et des rappels d’un toucher depuis le presse-papiers ou le navigateur",
+        "ru": "Дела на сегодня перед глазами и напоминания одним нажатием из буфера или браузера"
       },
       "details": {
-        "en": "The Reminders widget, From Clipboard, Read Later, the list buttons and Open List work from any page; the others while Reminders is in front.",
-        "de": "Das Widget „Erinnerungen“, Kopierter Text, Später lesen, die Listentasten und Liste öffnen klappen auf jeder Seite, die übrigen, wenn Erinnerungen vorne ist.",
-        "es": "El widget Recordatorios, Del portapapeles, Leer después, los botones de listas y Abrir lista funcionan en cualquier página; los demás, cuando Recordatorios está delante.",
-        "fr": "Le widget Rappels, Du presse-papiers, Lire plus tard, les boutons de listes et Ouvrir la liste fonctionnent depuis n’importe quelle page ; les autres, quand Rappels est au premier plan.",
-        "ru": "Виджет «Напоминания», «Из буфера», «Прочитать позже», кнопки списков и «Открыть список» работают с любой страницы, остальные — когда «Напоминания» на переднем плане."
+        "en": "The widget, From Clipboard, Read Later and the list buttons work from any page, even with Reminders closed. The other buttons work while Reminders is in front.",
+        "de": "Das Widget, Kopierter Text, Später lesen und die Listentasten funktionieren auf jeder Seite, auch wenn Erinnerungen geschlossen ist. Die übrigen Tasten funktionieren, wenn Erinnerungen vorne ist.",
+        "es": "El widget, Del portapapeles, Leer después y los botones de listas funcionan en cualquier página, incluso con Recordatorios cerrado. Los demás botones funcionan cuando Recordatorios está delante.",
+        "fr": "Le widget, Du presse-papiers, Lire plus tard et les boutons de listes fonctionnent depuis n’importe quelle page, même quand Rappels est fermé. Les autres boutons fonctionnent quand Rappels est au premier plan.",
+        "ru": "Виджет, «Из буфера», «Прочитать позже» и кнопки списков работают с любой страницы, даже когда «Напоминания» закрыты. Остальные кнопки работают, когда «Напоминания» на переднем плане."
       },
       "bindByDefault": true,
       "placements": [

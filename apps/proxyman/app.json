@@ -1,6 +1,6 @@
 {
   "id": "proxyman",
-  "revision": 5,
+  "revision": 6,
   "name": "Proxyman",
   "bundleIds": ["com.proxyman.NSProxy"],
   "category": "development",
@@ -16,11 +16,11 @@
         "ru": "Пауза или продолжение записи; удержание — очистить сессию"
       },
       "details": {
-        "en": "Same as Tools › Toggle Recording: while paused, new requests stay out of the list and the captured ones remain. Works from any app while Proxyman is running.",
-        "de": "Wie Tools › Toggle Recording: In der Pause kommen keine neuen Anfragen in die Liste, die aufgezeichneten bleiben. Funktioniert aus jeder App, solange Proxyman läuft.",
-        "es": "Como Tools › Toggle Recording: en pausa, las solicitudes nuevas no entran en la lista y las capturadas se quedan. Funciona desde cualquier app mientras Proxyman esté abierto.",
-        "fr": "Comme Tools › Toggle Recording : en pause, les nouvelles requêtes n’entrent pas dans la liste et celles déjà capturées restent. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
-        "ru": "Как Tools › Toggle Recording: на паузе новые запросы не попадают в список, записанные остаются. Работает из любого приложения, пока Proxyman запущен."
+        "en": "Same as Tools › Toggle Recording. While paused, new requests stay out of the list, and the captured ones remain. Works from any app while Proxyman is running.",
+        "de": "Wie Tools › Toggle Recording. In der Pause kommen keine neuen Anfragen in die Liste, die aufgezeichneten bleiben. Funktioniert aus jeder App, solange Proxyman läuft.",
+        "es": "Como Tools › Toggle Recording. En pausa, las solicitudes nuevas no entran en la lista y las capturadas se quedan. Funciona desde cualquier app mientras Proxyman esté abierto.",
+        "fr": "Comme Tools › Toggle Recording. Pendant la pause, les nouvelles requêtes n’entrent pas dans la liste, et celles déjà capturées y restent. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
+        "ru": "То же, что Tools › Toggle Recording. На паузе новые запросы не попадают в список, а записанные остаются. Работает из любого приложения, пока Proxyman запущен."
       },
       "tapAction": {
         "en": "Pauses or resumes recording",
@@ -30,11 +30,11 @@
         "ru": "Ставит запись на паузу или продолжает её"
       },
       "holdAction": {
-        "en": "⚠️ Clears the session: every captured request, domain and client goes (Flow › Clear Session)",
-        "de": "⚠️ Leert die Sitzung: Alle aufgezeichneten Anfragen, Domains und Clients verschwinden (Flow › Clear Session)",
-        "es": "⚠️ Vacía la sesión: se borran todas las solicitudes, dominios y clientes capturados (Flow › Clear Session)",
-        "fr": "⚠️ Vide la session : toutes les requêtes, domaines et clients capturés disparaissent (Flow › Clear Session)",
-        "ru": "⚠️ Очищает сессию: все записанные запросы, домены и клиенты удаляются (Flow › Clear Session)"
+        "en": "⚠️ Clears every captured request, domain and client from the session (Flow › Clear Session)",
+        "de": "⚠️ Löscht alle aufgezeichneten Anfragen, Domains und Clients aus der Sitzung (Flow › Clear Session)",
+        "es": "⚠️ Borra de la sesión todas las solicitudes, dominios y clientes capturados (Flow › Clear Session)",
+        "fr": "⚠️ Efface de la session toutes les requêtes, domaines et clients capturés (Flow › Clear Session)",
+        "ru": "⚠️ Удаляет из сессии все записанные запросы, домены и клиенты (Flow › Clear Session)"
       },
       "button": {
         "icon": {"sfSymbol": {"name": "record.circle"}},
@@ -54,11 +54,11 @@
         "ru": "Идёт ли веб-трафик Mac через Proxyman; удержание — переключить"
       },
       "details": {
-        "en": "Green: the Mac’s proxy settings send web traffic to this Proxyman. Orange: to another proxy on this Mac. Grey: no proxy on this Mac. Checked every few seconds.",
-        "de": "Grün: Die Proxy-Einstellungen des Mac schicken den Webverkehr an dieses Proxyman. Orange: an einen anderen Proxy auf diesem Mac. Grau: kein Proxy auf diesem Mac. Alle paar Sekunden geprüft.",
-        "es": "Verde: los ajustes de proxy del Mac envían el tráfico web a este Proxyman. Naranja: a otro proxy de este Mac. Gris: ningún proxy en este Mac. Se revisa cada pocos segundos.",
-        "fr": "Vert : les réglages proxy du Mac envoient le trafic web à ce Proxyman. Orange : à un autre proxy de ce Mac. Gris : aucun proxy sur ce Mac. Relevé à quelques secondes d’intervalle.",
-        "ru": "Зелёный — настройки прокси Mac отправляют веб-трафик в этот Proxyman, оранжевый — в другой прокси на этом Mac, серый — прокси на этом Mac нет. Проверяется каждые несколько секунд."
+        "en": "The button turns green when the Mac’s proxy settings send web traffic to this Proxyman, and orange when they send it to another proxy on this Mac. Gray means no proxy on this Mac.",
+        "de": "Die Taste wird grün, wenn die Proxy-Einstellungen des Mac den Webverkehr an dieses Proxyman schicken, und orange, wenn sie ihn an einen anderen Proxy auf diesem Mac schicken. Ist sie grau, läuft der Verkehr über keinen Proxy auf diesem Mac.",
+        "es": "El botón se pone verde cuando los ajustes de proxy del Mac envían el tráfico web a este Proxyman, y naranja cuando lo envían a otro proxy de este Mac. Si está gris, el tráfico no pasa por ningún proxy de este Mac.",
+        "fr": "Le bouton devient vert quand les réglages proxy du Mac envoient le trafic web à ce Proxyman, et orange quand ils l’envoient à un autre proxy de ce Mac. S’il est gris, le trafic ne passe par aucun proxy de ce Mac.",
+        "ru": "Кнопка зелёная, когда настройки прокси Mac отправляют веб-трафик в этот Proxyman, и оранжевая, когда в другой прокси на этом Mac. Если она серая, трафик не идёт ни через какой прокси на этом Mac."
       },
       "tapAction": {
         "en": "Brings Proxyman to the front if it’s running",
@@ -93,11 +93,11 @@
         "ru": "Открывает панель фильтра (⌘F); удержание — фильтр доменов и приложений"
       },
       "details": {
-        "en": "The filter bar of the session tab narrows the list by URL, header, body, status code or content type; Esc hides it. Works while Proxyman is in front.",
-        "de": "Die Filterleiste des Sitzungs-Tabs grenzt die Liste nach URL, Header, Body, Statuscode oder Inhaltstyp ein; Esc blendet sie aus. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "La barra de filtro de la pestaña de sesión acota la lista por URL, cabecera, cuerpo, código de estado o tipo de contenido; Esc la oculta. Funciona cuando Proxyman está delante.",
-        "fr": "La barre de filtre de l’onglet de session restreint la liste par URL, en-tête, corps, code d’état ou type de contenu ; Échap la masque. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "Панель фильтра вкладки сессии сужает список по URL, заголовку, телу, коду ответа или типу содержимого; Esc скрывает её. Работает, когда Proxyman на переднем плане."
+        "en": "The filter bar narrows the list by URL, header, body, status code or content type. Esc hides it. Works while Proxyman is in front.",
+        "de": "Die Filterleiste grenzt die Liste nach URL, Header, Body, Statuscode oder Inhaltstyp ein. Esc blendet sie aus. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "La barra de filtro acota la lista por URL, cabecera, cuerpo, código de estado o tipo de contenido. Esc la oculta. Funciona cuando Proxyman está delante.",
+        "fr": "La barre de filtre restreint la liste par URL, en-tête, corps, code d’état ou type de contenu. Échap la masque. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Панель фильтра сужает список запросов по URL, заголовку, телу, коду ответа или типу содержимого. Esc прячет её. Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Opens the filter bar",
@@ -132,11 +132,11 @@
         "ru": "Поиск и запуск любого инструмента Proxyman (⇧⌘P)"
       },
       "details": {
-        "en": "View › Show Command Palette: search the debugging tools, turn them on or off, open the setup guides. Works while Proxyman is in front.",
-        "de": "View › Show Command Palette: Debugging-Werkzeuge suchen, ein- oder ausschalten, Einrichtungsanleitungen öffnen. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "View › Show Command Palette: busca las herramientas de depuración, actívalas o desactívalas y abre las guías de configuración. Funciona cuando Proxyman está delante.",
-        "fr": "View › Show Command Palette : cherchez les outils de débogage, activez-les ou désactivez-les, ouvrez les guides de configuration. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "View › Show Command Palette: поиск инструментов отладки, их включение и выключение, руководства по настройке. Работает, когда Proxyman на переднем плане."
+        "en": "Find any debugging tool, turn it on or off, or open a setup guide (View › Show Command Palette). Works while Proxyman is in front.",
+        "de": "Such ein Debugging-Werkzeug, schalte es ein oder aus oder öffne eine Einrichtungsanleitung (View › Show Command Palette). Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Busca cualquier herramienta de depuración, actívala o desactívala, o abre una guía de configuración (View › Show Command Palette). Funciona cuando Proxyman está delante.",
+        "fr": "Cherchez un outil de débogage, activez-le ou désactivez-le, ou ouvrez un guide de configuration (View › Show Command Palette). Fonctionne quand Proxyman est au premier plan.",
+        "ru": "В палитре можно найти любой инструмент отладки, включить или выключить его и открыть руководство по настройке (View › Show Command Palette). Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Opens the command palette",
@@ -163,11 +163,11 @@
         "ru": "Повторно отправляет выбранный запрос (⌘↩); удержание — сначала изменить"
       },
       "details": {
-        "en": "Flow › Repeat: the same URL, headers and body go to the server again, and the new response joins the list. Works while Proxyman is in front.",
-        "de": "Flow › Repeat: Dieselbe URL, Header und Body gehen erneut an den Server, die neue Antwort kommt in die Liste. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "Flow › Repeat: la misma URL, cabeceras y cuerpo vuelven al servidor, y la nueva respuesta entra en la lista. Funciona cuando Proxyman está delante.",
-        "fr": "Flow › Repeat : la même URL, les mêmes en-têtes et le même corps repartent au serveur, et la nouvelle réponse rejoint la liste. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "Flow › Repeat: тот же URL, заголовки и тело снова уходят на сервер, новый ответ появляется в списке. Работает, когда Proxyman на переднем плане."
+        "en": "The request goes to the server again with the same URL, headers and body, and the new response joins the list (Flow › Repeat). Works while Proxyman is in front.",
+        "de": "Die Anfrage geht mit derselben URL, denselben Headern und demselben Body erneut an den Server, und die neue Antwort kommt in die Liste (Flow › Repeat). Funktioniert, wenn Proxyman vorne ist.",
+        "es": "La solicitud vuelve al servidor con la misma URL, cabeceras y cuerpo, y la nueva respuesta entra en la lista (Flow › Repeat). Funciona cuando Proxyman está delante.",
+        "fr": "La requête repart au serveur avec la même URL, les mêmes en-têtes et le même corps, et la nouvelle réponse rejoint la liste (Flow › Repeat). Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Запрос с тем же URL, заголовками и телом снова уйдёт на сервер, а новый ответ появится в списке (Flow › Repeat). Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Repeats the selected request",
@@ -202,11 +202,11 @@
         "ru": "Новый запрос с нуля (⌥⌘C)"
       },
       "details": {
-        "en": "Tools › Compose Request: set the method, URL, headers and body, then send. You can also paste a cURL command. Works while Proxyman is in front.",
-        "de": "Tools › Compose Request: Leg Methode, URL, Header und Body fest und sende die Anfrage. Du kannst auch einen cURL-Befehl einfügen. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "Tools › Compose Request: define el método, la URL, las cabeceras y el cuerpo, y envía la solicitud. También puedes pegar un comando cURL. Funciona cuando Proxyman está delante.",
-        "fr": "Tools › Compose Request : choisissez la méthode, l’URL, les en-têtes et le corps, puis envoyez. Vous pouvez aussi coller une commande cURL. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "Tools › Compose Request: задайте метод, URL, заголовки и тело и отправьте запрос. Можно и вставить команду cURL. Работает, когда Proxyman на переднем плане."
+        "en": "Set the method, URL, headers and body, then send the request (Tools › Compose Request). You can also paste a cURL command. Works while Proxyman is in front.",
+        "de": "Leg Methode, URL, Header und Body fest und sende die Anfrage (Tools › Compose Request). Du kannst auch einen cURL-Befehl einfügen. Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Define el método, la URL, las cabeceras y el cuerpo, y envía la solicitud (Tools › Compose Request). También puedes pegar un comando cURL. Funciona cuando Proxyman está delante.",
+        "fr": "Définissez la méthode, l’URL, les en-têtes et le corps, puis envoyez la requête (Tools › Compose Request). Vous pouvez aussi coller une commande cURL. Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Задайте метод, URL, заголовки и тело и отправьте запрос (Tools › Compose Request). Можно и вставить команду cURL. Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Opens Compose",
@@ -233,11 +233,11 @@
         "ru": "Копирует выбранный запрос командой curl (⇧⌘C)"
       },
       "details": {
-        "en": "Edit › Copy as cURL: method, URL, headers and body in one command, ready to paste into Terminal. Works while Proxyman is in front.",
-        "de": "Edit › Copy as cURL: Methode, URL, Header und Body in einem Befehl, bereit zum Einfügen ins Terminal. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "Edit › Copy as cURL: método, URL, cabeceras y cuerpo en un solo comando, listo para pegar en Terminal. Funciona cuando Proxyman está delante.",
-        "fr": "Edit › Copy as cURL : méthode, URL, en-têtes et corps en une commande, prête à coller dans Terminal. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "Edit › Copy as cURL: метод, URL, заголовки и тело одной командой — можно вставить в Терминал. Работает, когда Proxyman на переднем плане."
+        "en": "The method, URL, headers and body go into one command you can paste into Terminal (Edit › Copy as cURL). Works while Proxyman is in front.",
+        "de": "Methode, URL, Header und Body landen in einem Befehl, den du ins Terminal einfügen kannst (Edit › Copy as cURL). Funktioniert, wenn Proxyman vorne ist.",
+        "es": "El método, la URL, las cabeceras y el cuerpo quedan en un solo comando que puedes pegar en Terminal (Edit › Copy as cURL). Funciona cuando Proxyman está delante.",
+        "fr": "La méthode, l’URL, les en-têtes et le corps se retrouvent dans une seule commande, que vous pouvez coller dans Terminal (Edit › Copy as cURL). Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Метод, URL, заголовки и тело окажутся в одной команде, которую можно вставить в Терминал (Edit › Copy as cURL). Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Copies the selected request as cURL",
@@ -264,11 +264,11 @@
         "ru": "Держит выбранным самый новый запрос (⇧⌘L)"
       },
       "details": {
-        "en": "View › Auto Select the Latest Request: each new request is selected as it comes in, so its details stay on screen. Works while Proxyman is in front.",
-        "de": "View › Auto Select the Latest Request: Jede neue Anfrage wird beim Eintreffen ausgewählt, ihre Details bleiben im Blick. Funktioniert, wenn Proxyman vorne ist.",
-        "es": "View › Auto Select the Latest Request: cada solicitud nueva se selecciona al llegar, así sus detalles quedan a la vista. Funciona cuando Proxyman está delante.",
-        "fr": "View › Auto Select the Latest Request : chaque nouvelle requête est sélectionnée à son arrivée, ses détails restent à l’écran. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "View › Auto Select the Latest Request: каждый новый запрос выбирается, как только приходит, и его подробности остаются на экране. Работает, когда Proxyman на переднем плане."
+        "en": "Each new request is selected as soon as it arrives, so its details are on screen right away (View › Auto Select the Latest Request). Works while Proxyman is in front.",
+        "de": "Jede neue Anfrage wird ausgewählt, sobald sie eintrifft, und ihre Details sind sofort zu sehen (View › Auto Select the Latest Request). Funktioniert, wenn Proxyman vorne ist.",
+        "es": "Cada solicitud nueva se selecciona en cuanto llega, y sus detalles se ven al momento (View › Auto Select the Latest Request). Funciona cuando Proxyman está delante.",
+        "fr": "Chaque nouvelle requête est sélectionnée dès son arrivée, et ses détails s’affichent aussitôt (View › Auto Select the Latest Request). Fonctionne quand Proxyman est au premier plan.",
+        "ru": "Каждый новый запрос выбирается, как только приходит, и его подробности сразу видны (View › Auto Select the Latest Request). Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Turns Auto Select the Latest Request on or off",
@@ -491,10 +491,10 @@
       },
       "details": {
         "en": "Network Conditions slows matching traffic to a profile such as 3G, with its bandwidth, delay and packet loss. Works while Proxyman is in front.",
-        "de": "Network Conditions drosselt passenden Verkehr auf ein Profil wie 3G – mit dessen Bandbreite, Verzögerung und Paketverlust. Funktioniert, wenn Proxyman vorne ist.",
+        "de": "Network Conditions drosselt passenden Verkehr auf ein Profil wie 3G, mit dessen Bandbreite, Verzögerung und Paketverlust. Funktioniert, wenn Proxyman vorne ist.",
         "es": "Network Conditions limita el tráfico que coincide a un perfil como 3G, con su ancho de banda, retardo y pérdida de paquetes. Funciona cuando Proxyman está delante.",
         "fr": "Network Conditions ralentit le trafic correspondant selon un profil comme la 3G, avec son débit, sa latence et ses pertes de paquets. Fonctionne quand Proxyman est au premier plan.",
-        "ru": "Network Conditions замедляет подходящий трафик по профилю вроде 3G — с его скоростью, задержкой и потерей пакетов. Работает, когда Proxyman на переднем плане."
+        "ru": "Network Conditions замедляет подходящий трафик до профиля вроде 3G, с его скоростью, задержкой и потерей пакетов. Работает, когда Proxyman на переднем плане."
       },
       "tapAction": {
         "en": "Opens Network Conditions",
@@ -599,11 +599,11 @@
         "ru": "Включает или выключает Block List; удержание — открыть его правила"
       },
       "details": {
-        "en": "Tools › Enable/Disable Tools › Block List: while it’s on, requests matching its rules are blocked, so you see how an app copes without those hosts. Works from any app while Proxyman is running.",
-        "de": "Tools › Enable/Disable Tools › Block List: Solange sie an ist, werden passende Anfragen blockiert – so siehst du, wie eine App ohne diese Hosts zurechtkommt. Funktioniert aus jeder App, solange Proxyman läuft.",
-        "es": "Tools › Enable/Disable Tools › Block List: mientras está activa, se bloquean las solicitudes que coinciden con sus reglas, para ver cómo se las arregla una app sin esos hosts. Funciona desde cualquier app mientras Proxyman esté abierto.",
-        "fr": "Tools › Enable/Disable Tools › Block List : tant qu’elle est active, les requêtes qui correspondent à ses règles sont bloquées, pour voir comment une app s’en sort sans ces hôtes. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
-        "ru": "Tools › Enable/Disable Tools › Block List: пока он включён, подходящие под его правила запросы блокируются — видно, как приложение живёт без этих хостов. Работает из любого приложения, пока Proxyman запущен."
+        "en": "While the Block List is on, Proxyman blocks requests that match its rules, so you can see how an app copes without those hosts. Works from any app while Proxyman is running.",
+        "de": "Solange die Block List an ist, blockiert Proxyman Anfragen, die zu ihren Regeln passen. So siehst du, wie eine App ohne diese Hosts zurechtkommt. Funktioniert aus jeder App, solange Proxyman läuft.",
+        "es": "Mientras la Block List está activa, Proxyman bloquea las solicitudes que coinciden con sus reglas. Así ves cómo se las arregla una app sin esos hosts. Funciona desde cualquier app mientras Proxyman esté abierto.",
+        "fr": "Tant que la Block List est active, Proxyman bloque les requêtes qui correspondent à ses règles. Vous voyez ainsi comment une app s’en sort sans ces hôtes. Fonctionne depuis n’importe quelle app tant que Proxyman est ouvert.",
+        "ru": "Пока Block List включён, Proxyman блокирует запросы, которые подходят под его правила. Так видно, как приложение справляется без этих хостов. Работает из любого приложения, пока Proxyman запущен."
       },
       "tapAction": {
         "en": "Turns the Block List on or off",
@@ -639,11 +639,11 @@
         "ru": "Запись, повтор запросов и инструменты отладки под рукой"
       },
       "details": {
-        "en": "Record, Block List and macOS Proxy work even with Proxyman in the background; the other buttons press its shortcuts and work while it is in front. macOS Proxy fits on any other page too.",
-        "de": "Aufnahme, Block List und macOS-Proxy funktionieren auch mit Proxyman im Hintergrund; die übrigen Tasten drücken seine Kurzbefehle und funktionieren, wenn es vorne ist. macOS-Proxy passt auch auf jede andere Seite.",
-        "es": "Grabar, Block List y Proxy de macOS funcionan aunque Proxyman esté en segundo plano; los demás botones pulsan sus atajos y funcionan cuando está delante. Proxy de macOS sirve también en cualquier otra página.",
-        "fr": "Enregistrer, Block List et Proxy macOS fonctionnent même avec Proxyman en arrière-plan ; les autres boutons utilisent ses raccourcis et fonctionnent quand il est au premier plan. Proxy macOS va aussi sur toute autre page.",
-        "ru": "«Запись», Block List и «Прокси macOS» работают, даже когда Proxyman в фоне; остальные кнопки нажимают его сочетания клавиш и работают, когда он на переднем плане. «Прокси macOS» подойдёт и для любой другой страницы."
+        "en": "Record, Block List and macOS Proxy work even with Proxyman in the background. The other buttons work while it’s in front. macOS Proxy fits on any other page too.",
+        "de": "Aufnahme, Block List und macOS-Proxy funktionieren auch mit Proxyman im Hintergrund. Die übrigen Tasten funktionieren, wenn es vorne ist. macOS-Proxy passt auch auf jede andere Seite.",
+        "es": "Grabar, Block List y Proxy de macOS funcionan aunque Proxyman esté en segundo plano. Los demás botones funcionan cuando está delante. Proxy de macOS sirve también en cualquier otra página.",
+        "fr": "Enregistrer, Block List et Proxy macOS fonctionnent même avec Proxyman en arrière-plan. Les autres boutons fonctionnent quand il est au premier plan. Proxy macOS va aussi sur toute autre page.",
+        "ru": "«Запись», Block List и «Прокси macOS» работают, даже когда Proxyman в фоне. Остальные кнопки работают, когда он на переднем плане. «Прокси macOS» можно поставить и на любую другую страницу."
       },
       "bindByDefault": true,
       "placements": [

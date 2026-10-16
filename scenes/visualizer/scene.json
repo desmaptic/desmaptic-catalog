@@ -1,6 +1,6 @@
 {
   "id": "visualizer",
-  "revision": 10,
+  "revision": 11,
   "title": {
     "en": "Visualizer",
     "de": "Visualizer",
@@ -13,14 +13,14 @@
     "de": "Der Klang deines Mac auf der ganzen Seite",
     "es": "El sonido de tu Mac en toda la página",
     "fr": "Le son de votre Mac sur toute la page",
-    "ru": "Звук Mac на всю страницу"
+    "ru": "Картинка на всю страницу, которая движется под звук Mac"
   },
   "details": {
-    "en": "Bars, an amoeba, lava or a curve move to whatever your Mac plays — music, a video, a call. Tap anywhere to show the controls for a few seconds: switch the effect or the colours, or turn it off. Made for landscape; held upright, the picture turns with the phone. The first time the page opens, the Mac asks for permission to capture its sound.",
-    "de": "Balken, eine Amöbe, Lava oder eine Kurve bewegen sich zu allem, was dein Mac abspielt – Musik, ein Video, ein Anruf. Tippe irgendwo, um für ein paar Sekunden die Steuerung zu zeigen: Effekt oder Farben wechseln oder ausschalten. Gemacht fürs Querformat; hochkant dreht sich das Bild mit dem Telefon. Beim ersten Öffnen der Seite fragt der Mac nach der Erlaubnis, seinen Ton aufzunehmen.",
-    "es": "Barras, una ameba, lava o una curva se mueven con todo lo que suena en tu Mac: música, un vídeo, una llamada. Toca en cualquier lugar para ver los controles unos segundos: cambia el efecto o los colores, o apágalo. Pensado para horizontal; en vertical, la imagen gira con el teléfono. La primera vez que abras la página, el Mac pedirá permiso para capturar su sonido.",
-    "fr": "Des barres, une amibe, de la lave ou une courbe bougent au rythme de tout ce que joue votre Mac — musique, vidéo, appel. Touchez n’importe où pour afficher les commandes quelques secondes : changez l’effet ou les couleurs, ou éteignez-le. Pensé pour l’horizontale ; à la verticale, l’image tourne avec le téléphone. La première fois que la page s’ouvre, le Mac demande l’autorisation d’enregistrer son son.",
-    "ru": "Столбики, амёба, лава или кривая движутся подо всё, что играет на Mac: музыку, видео, звонок. Нажмите в любом месте — на несколько секунд появятся кнопки: сменить эффект или цвета, выключить. Сделан для горизонтального положения; если держать телефон вертикально, картинка поворачивается вместе с ним. Когда страница откроется впервые, Mac спросит разрешение записывать свой звук."
+    "en": "Bars, an amoeba, lava or a curve move to whatever your Mac plays, be it music, a video or a call. Tap anywhere to bring up the controls for a few seconds and switch the effect or the colors, or turn it off. It’s made for landscape, and when you hold the phone upright, the picture turns with it.",
+    "de": "Balken, eine Amöbe, Lava oder eine Kurve bewegen sich zu allem, was dein Mac abspielt, ob Musik, Video oder Anruf. Tippe irgendwo, und für ein paar Sekunden erscheint die Steuerung, mit der du Effekt oder Farben wechselst oder alles ausschaltest. Gemacht ist es fürs Querformat, und hältst du das Telefon hochkant, dreht sich das Bild mit.",
+    "es": "Barras, una ameba, lava o una curva se mueven con todo lo que suena en tu Mac, sea música, un vídeo o una llamada. Toca en cualquier lugar y durante unos segundos verás los controles para cambiar el efecto o los colores, o apagarlo. Está pensado para horizontal, y si sostienes el teléfono en vertical, la imagen gira con él.",
+    "fr": "Des barres, une amibe, de la lave ou une courbe bougent au rythme de tout ce que joue votre Mac, musique, vidéo ou appel. Touchez n’importe où pour afficher quelques secondes les commandes, qui changent l’effet ou les couleurs, ou éteignent l’image. C’est pensé pour l’horizontale, et si vous tenez le téléphone à la verticale, l’image tourne avec lui.",
+    "ru": "Столбики, амёба, лава или кривая двигаются под всё, что играет на Mac: музыку, видео, звонок. Нажмите в любом месте, и на несколько секунд появятся кнопки, чтобы сменить эффект или цвета либо выключить картинку. Лучше всего смотреть в горизонтальном положении, а если держать телефон вертикально, картинка повернётся вместе с ним."
   },
   "cover": {
     "source": "@file:cover.svg",
@@ -37,7 +37,7 @@
       "ru": "Визуализатор"
     },
     "tapAction": {
-      "en": "Shows the controls: effect, colours, on and off",
+      "en": "Shows the controls: effect, colors, on and off",
       "de": "Zeigt die Steuerung: Effekt, Farben, an und aus",
       "es": "Muestra los controles: efecto, colores, encender y apagar",
       "fr": "Affiche les commandes : effet, couleurs, marche et arrêt",

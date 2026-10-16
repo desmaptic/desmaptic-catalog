@@ -1,6 +1,6 @@
 {
   "id": "cursor",
-  "revision": 5,
+  "revision": 6,
   "name": "Cursor",
   "bundleIds": ["com.todesktop.230313mzl4w4u92"],
   "category": "development",
@@ -13,14 +13,14 @@
         "de": "Ein neuer Agent, bereit für deine Anfrage (⇧⌘L)",
         "es": "Un agente nuevo, listo para tu petición (⇧⌘L)",
         "fr": "Un nouvel agent, prêt pour votre demande (⇧⌘L)",
-        "ru": "Новый агент, готовый к вашему запросу (⇧⌘L)"
+        "ru": "Новый агент для вашего запроса (⇧⌘L)"
       },
       "details": {
-        "en": "An empty message box for a new agent; code selected in a file or the terminal comes along as context. Works while Cursor is in front, with its default shortcuts.",
-        "de": "Ein leeres Nachrichtenfeld für einen neuen Agenten; in einer Datei oder im Terminal markierter Code kommt als Kontext mit. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Un cuadro de mensaje vacío para un agente nuevo; el código seleccionado en un archivo o en el terminal se añade como contexto. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
-        "fr": "Une zone de message vide pour un nouvel agent ; le code sélectionné dans un fichier ou le terminal est joint comme contexte. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Пустое поле сообщения для нового агента; код, выделенный в файле или терминале, добавляется как контекст. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "An empty message box for a new agent. Code selected in a file or the terminal comes along as context. Works while Cursor is in front, with its default shortcuts.",
+        "de": "Ein leeres Nachrichtenfeld für einen neuen Agenten. Code, den du in einer Datei oder im Terminal markiert hast, kommt als Kontext mit. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Un cuadro de mensaje vacío para un agente nuevo. El código seleccionado en un archivo o en el terminal se añade como contexto. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Une zone de message vide pour un nouvel agent. Le code sélectionné dans un fichier ou dans le terminal est joint comme contexte. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Откроется пустое поле сообщения для нового агента. Если в файле или терминале выделен код, он попадёт в контекст. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Opens a new agent",
@@ -44,14 +44,14 @@
         "de": "Springt ins Nachrichtenfeld des Agenten (⌘L)",
         "es": "Te lleva al cuadro de mensaje del agente (⌘L)",
         "fr": "Place le curseur dans la zone de message de l’agent (⌘L)",
-        "ru": "Переводит в поле сообщения агента (⌘L)"
+        "ru": "Ставит курсор в поле сообщения агента (⌘L)"
       },
       "details": {
-        "en": "Editor window: shows or hides the agent panel; Agents window: goes to the message box. Selected code joins the chat. Works while Cursor is in front, with its default shortcuts.",
-        "de": "Editorfenster: blendet das Agenten-Panel ein oder aus; Agents-Fenster: geht ins Nachrichtenfeld. Markierter Code kommt in den Chat. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Ventana del editor: muestra u oculta el panel del agente; ventana Agents: va al cuadro de mensaje. El código seleccionado pasa al chat. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
-        "fr": "Fenêtre de l’éditeur : affiche ou masque le panneau de l’agent ; fenêtre Agents : va dans la zone de message. Le code sélectionné rejoint le chat. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Окно редактора: показывает или прячет панель агента; окно Agents: переводит в поле сообщения. Выделенный код добавляется в чат. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "In the editor window it shows or hides the agent panel, and in the Agents window it puts the cursor in the message box. Selected code joins the chat. Works while Cursor is in front, with its default shortcuts.",
+        "de": "Im Editorfenster blendet die Taste das Agenten-Panel ein oder aus, im Agents-Fenster setzt sie den Cursor ins Nachrichtenfeld. Markierter Code kommt in den Chat. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "En la ventana del editor muestra u oculta el panel del agente, y en la ventana Agents pone el cursor en el cuadro de mensaje. El código seleccionado pasa al chat. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Dans la fenêtre de l’éditeur, le bouton affiche ou masque le panneau de l’agent, et dans la fenêtre Agents, il place le curseur dans la zone de message. Le code sélectionné rejoint le chat. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "В окне редактора показывает или прячет панель агента, а в окне Agents ставит курсор в поле сообщения. Выделенный код попадёт в чат. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Goes to the agent chat",
@@ -78,11 +78,11 @@
         "ru": "Произнесите запрос вместо набора (⇧⌘Пробел)"
       },
       "details": {
-        "en": "Cursor turns your speech into the message to the agent; tap again to stop. Saying “submit” can send it at once. Works while Cursor is in front, outside its terminal.",
-        "de": "Cursor schreibt, was du sagst, als Nachricht an den Agenten; erneut tippen beendet. Das Wort „submit“ kann sie sofort abschicken. Funktioniert, wenn Cursor vorne ist, außerhalb seines Terminals.",
-        "es": "Cursor convierte tu voz en el mensaje para el agente; vuelve a tocar para parar. Decir «submit» puede enviarlo al momento. Funciona cuando Cursor está delante, fuera de su terminal.",
-        "fr": "Cursor transforme votre voix en message pour l’agent ; touchez à nouveau pour arrêter. Dire « submit » peut l’envoyer aussitôt. Fonctionne quand Cursor est au premier plan, hors de son terminal.",
-        "ru": "Cursor превращает вашу речь в сообщение агенту; повторное нажатие останавливает. Слово «submit» может сразу его отправить. Работает, когда Cursor на переднем плане, вне его терминала."
+        "en": "Cursor turns your speech into a message to the agent, and another tap stops it. Saying “submit” can send it right away. Works while Cursor is in front, outside its terminal.",
+        "de": "Cursor schreibt, was du sagst, als Nachricht an den Agenten, und erneutes Tippen beendet das Diktat. Mit dem Wort „submit“ kannst du sie sofort abschicken. Funktioniert, wenn Cursor vorne ist, außerhalb seines Terminals.",
+        "es": "Cursor convierte tu voz en un mensaje para el agente, y otro toque lo detiene. Al decir «submit», puedes enviarlo al momento. Funciona cuando Cursor está delante, fuera de su terminal.",
+        "fr": "Cursor transforme votre voix en message pour l’agent, et un nouveau toucher l’arrête. En disant « submit », vous pouvez l’envoyer aussitôt. Fonctionne quand Cursor est au premier plan, hors de son terminal.",
+        "ru": "Cursor превращает вашу речь в сообщение агенту, а повторное нажатие останавливает диктовку. Сообщение можно сразу отправить словом «submit». Работает, когда Cursor на переднем плане, вне его терминала."
       },
       "tapAction": {
         "en": "Starts or stops dictation",
@@ -102,18 +102,18 @@
       "id": "agents",
       "title": {"en": "Agents", "de": "Agenten", "es": "Agentes", "fr": "Agents", "ru": "Агенты"},
       "summary": {
-        "en": "Cursor’s badge on your phone: agents with something new for you",
-        "de": "Das Cursor-Kennzeichen auf dem Telefon: Agenten mit Neuem für dich",
-        "es": "El globo de Cursor en el teléfono: agentes con novedades para ti",
-        "fr": "La pastille de Cursor sur le téléphone : les agents qui ont du nouveau",
-        "ru": "Наклейка Cursor на телефоне: агенты, у которых есть новое"
+        "en": "Shows how many Cursor agents have something new for you",
+        "de": "Zeigt, wie viele Cursor-Agenten Neues für dich haben",
+        "es": "Muestra cuántos agentes de Cursor tienen novedades para ti",
+        "fr": "Montre combien d’agents Cursor ont du nouveau pour vous",
+        "ru": "Показывает, у скольких агентов Cursor есть новое"
       },
       "details": {
-        "en": "The number on Cursor’s Dock icon: agents that finished or wait for you and have not been opened since. A dash means Cursor is closed.",
-        "de": "Die Zahl am Dock-Symbol von Cursor: Agenten, die fertig sind oder auf dich warten und seitdem nicht geöffnet wurden. Ein Strich heißt: Cursor ist geschlossen.",
-        "es": "El número del icono de Cursor en el Dock: agentes que han terminado o te esperan y que no has abierto desde entonces. Una raya: Cursor está cerrado.",
-        "fr": "Le nombre sur l’icône de Cursor dans le Dock : les agents qui ont fini ou vous attendent et que vous n’avez pas ouverts depuis. Un tiret : Cursor est fermé.",
-        "ru": "Число с наклейки на значке Cursor в Dock: агенты, которые закончили или ждут вас и которых вы с тех пор не открывали. Прочерк — Cursor закрыт."
+        "en": "Shows the number on Cursor’s Dock icon: agents that finished or are waiting for you and that you haven’t opened yet. A dash means Cursor is closed.",
+        "de": "Zeigt dieselbe Zahl wie das Dock-Symbol von Cursor: Agenten, die fertig sind oder auf dich warten und die du noch nicht geöffnet hast. Ein Strich heißt, dass Cursor geschlossen ist.",
+        "es": "Muestra el mismo número que el icono de Cursor en el Dock: agentes que han terminado o te esperan y que aún no has abierto. Una raya significa que Cursor está cerrado.",
+        "fr": "Affiche le même nombre que l’icône de Cursor dans le Dock : les agents qui ont fini ou vous attendent et que vous n’avez pas encore ouverts. Un tiret signifie que Cursor est fermé.",
+        "ru": "На кнопке то же число, что на значке Cursor в Dock: сколько агентов закончили работу или ждут вас, а вы их ещё не открыли. Если Cursor закрыт, на кнопке прочерк."
       },
       "tapAction": {
         "en": "Opens Cursor’s Agents window, starting Cursor if it is closed",
@@ -151,11 +151,11 @@
         "ru": "Агент выше в окне Agents (⌥⌘↑)"
       },
       "details": {
-        "en": "The agent above the open one in the Agents window’s list. Works while that window is in front, with Cursor’s default shortcuts; in the editor window the keys add a cursor instead.",
-        "de": "Der Agent über dem geöffneten in der Liste des Agents-Fensters. Funktioniert, wenn dieses Fenster vorne ist, mit den Standard-Tastenkürzeln; im Editorfenster fügen die Tasten stattdessen einen Cursor hinzu.",
-        "es": "El agente encima del abierto en la lista de la ventana Agents. Funciona cuando esa ventana está delante, con los atajos predeterminados; en la ventana del editor las teclas añaden un cursor.",
-        "fr": "L’agent au-dessus de celui ouvert dans la liste de la fenêtre Agents. Fonctionne quand cette fenêtre est au premier plan, avec les raccourcis par défaut ; dans l’éditeur, les touches ajoutent un curseur.",
-        "ru": "Агент над открытым в списке окна Agents. Работает, когда это окно на переднем плане, со стандартными сочетаниями клавиш; в окне редактора эти клавиши добавляют курсор."
+        "en": "The agent above the open one in the Agents window’s list. Works while that window is in front, with Cursor’s default shortcuts. In the editor window, the same keys add a cursor instead.",
+        "de": "Der Agent über dem geöffneten in der Liste des Agents-Fensters. Funktioniert, wenn dieses Fenster vorne ist, mit den Standard-Tastenkürzeln. Im Editorfenster fügt dasselbe Tastenkürzel stattdessen einen Cursor hinzu.",
+        "es": "El agente encima del abierto en la lista de la ventana Agents. Funciona cuando esa ventana está delante, con los atajos predeterminados. En la ventana del editor, esas teclas añaden un cursor.",
+        "fr": "L’agent au-dessus de celui ouvert dans la liste de la fenêtre Agents. Fonctionne quand cette fenêtre est au premier plan, avec les raccourcis par défaut. Dans l’éditeur, ces touches ajoutent plutôt un curseur.",
+        "ru": "Агент над открытым в списке окна Agents. Работает, когда это окно на переднем плане, со стандартными сочетаниями клавиш. В окне редактора эти клавиши вместо этого добавляют курсор."
       },
       "tapAction": {
         "en": "Opens the previous agent",
@@ -182,11 +182,11 @@
         "ru": "Агент ниже в окне Agents (⌥⌘↓)"
       },
       "details": {
-        "en": "The agent below the open one in the Agents window’s list. Works while that window is in front, with Cursor’s default shortcuts; in the editor window the keys add a cursor instead.",
-        "de": "Der Agent unter dem geöffneten in der Liste des Agents-Fensters. Funktioniert, wenn dieses Fenster vorne ist, mit den Standard-Tastenkürzeln; im Editorfenster fügen die Tasten stattdessen einen Cursor hinzu.",
-        "es": "El agente debajo del abierto en la lista de la ventana Agents. Funciona cuando esa ventana está delante, con los atajos predeterminados; en la ventana del editor las teclas añaden un cursor.",
-        "fr": "L’agent en dessous de celui ouvert dans la liste de la fenêtre Agents. Fonctionne quand cette fenêtre est au premier plan, avec les raccourcis par défaut ; dans l’éditeur, les touches ajoutent un curseur.",
-        "ru": "Агент под открытым в списке окна Agents. Работает, когда это окно на переднем плане, со стандартными сочетаниями клавиш; в окне редактора эти клавиши добавляют курсор."
+        "en": "The agent below the open one in the Agents window’s list. Works while that window is in front, with Cursor’s default shortcuts. In the editor window, the same keys add a cursor instead.",
+        "de": "Der Agent unter dem geöffneten in der Liste des Agents-Fensters. Funktioniert, wenn dieses Fenster vorne ist, mit den Standard-Tastenkürzeln. Im Editorfenster fügt dasselbe Tastenkürzel stattdessen einen Cursor hinzu.",
+        "es": "El agente debajo del abierto en la lista de la ventana Agents. Funciona cuando esa ventana está delante, con los atajos predeterminados. En la ventana del editor, esas teclas añaden un cursor.",
+        "fr": "L’agent en dessous de celui ouvert dans la liste de la fenêtre Agents. Fonctionne quand cette fenêtre est au premier plan, avec les raccourcis par défaut. Dans l’éditeur, ces touches ajoutent plutôt un curseur.",
+        "ru": "Агент под открытым в списке окна Agents. Работает, когда это окно на переднем плане, со стандартными сочетаниями клавиш. В окне редактора эти клавиши вместо этого добавляют курсор."
       },
       "tapAction": {
         "en": "Opens the next agent",
@@ -213,11 +213,11 @@
         "ru": "Находит одного из ваших агентов (⌥⌘P)"
       },
       "details": {
-        "en": "The palette of your agents: type to narrow it down, Return opens the agent. Works while Cursor’s Agents window is in front, with its default shortcuts.",
-        "de": "Die Palette deiner Agenten: Tippen grenzt sie ein, Return öffnet den Agenten. Funktioniert, wenn das Agents-Fenster von Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "La paleta de tus agentes: escribe para acotarla y Retorno abre el agente. Funciona cuando la ventana Agents de Cursor está delante, con sus atajos predeterminados.",
-        "fr": "La palette de vos agents : tapez pour la restreindre, Retour ouvre l’agent. Fonctionne quand la fenêtre Agents de Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Палитра ваших агентов: набирайте, чтобы сузить список, Return открывает агента. Работает, когда окно Agents в Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "Type to narrow down the list of your agents, then press Return to open one. Works while Cursor’s Agents window is in front, with its default shortcuts.",
+        "de": "Gib etwas ein, um die Liste deiner Agenten einzugrenzen, und öffne einen mit Return. Funktioniert, wenn das Agents-Fenster von Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Escribe para acotar la lista de tus agentes y pulsa Retorno para abrir uno. Funciona cuando la ventana Agents de Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Tapez pour restreindre la liste de vos agents, puis Retour pour en ouvrir un. Fonctionne quand la fenêtre Agents de Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Начните набирать, чтобы сузить список ваших агентов, и нажмите Return, чтобы открыть нужного. Работает, когда окно Agents в Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Opens the agent search",
@@ -275,11 +275,11 @@
         "ru": "Меняет выделенный код по запросу (⌘K)"
       },
       "details": {
-        "en": "Describe a change and get the selected code rewritten as a diff to accept or reject; in the terminal, a suggested command. Works while Cursor’s editor window is in front, with its default shortcuts.",
-        "de": "Eine Änderung beschreiben und den markierten Code als Diff zum Annehmen oder Ablehnen bekommen; im Terminal einen Befehlsvorschlag. Funktioniert, wenn das Editorfenster von Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Describe un cambio y recibe el código seleccionado reescrito como diff para aceptar o rechazar; en el terminal, un comando sugerido. Funciona cuando la ventana del editor de Cursor está delante, con sus atajos predeterminados.",
-        "fr": "Décrivez un changement et recevez le code sélectionné réécrit en diff à accepter ou refuser ; dans le terminal, une commande suggérée. Fonctionne quand la fenêtre de l’éditeur de Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Опишите изменение — выделенный код будет переписан в виде diff, который можно принять или отклонить; в терминале — предложенная команда. Работает, когда окно редактора Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "Describe a change, and Cursor rewrites the selected code as a diff you can accept or reject. In the terminal, it suggests a command instead. Works while Cursor’s editor window is in front, with its default shortcuts.",
+        "de": "Beschreib eine Änderung, und Cursor schreibt den markierten Code als Diff um, den du annehmen oder ablehnen kannst. Im Terminal schlägt es stattdessen einen Befehl vor. Funktioniert, wenn das Editorfenster von Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Describe un cambio y Cursor reescribe el código seleccionado como un diff que puedes aceptar o rechazar. En el terminal, sugiere un comando. Funciona cuando la ventana del editor de Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Décrivez un changement, et Cursor réécrit le code sélectionné sous forme de diff, à accepter ou à refuser. Dans le terminal, il suggère plutôt une commande. Fonctionne quand la fenêtre de l’éditeur de Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Опишите изменение, и Cursor перепишет выделенный код. Правку можно принять или отклонить, а в терминале Cursor предложит команду. Работает, когда окно редактора Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Opens the inline edit prompt",
@@ -399,11 +399,11 @@
         "ru": "Показывает или прячет боковую панель (⌘B)"
       },
       "details": {
-        "en": "In the editor window the side bar with the files, in the Agents window the list of agents. Works while Cursor is in front, with its default shortcuts.",
-        "de": "Im Editorfenster die Seitenleiste mit den Dateien, im Agents-Fenster die Liste der Agenten. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "En la ventana del editor, la barra lateral con los archivos; en la ventana Agents, la lista de agentes. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
-        "fr": "Dans la fenêtre de l’éditeur, la barre latérale des fichiers ; dans la fenêtre Agents, la liste des agents. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "В окне редактора — боковая панель с файлами, в окне Agents — список агентов. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "In the editor window it’s the side bar with your files, and in the Agents window the list of agents. Works while Cursor is in front, with its default shortcuts.",
+        "de": "Im Editorfenster ist das die Seitenleiste mit den Dateien, im Agents-Fenster die Liste der Agenten. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "En la ventana del editor es la barra lateral con los archivos, y en la ventana Agents, la lista de agentes. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Dans la fenêtre de l’éditeur, c’est la barre latérale des fichiers, et dans la fenêtre Agents, la liste des agents. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "В окне редактора это боковая панель с файлами, а в окне Agents — список агентов. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Shows or hides the side bar",
@@ -430,11 +430,11 @@
         "ru": "Показывает или прячет терминал (⌘J)"
       },
       "details": {
-        "en": "In the Agents window the terminal tab, in the editor window the bottom panel with the terminal. Works while Cursor is in front, with its default shortcuts.",
-        "de": "Im Agents-Fenster der Terminal-Tab, im Editorfenster das Panel unten mit dem Terminal. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "En la ventana Agents, la pestaña del terminal; en la ventana del editor, el panel inferior con el terminal. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
-        "fr": "Dans la fenêtre Agents, l’onglet du terminal ; dans la fenêtre de l’éditeur, le panneau du bas avec le terminal. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "В окне Agents — вкладка терминала, в окне редактора — нижняя панель с терминалом. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "In the Agents window it’s the terminal tab, and in the editor window the bottom panel with the terminal. Works while Cursor is in front, with its default shortcuts.",
+        "de": "Im Agents-Fenster ist das der Terminal-Tab, im Editorfenster das Panel unten mit dem Terminal. Funktioniert, wenn Cursor vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "En la ventana Agents es la pestaña del terminal, y en la ventana del editor, el panel inferior con el terminal. Funciona cuando Cursor está delante, con sus atajos predeterminados.",
+        "fr": "Dans la fenêtre Agents, c’est l’onglet du terminal, et dans la fenêtre de l’éditeur, le panneau du bas avec le terminal. Fonctionne quand Cursor est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "В окне Agents это вкладка терминала, а в окне редактора — нижняя панель с терминалом. Работает, когда Cursor на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Shows or hides the terminal",
@@ -491,11 +491,11 @@
         "ru": "Ваш тариф Cursor и сколько из него израсходовано"
       },
       "details": {
-        "en": "Cursor Settings at Plan & Usage: your plan and what your requests have used of it so far. Works even with Cursor in the background, as long as it is open.",
-        "de": "Die Cursor-Einstellungen bei Plan & Usage: dein Plan und wie viel deine Anfragen davon bisher verbraucht haben. Klappt auch mit Cursor im Hintergrund, solange es geöffnet ist.",
-        "es": "La configuración de Cursor en Plan & Usage: tu plan y cuánto han usado de él tus peticiones hasta ahora. Funciona aunque Cursor esté en segundo plano, siempre que esté abierto.",
-        "fr": "Les paramètres de Cursor à Plan & Usage : votre forfait et ce que vos requêtes en ont utilisé jusqu’ici. Fonctionne même avec Cursor en arrière-plan, tant qu’il est ouvert.",
-        "ru": "Настройки Cursor на странице Plan & Usage: ваш тариф и сколько из него уже израсходовали запросы. Работает, даже когда Cursor в фоне, если он открыт."
+        "en": "The Plan & Usage page of Cursor Settings: your plan and how much of it your requests have used so far. Works even with Cursor in the background, as long as it’s open.",
+        "de": "Die Seite Plan & Usage in den Cursor-Einstellungen: dein Plan und wie viel deine Anfragen davon bisher verbraucht haben. Klappt auch mit Cursor im Hintergrund, solange es geöffnet ist.",
+        "es": "La página Plan & Usage de la configuración de Cursor: tu plan y cuánto has gastado de él hasta ahora. Funciona aunque Cursor esté en segundo plano, siempre que esté abierto.",
+        "fr": "La page Plan & Usage des paramètres de Cursor : votre forfait et ce que vos requêtes en ont utilisé jusqu’ici. Fonctionne même avec Cursor en arrière-plan, tant qu’il est ouvert.",
+        "ru": "Страница Plan & Usage в настройках Cursor: ваш тариф и сколько из него уже ушло на запросы. Работает, даже когда Cursor в фоне, если он открыт."
       },
       "tapAction": {
         "en": "Opens Plan & Usage",
@@ -523,11 +523,11 @@
         "ru": "Агенты, правки с ИИ и редактор под рукой с телефона"
       },
       "details": {
-        "en": "Most buttons work in both Cursor windows; Previous Agent, Next Agent, Search Agents and Changes need the Agents window, Inline Edit the editor window. The keys are Cursor’s defaults.",
-        "de": "Die meisten Tasten funktionieren in beiden Cursor-Fenstern; Vorheriger und Nächster Agent, Agenten suchen und Änderungen brauchen das Agents-Fenster, Inline-Edit das Editorfenster. Es gelten Cursors Standard-Tastenkürzel.",
-        "es": "La mayoría de los botones funcionan en las dos ventanas de Cursor; Agente anterior, Agente siguiente, Buscar agentes y Cambios necesitan la ventana Agents, y Edición inline la del editor. Los atajos son los predeterminados de Cursor.",
-        "fr": "La plupart des boutons fonctionnent dans les deux fenêtres de Cursor ; Agent précédent, Agent suivant, Chercher un agent et Changements demandent la fenêtre Agents, Édition inline celle de l’éditeur. Les raccourcis sont ceux de Cursor par défaut.",
-        "ru": "Большинство кнопок работают в обоих окнах Cursor; «Предыдущий агент», «Следующий агент», «Поиск агентов» и «Изменения» требуют окна Agents, «Инлайн-правка» — окна редактора. Сочетания клавиш — стандартные для Cursor."
+        "en": "Most buttons work in both Cursor windows. Previous Agent, Next Agent, Search Agents and Changes need the Agents window, and Inline Edit needs the editor window. The buttons use Cursor’s default shortcuts.",
+        "de": "Die meisten Tasten funktionieren in beiden Cursor-Fenstern. Vorheriger und Nächster Agent, Agenten suchen und Änderungen brauchen das Agents-Fenster, Inline-Edit braucht das Editorfenster. Die Tasten nutzen Cursors Standard-Tastenkürzel.",
+        "es": "La mayoría de los botones funcionan en las dos ventanas de Cursor. Agente anterior, Agente siguiente, Buscar agentes y Cambios necesitan la ventana Agents, y Edición inline, la del editor. Los botones usan los atajos predeterminados de Cursor.",
+        "fr": "La plupart des boutons fonctionnent dans les deux fenêtres de Cursor. Agent précédent, Agent suivant, Chercher un agent et Changements demandent la fenêtre Agents, et Édition inline celle de l’éditeur. Les boutons utilisent les raccourcis par défaut de Cursor.",
+        "ru": "Большинство кнопок работают в обоих окнах Cursor. «Предыдущий агент», «Следующий агент», «Поиск агентов» и «Изменения» работают в окне Agents, а «Инлайн-правка» — в окне редактора. Все кнопки рассчитаны на стандартные сочетания клавиш Cursor."
       },
       "bindByDefault": true,
       "placements": [

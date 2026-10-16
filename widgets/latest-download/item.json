@@ -1,6 +1,6 @@
 {
   "id": "latest-download",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Latest Download",
@@ -19,25 +19,25 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Newest means the last to arrive in Downloads, whatever date the file carries; files still downloading are skipped. A folder, such as an unpacked archive, opens in Finder.",
-    "de": "Als neuestes gilt, was zuletzt in „Downloads“ gelandet ist, egal welches Datum die Datei trägt; laufende Downloads werden übersprungen. Ein Ordner, etwa ein entpacktes Archiv, öffnet sich im Finder.",
-    "es": "El más reciente es el último que llegó a Descargas, lleve la fecha que lleve el archivo; las descargas en curso se omiten. Una carpeta, como un archivo descomprimido, se abre en el Finder.",
-    "fr": "Le plus récent est le dernier arrivé dans Téléchargements, quelle que soit la date du fichier ; les téléchargements en cours sont ignorés. Un dossier, comme une archive décompressée, s’ouvre dans le Finder.",
-    "ru": "Самый новый — тот, что последним попал в «Загрузки», какая бы дата ни стояла у файла; то, что ещё скачивается, пропускается. Папка — например, распакованный архив — открывается в Finder."
+    "en": "It’s whatever arrived in Downloads last, even if the file has an older date. Files still downloading are skipped. A folder, such as an unpacked archive, opens in Finder.",
+    "de": "Gemeint ist, was zuletzt in „Downloads“ gelandet ist, auch wenn die Datei ein älteres Datum trägt. Laufende Downloads werden übersprungen. Ein Ordner, etwa ein entpacktes Archiv, öffnet sich im Finder.",
+    "es": "Es lo último que llegó a Descargas, aunque el archivo tenga una fecha anterior. Las descargas en curso se omiten. Una carpeta, como un archivo descomprimido, se abre en el Finder.",
+    "fr": "C’est le dernier élément arrivé dans Téléchargements, même si le fichier porte une date plus ancienne. Les téléchargements en cours sont ignorés. Un dossier, comme une archive décompressée, s’ouvre dans le Finder.",
+    "ru": "Откроется то, что последним появилось в «Загрузках», даже если у файла старая дата. Файлы, которые ещё скачиваются, не считаются. Папка, например распакованный архив, откроется в Finder."
   },
   "tapAction": {
     "en": "Opens the newest item in Downloads",
     "de": "Öffnet das neueste Objekt in „Downloads“",
     "es": "Abre el elemento más reciente de Descargas",
     "fr": "Ouvre l’élément le plus récent des Téléchargements",
-    "ru": "Открывает самый новый объект в «Загрузках»"
+    "ru": "Открывает то, что последним появилось в «Загрузках»"
   },
   "holdAction": {
     "en": "Shows the newest item in Finder",
     "de": "Zeigt das neueste Objekt im Finder",
     "es": "Muestra el elemento más reciente en el Finder",
     "fr": "Affiche l’élément le plus récent dans le Finder",
-    "ru": "Показывает самый новый объект в Finder"
+    "ru": "Показывает последнюю загрузку в Finder"
   },
   "permissions": [
     "downloads"

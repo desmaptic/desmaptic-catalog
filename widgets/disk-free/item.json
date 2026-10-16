@@ -1,6 +1,6 @@
 {
   "id": "disk-free",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Disk Free",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Free space on the startup disk, counted the way Finder does (including space macOS can free up). Read it like a fuel gauge: the less is left, the closer the dot is to the pink end.",
-    "de": "Freier Platz auf dem Startvolume, gezählt wie im Finder (samt Speicher, den macOS freigeben kann). Wie eine Tankanzeige: Je weniger übrig ist, desto näher rückt der Punkt ans pinke Ende.",
-    "es": "Espacio libre en el disco de arranque, contado como en el Finder (incluido lo que macOS puede liberar). Se lee como un indicador de combustible: cuanto menos queda, más se acerca el punto al extremo rosa.",
-    "fr": "L’espace libre sur le disque de démarrage, compté comme dans le Finder (y compris ce que macOS peut libérer). Comme une jauge de carburant : moins il en reste, plus le point approche de l’extrémité rose.",
-    "ru": "Свободное место на системном диске — как считает Finder, вместе с тем, что macOS может освободить. Читается как бензобак: чем меньше места, тем ближе точка к розовому концу."
+    "en": "Counts the space macOS can free up by itself, as Finder does. When space runs low, the gauge turns pink, and it’s time to clear something out.",
+    "de": "Mitgezählt wird auch der Platz, den macOS selbst freigeben kann, wie im Finder. Wird der Platz knapp, wird die Anzeige pink. Dann ist es Zeit aufzuräumen.",
+    "es": "Cuenta también el espacio que macOS puede liberar por sí solo, como el Finder. Cuando queda poco, el indicador se pone rosa y toca hacer limpieza.",
+    "fr": "Compte aussi l’espace que macOS peut libérer lui-même, comme le Finder. Quand il en reste peu, la jauge passe au rose : il est temps de faire du ménage.",
+    "ru": "Учитывается и место, которое macOS может освободить сама, как в Finder. Если шкала стала розовой, места почти не осталось и пора удалить лишнее."
   },
   "tapAction": {
     "en": "Opens Storage settings on the Mac",

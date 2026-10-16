@@ -119,7 +119,7 @@ on run argv
 					delay 0.05
 				end repeat
 				if target is missing value then return "!Arc shows no menu item " & pathText & shownName & " now: " & greyed
-				if not isOn then return "!" & pathText & shownName & " is greyed out in Arc now: " & greyed
+				if not isOn then return "!" & pathText & shownName & " is grayed out in Arc now: " & greyed
 				click target
 			end tell
 		end tell

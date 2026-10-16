@@ -8,7 +8,7 @@
 # ⌘V in a comment adds it.
 
 [[ -n $folder ]] ||
-  fail config "No repository set: put your project folder on the first line of this button’s tap script, e.g. folder=\"~/Developer/my-app\""
+  fail config "No project folder set: put it in this button’s settings, e.g. folder=\"~/Developer/my-app\""
 expand_folder
 gh=( /opt/homebrew/bin/gh(N-*) /usr/local/bin/gh(N-*) )
 (( $#gh )) || fail notFound "The GitHub CLI is not installed: brew install gh, then gh auth login in Terminal"

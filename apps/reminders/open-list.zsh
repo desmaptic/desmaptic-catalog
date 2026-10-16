@@ -13,7 +13,7 @@ export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 name=${${list##[[:space:]]#}%%[[:space:]]#}
-[[ -n $name ]] || { print -u2 -- "Open List: write the list's name in the first line of the button's script"; exit 1 }
+[[ -n $name ]] || { print -u2 -- "Open List: write the list’s name in this button’s settings"; exit 1 }
 
 # Prints "ok", or "!<AppleScript error number>".
 read -r -d '' script <<'OSA'

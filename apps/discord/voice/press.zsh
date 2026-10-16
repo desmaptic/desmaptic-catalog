@@ -30,7 +30,7 @@ case $first in
   '!busy')   print -u2 -- "Discord did not answer" ;;
   '!closed') print -u2 -- "Discord's window is closed: open it from the Dock" ;;
   '!none')   print -ru2 -- "Discord shows no $label switch now (it is at the bottom left of its window)" ;;
-  '!greyed') print -ru2 -- "Discord has greyed out $label now" ;;
+  '!greyed') print -ru2 -- "Discord has grayed out $label now" ;;
   '!'*)      print -ru2 -- "Discord did not take the press (${first#!})" ;;
   *)         print -ru2 -- "Discord did not answer: ${${first##*execution error: }[1,200]}" ;;   # osascript failed
 esac

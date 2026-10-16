@@ -20,7 +20,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 case $action in
   open)
-    [[ -n $folder ]] || { print -u2 -- "Open Project: set your project on the first line of the button's command, such as folder=\"~/Projects/app\""; exit 1 }
+    [[ -n $folder ]] || { print -u2 -- "Open Project: set your project in this button’s settings, such as folder=\"~/Projects/app\""; exit 1 }
     [[ $folder == '~/'* ]] && folder=$HOME/${folder#\~/}          # "~/…" in quotes is not expanded by zsh
     [[ $folder == /* ]] || { print -u2 -- "Open Project: the project must start with / or ~/"; exit 1 }
     # A folder, or a workspace file: any other file would only open in an editor tab.

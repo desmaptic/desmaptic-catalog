@@ -1,6 +1,6 @@
 {
   "id": "discord",
-  "revision": 8,
+  "revision": 9,
   "name": "Discord",
   "bundleIds": [
     "com.hnc.Discord"
@@ -24,11 +24,11 @@
         "ru": "Выключает и включает микрофон в Discord и показывает, включён ли он"
       },
       "details": {
-        "en": "Green: mic on; red: muted, also while deafened or when switched in Discord. Unmuting while deafened turns the sound back on. Grey: Discord or its window is closed. Works in the background.",
-        "de": "Grün: Mikrofon an; rot: stumm, auch bei ausgeschaltetem Ton oder nach Umschalten in Discord. Einschalten bei ausgeschaltetem Ton bringt auch den Ton zurück. Grau: Discord oder sein Fenster ist zu. Funktioniert im Hintergrund.",
-        "es": "Verde: micrófono activo; rojo: silenciado, también si estás ensordecido o lo cambias en Discord. Reactivarlo ensordecido devuelve el sonido. Gris: Discord o su ventana está cerrado. Funciona en segundo plano.",
-        "fr": "Vert : micro actif ; rouge : coupé, y compris en sourdine ou s’il est changé dans Discord. Le réactiver en sourdine rétablit le son. Gris : Discord ou sa fenêtre est fermé. Fonctionne en arrière-plan.",
-        "ru": "Зелёная — микрофон включён, красная — выключен, в том числе при выключенном звуке или из самого Discord. Включение микрофона вернёт и звук. Серая — Discord или его окно закрыты. Работает в фоне."
+        "en": "The button also shows changes you make in Discord itself, and it’s gray while Discord or its window is closed. If you unmute while deafened, Discord turns the sound back on. Works with Discord in the background.",
+        "de": "Die Taste zeigt auch, was du in Discord selbst umschaltest, und ist grau, solange Discord oder sein Fenster geschlossen ist. Schaltest du das Mikrofon bei ausgeschaltetem Ton ein, kommt auch der Ton zurück. Funktioniert auch mit Discord im Hintergrund.",
+        "es": "El botón también muestra lo que cambias en el propio Discord, y aparece en gris con Discord o su ventana cerrados. Si reactivas el micrófono mientras estás ensordecido, Discord te devuelve también el sonido. Funciona con Discord en segundo plano.",
+        "fr": "Le bouton suit aussi ce que vous changez dans Discord lui-même, et il est gris quand Discord ou sa fenêtre est fermé. Si vous réactivez le micro pendant la sourdine, Discord rétablit aussi le son. Fonctionne avec Discord en arrière-plan.",
+        "ru": "Кнопка покажет и то, что вы переключили в самом Discord, а когда Discord или его окно закрыты, она серая. Если включить микрофон при выключенном звуке, Discord вернёт и звук. Работает, когда Discord в фоне."
       },
       "tapAction": {
         "en": "Mutes or unmutes you",
@@ -72,11 +72,11 @@
         "ru": "Выключает всё, что вы слышите в Discord, вместе с микрофоном, и показывает, выключен ли звук"
       },
       "details": {
-        "en": "Green: you hear Discord; red: deafened, also when you switch it in Discord itself. Undeafening leaves the mic as it was. Grey while Discord or its window is closed. Works with Discord in the background.",
-        "de": "Grün: du hörst Discord; rot: Ton aus, auch wenn du es in Discord selbst umschaltest. Schaltest du den Ton wieder ein, bleibt das Mikrofon, wie es war. Grau, solange Discord oder sein Fenster zu ist. Klappt auch mit Discord im Hintergrund.",
-        "es": "Verde: oyes Discord; rojo: ensordecido, también si lo cambias en el propio Discord. Al quitarlo, el micrófono queda como estaba. Gris con Discord o su ventana cerrados. Funciona con Discord en segundo plano.",
-        "fr": "Vert : vous entendez Discord ; rouge : son coupé, même si vous le changez dans Discord. Une fois le son rétabli, le micro reste comme avant. Gris quand Discord ou sa fenêtre est fermé. Fonctionne avec Discord en arrière-plan.",
-        "ru": "Зелёная — звук Discord слышен, красная — выключен, в том числе из самого Discord. Когда звук вернётся, микрофон останется как был. Серая, пока Discord или его окно закрыты. Работает, когда Discord в фоне."
+        "en": "The button also shows changes you make in Discord itself, and it’s gray while Discord or its window is closed. Undeafening puts the mic back the way it was. Works with Discord in the background.",
+        "de": "Die Taste zeigt auch, was du in Discord selbst umschaltest, und ist grau, solange Discord oder sein Fenster geschlossen ist. Schaltest du den Ton wieder ein, ist das Mikrofon wieder so wie vorher. Funktioniert auch mit Discord im Hintergrund.",
+        "es": "El botón también muestra lo que cambias en el propio Discord, y aparece en gris con Discord o su ventana cerrados. Al recuperar el sonido, el micrófono vuelve a estar como antes. Funciona con Discord en segundo plano.",
+        "fr": "Le bouton suit aussi ce que vous changez dans Discord lui-même, et il est gris quand Discord ou sa fenêtre est fermé. Une fois le son rétabli, le micro redevient comme avant. Fonctionne avec Discord en arrière-plan.",
+        "ru": "Кнопка покажет и то, что вы переключили в самом Discord, а когда Discord или его окно закрыты, она серая. Если снова включить звук, микрофон станет таким, каким был до этого. Работает, когда Discord в фоне."
       },
       "tapAction": {
         "en": "Deafens or undeafens you",
@@ -120,11 +120,11 @@
         "ru": "Переходит в голосовой канал или звонок, где вы сейчас (⌥⇧⌘V)"
       },
       "details": {
-        "en": "From anywhere in Discord back to the people you are talking to; outside a call nothing happens. Works while Discord is in front.",
-        "de": "Von überall in Discord zurück zu denen, mit denen du sprichst; ohne Anruf passiert nichts. Funktioniert, wenn Discord vorne ist.",
-        "es": "Desde cualquier parte de Discord, de vuelta con quienes hablas; fuera de una llamada no hace nada. Funciona cuando Discord está delante.",
-        "fr": "D’où que vous soyez dans Discord, retour vers ceux à qui vous parlez ; hors appel, rien ne se passe. Fonctionne quand Discord est au premier plan.",
-        "ru": "Из любого места Discord — обратно к тем, с кем вы говорите; вне звонка ничего не делает. Работает, когда Discord на переднем плане."
+        "en": "Takes you back to the people you’re talking to from anywhere in Discord. Outside a call, it does nothing. Works while Discord is in front.",
+        "de": "Bringt dich von überall in Discord zurück zu denen, mit denen du sprichst. Ohne Anruf passiert nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Te devuelve con quienes hablas desde cualquier parte de Discord. Fuera de una llamada no hace nada. Funciona cuando Discord está delante.",
+        "fr": "Vous ramène vers ceux à qui vous parlez, où que vous soyez dans Discord. Hors appel, rien ne se passe. Fonctionne quand Discord est au premier plan.",
+        "ru": "Возвращает к тем, с кем вы говорите, из любого места в Discord. Вне звонка ничего не делает. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens the current call",
@@ -174,11 +174,11 @@
         "ru": "Открывает звуковую панель в голосовом канале (⇧⌘B)"
       },
       "details": {
-        "en": "Short sounds everyone in the call hears; only while you are in a voice channel or call. Works while Discord is in front.",
-        "de": "Kurze Sounds, die alle im Anruf hören; nur, wenn du in einem Sprachkanal oder Anruf bist. Funktioniert, wenn Discord vorne ist.",
-        "es": "Sonidos cortos que oyen todos en la llamada; solo si estás en un canal de voz o una llamada. Funciona cuando Discord está delante.",
-        "fr": "De courts sons que tout l’appel entend ; seulement dans un salon vocal ou un appel. Fonctionne quand Discord est au premier plan.",
-        "ru": "Короткие звуки, которые слышат все в звонке; только когда вы в голосовом канале или звонке. Работает, когда Discord на переднем плане."
+        "en": "Play short sounds that everyone in the call hears. The soundboard opens only while you’re in a voice channel or call. Works while Discord is in front.",
+        "de": "Spiel kurze Sounds ab, die alle im Anruf hören. Das Soundboard öffnet sich nur, wenn du in einem Sprachkanal oder Anruf bist. Funktioniert, wenn Discord vorne ist.",
+        "es": "Reproduce sonidos cortos que oyen todos en la llamada. El panel solo se abre si estás en un canal de voz o una llamada. Funciona cuando Discord está delante.",
+        "fr": "Jouez de courts sons que tout le monde entend dans l’appel. Le Soundboard ne s’ouvre que si vous êtes dans un salon vocal ou un appel. Fonctionne quand Discord est au premier plan.",
+        "ru": "Включайте короткие звуки, которые услышат все в звонке. Панель открывается, только когда вы в голосовом канале или звонке. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes the soundboard",
@@ -220,18 +220,18 @@
         "ru": "Упоминания"
       },
       "summary": {
-        "en": "Discord’s badge on your phone: how many mentions and DMs wait",
-        "de": "Das Discord-Kennzeichen auf dem Telefon: wie viele Erwähnungen und DMs warten",
-        "es": "El globo de Discord en el teléfono: cuántas menciones y MD esperan",
-        "fr": "La pastille de Discord sur le téléphone : combien de mentions et de MP attendent",
-        "ru": "Наклейка Discord на телефоне: сколько ждёт упоминаний и личных сообщений"
+        "en": "How many mentions, DMs and requests are waiting for you in Discord",
+        "de": "Wie viele Erwähnungen, DMs und Anfragen in Discord auf dich warten",
+        "es": "Cuántas menciones, MD y solicitudes te esperan en Discord",
+        "fr": "Combien de mentions, de MP et de demandes vous attendent dans Discord",
+        "ru": "Сколько упоминаний, личных сообщений и запросов ждёт вас в Discord"
       },
       "details": {
-        "en": "The number on Discord’s Dock icon: mentions, DMs and requests. A dot means other unread messages, a dash that Discord is closed. The long press works while Discord is in front.",
-        "de": "Die Zahl am Dock-Symbol von Discord: Erwähnungen, DMs und Anfragen. Ein Punkt heißt: andere ungelesene Nachrichten, ein Strich: Discord ist geschlossen. Langes Drücken wirkt, wenn Discord vorne ist.",
-        "es": "El número del icono de Discord en el Dock: menciones, MD y solicitudes. Un punto indica otros mensajes sin leer; una raya, que Discord está cerrado. Mantener pulsado funciona con Discord delante.",
-        "fr": "Le nombre sur l’icône de Discord dans le Dock : mentions, MP et demandes. Un point signale d’autres messages non lus, un tiret que Discord est fermé. L’appui long agit quand Discord est au premier plan.",
-        "ru": "Число с наклейки на значке Discord в Dock: упоминания, ЛС и запросы. Точка — другие непрочитанные сообщения, прочерк — Discord закрыт. Долгое нажатие работает, когда Discord на переднем плане."
+        "en": "The button shows the same number as on Discord’s icon in the Dock, or a dot if only other messages are unread. If Discord is closed, it shows a dash. The long press works while Discord is in front.",
+        "de": "Die Taste zeigt dieselbe Zahl wie das Discord-Symbol im Dock oder einen Punkt, wenn nur andere Nachrichten ungelesen sind. Ist Discord geschlossen, zeigt sie einen Strich. Langes Drücken funktioniert, wenn Discord vorne ist.",
+        "es": "El botón muestra el mismo número que el icono de Discord en el Dock, o un punto si solo hay otros mensajes sin leer. Si Discord está cerrado, muestra una raya. Mantener pulsado funciona cuando Discord está delante.",
+        "fr": "Le bouton affiche le même nombre que l’icône de Discord dans le Dock, ou un point s’il n’y a que d’autres messages non lus. Si Discord est fermé, il affiche un tiret. L’appui long fonctionne quand Discord est au premier plan.",
+        "ru": "Кнопка показывает то же число, что на значке Discord в Dock, или точку, если есть только другие непрочитанные сообщения. Если Discord закрыт, на кнопке прочерк. Удержание работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Brings Discord to the front",
@@ -300,11 +300,11 @@
         "ru": "Переходит к следующему каналу с непрочитанным (⌥⇧↓)"
       },
       "details": {
-        "en": "Goes through the unread channels one at a time, muted servers left out: a few taps and you’ve seen everything new. Works while Discord is in front.",
-        "de": "Geht die ungelesenen Kanäle einzeln durch, stummgeschaltete Server ausgenommen: ein paarmal tippen, und du hast alles Neue gesehen. Funktioniert, wenn Discord vorne ist.",
-        "es": "Recorre los canales sin leer uno a uno, sin los servidores silenciados: con unos toques ves todo lo nuevo. Funciona cuando Discord está delante.",
-        "fr": "Parcourt les salons non lus un par un, hors serveurs rendus muets : en quelques appuis, vous avez tout vu. Fonctionne quand Discord est au premier plan.",
-        "ru": "Идёт по непрочитанным каналам по одному, кроме заглушённых серверов: несколько нажатий — и вы видели всё новое. Работает, когда Discord на переднем плане."
+        "en": "Tap a few times to see everything new, one channel at a time. Muted servers are skipped. Works while Discord is in front.",
+        "de": "Tippe ein paarmal, und du hast alles Neue gesehen, Kanal für Kanal. Stummgeschaltete Server werden übersprungen. Funktioniert, wenn Discord vorne ist.",
+        "es": "Tócalo unas cuantas veces y verás todo lo nuevo, canal por canal. Los servidores silenciados se saltan. Funciona cuando Discord está delante.",
+        "fr": "Touchez-le quelques fois pour voir tout ce qui est nouveau, salon par salon. Les serveurs rendus muets sont ignorés. Fonctionne quand Discord est au premier plan.",
+        "ru": "Нажмите несколько раз, и вы увидите всё новое, канал за каналом. Заглушённые серверы пропускаются. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the next unread channel",
@@ -371,11 +371,11 @@
         "ru": "Отмечает прочитанным весь открытый сервер (⇧Esc)"
       },
       "details": {
-        "en": "Every channel of the server on screen, without opening them; in DMs it does nothing. Works while Discord is in front.",
-        "de": "Alle Kanäle des angezeigten Servers, ohne sie zu öffnen; in Direktnachrichten passiert nichts. Funktioniert, wenn Discord vorne ist.",
-        "es": "Todos los canales del servidor en pantalla, sin abrirlos; en los MD no hace nada. Funciona cuando Discord está delante.",
-        "fr": "Tous les salons du serveur affiché, sans les ouvrir ; dans les MP, rien ne se passe. Fonctionne quand Discord est au premier plan.",
-        "ru": "Все каналы сервера на экране, не открывая их; в личных сообщениях ничего не делает. Работает, когда Discord на переднем плане."
+        "en": "Handy when you don’t want to open every channel one by one. In DMs, it does nothing. Works while Discord is in front.",
+        "de": "Praktisch, wenn du nicht jeden Kanal einzeln öffnen willst. In DMs passiert nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Útil cuando no quieres abrir los canales uno por uno. En los MD no hace nada. Funciona cuando Discord está delante.",
+        "fr": "Pratique quand vous ne voulez pas ouvrir chaque salon un par un. Dans les MP, rien ne se passe. Fonctionne quand Discord est au premier plan.",
+        "ru": "Удобно, когда не хочется открывать каждый канал по очереди. В личных сообщениях ничего не делает. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Marks the open server read",
@@ -385,11 +385,11 @@
         "ru": "Отмечает прочитанным открытый сервер"
       },
       "holdAction": {
-        "en": "⚠️ Esc: declines a ringing call, drops an unsaved message edit or closes what is open; with nothing open, marks the channel read",
-        "de": "⚠️ Esc: lehnt einen eingehenden Anruf ab, verwirft eine ungespeicherte Bearbeitung oder schließt Offenes; ist nichts offen, wird der Kanal als gelesen markiert",
-        "es": "⚠️ Esc: rechaza una llamada entrante, descarta una edición sin guardar o cierra lo abierto; si no hay nada abierto, marca el canal como leído",
-        "fr": "⚠️ Esc : refuse un appel entrant, abandonne une modification non enregistrée ou ferme ce qui est ouvert ; sinon, marque le salon comme lu",
-        "ru": "⚠️ Esc: отклоняет входящий звонок, отменяет несохранённую правку или закрывает открытое; если ничего не открыто, отмечает канал прочитанным"
+        "en": "⚠️ Declines a ringing call, cancels a message edit, closes what’s open or marks the channel read (Esc)",
+        "de": "⚠️ Lehnt einen eingehenden Anruf ab, verwirft eine Bearbeitung, schließt, was offen ist, oder markiert den Kanal als gelesen (Esc)",
+        "es": "⚠️ Rechaza una llamada entrante, cancela una edición, cierra lo que esté abierto o marca el canal como leído (Esc)",
+        "fr": "⚠️ Refuse un appel entrant, annule une modification, ferme ce qui est ouvert ou marque le salon comme lu (Esc)",
+        "ru": "⚠️ Отклоняет входящий звонок, отменяет правку сообщения, закрывает открытое или отмечает канал прочитанным (Esc)"
       },
       "permissions": [
         "accessibility"
@@ -438,7 +438,7 @@
         "ru": "Переходит к самому старому непрочитанному сообщению (⇧Page Up)"
       },
       "details": {
-        "en": "Scrolls back to where you stopped reading, so you read the channel in order from there. Works while Discord is in front.",
+        "en": "Scrolls back to where you stopped reading, so you can read the channel in order from there. Works while Discord is in front.",
         "de": "Scrollt zurück bis dorthin, wo du aufgehört hast zu lesen, damit du ab da der Reihe nach liest. Funktioniert, wenn Discord vorne ist.",
         "es": "Vuelve hasta donde dejaste de leer, para leer el canal en orden desde ahí. Funciona cuando Discord está delante.",
         "fr": "Remonte là où vous avez arrêté de lire, pour lire le salon dans l’ordre à partir de là. Fonctionne quand Discord est au premier plan.",
@@ -490,11 +490,11 @@
         "ru": "Переходит к любому серверу, каналу или ЛС по названию (⌘K)"
       },
       "details": {
-        "en": "Type part of a name and press Return; start with @ for people, # for channels, * for servers. Works while Discord is in front.",
-        "de": "Einen Teil des Namens eingeben und Return drücken; mit @ für Personen, # für Kanäle, * für Server beginnen. Funktioniert, wenn Discord vorne ist.",
-        "es": "Escribe parte de un nombre y pulsa Retorno; empieza con @ para personas, # para canales, * para servidores. Funciona cuando Discord está delante.",
-        "fr": "Tapez une partie du nom, puis appuyez sur Retour ; commencez par @ pour les personnes, # pour les salons, * pour les serveurs. Fonctionne quand Discord est au premier plan.",
-        "ru": "Наберите часть названия и нажмите Return; @ в начале — люди, # — каналы, * — серверы. Работает, когда Discord на переднем плане."
+        "en": "Type part of a name and press Return. Start with @ for people, # for channels or * for servers. Works while Discord is in front.",
+        "de": "Gib einen Teil des Namens ein und drück Return. Mit @ am Anfang findest du nur Personen, mit # nur Kanäle, mit * nur Server. Funktioniert, wenn Discord vorne ist.",
+        "es": "Escribe parte de un nombre y pulsa Retorno. Empieza con @ para buscar personas, con # para canales o con * para servidores. Funciona cuando Discord está delante.",
+        "fr": "Tapez une partie du nom, puis appuyez sur Retour. Commencez par @ pour les personnes, # pour les salons ou * pour les serveurs. Fonctionne quand Discord est au premier plan.",
+        "ru": "Наберите часть названия и нажмите Return. Начните с @, # или *, чтобы искать только людей, каналы или серверы. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens the Quick Switcher",
@@ -542,11 +542,11 @@
         "ru": "Открывает личные сообщения и список друзей в Discord"
       },
       "details": {
-        "en": "Discord’s home, with all your conversations. The tap brings Discord to the front from any app; the long press works while Discord is in front.",
-        "de": "Die Startseite von Discord mit all deinen Unterhaltungen. Tippen holt Discord aus jeder App nach vorne; langes Drücken wirkt, wenn Discord vorne ist.",
-        "es": "El inicio de Discord, con todas tus conversaciones. El toque trae Discord al frente desde cualquier app; mantener pulsado funciona con Discord delante.",
-        "fr": "L’accueil de Discord, avec toutes vos conversations. Le toucher met Discord au premier plan depuis n’importe quelle app ; l’appui long agit quand Discord est au premier plan.",
-        "ru": "Главная Discord со всеми вашими беседами. Нажатие выводит Discord вперёд из любого приложения; удержание работает, когда Discord на переднем плане."
+        "en": "Discord’s home, with all your conversations. The tap brings Discord forward from any app, but doesn’t start it. The long press works while Discord is in front.",
+        "de": "Die Startseite von Discord mit all deinen Unterhaltungen. Tippen holt Discord aus jeder App nach vorne, startet es aber nicht. Langes Drücken funktioniert, wenn Discord vorne ist.",
+        "es": "El inicio de Discord, con todas tus conversaciones. El toque trae Discord al frente desde cualquier app, pero no lo abre si está cerrado. Mantener pulsado funciona cuando Discord está delante.",
+        "fr": "L’accueil de Discord, avec toutes vos conversations. Le toucher met Discord au premier plan depuis n’importe quelle app, sans le lancer. L’appui long fonctionne quand Discord est au premier plan.",
+        "ru": "Главная Discord со всеми вашими беседами. Нажатие выводит Discord вперёд из любого приложения, но не запускает его. Удержание работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens Direct Messages",
@@ -607,11 +607,11 @@
         "ru": "Переходит к следующему серверу в списке (⌥⌘↓)"
       },
       "details": {
-        "en": "Walks down the server list on the left, Direct Messages included, and round again. Works while Discord is in front.",
-        "de": "Geht die Serverliste links von oben nach unten durch, Direktnachrichten inklusive, und wieder von vorn. Funktioniert, wenn Discord vorne ist.",
+        "en": "Steps down the server list on the left, Direct Messages included, and starts over after the last one. Works while Discord is in front.",
+        "de": "Geht die Serverliste links von oben nach unten durch, Direktnachrichten inklusive, und fängt nach dem letzten wieder oben an. Funktioniert, wenn Discord vorne ist.",
         "es": "Baja por la lista de servidores de la izquierda, mensajes directos incluidos, y vuelve a empezar. Funciona cuando Discord está delante.",
         "fr": "Descend la liste des serveurs à gauche, messages privés compris, puis recommence. Fonctionne quand Discord est au premier plan.",
-        "ru": "Идёт вниз по списку серверов слева, включая личные сообщения, и снова с начала. Работает, когда Discord на переднем плане."
+        "ru": "Идёт вниз по списку серверов слева, включая личные сообщения, а после последнего начинает сначала. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the next server",
@@ -678,11 +678,11 @@
         "ru": "Переходит к следующему каналу в списке (⌥↓)"
       },
       "details": {
-        "en": "Walks the open server’s channels in order, read or not, and round again; in DMs it walks your conversations. Works while Discord is in front.",
-        "de": "Geht die Kanäle des offenen Servers der Reihe nach durch, gelesen oder nicht, und wieder von vorn; in DMs die Unterhaltungen. Funktioniert, wenn Discord vorne ist.",
-        "es": "Recorre en orden los canales del servidor abierto, leídos o no, y vuelve a empezar; en los MD, tus conversaciones. Funciona cuando Discord está delante.",
-        "fr": "Parcourt dans l’ordre les salons du serveur ouvert, lus ou non, puis recommence ; dans les MP, vos conversations. Fonctionne quand Discord est au premier plan.",
-        "ru": "Идёт по каналам открытого сервера по порядку, прочитанным и нет, и снова с начала; в ЛС — по беседам. Работает, когда Discord на переднем плане."
+        "en": "Steps through the open server’s channels in order, read or not, and starts over after the last one. In DMs, it steps through your conversations. Works while Discord is in front.",
+        "de": "Geht die Kanäle des offenen Servers der Reihe nach durch, gelesen oder nicht, und fängt nach dem letzten von vorne an. In DMs geht sie deine Unterhaltungen durch. Funktioniert, wenn Discord vorne ist.",
+        "es": "Recorre en orden los canales del servidor abierto, leídos o no, y tras el último vuelve a empezar. En los MD recorre tus conversaciones. Funciona cuando Discord está delante.",
+        "fr": "Parcourt dans l’ordre les salons du serveur ouvert, lus ou non, et recommence après le dernier. Dans les MP, il parcourt vos conversations. Fonctionne quand Discord est au premier plan.",
+        "ru": "Идёт по каналам открытого сервера по порядку, прочитанным и нет, а после последнего начинает сначала. В личных сообщениях идёт по беседам. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the next channel",
@@ -747,11 +747,11 @@
         "ru": "Ищет по сообщениям открытого канала (⌘F)"
       },
       "details": {
-        "en": "Discord’s search, already set to the open channel or DM; type what to find and press Return. Works while Discord is in front.",
-        "de": "Die Discord-Suche, schon auf den offenen Kanal oder die DM gesetzt; Suchbegriff eingeben und Return drücken. Funktioniert, wenn Discord vorne ist.",
-        "es": "La búsqueda de Discord, ya ajustada al canal o MD abierto; escribe qué buscar y pulsa Retorno. Funciona cuando Discord está delante.",
-        "fr": "La recherche de Discord, déjà réglée sur le salon ou MP ouvert ; tapez ce que vous cherchez, puis appuyez sur Retour. Fonctionne quand Discord est au premier plan.",
-        "ru": "Поиск Discord, уже настроенный на открытый канал или ЛС; введите, что искать, и нажмите Return. Работает, когда Discord на переднем плане."
+        "en": "Discord’s search opens set to the channel or DM you’re in. Type what you’re looking for and press Return. Works while Discord is in front.",
+        "de": "Die Discord-Suche ist gleich auf den offenen Kanal oder die DM eingestellt. Gib ein, was du suchst, und drück Return. Funktioniert, wenn Discord vorne ist.",
+        "es": "La búsqueda de Discord se abre ya ajustada al canal o MD en el que estás. Escribe lo que buscas y pulsa Retorno. Funciona cuando Discord está delante.",
+        "fr": "La recherche de Discord s’ouvre déjà réglée sur le salon ou le MP ouvert. Tapez ce que vous cherchez, puis appuyez sur Retour. Fonctionne quand Discord est au premier plan.",
+        "ru": "Поиск сразу настроен на открытый канал или личный чат. Введите, что ищете, и нажмите Return. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Searches the open channel",
@@ -817,11 +817,11 @@
         "ru": "Показывает упоминания и непрочитанное одним списком (⌘I)"
       },
       "details": {
-        "en": "Discord’s Inbox, opened or closed. Works while Discord is in front and the message box is empty: with text in it, ⌘I makes the text italic.",
-        "de": "Der Posteingang von Discord, geöffnet oder geschlossen. Funktioniert, wenn Discord vorne ist und das Nachrichtenfeld leer: mit Text darin macht ⌘I ihn kursiv.",
-        "es": "La bandeja de entrada de Discord, abierta o cerrada. Funciona con Discord delante y el cuadro de mensaje vacío: con texto, ⌘I lo pone en cursiva.",
-        "fr": "La boîte de réception de Discord, ouverte ou fermée. Fonctionne quand Discord est au premier plan et le champ de message vide : avec du texte, ⌘I le met en italique.",
-        "ru": "«Входящие» Discord: открывает и закрывает. Работает, когда Discord на переднем плане, а поле сообщения пусто: с текстом ⌘I делает его курсивом."
+        "en": "If the message box has text in it, the button makes that text italic instead. Works while Discord is in front.",
+        "de": "Steht schon Text im Nachrichtenfeld, macht die Taste ihn stattdessen kursiv. Funktioniert, wenn Discord vorne ist.",
+        "es": "Si ya hay texto en el cuadro de mensaje, el botón lo pone en cursiva en vez de abrir la bandeja. Funciona cuando Discord está delante.",
+        "fr": "Si le champ de message contient du texte, le bouton le met en italique à la place. Fonctionne quand Discord est au premier plan.",
+        "ru": "Если в поле сообщения есть текст, кнопка вместо этого сделает его курсивом. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes the Inbox",
@@ -869,11 +869,11 @@
         "ru": "Показывает закреплённые сообщения открытого канала (⌘P)"
       },
       "details": {
-        "en": "The pins of the channel or DM on screen, opened or closed; click one to jump to it. Works while Discord is in front.",
-        "de": "Die angepinnten Nachrichten des angezeigten Kanals oder der DM, geöffnet oder geschlossen; ein Klick springt hin. Funktioniert, wenn Discord vorne ist.",
-        "es": "Los mensajes fijados del canal o MD en pantalla, abiertos o cerrados; haz clic en uno para ir a él. Funciona cuando Discord está delante.",
-        "fr": "Les messages épinglés du salon ou MP affiché, ouverts ou fermés ; un clic y mène. Fonctionne quand Discord est au premier plan.",
-        "ru": "Закреплённые сообщения канала или ЛС на экране: открывает и закрывает; щелчок переносит к сообщению. Работает, когда Discord на переднем плане."
+        "en": "In a DM, it shows that conversation’s pins. Click a pinned message to jump to it. Works while Discord is in front.",
+        "de": "In einer DM zeigt sie die angepinnten Nachrichten dieser Unterhaltung. Ein Klick auf eine Nachricht springt dorthin. Funktioniert, wenn Discord vorne ist.",
+        "es": "En un MD, muestra los mensajes fijados de esa conversación. Haz clic en uno para ir a él. Funciona cuando Discord está delante.",
+        "fr": "Dans un MP, il montre les messages épinglés de cette conversation. Cliquez sur l’un d’eux pour y aller. Fonctionne quand Discord est au premier plan.",
+        "ru": "В личной переписке покажет её закреплённые сообщения. Щёлкните сообщение, чтобы перейти к нему. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes the pinned messages",
@@ -921,11 +921,11 @@
         "ru": "Открывает меню эмодзи в поле сообщения (⌘E)"
       },
       "details": {
-        "en": "Pick one with the mouse or type its name; it goes into the message you are writing, nothing is sent. Works while Discord is in front.",
-        "de": "Eins mit der Maus wählen oder den Namen tippen; es landet in der Nachricht, die du schreibst, gesendet wird nichts. Funktioniert, wenn Discord vorne ist.",
-        "es": "Elige uno con el ratón o escribe su nombre; va al mensaje que escribes, no se envía nada. Funciona cuando Discord está delante.",
-        "fr": "Choisissez-en un à la souris ou tapez son nom ; il va dans le message en cours, rien n’est envoyé. Fonctionne quand Discord est au premier plan.",
-        "ru": "Выберите мышью или наберите название — эмодзи встанет в сообщение, которое вы пишете; ничего не отправляется. Работает, когда Discord на переднем плане."
+        "en": "Pick one with the mouse or type its name, and it goes into the message you’re writing. The message isn’t sent. Works while Discord is in front.",
+        "de": "Wähl eins mit der Maus oder tipp seinen Namen, und es landet in der Nachricht, die du schreibst. Gesendet wird nichts. Funktioniert, wenn Discord vorne ist.",
+        "es": "Elige uno con el ratón o escribe su nombre, y se añade al mensaje que estás escribiendo. No se envía nada. Funciona cuando Discord está delante.",
+        "fr": "Choisissez-en un à la souris ou tapez son nom, et il s’ajoute au message en cours. Rien n’est envoyé. Fonctionne quand Discord est au premier plan.",
+        "ru": "Выберите мышью или наберите название, и эмодзи появится в сообщении, которое вы пишете. Само сообщение не отправится. Работает, когда Discord на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes the emoji picker",
@@ -987,14 +987,14 @@
         "de": "Ein Kanal oder eine DM deiner Wahl, aus jeder App",
         "es": "El canal o MD que elijas, desde cualquier app",
         "fr": "Le salon ou le MP de votre choix, depuis n’importe quelle app",
-        "ru": "Нужный канал или личный чат — из любого приложения"
+        "ru": "Открывает нужный канал или личный чат из любого приложения"
       },
       "details": {
-        "en": "Paste its link in the first line of the button’s script: Copy Link on a channel, Copy Message Link on a message in a DM; until then, the button says so. Brings Discord forward from any app, but doesn’t start it.",
-        "de": "Füge seinen Link in die erste Zeile des Skripts der Taste ein: „Link kopieren“ am Kanal, „Nachrichtenlink kopieren“ an einer Nachricht in der DM; bis dahin sagt die Taste das. Holt Discord aus jeder App nach vorne, startet es aber nicht.",
-        "es": "Pega su enlace en la primera línea del script del botón: «Copiar enlace» en un canal, «Copiar enlace del mensaje» en un mensaje del MD; hasta entonces, el botón te lo recuerda. Trae Discord al frente desde cualquier app, pero no lo abre si está cerrado.",
-        "fr": "Collez son lien à la première ligne du script du bouton : « Copier le lien » sur un salon, « Copier le lien du message » sur un message du MP ; d’ici là, le bouton vous le rappelle. Met Discord au premier plan depuis n’importe quelle app, sans le lancer.",
-        "ru": "Вставьте его ссылку в первую строку скрипта кнопки: «Копировать ссылку» у канала, «Копировать ссылку на сообщение» у сообщения в личном чате; пока её нет, кнопка об этом скажет. Выводит Discord вперёд из любого приложения, но не запускает его."
+        "en": "In Discord, choose Copy Link on a channel, or Copy Message Link on any message in a DM. Paste the link in the button’s settings. The button brings Discord forward from any app, but doesn’t start it.",
+        "de": "Wähle in Discord „Link kopieren“ an einem Kanal oder „Nachrichtenlink kopieren“ an einer Nachricht in der DM. Füge den Link in den Einstellungen der Taste ein. Die Taste holt Discord aus jeder App nach vorne, startet es aber nicht.",
+        "es": "En Discord, elige «Copiar enlace» en un canal o «Copiar enlace del mensaje» en un mensaje del MD. Pega el enlace en los ajustes del botón. El botón trae Discord al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Dans Discord, choisissez « Copier le lien » sur un salon ou « Copier le lien du message » sur un message du MP. Collez le lien dans les réglages du bouton. Le bouton met Discord au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "В Discord выберите «Копировать ссылку» у канала или «Копировать ссылку на сообщение» у любого сообщения в личном чате. Вставьте ссылку в настройках кнопки. Кнопка выводит Discord вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens the channel of the link you set",
@@ -1036,11 +1036,11 @@
         "ru": "Микрофон, непрочитанное и переходы по Discord с телефона"
       },
       "details": {
-        "en": "Mute and Deafen show Discord’s state and work with Discord in the background; the other buttons work while Discord is in front. Direct Messages and Open Channel bring it forward from any app. Mentions shows the badge of Discord’s Dock icon.",
-        "de": "„Mikrofon“ und „Ein- und Ausgabe“ zeigen den Zustand in Discord und klappen im Hintergrund; die übrigen Tasten funktionieren, wenn Discord vorne ist. DMs und „Kanal öffnen“ holen Discord aus jeder App nach vorne. Erwähnungen zeigt das Kennzeichen am Dock-Symbol von Discord.",
-        "es": "«Silenciar» y «Ensordecer» muestran el estado de Discord y funcionan en segundo plano; los demás botones, con Discord delante. Mensajes directos y Abrir canal lo traen al frente desde cualquier app. Menciones muestra el globo del icono de Discord en el Dock.",
-        "fr": "« Rendre muet » et « Mettre en sourdine » montrent l’état de Discord et fonctionnent en arrière-plan ; les autres boutons, quand Discord est au premier plan. Messages privés et Ouvrir le salon le mettent au premier plan depuis n’importe quelle app. Mentions affiche la pastille de l’icône de Discord dans le Dock.",
-        "ru": "«Микрофон» и «Динамики» показывают состояние Discord и работают, когда он в фоне; остальные кнопки — когда Discord на переднем плане. «Личные сообщения» и «Открыть канал» выводят его вперёд из любого приложения. «Упоминания» показывают наклейку со значка Discord в Dock."
+        "en": "Mute and Deafen work with Discord in the background and show whether your mic and sound are on. Mentions, Direct Messages and Open Channel bring Discord forward from any app. The other buttons work while Discord is in front.",
+        "de": "„Mikrofon“ und „Ein- und Ausgabe“ funktionieren auch mit Discord im Hintergrund und zeigen, ob Mikrofon und Ton an sind. „Erwähnungen“, „DMs“ und „Kanal öffnen“ holen Discord aus jeder App nach vorne. Die übrigen Tasten funktionieren, wenn Discord vorne ist.",
+        "es": "«Silenciar» y «Ensordecer» funcionan con Discord en segundo plano y muestran si tu micrófono y el sonido están activos. «Menciones», «Mensajes directos» y «Abrir canal» traen Discord al frente desde cualquier app. Los demás botones funcionan cuando Discord está delante.",
+        "fr": "« Rendre muet » et « Mettre en sourdine » fonctionnent avec Discord en arrière-plan et montrent si votre micro et le son sont actifs. « Mentions », « Messages privés » et « Ouvrir le salon » mettent Discord au premier plan depuis n’importe quelle app. Les autres boutons fonctionnent quand Discord est au premier plan.",
+        "ru": "Кнопки «Микрофон» и «Динамики» работают, даже когда Discord в фоне, и показывают, включены ли микрофон и звук. «Упоминания», «Личные сообщения» и «Открыть канал» выводят Discord вперёд из любого приложения. Остальные кнопки работают, когда Discord на переднем плане."
       },
       "bindByDefault": true,
       "placements": [

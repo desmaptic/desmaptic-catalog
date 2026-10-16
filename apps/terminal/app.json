@@ -1,6 +1,6 @@
 {
   "id": "terminal",
-  "revision": 6,
+  "revision": 7,
   "name": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
   "bundleIds": ["com.apple.Terminal"],
   "category": "development",
@@ -16,11 +16,11 @@
         "ru": "Открывает вкладку в переднем окне (⌘T)"
       },
       "details": {
-        "en": "Shell › New Tab (⌘T). Long press is Close Tab (⌘W): Terminal doesn’t ask when nothing is running in the tab. Works while Terminal is in front.",
-        "de": "Shell › Neuer Tab (⌘T). Langes Drücken ist Tab schließen (⌘W): Läuft im Tab nichts, fragt Terminal nicht nach. Funktioniert, wenn Terminal vorne ist.",
-        "es": "Shell › Nueva pestaña (⌘T). Al mantener pulsado, Cerrar pestaña (⌘W): si no hay nada en marcha en la pestaña, Terminal no pregunta. Funciona cuando Terminal está delante.",
-        "fr": "Shell › Nouvel onglet (⌘T). L’appui long est Fermer l’onglet (⌘W) : si rien ne tourne dans l’onglet, Terminal ne demande pas de confirmation. Fonctionne quand Terminal est au premier plan.",
-        "ru": "Оболочка › Новая вкладка (⌘T). Удержание — «Закрыть вкладку» (⌘W): если во вкладке ничего не запущено, Терминал не переспрашивает. Работает, когда Терминал на переднем плане."
+        "en": "Shell › New Tab (⌘T). If nothing is running in the tab, the long press closes it without asking. Works while Terminal is in front.",
+        "de": "Shell › Neuer Tab (⌘T). Läuft im Tab nichts, schließt die Taste ihn beim Halten ohne Nachfrage. Funktioniert, wenn Terminal vorne ist.",
+        "es": "Shell › Nueva pestaña (⌘T). Si no hay nada en marcha en la pestaña, mantener pulsado la cierra sin preguntar. Funciona cuando Terminal está delante.",
+        "fr": "Shell › Nouvel onglet (⌘T). Si rien ne tourne dans l’onglet, l’appui long le ferme sans confirmation. Fonctionne quand Terminal est au premier plan.",
+        "ru": "Оболочка › Новая вкладка (⌘T). Если во вкладке ничего не запущено, удержание закроет её без вопросов. Работает, когда Терминал на переднем плане."
       },
       "tapAction": {
         "en": "Opens a new tab",
@@ -209,11 +209,11 @@
         "ru": "Новое окно в папке, открытой в Finder"
       },
       "details": {
-        "en": "The folder of the front Finder window, or the desktop when none is open. Works from any app and starts Terminal if needed.",
-        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Funktioniert aus jeder App und startet Terminal bei Bedarf.",
-        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Funciona desde cualquier app y abre Terminal si hace falta.",
-        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Fonctionne depuis n’importe quelle app et lance Terminal au besoin.",
-        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Работает из любого приложения и при необходимости запускает Терминал."
+        "en": "The button uses the folder of the front Finder window, or the desktop if no Finder window is open. Works from any app and starts Terminal if needed.",
+        "de": "Die Taste nimmt den Ordner des vorderen Finder-Fensters oder, wenn keins offen ist, den Schreibtisch. Funktioniert aus jeder App und startet Terminal bei Bedarf.",
+        "es": "El botón usa la carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna abierta. Funciona desde cualquier app y abre Terminal si hace falta.",
+        "fr": "Le bouton prend le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Fonctionne depuis n’importe quelle app et lance Terminal au besoin.",
+        "ru": "Кнопка берёт папку из переднего окна Finder, а если окон Finder нет, то рабочий стол. Работает из любого приложения и при необходимости запускает Терминал."
       },
       "tapAction": {
         "en": "Opens Terminal in that folder",
@@ -271,11 +271,11 @@
         "ru": "Ищет по тексту вкладки (⌘F)"
       },
       "details": {
-        "en": "Searches the scrollback too. Edit › Find › Find… (⌘F); long press is Edit › Clear to Start (⌘K). Works while Terminal is in front.",
-        "de": "Sucht auch im Zeilenpuffer. Bearbeiten › Suchen › Suchen … (⌘F); langes Drücken ist Bearbeiten › Bis zum Start löschen (⌘K). Funktioniert, wenn Terminal vorne ist.",
-        "es": "Busca también en las líneas anteriores. Edición › Buscar › Buscar… (⌘F); al mantener pulsado, Edición › Borrar hasta principio (⌘K). Funciona cuando Terminal está delante.",
-        "fr": "Cherche aussi dans le défilement arrière. Édition › Rechercher › Rechercher… (⌘F) ; l’appui long est Édition › Effacer jusqu’au début (⌘K). Fonctionne quand Terminal est au premier plan.",
-        "ru": "Ищет и в буфере строк. Правка › Поиск › Найти… (⌘F); удержание — Правка › Очистить до начала (⌘K). Работает, когда Терминал на переднем плане."
+        "en": "Searches the scrollback too. Same as Edit › Find › Find… (⌘F), and Edit › Clear to Start (⌘K) on hold. Works while Terminal is in front.",
+        "de": "Sucht auch im Zeilenpuffer. Wie Bearbeiten › Suchen › Suchen … (⌘F), beim Halten wie Bearbeiten › Bis zum Start löschen (⌘K). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Busca también en las líneas anteriores. Lo mismo que Edición › Buscar › Buscar… (⌘F) y, al mantener pulsado, que Edición › Borrar hasta principio (⌘K). Funciona cuando Terminal está delante.",
+        "fr": "Cherche aussi dans le défilement arrière. Comme Édition › Rechercher › Rechercher… (⌘F), et en maintenant comme Édition › Effacer jusqu’au début (⌘K). Fonctionne quand Terminal est au premier plan.",
+        "ru": "Ищет и в буфере строк. То же, что Правка › Поиск › Найти… (⌘F), а при удержании — Правка › Очистить до начала (⌘K). Работает, когда Терминал на переднем плане."
       },
       "tapAction": {
         "en": "Opens the find bar",
@@ -310,11 +310,11 @@
         "ru": "Уменьшает шрифт (⌘-); удержание — размер по умолчанию"
       },
       "details": {
-        "en": "View › Smaller (⌘-), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
-        "de": "Darstellung › Kleiner (⌘-), beim Halten Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
-        "es": "Visualización › Más pequeño (⌘-) y, al mantener pulsado, Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
-        "fr": "Présentation › Réduire (⌘-), et en maintenant Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
-        "ru": "Вид › Уменьшить (⌘-), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
+        "en": "Same as View › Smaller (⌘-), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
+        "de": "Wie Darstellung › Kleiner (⌘-), beim Halten wie Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Lo mismo que Visualización › Más pequeño (⌘-) y, al mantener pulsado, que Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
+        "fr": "Comme Présentation › Réduire (⌘-), et en maintenant comme Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
+        "ru": "То же, что Вид › Уменьшить (⌘-), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
       },
       "tapAction": {
         "en": "Makes the text smaller",
@@ -349,11 +349,11 @@
         "ru": "Увеличивает шрифт (⌘+); удержание — размер по умолчанию"
       },
       "details": {
-        "en": "View › Bigger (⌘+), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
-        "de": "Darstellung › Größer (⌘+), beim Halten Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
-        "es": "Visualización › Más grande (⌘+) y, al mantener pulsado, Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
-        "fr": "Présentation › Agrandir (⌘+), et en maintenant Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
-        "ru": "Вид › Увеличить (⌘+), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
+        "en": "Same as View › Bigger (⌘+), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
+        "de": "Wie Darstellung › Größer (⌘+), beim Halten wie Darstellung › Standardschriftgröße (⌘0). Funktioniert, wenn Terminal vorne ist.",
+        "es": "Lo mismo que Visualización › Más grande (⌘+) y, al mantener pulsado, que Visualización › Tamaño de letra por omisión (⌘0). Funciona cuando Terminal está delante.",
+        "fr": "Comme Présentation › Agrandir (⌘+), et en maintenant comme Présentation › Taille de police par défaut (⌘0). Fonctionne quand Terminal est au premier plan.",
+        "ru": "То же, что Вид › Увеличить (⌘+), а при удержании — Вид › Размер шрифта по умолчанию (⌘0). Работает, когда Терминал на переднем плане."
       },
       "tapAction": {
         "en": "Makes the text bigger",
@@ -388,11 +388,11 @@
         "ru": "Новое окно Терминала с вашей командой из любого приложения"
       },
       "details": {
-        "en": "Such as cd ~/Projects/app && claude: set it on the first line of the button’s script. It runs in your shell, as if you typed it. Starts Terminal if needed.",
-        "de": "Etwa cd ~/Projects/app && claude: Trag ihn in der ersten Zeile des Skripts der Taste ein. Er läuft in deiner Shell, als hättest du ihn getippt. Startet Terminal bei Bedarf.",
-        "es": "Como cd ~/Projects/app && claude: ponlo en la primera línea del script del botón. Se ejecuta en tu shell, como si lo escribieras. Abre Terminal si hace falta.",
-        "fr": "Comme cd ~/Projects/app && claude : indiquez-la à la première ligne du script du bouton. Elle s’exécute dans votre shell, comme si vous la tapiez. Lance Terminal au besoin.",
-        "ru": "Например, cd ~/Projects/app && claude — задайте её в первой строке скрипта кнопки. Она выполняется в вашей оболочке, как набранная вручную. При необходимости запускает Терминал."
+        "en": "Set the command in the button’s settings, such as cd ~/Projects/app && claude. It runs in your shell, as if you typed it. Starts Terminal if needed.",
+        "de": "Trag den Befehl in den Einstellungen der Taste ein, etwa cd ~/Projects/app && claude. Er läuft in deiner Shell, als hättest du ihn getippt. Startet Terminal bei Bedarf.",
+        "es": "Indica el comando en los ajustes del botón, como cd ~/Projects/app && claude. Se ejecuta en tu shell, como si lo escribieras. Abre Terminal si hace falta.",
+        "fr": "Indiquez la commande dans les réglages du bouton, comme cd ~/Projects/app && claude. Elle s’exécute dans votre shell, comme si vous la tapiez. Lance Terminal au besoin.",
+        "ru": "Команду задайте в настройках кнопки, например cd ~/Projects/app && claude. Она выполнится в вашей оболочке, как будто вы набрали её сами. При необходимости запускает Терминал."
       },
       "tapAction": {
         "en": "Runs the command in a new window",

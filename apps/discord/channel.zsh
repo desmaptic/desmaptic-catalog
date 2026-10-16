@@ -13,7 +13,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 setopt extended_glob
 
 route=${${link##[[:space:]]#}%%[[:space:]]#}
-[[ -n $route ]] || { print -u2 -- "Open Channel: paste a channel's link (Copy Link in Discord) in the first line of the button's script"; exit 1 }
+[[ -n $route ]] || { print -u2 -- "Open Channel: paste a channel’s link (Copy Link in Discord) in this button’s settings"; exit 1 }
 # https://discord.com/channels/<server or @me>/<channel>[/<message>], from Discord, its PTB or Canary; only the digits
 # Discord writes, so the value adds nothing else to the link.
 route=${route#(#i)(https://|http://|)((ptb|canary).)#discord(app)#.com/}

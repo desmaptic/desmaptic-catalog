@@ -1,6 +1,6 @@
 {
   "id": "to-mac",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -12,27 +12,27 @@
     "ru": "На Mac…"
   },
   "summary": {
-    "en": "Type or paste text on the phone and it lands on the Mac’s clipboard; a link also opens in the browser",
-    "de": "Tippe oder füge Text auf dem Telefon ein – er landet in der Zwischenablage des Mac; ein Link öffnet sich auch im Browser",
-    "es": "Escribe o pega un texto en el teléfono y llega al portapapeles del Mac; un enlace además se abre en el navegador",
-    "fr": "Saisissez ou collez un texte sur le téléphone : il arrive dans le presse-papiers du Mac ; un lien s’ouvre aussi dans le navigateur",
-    "ru": "Наберите или вставьте текст на телефоне — он окажется в буфере обмена Mac; ссылка ещё и откроется в браузере"
+    "en": "Sends text from the phone to the Mac’s clipboard and opens a link in its browser",
+    "de": "Schickt Text vom Telefon in die Zwischenablage des Mac und öffnet einen Link im Browser",
+    "es": "Envía un texto del teléfono al portapapeles del Mac y abre un enlace en su navegador",
+    "fr": "Envoie un texte du téléphone dans le presse-papiers du Mac et ouvre un lien dans son navigateur",
+    "ru": "Отправляет текст с телефона в буфер обмена Mac, а ссылку ещё и открывает в браузере"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. A link alone, starting with http:// or https://, also opens in the Mac’s default browser. The button shows only a ✓, never the text: it may be a password or a key.",
-    "de": "Nichts einzurichten. Ein Link allein, der mit http:// oder https:// beginnt, öffnet sich außerdem im Standardbrowser des Mac. Die Taste zeigt nur ein ✓, nie den Text: Es kann ein Passwort oder ein Schlüssel sein.",
-    "es": "No hay nada que configurar. Un enlace solo, que empiece por http:// o https://, además se abre en el navegador predeterminado del Mac. El botón muestra solo un ✓, nunca el texto: puede ser una contraseña o una clave.",
-    "fr": "Rien à configurer. Un lien seul, commençant par http:// ou https://, s’ouvre aussi dans le navigateur par défaut du Mac. Le bouton n’affiche qu’un ✓, jamais le texte : ce peut être un mot de passe ou une clé.",
-    "ru": "Настраивать ничего не нужно. Одна ссылка, начинающаяся с http:// или https://, ещё и откроется в браузере Mac по умолчанию. На кнопке появится только ✓, но не сам текст: это может быть пароль или ключ."
+    "en": "Nothing to set up. If you send just a web link, it also opens in the Mac’s default browser. The button shows only a ✓, never the text itself, since it may be a password or a key.",
+    "de": "Nichts einzurichten. Schickst du nur einen Weblink, öffnet er sich auch im Standardbrowser des Mac. Die Taste zeigt nur ein ✓, nie den Text selbst, denn es könnte ein Passwort oder ein Schlüssel sein.",
+    "es": "No hay nada que configurar. Si envías solo un enlace web, también se abre en el navegador predeterminado del Mac. El botón muestra solo un ✓, nunca el texto, porque podría ser una contraseña o una clave.",
+    "fr": "Rien à configurer. Si vous envoyez juste un lien web, il s’ouvre aussi dans le navigateur par défaut du Mac. Le bouton n’affiche qu’un ✓, jamais le texte lui-même, car ce peut être un mot de passe ou une clé.",
+    "ru": "Настраивать ничего не нужно. Если отправить только ссылку на сайт, она ещё и откроется в браузере Mac по умолчанию. На кнопке появится лишь ✓, без самого текста, ведь это может быть пароль или ключ."
   },
   "tapAction": {
     "en": "Asks for text and puts it on the Mac’s clipboard",
     "de": "Fragt nach einem Text und legt ihn in die Zwischenablage des Mac",
     "es": "Pide un texto y lo pone en el portapapeles del Mac",
     "fr": "Demande un texte et le place dans le presse-papiers du Mac",
-    "ru": "Спрашивает текст и кладёт его в буфер обмена Mac"
+    "ru": "Просит ввести текст и кладёт его в буфер обмена Mac"
   },
   "button": {
     "icon": {
@@ -47,8 +47,20 @@
       }
     },
     "input": {
-      "question": "What to send to the Mac?",
-      "placeholder": "Text or a link",
+      "question": {
+        "en": "What to send to the Mac?",
+        "de": "Was soll an den Mac gehen?",
+        "es": "¿Qué quieres enviar al Mac?",
+        "fr": "Que voulez-vous envoyer au Mac ?",
+        "ru": "Что отправить на Mac?"
+      },
+      "placeholder": {
+        "en": "Text or a link",
+        "de": "Text oder Link",
+        "es": "Texto o enlace",
+        "fr": "Texte ou lien",
+        "ru": "Текст или ссылка"
+      },
       "multiline": true
     }
   }

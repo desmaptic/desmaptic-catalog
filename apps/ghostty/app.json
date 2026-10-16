@@ -1,6 +1,6 @@
 {
   "id": "ghostty",
-  "revision": 5,
+  "revision": 6,
   "name": "Ghostty",
   "bundleIds": ["com.mitchellh.ghostty"],
   "category": "development",
@@ -16,11 +16,11 @@
         "ru": "Вкладка в переднем окне из любого приложения; удержание закрывает передний терминал"
       },
       "details": {
-        "en": "Like File › New Tab (⌘T), in the front terminal’s folder; Ghostty comes forward. The long press works only while Ghostty is in front; ⌘Z undoes it within 5 s (Ghostty’s default).",
-        "de": "Wie File › New Tab (⌘T), im Ordner des vorderen Terminals; Ghostty kommt nach vorne. Langes Drücken wirkt nur, wenn Ghostty vorne ist; ⌘Z macht es innerhalb von 5 s rückgängig (Standard von Ghostty).",
-        "es": "Como File › New Tab (⌘T), en la carpeta del terminal de delante; Ghostty pasa al frente. Mantener pulsado solo funciona con Ghostty delante; ⌘Z lo deshace en los 5 s siguientes (valor por omisión de Ghostty).",
-        "fr": "Comme File › New Tab (⌘T), dans le dossier du terminal au premier plan ; Ghostty passe au premier plan. L’appui long n’agit que si Ghostty est au premier plan ; ⌘Z l’annule dans les 5 s (réglage par défaut de Ghostty).",
-        "ru": "Как File › New Tab (⌘T), в папке переднего терминала; Ghostty выходит на передний план. Удержание действует, только когда Ghostty на переднем плане; ⌘Z отменяет его в течение 5 с (так по умолчанию в Ghostty)."
+        "en": "The tab opens in the front terminal’s folder, as with File › New Tab (⌘T), and Ghostty comes forward. The long press works only while Ghostty is in front. ⌘Z brings the terminal back within 5 seconds, Ghostty’s default.",
+        "de": "Der Tab öffnet sich im Ordner des vorderen Terminals, wie mit File › New Tab (⌘T), und Ghostty kommt nach vorne. Das Halten wirkt nur, wenn Ghostty vorne ist. ⌘Z holt das Terminal innerhalb von 5 Sekunden zurück, so ist Ghostty voreingestellt.",
+        "es": "La pestaña se abre en la carpeta del terminal de delante, como con File › New Tab (⌘T), y Ghostty pasa al frente. Mantener pulsado solo funciona con Ghostty delante. ⌘Z recupera el terminal en los 5 segundos siguientes, como viene por defecto en Ghostty.",
+        "fr": "L’onglet s’ouvre dans le dossier du terminal au premier plan, comme avec File › New Tab (⌘T), et Ghostty passe au premier plan. L’appui long n’agit que si Ghostty est au premier plan. ⌘Z rouvre le terminal dans les 5 secondes, réglage par défaut de Ghostty.",
+        "ru": "Вкладка откроется в папке переднего терминала, как через File › New Tab (⌘T), и Ghostty выйдет на передний план. Удержание срабатывает, только когда Ghostty на переднем плане. Закрытый терминал можно вернуть через ⌘Z в течение 5 секунд, так по умолчанию в Ghostty."
       },
       "tapAction": {
         "en": "Opens a new tab",
@@ -30,11 +30,11 @@
         "ru": "Открывает новую вкладку"
       },
       "holdAction": {
-        "en": "⚠️ Closes the terminal in front and what runs in it (File › Close); Ghostty asks first while a command runs",
-        "de": "⚠️ Schließt das vordere Terminal samt dem, was darin läuft (File › Close); läuft noch ein Befehl, fragt Ghostty vorher",
-        "es": "⚠️ Cierra el terminal de delante y lo que se ejecuta en él (File › Close); si aún corre un comando, Ghostty pregunta antes",
-        "fr": "⚠️ Ferme le terminal au premier plan et ce qui s’y exécute (File › Close) ; si une commande tourne encore, Ghostty demande d’abord",
-        "ru": "⚠️ Закрывает передний терминал вместе с тем, что в нём запущено (File › Close); если команда ещё работает, Ghostty сначала спросит"
+        "en": "⚠️ Closes the terminal in front and what runs in it (File › Close), though Ghostty asks first while a command is running",
+        "de": "⚠️ Schließt das vordere Terminal samt dem, was darin läuft (File › Close), doch solange ein Befehl läuft, fragt Ghostty vorher",
+        "es": "⚠️ Cierra el terminal de delante y lo que se ejecuta en él (File › Close), pero si aún corre un comando, Ghostty pregunta antes",
+        "fr": "⚠️ Ferme le terminal au premier plan et ce qui s’y exécute (File › Close), mais si une commande tourne encore, Ghostty demande d’abord",
+        "ru": "⚠️ Закрывает передний терминал вместе с тем, что в нём запущено (File › Close), но если команда ещё работает, Ghostty сначала спросит"
       },
       "permissions": ["automation"],
       "button": {
@@ -117,11 +117,11 @@
         "ru": "Новое окно Ghostty из любого приложения"
       },
       "details": {
-        "en": "Like File › New Window (⌘N), in the folder of the terminal in front; Ghostty comes forward. When Ghostty isn’t running, the tap starts it.",
-        "de": "Wie File › New Window (⌘N), im Ordner des vorderen Terminals; Ghostty kommt nach vorne. Läuft Ghostty nicht, startet es der Tipp.",
-        "es": "Como File › New Window (⌘N), en la carpeta del terminal de delante; Ghostty pasa al frente. Si Ghostty no está abierto, el toque lo abre.",
-        "fr": "Comme File › New Window (⌘N), dans le dossier du terminal au premier plan ; Ghostty passe au premier plan. Si Ghostty n’est pas ouvert, le toucher le lance.",
-        "ru": "Как File › New Window (⌘N), в папке переднего терминала; Ghostty выходит на передний план. Если Ghostty не запущен, нажатие запускает его."
+        "en": "The window opens in the front terminal’s folder, as with File › New Window (⌘N), and Ghostty comes forward. When Ghostty isn’t running, the tap starts it.",
+        "de": "Das Fenster öffnet sich im Ordner des vorderen Terminals, wie mit File › New Window (⌘N), und Ghostty kommt nach vorne. Läuft Ghostty nicht, wird es beim Tippen gestartet.",
+        "es": "La ventana se abre en la carpeta del terminal de delante, como con File › New Window (⌘N), y Ghostty pasa al frente. Si Ghostty no está abierto, el toque lo abre.",
+        "fr": "La fenêtre s’ouvre dans le dossier du terminal au premier plan, comme avec File › New Window (⌘N), et Ghostty passe au premier plan. Si Ghostty n’est pas ouvert, le toucher le lance.",
+        "ru": "Окно откроется в папке переднего терминала, как через File › New Window (⌘N), и Ghostty выйдет на передний план. Если Ghostty не запущен, нажатие запустит его."
       },
       "tapAction": {
         "en": "Opens a new window",
@@ -148,11 +148,11 @@
         "ru": "Новая панель справа от переднего терминала"
       },
       "details": {
-        "en": "File › Split Right (⌘D); the new split gets the focus. Works from any app.",
-        "de": "File › Split Right (⌘D); der neue Bereich erhält den Fokus. Funktioniert aus jeder App.",
-        "es": "File › Split Right (⌘D); la nueva división recibe el foco. Funciona desde cualquier app.",
-        "fr": "File › Split Right (⌘D) ; le nouveau panneau reçoit le focus. Fonctionne depuis n’importe quelle app.",
-        "ru": "File › Split Right (⌘D); фокус переходит на новую панель. Работает из любого приложения."
+        "en": "File › Split Right (⌘D). The new split gets the focus. Works from any app.",
+        "de": "File › Split Right (⌘D). Der neue Bereich bekommt den Fokus. Funktioniert aus jeder App.",
+        "es": "File › Split Right (⌘D). La nueva división recibe el foco. Funciona desde cualquier app.",
+        "fr": "File › Split Right (⌘D). Le nouveau panneau prend le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "File › Split Right (⌘D). Фокус перейдёт в новую панель. Работает из любого приложения."
       },
       "tapAction": {
         "en": "Adds a split on the right",
@@ -179,11 +179,11 @@
         "ru": "Новая панель под передним терминалом"
       },
       "details": {
-        "en": "File › Split Down (⇧⌘D); the new split gets the focus. Works from any app.",
-        "de": "File › Split Down (⇧⌘D); der neue Bereich erhält den Fokus. Funktioniert aus jeder App.",
-        "es": "File › Split Down (⇧⌘D); la nueva división recibe el foco. Funciona desde cualquier app.",
-        "fr": "File › Split Down (⇧⌘D) ; le nouveau panneau reçoit le focus. Fonctionne depuis n’importe quelle app.",
-        "ru": "File › Split Down (⇧⌘D); фокус переходит на новую панель. Работает из любого приложения."
+        "en": "File › Split Down (⇧⌘D). The new split gets the focus. Works from any app.",
+        "de": "File › Split Down (⇧⌘D). Der neue Bereich bekommt den Fokus. Funktioniert aus jeder App.",
+        "es": "File › Split Down (⇧⌘D). La nueva división recibe el foco. Funciona desde cualquier app.",
+        "fr": "File › Split Down (⇧⌘D). Le nouveau panneau prend le focus. Fonctionne depuis n’importe quelle app.",
+        "ru": "File › Split Down (⇧⌘D). Фокус перейдёт в новую панель. Работает из любого приложения."
       },
       "tapAction": {
         "en": "Adds a split below",
@@ -249,11 +249,11 @@
         "ru": "Передняя панель занимает всю вкладку (⇧⌘↩)"
       },
       "details": {
-        "en": "Window › Zoom Split (⇧⌘↩): the tab’s other splits are hidden, not closed, and come back on the next tap. Works from any app.",
-        "de": "Window › Zoom Split (⇧⌘↩): Die anderen Bereiche des Tabs werden ausgeblendet, nicht geschlossen, und kommen beim nächsten Tipp zurück. Funktioniert aus jeder App.",
-        "es": "Window › Zoom Split (⇧⌘↩): las demás divisiones de la pestaña se ocultan, no se cierran, y vuelven con el siguiente toque. Funciona desde cualquier app.",
-        "fr": "Window › Zoom Split (⇧⌘↩) : les autres panneaux de l’onglet sont masqués, pas fermés, et reviennent au toucher suivant. Fonctionne depuis n’importe quelle app.",
-        "ru": "Window › Zoom Split (⇧⌘↩): остальные панели вкладки скрываются, а не закрываются, и возвращаются при следующем нажатии. Работает из любого приложения."
+        "en": "Window › Zoom Split (⇧⌘↩). The tab’s other splits are hidden, not closed, until the next tap. Works from any app.",
+        "de": "Window › Zoom Split (⇧⌘↩). Die anderen Bereiche des Tabs werden bis zum nächsten Tippen ausgeblendet, nicht geschlossen. Funktioniert aus jeder App.",
+        "es": "Window › Zoom Split (⇧⌘↩). Las demás divisiones de la pestaña se ocultan hasta el siguiente toque, no se cierran. Funciona desde cualquier app.",
+        "fr": "Window › Zoom Split (⇧⌘↩). Les autres panneaux de l’onglet sont masqués jusqu’au toucher suivant, pas fermés. Fonctionne depuis n’importe quelle app.",
+        "ru": "Window › Zoom Split (⇧⌘↩). Остальные панели вкладки не закрываются, а прячутся до следующего нажатия. Работает из любого приложения."
       },
       "tapAction": {
         "en": "Zooms or restores the split",
@@ -280,11 +280,11 @@
         "ru": "Ищет по тексту терминала (⌘F); удержание очищает его"
       },
       "details": {
-        "en": "Edit › Find › Find… (⌘F) in the front terminal. Searches the scrollback too. Works from any app; the long press only while Ghostty is in front.",
-        "de": "Edit › Find › Find… (⌘F) im vorderen Terminal. Sucht auch im Zeilenpuffer. Funktioniert aus jeder App, langes Drücken nur, wenn Ghostty vorne ist.",
-        "es": "Edit › Find › Find… (⌘F) en el terminal de delante. Busca también en las líneas anteriores. Funciona desde cualquier app; mantener pulsado, solo con Ghostty delante.",
-        "fr": "Edit › Find › Find… (⌘F) dans le terminal au premier plan. Cherche aussi dans le défilement arrière. Fonctionne depuis n’importe quelle app ; l’appui long, seulement si Ghostty est au premier plan.",
-        "ru": "Edit › Find › Find… (⌘F) в переднем терминале. Ищет и в буфере строк. Работает из любого приложения, удержание — только когда Ghostty на переднем плане."
+        "en": "Edit › Find › Find… (⌘F) in the front terminal. Searches the scrollback too. Works from any app, but the long press only while Ghostty is in front.",
+        "de": "Edit › Find › Find… (⌘F) im vorderen Terminal. Sucht auch im Zeilenpuffer. Funktioniert aus jeder App, das Halten aber nur, wenn Ghostty vorne ist.",
+        "es": "Edit › Find › Find… (⌘F) en el terminal de delante. Busca también en las líneas anteriores. Funciona desde cualquier app, pero mantener pulsado solo funciona con Ghostty delante.",
+        "fr": "Edit › Find › Find… (⌘F) dans le terminal au premier plan. Cherche aussi dans le défilement arrière. Fonctionne depuis n’importe quelle app, mais l’appui long seulement si Ghostty est au premier plan.",
+        "ru": "Edit › Find › Find… (⌘F) в переднем терминале. Ищет и в буфере строк. Работает из любого приложения, а удержание срабатывает, только когда Ghostty на переднем плане."
       },
       "tapAction": {
         "en": "Opens the search bar",
@@ -319,11 +319,11 @@
         "ru": "Все команды Ghostty с поиском (⇧⌘P)"
       },
       "details": {
-        "en": "View › Command Palette (⇧⌘P): type part of a command’s name to run it, including those without a key. Works from any app.",
-        "de": "View › Command Palette (⇧⌘P): Tippe einen Teil des Befehlsnamens ein, um ihn auszuführen – auch Befehle ohne Taste. Funktioniert aus jeder App.",
-        "es": "View › Command Palette (⇧⌘P): escribe parte del nombre de un comando para ejecutarlo, también los que no tienen atajo. Funciona desde cualquier app.",
-        "fr": "View › Command Palette (⇧⌘P) : tapez une partie du nom d’une commande pour la lancer, même sans raccourci. Fonctionne depuis n’importe quelle app.",
-        "ru": "View › Command Palette (⇧⌘P): введите часть названия команды, чтобы выполнить её, — даже без сочетания клавиш. Работает из любого приложения."
+        "en": "View › Command Palette (⇧⌘P). Type part of a command’s name to run it, even one without a key. Works from any app.",
+        "de": "View › Command Palette (⇧⌘P). Gib einen Teil des Befehlsnamens ein, um den Befehl auszuführen, auch wenn er kein Tastenkürzel hat. Funktioniert aus jeder App.",
+        "es": "View › Command Palette (⇧⌘P). Escribe parte del nombre de un comando para ejecutarlo, aunque no tenga atajo. Funciona desde cualquier app.",
+        "fr": "View › Command Palette (⇧⌘P). Tapez une partie du nom d’une commande pour la lancer, même sans raccourci. Fonctionne depuis n’importe quelle app.",
+        "ru": "View › Command Palette (⇧⌘P). Введите часть названия команды, чтобы выполнить её, даже если у неё нет сочетания клавиш. Работает из любого приложения."
       },
       "tapAction": {
         "en": "Opens or closes the palette",
@@ -350,11 +350,11 @@
         "ru": "Выпадающий терминал Ghostty из любого приложения"
       },
       "details": {
-        "en": "View › Quick Terminal: a terminal that slides in over any app and away again; Ghostty has no key for it unless you set one. The other buttons act on the window behind it.",
-        "de": "View › Quick Terminal: ein Terminal, das über jeder App einfährt und wieder verschwindet; eine Taste dafür gibt es nur, wenn du eine festlegst. Die anderen Tasten wirken auf das Fenster dahinter.",
-        "es": "View › Quick Terminal: un terminal que se desliza sobre cualquier app y vuelve a irse; no tiene atajo salvo que tú le asignes uno. Los demás botones actúan en la ventana de detrás.",
-        "fr": "View › Quick Terminal : un terminal qui glisse par-dessus n’importe quelle app puis repart ; il n’a de raccourci que si vous lui en attribuez un. Les autres boutons agissent sur la fenêtre derrière.",
-        "ru": "View › Quick Terminal: терминал, который выезжает поверх любого приложения и уезжает обратно; своей клавиши у него нет, пока вы её не назначите. Остальные кнопки действуют на окно за ним."
+        "en": "The quick terminal slides in over any app and away again (View › Quick Terminal). Ghostty has no key for it unless you set one. The other buttons act on the window behind it.",
+        "de": "Das Quick Terminal fährt über jeder App ein und wieder weg (View › Quick Terminal). Ein Tastenkürzel dafür gibt es nur, wenn du eines festlegst. Die anderen Tasten wirken auf das Fenster dahinter.",
+        "es": "El Quick Terminal se desliza sobre cualquier app y vuelve a irse (View › Quick Terminal). No tiene atajo salvo que tú le asignes uno. Los demás botones actúan en la ventana de detrás.",
+        "fr": "Le Quick Terminal glisse par-dessus n’importe quelle app puis repart (View › Quick Terminal). Il n’a de raccourci que si vous lui en attribuez un. Les autres boutons agissent sur la fenêtre derrière.",
+        "ru": "Quick Terminal выезжает поверх любого приложения и уезжает обратно (View › Quick Terminal). Своей клавиши у него нет, пока вы её не назначите. Остальные кнопки действуют на окно за ним."
       },
       "tapAction": {
         "en": "Shows or hides the quick terminal",
@@ -381,11 +381,11 @@
         "ru": "Применяет изменения файла конфигурации (⇧⌘,); удержание открывает его"
       },
       "details": {
-        "en": "Ghostty › Reload Configuration (⇧⌘,), from any app: Ghostty applies what it can while running, and shows any errors in the file.",
-        "de": "Ghostty › Reload Configuration (⇧⌘,), aus jeder App: Ghostty übernimmt, was im laufenden Betrieb geht, und zeigt Fehler in der Datei an.",
-        "es": "Ghostty › Reload Configuration (⇧⌘,), desde cualquier app: Ghostty aplica lo que puede sin reiniciarse y muestra los errores del archivo.",
-        "fr": "Ghostty › Reload Configuration (⇧⌘,), depuis n’importe quelle app : Ghostty applique ce qu’il peut sans redémarrer et signale les erreurs du fichier.",
-        "ru": "Ghostty › Reload Configuration (⇧⌘,) из любого приложения: Ghostty применяет то, что можно без перезапуска, и показывает ошибки в файле."
+        "en": "Ghostty › Reload Configuration (⇧⌘,). Ghostty applies what it can while running and shows any errors in the file. Works from any app.",
+        "de": "Ghostty › Reload Configuration (⇧⌘,). Ghostty übernimmt, was im laufenden Betrieb geht, und zeigt Fehler in der Datei an. Funktioniert aus jeder App.",
+        "es": "Ghostty › Reload Configuration (⇧⌘,). Ghostty aplica lo que puede sin reiniciarse y muestra los errores del archivo. Funciona desde cualquier app.",
+        "fr": "Ghostty › Reload Configuration (⇧⌘,). Ghostty applique ce qu’il peut sans redémarrer et signale les erreurs du fichier. Fonctionne depuis n’importe quelle app.",
+        "ru": "Ghostty › Reload Configuration (⇧⌘,). Ghostty применит всё, что можно без перезапуска, и покажет ошибки в файле. Работает из любого приложения."
       },
       "tapAction": {
         "en": "Reloads the config",
@@ -420,11 +420,11 @@
         "ru": "Новая вкладка в папке, открытой в Finder"
       },
       "details": {
-        "en": "The folder of the front Finder window, or the desktop when none is open. If Ghostty has no window, it opens one. Works from any app and starts Ghostty if needed.",
-        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Hat Ghostty kein Fenster, öffnet es eins. Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
-        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Si Ghostty no tiene ventanas, abre una. Funciona desde cualquier app y abre Ghostty si hace falta.",
-        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Si Ghostty n’a pas de fenêtre, il en ouvre une. Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
-        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Если у Ghostty нет окон, откроется новое. Работает из любого приложения и при необходимости запускает Ghostty."
+        "en": "The button uses the folder of the front Finder window, or the desktop if no Finder window is open. If Ghostty has no window, it opens one. Works from any app and starts Ghostty if needed.",
+        "de": "Die Taste nimmt den Ordner des vorderen Finder-Fensters oder, wenn keins offen ist, den Schreibtisch. Hat Ghostty kein Fenster, öffnet es eins. Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
+        "es": "El botón usa la carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna abierta. Si Ghostty no tiene ventanas, abre una. Funciona desde cualquier app y abre Ghostty si hace falta.",
+        "fr": "Le bouton prend le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Si Ghostty n’a pas de fenêtre, il en ouvre une. Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
+        "ru": "Кнопка берёт папку из переднего окна Finder, а если окон Finder нет, то рабочий стол. Если у Ghostty нет окон, откроется новое. Работает из любого приложения и при необходимости запускает Ghostty."
       },
       "tapAction": {
         "en": "Opens Ghostty in that folder",
@@ -451,11 +451,11 @@
         "ru": "Открывает в Finder папку переднего терминала"
       },
       "details": {
-        "en": "The shell’s folder as of its last prompt, as Ghostty’s shell integration reports it. Works with Ghostty in the background too.",
-        "de": "Der Ordner der Shell beim letzten Prompt, wie ihn die Shell-Integration von Ghostty meldet. Funktioniert auch mit Ghostty im Hintergrund.",
-        "es": "La carpeta del shell en su último prompt, según la comunica la integración de Ghostty con el shell. Funciona también con Ghostty en segundo plano.",
-        "fr": "Le dossier du shell à sa dernière invite, tel que le signale l’intégration de Ghostty au shell. Fonctionne aussi avec Ghostty en arrière-plan.",
-        "ru": "Папка, в которой была оболочка при последнем приглашении, — о ней сообщает интеграция Ghostty с оболочкой. Работает и когда Ghostty в фоне."
+        "en": "The folder the shell was in at its last prompt, which Ghostty learns from its shell integration. Works even with Ghostty in the background.",
+        "de": "Der Ordner, in dem die Shell beim letzten Prompt war. Ghostty kennt ihn über seine Shell-Integration. Funktioniert auch mit Ghostty im Hintergrund.",
+        "es": "La carpeta en la que estaba el shell en su último prompt. Ghostty la conoce por su integración con el shell. Funciona también con Ghostty en segundo plano.",
+        "fr": "Le dossier où se trouvait le shell à sa dernière invite. Ghostty le connaît grâce à son intégration au shell. Fonctionne aussi avec Ghostty en arrière-plan.",
+        "ru": "Это папка, в которой оболочка была при последнем приглашении. Ghostty узнаёт её от своей интеграции с оболочкой. Работает, даже когда Ghostty в фоне."
       },
       "tapAction": {
         "en": "Opens the folder in Finder",
@@ -560,11 +560,11 @@
         "ru": "Новая вкладка в папке проекта, где сразу запускается команда"
       },
       "details": {
-        "en": "Set the folder on the first line of the button’s script and, on the second, what to type, such as claude (empty: nothing). Works from any app and starts Ghostty if needed.",
-        "de": "Den Ordner trägst du in der ersten Zeile des Skripts der Taste ein, in der zweiten, was getippt wird, etwa claude (leer: nichts). Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
-        "es": "Pon la carpeta en la primera línea del script del botón y, en la segunda, lo que se escribe, como claude (vacío: nada). Funciona desde cualquier app y abre Ghostty si hace falta.",
-        "fr": "Indiquez le dossier à la première ligne du script du bouton et, à la deuxième, ce qui est saisi, comme claude (vide : rien). Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
-        "ru": "Папку задайте в первой строке скрипта кнопки, во второй — что ввести, например claude (пусто — ничего). Работает из любого приложения и при необходимости запускает Ghostty."
+        "en": "Set the folder and a command, such as claude, in the button’s settings. Without a command, the tab just opens in the folder. Works from any app and starts Ghostty if needed.",
+        "de": "Ordner und Befehl, etwa claude, trägst du in den Einstellungen der Taste ein. Ohne Befehl öffnet sich der Tab einfach im Ordner. Funktioniert aus jeder App und startet Ghostty bei Bedarf.",
+        "es": "Pon la carpeta y un comando, como claude, en los ajustes del botón. Sin comando, la pestaña solo se abre en la carpeta. Funciona desde cualquier app y abre Ghostty si hace falta.",
+        "fr": "Indiquez le dossier et une commande, comme claude, dans les réglages du bouton. Sans commande, l’onglet s’ouvre simplement dans le dossier. Fonctionne depuis n’importe quelle app et lance Ghostty au besoin.",
+        "ru": "Папку и команду, например claude, задайте в настройках кнопки. Без команды вкладка просто откроется в папке. Работает из любого приложения и при необходимости запускает Ghostty."
       },
       "tapAction": {
         "en": "Opens a tab in the project folder",
@@ -593,11 +593,11 @@
         "ru": "Вкладки, панели, Quick Terminal и ваш проект в одно касание"
       },
       "details": {
-        "en": "Every button works from any app and on any keyboard layout; the long presses that close or clear a terminal, only while Ghostty is in front. Project Tab’s folder and command are set in its script. Ghostty’s menus are in English only.",
-        "de": "Jede Taste funktioniert aus jeder App und mit jeder Tastaturbelegung; das Halten zum Schließen oder Leeren eines Terminals nur, wenn Ghostty vorne ist. Ordner und Befehl von Projekt-Tab stehen in seinem Skript. Die Menüs von Ghostty gibt es nur auf Englisch.",
-        "es": "Todos los botones funcionan desde cualquier app y con cualquier distribución de teclado; mantener pulsado para cerrar o borrar un terminal, solo con Ghostty delante. La carpeta y el comando de Pestaña de proyecto se ponen en su script. Los menús de Ghostty solo están en inglés.",
-        "fr": "Tous les boutons fonctionnent depuis n’importe quelle app et avec n’importe quelle disposition de clavier ; les appuis longs qui ferment ou effacent un terminal, seulement quand Ghostty est au premier plan. Le dossier et la commande d’Onglet projet se règlent dans son script. Les menus de Ghostty sont uniquement en anglais.",
-        "ru": "Все кнопки работают из любого приложения и с любой раскладкой; удержание, закрывающее или очищающее терминал, — только когда Ghostty на переднем плане. Папка и команда «Вкладки проекта» задаются в её скрипте. Меню Ghostty есть только на английском."
+        "en": "Every button works from any app and with any keyboard layout, but the long presses that close or clear a terminal work only while Ghostty is in front. Set Project Tab’s folder and command in the button’s settings. Ghostty’s menus are in English only.",
+        "de": "Jede Taste funktioniert aus jeder App und mit jeder Tastaturbelegung, das Halten zum Schließen oder Leeren eines Terminals aber nur, wenn Ghostty vorne ist. Ordner und Befehl von Projekt-Tab trägst du in den Einstellungen der Taste ein. Die Menüs von Ghostty gibt es nur auf Englisch.",
+        "es": "Todos los botones funcionan desde cualquier app y con cualquier distribución de teclado, pero mantener pulsado para cerrar o limpiar un terminal solo funciona con Ghostty delante. La carpeta y el comando de Pestaña de proyecto se ponen en los ajustes del botón. Los menús de Ghostty solo están en inglés.",
+        "fr": "Tous les boutons fonctionnent depuis n’importe quelle app et avec n’importe quelle disposition de clavier, mais les appuis longs qui ferment ou effacent un terminal ne marchent que si Ghostty est au premier plan. Indiquez le dossier et la commande d’Onglet projet dans les réglages du bouton. Les menus de Ghostty sont uniquement en anglais.",
+        "ru": "Все кнопки работают из любого приложения и при любой раскладке, но удержания, которые закрывают или очищают терминал, срабатывают, только когда Ghostty на переднем плане. Папку и команду «Вкладки проекта» задайте в настройках кнопки. Меню Ghostty есть только на английском."
       },
       "bindByDefault": true,
       "placements": [

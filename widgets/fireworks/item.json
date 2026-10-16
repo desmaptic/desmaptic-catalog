@@ -1,6 +1,6 @@
 {
   "id": "fireworks",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "Fireworks",
@@ -19,25 +19,25 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Rockets rise on the display under the pointer and burst into peonies, rings and golden willows above all windows; clicks go through. The button turns gold during the show.",
-    "de": "Raketen steigen auf dem Display mit dem Zeiger auf und zerplatzen über allen Fenstern zu Päonien, Ringen und goldenen Weiden; Klicks gehen hindurch. Während der Show ist die Taste golden.",
-    "es": "Los cohetes suben en la pantalla donde está el puntero y estallan en peonías, anillos y sauces dorados sobre todas las ventanas; los clics los atraviesan. El botón se vuelve dorado durante el espectáculo.",
-    "fr": "Les fusées montent sur l’écran où se trouve le pointeur et éclatent en pivoines, anneaux et saules dorés au-dessus de toutes les fenêtres ; les clics passent au travers. Le bouton devient doré pendant le spectacle.",
-    "ru": "Ракеты взлетают на экране, где указатель, и раскрываются пионами, кольцами и золотыми ивами поверх всех окон; клики проходят сквозь них. Пока идёт салют, кнопка золотая."
+    "en": "Rockets rise on the display with the pointer and burst into colorful sparks, rings and golden rain over all windows. Clicks go through them. The button turns gold while the show is on.",
+    "de": "Raketen steigen auf dem Display mit dem Zeiger auf und zerplatzen vor allen Fenstern zu bunten Funken, Ringen und Goldregen. Klicks gehen durch sie hindurch. Während der Show ist die Taste golden.",
+    "es": "Los cohetes suben en la pantalla donde está el puntero y estallan en chispas de colores, anillos y lluvia dorada por encima de las ventanas. Los clics los atraviesan. Durante el espectáculo, el botón se vuelve dorado.",
+    "fr": "Les fusées montent sur l’écran où se trouve le pointeur et éclatent en étincelles colorées, en anneaux et en pluie dorée au-dessus des fenêtres. Les clics passent au travers. Pendant le spectacle, le bouton devient doré.",
+    "ru": "Ракеты взлетают на экране, где сейчас курсор, и рассыпаются поверх окон цветными искрами, кольцами и золотым дождём. Кликать салют не мешает. Пока он идёт, кнопка золотая."
   },
   "tapAction": {
-    "en": "Launches a salvo of rockets; each tap adds another",
-    "de": "Startet eine Salve Raketen; jedes Tippen schickt eine weitere",
-    "es": "Lanza una salva de cohetes; cada toque añade otra",
-    "fr": "Lance une salve de fusées ; chaque toucher en ajoute une",
-    "ru": "Запускает залп ракет; каждое нажатие добавляет ещё один"
+    "en": "Launches a salvo of rockets, and each tap adds one more",
+    "de": "Startet eine Salve Raketen, und jedes Tippen schickt eine weitere",
+    "es": "Lanza una salva de cohetes, y cada toque añade otra",
+    "fr": "Lance une salve de fusées, et chaque toucher en ajoute une",
+    "ru": "Запускает залп ракет, и каждое нажатие добавляет ещё один"
   },
   "holdAction": {
     "en": "The grand finale: about six seconds of rockets, most from the sides",
     "de": "Das große Finale: rund sechs Sekunden Raketen, die meisten von den Seiten",
     "es": "El gran final: unos seis segundos de cohetes, la mayoría desde los lados",
     "fr": "Le bouquet final : environ six secondes de fusées, surtout depuis les côtés",
-    "ru": "Большой финал: около шести секунд ракет, больше всего с краёв"
+    "ru": "Большой финал: около шести секунд ракет, в основном с краёв"
   },
   "button": {
     "icon": {

@@ -34,7 +34,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 if [[ $action == link ]]; then
   link=${${link##[[:space:]]##}%%[[:space:]]##}
   [[ -n $link ]] ||
-    { print -u2 -- "Set the link of a Linear page in the first line of this button's script"; exit 1 }
+    { print -u2 -- "Open Link: paste the link of a Linear page in this button’s settings, e.g. link=\"https://linear.app/acme/team/ENG/active\""; exit 1 }
   rest=${${link#(#i)http(s|)://}#(#i)linear.app/}
   if [[ $rest == $link || $rest == ${link#(#i)http(s|)://} || -z $rest ]]; then
     print -u2 -- "This is not a link to a Linear page: it starts with https://linear.app/"

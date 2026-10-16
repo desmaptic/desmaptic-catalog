@@ -1,6 +1,6 @@
 {
   "id": "clean-keyboard",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Clean Keyboard",
@@ -19,18 +19,18 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Keys, including modifiers and media keys, do nothing until you tap again or the minute is up; the button counts down. The power button and Touch ID still work.",
-    "de": "Tasten, auch Sonder- und Medientasten, reagieren nicht, bis du erneut tippst oder die Minute um ist; die Taste zählt herunter. Ein-/Ausschalter und Touch ID funktionieren weiter.",
-    "es": "Las teclas, incluidas las de modificación y las multimedia, no responden hasta que vuelvas a tocar o pase el minuto; el botón muestra la cuenta atrás. El botón de encendido y Touch ID siguen funcionando.",
-    "fr": "Les touches, y compris les touches de modification et multimédias, ne répondent plus jusqu’à ce que vous touchiez à nouveau ou que la minute soit écoulée ; le bouton affiche le compte à rebours. Le bouton d’alimentation et Touch ID fonctionnent toujours.",
-    "ru": "Клавиши, в том числе модификаторы и мультимедийные, не работают, пока вы не нажмёте снова или не пройдёт минута; кнопка показывает обратный отсчёт. Кнопка питания и Touch ID продолжают работать."
+    "en": "No key works, not even ⌘ or volume, until the minute is up or you tap again. The button shows how much time is left. The power button and Touch ID still work.",
+    "de": "Keine Taste reagiert, auch nicht ⌘ oder die Lautstärke, bis die Minute um ist oder du erneut tippst. Die Taste zeigt, wie viel Zeit noch bleibt. Ein-/Ausschalter und Touch ID funktionieren weiter.",
+    "es": "Ninguna tecla funciona, ni siquiera ⌘ o el volumen, hasta que pase el minuto o vuelvas a tocar. El botón muestra cuánto tiempo queda. El botón de encendido y Touch ID siguen funcionando.",
+    "fr": "Aucune touche ne répond, pas même ⌘ ou le volume, jusqu’à la fin de la minute ou jusqu’à ce que vous touchiez à nouveau. Le bouton affiche le temps restant. Le bouton d’alimentation et Touch ID fonctionnent toujours.",
+    "ru": "Ни одна клавиша, даже ⌘ или громкость, не сработает, пока не пройдёт минута или вы снова не нажмёте кнопку. На кнопке видно, сколько осталось. Кнопка питания и Touch ID работают как обычно."
   },
   "tapAction": {
-    "en": "Locks the keyboard for a minute; a second tap unlocks it",
-    "de": "Sperrt die Tastatur für eine Minute; erneutes Tippen entsperrt sie",
-    "es": "Bloquea el teclado un minuto; otro toque lo desbloquea",
-    "fr": "Verrouille le clavier une minute ; touchez à nouveau pour le déverrouiller",
-    "ru": "Блокирует клавиатуру на минуту; повторное нажатие разблокирует"
+    "en": "Locks the keyboard for a minute, and a second tap unlocks it",
+    "de": "Sperrt die Tastatur für eine Minute, erneutes Tippen entsperrt sie",
+    "es": "Bloquea el teclado un minuto, y otro toque lo desbloquea",
+    "fr": "Verrouille le clavier une minute, et un nouveau toucher le déverrouille",
+    "ru": "Блокирует клавиатуру на минуту, а повторное нажатие снимает блокировку"
   },
   "permissions": [
     "accessibility"

@@ -1,6 +1,6 @@
 {
   "id": "headphones",
-  "revision": 4,
+  "revision": 7,
   "kind": "widget",
   "title": {
     "en": "Headphones",
@@ -10,20 +10,20 @@
     "ru": "Наушники"
   },
   "summary": {
-    "en": "Battery of the connected Bluetooth headphones: AirPods left, right and case; pink at 20%",
-    "de": "Akku der verbundenen Bluetooth-Kopfhörer: AirPods links, rechts und Case; pink bei 20 %",
-    "es": "Batería de los auriculares Bluetooth conectados: AirPods izquierdo, derecho y estuche; rosa al 20 %",
-    "fr": "Batterie des écouteurs Bluetooth connectés : AirPods gauche, droit et boîtier ; rose à 20 %",
-    "ru": "Заряд подключённых Bluetooth-наушников: у AirPods — левый, правый и футляр; от 20 % розовый"
+    "en": "Battery of the headphones connected to the Mac, and for AirPods each earbud and the case",
+    "de": "Akku der mit dem Mac verbundenen Kopfhörer, bei AirPods jeder Ohrhörer und das Case einzeln",
+    "es": "La batería de los auriculares conectados al Mac y, en los AirPods, la de cada uno y la del estuche",
+    "fr": "La batterie des écouteurs connectés au Mac et, pour les AirPods, celle de chaque écouteur et du boîtier",
+    "ru": "Заряд наушников, подключённых к Mac, а у AirPods — каждого наушника и футляра"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "Battery of the headphones connected to the Mac; AirPods show left (L), right (R) and the case. Pink at 20% or below, “—” means not reported, dim means nothing is connected.",
-    "de": "Akku der mit dem Mac verbundenen Kopfhörer; AirPods zeigen links (L), rechts (R) und das Case. Pink bei 20 % und weniger, „—“ heißt nicht gemeldet, blass heißt nichts verbunden.",
-    "es": "La batería de los auriculares conectados al Mac; los AirPods muestran izquierdo (L), derecho (R) y el estuche. Rosa al 20 % o menos; «—» indica que no se informa, y tenue, que no hay nada conectado.",
-    "fr": "La batterie des écouteurs connectés au Mac ; les AirPods affichent gauche (L), droit (R) et le boîtier. Rose à 20 % ou moins, « — » : niveau non indiqué, estompé : rien n’est connecté.",
-    "ru": "Заряд наушников, подключённых к Mac; у AirPods — левый (L), правый (R) и футляр. От 20 % и ниже — розовый, «—» — уровень не сообщается, тусклые — ничего не подключено."
+    "en": "A gauge turns pink when it’s time to charge, at 20% or less. Other headphones show one battery, or a dash if macOS doesn’t know the level. When nothing is connected, the button dims.",
+    "de": "Eine Anzeige wird pink, wenn es Zeit zum Laden ist, also bei 20 % oder weniger. Andere Kopfhörer zeigen einen Akku oder einen Strich, wenn macOS den Stand nicht kennt. Ist nichts verbunden, wird die Taste blass.",
+    "es": "Un indicador se vuelve rosa cuando toca cargar, al 20 % o menos. Otros auriculares muestran una sola batería, o una raya si macOS no conoce el nivel. Si no hay nada conectado, el botón se atenúa.",
+    "fr": "Une jauge devient rose quand il faut recharger, à 20 % ou moins. Les autres écouteurs affichent une seule batterie, ou un tiret si macOS ne connaît pas le niveau. Si rien n’est connecté, le bouton s’estompe.",
+    "ru": "Шкала становится розовой, когда пора заряжать: при 20 % и меньше. У других наушников одна шкала, а если macOS не знает заряд, вместо числа будет прочерк. Если ничего не подключено, кнопка тускнеет."
   },
   "tapAction": {
     "en": "Opens Bluetooth settings on the Mac",

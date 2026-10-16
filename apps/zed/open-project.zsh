@@ -13,7 +13,7 @@ emulate -R zsh                                  # zsh's own options, whatever ~/
 export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
-[[ -n $folder ]] || { print -u2 -- "Open Project: set your project's folder on the first line of the button's command, such as folder=\"~/Projects/app\""; exit 1 }
+[[ -n $folder ]] || { print -u2 -- "Open Project: set your project’s folder in this button’s settings, such as folder=\"~/Projects/app\""; exit 1 }
 [[ $folder == '~/'* ]] && folder=$HOME/${folder#\~/}            # "~/…" in quotes is not expanded by zsh
 [[ $folder == /* ]] || { print -u2 -- "Open Project: the folder must start with / or ~/"; exit 1 }
 [[ -d $folder ]] || { print -ru2 -- "Open Project: no folder at $folder"; exit 1 }

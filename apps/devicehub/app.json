@@ -1,6 +1,6 @@
 {
   "id": "devicehub",
-  "revision": 5,
+  "revision": 6,
   "name": "Device Hub",
   "bundleIds": [
     "com.apple.dt.Devices"
@@ -24,11 +24,11 @@
         "ru": "Встряхивает симулятор, как будто вы встряхнули устройство"
       },
       "details": {
-        "en": "The simulator in Device Hub’s front window, or every running one when it shows none; works with Device Hub in the background. A connected device cannot be shaken.",
-        "de": "Der Simulator im vorderen Fenster von Device Hub oder, wenn dort keiner ist, jeder laufende; funktioniert mit Device Hub im Hintergrund. Ein angeschlossenes Gerät lässt sich nicht schütteln.",
-        "es": "El simulador de la ventana de delante de Device Hub o, si no hay ninguno, todos los que están en marcha; funciona con Device Hub en segundo plano. Un dispositivo conectado no se puede agitar.",
-        "fr": "Le simulateur de la fenêtre au premier plan de Device Hub ou, s’il n’y en a pas, tous ceux qui tournent ; marche avec Device Hub en arrière-plan. Un appareil connecté ne peut pas être secoué.",
-        "ru": "Симулятор из переднего окна Device Hub, а если его там нет — все запущенные; работает и с Device Hub в фоне. Подключённое устройство встряхнуть нельзя."
+        "en": "The simulator in Device Hub’s front window, or every running one when it shows none. Works even with Device Hub in the background. A connected device can’t be shaken.",
+        "de": "Der Simulator im vorderen Fenster von Device Hub oder, wenn dort keiner ist, jeder laufende. Funktioniert auch mit Device Hub im Hintergrund. Ein angeschlossenes Gerät lässt sich nicht schütteln.",
+        "es": "El simulador de la ventana de delante de Device Hub o, si no hay ninguno, todos los que están en marcha. Funciona aunque Device Hub esté en segundo plano. Un dispositivo conectado no se puede agitar.",
+        "fr": "Le simulateur de la fenêtre au premier plan de Device Hub ou, s’il n’y en a pas, tous ceux qui tournent. Marche même avec Device Hub en arrière-plan. Un appareil connecté ne peut pas être secoué.",
+        "ru": "Встряхивает симулятор из переднего окна Device Hub, а если там его нет, все запущенные. Работает, даже когда Device Hub в фоне. Подключённое устройство встряхнуть нельзя."
       },
       "tapAction": {
         "en": "Shakes the simulator",
@@ -135,11 +135,11 @@
         "ru": "Поворачивает симулятор или устройство на 90° влево"
       },
       "details": {
-        "en": "Controls › Rotate Left in Device Hub, for the device in its front window; a device that does not turn, such as Apple Watch, refuses. Brings Device Hub to the front.",
-        "de": "Controls › Rotate Left in Device Hub, für das Gerät im vorderen Fenster; ein Gerät, das sich nicht dreht, etwa die Apple Watch, lehnt ab. Holt Device Hub nach vorne.",
-        "es": "Controls › Rotate Left de Device Hub, para el dispositivo de la ventana de delante; uno que no gira, como el Apple Watch, se niega. Trae Device Hub al frente.",
-        "fr": "Controls › Rotate Left de Device Hub, pour l’appareil de la fenêtre au premier plan ; un appareil qui ne pivote pas, comme l’Apple Watch, refuse. Met Device Hub au premier plan.",
-        "ru": "Controls › Rotate Left в Device Hub, для устройства в переднем окне; устройство, которое не поворачивается, например Apple Watch, откажет. Выводит Device Hub на передний план."
+        "en": "Controls › Rotate Left in Device Hub, for the device in its front window. If the device can’t turn, like Apple Watch, the button says so. Brings Device Hub to the front.",
+        "de": "Controls › Rotate Left in Device Hub, für das Gerät im vorderen Fenster. Lässt sich das Gerät nicht drehen, etwa eine Apple Watch, sagt die Taste das. Holt Device Hub nach vorne.",
+        "es": "Controls › Rotate Left de Device Hub, para el dispositivo de la ventana de delante. Si no puede girar, como el Apple Watch, el botón lo dice. Trae Device Hub al frente.",
+        "fr": "Controls › Rotate Left de Device Hub, pour l’appareil de la fenêtre au premier plan. Si l’appareil ne pivote pas, comme l’Apple Watch, le bouton le signale. Met Device Hub au premier plan.",
+        "ru": "Controls › Rotate Left в Device Hub, для устройства в переднем окне. Если устройство не поворачивается, как Apple Watch, кнопка скажет об этом. Выводит Device Hub на передний план."
       },
       "tapAction": {
         "en": "Turns it to the left",
@@ -172,11 +172,11 @@
         "ru": "Поворачивает симулятор или устройство на 90° вправо"
       },
       "details": {
-        "en": "Controls › Rotate Right in Device Hub, for the device in its front window; a device that does not turn, such as Apple Watch, refuses. Brings Device Hub to the front.",
-        "de": "Controls › Rotate Right in Device Hub, für das Gerät im vorderen Fenster; ein Gerät, das sich nicht dreht, etwa die Apple Watch, lehnt ab. Holt Device Hub nach vorne.",
-        "es": "Controls › Rotate Right de Device Hub, para el dispositivo de la ventana de delante; uno que no gira, como el Apple Watch, se niega. Trae Device Hub al frente.",
-        "fr": "Controls › Rotate Right de Device Hub, pour l’appareil de la fenêtre au premier plan ; un appareil qui ne pivote pas, comme l’Apple Watch, refuse. Met Device Hub au premier plan.",
-        "ru": "Controls › Rotate Right в Device Hub, для устройства в переднем окне; устройство, которое не поворачивается, например Apple Watch, откажет. Выводит Device Hub на передний план."
+        "en": "Controls › Rotate Right in Device Hub, for the device in its front window. If the device can’t turn, like Apple Watch, the button says so. Brings Device Hub to the front.",
+        "de": "Controls › Rotate Right in Device Hub, für das Gerät im vorderen Fenster. Lässt sich das Gerät nicht drehen, etwa eine Apple Watch, sagt die Taste das. Holt Device Hub nach vorne.",
+        "es": "Controls › Rotate Right de Device Hub, para el dispositivo de la ventana de delante. Si no puede girar, como el Apple Watch, el botón lo dice. Trae Device Hub al frente.",
+        "fr": "Controls › Rotate Right de Device Hub, pour l’appareil de la fenêtre au premier plan. Si l’appareil ne pivote pas, comme l’Apple Watch, le bouton le signale. Met Device Hub au premier plan.",
+        "ru": "Controls › Rotate Right в Device Hub, для устройства в переднем окне. Если устройство не поворачивается, как Apple Watch, кнопка скажет об этом. Выводит Device Hub на передний план."
       },
       "tapAction": {
         "en": "Turns it to the right",
@@ -209,11 +209,11 @@
         "ru": "Снимок экрана симулятора или устройства"
       },
       "details": {
-        "en": "Controls › Screenshot in Device Hub, for the device in its front window; the picture goes where Device Hub saves its screenshots. Brings Device Hub to the front.",
-        "de": "Controls › Screenshot in Device Hub, für das Gerät im vorderen Fenster; das Bild landet dort, wo Device Hub seine Bildschirmfotos sichert. Holt Device Hub nach vorne.",
-        "es": "Controls › Screenshot de Device Hub, para el dispositivo de la ventana de delante; la imagen va donde Device Hub guarda sus capturas. Trae Device Hub al frente.",
-        "fr": "Controls › Screenshot de Device Hub, pour l’appareil de la fenêtre au premier plan ; l’image va là où Device Hub enregistre ses captures. Met Device Hub au premier plan.",
-        "ru": "Controls › Screenshot в Device Hub, для устройства в переднем окне; снимок сохраняется туда же, куда Device Hub сохраняет свои. Выводит Device Hub на передний план."
+        "en": "Controls › Screenshot in Device Hub, for the device in its front window. The picture goes where Device Hub saves its screenshots. Brings Device Hub to the front.",
+        "de": "Controls › Screenshot in Device Hub, für das Gerät im vorderen Fenster. Das Bild landet dort, wo Device Hub seine Bildschirmfotos sichert. Holt Device Hub nach vorne.",
+        "es": "Controls › Screenshot de Device Hub, para el dispositivo de la ventana de delante. La imagen va donde Device Hub guarda sus capturas. Trae Device Hub al frente.",
+        "fr": "Controls › Screenshot de Device Hub, pour l’appareil de la fenêtre au premier plan. L’image va là où Device Hub enregistre ses captures. Met Device Hub au premier plan.",
+        "ru": "Controls › Screenshot в Device Hub, для устройства в переднем окне. Снимок сохранится туда же, куда Device Hub сохраняет свои. Выводит Device Hub на передний план."
       },
       "tapAction": {
         "en": "Takes a screenshot",
@@ -246,11 +246,11 @@
         "ru": "Начинает или останавливает запись экрана симулятора или устройства"
       },
       "details": {
-        "en": "Controls › Record Screen in Device Hub, for the device in its front window; the next tap is Stop Recording, and Device Hub saves the video. Brings Device Hub to the front.",
-        "de": "Controls › Record Screen in Device Hub, für das Gerät im vorderen Fenster; das nächste Tippen ist Stop Recording, und Device Hub sichert das Video. Holt Device Hub nach vorne.",
-        "es": "Controls › Record Screen de Device Hub, para el dispositivo de la ventana de delante; el siguiente toque es Stop Recording y Device Hub guarda el vídeo. Trae Device Hub al frente.",
-        "fr": "Controls › Record Screen de Device Hub, pour l’appareil de la fenêtre au premier plan ; le toucher suivant est Stop Recording, et Device Hub enregistre la vidéo. Met Device Hub au premier plan.",
-        "ru": "Controls › Record Screen в Device Hub, для устройства в переднем окне; следующее нажатие — Stop Recording, и Device Hub сохраняет видео. Выводит Device Hub на передний план."
+        "en": "Controls › Record Screen in Device Hub, for the device in its front window. Tap again to stop, and Device Hub saves the video. Brings Device Hub to the front.",
+        "de": "Controls › Record Screen in Device Hub, für das Gerät im vorderen Fenster. Tipp noch einmal, um zu stoppen, und Device Hub sichert das Video. Holt Device Hub nach vorne.",
+        "es": "Controls › Record Screen de Device Hub, para el dispositivo de la ventana de delante. Vuelve a tocar para detener la grabación, y Device Hub guarda el vídeo. Trae Device Hub al frente.",
+        "fr": "Controls › Record Screen de Device Hub, pour l’appareil de la fenêtre au premier plan. Touchez à nouveau pour arrêter, et Device Hub enregistre la vidéo. Met Device Hub au premier plan.",
+        "ru": "Controls › Record Screen в Device Hub, для устройства в переднем окне. Нажмите ещё раз, чтобы остановить запись, и Device Hub сохранит видео. Выводит Device Hub на передний план."
       },
       "tapAction": {
         "en": "Starts or stops the recording",
@@ -468,11 +468,11 @@
         "ru": "Сколько симуляторов запущено на Mac"
       },
       "details": {
-        "en": "The simulators booted on this Mac, open in Device Hub or not, checked every few seconds. Each one keeps using memory until it is shut down.",
-        "de": "Die auf diesem Mac gestarteten Simulatoren, ob in Device Hub offen oder nicht, alle paar Sekunden geprüft. Jeder belegt Speicher, bis er ausgeschaltet wird.",
-        "es": "Los simuladores arrancados en este Mac, abiertos en Device Hub o no, revisados cada pocos segundos. Cada uno ocupa memoria hasta que se apaga.",
-        "fr": "Les simulateurs démarrés sur ce Mac, ouverts dans Device Hub ou non, relevés à quelques secondes d’intervalle. Chacun occupe de la mémoire jusqu’à son extinction.",
-        "ru": "Симуляторы, запущенные на этом Mac, — и открытые в Device Hub, и нет; число обновляется каждые несколько секунд. Каждый занимает память, пока его не выключат."
+        "en": "Counts every simulator booted on this Mac, open in Device Hub or not. Each one keeps using memory until it’s shut down.",
+        "de": "Zählt alle auf diesem Mac gestarteten Simulatoren, ob in Device Hub offen oder nicht. Jeder belegt Speicher, bis er ausgeschaltet wird.",
+        "es": "Cuenta todos los simuladores arrancados en este Mac, estén abiertos en Device Hub o no. Cada uno ocupa memoria hasta que se apaga.",
+        "fr": "Compte tous les simulateurs démarrés sur ce Mac, ouverts dans Device Hub ou non. Chacun occupe de la mémoire jusqu’à son extinction.",
+        "ru": "Считаются все запущенные на Mac симуляторы, даже те, что не открыты в Device Hub. Каждый занимает память, пока его не выключат."
       },
       "tapAction": {
         "en": "Opens Device Hub",
@@ -482,11 +482,11 @@
         "ru": "Открывает Device Hub"
       },
       "holdAction": {
-        "en": "⚠️ Shuts down every running simulator — what their apps had not saved is lost",
-        "de": "⚠️ Schaltet alle laufenden Simulatoren aus – was ihre Apps nicht gesichert hatten, geht verloren",
-        "es": "⚠️ Apaga todos los simuladores en marcha: se pierde lo que sus apps no habían guardado",
-        "fr": "⚠️ Éteint tous les simulateurs en cours : ce que leurs apps n’avaient pas enregistré est perdu",
-        "ru": "⚠️ Выключает все запущенные симуляторы — несохранённое в их приложениях пропадёт"
+        "en": "⚠️ Shuts down every running simulator, losing anything their apps hadn’t saved",
+        "de": "⚠️ Schaltet alle laufenden Simulatoren aus, Ungesichertes in ihren Apps geht verloren",
+        "es": "⚠️ Apaga todos los simuladores en marcha y se pierde lo que sus apps no hayan guardado",
+        "fr": "⚠️ Éteint tous les simulateurs en cours, et ce que leurs apps n’ont pas enregistré est perdu",
+        "ru": "⚠️ Выключает все запущенные симуляторы, и всё несохранённое в них пропадёт"
       },
       "button": {
         "icon": {"sfSymbol": {"name": "iphone"}},
@@ -510,18 +510,18 @@
         "ru": "Открыть ссылку"
       },
       "summary": {
-        "en": "Opens your link in the simulator, as a tap on it there would",
+        "en": "Opens your link in the simulator, as if you’d tapped it there",
         "de": "Öffnet deinen Link im Simulator, als hättest du dort darauf getippt",
         "es": "Abre tu enlace en el simulador, como si lo tocaras allí",
         "fr": "Ouvre votre lien dans le simulateur, comme si vous le touchiez là",
         "ru": "Открывает вашу ссылку в симуляторе, как если бы вы нажали её там"
       },
       "details": {
-        "en": "Write the link in the first line of the button’s script: url=\"myapp://settings\". Opens in the simulator Device Hub shows, else in every running one; a connected device is not touched.",
-        "de": "Schreib den Link in die erste Zeile des Skripts der Taste: url=\"myapp://settings\". Er öffnet sich im Simulator, den Device Hub zeigt, sonst in jedem laufenden; ein angeschlossenes Gerät bleibt unberührt.",
-        "es": "Escribe el enlace en la primera línea del script del botón: url=\"myapp://settings\". Se abre en el simulador que muestra Device Hub o, si no, en todos los que están en marcha; un dispositivo conectado no se toca.",
-        "fr": "Écrivez le lien à la première ligne du script du bouton : url=\"myapp://settings\". Il s’ouvre dans le simulateur affiché par Device Hub, sinon dans tous ceux qui tournent ; un appareil connecté n’est pas touché.",
-        "ru": "Впишите ссылку в первую строку скрипта кнопки: url=\"myapp://settings\". Она откроется в симуляторе, который показывает Device Hub, иначе во всех запущенных; подключённое устройство не трогается."
+        "en": "Write the link in the button’s settings: url=\"myapp://settings\". It opens in the simulator Device Hub shows, or else in every running one. A connected device is left alone.",
+        "de": "Schreib den Link in die Einstellungen der Taste: url=\"myapp://settings\". Er öffnet sich im Simulator, den Device Hub zeigt, sonst in jedem laufenden. Ein angeschlossenes Gerät bleibt unberührt.",
+        "es": "Escribe el enlace en los ajustes del botón: url=\"myapp://settings\". Se abre en el simulador que muestra Device Hub o, si no, en todos los que están en marcha. Un dispositivo conectado no se toca.",
+        "fr": "Écrivez le lien dans les réglages du bouton : url=\"myapp://settings\". Il s’ouvre dans le simulateur affiché par Device Hub, sinon dans tous ceux qui tournent. Un appareil connecté n’est pas touché.",
+        "ru": "Впишите ссылку в настройках кнопки: url=\"myapp://settings\". Она откроется в симуляторе, который показывает Device Hub, а если его нет, во всех запущенных. На подключённом устройстве ссылка не откроется."
       },
       "tapAction": {
         "en": "Opens the link in the simulator",
@@ -554,11 +554,11 @@
         "ru": "9:41, полная батарея и полный сигнал для скриншотов; удержание — отменить"
       },
       "details": {
-        "en": "As in Apple’s screenshots, until you hold the button or the simulator restarts. For the simulator Device Hub shows, else every running one; a connected device is not touched.",
-        "de": "Wie auf Apples Screenshots, bis du die Taste hältst oder der Simulator neu startet. Für den Simulator, den Device Hub zeigt, sonst jeden laufenden; ein angeschlossenes Gerät bleibt unberührt.",
-        "es": "Como en las capturas de Apple, hasta que mantengas pulsado el botón o el simulador se reinicie. Para el simulador que muestra Device Hub o, si no, todos los que están en marcha; un dispositivo conectado no se toca.",
-        "fr": "Comme sur les captures d’Apple, jusqu’à un appui long sur le bouton ou au redémarrage du simulateur. Pour le simulateur affiché par Device Hub, sinon tous ceux qui tournent ; un appareil connecté n’est pas touché.",
-        "ru": "Как на скриншотах Apple — пока вы не удержите кнопку или симулятор не перезапустится. Для симулятора, который показывает Device Hub, иначе для всех запущенных; подключённое устройство не трогается."
+        "en": "The status bar looks as in Apple’s screenshots until you hold the button or the simulator restarts. It’s the simulator Device Hub shows, or else every running one. A connected device is left alone.",
+        "de": "Die Statusleiste sieht aus wie auf Apples Screenshots, bis du die Taste hältst oder der Simulator neu startet. Das gilt für den Simulator, den Device Hub zeigt, sonst für jeden laufenden. Ein angeschlossenes Gerät bleibt unberührt.",
+        "es": "La barra de estado queda como en las capturas de Apple hasta que mantengas pulsado el botón o el simulador se reinicie. Se aplica al simulador que muestra Device Hub o, si no, a todos los que están en marcha. Un dispositivo conectado no se toca.",
+        "fr": "La barre d’état ressemble à celle des captures d’Apple jusqu’à un appui long sur le bouton ou au redémarrage du simulateur. Cela vaut pour le simulateur affiché par Device Hub, sinon pour tous ceux qui tournent. Un appareil connecté n’est pas touché.",
+        "ru": "Строка состояния будет как на скриншотах Apple, пока вы не удержите кнопку или симулятор не перезапустится. Это касается симулятора, который показывает Device Hub, а если его нет, всех запущенных. Подключённое устройство остаётся как есть."
       },
       "tapAction": {
         "en": "Sets 9:41, a full battery and full bars",
@@ -601,11 +601,11 @@
         "ru": "Симуляторы и устройства под рукой, пока работает ваше приложение"
       },
       "details": {
-        "en": "Most buttons press Device Hub’s menus for the device in its front window and bring Device Hub forward first: the menus work only there. Shake, Open URL and Clean Status Bar work in the background, for simulators only.",
-        "de": "Die meisten Tasten wählen Menübefehle von Device Hub für das Gerät im vorderen Fenster und holen Device Hub zuerst nach vorne – nur dort funktionieren sie. Schütteln, Link öffnen und Saubere Statusleiste wirken auch im Hintergrund, nur für Simulatoren.",
-        "es": "La mayoría de los botones usan los menús de Device Hub para el dispositivo de la ventana de delante y antes traen Device Hub al frente: solo ahí funcionan. Agitar, Abrir enlace y Barra de estado limpia funcionan en segundo plano, solo con simuladores.",
-        "fr": "La plupart des boutons utilisent les menus de Device Hub pour l’appareil de la fenêtre au premier plan et mettent d’abord Device Hub au premier plan : ils ne marchent que là. Secouer, Ouvrir le lien et Barre d’état propre marchent en arrière-plan, pour les simulateurs seulement.",
-        "ru": "Большинство кнопок нажимают пункты меню Device Hub для устройства в переднем окне и сначала выводят Device Hub на передний план: только там эти пункты работают. «Встряхнуть», «Открыть ссылку» и «Чистый статус-бар» работают и в фоне, только с симуляторами."
+        "en": "Most buttons work with the device in Device Hub’s front window and bring Device Hub forward first. Shake, Open URL and Clean Status Bar work only with simulators, but even with Device Hub in the background.",
+        "de": "Die meisten Tasten wirken auf das Gerät im vorderen Fenster von Device Hub und holen Device Hub zuerst nach vorne. Schütteln, Link öffnen und Saubere Statusleiste funktionieren nur mit Simulatoren, dafür auch mit Device Hub im Hintergrund.",
+        "es": "La mayoría de los botones actúan sobre el dispositivo de la ventana de delante de Device Hub y antes traen Device Hub al frente. Agitar, Abrir enlace y Barra de estado limpia solo funcionan con simuladores, pero también con Device Hub en segundo plano.",
+        "fr": "La plupart des boutons agissent sur l’appareil de la fenêtre au premier plan de Device Hub et mettent d’abord Device Hub au premier plan. Secouer, Ouvrir le lien et Barre d’état propre ne marchent qu’avec les simulateurs, mais aussi avec Device Hub en arrière-plan.",
+        "ru": "Большинство кнопок работают с устройством в переднем окне Device Hub и сначала выводят Device Hub на передний план. «Встряхнуть», «Открыть ссылку» и «Чистый статус-бар» работают только с симуляторами, зато даже когда Device Hub в фоне."
       },
       "bindByDefault": true,
       "placements": [

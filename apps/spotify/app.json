@@ -1,6 +1,6 @@
 {
   "id": "spotify",
-  "revision": 5,
+  "revision": 6,
   "name": "Spotify",
   "bundleIds": ["com.spotify.client"],
   "category": "music",
@@ -16,11 +16,11 @@
         "ru": "Переключает Spotify на предыдущий трек"
       },
       "details": {
-        "en": "Works with Spotify in the background.",
-        "de": "Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Funciona con Spotify en segundo plano.",
-        "fr": "Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Работает, когда Spotify в фоне."
+        "en": "Works with Spotify in the background. If Spotify is closed, the button won’t start it.",
+        "de": "Funktioniert auch mit Spotify im Hintergrund. Ist Spotify geschlossen, startet die Taste es nicht.",
+        "es": "Funciona con Spotify en segundo plano. Si Spotify está cerrado, el botón no lo abre.",
+        "fr": "Fonctionne avec Spotify en arrière-plan. Si Spotify est fermé, le bouton ne le lance pas.",
+        "ru": "Работает, когда Spotify в фоне. Если Spotify закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Skips to the previous track",
@@ -43,22 +43,22 @@
         "en": "Plays or pauses Spotify",
         "de": "Spielt Spotify ab oder pausiert es",
         "es": "Reproduce o pausa Spotify",
-        "fr": "Lance ou met en pause Spotify",
-        "ru": "Запускает Spotify или ставит на паузу"
+        "fr": "Lance ou met en pause la lecture dans Spotify",
+        "ru": "Включает воспроизведение в Spotify или ставит на паузу"
       },
       "details": {
-        "en": "Spotify’s own play button: it reaches Spotify even when another app has taken the Mac’s media keys, and works with Spotify in the background.",
-        "de": "Die Wiedergabetaste von Spotify selbst: Sie erreicht Spotify, auch wenn eine andere App die Medientasten des Mac übernommen hat, und funktioniert auch mit Spotify im Hintergrund.",
-        "es": "El botón de reproducción del propio Spotify: llega a Spotify aunque otra app se haya quedado con las teclas multimedia del Mac, y funciona con Spotify en segundo plano.",
-        "fr": "Le bouton lecture de Spotify lui-même : il atteint Spotify même quand une autre app a pris les touches multimédias du Mac, et fonctionne avec Spotify en arrière-plan.",
-        "ru": "Кнопка воспроизведения самого Spotify: доходит до Spotify, даже когда медиаклавиши Mac забрало другое приложение, и работает, когда Spotify в фоне."
+        "en": "Controls Spotify even when another app has taken over the Mac’s media keys. Works with Spotify in the background. If Spotify is closed, the button won’t start it.",
+        "de": "Steuert Spotify, auch wenn eine andere App die Medientasten des Mac übernommen hat. Funktioniert auch mit Spotify im Hintergrund. Ist Spotify geschlossen, startet die Taste es nicht.",
+        "es": "Controla Spotify aunque otra app se haya quedado con las teclas multimedia del Mac. Funciona con Spotify en segundo plano. Si Spotify está cerrado, el botón no lo abre.",
+        "fr": "Commande Spotify même quand une autre app a pris la main sur les touches multimédias du Mac. Fonctionne avec Spotify en arrière-plan. Si Spotify est fermé, le bouton ne le lance pas.",
+        "ru": "Управляет именно Spotify, даже когда медиаклавиши Mac перехватило другое приложение. Работает, когда Spotify в фоне. Если Spotify закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Plays or pauses",
         "de": "Spielt ab oder pausiert",
         "es": "Reproduce o pausa",
         "fr": "Lance ou met en pause la lecture",
-        "ru": "Запускает или ставит на паузу"
+        "ru": "Включает или ставит на паузу"
       },
       "permissions": ["automation"],
       "button": {
@@ -78,11 +78,11 @@
         "ru": "Переключает Spotify на следующий трек"
       },
       "details": {
-        "en": "Spotify has to be open — the button never starts it — but it may stay in the background.",
-        "de": "Spotify muss geöffnet sein – die Taste startet es nie –, darf aber im Hintergrund bleiben.",
-        "es": "Spotify tiene que estar abierto (el botón nunca lo inicia), pero puede quedarse en segundo plano.",
-        "fr": "Spotify doit être ouvert (le bouton ne le lance jamais), mais peut rester en arrière-plan.",
-        "ru": "Spotify должен быть открыт — кнопка его не запускает, — но может оставаться в фоне."
+        "en": "Works with Spotify in the background. If Spotify is closed, the button won’t start it.",
+        "de": "Funktioniert auch mit Spotify im Hintergrund. Ist Spotify geschlossen, startet die Taste es nicht.",
+        "es": "Funciona con Spotify en segundo plano. Si Spotify está cerrado, el botón no lo abre.",
+        "fr": "Fonctionne avec Spotify en arrière-plan. Si Spotify est fermé, le bouton ne le lance pas.",
+        "ru": "Работает, когда Spotify в фоне. Если Spotify закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Skips to the next track",
@@ -109,11 +109,11 @@
         "ru": "Включает и выключает перемешивание в Spotify и показывает, включено ли оно"
       },
       "details": {
-        "en": "Green while Shuffle is on, also when it is switched in Spotify itself; grey when it is off or Spotify is closed. Works with Spotify in the background.",
-        "de": "Grün, solange Shuffle an ist – auch wenn es in Spotify selbst umgeschaltet wird; grau, wenn es aus oder Spotify geschlossen ist. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Verde mientras el modo aleatorio está activo, también si se cambia en el propio Spotify; gris si está desactivado o Spotify está cerrado. Funciona con Spotify en segundo plano.",
-        "fr": "Vert tant que la lecture aléatoire est active, même si elle est changée dans Spotify ; gris quand elle est désactivée ou que Spotify est fermé. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Зелёная, пока перемешивание включено, даже если его переключили в самом Spotify; серая, когда оно выключено или Spotify закрыт. Работает, когда Spotify в фоне."
+        "en": "The button is green while Shuffle is on, even if you switched it on in Spotify itself. When Spotify is closed, it’s gray. Works with Spotify in the background.",
+        "de": "Die Taste ist grün, solange Shuffle an ist, auch wenn du es in Spotify selbst eingeschaltet hast. Ist Spotify geschlossen, ist sie grau. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "El botón está verde mientras el modo aleatorio está activo, aunque lo hayas activado en el propio Spotify. Con Spotify cerrado, aparece en gris. Funciona con Spotify en segundo plano.",
+        "fr": "Le bouton est vert tant que la lecture aléatoire est active, même si vous l’avez activée dans Spotify lui-même. Quand Spotify est fermé, il est gris. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Кнопка зелёная, пока перемешивание включено, даже если его включили в самом Spotify. Когда Spotify закрыт, она серая. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Turns Shuffle on or off",
@@ -141,11 +141,11 @@
         "ru": "Включает и выключает повтор в Spotify и показывает, включён ли он"
       },
       "details": {
-        "en": "Green while Repeat is on, also when it is switched in Spotify itself; grey when it is off or Spotify is closed. Works with Spotify in the background.",
-        "de": "Grün, solange Wiederholen an ist – auch wenn es in Spotify selbst umgeschaltet wird; grau, wenn es aus oder Spotify geschlossen ist. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Verde mientras la repetición está activa, también si se cambia en el propio Spotify; gris si está desactivada o Spotify está cerrado. Funciona con Spotify en segundo plano.",
-        "fr": "Vert tant que la répétition est active, même si elle est changée dans Spotify ; gris quand elle est désactivée ou que Spotify est fermé. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Зелёная, пока повтор включён, даже если его переключили в самом Spotify; серая, когда он выключен или Spotify закрыт. Работает, когда Spotify в фоне."
+        "en": "The button is green while Repeat is on, even if you switched it on in Spotify itself. When Spotify is closed, it’s gray. Works with Spotify in the background.",
+        "de": "Die Taste ist grün, solange Wiederholen an ist, auch wenn du es in Spotify selbst eingeschaltet hast. Ist Spotify geschlossen, ist sie grau. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "El botón está verde mientras la repetición está activa, aunque la hayas activado en el propio Spotify. Con Spotify cerrado, aparece en gris. Funciona con Spotify en segundo plano.",
+        "fr": "Le bouton est vert tant que la répétition est active, même si vous l’avez activée dans Spotify lui-même. Quand Spotify est fermé, il est gris. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Кнопка зелёная, пока повтор включён, даже если его включили в самом Spotify. Когда Spotify закрыт, она серая. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Turns Repeat on or off",
@@ -173,11 +173,11 @@
         "ru": "Делает тише Spotify, а не весь Mac"
       },
       "details": {
-        "en": "Spotify’s own volume, in steps of 10: the music gets quieter, while a call or a video keeps its sound. Works with Spotify in the background.",
-        "de": "Die Lautstärke von Spotify selbst, in Zehnerschritten: Die Musik wird leiser, der Ton eines Anrufs oder Videos bleibt, wie er ist. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "El volumen del propio Spotify, en pasos de 10: la música baja, y una llamada o un vídeo se siguen oyendo igual. Funciona con Spotify en segundo plano.",
-        "fr": "Le volume de Spotify lui-même, par pas de 10 : la musique baisse, le son d’un appel ou d’une vidéo reste le même. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Громкость самого Spotify, шагами по 10: музыка становится тише, а звук звонка или видео остаётся прежним. Работает, когда Spotify в фоне."
+        "en": "The music gets quieter, but a call or a video stays as loud as before. Works with Spotify in the background.",
+        "de": "Die Musik wird leiser, der Ton eines Anrufs oder Videos bleibt aber, wie er ist. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "La música baja, pero una llamada o un vídeo se siguen oyendo igual. Funciona con Spotify en segundo plano.",
+        "fr": "La musique baisse, mais le son d’un appel ou d’une vidéo reste le même. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Музыка становится тише, а звук звонка или видео остаётся прежним. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Turns Spotify down by 10%",
@@ -204,11 +204,11 @@
         "ru": "Делает громче Spotify, а не весь Mac"
       },
       "details": {
-        "en": "Spotify’s own volume, in steps of 10 up to its maximum; the Mac’s volume stays as it is. Works with Spotify in the background.",
-        "de": "Die Lautstärke von Spotify selbst, in Zehnerschritten bis zum Maximum; die Lautstärke des Mac bleibt, wie sie ist. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "El volumen del propio Spotify, en pasos de 10 hasta su máximo; el volumen del Mac no cambia. Funciona con Spotify en segundo plano.",
-        "fr": "Le volume de Spotify lui-même, par pas de 10 jusqu’à son maximum ; celui du Mac ne change pas. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Громкость самого Spotify, шагами по 10 до его максимума; громкость Mac не меняется. Работает, когда Spotify в фоне."
+        "en": "The music gets louder, up to Spotify’s own maximum. If that’s not enough, you can turn up the Mac’s volume. Works with Spotify in the background.",
+        "de": "Die Musik wird lauter, aber nicht über das Maximum von Spotify hinaus. Reicht das nicht, kannst du die Lautstärke des Mac erhöhen. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "La música sube, sin pasar del máximo del propio Spotify. Si no basta, puedes subir el volumen del Mac. Funciona con Spotify en segundo plano.",
+        "fr": "La musique monte, sans dépasser le maximum de Spotify lui-même. Si ce n’est pas assez, vous pouvez monter le volume du Mac. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Музыка становится громче, но не выше максимума самого Spotify. Если этого мало, можно прибавить громкость Mac. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Turns Spotify up by 10%",
@@ -228,25 +228,25 @@
       "id": "restart",
       "title": {"en": "Restart Track", "de": "Von vorn", "es": "Desde el inicio", "fr": "Depuis le début", "ru": "С начала"},
       "summary": {
-        "en": "Plays the current track from the start",
-        "de": "Spielt den aktuellen Titel von vorn",
-        "es": "Reproduce la pista actual desde el principio",
-        "fr": "Reprend le morceau en cours depuis le début",
-        "ru": "Запускает текущий трек с начала"
+        "en": "Jumps back to the start of the song or episode in Spotify",
+        "de": "Springt in Spotify an den Anfang des Songs oder der Folge",
+        "es": "Vuelve al principio de la canción o el episodio en Spotify",
+        "fr": "Revient au début du morceau ou de l’épisode dans Spotify",
+        "ru": "Перематывает Spotify в начало песни или выпуска"
       },
       "details": {
-        "en": "Jumps back to 0:00 of the song or episode that is playing. Works with Spotify in the background.",
-        "de": "Springt zurück auf 0:00 des Songs oder der Folge, die gerade läuft. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Vuelve al 0:00 de la canción o el episodio que está sonando. Funciona con Spotify en segundo plano.",
-        "fr": "Revient à 0:00 du morceau ou de l’épisode en cours. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Возвращает на 0:00 песню или выпуск, который сейчас играет. Работает, когда Spotify в фоне."
+        "en": "Works with Spotify in the background.",
+        "de": "Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "Funciona con Spotify en segundo plano.",
+        "fr": "Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Работает, когда Spotify в фоне."
       },
       "tapAction": {
-        "en": "Starts the track over",
-        "de": "Startet den Titel neu",
-        "es": "Empieza la pista de nuevo",
-        "fr": "Recommence le morceau",
-        "ru": "Начинает трек заново"
+        "en": "Jumps back to the start",
+        "de": "Springt an den Anfang",
+        "es": "Vuelve al principio",
+        "fr": "Revient au début",
+        "ru": "Перематывает в начало"
       },
       "permissions": ["automation"],
       "button": {
@@ -266,11 +266,11 @@
         "ru": "Перематывает Spotify на 15 секунд назад"
       },
       "details": {
-        "en": "Like the 15-second buttons Spotify shows for podcasts, for songs too: hear a line you missed again. Works with Spotify in the background.",
-        "de": "Wie die 15-Sekunden-Tasten, die Spotify bei Podcasts zeigt, auch bei Songs: eine verpasste Stelle noch einmal hören. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Como los botones de 15 segundos que Spotify muestra en los pódcasts, también con canciones: para volver a oír lo que se te escapó. Funciona con Spotify en segundo plano.",
-        "fr": "Comme les boutons 15 secondes que Spotify affiche pour les podcasts, aussi pour les morceaux : pour réentendre un passage manqué. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Как кнопки «15 секунд» у подкастов в Spotify, но и для песен: переслушать пропущенное. Работает, когда Spotify в фоне."
+        "en": "Handy when you missed a line and want to hear it again. Spotify has a 15-second button for podcasts, and this one jumps back in songs too. Works with Spotify in the background.",
+        "de": "Praktisch, wenn du eine Stelle verpasst hast und sie noch einmal hören willst. Spotify zeigt 15-Sekunden-Tasten bei Podcasts, und diese Taste springt auch in Songs zurück. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "Útil cuando se te escapó una frase y quieres volver a oírla. Spotify muestra botones de 15 segundos en los pódcasts, y este también retrocede en las canciones. Funciona con Spotify en segundo plano.",
+        "fr": "Pratique quand vous avez manqué un passage et voulez le réentendre. Spotify affiche des boutons de 15 secondes pour les podcasts, et celui-ci recule aussi dans les morceaux. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Пригодится, если вы пропустили фразу и хотите её переслушать. Spotify показывает такие кнопки у подкастов, а эта перематывает и песни. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Jumps 15 seconds back",
@@ -328,11 +328,11 @@
         "ru": "Копирует ссылку на то, что играет в Spotify"
       },
       "details": {
-        "en": "Puts the open.spotify.com link of the song or episode on the Mac’s clipboard, ready to paste into a chat. Works with Spotify in the background.",
-        "de": "Legt den open.spotify.com-Link des Songs oder der Folge in die Zwischenablage des Mac, bereit zum Einfügen in einen Chat. Funktioniert auch mit Spotify im Hintergrund.",
-        "es": "Pone el enlace de open.spotify.com de la canción o el episodio en el portapapeles del Mac, listo para pegar en un chat. Funciona con Spotify en segundo plano.",
-        "fr": "Place le lien open.spotify.com du morceau ou de l’épisode dans le presse-papiers du Mac, prêt à coller dans une discussion. Fonctionne avec Spotify en arrière-plan.",
-        "ru": "Кладёт ссылку open.spotify.com на песню или выпуск в буфер обмена Mac — остаётся вставить в чат. Работает, когда Spotify в фоне."
+        "en": "Puts the open.spotify.com link of the song or episode on the Mac’s clipboard, ready to paste into a chat. Local files and ads have no link. Works with Spotify in the background.",
+        "de": "Legt den open.spotify.com-Link des Songs oder der Folge in die Zwischenablage des Mac, bereit zum Einfügen in einen Chat. Lokale Dateien und Werbung haben keinen Link. Funktioniert auch mit Spotify im Hintergrund.",
+        "es": "Pone el enlace de open.spotify.com de la canción o el episodio en el portapapeles del Mac, listo para pegar en un chat. Los archivos locales y los anuncios no tienen enlace. Funciona con Spotify en segundo plano.",
+        "fr": "Place le lien open.spotify.com du morceau ou de l’épisode dans le presse-papiers du Mac, prêt à coller dans une discussion. Les fichiers locaux et les publicités n’ont pas de lien. Fonctionne avec Spotify en arrière-plan.",
+        "ru": "Ссылка open.spotify.com на песню или выпуск попадёт в буфер обмена Mac, и её можно вставить в чат. У локальных файлов и рекламы ссылки нет. Работает, когда Spotify в фоне."
       },
       "tapAction": {
         "en": "Copies the link to the clipboard",
@@ -359,11 +359,11 @@
         "ru": "Переходит в поле поиска Spotify (⌘L)"
       },
       "details": {
-        "en": "Edit › Search (⌘L): the cursor lands in Spotify’s search field, ready to type on the Mac. Works while Spotify is in front.",
-        "de": "Bearbeiten › Suchen (⌘L): Der Cursor landet im Suchfeld von Spotify, bereit zum Tippen am Mac. Funktioniert, wenn Spotify vorne ist.",
-        "es": "Buscar (⌘L): el cursor queda en el campo de búsqueda de Spotify, listo para escribir en el Mac. Funciona cuando Spotify está delante.",
-        "fr": "Modifier › Recherche (⌘L) : le curseur se place dans le champ de recherche de Spotify, prêt pour la saisie sur le Mac. Fonctionne quand Spotify est au premier plan.",
-        "ru": "Поиск (⌘L): курсор встаёт в поле поиска Spotify — можно печатать на Mac. Работает, когда Spotify на переднем плане."
+        "en": "Edit › Search (⌘L). The cursor lands in Spotify’s search field, so you can type on the Mac right away. Works while Spotify is in front.",
+        "de": "Bearbeiten › Suchen (⌘L). Der Cursor landet im Suchfeld von Spotify, und du kannst gleich am Mac tippen. Funktioniert, wenn Spotify vorne ist.",
+        "es": "El cursor salta al campo de búsqueda de Spotify y puedes escribir enseguida en el Mac. Funciona cuando Spotify está delante.",
+        "fr": "Modifier › Recherche (⌘L). Le curseur se place dans le champ de recherche de Spotify, et vous pouvez taper tout de suite sur le Mac. Fonctionne quand Spotify est au premier plan.",
+        "ru": "Курсор встанет в поле поиска Spotify, и можно сразу печатать на Mac. Работает, когда Spotify на переднем плане."
       },
       "tapAction": {
         "en": "Opens Spotify’s search",
@@ -386,17 +386,17 @@
       "title": {"en": "Spotify", "de": "Spotify", "es": "Spotify", "fr": "Spotify", "ru": "Spotify"},
       "summary": {
         "en": "Play, skip, shuffle and set the volume from your phone",
-        "de": "Abspielen, springen, mischen und Lautstärke vom Telefon aus",
-        "es": "Reproduce, salta, mezcla y ajusta el volumen desde el teléfono",
-        "fr": "Lecture, morceaux, aléatoire et volume depuis votre téléphone",
+        "de": "Wiedergabe, Titelwechsel, Shuffle und Lautstärke vom Telefon aus",
+        "es": "Reproducción, pistas, modo aleatorio y volumen desde el teléfono",
+        "fr": "Lecture, morceaux, mode aléatoire et volume depuis votre téléphone",
         "ru": "Пуск, треки, перемешивание и громкость с телефона"
       },
       "details": {
-        "en": "Everything but Search works even with Spotify in the background. Search works while Spotify is in front.",
-        "de": "Alles außer Suchen funktioniert auch mit Spotify im Hintergrund; Suchen nur, wenn Spotify vorne ist.",
-        "es": "Todo salvo Buscar funciona con Spotify en segundo plano. Buscar funciona cuando Spotify está delante.",
-        "fr": "Tout sauf Rechercher fonctionne avec Spotify en arrière-plan. Rechercher fonctionne quand Spotify est au premier plan.",
-        "ru": "Всё, кроме поиска, работает, даже когда Spotify в фоне. Поиск — когда Spotify на переднем плане."
+        "en": "No need to switch to Spotify to pause, skip a track or turn it down. Every button except Search works with Spotify in the background, but doesn’t start it. Search works while Spotify is in front.",
+        "de": "Du musst nicht zu Spotify wechseln, um zu pausieren, einen Titel zu überspringen oder die Musik leiser zu stellen. Alle Tasten außer Suchen funktionieren auch mit Spotify im Hintergrund, starten es aber nicht. Suchen funktioniert, wenn Spotify vorne ist.",
+        "es": "No hace falta ir a Spotify para pausar, cambiar de pista o bajar el volumen. Todos los botones salvo Buscar funcionan con Spotify en segundo plano, pero no lo abren si está cerrado. Buscar funciona cuando Spotify está delante.",
+        "fr": "Pas besoin de basculer vers Spotify pour mettre en pause, changer de morceau ou baisser le son. Tous les boutons sauf Rechercher fonctionnent avec Spotify en arrière-plan, mais ne le lancent pas. Rechercher fonctionne quand Spotify est au premier plan.",
+        "ru": "Не нужно переключаться на Spotify, чтобы поставить паузу, сменить трек или убавить звук. Все кнопки, кроме «Поиска», работают, когда Spotify в фоне, но сам Spotify не запускают. «Поиск» работает, когда Spotify на переднем плане."
       },
       "bindByDefault": true,
       "placements": [

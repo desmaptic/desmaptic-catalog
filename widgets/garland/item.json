@@ -1,6 +1,6 @@
 {
   "id": "garland",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Garland",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Hangs under the menu bar of every display, over all windows; clicks go through. Goes out by itself after an hour. Look (lush or slim), modes, colours, timer: the first lines of Advanced › Startup Script.",
-    "de": "Hängt unter der Menüleiste jedes Displays, über allen Fenstern; Klicks gehen hindurch. Geht nach einer Stunde von selbst aus. Aussehen (lush oder slim), Modi, Farben, Timer: die ersten Zeilen unter Erweitert › Startskript.",
-    "es": "Cuelga bajo la barra de menús de cada pantalla, sobre todas las ventanas; los clics la atraviesan. Se apaga sola al cabo de una hora. Aspecto (lush o slim), modos, colores, temporizador: las primeras líneas de Avanzado › Script de inicio.",
-    "fr": "Pend sous la barre des menus de chaque écran, au-dessus de toutes les fenêtres ; les clics passent au travers. S’éteint d’elle-même au bout d’une heure. Aspect (lush ou slim), modes, couleurs, minuterie : les premières lignes de Avancé › Script de démarrage.",
-    "ru": "Висит под строкой меню каждого экрана, поверх всех окон; клики проходят сквозь неё. Гаснет сама через час. Вид (lush или slim), режимы, цвета, таймер — в первых строках Дополнительно › Стартовый скрипт."
+    "en": "It hangs under the menu bar of every display, over all windows, and clicks go through it. It goes out by itself after an hour. You can change its look, modes, colors and timer in the button’s settings, under Advanced.",
+    "de": "Sie hängt unter der Menüleiste jedes Displays vor allen Fenstern, und Klicks gehen durch sie hindurch. Nach einer Stunde geht sie von selbst aus. Aussehen, Modi, Farben und Dauer änderst du in den Einstellungen der Taste unter „Erweitert“.",
+    "es": "Cuelga bajo la barra de menús de cada pantalla, por encima de las ventanas, y los clics la atraviesan. Se apaga sola al cabo de una hora. Su aspecto, modos, colores y duración se cambian en los ajustes del botón, en «Avanzado».",
+    "fr": "Elle pend sous la barre des menus de chaque écran, au-dessus des fenêtres, et les clics passent au travers. Elle s’éteint toute seule au bout d’une heure. Son aspect, ses modes, ses couleurs et sa durée se changent dans les réglages du bouton, sous « Avancé ».",
+    "ru": "Висит под строкой меню на каждом экране поверх всех окон и не мешает кликать. Через час гаснет сама. Вид, режимы, цвета и время работы можно поменять в настройках кнопки, в разделе «Дополнительно»."
   },
   "tapAction": {
     "en": "Lights the garland or puts it out",
@@ -33,7 +33,7 @@
     "ru": "Зажигает или гасит гирлянду"
   },
   "holdAction": {
-    "en": "Switches the mode: colour waves, warm white, twinkle",
+    "en": "Switches the mode: color waves, warm white, twinkle",
     "de": "Wechselt den Modus: Farbwellen, Warmweiß, Funkeln",
     "es": "Cambia el modo: olas de color, blanco cálido, centelleo",
     "fr": "Change de mode : vagues de couleur, blanc chaud, scintillement",

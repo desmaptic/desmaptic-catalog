@@ -1,6 +1,6 @@
 {
   "id": "raycast",
-  "revision": 3,
+  "revision": 4,
   "name": "Raycast",
   "bundleIds": [
     "com.raycast.macos"
@@ -24,11 +24,11 @@
         "ru": "Переднее окно — на левую половину экрана"
       },
       "details": {
-        "en": "Any app’s front window; tapping again gives two thirds, then one third (Raycast’s default). The first time, Raycast asks: choose Always Run Command.",
-        "de": "Das vordere Fenster jeder App; erneutes Tippen macht zwei Drittel, dann ein Drittel daraus (Raycast-Standard). Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "La ventana de delante de cualquier app; al tocar otra vez, dos tercios y luego un tercio (lo predeterminado en Raycast). La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "La fenêtre au premier plan de n’importe quelle app ; touchez encore pour deux tiers, puis un tiers (réglage par défaut de Raycast). La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Переднее окно любого приложения; повторное нажатие — две трети, затем треть (так по умолчанию в Raycast). В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Tap again for two thirds of the screen, then one third. That’s Raycast’s default. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Tippst du erneut, nimmt das Fenster zwei Drittel des Bildschirms ein, danach ein Drittel. Das ist die Voreinstellung von Raycast. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Si vuelves a tocar, la ventana ocupa dos tercios de la pantalla y luego un tercio. Es el ajuste predeterminado de Raycast. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Touchez à nouveau pour que la fenêtre occupe deux tiers de l’écran, puis un tiers. C’est le réglage par défaut de Raycast. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "При повторных нажатиях окно займёт две трети экрана, потом треть. Так по умолчанию в Raycast. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Moves the front window to the left half",
@@ -68,11 +68,11 @@
         "ru": "Переднее окно на весь экран; удержание — почти на весь"
       },
       "details": {
-        "en": "Unlike macOS full screen, the window stays in its Space, next to your other windows. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Anders als der Vollbildmodus von macOS bleibt das Fenster in seinem Space, neben den anderen Fenstern. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "A diferencia de la pantalla completa de macOS, la ventana sigue en su Space, junto a las demás. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Contrairement au plein écran de macOS, la fenêtre reste dans son Space, à côté des autres. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "В отличие от полноэкранного режима macOS окно остаётся в своём Space, рядом с остальными. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Unlike macOS full screen, the window stays in its Space, next to your other windows. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Anders als der Vollbildmodus von macOS bleibt das Fenster in seinem Space, neben den anderen Fenstern. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "A diferencia de la pantalla completa de macOS, la ventana sigue en su Space, junto a las demás. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Contrairement au plein écran de macOS, la fenêtre reste dans son Space, à côté des autres. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "В отличие от полноэкранного режима macOS, окно остаётся на своём рабочем столе, рядом с другими окнами. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Makes the front window fill the screen",
@@ -124,11 +124,11 @@
         "ru": "Переднее окно — на правую половину экрана"
       },
       "details": {
-        "en": "Any app’s front window; tapping again gives two thirds, then one third (Raycast’s default). The first time, Raycast asks: choose Always Run Command.",
-        "de": "Das vordere Fenster jeder App; erneutes Tippen macht zwei Drittel, dann ein Drittel daraus (Raycast-Standard). Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "La ventana de delante de cualquier app; al tocar otra vez, dos tercios y luego un tercio (lo predeterminado en Raycast). La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "La fenêtre au premier plan de n’importe quelle app ; touchez encore pour deux tiers, puis un tiers (réglage par défaut de Raycast). La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Переднее окно любого приложения; повторное нажатие — две трети, затем треть (так по умолчанию в Raycast). В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Tap again for two thirds of the screen, then one third. That’s Raycast’s default. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Tippst du erneut, nimmt das Fenster zwei Drittel des Bildschirms ein, danach ein Drittel. Das ist die Voreinstellung von Raycast. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Si vuelves a tocar, la ventana ocupa dos tercios de la pantalla y luego un tercio. Es el ajuste predeterminado de Raycast. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Touchez à nouveau pour que la fenêtre occupe deux tiers de l’écran, puis un tiers. C’est le réglage par défaut de Raycast. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "При повторных нажатиях окно займёт две трети экрана, потом треть. Так по умолчанию в Raycast. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Moves the front window to the right half",
@@ -168,11 +168,11 @@
         "ru": "Переносит переднее окно на другой дисплей"
       },
       "details": {
-        "en": "For two or more displays; the window keeps its place and proportions. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Für zwei oder mehr Bildschirme; das Fenster behält Lage und Proportionen. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Para dos o más pantallas; la ventana conserva su posición y proporciones. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Pour deux écrans ou plus ; la fenêtre garde sa place et ses proportions. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Для двух и более дисплеев; окно сохраняет положение и пропорции. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Needs two or more displays. The window keeps its place and proportions on the new one. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Dafür brauchst du zwei oder mehr Bildschirme. Auf dem neuen Bildschirm behält das Fenster seine Lage und Proportionen. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Necesitas dos pantallas o más. En la nueva, la ventana conserva su posición y sus proporciones. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Il faut deux écrans ou plus. Sur le nouvel écran, la fenêtre garde sa place et ses proportions. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Нужны два дисплея или больше. На новом дисплее окно сохранит положение и пропорции. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Moves the front window to the next display",
@@ -224,11 +224,11 @@
         "ru": "Переднее окно — на верхнюю половину экрана"
       },
       "details": {
-        "en": "Any app’s front window; tapping again gives two thirds, then one third (Raycast’s default). The first time, Raycast asks: choose Always Run Command.",
-        "de": "Das vordere Fenster jeder App; erneutes Tippen macht zwei Drittel, dann ein Drittel daraus (Raycast-Standard). Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "La ventana de delante de cualquier app; al tocar otra vez, dos tercios y luego un tercio (lo predeterminado en Raycast). La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "La fenêtre au premier plan de n’importe quelle app ; touchez encore pour deux tiers, puis un tiers (réglage par défaut de Raycast). La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Переднее окно любого приложения; повторное нажатие — две трети, затем треть (так по умолчанию в Raycast). В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Tap again for two thirds of the screen, then one third. That’s Raycast’s default. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Tippst du erneut, nimmt das Fenster zwei Drittel des Bildschirms ein, danach ein Drittel. Das ist die Voreinstellung von Raycast. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Si vuelves a tocar, la ventana ocupa dos tercios de la pantalla y luego un tercio. Es el ajuste predeterminado de Raycast. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Touchez à nouveau pour que la fenêtre occupe deux tiers de l’écran, puis un tiers. C’est le réglage par défaut de Raycast. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "При повторных нажатиях окно займёт две трети экрана, потом треть. Так по умолчанию в Raycast. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Moves the front window to the top half",
@@ -268,11 +268,11 @@
         "ru": "Ставит переднее окно по центру; удержание — разумный размер"
       },
       "details": {
-        "en": "The tap keeps the window’s size. Reasonable Size is 60% of the screen, at most 1024 × 900 points. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Tippen behält die Fenstergröße. „Reasonable Size“ ist 60 % des Bildschirms, höchstens 1024 × 900 Punkte. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "El toque conserva el tamaño. «Reasonable Size» es el 60 % de la pantalla, como máximo 1024 × 900 puntos. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Le toucher garde la taille. « Reasonable Size », c’est 60 % de l’écran, au plus 1024 × 900 points. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Нажатие сохраняет размер окна. «Reasonable Size» — 60 % экрана, не больше 1024 × 900 точек. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "A tap doesn’t change the window’s size. Reasonable Size is 60% of the screen, at most 1024 × 900 points. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Beim Tippen behält das Fenster seine Größe. „Reasonable Size“ ist 60 % des Bildschirms, höchstens 1024 × 900 Punkte. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Al tocar, la ventana conserva su tamaño. «Reasonable Size» es el 60 % de la pantalla, como máximo 1024 × 900 puntos. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Toucher le bouton ne change pas la taille de la fenêtre. « Reasonable Size », c’est 60 % de l’écran, au plus 1024 × 900 points. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Нажатие не меняет размер окна. При удержании окно займёт 60 % экрана, но не больше 1024 × 900 точек. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Centers the front window on its screen",
@@ -324,11 +324,11 @@
         "ru": "Переднее окно — на нижнюю половину экрана"
       },
       "details": {
-        "en": "Any app’s front window; tapping again gives two thirds, then one third (Raycast’s default). The first time, Raycast asks: choose Always Run Command.",
-        "de": "Das vordere Fenster jeder App; erneutes Tippen macht zwei Drittel, dann ein Drittel daraus (Raycast-Standard). Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "La ventana de delante de cualquier app; al tocar otra vez, dos tercios y luego un tercio (lo predeterminado en Raycast). La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "La fenêtre au premier plan de n’importe quelle app ; touchez encore pour deux tiers, puis un tiers (réglage par défaut de Raycast). La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Переднее окно любого приложения; повторное нажатие — две трети, затем треть (так по умолчанию в Raycast). В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Tap again for two thirds of the screen, then one third. That’s Raycast’s default. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Tippst du erneut, nimmt das Fenster zwei Drittel des Bildschirms ein, danach ein Drittel. Das ist die Voreinstellung von Raycast. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Si vuelves a tocar, la ventana ocupa dos tercios de la pantalla y luego un tercio. Es el ajuste predeterminado de Raycast. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Touchez à nouveau pour que la fenêtre occupe deux tiers de l’écran, puis un tiers. C’est le réglage par défaut de Raycast. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "При повторных нажатиях окно займёт две трети экрана, потом треть. Так по умолчанию в Raycast. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Moves the front window to the bottom half",
@@ -368,11 +368,11 @@
         "ru": "Возвращает переднее окно на прежнее место"
       },
       "details": {
-        "en": "Undoes the last move or resize Raycast made to the window in front. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Macht die letzte Verschiebung oder Größenänderung von Raycast am vorderen Fenster rückgängig. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Deshace el último movimiento o cambio de tamaño que Raycast hizo en la ventana de delante. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Annule le dernier déplacement ou redimensionnement fait par Raycast sur la fenêtre au premier plan. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Отменяет последнее перемещение или изменение размера переднего окна, сделанное Raycast. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Undoes the last move or resize Raycast made to the window in front. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Macht die letzte Verschiebung oder Größenänderung von Raycast am vorderen Fenster rückgängig. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Deshace el último movimiento o cambio de tamaño que Raycast hizo en la ventana de delante. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Annule le dernier déplacement ou redimensionnement fait par Raycast sur la fenêtre au premier plan. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Отменяет последнее перемещение или изменение размера, которое Raycast сделал с передним окном. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Puts the front window back as it was",
@@ -412,11 +412,11 @@
         "ru": "Открывает строку поиска Raycast"
       },
       "details": {
-        "en": "As with Raycast’s hotkey: type to open an app, run a command or work out a sum. Starts Raycast if it’s closed.",
-        "de": "Wie mit dem Kurzbefehl von Raycast: tippen, um eine App zu öffnen, einen Befehl auszuführen oder zu rechnen. Startet Raycast, falls es geschlossen ist.",
-        "es": "Como con el atajo de Raycast: escribe para abrir una app, ejecutar un comando o hacer una cuenta. Abre Raycast si está cerrado.",
-        "fr": "Comme avec le raccourci de Raycast : tapez pour ouvrir une app, lancer une commande ou faire un calcul. Lance Raycast s’il est fermé.",
-        "ru": "Как по сочетанию клавиш Raycast: наберите, чтобы открыть приложение, выполнить команду или посчитать. Запускает Raycast, если он закрыт."
+        "en": "Same as pressing Raycast’s hotkey. Type to open an app, run a command or do a quick calculation. Starts Raycast if it’s closed.",
+        "de": "Als würdest du das Tastenkürzel von Raycast drücken. In der Suchleiste kannst du eine App öffnen, einen Befehl ausführen oder etwas ausrechnen. Startet Raycast, falls es geschlossen ist.",
+        "es": "Es como pulsar el atajo de teclado de Raycast. En la barra de búsqueda puedes abrir una app, ejecutar un comando o hacer una cuenta. Abre Raycast si está cerrado.",
+        "fr": "Comme si vous appuyiez sur le raccourci clavier de Raycast. Dans la barre de recherche, vous pouvez ouvrir une app, lancer une commande ou faire un calcul. Lance Raycast s’il est fermé.",
+        "ru": "Как будто вы нажали сочетание клавиш Raycast. В строке поиска можно открыть приложение, выполнить команду или что-нибудь посчитать. Если Raycast закрыт, кнопка его запустит."
       },
       "tapAction": {
         "en": "Opens Raycast",
@@ -453,14 +453,14 @@
         "de": "Früher Kopiertes, um es erneut einzusetzen",
         "es": "Lo que copiaste antes, para pegarlo otra vez",
         "fr": "Ce que vous avez copié, à recoller",
-        "ru": "То, что вы копировали раньше, — чтобы вставить снова"
+        "ru": "То, что вы копировали раньше, можно вставить снова"
       },
       "details": {
-        "en": "Text, images and links you copied; by default, Return pastes the chosen one into the app in front. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Kopierte Texte, Bilder und Links; standardmäßig setzt Return den gewählten Eintrag in die vordere App ein. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Textos, imágenes y enlaces que copiaste; por omisión, Retorno pega el elegido en la app de delante. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Textes, images et liens copiés ; par défaut, Retour colle l’élément choisi dans l’app au premier plan. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Скопированные тексты, картинки и ссылки; по умолчанию Return вставляет выбранное в переднее приложение. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Text, images and links you copied. By default, Return pastes the chosen one into the app in front. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Texte, Bilder und Links, die du kopiert hast. Standardmäßig setzt Return den gewählten Eintrag in die vordere App ein. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Textos, imágenes y enlaces que copiaste. Por omisión, Retorno pega el elegido en la app de delante. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Les textes, images et liens que vous avez copiés. Par défaut, Retour colle l’élément choisi dans l’app au premier plan. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Тексты, картинки и ссылки, которые вы копировали. По умолчанию Return вставит выбранное в приложение на переднем плане. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Clipboard History",
@@ -494,17 +494,17 @@
       },
       "summary": {
         "en": "Your saved texts, pasted where you type",
-        "de": "Gespeicherte Texte, eingesetzt, wo du schreibst",
+        "de": "Gespeicherte Texte zum Einsetzen, wo du schreibst",
         "es": "Tus textos guardados, pegados donde escribes",
         "fr": "Vos textes enregistrés, collés là où vous tapez",
-        "ru": "Сохранённые тексты — туда, где вы печатаете"
+        "ru": "Сохранённые тексты, чтобы вставить их туда, где вы печатаете"
       },
       "details": {
-        "en": "Snippets you saved in Raycast; by default, Return pastes the chosen one into the app in front. The first time, Raycast asks: choose Always Run Command.",
-        "de": "In Raycast gespeicherte Snippets; standardmäßig setzt Return das gewählte in die vordere App ein. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Los snippets que guardaste en Raycast; por omisión, Retorno pega el elegido en la app de delante. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Les snippets enregistrés dans Raycast ; par défaut, Retour colle celui choisi dans l’app au premier plan. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Сниппеты, сохранённые в Raycast; по умолчанию Return вставляет выбранный в переднее приложение. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Snippets you saved in Raycast. By default, Return pastes the chosen one into the app in front. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Snippets, die du in Raycast gespeichert hast. Standardmäßig setzt Return das gewählte in die vordere App ein. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Los snippets que guardaste en Raycast. Por omisión, Retorno pega el elegido en la app de delante. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Les snippets enregistrés dans Raycast. Par défaut, Retour colle celui choisi dans l’app au premier plan. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Сниппеты, которые вы сохранили в Raycast. По умолчанию Return вставит выбранный в приложение на переднем плане. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Search Snippets",
@@ -544,11 +544,11 @@
         "ru": "Находит эмодзи или символ по названию"
       },
       "details": {
-        "en": "Type a word to find an emoji or symbol; Return puts it where you are typing in the app in front. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Ein Wort tippen, um ein Emoji oder Symbol zu finden; Return setzt es in der vorderen App dort ein, wo du schreibst. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Escribe una palabra para buscar un emoji o símbolo; Retorno lo pone donde escribes en la app de delante. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Tapez un mot pour trouver un emoji ou un symbole ; Retour l’insère là où vous tapez dans l’app au premier plan. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Наберите слово, чтобы найти эмодзи или символ; Return вставит его туда, где вы печатаете в переднем приложении. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Type a word to find an emoji or symbol. Return puts it where you’re typing in the app in front. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Gib ein Wort ein, um ein Emoji oder Symbol zu finden. Return setzt es in der vorderen App dort ein, wo du schreibst. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Escribe una palabra para buscar un emoji o símbolo. Retorno lo pone donde escribes en la app de delante. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Tapez un mot pour trouver un emoji ou un symbole. Retour l’insère là où vous tapez dans l’app au premier plan. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Наберите слово, чтобы найти эмодзи или символ. Return вставит его туда, где вы печатаете в приложении на переднем плане. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Search Emoji & Symbols",
@@ -585,14 +585,14 @@
         "de": "In Raycast gespeicherte Links und Suchen",
         "es": "Enlaces y búsquedas que guardaste en Raycast",
         "fr": "Liens et recherches enregistrés dans Raycast",
-        "ru": "Ссылки и поиски, сохранённые в Raycast"
+        "ru": "Ссылки и поиски, которые вы сохранили в Raycast"
       },
       "details": {
-        "en": "Your Quicklinks — a site, a folder, a search with your words in it; Return opens the chosen one. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Deine Quicklinks – eine Website, ein Ordner, eine Suche mit deinen Wörtern; Return öffnet den gewählten. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Tus Quicklinks: un sitio, una carpeta, una búsqueda con tus palabras; Retorno abre el elegido. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Vos Quicklinks : un site, un dossier, une recherche avec vos mots ; Retour ouvre celui choisi. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Ваши Quicklinks — сайт, папка, поиск с вашими словами; Return открывает выбранный. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "A Quicklink opens a site, a folder or a search for the words you type. Pick one and press Return. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Ein Quicklink öffnet eine Website, einen Ordner oder eine Suche nach den Wörtern, die du eingibst. Wähle einen aus und drücke Return. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Un Quicklink abre un sitio, una carpeta o una búsqueda con las palabras que escribas. Elige uno y pulsa Retorno. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Un Quicklink ouvre un site, un dossier ou une recherche avec les mots que vous tapez. Choisissez-en un et appuyez sur Retour. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Quicklink открывает сайт, папку или поиск по словам, которые вы наберёте. Выберите нужный и нажмите Return. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Search Quicklinks",
@@ -632,11 +632,11 @@
         "ru": "Находит файлы и папки по названию"
       },
       "details": {
-        "en": "Raycast’s own file search across the Mac, by name; Return opens the chosen file or folder. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Die Dateisuche von Raycast auf dem ganzen Mac, nach Namen; Return öffnet die gewählte Datei oder den Ordner. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "La búsqueda de archivos de Raycast en todo el Mac, por nombre; Retorno abre el archivo o la carpeta elegidos. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "La recherche de fichiers de Raycast sur tout le Mac, par nom ; Retour ouvre le fichier ou le dossier choisi. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Собственный поиск файлов Raycast по всему Mac по названию; Return открывает выбранный файл или папку. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Raycast’s own file search, across the whole Mac. Return opens the chosen file or folder. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Die eigene Dateisuche von Raycast durchsucht den ganzen Mac. Return öffnet die gewählte Datei oder den gewählten Ordner. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "La búsqueda de archivos propia de Raycast, en todo el Mac. Retorno abre el archivo o la carpeta elegidos. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "La recherche de fichiers propre à Raycast, sur tout le Mac. Retour ouvre le fichier ou le dossier choisi. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Это собственный поиск Raycast по всему Mac. Return открывает выбранный файл или папку. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Search Files",
@@ -672,15 +672,15 @@
         "en": "Every open window, to jump to one",
         "de": "Alle offenen Fenster, um zu einem zu springen",
         "es": "Todas las ventanas abiertas, para saltar a una",
-        "fr": "Toutes les fenêtres ouvertes, pour passer à l’une",
-        "ru": "Все открытые окна — чтобы перейти к нужному"
+        "fr": "Toutes les fenêtres ouvertes, pour passer à l’une d’elles",
+        "ru": "Все открытые окна, чтобы быстро перейти к нужному"
       },
       "details": {
-        "en": "Open windows of all running apps, searchable by title or app; Return brings the chosen one forward. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Die offenen Fenster aller laufenden Apps, durchsuchbar nach Titel oder App; Return holt das gewählte nach vorne. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Las ventanas abiertas de todas las apps en marcha, por título o app; Retorno trae la elegida al frente. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Les fenêtres ouvertes de toutes les apps en cours, par titre ou app ; Retour met celle choisie au premier plan. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Открытые окна всех запущенных приложений, с поиском по заголовку или приложению; Return выводит выбранное вперёд. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Open windows of all running apps. Find one by its title or app, and Return brings it forward. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Die offenen Fenster aller laufenden Apps. Suche ein Fenster nach Titel oder App und hol es mit Return nach vorne. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Las ventanas abiertas de todas las apps en marcha. Busca una por su título o por la app, y Retorno la trae al frente. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Les fenêtres ouvertes de toutes les apps en cours. Cherchez-en une par son titre ou son app, et Retour la met au premier plan. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Открытые окна всех запущенных приложений. Найдите окно по заголовку или по приложению и нажмите Return, чтобы перейти к нему. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Switch Windows",
@@ -717,14 +717,14 @@
         "de": "Schnelle Notizen in eigenem Fenster; halten für eine neue",
         "es": "Notas rápidas en su propia ventana; mantén pulsado para una nueva",
         "fr": "Notes rapides dans leur fenêtre ; maintenez pour une nouvelle",
-        "ru": "Быстрые заметки в отдельном окне; удержание — новая"
+        "ru": "Быстрые заметки в отдельном окне; удержание — создать новую"
       },
       "details": {
-        "en": "Notes kept in Raycast, in a window of their own; without Raycast Pro, up to 5. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Notizen in Raycast, in einem eigenen Fenster; ohne Raycast Pro höchstens 5. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Notas guardadas en Raycast, en su propia ventana; sin Raycast Pro, hasta 5. La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Des notes gardées dans Raycast, dans leur propre fenêtre ; sans Raycast Pro, 5 au plus. La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Заметки в Raycast, в отдельном окне; без Raycast Pro — не больше 5. В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Your notes stay in Raycast and open in a window of their own. Without Raycast Pro, you can have up to 5. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Deine Notizen bleiben in Raycast und öffnen sich in einem eigenen Fenster. Ohne Raycast Pro kannst du höchstens 5 haben. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Tus notas se guardan en Raycast y se abren en su propia ventana. Sin Raycast Pro, puedes tener hasta 5. La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Vos notes restent dans Raycast et s’ouvrent dans leur propre fenêtre. Sans Raycast Pro, vous pouvez en avoir 5 au plus. La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Заметки хранятся в Raycast и открываются в отдельном окне. Без Raycast Pro их может быть не больше 5. Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Opens Raycast Notes",
@@ -773,14 +773,14 @@
         "de": "Startet eine Focus-Sitzung oder beendet die laufende",
         "es": "Empieza una sesión de Focus o termina la que está en curso",
         "fr": "Démarre une session Focus ou termine celle en cours",
-        "ru": "Начинает Focus-сессию или заканчивает идущую"
+        "ru": "Начинает Focus-сессию или заканчивает текущую"
       },
       "details": {
-        "en": "Blocks social, news and shopping sites and apps until you tap again; Raycast quits such apps already open (News, Reeder…) and by default doesn’t reopen them. Messengers, games and video stay.",
-        "de": "Sperrt Websites und Apps für Social Media, News und Shopping, bis du erneut tippst; solche schon offenen Apps (News, Reeder …) beendet Raycast und öffnet sie standardmäßig nicht wieder. Messenger, Spiele und Videos bleiben.",
-        "es": "Bloquea sitios y apps de redes sociales, noticias y compras hasta que vuelvas a tocar; Raycast cierra esas apps si ya están abiertas (News, Reeder…) y, por omisión, no las vuelve a abrir. Mensajería, juegos y vídeo siguen.",
-        "fr": "Bloque les sites et apps de réseaux sociaux, d’actualités et d’achats jusqu’à ce que vous touchiez à nouveau ; Raycast quitte ces apps déjà ouvertes (News, Reeder…) et, par défaut, ne les rouvre pas. Messageries, jeux et vidéo restent.",
-        "ru": "Блокирует сайты и приложения соцсетей, новостей и магазинов до повторного нажатия; уже открытые такие приложения (News, Reeder…) Raycast закрывает и по умолчанию не открывает снова. Мессенджеры, игры и видео остаются."
+        "en": "Blocks social, news and shopping sites and apps until you tap again. Raycast quits any such apps that are open and by default doesn’t reopen them. Messengers, games and video aren’t blocked.",
+        "de": "Sperrt Websites und Apps für Social Media, News und Shopping, bis du erneut tippst. Solche Apps beendet Raycast, wenn sie offen sind, und öffnet sie standardmäßig nicht wieder. Messenger, Spiele und Videos werden nicht gesperrt.",
+        "es": "Bloquea sitios y apps de redes sociales, noticias y compras hasta que vuelvas a tocar. Si esas apps están abiertas, Raycast las cierra y, por omisión, no las vuelve a abrir. La mensajería, los juegos y el vídeo no se bloquean.",
+        "fr": "Bloque les sites et apps de réseaux sociaux, d’actualités et d’achats jusqu’à ce que vous touchiez à nouveau. Si de telles apps sont ouvertes, Raycast les quitte et, par défaut, ne les rouvre pas. Messageries, jeux et vidéo ne sont pas bloqués.",
+        "ru": "Блокирует сайты и приложения соцсетей, новостей и магазинов, пока вы не нажмёте ещё раз. Если такие приложения уже открыты, Raycast их закроет и по умолчанию не откроет снова. Мессенджеры, игры и видео не блокируются."
       },
       "tapAction": {
         "en": "Starts or ends a Focus session",
@@ -820,11 +820,11 @@
         "ru": "Убирает все уведомления с экрана Mac разом"
       },
       "details": {
-        "en": "Handy before sharing your screen. Raycast needs its own Accessibility access and permission to control System Events for it. The first time, Raycast asks: choose Always Run Command.",
-        "de": "Praktisch, bevor du deinen Bildschirm teilst. Raycast braucht dafür eigenen Zugriff auf Bedienungshilfen und die Erlaubnis, „System Events“ zu steuern. Beim ersten Mal fragt Raycast: „Always Run Command“ wählen.",
-        "es": "Útil antes de compartir la pantalla. Raycast necesita para ello su propio acceso a Accesibilidad y permiso para controlar «System Events». La primera vez, Raycast pregunta: elige «Always Run Command».",
-        "fr": "Pratique avant de partager votre écran. Raycast a besoin pour cela de son propre accès à l’Accessibilité et de l’autorisation de contrôler « System Events ». La première fois, Raycast demande : choisissez « Always Run Command ».",
-        "ru": "Удобно перед показом экрана. Raycast нужно для этого собственное разрешение в «Универсальном доступе» и разрешение управлять «System Events». В первый раз Raycast спросит — выберите «Always Run Command»."
+        "en": "Handy before sharing your screen. Raycast needs its own Accessibility access and permission to control System Events for it. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Praktisch, bevor du deinen Bildschirm teilst. Raycast braucht dafür eigenen Zugriff auf Bedienungshilfen und die Erlaubnis, „System Events“ zu steuern. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Útil antes de compartir la pantalla. Raycast necesita para ello su propio acceso a Accesibilidad y permiso para controlar «System Events». La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Pratique avant de partager votre écran. Raycast a besoin pour cela de son propre accès à l’Accessibilité et de l’autorisation de contrôler « System Events ». La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Удобно перед показом экрана. Для этого Raycast нужно собственное разрешение в «Универсальном доступе» и разрешение управлять «System Events». Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "tapAction": {
         "en": "Dismisses all notifications",
@@ -860,17 +860,17 @@
       },
       "summary": {
         "en": "Snap windows, open Raycast’s tools and start a Focus session from your phone",
-        "de": "Fenster anordnen, die Werkzeuge von Raycast öffnen und eine Focus-Sitzung starten – vom Telefon aus",
+        "de": "Vom Telefon aus Fenster anordnen, die Werkzeuge von Raycast öffnen und eine Focus-Sitzung starten",
         "es": "Coloca ventanas, abre las herramientas de Raycast y empieza una sesión de Focus desde el teléfono",
         "fr": "Placez les fenêtres, ouvrez les outils de Raycast et lancez une session Focus depuis votre téléphone",
-        "ru": "Раскладка окон, инструменты Raycast и Focus-сессия — с телефона"
+        "ru": "Раскладывайте окна, открывайте инструменты Raycast и запускайте Focus-сессию с телефона"
       },
       "details": {
-        "en": "The window buttons move the window in front, in any app; Raycast needs its own Accessibility access for them, for pasting and for Dismiss Notifications, which also needs Raycast allowed to control System Events. Each command but Focus Session asks once: choose Always Run Command.",
-        "de": "Die Fenstertasten bewegen das vordere Fenster jeder App; Raycast braucht dafür, zum Einsetzen und für „Dismiss Notifications“ eigenen Zugriff auf Bedienungshilfen, für Letzteres auch die Erlaubnis, „System Events“ zu steuern. Jeder Befehl außer „Focus Session“ fragt einmal: „Always Run Command“ wählen.",
-        "es": "Los botones de ventanas mueven la ventana de delante de cualquier app; Raycast necesita su propio acceso a Accesibilidad para ellos, para pegar y para «Dismiss Notifications», que además requiere permitir a Raycast controlar «System Events». Cada comando, salvo «Focus Session», pregunta una vez: elige «Always Run Command».",
-        "fr": "Les boutons de fenêtres déplacent la fenêtre au premier plan de n’importe quelle app ; Raycast a besoin de son propre accès à l’Accessibilité pour eux, pour coller et pour « Dismiss Notifications », qui demande aussi d’autoriser Raycast à contrôler « System Events ». Chaque commande sauf « Focus Session » demande une fois : choisissez « Always Run Command ».",
-        "ru": "Кнопки окон двигают переднее окно любого приложения; для них, для вставки и для «Dismiss Notifications» Raycast нужно собственное разрешение в «Универсальном доступе», а для последней — ещё и разрешение управлять «System Events». Каждая команда, кроме «Focus Session», спросит один раз — выберите «Always Run Command»."
+        "en": "The window buttons move the front window of any app. Raycast needs its own Accessibility access for them, for pasting and for Dismiss Notifications. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
+        "de": "Die Fenstertasten bewegen das vordere Fenster jeder App. Raycast braucht dafür, zum Einsetzen und für „Dismiss Notifications“ eigenen Zugriff auf Bedienungshilfen. Wenn Raycast beim ersten Mal fragt, ob es den Befehl ausführen soll, wähle „Always Run Command“.",
+        "es": "Los botones de ventanas mueven la ventana de delante de cualquier app. Raycast necesita su propio acceso a Accesibilidad para ellos, para pegar y para «Dismiss Notifications». La primera vez que Raycast pregunte si debe ejecutar el comando, elige «Always Run Command».",
+        "fr": "Les boutons de fenêtres déplacent la fenêtre au premier plan de n’importe quelle app. Raycast a besoin de son propre accès à l’Accessibilité pour eux, pour coller et pour « Dismiss Notifications ». La première fois que Raycast demande s’il doit exécuter la commande, choisissez « Always Run Command ».",
+        "ru": "Кнопки окон двигают переднее окно любого приложения. Для них, для вставки и для «Dismiss Notifications» Raycast нужно собственное разрешение в «Универсальном доступе». Когда Raycast в первый раз спросит, запускать ли команду, выберите «Always Run Command»."
       },
       "bindByDefault": false,
       "placements": [

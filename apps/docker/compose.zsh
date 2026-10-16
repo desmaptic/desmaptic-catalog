@@ -18,13 +18,13 @@ zmodload -F zsh/files b:zf_mkdir b:zf_rm
 # MARK: - The project's folder
 
 if [[ -z $dir ]]; then
-  [[ $action == up ]] && script=Tap || script="Long Press"
-  print -ru2 -- "Set the folder with your compose.yaml in the first line of the $script script"
+  [[ $action == up ]] && script=tap || script="long press"
+  print -ru2 -- "Set the folder with your compose.yaml in this button’s settings, for the $script"
   exit 1
 fi
 [[ $HOME == /?* ]] || { print -u2 -- "Docker: HOME is not set"; exit 1 }
 [[ $dir == '~' || $dir == '~/'* ]] && dir=$HOME${dir#'~'}   # "~/…" in quotes is not expanded by the shell
-[[ $dir == /* ]] || { print -ru2 -- "The folder in the first line must be a full path or start with ~/: $dir"; exit 1 }
+[[ $dir == /* ]] || { print -ru2 -- "The folder must be a full path or start with ~/: $dir"; exit 1 }
 [[ -d $dir ]] || { print -ru2 -- "No such folder: $dir"; exit 1 }
 # The file names Compose looks for. Checked here: without one in the folder, Compose would look in the folders above.
 found=0

@@ -21,7 +21,7 @@ fi
 export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
-[[ -n $value ]] || { print -ru2 -- "Write the $kind in the first line of the button’s script: $kind=\"$example\""; exit 1 }
+[[ -n $value ]] || { print -ru2 -- "Write the $kind in this button’s settings: $kind=\"$example\""; exit 1 }
 # "iPhone 17 Pro (26.4)": the name, then the system version — tried when no destination has the whole text as its name.
 base="" version=""
 [[ $kind == destination && $value =~ '^(.+) \(([0-9]+(\.[0-9]+)*)\)$' ]] && base=$match[1] version=$match[2]

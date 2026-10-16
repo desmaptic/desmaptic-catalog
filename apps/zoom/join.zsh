@@ -13,7 +13,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 id=${id//[[:space:]-]/}
 if [[ -z $id ]]; then
-  print -u2 -- "Set your meeting ID in the first line of this button's script"
+  print -u2 -- "Set your meeting ID in this button’s settings"
   exit 1
 fi
 if [[ $id != <-> || ${#id} -lt 9 || ${#id} -gt 11 ]]; then
@@ -21,7 +21,7 @@ if [[ $id != <-> || ${#id} -lt 9 || ${#id} -gt 11 ]]; then
   exit 1
 fi
 if [[ $pwd == *[^[:graph:]]* || ${#pwd} -gt 64 ]]; then
-  print -u2 -- "The passcode is letters, digits and signs, without spaces"
+  print -u2 -- "The passcode is letters, digits and symbols, without spaces"
   exit 1
 fi
 

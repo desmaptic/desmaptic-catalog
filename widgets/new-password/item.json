@@ -1,6 +1,6 @@
 {
   "id": "new-password",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "New Password",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Safari-style: three groups of six characters joined by hyphens. Clipboard managers such as Raycast or Maccy don’t keep it, and neither does Desmaptic — save it in your password manager.",
-    "de": "Wie bei Safari: drei Blöcke aus je sechs Zeichen, durch Bindestriche verbunden. Zwischenablage-Manager wie Raycast oder Maccy behalten es nicht, Desmaptic auch nicht – sichere es in deinem Passwortmanager.",
-    "es": "Como las de Safari: tres bloques de seis caracteres unidos por guiones. Los gestores de portapapeles como Raycast o Maccy no la guardan, ni tampoco Desmaptic: guárdala en tu gestor de contraseñas.",
-    "fr": "Comme ceux de Safari : trois blocs de six caractères reliés par des tirets. Ni les gestionnaires de presse-papiers comme Raycast ou Maccy ni Desmaptic ne le conservent : enregistrez-le dans votre gestionnaire de mots de passe.",
-    "ru": "Как в Safari: три блока по шесть символов через дефис. Менеджеры буфера обмена вроде Raycast или Maccy его не сохраняют, Desmaptic тоже — сохраните его в менеджере паролей."
+    "en": "Like the ones Safari suggests: three groups of six characters joined by hyphens. It stays out of clipboard history in apps like Raycast or Maccy, and Desmaptic doesn’t keep it either, so save it in your password manager.",
+    "de": "Wie die Vorschläge von Safari: drei Blöcke aus je sechs Zeichen, durch Bindestriche verbunden. Es landet nicht im Verlauf von Zwischenablage-Apps wie Raycast oder Maccy, und auch Desmaptic behält es nicht. Sichere es also in deinem Passwortmanager.",
+    "es": "Como las que sugiere Safari: tres bloques de seis caracteres unidos por guiones. No queda en el historial de apps de portapapeles como Raycast o Maccy, y Desmaptic tampoco la guarda, así que guárdala en tu gestor de contraseñas.",
+    "fr": "Comme ceux que propose Safari : trois blocs de six caractères reliés par des tirets. Il n’apparaît pas dans l’historique d’apps de presse-papiers comme Raycast ou Maccy, et Desmaptic ne le garde pas non plus : enregistrez-le dans votre gestionnaire de mots de passe.",
+    "ru": "Такой же, как предлагает Safari: три группы по шесть символов через дефис. Он не попадёт в историю буфера обмена в Raycast или Maccy, и Desmaptic его тоже не хранит, поэтому сразу сохраните его в менеджере паролей."
   },
   "tapAction": {
     "en": "Copies a new strong password to the Mac’s clipboard",

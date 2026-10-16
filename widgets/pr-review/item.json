@@ -1,0 +1,55 @@
+{
+  "id": "pr-review",
+  "revision": 1,
+  "kind": "widget",
+  "title": {
+    "en": "Review Requests",
+    "de": "Review-Anfragen",
+    "es": "Revisiones pendientes",
+    "fr": "Revues en attente",
+    "ru": "Ждут ревью"
+  },
+  "summary": {
+    "en": "How many pull requests on GitHub are waiting for your review, in every repository",
+    "de": "Wie viele Pull Requests auf GitHub auf dein Review warten, in allen Repositorys",
+    "es": "Cuántos pull requests de GitHub esperan tu revisión, en todos los repositorios",
+    "fr": "Combien de pull requests sur GitHub attendent votre revue, dans tous les dépôts",
+    "ru": "Сколько pull request на GitHub ждут вашего ревью, во всех репозиториях"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The number is how many open pull requests ask for your review. When someone is waiting, the icon lights up orange and pink. It needs the GitHub CLI signed in on the Mac, and the button tells you what’s missing.",
+    "de": "Die Zahl zeigt, wie viele offene Pull Requests dein Review anfordern. Wartet jemand, leuchtet das Symbol orange und pink. Nötig ist die angemeldete GitHub CLI auf dem Mac, und die Taste sagt dir, was fehlt.",
+    "es": "El número son los pull requests abiertos que piden tu revisión. Si alguien espera, el icono se enciende en naranja y rosa. Hace falta la CLI de GitHub con la sesión iniciada en el Mac, y el botón te dice qué falta.",
+    "fr": "Le nombre indique combien de pull requests ouvertes demandent votre revue. Si quelqu’un attend, l’icône s’allume en orange et rose. Il faut la CLI GitHub connectée sur le Mac, et le bouton indique ce qui manque.",
+    "ru": "Число показывает, сколько открытых pull request ждут вашего ревью. Если кто-то ждёт, значок загорается оранжевым и розовым. Нужен GitHub CLI с выполненным входом на Mac, а чего не хватает, подскажет кнопка."
+  },
+  "tapAction": {
+    "en": "Opens the pull requests waiting for your review on GitHub in the browser",
+    "de": "Öffnet die Pull Requests, die auf dein Review warten, auf GitHub im Browser",
+    "es": "Abre en el navegador los pull requests de GitHub que esperan tu revisión",
+    "fr": "Ouvre dans le navigateur les pull requests GitHub qui attendent votre revue",
+    "ru": "Открывает в браузере pull request на GitHub, которые ждут вашего ревью"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "arrow.triangle.pull"
+      }
+    },
+    "color": "#FF9F0A",
+    "command": {
+      "openURL": {
+        "url": "https://github.com/pulls/review-requested"
+      }
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

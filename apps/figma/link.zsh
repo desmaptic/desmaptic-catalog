@@ -28,7 +28,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 if [[ $action == file ]]; then
   link=${${link##[[:space:]]##}%%[[:space:]]##}
   [[ -n $link ]] ||
-    { print -u2 -- "Set your file's Share link in the first line of this button's script"; exit 1 }
+    { print -u2 -- "Set your file’s Share link in this button’s settings"; exit 1 }
   rest=${${link#(#i)https://}#(#i)(www.|)figma.com/}
   # The route names are matched as Figma does, in lowercase; the key as it is.
   if [[ $rest == $link || $rest == ${link#(#i)https://} || $rest != (file|design|board|slides)/[0-9a-zA-Z](#c22,128)(|[/?#]*) ]]; then

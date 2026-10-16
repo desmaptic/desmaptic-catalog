@@ -1,6 +1,6 @@
 {
   "id": "new-reminder",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -16,23 +16,23 @@
     "de": "Tippe auf dem Telefon – der Text wird auf dem Mac zu einer Erinnerung in Erinnerungen",
     "es": "Escribe en el teléfono y el texto se convierte en un recordatorio en Recordatorios del Mac",
     "fr": "Saisissez sur le téléphone : le texte devient un rappel dans Rappels sur le Mac",
-    "ru": "Наберите текст на телефоне — он станет напоминанием в «Напоминаниях» на Mac"
+    "ru": "Наберите текст на телефоне, и он станет напоминанием в «Напоминаниях» на Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. Goes to the default list set in Reminders, with no date; the first line is the title. The first time, macOS asks to give Desmaptic Agent access to Reminders.",
-    "de": "Nichts einzurichten. Landet ohne Datum in der Standardliste aus den Einstellungen von Erinnerungen; die erste Zeile ist der Titel. Beim ersten Mal fragt macOS, ob Desmaptic Agent auf Erinnerungen zugreifen darf.",
-    "es": "No hay nada que configurar. Va a la lista por omisión de los ajustes de Recordatorios, sin fecha; la primera línea es el título. La primera vez, macOS pide dar a Desmaptic Agent acceso a Recordatorios.",
-    "fr": "Rien à configurer. Arrive sans date dans la liste par défaut des réglages de Rappels ; la première ligne est le titre. La première fois, macOS demande d’autoriser Desmaptic Agent à accéder à Rappels.",
-    "ru": "Настраивать ничего не нужно. Попадает без даты в список по умолчанию из настроек «Напоминаний»; первая строка — название. В первый раз macOS спросит, дать ли Desmaptic Agent доступ к «Напоминаниям»."
+    "en": "Nothing to set up. The reminder goes to your default list in Reminders, without a date, and its first line becomes the title.",
+    "de": "Nichts einzurichten. Die Erinnerung landet ohne Datum in deiner Standardliste von Erinnerungen, und die erste Zeile wird ihr Titel.",
+    "es": "No hay nada que configurar. El recordatorio va sin fecha a tu lista por omisión de Recordatorios, y la primera línea será su título.",
+    "fr": "Rien à configurer. Le rappel arrive sans date dans votre liste par défaut de Rappels, et sa première ligne devient le titre.",
+    "ru": "Настраивать ничего не нужно. Напоминание без даты попадёт в список по умолчанию, а первая строка станет его названием."
   },
   "tapAction": {
     "en": "Asks what to remind of and adds it as a reminder",
     "de": "Fragt, woran erinnert werden soll, und fügt es als Erinnerung hinzu",
     "es": "Pregunta qué recordar y lo añade como recordatorio",
     "fr": "Demande quoi rappeler et l’ajoute comme rappel",
-    "ru": "Спрашивает, о чём напомнить, и добавляет это напоминанием"
+    "ru": "Спрашивает, о чём напомнить, и создаёт напоминание"
   },
   "permissions": [
     "reminders"
@@ -50,8 +50,20 @@
       }
     },
     "input": {
-      "question": "What to remind you of?",
-      "placeholder": "Buy milk"
+      "question": {
+        "en": "What to remind you of?",
+        "de": "Woran soll ich dich erinnern?",
+        "es": "¿Qué quieres que te recuerde?",
+        "fr": "De quoi faut-il vous rappeler ?",
+        "ru": "О чём напомнить?"
+      },
+      "placeholder": {
+        "en": "Buy milk",
+        "de": "Milch kaufen",
+        "es": "Comprar leche",
+        "fr": "Acheter du lait",
+        "ru": "Купить молоко"
+      }
     }
   }
 }

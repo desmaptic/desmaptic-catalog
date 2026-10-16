@@ -1,6 +1,6 @@
 {
   "id": "top-process",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Top Process",
@@ -14,16 +14,16 @@
     "de": "Der Prozess, der gerade die meiste CPU-Last erzeugt, und wie viel",
     "es": "El proceso que más CPU usa ahora mismo y cuánto",
     "fr": "Le processus qui sollicite le plus le processeur en ce moment, et à quel point",
-    "ru": "Процесс, который сейчас сильнее всех грузит процессор, и насколько"
+    "ru": "Какая программа сейчас больше всех грузит процессор и насколько сильно"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "The app or process using the most CPU; it changes only when another is clearly busier. 100% is one full core, so a heavy task can show 200% or more. Pink from 90%.",
-    "de": "Die App oder der Prozess mit der höchsten CPU-Last; gewechselt wird erst, wenn ein anderer deutlich mehr braucht. 100 % sind ein ganzer Kern, eine schwere Aufgabe kann also 200 % oder mehr zeigen. Ab 90 % pink.",
-    "es": "La app o el proceso que más CPU usa; solo cambia cuando otro trabaja claramente más. El 100 % es un núcleo entero, así que una tarea pesada puede marcar un 200 % o más. Rosa a partir del 90 %.",
-    "fr": "L’app ou le processus qui sollicite le plus le processeur ; il ne change que si un autre devient nettement plus actif. 100 % correspond à un cœur entier : une tâche lourde peut afficher 200 % ou plus. Rose dès 90 %.",
-    "ru": "Приложение или процесс, который больше всех грузит процессор; сменяется, только когда другой заметно обгоняет. 100 % — одно ядро целиком, поэтому тяжёлая задача может показать 200 % и больше. От 90 % — розовый."
+    "en": "The name changes only when another process is clearly busier, so it doesn’t flicker. 100% is one full core, so a heavy task can show 200% or more. The gauge turns pink at 90%.",
+    "de": "Der Name wechselt erst, wenn ein anderer Prozess deutlich mehr braucht, damit er nicht flackert. 100 % sind ein ganzer Kern, eine schwere Aufgabe kann also 200 % oder mehr zeigen. Ab 90 % wird die Anzeige pink.",
+    "es": "El nombre solo cambia cuando otro proceso trabaja claramente más, para que no parpadee. El 100 % es un núcleo entero, así que una tarea pesada puede marcar un 200 % o más. A partir del 90 %, el indicador se pone rosa.",
+    "fr": "Le nom ne change que si un autre processus devient nettement plus actif, pour éviter qu’il clignote. 100 % correspond à un cœur entier : une tâche lourde peut afficher 200 % ou plus. Dès 90 %, la jauge passe au rose.",
+    "ru": "Название меняется, только когда другая программа заметно её обгоняет, поэтому оно не мелькает. 100 % — это одно ядро целиком, так что тяжёлая задача может показать 200 % и больше. С 90 % шкала становится розовой."
   },
   "tapAction": {
     "en": "Opens Activity Monitor on the Mac",

@@ -1,6 +1,6 @@
 {
   "id": "quit-all-apps",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Quit All Apps",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Works like Quit in each app’s menu: apps with unsaved changes ask to save first. Only apps with a Dock icon are affected; menu bar utilities and background helpers stay open.",
-    "de": "Wie „Beenden“ im Menü der App: Apps mit ungesicherten Änderungen fragen zuerst, ob gesichert werden soll. Betroffen sind nur Apps mit Dock-Symbol; Menüleisten-Apps und Hintergrundprozesse laufen weiter.",
-    "es": "Como «Salir» en el menú de cada app: si hay cambios sin guardar, la app pregunta antes si guardarlos. Solo afecta a las apps con icono en el Dock; las utilidades de la barra de menús y los procesos en segundo plano siguen funcionando.",
-    "fr": "Comme « Quitter » dans le menu de chaque app : s’il y a des modifications non enregistrées, l’app propose d’abord de les enregistrer. Seules les apps avec une icône dans le Dock sont concernées ; les utilitaires de la barre des menus et les processus d’arrière-plan restent.",
-    "ru": "Как «Завершить» в меню приложения: при несохранённых изменениях оно сначала спросит, сохранить ли их. Затрагиваются только приложения со значком в Dock; утилиты в строке меню и фоновые процессы остаются."
+    "en": "Works like Quit in each app’s menu, so an app with unsaved changes asks to save them first. Only apps with a Dock icon quit, while menu bar utilities and background helpers keep running.",
+    "de": "Wie „Beenden“ im Menü jeder App: Apps mit ungesicherten Änderungen fragen zuerst, ob gesichert werden soll. Beendet werden nur Apps mit Dock-Symbol, Menüleisten-Apps und Hintergrundprozesse laufen weiter.",
+    "es": "Funciona como «Salir» en el menú de cada app, así que si hay cambios sin guardar, la app pregunta antes si guardarlos. Solo se cierran las apps con icono en el Dock, y las utilidades de la barra de menús y los procesos en segundo plano siguen funcionando.",
+    "fr": "Fonctionne comme « Quitter » dans le menu de chaque app : s’il y a des modifications non enregistrées, l’app propose d’abord de les enregistrer. Seules les apps avec une icône dans le Dock se ferment, les utilitaires de la barre des menus et les processus d’arrière-plan continuent de tourner.",
+    "ru": "Работает как «Завершить» в меню каждого приложения: если есть несохранённые изменения, приложение сначала спросит, сохранить ли их. Закрываются только приложения со значком в Dock, а утилиты в строке меню и фоновые процессы продолжают работать."
   },
   "tapAction": {
     "en": "Quits every open app except Finder",

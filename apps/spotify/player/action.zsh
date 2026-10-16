@@ -78,7 +78,7 @@ if [[ $action == copy-link ]]; then
   if [[ $answer =~ '^spotify:(track|episode):([A-Za-z0-9]+)$' ]]; then
     answer="https://open.spotify.com/$match[1]/$match[2]"
   elif [[ ! $answer =~ '^https://open\.spotify\.com/(track|episode)/[A-Za-z0-9]+' ]]; then
-    print -u2 -- "What Spotify plays has no link to share (a local file or an ad)"
+    print -u2 -- "What Spotify is playing has no link to share (a local file or an ad)"
     exit 1
   fi
   print -rn -- $answer | pbcopy || { print -u2 -- "The link could not be put on the clipboard"; exit 1 }

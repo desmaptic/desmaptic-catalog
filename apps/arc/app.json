@@ -1,6 +1,6 @@
 {
   "id": "arc",
-  "revision": 7,
+  "revision": 8,
   "name": "Arc",
   "bundleIds": ["company.thebrowser.Browser"],
   "category": "browsers",
@@ -16,11 +16,11 @@
         "ru": "На страницу назад, даже когда Arc в фоне"
       },
       "details": {
-        "en": "Like Arc’s ← button, for the current tab of the front Arc window — even while another app is in front.",
-        "de": "Wie die Schaltfläche ← in Arc, für den aktuellen Tab des vorderen Arc-Fensters – auch wenn eine andere App vorne ist.",
-        "es": "Como el botón ← de Arc, para la pestaña actual de la ventana principal de Arc, aunque estés en otra app.",
-        "fr": "Comme le bouton ← d’Arc, pour l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant.",
-        "ru": "Как кнопка ← в Arc: для текущей вкладки переднего окна Arc, даже если вы в другом приложении."
+        "en": "Like Arc’s ← button, for the current tab of the front Arc window. Works with Arc in the background.",
+        "de": "Wie die Schaltfläche ← in Arc, für den aktuellen Tab des vorderen Arc-Fensters. Funktioniert auch mit Arc im Hintergrund.",
+        "es": "Como el botón ← de Arc, para la pestaña actual de la ventana principal de Arc. Funciona con Arc en segundo plano.",
+        "fr": "Comme le bouton ← d’Arc, pour l’onglet actif de la fenêtre principale d’Arc. Fonctionne avec Arc en arrière-plan.",
+        "ru": "Как кнопка ← в Arc, для текущей вкладки переднего окна. Работает, когда Arc в фоне."
       },
       "tapAction": {
         "en": "Goes back a page",
@@ -47,11 +47,11 @@
         "ru": "На страницу вперёд, даже когда Arc в фоне"
       },
       "details": {
-        "en": "Like Arc’s → button, for the current tab of the front Arc window — even while another app is in front.",
-        "de": "Wie die Schaltfläche → in Arc, für den aktuellen Tab des vorderen Arc-Fensters – auch wenn eine andere App vorne ist.",
-        "es": "Como el botón → de Arc, para la pestaña actual de la ventana principal de Arc, aunque estés en otra app.",
-        "fr": "Comme le bouton → d’Arc, pour l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant.",
-        "ru": "Как кнопка → в Arc: для текущей вкладки переднего окна Arc, даже если вы в другом приложении."
+        "en": "Like Arc’s → button, for the current tab of the front Arc window. Works with Arc in the background.",
+        "de": "Wie die Schaltfläche → in Arc, für den aktuellen Tab des vorderen Arc-Fensters. Funktioniert auch mit Arc im Hintergrund.",
+        "es": "Como el botón → de Arc, para la pestaña actual de la ventana principal de Arc. Funciona con Arc en segundo plano.",
+        "fr": "Comme le bouton → d’Arc, pour l’onglet actif de la fenêtre principale d’Arc. Fonctionne avec Arc en arrière-plan.",
+        "ru": "Как кнопка → в Arc, для текущей вкладки переднего окна. Работает, когда Arc в фоне."
       },
       "tapAction": {
         "en": "Goes forward a page",
@@ -78,11 +78,11 @@
         "ru": "Обновляет страницу; удержание — без кеша"
       },
       "details": {
-        "en": "Works on the current tab of the front Arc window, even while another app is in front. A long press brings Arc to the front and clicks View › Force Refresh the Page.",
-        "de": "Wirkt auf den aktuellen Tab des vorderen Arc-Fensters, auch wenn eine andere App vorne ist. Langes Drücken holt Arc nach vorne und klickt auf View › Force Refresh the Page.",
-        "es": "Actúa sobre la pestaña actual de la ventana principal de Arc, aunque estés en otra app. La pulsación larga trae Arc al frente y hace clic en View › Force Refresh the Page.",
-        "fr": "Agit sur l’onglet actif de la fenêtre principale d’Arc, même quand une autre app est devant. L’appui long met Arc au premier plan et clique sur View › Force Refresh the Page.",
-        "ru": "Действует на текущую вкладку переднего окна Arc, даже если вы в другом приложении. Долгое нажатие выводит Arc на передний план и нажимает View › Force Refresh the Page."
+        "en": "The tap works on the current tab of the front Arc window, even with Arc in the background. The long press brings Arc forward and chooses View › Force Refresh the Page.",
+        "de": "Tippen wirkt auf den aktuellen Tab des vorderen Arc-Fensters, auch mit Arc im Hintergrund. Langes Drücken holt Arc nach vorne und wählt View › Force Refresh the Page.",
+        "es": "El toque actúa sobre la pestaña actual de la ventana principal de Arc, aunque Arc esté en segundo plano. La pulsación larga trae Arc al frente y elige View › Force Refresh the Page.",
+        "fr": "Le toucher agit sur l’onglet actif de la fenêtre principale d’Arc, même avec Arc en arrière-plan. L’appui long met Arc au premier plan et choisit View › Force Refresh the Page.",
+        "ru": "Нажатие действует на текущую вкладку переднего окна Arc и работает, когда Arc в фоне. Долгое нажатие выводит Arc вперёд и выбирает View › Force Refresh the Page."
       },
       "tapAction": {
         "en": "Refreshes the page",
@@ -117,11 +117,11 @@
         "ru": "Открывает Command Bar для новой вкладки"
       },
       "details": {
-        "en": "Arc comes to the front with its Command Bar: type an address, a search or an Arc command and press Return.",
-        "de": "Arc kommt mit der Command Bar nach vorne: Adresse, Suchbegriff oder Arc-Befehl eingeben und Return drücken.",
-        "es": "Arc pasa al frente con su Command Bar: escribe una dirección, una búsqueda o un comando de Arc y pulsa Retorno.",
-        "fr": "Arc passe au premier plan avec sa Command Bar : tapez une adresse, une recherche ou une commande d’Arc, puis appuyez sur Retour.",
-        "ru": "Arc выходит на передний план с Command Bar: введите адрес, запрос или команду Arc и нажмите Return."
+        "en": "The button brings Arc forward from any app, but doesn’t start it. Then type an address, a search or an Arc command on the Mac and press Return.",
+        "de": "Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht. Dann gibst du am Mac eine Adresse, einen Suchbegriff oder einen Arc-Befehl ein und drückst Return.",
+        "es": "El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado. Luego escribe en el Mac una dirección, una búsqueda o un comando de Arc y pulsa Retorno.",
+        "fr": "Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer. Tapez ensuite sur le Mac une adresse, une recherche ou une commande d’Arc, puis appuyez sur Retour.",
+        "ru": "Кнопка выводит Arc вперёд из любого приложения, но не запускает его. Остаётся набрать на Mac адрес, запрос или команду Arc и нажать Return."
       },
       "tapAction": {
         "en": "Opens a new tab",
@@ -148,11 +148,11 @@
         "ru": "Переключает на вкладку выше в боковой панели"
       },
       "details": {
-        "en": "Brings Arc to the front and clicks Tabs › Previous Tab in its menu.",
-        "de": "Holt Arc nach vorne und klickt in seinem Menü auf Tabs › Previous Tab.",
-        "es": "Trae Arc al frente y hace clic en Tabs › Previous Tab en su menú.",
-        "fr": "Met Arc au premier plan et clique sur Tabs › Previous Tab dans son menu.",
-        "ru": "Выводит Arc на передний план и нажимает Tabs › Previous Tab в его меню."
+        "en": "Tabs › Previous Tab. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Tabs › Previous Tab. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Tabs › Previous Tab. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Tabs › Previous Tab. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Tabs › Previous Tab. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Switches to the previous tab",
@@ -179,11 +179,11 @@
         "ru": "Переключает на вкладку ниже в боковой панели"
       },
       "details": {
-        "en": "Brings Arc to the front and clicks Tabs › Next Tab in its menu.",
-        "de": "Holt Arc nach vorne und klickt in seinem Menü auf Tabs › Next Tab.",
-        "es": "Trae Arc al frente y hace clic en Tabs › Next Tab en su menú.",
-        "fr": "Met Arc au premier plan et clique sur Tabs › Next Tab dans son menu.",
-        "ru": "Выводит Arc на передний план и нажимает Tabs › Next Tab в его меню."
+        "en": "Tabs › Next Tab. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Tabs › Next Tab. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Tabs › Next Tab. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Tabs › Next Tab. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Tabs › Next Tab. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Switches to the next tab",
@@ -210,11 +210,11 @@
         "ru": "Закрепляет текущую вкладку или открепляет её"
       },
       "details": {
-        "en": "Tabs › Pin/Unpin Tab: a pinned tab stays in the sidebar and isn’t archived with your Today tabs. Brings Arc to the front first.",
-        "de": "Tabs › Pin/Unpin Tab: Ein angehefteter Tab bleibt in der Seitenleiste und wird nicht mit den Today-Tabs archiviert. Holt Arc zuerst nach vorne.",
-        "es": "Tabs › Pin/Unpin Tab: una pestaña fijada se queda en la barra lateral y no se archiva con las de Today. Primero trae Arc al frente.",
-        "fr": "Tabs › Pin/Unpin Tab : un onglet épinglé reste dans la barre latérale et n’est pas archivé avec ceux de Today. Met d’abord Arc au premier plan.",
-        "ru": "Tabs › Pin/Unpin Tab: закреплённая вкладка остаётся в боковой панели и не уходит в архив вместе с вкладками Today. Сначала выводит Arc на передний план."
+        "en": "Tabs › Pin Tab or Unpin Tab. A pinned tab stays in the sidebar and isn’t archived with your Today tabs. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Tabs › Pin Tab oder Unpin Tab. Ein angehefteter Tab bleibt in der Seitenleiste und wird nicht mit den Today-Tabs archiviert. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Tabs › Pin Tab o Unpin Tab. Una pestaña fijada se queda en la barra lateral y no se archiva con las de Today. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Tabs › Pin Tab ou Unpin Tab. Un onglet épinglé reste dans la barre latérale et n’est pas archivé avec ceux de Today. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Tabs › Pin Tab или Unpin Tab. Закреплённая вкладка остаётся в боковой панели и не уходит в архив вместе с вкладками Today. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Pins or unpins the tab",
@@ -241,11 +241,11 @@
         "ru": "Возвращает последнюю закрытую вкладку"
       },
       "details": {
-        "en": "Brings Arc to the front and clicks File › Restore Last Closed Tab in its menu.",
-        "de": "Holt Arc nach vorne und klickt in seinem Menü auf File › Restore Last Closed Tab.",
-        "es": "Trae Arc al frente y hace clic en File › Restore Last Closed Tab en su menú.",
-        "fr": "Met Arc au premier plan et clique sur File › Restore Last Closed Tab dans son menu.",
-        "ru": "Выводит Arc на передний план и нажимает File › Restore Last Closed Tab в его меню."
+        "en": "File › Restore Last Closed Tab. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "File › Restore Last Closed Tab. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "File › Restore Last Closed Tab. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "File › Restore Last Closed Tab. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "File › Restore Last Closed Tab. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Reopens the last closed tab",
@@ -272,11 +272,11 @@
         "ru": "Переключает на Space перед текущим"
       },
       "details": {
-        "en": "Spaces › Previous Space: the one to the left among the Space icons at the bottom of the sidebar. Brings Arc to the front first.",
-        "de": "Spaces › Previous Space: der links davon unter den Space-Symbolen unten in der Seitenleiste. Holt Arc zuerst nach vorne.",
-        "es": "Spaces › Previous Space: el de la izquierda entre los iconos de Spaces al pie de la barra lateral. Primero trae Arc al frente.",
-        "fr": "Spaces › Previous Space : celui de gauche parmi les icônes des Spaces en bas de la barre latérale. Met d’abord Arc au premier plan.",
-        "ru": "Spaces › Previous Space: соседний слева среди значков Spaces внизу боковой панели. Сначала выводит Arc на передний план."
+        "en": "Spaces › Previous Space. That’s the next Space to the left in the row of icons at the bottom of the sidebar. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Spaces › Previous Space. Das ist der Space links neben dem aktuellen in der Symbolreihe unten in der Seitenleiste. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Spaces › Previous Space. Es el Space a la izquierda del actual, en la fila de iconos al pie de la barra lateral. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Spaces › Previous Space. C’est le Space voisin de gauche, dans la rangée d’icônes en bas de la barre latérale. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Spaces › Previous Space. Это ближайший Space слева в ряду значков внизу боковой панели. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Switches to the previous Space",
@@ -303,11 +303,11 @@
         "ru": "Переключает на Space после текущего"
       },
       "details": {
-        "en": "Spaces › Next Space: the one to the right among the Space icons at the bottom of the sidebar. Brings Arc to the front first.",
-        "de": "Spaces › Next Space: der rechts davon unter den Space-Symbolen unten in der Seitenleiste. Holt Arc zuerst nach vorne.",
-        "es": "Spaces › Next Space: el de la derecha entre los iconos de Spaces al pie de la barra lateral. Primero trae Arc al frente.",
-        "fr": "Spaces › Next Space : celui de droite parmi les icônes des Spaces en bas de la barre latérale. Met d’abord Arc au premier plan.",
-        "ru": "Spaces › Next Space: соседний справа среди значков Spaces внизу боковой панели. Сначала выводит Arc на передний план."
+        "en": "Spaces › Next Space. That’s the next Space to the right in the row of icons at the bottom of the sidebar. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Spaces › Next Space. Das ist der Space rechts neben dem aktuellen in der Symbolreihe unten in der Seitenleiste. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Spaces › Next Space. Es el Space a la derecha del actual, en la fila de iconos al pie de la barra lateral. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Spaces › Next Space. C’est le Space voisin de droite, dans la rangée d’icônes en bas de la barre latérale. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Spaces › Next Space. Это ближайший Space справа в ряду значков внизу боковой панели. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Switches to the next Space",
@@ -334,11 +334,11 @@
         "ru": "Показывает или скрывает боковую панель"
       },
       "details": {
-        "en": "The column with your tabs and Spaces. Hide it to give the page the whole window. Brings Arc to the front first.",
-        "de": "Die Spalte mit Tabs und Spaces. Ausgeblendet gehört der Seite das ganze Fenster. Holt Arc zuerst nach vorne.",
-        "es": "La columna con tus pestañas y Spaces. Al ocultarla, la página ocupa toda la ventana. Primero trae Arc al frente.",
-        "fr": "La colonne de vos onglets et Spaces. Masquée, elle laisse toute la fenêtre à la page. Met d’abord Arc au premier plan.",
-        "ru": "Колонка с вкладками и Spaces. Когда она скрыта, страница занимает всё окно. Сначала выводит Arc на передний план."
+        "en": "The column with your tabs and Spaces. Hide it to give the page the whole window. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Die Spalte mit Tabs und Spaces. Ist sie ausgeblendet, hat die Seite das ganze Fenster für sich. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "La columna con tus pestañas y Spaces. Al ocultarla, la página ocupa toda la ventana. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "La colonne de vos onglets et Spaces. Quand elle est masquée, la page occupe toute la fenêtre. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Колонка с вкладками и Spaces. Когда она скрыта, страница занимает всё окно. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Shows or hides the sidebar",
@@ -365,11 +365,11 @@
         "ru": "Добавляет панель рядом со страницей; удержание выносит её из Split View"
       },
       "details": {
-        "en": "Clicks View › Add Split View in Arc’s menu, so it works on any keyboard layout. Brings Arc to the front first.",
-        "de": "Klickt im Menü von Arc auf View › Add Split View und klappt so mit jeder Tastaturbelegung. Holt Arc zuerst nach vorne.",
-        "es": "Hace clic en View › Add Split View en el menú de Arc, así que funciona con cualquier distribución de teclado. Primero trae Arc al frente.",
-        "fr": "Clique sur View › Add Split View dans le menu d’Arc et fonctionne donc avec toute disposition de clavier. Met d’abord Arc au premier plan.",
-        "ru": "Нажимает View › Add Split View в меню Arc, поэтому работает при любой раскладке. Сначала выводит Arc на передний план."
+        "en": "View › Add Split View, and View › Separate Page from Split View on hold. Your keyboard layout doesn’t matter. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "View › Add Split View, beim Halten View › Separate Page from Split View. Die Tastaturbelegung spielt keine Rolle. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "View › Add Split View y, al mantener pulsado, View › Separate Page from Split View. Da igual la distribución del teclado. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "View › Add Split View, et en maintenant View › Separate Page from Split View. La disposition du clavier n’y change rien. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "View › Add Split View, а при удержании — View › Separate Page from Split View. Раскладка клавиатуры не важна. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Adds a Split View pane",
@@ -404,11 +404,11 @@
         "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
       },
       "details": {
-        "en": "The address of the current tab of the front Arc window, ready to paste. Works even while another app is in front.",
-        "de": "Die Adresse des aktuellen Tabs im vorderen Arc-Fenster, bereit zum Einsetzen. Funktioniert auch, wenn eine andere App vorne ist.",
-        "es": "La dirección de la pestaña actual de la ventana principal de Arc, lista para pegar. Funciona aunque estés en otra app.",
-        "fr": "L’adresse de l’onglet actif de la fenêtre principale d’Arc, prête à coller. Fonctionne même quand une autre app est devant.",
-        "ru": "Адрес текущей вкладки переднего окна Arc — сразу для вставки. Работает, даже если вы в другом приложении."
+        "en": "The address and title come from the current tab of the front Arc window. Works with Arc in the background.",
+        "de": "Adresse und Titel kommen aus dem aktuellen Tab des vorderen Arc-Fensters. Funktioniert auch mit Arc im Hintergrund.",
+        "es": "La dirección y el título salen de la pestaña actual de la ventana principal de Arc. Funciona con Arc en segundo plano.",
+        "fr": "L’adresse et le titre viennent de l’onglet actif de la fenêtre principale d’Arc. Fonctionne avec Arc en arrière-plan.",
+        "ru": "Адрес и заголовок берутся из текущей вкладки переднего окна Arc. Работает, когда Arc в фоне."
       },
       "tapAction": {
         "en": "Copies the page’s address",
@@ -443,11 +443,11 @@
         "ru": "Открывает окно Little Arc"
       },
       "details": {
-        "en": "A small window for a quick search or a link, apart from your Spaces. Brings Arc to the front first.",
-        "de": "Ein kleines Fenster für eine schnelle Suche oder einen Link, abseits der Spaces. Holt Arc zuerst nach vorne.",
-        "es": "Una ventana pequeña para una búsqueda rápida o un enlace, aparte de tus Spaces. Primero trae Arc al frente.",
-        "fr": "Une petite fenêtre pour une recherche rapide ou un lien, à l’écart de vos Spaces. Met d’abord Arc au premier plan.",
-        "ru": "Маленькое окно для быстрого поиска или ссылки, отдельно от ваших Spaces. Сначала выводит Arc на передний план."
+        "en": "A small window for a quick search or a link, apart from your Spaces. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "Ein kleines Fenster für eine schnelle Suche oder einen Link, abseits der Spaces. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Una ventana pequeña para una búsqueda rápida o un enlace, aparte de tus Spaces. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Une petite fenêtre pour une recherche rapide ou un lien, à l’écart de vos Spaces. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Маленькое окно для быстрого поиска или ссылки, отдельно от ваших Spaces. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens Little Arc",
@@ -474,15 +474,15 @@
         "ru": "Снимок части страницы; удержание — всей страницы"
       },
       "details": {
-        "en": "Clicks File › Capture… (⇧⌘2) in Arc’s menu, the same way on every keyboard layout. Brings Arc to the front first.",
-        "de": "Klickt im Menü von Arc auf File › Capture… (⇧⌘2), gleich mit jeder Tastaturbelegung. Holt Arc zuerst nach vorne.",
-        "es": "Hace clic en File › Capture… (⇧⌘2) en el menú de Arc, igual con cualquier distribución de teclado. Primero trae Arc al frente.",
-        "fr": "Clique sur File › Capture… (⇧⌘2) dans le menu d’Arc, de la même façon avec toute disposition de clavier. Met d’abord Arc au premier plan.",
-        "ru": "Нажимает File › Capture… (⇧⌘2) в меню Arc — одинаково при любой раскладке. Сначала выводит Arc на передний план."
+        "en": "File › Capture… (⇧⌘2), and File › Capture Full Page on hold. Your keyboard layout doesn’t matter. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "File › Capture… (⇧⌘2), beim Halten File › Capture Full Page. Die Tastaturbelegung spielt keine Rolle. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "File › Capture… (⇧⌘2) y, al mantener pulsado, File › Capture Full Page. Da igual la distribución del teclado. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "File › Capture… (⇧⌘2), et en maintenant File › Capture Full Page. La disposition du clavier n’y change rien. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "File › Capture… (⇧⌘2), а при удержании — File › Capture Full Page. Раскладка клавиатуры не важна. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Starts a capture of part of the page",
-        "de": "Startet die Aufnahme eines Seitenteils",
+        "de": "Startet die Aufnahme eines Seitenausschnitts",
         "es": "Inicia la captura de parte de la página",
         "fr": "Lance la capture d’une partie de la page",
         "ru": "Начинает снимок части страницы"
@@ -513,11 +513,11 @@
         "ru": "Открывает Developer Tools; удержание — консоль"
       },
       "details": {
-        "en": "View › Developer › Developer Tools: the same tools as in Chrome, for the current tab. Brings Arc to the front first.",
-        "de": "View › Developer › Developer Tools: dieselben Werkzeuge wie in Chrome, für den aktuellen Tab. Holt Arc zuerst nach vorne.",
-        "es": "View › Developer › Developer Tools: las mismas herramientas que en Chrome, para la pestaña actual. Primero trae Arc al frente.",
-        "fr": "View › Developer › Developer Tools : les mêmes outils que dans Chrome, pour l’onglet actif. Met d’abord Arc au premier plan.",
-        "ru": "View › Developer › Developer Tools — те же инструменты, что в Chrome, для текущей вкладки. Сначала выводит Arc на передний план."
+        "en": "View › Developer › Developer Tools. They’re the same tools as in Chrome, for the current tab. The button brings Arc forward from any app, but doesn’t start it.",
+        "de": "View › Developer › Developer Tools. Das sind dieselben Werkzeuge wie in Chrome, für den aktuellen Tab. Die Taste holt Arc aus jeder App nach vorne, startet es aber nicht.",
+        "es": "View › Developer › Developer Tools. Son las mismas herramientas que en Chrome, para la pestaña actual. El botón trae Arc al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "View › Developer › Developer Tools. Ce sont les mêmes outils que dans Chrome, pour l’onglet actif. Le bouton met Arc au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "View › Developer › Developer Tools. Это те же инструменты, что в Chrome, для текущей вкладки. Кнопка выводит Arc вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens or closes Developer Tools",
@@ -552,11 +552,11 @@
         "ru": "Переключает на выбранный вами Space"
       },
       "details": {
-        "en": "Type the Space’s name, as the sidebar shows it, in the first line of the button’s script; until then the button reminds you. Works even while another app is in front.",
-        "de": "Trag den Namen des Space, wie ihn die Seitenleiste zeigt, in die erste Zeile des Skripts der Taste ein; bis dahin erinnert dich die Taste daran. Funktioniert auch, wenn eine andere App vorne ist.",
-        "es": "Escribe el nombre del Space, tal como aparece en la barra lateral, en la primera línea del script del botón; hasta entonces, el botón te lo recuerda. Funciona aunque estés en otra app.",
-        "fr": "Saisissez le nom du Space, tel que l’affiche la barre latérale, à la première ligne du script du bouton ; d’ici là, le bouton vous le rappelle. Fonctionne même quand une autre app est devant.",
-        "ru": "Впишите имя Space, как в боковой панели, в первую строку скрипта кнопки; пока его нет, кнопка напомнит об этом. Работает, даже если вы в другом приложении."
+        "en": "Type the Space’s name in the button’s settings, as the sidebar shows it. Works with Arc in the background.",
+        "de": "Trag den Namen des Space in den Einstellungen der Taste ein, so wie die Seitenleiste ihn zeigt. Funktioniert auch mit Arc im Hintergrund.",
+        "es": "Escribe el nombre del Space en los ajustes del botón, tal como aparece en la barra lateral. Funciona con Arc en segundo plano.",
+        "fr": "Indiquez le nom du Space dans les réglages du bouton, tel que la barre latérale l’affiche. Fonctionne avec Arc en arrière-plan.",
+        "ru": "Впишите в настройках кнопки имя Space так, как оно написано в боковой панели. Работает, когда Arc в фоне."
       },
       "tapAction": {
         "en": "Switches the front Arc window to that Space",
@@ -585,11 +585,11 @@
         "ru": "Вкладки, Spaces и Split View под рукой"
       },
       "details": {
-        "en": "Back, Forward, Refresh, Copy URL and Go to Space work even with Arc in the background. The other buttons bring Arc to the front and click its menu; if the item is greyed out there, the button shakes.",
-        "de": "Zurück, Vorwärts, Aktualisieren, URL kopieren und Zum Space klappen auch mit Arc im Hintergrund. Die übrigen Tasten holen Arc nach vorne und klicken in sein Menü; ist der Eintrag ausgegraut, wackelt die Taste.",
-        "es": "Atrás, Adelante, Actualizar, Copiar URL e Ir al Space funcionan aunque Arc esté en segundo plano. Los demás botones traen Arc al frente y hacen clic en su menú; si la opción está atenuada, el botón se sacude.",
-        "fr": "Retour, Avancer, Actualiser, Copier l’URL et Aller au Space fonctionnent même avec Arc en arrière-plan. Les autres boutons mettent Arc au premier plan et cliquent dans son menu ; si l’élément est grisé, le bouton tremble.",
-        "ru": "Назад, Вперёд, Обновить, Скопировать URL и Перейти в Space работают, даже когда Arc в фоне. Остальные кнопки выводят Arc на передний план и нажимают пункт его меню; если пункт недоступен, кнопка встряхивается."
+        "en": "Back, Forward, Refresh, Copy URL and Go to Space work even with Arc in the background. The other buttons, and a long press on Refresh, bring Arc forward and choose an item from its menu. If the item is grayed out, the button shakes.",
+        "de": "„Zurück“, „Vorwärts“, „Aktualisieren“, „URL kopieren“ und „Zum Space“ funktionieren auch mit Arc im Hintergrund. Die übrigen Tasten und langes Drücken auf „Aktualisieren“ holen Arc nach vorne und wählen einen Eintrag aus seinem Menü. Ist der Eintrag ausgegraut, wackelt die Taste.",
+        "es": "«Atrás», «Adelante», «Actualizar», «Copiar URL» e «Ir al Space» funcionan aunque Arc esté en segundo plano. Los demás botones y la pulsación larga en «Actualizar» traen Arc al frente y eligen una opción de su menú. Si la opción está atenuada, el botón se sacude.",
+        "fr": "« Retour », « Avancer », « Actualiser », « Copier l’URL » et « Aller au Space » fonctionnent même avec Arc en arrière-plan. Les autres boutons et l’appui long sur « Actualiser » mettent Arc au premier plan et choisissent une commande dans son menu. Si la commande est grisée, le bouton tremble.",
+        "ru": "«Назад», «Вперёд», «Обновить», «Скопировать URL» и «Перейти в Space» работают, даже когда Arc в фоне. Остальные кнопки и долгое нажатие на «Обновить» выводят Arc вперёд и выбирают пункт в его меню. Если пункт недоступен, кнопка встряхивается."
       },
       "bindByDefault": true,
       "placements": [

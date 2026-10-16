@@ -13,7 +13,7 @@
 emulate -R zsh
 case $action in
   openurl)
-    [[ -n $url ]] || { print -u2 -- "Write the link in the first line of the button’s script: url=\"myapp://settings\""; exit 1 }
+    [[ -n $url ]] || { print -u2 -- "Write the link in this button’s settings: url=\"myapp://settings\""; exit 1 }
     [[ $url =~ '^[A-Za-z][A-Za-z0-9+.-]*:[^[:space:]]+$' ]] || { print -ru2 -- "Not a link: “${url[1,80]}”. Write it with its scheme, like myapp://settings"; exit 1 }
     doing="open the link on" ;;
   bar)   doing="set the status bar of" ;;

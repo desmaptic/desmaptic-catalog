@@ -1,6 +1,6 @@
 {
   "id": "base64",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Base64",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Encodes the text exactly as copied, as UTF-8; decodes URL-safe and unpadded Base64 too. Passwords from password managers, files and images are refused: the button flashes red.",
-    "de": "Kodiert den Text unverändert als UTF-8 und dekodiert auch URL-sicheres Base64 oder Base64 ohne Padding. Passwörter aus Passwortmanagern, Dateien und Bilder werden abgelehnt: Die Taste blinkt rot.",
-    "es": "Codifica el texto tal como se copió, en UTF-8, y decodifica también Base64 URL-safe o sin relleno. Rechaza contraseñas de gestores de contraseñas, archivos e imágenes: el botón parpadea en rojo.",
-    "fr": "Encode le texte tel quel, en UTF-8, et décode aussi le Base64 URL-safe ou sans remplissage. Les mots de passe d’un gestionnaire, les fichiers et les images sont refusés : le bouton clignote en rouge.",
-    "ru": "Кодирует текст как есть, в UTF-8, и декодирует также URL-safe Base64 и Base64 без «=» в конце. Пароли из менеджеров паролей, файлы и картинки не принимает — кнопка мигает красным."
+    "en": "Text is encoded exactly as copied, as UTF-8. URL-safe Base64 and Base64 without padding decode too. If the clipboard holds a password from a password manager, files or an image, the button shakes and nothing changes.",
+    "de": "Der Text wird unverändert als UTF-8 kodiert. Auch URL-sicheres Base64 und Base64 ohne Padding werden dekodiert. Liegt ein Passwort aus einem Passwortmanager, eine Datei oder ein Bild in der Zwischenablage, wackelt die Taste und nichts ändert sich.",
+    "es": "El texto se codifica tal como se copió, en UTF-8. También se decodifica Base64 URL-safe o sin relleno. Si el portapapeles tiene una contraseña de un gestor, archivos o una imagen, el botón tiembla y no cambia nada.",
+    "fr": "Le texte est encodé tel qu’il a été copié, en UTF-8. Le Base64 URL-safe ou sans remplissage se décode aussi. Si le presse-papiers contient un mot de passe d’un gestionnaire, des fichiers ou une image, le bouton tremble et rien ne change.",
+    "ru": "Текст кодируется как есть, в UTF-8. Расшифровываются и URL-safe Base64, и Base64 без «=» в конце. Если в буфере пароль из менеджера паролей, файлы или картинка, кнопка вздрогнет и ничего не изменит."
   },
   "tapAction": {
     "en": "Replaces the text on the Mac’s clipboard with its Base64",

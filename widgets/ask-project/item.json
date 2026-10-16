@@ -1,6 +1,6 @@
 {
   "id": "ask-project",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -12,20 +12,20 @@
     "ru": "Спросить про проект…"
   },
   "summary": {
-    "en": "Ask about a project on the Mac: yesterday’s commits, your PRs, what isn’t committed — or anything, via Claude Code",
-    "de": "Frag nach einem Projekt auf dem Mac: Commits von gestern, deine PRs, was nicht committet ist – oder alles, via Claude Code",
-    "es": "Pregunta por un proyecto del Mac: los commits de ayer, tus PR, lo que falta por confirmar, o lo que sea, con Claude Code",
-    "fr": "Interrogez un projet du Mac : les commits d’hier, vos PR, ce qui n’est pas commité, ou tout le reste, via Claude Code",
-    "ru": "Спросите о проекте на Mac: коммиты за вчера, ваши PR, что не закоммичено — или что угодно через Claude Code"
+    "en": "Ask about a project on the Mac: yesterday’s commits, your PRs, what isn’t committed, or anything else via Claude Code",
+    "de": "Frag nach einem Projekt auf dem Mac: Commits von gestern, deine PRs, was nicht committet ist, oder alles andere über Claude Code",
+    "es": "Pregunta por un proyecto del Mac: los commits de ayer, tus PR, lo que falta por confirmar o cualquier otra cosa con Claude Code",
+    "fr": "Interrogez un projet du Mac : les commits d’hier, vos PR, ce qui n’est pas commité, ou toute autre chose via Claude Code",
+    "ru": "Спросите о проекте на Mac: о вчерашних коммитах, ваших PR, незакоммиченных изменениях или о чём угодно через Claude Code"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The answer comes as a notification and names the project. The three ready questions are answered at once, without AI; any other goes to Claude Code, read-only, up to 50 seconds. Unset, the project is your last Claude Code or Codex session’s folder, else the front Terminal or Finder window’s.",
-    "de": "Die Antwort kommt als Mitteilung und nennt das Projekt. Die drei fertigen Fragen werden sofort und ohne KI beantwortet, jede andere von Claude Code, nur lesend, bis zu 50 Sekunden. Ohne Einstellung ist das Projekt der Ordner deiner letzten Claude-Code- oder Codex-Sitzung, sonst des vorderen Terminal- oder Finder-Fensters.",
-    "es": "La respuesta llega como notificación y nombra el proyecto. Las tres preguntas preparadas se responden al momento, sin IA; cualquier otra va a Claude Code, solo lectura, hasta 50 segundos. Sin ajustes, el proyecto es la carpeta de tu última sesión de Claude Code o Codex, si no, la de la ventana de Terminal o Finder delante.",
-    "fr": "La réponse arrive en notification et nomme le projet. Les trois questions toutes prêtes sont traitées aussitôt, sans IA ; toute autre part vers Claude Code, en lecture seule, 50 secondes au plus. Sans réglage, le projet est le dossier de votre dernière session Claude Code ou Codex, sinon celui de la fenêtre Terminal ou Finder au premier plan.",
-    "ru": "Ответ приходит уведомлением и называет проект. Три готовых вопроса считаются сразу и без ИИ, любой другой уходит в Claude Code только на чтение, до 50 секунд. Без настройки проект — папка вашей последней сессии Claude Code или Codex, иначе переднего окна Терминала или Finder."
+    "en": "The answer arrives as a notification, right away for the ready questions. Anything else goes to Claude Code, which only reads the project and answers within 50 seconds. The project is the folder of your last Claude Code or Codex session, unless you set another in the button’s settings.",
+    "de": "Die Antwort kommt als Mitteilung, bei den fertigen Fragen sofort. Alles andere beantwortet Claude Code, das das Projekt nur liest und höchstens 50 Sekunden braucht. Das Projekt ist der Ordner deiner letzten Claude-Code- oder Codex-Sitzung, außer du legst in den Einstellungen der Taste einen anderen fest.",
+    "es": "La respuesta llega como notificación, al instante para las preguntas preparadas. Las demás las responde Claude Code, que solo lee el proyecto y tarda como mucho 50 segundos. El proyecto es la carpeta de tu última sesión de Claude Code o Codex, salvo que elijas otra en los ajustes del botón.",
+    "fr": "La réponse arrive en notification, tout de suite pour les questions toutes prêtes. Les autres passent par Claude Code, qui ne fait que lire le projet et répond en 50 secondes au plus. Le projet est le dossier de votre dernière session Claude Code ou Codex, sauf si vous en choisissez un autre dans les réglages du bouton.",
+    "ru": "Ответ придёт уведомлением, а на готовые вопросы — сразу. Остальные вопросы получит Claude Code, который только читает проект и отвечает не дольше 50 секунд. Проект — это папка вашей последней сессии Claude Code или Codex, если в настройках кнопки не задана другая."
   },
   "tapAction": {
     "en": "Asks what you want to know and sends the answer to the phone",
@@ -51,12 +51,42 @@
       }
     },
     "input": {
-      "question": "What do you want to know?",
-      "placeholder": "A question about the project",
+      "question": {
+        "en": "What do you want to know?",
+        "de": "Was willst du wissen?",
+        "es": "¿Qué quieres saber?",
+        "fr": "Que voulez-vous savoir ?",
+        "ru": "Что вы хотите узнать?"
+      },
+      "placeholder": {
+        "en": "A question about the project",
+        "de": "Eine Frage zum Projekt",
+        "es": "Una pregunta sobre el proyecto",
+        "fr": "Une question sur le projet",
+        "ru": "Вопрос о проекте"
+      },
       "quickReplies": [
-        "What did I do yesterday?",
-        "Status of my PRs",
-        "What isn’t committed?"
+        {
+          "en": "What did I do yesterday?",
+          "de": "Was habe ich gestern gemacht?",
+          "es": "¿Qué hice ayer?",
+          "fr": "Qu’ai-je fait hier ?",
+          "ru": "Что я сделал вчера?"
+        },
+        {
+          "en": "Status of my PRs",
+          "de": "Status meiner PRs",
+          "es": "Estado de mis PR",
+          "fr": "État de mes PR",
+          "ru": "Статус моих PR"
+        },
+        {
+          "en": "What isn’t committed?",
+          "de": "Was ist nicht committet?",
+          "es": "¿Qué falta por confirmar?",
+          "fr": "Qu’est-ce qui n’est pas commité ?",
+          "ru": "Что не закоммичено?"
+        }
       ]
     }
   }

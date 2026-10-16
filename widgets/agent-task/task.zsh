@@ -81,8 +81,8 @@ if [[ -z $folder ]]; then
   project_folder
   case $? in
     (0) ;;
-    (2) fail $project_kind "$project_why, or set the project folder on the first line of this button’s tap script" ;;
-    (*) fail config "No project folder found: no Claude Code or Codex session runs and no Terminal or Finder window shows a folder. Set one on the first line of this button’s tap script, e.g. folder=\"~/Developer/my-app\"" ;;
+    (2) fail $project_kind "$project_why, or set the project folder in this button’s settings" ;;
+    (*) fail config "No project folder found: no Claude Code or Codex session is running, and no Terminal or Finder window shows a folder. Set one in this button’s settings, e.g. folder=\"~/Developer/my-app\"" ;;
   esac
 fi
 case $folder in
@@ -119,7 +119,7 @@ if [[ -z $tool ]]; then
   fi
 fi
 [[ $tool == (claude|codex) ]] ||
-  fail config "Unknown tool \"$tool\": set tool=\"claude\" or tool=\"codex\" on the second line of this button’s tap script"
+  fail config "Unknown tool \"$tool\": set tool=\"claude\" or tool=\"codex\" in this button’s settings"
 terminal=${(L)terminal}
 project_tmux=""
 if [[ -z $terminal ]]; then
@@ -127,13 +127,13 @@ if [[ -z $terminal ]]; then
   terminal=${REPLY:-terminal}                   # tmux, when the session ran in it, is asked below
 fi
 [[ $terminal == (terminal|iterm2|ghostty|tmux) ]] ||
-  fail config "Unknown terminal \"$terminal\": set terminal= to terminal, iterm2, ghostty or tmux on the third line of this button’s tap script"
+  fail config "Unknown terminal \"$terminal\": set terminal= to terminal, iterm2, ghostty or tmux in this button’s settings"
 
 # The session's worktree needs a repository: its marker, a folder or (in a worktree) a file, in the folder or above.
 dir=$folder mark=.git  # not a call: the repository's own folder
 until [[ -e $dir/$mark || $dir == / ]]; do dir=${dir:h}; done
 [[ -e $dir/$mark ]] ||
-  fail config "$place is not a repository: the agent works in a worktree of its own, so set the folder of a project under version control on the first line of this button’s tap script"
+  fail config "$place is not a Git repository: the agent works in a worktree of its own, so set a project folder that uses Git in this button’s settings"
 # A found folder in a linked worktree (a session the button started works in one) stands for its main checkout: the
 # new session makes a worktree of its own, never one inside another. The marker there is a file naming the main
 # checkout's own: "<main>/<marker>/worktrees/<name>".
@@ -186,7 +186,7 @@ mux=( /opt/homebrew/bin/tmux(N-*) /usr/local/bin/tmux(N-*) )
 # session of a server nobody looks at; else the session's app.
 [[ -n $project_tmux ]] && (( $#mux )) && limited 5 $tm list-sessions && terminal=tmux
 [[ $terminal == tmux ]] && (( ! $#mux )) &&
-  fail notFound "tmux is not installed on this Mac: brew install tmux, or set another terminal on the third line"
+  fail notFound "tmux is not installed on this Mac: install it with brew install tmux, or set another terminal in this button’s settings"
 
 # ---- the session's folder: the task and the script typed into the new shell ----
 # Under the account's own temporary folder, readable by it alone; the script deletes the folder before the tool

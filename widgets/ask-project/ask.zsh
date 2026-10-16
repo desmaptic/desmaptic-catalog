@@ -89,8 +89,8 @@ if [[ -z $folder ]]; then
   project_folder
   case $? in
     (0) ;;
-    (2) fail $project_kind "$project_why, or set the project folder on the first line of this button’s tap script" ;;
-    (*) fail config "No project folder found: no Claude Code or Codex session runs and no Terminal or Finder window shows a folder. Set one on the first line of this button’s tap script, e.g. folder=\"~/Developer/my-app\"" ;;
+    (2) fail $project_kind "$project_why, or set the project folder in this button’s settings" ;;
+    (*) fail config "No project folder found: no Claude Code or Codex session is running, and no Terminal or Finder window shows a folder. Set one in this button’s settings, e.g. folder=\"~/Developer/my-app\"" ;;
   esac
 fi
 case $folder in
@@ -134,7 +134,7 @@ if [[ $kind == (yesterday|uncommitted) ]]; then
   vcs=( ${dev:+$dev/usr/bin/git(N-*)} )
   (( $#vcs )) || fail notFound "This answer needs Apple’s Command Line Tools: install them in Terminal with xcode-select --install"
   limited 10 $vcs rev-parse --is-inside-work-tree
-  [[ $(<$tmp/out) == true ]] || fail config "$place is not a repository: set the folder of a project under version control on the first line of this button’s tap script"
+  [[ $(<$tmp/out) == true ]] || fail config "$place is not a Git repository: set a project folder that uses Git in this button’s settings"
 fi
 
 case $kind in

@@ -1,6 +1,6 @@
 {
   "id": "pipette",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Eyedropper",
@@ -10,27 +10,27 @@
     "ru": "Пипетка"
   },
   "summary": {
-    "en": "Any pixel’s hex on the Mac’s clipboard",
-    "de": "Der Hex-Wert eines beliebigen Pixels in der Zwischenablage des Mac",
-    "es": "El hex de cualquier píxel, en el portapapeles del Mac",
-    "fr": "Le code hex de n’importe quel pixel dans le presse-papiers du Mac",
-    "ru": "Hex любого пикселя — в буфере обмена Mac"
+    "en": "Copies the hex code of any color on the Mac’s screen",
+    "de": "Kopiert den Hex-Code jeder Farbe auf dem Mac-Bildschirm",
+    "es": "Copia el código hex de cualquier color de la pantalla del Mac",
+    "fr": "Copie le code hex de n’importe quelle couleur de l’écran du Mac",
+    "ru": "Копирует hex-код любого цвета с экрана Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The Mac shows a magnifier: click a pixel, and its sRGB hex goes to the clipboard and onto the button.",
-    "de": "Der Mac zeigt eine Lupe: Klicke auf ein Pixel, und sein sRGB-Hex-Wert landet in der Zwischenablage und auf der Taste.",
-    "es": "El Mac muestra una lupa: haz clic en un píxel y su hex en sRGB pasa al portapapeles y al botón.",
-    "fr": "Le Mac affiche une loupe : cliquez sur un pixel, et son code hex sRGB va dans le presse-papiers et sur le bouton.",
-    "ru": "Mac показывает лупу: щёлкните по пикселю — его hex в sRGB окажется в буфере обмена и на кнопке."
+    "en": "A magnifier appears on the Mac. Click the color you need, and its sRGB hex code goes to the clipboard and onto the button.",
+    "de": "Auf dem Mac erscheint eine Lupe. Klicke auf die gewünschte Farbe, und ihr sRGB-Hex-Code landet in der Zwischenablage und auf der Taste.",
+    "es": "En el Mac aparece una lupa. Haz clic en el color que quieras y su código hex en sRGB pasará al portapapeles y al botón.",
+    "fr": "Une loupe apparaît sur le Mac. Cliquez sur la couleur voulue : son code hex sRGB va dans le presse-papiers et sur le bouton.",
+    "ru": "На Mac появится лупа. Щёлкните по нужному цвету, и его hex-код в sRGB окажется в буфере обмена и на кнопке."
   },
   "tapAction": {
-    "en": "Opens the magnifier on the Mac; Esc cancels",
-    "de": "Öffnet die Lupe auf dem Mac; Esc bricht ab",
-    "es": "Abre la lupa en el Mac; Esc cancela",
-    "fr": "Ouvre la loupe sur le Mac ; Esc annule",
-    "ru": "Открывает лупу на Mac; Esc — отмена"
+    "en": "Opens the magnifier on the Mac, and Esc closes it",
+    "de": "Öffnet die Lupe auf dem Mac, Esc schließt sie wieder",
+    "es": "Abre la lupa en el Mac, y Esc la cierra",
+    "fr": "Ouvre la loupe sur le Mac, et Esc la referme",
+    "ru": "Открывает лупу на Mac, а Esc её закрывает"
   },
   "holdAction": {
     "en": "Copies the last picked color again",

@@ -1,6 +1,6 @@
 {
   "id": "mail",
-  "revision": 6,
+  "revision": 7,
   "name": {
     "en": "Mail",
     "de": "Mail",
@@ -23,18 +23,18 @@
         "ru": "Непрочитанные"
       },
       "summary": {
-        "en": "Mail’s Dock badge on your phone: how many messages are unread",
-        "de": "Das Kennzeichen von Mail auf dem Telefon: wie viele E-Mails ungelesen sind",
-        "es": "El globo de Mail en el teléfono: cuántos mensajes hay sin leer",
-        "fr": "La pastille de Mail sur le téléphone : combien de messages sont non lus",
-        "ru": "Наклейка «Почты» на телефоне: сколько писем не прочитано"
+        "en": "How many unread messages are waiting in Mail",
+        "de": "Wie viele ungelesene E-Mails in Mail warten",
+        "es": "Cuántos mensajes sin leer te esperan en Mail",
+        "fr": "Combien de messages non lus vous attendent dans Mail",
+        "ru": "Сколько непрочитанных писем ждёт в «Почте»"
       },
       "details": {
-        "en": "The number on Mail’s Dock icon: unread messages in the Inbox, or in the mailbox chosen in Mail’s settings. Checked every few seconds; a dash means Mail is closed.",
-        "de": "Die Zahl am Dock-Symbol von Mail: ungelesene E-Mails im Eingang oder in dem Postfach, das in den Mail-Einstellungen gewählt ist. Alle paar Sekunden geprüft; ein Strich heißt, Mail ist geschlossen.",
-        "es": "El número del icono de Mail en el Dock: los mensajes sin leer de Entrada o del buzón elegido en los ajustes de Mail. Se revisa cada pocos segundos; una raya indica que Mail está cerrado.",
-        "fr": "Le nombre sur l’icône de Mail dans le Dock : les messages non lus de la boîte de réception, ou de la boîte choisie dans les réglages de Mail. Relevé à quelques secondes d’intervalle ; un tiret indique que Mail est fermé.",
-        "ru": "Число на наклейке значка «Почты» в Dock: непрочитанные во «Входящих» или в ящике, выбранном в настройках «Почты». Проверяется каждые несколько секунд; прочерк — «Почта» закрыта."
+        "en": "The same number as on Mail’s icon in the Dock. It counts unread messages in the Inbox, unless you pick another mailbox in Mail’s settings. If Mail is closed, the button shows a dash.",
+        "de": "Dieselbe Zahl wie am Symbol von Mail im Dock. Gezählt werden die ungelesenen E-Mails im Eingang, es sei denn, du wählst in den Einstellungen von Mail ein anderes Postfach. Ist Mail geschlossen, zeigt die Taste einen Strich.",
+        "es": "El mismo número que en el icono de Mail en el Dock. Cuenta los mensajes sin leer de Entrada, salvo que elijas otro buzón en los ajustes de Mail. Si Mail está cerrado, el botón muestra una raya.",
+        "fr": "Le même nombre que sur l’icône de Mail dans le Dock. Il compte les messages non lus de la boîte de réception, sauf si vous choisissez une autre boîte dans les réglages de Mail. Si Mail est fermé, le bouton affiche un tiret.",
+        "ru": "То же число, что на значке «Почты» в Dock. Это непрочитанные письма во «Входящих», если вы не выбрали другой ящик в настройках «Почты». Если «Почта» закрыта, на кнопке прочерк."
       },
       "tapAction": {
         "en": "Brings Mail to the front if it’s running",
@@ -81,11 +81,11 @@
         "ru": "Проверяет новую почту во всех учётных записях, даже когда «Почта» в фоне"
       },
       "details": {
-        "en": "Mailbox › Get All New Mail. Works with Mail in the background, but only while Mail is open: the button never starts it.",
-        "de": "Postfach › Alle neuen E-Mails empfangen. Funktioniert auch mit Mail im Hintergrund, aber nur, wenn Mail geöffnet ist: Die Taste startet es nie.",
-        "es": "Buzón › Descargar todo el correo nuevo. Funciona con Mail en segundo plano, pero solo si Mail está abierto: el botón nunca lo abre.",
-        "fr": "Boîte aux lettres › Relever tout le courrier. Fonctionne avec Mail en arrière-plan, mais seulement si Mail est ouvert : le bouton ne le lance jamais.",
-        "ru": "Ящик › Получить всю новую почту. Работает и когда «Почта» в фоне, но только если она открыта: кнопка её не запускает."
+        "en": "Mailbox › Get All New Mail. Works with Mail in the background. If Mail is closed, the button won’t start it.",
+        "de": "Postfach › Alle neuen E-Mails empfangen. Funktioniert auch mit Mail im Hintergrund. Ist Mail geschlossen, startet die Taste es nicht.",
+        "es": "Buzón › Descargar todo el correo nuevo. Funciona con Mail en segundo plano. Si Mail está cerrado, el botón no lo abre.",
+        "fr": "Boîte aux lettres › Relever tout le courrier. Fonctionne avec Mail en arrière-plan. Si Mail est fermé, le bouton ne le lance pas.",
+        "ru": "Ящик › Получить всю новую почту. Работает, когда «Почта» в фоне. Если «Почта» закрыта, кнопка её не запустит."
       },
       "tapAction": {
         "en": "Gets new mail for every account",
@@ -128,11 +128,11 @@
         "ru": "Показывает «Входящие» (⌘1); удержание — любой ящик по имени"
       },
       "details": {
-        "en": "Mailbox › Go to Favorite Mailbox, the first one (⌘1): the Inbox, unless you rearranged Mail’s favorites. Works while Mail is in front.",
-        "de": "Postfach › Favoriten-Postfach öffnen, das erste (⌘1): der Eingang, sofern die Favoriten von Mail nicht umgestellt wurden. Funktioniert, wenn Mail vorne ist.",
-        "es": "Buzón › Ir al buzón favorito, el primero (⌘1): Entrada, salvo que hayas cambiado el orden de los favoritos de Mail. Funciona cuando Mail está delante.",
-        "fr": "Boîte aux lettres › Passer à la boîte aux lettres favorite, la première (⌘1) : la boîte de réception, sauf si vous avez réordonné les favoris de Mail. Fonctionne quand Mail est au premier plan.",
-        "ru": "Ящик › Перейти в избранный ящик, первый (⌘1): «Входящие», если вы не меняли порядок избранного в «Почте». Работает, когда «Почта» на переднем плане."
+        "en": "Opens your first favorite mailbox. That’s the Inbox, unless you’ve reordered your favorites in Mail. Works while Mail is in front.",
+        "de": "Öffnet dein erstes Favoriten-Postfach. Das ist der Eingang, solange du die Favoriten in Mail nicht umsortiert hast. Funktioniert, wenn Mail vorne ist.",
+        "es": "Abre tu primer buzón favorito. Es Entrada, salvo que hayas cambiado el orden de tus favoritos en Mail. Funciona cuando Mail está delante.",
+        "fr": "Ouvre votre première boîte favorite. C’est la boîte de réception, sauf si vous avez réordonné vos favoris dans Mail. Fonctionne quand Mail est au premier plan.",
+        "ru": "Открывает первый ящик в избранном. Это «Входящие», если вы не меняли порядок избранного. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Shows the Inbox",
@@ -142,11 +142,11 @@
         "ru": "Показывает «Входящие»"
       },
       "holdAction": {
-        "en": "Opens Open Quickly: type a mailbox’s name to go there (⇧⌘O)",
-        "de": "Öffnet „Schnell öffnen“: Namen eines Postfachs tippen, um es zu öffnen (⇧⌘O)",
-        "es": "Abre «Abrir rápidamente»: escribe el nombre de un buzón para ir a él (⇧⌘O)",
-        "fr": "Ouvre « Ouvrir rapidement » : tapez le nom d’une boîte pour y aller (⇧⌘O)",
-        "ru": "Открывает «Открыть быстро»: наберите имя ящика, чтобы перейти в него (⇧⌘O)"
+        "en": "Opens Open Quickly to go to a mailbox by name (⇧⌘O)",
+        "de": "Öffnet „Schnell öffnen“, um ein Postfach per Namen aufzurufen (⇧⌘O)",
+        "es": "Abre «Abrir rápidamente» para ir a un buzón por su nombre (⇧⌘O)",
+        "fr": "Ouvre « Ouvrir rapidement » pour aller à une boîte par son nom (⇧⌘O)",
+        "ru": "Открывает «Открыть быстро», чтобы перейти в ящик по имени (⇧⌘O)"
       },
       "permissions": [
         "accessibility"
@@ -195,14 +195,14 @@
         "de": "Durchsucht die E-Mails (⌥⌘F); Halten sucht Text in der E-Mail",
         "es": "Busca en el correo (⌥⌘F); mantén pulsado para buscar texto en el mensaje",
         "fr": "Recherche dans le courrier (⌥⌘F) ; maintenez pour chercher dans le message",
-        "ru": "Ищет в почте (⌥⌘F); удержание — текст в письме"
+        "ru": "Ищет в почте (⌥⌘F); удержание — в открытом письме"
       },
       "details": {
-        "en": "Edit › Find › Mailbox Search (⌥⌘F): the cursor lands in Mail’s search field, ready to type on the Mac. Works while Mail is in front.",
-        "de": "Bearbeiten › Suchen › Postfach durchsuchen (⌥⌘F): Der Cursor steht im Suchfeld von Mail, bereit zum Tippen am Mac. Funktioniert, wenn Mail vorne ist.",
-        "es": "Edición › Buscar › Buscar en buzón (⌥⌘F): el cursor se coloca en el campo de búsqueda de Mail, listo para escribir en el Mac. Funciona cuando Mail está delante.",
-        "fr": "Édition › Rechercher › Rechercher dans la boîte (⌥⌘F) : le curseur se place dans le champ de recherche de Mail, prêt à taper sur le Mac. Fonctionne quand Mail est au premier plan.",
-        "ru": "Правка › Поиск › Искать в ящике (⌥⌘F): курсор встаёт в поле поиска «Почты» — можно печатать на Mac. Работает, когда «Почта» на переднем плане."
+        "en": "Edit › Find › Mailbox Search (⌥⌘F). The cursor lands in Mail’s search field, so you can type your search on the Mac right away. Works while Mail is in front.",
+        "de": "Bearbeiten › Suchen › Postfach durchsuchen (⌥⌘F). Der Cursor steht dann im Suchfeld von Mail, und du kannst am Mac gleich lostippen. Funktioniert, wenn Mail vorne ist.",
+        "es": "Edición › Buscar › Buscar en buzón (⌥⌘F). El cursor se coloca en el campo de búsqueda de Mail y puedes escribir enseguida en el Mac. Funciona cuando Mail está delante.",
+        "fr": "Édition › Rechercher › Rechercher dans la boîte (⌥⌘F). Le curseur se place dans le champ de recherche de Mail, et vous pouvez taper tout de suite sur le Mac. Fonctionne quand Mail est au premier plan.",
+        "ru": "Правка › Поиск › Искать в ящике (⌥⌘F). Курсор встанет в поле поиска «Почты», и запрос можно сразу набрать на Mac. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Starts a search in your mail",
@@ -261,18 +261,18 @@
         "ru": "Ответить"
       },
       "summary": {
-        "en": "Answers the sender of the selected message (⌘R)",
+        "en": "Replies to the sender of the selected message (⌘R)",
         "de": "Antwortet dem Absender der ausgewählten E-Mail (⌘R)",
         "es": "Responde al remitente del mensaje seleccionado (⌘R)",
         "fr": "Répond à l’expéditeur du message sélectionné (⌘R)",
         "ru": "Отвечает отправителю выбранного письма (⌘R)"
       },
       "details": {
-        "en": "Message › Reply (⌘R): a reply to the sender of the selected message, ready to write. Nothing is sent until you send it. Works while Mail is in front.",
-        "de": "E-Mail › Antworten (⌘R): eine Antwort an den Absender der ausgewählten E-Mail, bereit zum Schreiben. Gesendet wird erst, wenn du sendest. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Responder (⌘R): una respuesta al remitente del mensaje seleccionado, lista para escribir. No se envía nada hasta que la envíes. Funciona cuando Mail está delante.",
-        "fr": "Message › Répondre (⌘R) : une réponse à l’expéditeur du message sélectionné, prête à écrire. Rien n’est envoyé avant que vous l’envoyiez. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Ответить (⌘R): ответ отправителю выбранного письма, можно сразу писать. Ничего не уходит, пока вы не отправите. Работает, когда «Почта» на переднем плане."
+        "en": "Message › Reply (⌘R). The reply goes out only when you send it. Works while Mail is in front.",
+        "de": "E-Mail › Antworten (⌘R). Die Antwort wird erst gesendet, wenn du sie abschickst. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Responder (⌘R). La respuesta no se envía hasta que tú la envíes. Funciona cuando Mail está delante.",
+        "fr": "Message › Répondre (⌘R). La réponse ne part que lorsque vous l’envoyez. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Ответить (⌘R). Ответ уйдёт, только когда вы сами его отправите. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Opens a reply to the sender",
@@ -313,18 +313,18 @@
         "ru": "Ответить всем"
       },
       "summary": {
-        "en": "Answers everyone on the selected message (⇧⌘R)",
+        "en": "Replies to everyone on the selected message (⇧⌘R)",
         "de": "Antwortet allen Beteiligten der ausgewählten E-Mail (⇧⌘R)",
         "es": "Responde a todos los del mensaje seleccionado (⇧⌘R)",
         "fr": "Répond à tous les destinataires du message sélectionné (⇧⌘R)",
         "ru": "Отвечает всем участникам выбранного письма (⇧⌘R)"
       },
       "details": {
-        "en": "Message › Reply All (⇧⌘R): a reply to the sender and everyone else the message went to. Nothing is sent until you send it. Works while Mail is in front.",
-        "de": "E-Mail › Allen antworten (⇧⌘R): eine Antwort an den Absender und alle anderen Empfänger. Gesendet wird erst, wenn du sendest. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Responder a todos (⇧⌘R): una respuesta al remitente y a todos los demás destinatarios. No se envía nada hasta que la envíes. Funciona cuando Mail está delante.",
-        "fr": "Message › Répondre à tous (⇧⌘R) : une réponse à l’expéditeur et à tous les autres destinataires. Rien n’est envoyé avant que vous l’envoyiez. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Ответить всем (⇧⌘R): ответ отправителю и всем остальным получателям. Ничего не уходит, пока вы не отправите. Работает, когда «Почта» на переднем плане."
+        "en": "Message › Reply All (⇧⌘R). The reply goes to the sender and everyone else on the message, but only when you send it. Works while Mail is in front.",
+        "de": "E-Mail › Allen antworten (⇧⌘R). Die Antwort geht an den Absender und alle anderen Empfänger, aber erst, wenn du sie abschickst. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Responder a todos (⇧⌘R). La respuesta va al remitente y a todos los demás destinatarios, pero solo cuando tú la envíes. Funciona cuando Mail está delante.",
+        "fr": "Message › Répondre à tous (⇧⌘R). La réponse part à l’expéditeur et à tous les autres destinataires, mais seulement quand vous l’envoyez. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Ответить всем (⇧⌘R). Ответ уйдёт отправителю и всем остальным адресатам, только когда вы сами его отправите. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Opens a reply to everyone",
@@ -366,18 +366,18 @@
         "ru": "Переслать"
       },
       "summary": {
-        "en": "Passes the selected message on (⇧⌘F)",
+        "en": "Forwards the selected message (⇧⌘F)",
         "de": "Leitet die ausgewählte E-Mail weiter (⇧⌘F)",
         "es": "Reenvía el mensaje seleccionado (⇧⌘F)",
         "fr": "Réexpédie le message sélectionné (⇧⌘F)",
         "ru": "Пересылает выбранное письмо (⇧⌘F)"
       },
       "details": {
-        "en": "Message › Forward (⇧⌘F): the selected message in a new draft; you add the recipients. Nothing is sent until you send it. Works while Mail is in front.",
-        "de": "E-Mail › Weiterleiten (⇧⌘F): die ausgewählte E-Mail in einem neuen Entwurf; die Empfänger trägst du ein. Gesendet wird erst, wenn du sendest. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Reenviar (⇧⌘F): el mensaje seleccionado en un borrador nuevo; tú añades los destinatarios. No se envía nada hasta que lo envíes. Funciona cuando Mail está delante.",
-        "fr": "Message › Réexpédier (⇧⌘F) : le message sélectionné dans un nouveau brouillon ; vous ajoutez les destinataires. Rien n’est envoyé avant que vous l’envoyiez. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Переслать (⇧⌘F): выбранное письмо в новом черновике, получателей добавляете вы. Ничего не уходит, пока вы не отправите. Работает, когда «Почта» на переднем плане."
+        "en": "Message › Forward (⇧⌘F). You add the recipients and send it yourself. Works while Mail is in front.",
+        "de": "E-Mail › Weiterleiten (⇧⌘F). Du trägst die Empfänger ein und schickst die E-Mail selbst ab. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Reenviar (⇧⌘F). Tú añades los destinatarios y lo envías. Funciona cuando Mail está delante.",
+        "fr": "Message › Réexpédier (⇧⌘F). C’est vous qui ajoutez les destinataires et qui l’envoyez. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Переслать (⇧⌘F). Вы сами добавите получателей и отправите письмо. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Opens the message to forward",
@@ -426,11 +426,11 @@
         "ru": "Начинает новое письмо (⌘N)"
       },
       "details": {
-        "en": "File › New Message (⌘N): an empty message to write, address and send when you are ready. Works while Mail is in front.",
-        "de": "Ablage › Neue E-Mail (⌘N): eine leere E-Mail zum Schreiben, Adressieren und Senden, wann du willst. Funktioniert, wenn Mail vorne ist.",
-        "es": "Archivo › Nuevo mensaje (⌘N): un mensaje vacío para escribir, poner destinatarios y enviar cuando quieras. Funciona cuando Mail está delante.",
-        "fr": "Fichier › Nouveau message (⌘N) : un message vide à écrire, adresser et envoyer quand vous le voulez. Fonctionne quand Mail est au premier plan.",
-        "ru": "Файл › Новое письмо (⌘N): пустое письмо — написать, указать получателей и отправить, когда будете готовы. Работает, когда «Почта» на переднем плане."
+        "en": "File › New Message (⌘N). Works while Mail is in front.",
+        "de": "Ablage › Neue E-Mail (⌘N). Funktioniert, wenn Mail vorne ist.",
+        "es": "Archivo › Nuevo mensaje (⌘N). Funciona cuando Mail está delante.",
+        "fr": "Fichier › Nouveau message (⌘N). Fonctionne quand Mail est au premier plan.",
+        "ru": "Файл › Новое письмо (⌘N). Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Opens a new message",
@@ -475,14 +475,14 @@
         "de": "Archiviert die ausgewählten E-Mails (⌃⌘A); Halten löscht sie",
         "es": "Archiva los mensajes seleccionados (⌃⌘A); mantén pulsado para eliminarlos",
         "fr": "Archive les messages sélectionnés (⌃⌘A) ; maintenez pour les supprimer",
-        "ru": "Архивирует выбранные письма (⌃⌘A); удержание — удаляет их"
+        "ru": "Архивирует выбранные письма (⌃⌘A); удержание удаляет их"
       },
       "details": {
-        "en": "Archive keeps messages findable in the account’s Archive mailbox. Delete moves them to the Trash, or erases them if the account keeps no Trash. Works while Mail is in front.",
+        "en": "Archived messages go to the account’s Archive mailbox, where they’re easy to find. Deleted ones go to the Trash, or are erased if the account doesn’t use a Trash. Works while Mail is in front.",
         "de": "Archivieren hebt E-Mails im Archiv des Accounts auf. Löschen legt sie in den Papierkorb oder entfernt sie ganz, wenn der Account keinen Papierkorb nutzt. Funktioniert, wenn Mail vorne ist.",
         "es": "Archivar guarda los mensajes en el buzón Archivado de la cuenta. Eliminar los pasa a la Papelera, o los borra si la cuenta no usa Papelera. Funciona cuando Mail está delante.",
         "fr": "Archiver garde les messages dans la boîte Archives du compte. Supprimer les place dans la corbeille, ou les efface si le compte n’en a pas. Fonctionne quand Mail est au premier plan.",
-        "ru": "Архивирование оставляет письма в ящике «Архив» учётной записи. Удаление перемещает их в «Корзину» или стирает, если корзины у записи нет. Работает, когда «Почта» на переднем плане."
+        "ru": "Заархивированные письма переносятся в ящик «Архив» учётной записи, где их легко найти. Удалённые попадают в «Корзину» или стираются, если у учётной записи нет корзины. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Archives the selected messages",
@@ -544,11 +544,11 @@
         "ru": "Ставит или снимает флажок у выбранных писем (⇧⌘L)"
       },
       "details": {
-        "en": "Message › Flag › Toggle Flag (⇧⌘L), in the flag colour you used last. Works while Mail is in front.",
-        "de": "E-Mail › Markierung › Markierung ein-/ausblenden (⇧⌘L), in der zuletzt verwendeten Farbe. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Indicador › Alternar indicador (⇧⌘L), con el último color de indicador que usaste. Funciona cuando Mail está delante.",
-        "fr": "Message › Drapeau › Activer/désactiver le drapeau (⇧⌘L), de la dernière couleur utilisée. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Установить флажок › Переключить флажок (⇧⌘L) — последним выбранным цветом. Работает, когда «Почта» на переднем плане."
+        "en": "Message › Flag › Toggle Flag (⇧⌘L). The flag gets the color you used last. Works while Mail is in front.",
+        "de": "E-Mail › Markierung › Markierung ein-/ausblenden (⇧⌘L). Die Markierung bekommt die Farbe, die du zuletzt verwendet hast. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Indicador › Alternar indicador (⇧⌘L). El indicador toma el último color que usaste. Funciona cuando Mail está delante.",
+        "fr": "Message › Drapeau › Activer/désactiver le drapeau (⇧⌘L). Le drapeau prend la dernière couleur utilisée. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Установить флажок › Переключить флажок (⇧⌘L). Флажок будет того цвета, который вы выбрали в прошлый раз. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Flags or unflags the selected messages",
@@ -597,18 +597,18 @@
         "ru": "Напомнит о письме через час; удержание — завтра"
       },
       "details": {
-        "en": "Message › Remind Me: when the time comes, Mail puts the selected message back at the top of the Inbox. Clear Reminder in the same menu undoes it. Works while Mail is in front.",
-        "de": "E-Mail › Erinnerung: Zur gewählten Zeit holt Mail die ausgewählte E-Mail wieder oben in den Eingang. „Erinnerung löschen“ im selben Menü macht das rückgängig. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Recordar: llegado el momento, Mail devuelve el mensaje seleccionado al principio de Entrada. «Borrar recordatorio», en el mismo menú, lo deshace. Funciona cuando Mail está delante.",
-        "fr": "Message › Rappel : le moment venu, Mail remet le message sélectionné en haut de la boîte de réception. « Effacer le rappel », dans le même menu, l’annule. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Напомнить: в назначенное время «Почта» вернёт выбранное письмо наверх «Входящих». «Убрать напоминание» в том же меню всё отменит. Работает, когда «Почта» на переднем плане."
+        "en": "When the time comes, Mail puts the message back at the top of the Inbox. To cancel, choose Clear Reminder in the Message menu. Works while Mail is in front.",
+        "de": "Zur gewählten Zeit holt Mail die E-Mail wieder oben in den Eingang. Zum Abbrechen wähle „Erinnerung löschen“ im Menü „E-Mail“. Funktioniert, wenn Mail vorne ist.",
+        "es": "Llegado el momento, Mail devuelve el mensaje al principio de Entrada. Para cancelarlo, elige «Borrar recordatorio» en el menú Mensaje. Funciona cuando Mail está delante.",
+        "fr": "Le moment venu, Mail remet le message en haut de la boîte de réception. Pour l’annuler, choisissez « Effacer le rappel » dans le menu Message. Fonctionne quand Mail est au premier plan.",
+        "ru": "В назначенное время «Почта» вернёт письмо наверх «Входящих». Чтобы отменить напоминание, выберите «Убрать напоминание» в меню «Письмо». Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Reminds you of the message in 1 hour",
         "de": "Erinnert in einer Stunde an die E-Mail",
         "es": "Te recuerda el mensaje dentro de 1 hora",
         "fr": "Vous rappelle le message dans 1 heure",
-        "ru": "Напоминает о письме через 1 ч"
+        "ru": "Напоминает о письме через час"
       },
       "holdAction": {
         "en": "Reminds you of the message tomorrow",
@@ -657,11 +657,11 @@
         "ru": "Перемещает выбранные письма в «Спам» (⇧⌘J)"
       },
       "details": {
-        "en": "Message › Move to Junk (⇧⌘J): the selected messages go to the Junk mailbox, and Mail’s junk filter learns from them. Works while Mail is in front.",
-        "de": "E-Mail › In „Spam“ bewegen (⇧⌘J): Die ausgewählten E-Mails kommen ins Postfach „Spam“, und der Spamfilter von Mail lernt daraus. Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Trasladar a «No deseado» (⇧⌘J): los mensajes seleccionados van al buzón No deseado y el filtro de correo no deseado de Mail aprende de ellos. Funciona cuando Mail está delante.",
-        "fr": "Message › Déplacer vers Indésirables (⇧⌘J) : les messages sélectionnés vont dans la boîte Indésirables, et le filtre de Mail en tient compte. Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Переместить в папку «Спам» (⇧⌘J): выбранные письма уходят в ящик «Спам», а фильтр спама «Почты» учится на них. Работает, когда «Почта» на переднем плане."
+        "en": "Message › Move to Junk (⇧⌘J). Mail’s junk filter learns from the messages you move there. Works while Mail is in front.",
+        "de": "E-Mail › In „Spam“ bewegen (⇧⌘J). Der Spamfilter von Mail lernt aus den E-Mails, die du dorthin verschiebst. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Trasladar a «No deseado» (⇧⌘J). El filtro de correo no deseado de Mail aprende de los mensajes que mueves allí. Funciona cuando Mail está delante.",
+        "fr": "Message › Déplacer vers Indésirables (⇧⌘J). Le filtre de courrier indésirable de Mail apprend des messages que vous y déplacez. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Переместить в папку «Спам» (⇧⌘J). Фильтр спама «Почты» учится на письмах, которые вы туда перемещаете. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Moves the selected messages to Junk",
@@ -710,11 +710,11 @@
         "ru": "Выбирает письмо выше в списке (↑)"
       },
       "details": {
-        "en": "The ↑ key in Mail’s message list, for reading through without the Mac’s keyboard. Works while Mail is in front and its list, not the message, has the focus.",
-        "de": "Die Taste ↑ in der E-Mail-Liste von Mail, zum Durchlesen ohne die Tastatur des Mac. Funktioniert, wenn Mail vorne ist und die Liste, nicht die E-Mail, den Fokus hat.",
-        "es": "La tecla ↑ en la lista de mensajes de Mail, para leer uno tras otro sin el teclado del Mac. Funciona cuando Mail está delante y la lista, no el mensaje, tiene el foco.",
-        "fr": "La touche ↑ dans la liste des messages de Mail, pour les lire à la suite sans le clavier du Mac. Fonctionne quand Mail est au premier plan et que la liste, pas le message, a le focus.",
-        "ru": "Клавиша ↑ в списке писем «Почты» — читать письма подряд без клавиатуры Mac. Работает, когда «Почта» на переднем плане и фокус в списке, а не в письме."
+        "en": "Handy for reading one message after another without the Mac’s keyboard. Works while Mail is in front and the message list, not the message, has the focus.",
+        "de": "Praktisch, um E-Mails nacheinander ohne die Tastatur des Mac zu lesen. Funktioniert, wenn Mail vorne ist und die Liste, nicht die E-Mail, den Fokus hat.",
+        "es": "Útil para leer los mensajes uno tras otro sin el teclado del Mac. Funciona cuando Mail está delante y la lista, no el mensaje, tiene el foco.",
+        "fr": "Pratique pour lire les messages à la suite sans le clavier du Mac. Fonctionne quand Mail est au premier plan et que la liste, pas le message, a le focus.",
+        "ru": "Пригодится, чтобы читать письма подряд, не трогая клавиатуру Mac. Работает, когда «Почта» на переднем плане и активен список писем, а не само письмо."
       },
       "tapAction": {
         "en": "Goes to the message above",
@@ -760,11 +760,11 @@
         "ru": "Выбирает письмо ниже в списке (↓)"
       },
       "details": {
-        "en": "The ↓ key in Mail’s message list, for reading through without the Mac’s keyboard. Works while Mail is in front and its list, not the message, has the focus.",
-        "de": "Die Taste ↓ in der E-Mail-Liste von Mail, zum Durchlesen ohne die Tastatur des Mac. Funktioniert, wenn Mail vorne ist und die Liste, nicht die E-Mail, den Fokus hat.",
-        "es": "La tecla ↓ en la lista de mensajes de Mail, para leer uno tras otro sin el teclado del Mac. Funciona cuando Mail está delante y la lista, no el mensaje, tiene el foco.",
-        "fr": "La touche ↓ dans la liste des messages de Mail, pour les lire à la suite sans le clavier du Mac. Fonctionne quand Mail est au premier plan et que la liste, pas le message, a le focus.",
-        "ru": "Клавиша ↓ в списке писем «Почты» — читать письма подряд без клавиатуры Mac. Работает, когда «Почта» на переднем плане и фокус в списке, а не в письме."
+        "en": "Handy for reading one message after another without the Mac’s keyboard. Works while Mail is in front and the message list, not the message, has the focus.",
+        "de": "Praktisch, um E-Mails nacheinander ohne die Tastatur des Mac zu lesen. Funktioniert, wenn Mail vorne ist und die Liste, nicht die E-Mail, den Fokus hat.",
+        "es": "Útil para leer los mensajes uno tras otro sin el teclado del Mac. Funciona cuando Mail está delante y la lista, no el mensaje, tiene el foco.",
+        "fr": "Pratique pour lire les messages à la suite sans le clavier du Mac. Fonctionne quand Mail est au premier plan et que la liste, pas le message, a le focus.",
+        "ru": "Пригодится, чтобы читать письма подряд, не трогая клавиатуру Mac. Работает, когда «Почта» на переднем плане и активен список писем, а не само письмо."
       },
       "tapAction": {
         "en": "Goes to the message below",
@@ -810,11 +810,11 @@
         "ru": "Отмечает выбранные письма прочитанными или нет (⇧⌘U)"
       },
       "details": {
-        "en": "Message › Mark as Read, or Mark as Unread when they are read already (⇧⌘U). Works while Mail is in front.",
-        "de": "E-Mail › Als gelesen markieren, oder „Als ungelesen markieren“, wenn sie schon gelesen sind (⇧⌘U). Funktioniert, wenn Mail vorne ist.",
-        "es": "Mensaje › Marcar como leído, o «Marcar como no leído» si ya están leídos (⇧⌘U). Funciona cuando Mail está delante.",
-        "fr": "Message › Marquer comme lu, ou « Marquer comme non lu » s’ils sont déjà lus (⇧⌘U). Fonctionne quand Mail est au premier plan.",
-        "ru": "Письмо › Отметить как прочитанное — или «Отметить как непрочитанное», если они уже прочитаны (⇧⌘U). Работает, когда «Почта» на переднем плане."
+        "en": "Message › Mark as Read (⇧⌘U). If the messages are already read, the button marks them unread. Works while Mail is in front.",
+        "de": "E-Mail › Als gelesen markieren (⇧⌘U). Sind die E-Mails schon gelesen, markiert die Taste sie als ungelesen. Funktioniert, wenn Mail vorne ist.",
+        "es": "Mensaje › Marcar como leído (⇧⌘U). Si los mensajes ya están leídos, el botón los marca como no leídos. Funciona cuando Mail está delante.",
+        "fr": "Message › Marquer comme lu (⇧⌘U). Si les messages sont déjà lus, le bouton les marque comme non lus. Fonctionne quand Mail est au premier plan.",
+        "ru": "Письмо › Отметить как прочитанное (⇧⌘U). Если письма уже прочитаны, кнопка отметит их непрочитанными. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Marks the messages read or unread",
@@ -863,11 +863,11 @@
         "ru": "Показывает только непрочитанные письма или снова все (⌘L)"
       },
       "details": {
-        "en": "View › Filter › Enable Message Filter (⌘L): the list keeps only unread messages — or what you chose under Filter in Mail — until the next tap. Works while Mail is in front.",
-        "de": "Darstellung › Filter › E-Mail-Filter aktivieren (⌘L): Die Liste zeigt nur Ungelesenes – oder was unter „Filter“ in Mail gewählt ist – bis zum nächsten Tippen. Funktioniert, wenn Mail vorne ist.",
-        "es": "Visualización › Filtrar › Activar filtro de mensajes (⌘L): la lista muestra solo los no leídos (o lo que elegiste en Filtrar, en Mail) hasta el siguiente toque. Funciona cuando Mail está delante.",
-        "fr": "Présentation › Filtrer › Activer le filtre de messages (⌘L) : la liste ne garde que les non lus (ou ce que vous avez choisi dans Filtrer, dans Mail) jusqu’au toucher suivant. Fonctionne quand Mail est au premier plan.",
-        "ru": "Вид › Фильтровать › Включить фильтр писем (⌘L): в списке остаются только непрочитанные — или то, что выбрано в фильтре «Почты», — до следующего нажатия. Работает, когда «Почта» на переднем плане."
+        "en": "View › Filter › Enable Message Filter (⌘L). The list shows only unread messages, or whatever you picked in Mail’s filter. Works while Mail is in front.",
+        "de": "Darstellung › Filter › E-Mail-Filter aktivieren (⌘L). Die Liste zeigt dann nur ungelesene E-Mails oder das, was du im Filter von Mail gewählt hast. Funktioniert, wenn Mail vorne ist.",
+        "es": "Visualización › Filtrar › Activar filtro de mensajes (⌘L). La lista muestra solo los mensajes sin leer, o lo que hayas elegido en el filtro de Mail. Funciona cuando Mail está delante.",
+        "fr": "Présentation › Filtrer › Activer le filtre de messages (⌘L). La liste n’affiche que les messages non lus, ou ce que vous avez choisi dans le filtre de Mail. Fonctionne quand Mail est au premier plan.",
+        "ru": "Вид › Фильтровать › Включить фильтр писем (⌘L). В списке останутся только непрочитанные письма или то, что вы выбрали в фильтре «Почты». Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Turns the message filter on or off",
@@ -915,11 +915,11 @@
         "ru": "Отмечает прочитанным весь открытый ящик, а не только выбранные письма"
       },
       "details": {
-        "en": "Mailbox › Mark All Messages as Read: every message in the mailbox open in Mail. With the Inbox open, Unread goes down to zero. Works while Mail is in front.",
-        "de": "Postfach › Alle Nachrichten als gelesen markieren: alle E-Mails im Postfach, das in Mail geöffnet ist. Ist der Eingang geöffnet, geht Ungelesen auf null. Funktioniert, wenn Mail vorne ist.",
-        "es": "Buzón › Marcar todos los mensajes como leídos: todos los mensajes del buzón abierto en Mail. Con Entrada abierta, No leídos baja a cero. Funciona cuando Mail está delante.",
-        "fr": "Boîte aux lettres › Marquer tous les messages comme lus : tous les messages de la boîte ouverte dans Mail. Avec la boîte de réception ouverte, Non lus revient à zéro. Fonctionne quand Mail est au premier plan.",
-        "ru": "Ящик › Отметить все письма как прочитанные: все письма ящика, открытого в «Почте». Когда открыты «Входящие», «Непрочитанные» обнуляется. Работает, когда «Почта» на переднем плане."
+        "en": "Mailbox › Mark All Messages as Read. Handy when unread mail has piled up and you don’t need to read it all. Works while Mail is in front.",
+        "de": "Postfach › Alle Nachrichten als gelesen markieren. Praktisch, wenn sich viel Ungelesenes angesammelt hat und du nicht alles lesen willst. Funktioniert, wenn Mail vorne ist.",
+        "es": "Buzón › Marcar todos los mensajes como leídos. Útil cuando se te han acumulado muchos mensajes sin leer y no hace falta leerlos todos. Funciona cuando Mail está delante.",
+        "fr": "Boîte aux lettres › Marquer tous les messages comme lus. Pratique quand les messages non lus s’accumulent et que vous n’avez pas besoin de tout lire. Fonctionne quand Mail est au premier plan.",
+        "ru": "Ящик › Отметить все письма как прочитанные. Пригодится, когда непрочитанных накопилось много, а читать их все не нужно. Работает, когда «Почта» на переднем плане."
       },
       "tapAction": {
         "en": "Marks every message in the open mailbox as read",
@@ -965,11 +965,11 @@
         "ru": "Читать почту, отвечать и разбирать письма с телефона"
       },
       "details": {
-        "en": "Unread and Get Mail work even with Mail in the background; the other buttons, while Mail is in front. Unread shows Mail’s badge and fits on any other page too. Mark All Read clears the whole open mailbox at once.",
-        "de": "Ungelesen und Empfangen klappen auch mit Mail im Hintergrund, die übrigen Tasten, wenn Mail vorne ist. Ungelesen zeigt das Kennzeichen von Mail und passt auch auf jede andere Seite. Alle gelesen erledigt das ganze geöffnete Postfach auf einmal.",
-        "es": "No leídos y Obtener correo funcionan con Mail en segundo plano; los demás botones, cuando Mail está delante. No leídos muestra el globo de Mail y sirve también en cualquier otra página. Todo leído despacha de una vez todo el buzón abierto.",
-        "fr": "Non lus et Relever fonctionnent même avec Mail en arrière-plan ; les autres boutons, quand Mail est au premier plan. Non lus affiche la pastille de Mail et va aussi sur toute autre page. Tout lu traite d’un coup toute la boîte ouverte.",
-        "ru": "«Непрочитанные» и «Получить почту» работают, даже когда «Почта» в фоне, остальные кнопки — когда она на переднем плане. «Непрочитанные» показывает наклейку «Почты» и подойдёт для любой страницы. «Всё прочитано» разом разбирает весь открытый ящик."
+        "en": "Unread and Get Mail work even with Mail in the background. The other buttons need Mail in front. Unread is handy on your other pages too, so you always see how many messages are unread.",
+        "de": "Ungelesen und Empfangen funktionieren auch mit Mail im Hintergrund. Für die übrigen Tasten muss Mail vorne sein. Ungelesen ist auch auf deinen anderen Seiten praktisch, denn so siehst du immer, wie viele E-Mails ungelesen sind.",
+        "es": "No leídos y Obtener correo funcionan aunque Mail esté en segundo plano. Los demás botones necesitan que Mail esté delante. No leídos también es útil en tus otras páginas, para ver siempre cuántos mensajes tienes sin leer.",
+        "fr": "Non lus et Relever fonctionnent même avec Mail en arrière-plan. Pour les autres boutons, Mail doit être au premier plan. Non lus est aussi pratique sur vos autres pages, pour savoir à tout moment combien de messages restent à lire.",
+        "ru": "«Непрочитанные» и «Получить почту» работают, даже когда «Почта» в фоне. Остальным кнопкам нужно, чтобы «Почта» была на переднем плане. Кнопка «Непрочитанные» пригодится и на других страницах, чтобы всегда видеть, сколько писем не прочитано."
       },
       "bindByDefault": true,
       "placements": [

@@ -1,6 +1,6 @@
 {
   "id": "speed-test",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Speed Test",
@@ -10,20 +10,20 @@
     "ru": "Тест скорости"
   },
   "summary": {
-    "en": "Internet speed on a tap, measured by macOS: download big, upload below",
-    "de": "Internetgeschwindigkeit per Tippen, gemessen von macOS: Download groß, Upload darunter",
-    "es": "Velocidad de internet con un toque, medida por macOS: descarga en grande, subida debajo",
-    "fr": "Débit Internet d’un simple toucher, mesuré par macOS : descendant en grand, montant dessous",
-    "ru": "Скорость интернета по нажатию, измеряет macOS: скачивание крупно, отдача под ним"
+    "en": "The Mac’s download and upload speed, measured on a tap",
+    "de": "Download- und Upload-Geschwindigkeit des Mac, gemessen per Tippen",
+    "es": "La velocidad de descarga y subida del Mac, medida con un toque",
+    "fr": "Les débits descendant et montant du Mac, mesurés d’un toucher",
+    "ru": "Скорость скачивания и отдачи на Mac, замер по нажатию"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The last test: download ↓ large, upload ↑ small; pink means under 10 Mbps. While a test runs, it takes up the whole connection.",
-    "de": "Download ↓ groß und Upload ↑ klein aus dem letzten Test; Pink heißt unter 10 Mbps. Solange ein Test läuft, lastet er die Verbindung voll aus.",
-    "es": "La descarga ↓ en grande y la subida ↑ en pequeño de la última prueba; el rosa indica menos de 10 Mbps. Mientras dura una prueba, ocupa toda la conexión.",
-    "fr": "Le débit descendant ↓ en grand et montant ↑ en petit du dernier test ; le rose signifie moins de 10 Mbps. Pendant un test, la connexion est entièrement occupée.",
-    "ru": "Итог последнего замера: крупно скачивание ↓, мелко отдача ↑; розовый — меньше 10 Mbps. Пока идёт замер, он занимает весь канал."
+    "en": "The big number is the download speed, the small one below is the upload. Below 10 Mbps the button turns pink. A test uses the whole connection while it runs, so a call may stutter.",
+    "de": "Die große Zahl ist die Download-Geschwindigkeit, die kleine darunter der Upload. Unter 10 Mbps wird die Taste pink. Während des Tests ist die Verbindung voll ausgelastet, ein Anruf kann also stocken.",
+    "es": "El número grande es la velocidad de descarga, y el pequeño de debajo, la de subida. Por debajo de 10 Mbps el botón se vuelve rosa. Mientras dura la prueba ocupa toda la conexión, así que una llamada puede entrecortarse.",
+    "fr": "Le grand nombre est le débit descendant, le petit en dessous le débit montant. Sous 10 Mbps, le bouton devient rose. Pendant le test, la connexion est entièrement occupée, et un appel peut donc saccader.",
+    "ru": "Крупное число показывает скорость скачивания, а маленькое под ним — скорость отдачи. Ниже 10 Mbps кнопка становится розовой. Пока идёт замер, он занимает весь канал, поэтому звонок может прерываться."
   },
   "tapAction": {
     "en": "Runs a speed test (about 20 seconds)",

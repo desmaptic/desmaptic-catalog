@@ -1,5 +1,9 @@
 #!/bin/zsh
 # Headphones: battery of the connected Bluetooth headphones — AirPods left, right and case, or one battery — as small neon gauges
+# Where the levels come from: system_profiler's Bluetooth report (read once a minute) gives AirPods and Beats their
+# left, right and case, but no level for headphones of other makers (a Sony WH-1000XM5). For those the widget takes
+# the one battery macOS shows in `pmset -g accps` under the device's name, read every 15 s; nameless lines there are
+# not used. When neither knows the level, the gauge shows "—". `zsh startup.zsh --check` runs the reading on samples.
 export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 reader=0
@@ -45,7 +49,7 @@ function ascii(c) {
   if (c ~ /[0-9]/) return 0.62
   return 0.56
 }
-function wide(c, t) {                         # one character, in ems; Apple names it "Anna’s AirPods"
+function wide(c, t) {                         # one character, in ems; Apple names it "<Name>’s AirPods"
   if (t == 1) return ascii(c)
   if (c == "’" || c == "‘") return 0.28
   if (c == "“" || c == "”") return 0.45
@@ -248,7 +252,10 @@ hp_frame() {
 # ---- reading ----
 # system_profiler's Bluetooth JSON → "<name>\t<left>\t<right>\t<case>\t<main>" (-1 = not reported) of the connected
 # headphones: minor type Headphones / Headset, anything with per-earbud levels, or an AirPods / Beats product id
-# (Apple 0x20xx). The first one with a battery level wins. Nothing connected → no output.
+# (Apple 0x20xx). The one with the most battery levels wins, the first of equals: AirPods connected to the Mac are
+# listed twice under one name, first over BLE with only the case, then in full. When none has a level (system_profiler
+# reports levels only for Apple and Beats), every connected headphones, one line each, for pmset to look up. Nothing
+# connected → no output.
 read -r -d '' READER_AWK <<'AWK'
 function unq(s) { gsub(/\\"/, "\"", s); gsub(/\\\//, "/", s); gsub(/\\\\/, "\\", s); return s }
 function pct(s) { return (s ~ /^[0-9]+%?$/) ? ((s + 0 > 100) ? 100 : s + 0) : -1 }
@@ -256,8 +263,9 @@ function flush(   hp, score) {
   if (nm == "") return
   hp = (tolower(mt) ~ /headphone|headset/) || bl >= 0 || br >= 0 || bc >= 0 || (vid ~ /^0x004[cC]$/ && pid ~ /^0x20[0-9A-Fa-f][0-9A-Fa-f]$/)
   if (hp) {
-    score = (bl >= 0 || br >= 0 || bc >= 0 || bm >= 0) ? 2 : 1
+    score = 1 + (bl >= 0) + (br >= 0) + (bc >= 0) + (bm >= 0)
     if (score > best) { best = score; out = nm "\t" bl "\t" br "\t" bc "\t" bm }
+    else if (score == 1 && best == 1) out = out "\n" nm "\t-1\t-1\t-1\t-1"
   }
   nm = ""
 }
@@ -291,13 +299,99 @@ BEGIN { best = 0; depth = 0; conn = 0 }
 END { flush(); if (out != "") print out }
 AWK
 
+# `pmset -g accps` → the level of the accessory named $HP_WANT, nothing when it has none. macOS knows the battery of
+# headphones system_profiler gives no level for (a Sony WH-1000XM5) and lists it here under the device's name:
+# " -WH-1000XM5 (id=41000003)\t80%; discharging present: true". Lines without a name (" - (id=…)\t1%") are
+# skipped: nothing tells whose they are.
+read -r -d '' ACCPS_AWK <<'AWK'
+BEGIN { want = ENVIRON["HP_WANT"] }
+/^[ \t]*-/ {
+  line = $0; sub(/^[ \t]*-/, "", line)
+  if (!match(line, /[ \t]*\(id=[0-9]+\)/)) next
+  nm = substr(line, 1, RSTART - 1); rest = substr(line, RSTART + RLENGTH)
+  sub(/^[ \t]+/, "", nm)
+  if (nm == "" || nm != want || !match(rest, /[0-9]+%/)) next
+  v = substr(rest, RSTART, RLENGTH - 1) + 0
+  print (v > 100 ? 100 : v); exit
+}
+AWK
+
+# accps_level <name> < pmset's text: prints the level, -1 when pmset does not know it.
+accps_level() {
+  local v
+  [[ -n $1 ]] && v=$(HP_WANT=$1 awk "$ACCPS_AWK" 2>/dev/null)
+  [[ $v == <-> ]] && print -r -- $v || print -- -1
+}
+
+# choose <reader's output> <pmset's text>: sets state, mode, left, right, case_, main, name, and lent=1 when the level
+# came from pmset. AirPods and Beats keep system_profiler's left, right and case; any other headphones take pmset's one
+# battery — the first connected one pmset knows by name.
+choose() {
+  local n v line
+  local -a lines=( ${(f)1} )
+  state=none mode=buds left=-1 right=-1 case_=-1 main=-1 name="" lent=0
+  (( $#lines )) || return 0
+  IFS=$'\t' read -r name left right case_ main <<< "${lines[1]}"
+  state=live mode=single
+  if (( left >= 0 || right >= 0 || case_ >= 0 )); then
+    mode=buds
+  elif (( main < 0 )); then
+    for line in $lines; do
+      n=${line%%$'\t'*}
+      v=$(accps_level "$n" <<< "$2")
+      if (( v >= 0 )); then name=$n main=$v lent=1; break; fi
+    done
+  fi
+  return 0
+}
+
+# zsh startup.zsh --check: the reading on samples of system_profiler and pmset; touches nothing, exits 1 on a miss.
+if [[ $1 == --check ]]; then
+  failed=0
+  expect() { [[ $2 == $3 ]] && print -r -- "ok    $1" || { print -r -- "FAIL  $1: got “$2”, want “$3”"; failed=1 } }
+  named=$' -WH-1000XM5 (id=41000003)\t80%; discharging present: true'
+  unnamed=$' - (id=41000001)\t1%; discharging present: true\n - (id=41000002)\t75%; charging; 0:00 remaining present: true'
+  mac=$' -InternalBattery-0 (id=41000000)\t64%; discharging; 4:12 remaining present: true'
+  airpods=$' -AirPods Pro (id=41000004)\t76%; discharging present: true'
+  with_name="Now drawing from 'AC Power'"$'\n'$unnamed$'\n'$named
+  without_name="Now drawing from 'Battery Power'"$'\n'$mac$'\n'$unnamed
+  with_airpods="Now drawing from 'AC Power'"$'\n'$unnamed$'\n'$airpods$'\n'${named/80%/100%}
+  expect "pmset, with a name"              "$(accps_level WH-1000XM5 <<< $with_name)"     80
+  expect "pmset, an empty name"            "$(accps_level '' <<< $with_name)"            -1
+  expect "pmset, only lines without names" "$(accps_level WH-1000XM5 <<< $without_name)" -1
+  expect "pmset, the Mac's own battery"    "$(accps_level InternalBattery-0 <<< $without_name)" 64
+  expect "pmset, AirPods beside"           "$(accps_level WH-1000XM5 <<< $with_airpods)" 100
+  expect "pmset, a name matches whole"     "$(accps_level AirPods <<< $with_airpods)"    -1
+  sp() {                                         # system_profiler's JSON with these devices connected
+    local d sep=""
+    print '{\n  "SPBluetoothDataType" : [\n    {\n      "device_connected" : ['
+    for d in "$@"; do print -rn -- "$sep"; print -n -- "        {\n          $d\n        }"; sep=$',\n'; done
+    print '\n      ]\n    }\n  ]\n}'
+  }
+  sony='"WH-1000XM5" : {\n            "device_minorType" : "Headset",\n            "device_productID" : "0x0DF0",\n            "device_vendorID" : "0x054C"\n          }'
+  pods='"AirPods Pro" : {\n            "device_batteryLevelCase" : "40%",\n            "device_batteryLevelLeft" : "75%",\n            "device_batteryLevelRight" : "76%",\n            "device_minorType" : "Headphones",\n            "device_productID" : "0x2024",\n            "device_vendorID" : "0x004C"\n          }'
+  mouse='"Mouse" : {\n            "device_batteryLevelMain" : "50%",\n            "device_minorType" : "Mouse"\n          }'
+  pods_ble='"AirPods Pro" : {\n            "device_batteryLevelCase" : "92%",\n            "device_firmwareVersion" : "0A2149j",\n            "device_rssi" : "-46",\n            "device_services" : "0x400000 < BLE >"\n          }'
+  pods_full='"AirPods Pro" : {\n            "device_batteryLevelCase" : "92%",\n            "device_batteryLevelLeft" : "100%",\n            "device_batteryLevelRight" : "100%",\n            "device_minorType" : "Headphones",\n            "device_productID" : "0x2024",\n            "device_services" : "0x980019 < HFP AVRCP A2DP AACP GATT ACL >",\n            "device_vendorID" : "0x004C"\n          }'
+  other='"Headset" : {\n            "device_minorType" : "Headset",\n            "device_vendorID" : "0x0B0E"\n          }'
+  run() { choose "$(sp "${@[2,-1]}" | awk "$READER_AWK")" "$1"; print -r -- "$state $mode $name $left $right $case_ $main $lent" }
+  expect "Sony alone, level from pmset"   "$(run $with_name $mouse $sony)"     "live single WH-1000XM5 -1 -1 -1 80 1"
+  expect "Sony, pmset without names"      "$(run $without_name $sony)"         "live single WH-1000XM5 -1 -1 -1 -1 0"
+  expect "two headsets, pmset knows one"  "$(run $with_name $other $sony)"     "live single WH-1000XM5 -1 -1 -1 80 1"
+  expect "two headsets, pmset knows none" "$(run $without_name $other $sony)"  "live single Headset -1 -1 -1 -1 0"
+  expect "AirPods beside Sony"            "$(run $with_airpods $sony $pods)"   "live buds AirPods Pro 75 76 40 -1 0"
+  expect "AirPods twice, BLE case first"  "$(run $with_airpods $pods_ble $pods_full)" "live buds AirPods Pro 100 100 92 -1 0"
+  expect "nothing connected"              "$(run $with_name $mouse)"           "none buds  -1 -1 -1 -1 0"
+  exit $failed
+fi
+
 cell="{{CELL_ID}}"
 api="http://127.0.0.1:9848/api"
 dir="${DESMAPTIC_STORAGE:-$HOME/Library/Application Support/Desmaptic/ScriptStorage}/gallery/$cell"
 zf_mkdir -p "$dir" 2>/dev/null || print -u2 -- "headphones: cannot create $dir"
 
-# Sets state, mode, left, right, case_, main and name from one system_profiler run (1–2 s; once a minute at most).
-# It runs in the background so the TERM trap can stop it.
+# Sets state, mode, left, right, case_, main, name and lent from one system_profiler run (1–2 s; once a minute at most)
+# and, for headphones it gives no level, one pmset run. system_profiler runs in the background so the TERM trap can stop it.
 sample() {
   local raw="$dir/bluetooth.json" out
   system_profiler -timeout 20 SPBluetoothDataType -json > "$raw" 2>/dev/null &
@@ -306,12 +400,7 @@ sample() {
   reader=0
   [[ -s $raw ]] || print -u2 -- "headphones: system_profiler gave nothing (Bluetooth off?)"
   out=$(awk "$READER_AWK" "$raw" 2>/dev/null)
-  state=none mode=buds left=-1 right=-1 case_=-1 main=-1 name=""
-  [[ -n $out ]] || return 0
-  IFS=$'\t' read -r name left right case_ main <<< "$out"
-  state=live mode=single
-  (( left >= 0 || right >= 0 || case_ >= 0 )) && mode=buds
-  return 0
+  choose "$out" "$([[ -n $out ]] && pmset -g accps 2>/dev/null)"
 }
 
 # post <2×1 frame> <1×2 frame>: sets code, and seen=0 when the phone says the button is off screen.
@@ -339,7 +428,7 @@ on_screen() {
   [[ $answer == *${(L)cell}* ]]
 }
 
-last="" seen=1 next=0
+last="" seen=1 next=0 lnext=0 lent=0
 while true; do
   if (( ! seen )); then                          # off screen: no sampling, one look at the phone every 3 s
     until on_screen; do zselect -t 300; done
@@ -348,7 +437,13 @@ while true; do
   if (( EPOCHSECONDS >= next )); then
     if ! on_screen; then seen=0; continue; fi
     sample
-    next=$(( EPOCHSECONDS + 60 ))
+    next=$(( EPOCHSECONDS + 60 )) lnext=$(( EPOCHSECONDS + 15 ))
+  elif (( lent && EPOCHSECONDS >= lnext )); then   # a level from pmset: it answers in milliseconds, so every 15 s
+    if ! on_screen; then seen=0; continue; fi
+    level=$(pmset -g accps 2>/dev/null | accps_level "$name")
+    lnext=$(( EPOCHSECONDS + 15 ))
+    if (( level < 0 )); then next=0; continue; fi  # gone from pmset: disconnected? system_profiler tells now
+    main=$level
   fi
   key="$state $mode $left $right $case_ $main $name"
   if [[ $key != $last ]]; then
@@ -362,5 +457,6 @@ while true; do
     (( seen )) || continue
   fi
   wait_s=$(( next - EPOCHSECONDS ))
+  (( lent && lnext < next )) && wait_s=$(( lnext - EPOCHSECONDS ))
   (( wait_s > 0 )) && zselect -t $(( wait_s * 100 ))
 done

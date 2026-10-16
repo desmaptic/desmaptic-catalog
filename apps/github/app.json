@@ -1,0 +1,215 @@
+{
+  "id": "github",
+  "revision": 3,
+  "name": "GitHub",
+  "bundleIds": ["com.github.GitHubClient"],
+  "commands": ["gh"],
+  "minAgentVersion": "2.1.1",
+  "category": "development",
+  "buttons": [
+    {
+      "id": "ci",
+      "title": {"en": "CI", "de": "CI", "es": "CI", "fr": "CI", "ru": "CI"},
+      "summary": {
+        "en": "Your branch’s last GitHub Actions run as the button’s color; hold twice to rerun its failed jobs",
+        "de": "Der letzte GitHub-Actions-Lauf deines Branches als Farbe der Taste; zweimal halten, um fehlgeschlagene Jobs neu zu starten",
+        "es": "La última ejecución de GitHub Actions de tu rama como color del botón; mantén pulsado dos veces para relanzar los jobs fallidos",
+        "fr": "La dernière exécution GitHub Actions de votre branche en couleur sur le bouton ; maintenez deux fois pour relancer les jobs en échec",
+        "ru": "Цвет кнопки показывает, как прошёл последний запуск GitHub Actions в вашей ветке; удержание дважды — перезапуск упавших jobs"
+      },
+      "details": {
+        "en": "The button turns green when the last run passed, red when it failed, orange while it’s running or waiting for approval, and gray with a slash if it was canceled. Tap a gray triangle to see what’s wrong. Set the repository in the button’s settings, under Advanced.",
+        "de": "Die Taste wird grün, wenn der letzte Lauf bestanden hat, rot, wenn er fehlgeschlagen ist, orange, solange er läuft oder auf eine Freigabe wartet, und grau mit einem Schrägstrich, wenn er abgebrochen wurde. Ist sie grau mit einem Dreieck, tippe darauf, und sie sagt dir, was nicht stimmt. Das Repository trägst du in den Einstellungen der Taste unter „Erweitert“ ein.",
+        "es": "El botón se pone verde si la última ejecución salió bien, rojo si falló, naranja mientras está en curso o espera aprobación, y gris con una barra si se canceló. Si está gris con un triángulo, tócalo y te dirá qué pasa. Pon el repositorio en los ajustes del botón, en «Avanzado».",
+        "fr": "Le bouton devient vert si la dernière exécution a réussi, rouge si elle a échoué, orange tant qu’elle tourne ou attend une approbation, et gris avec une barre si elle a été annulée. S’il est gris avec un triangle, touchez-le pour savoir ce qui ne va pas. Indiquez le dépôt dans les réglages du bouton, sous « Avancé ».",
+        "ru": "Кнопка зелёная, если последний запуск прошёл, красная, если упал, оранжевая, пока он идёт или ждёт одобрения, и серая с чертой, если его отменили. Если она серая с треугольником, нажмите её, и она скажет, что не так. Репозиторий укажите в настройках кнопки, в разделе «Дополнительно»."
+      },
+      "tapAction": {
+        "en": "Opens the run in the browser",
+        "de": "Öffnet den Lauf im Browser",
+        "es": "Abre la ejecución en el navegador",
+        "fr": "Ouvre l’exécution dans le navigateur",
+        "ru": "Открывает запуск в браузере"
+      },
+      "holdAction": {
+        "en": "Reruns the failed jobs if you hold it again within 10 seconds",
+        "de": "Startet die fehlgeschlagenen Jobs neu, wenn du die Taste innerhalb von 10 Sekunden noch einmal hältst",
+        "es": "Vuelve a ejecutar los jobs fallidos si lo mantienes pulsado otra vez en menos de 10 segundos",
+        "fr": "Relance les jobs en échec si vous le maintenez à nouveau dans les 10 secondes",
+        "ru": "Перезапускает упавшие jobs, если удержать кнопку ещё раз в течение 10 секунд"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "circle.dashed"}},
+        "color": "#8E8E93",
+        "command": {"shellCommand": {"command": "@file:gh.zsh\n@file:ci/open.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "@file:gh.zsh\n@file:ci/rerun.zsh"}},
+        "startupScript": "repo=\"\"   # ← the repository: its folder on the Mac (\"~/Developer/my-app\") or owner/name; empty: the one set last on any GitHub button\n@file:gh.zsh\n@file:ci/startup.zsh"
+      }
+    },
+    {
+      "id": "merge",
+      "title": {"en": "Merge When Green", "de": "Mergen bei Grün", "es": "Fusionar en verde", "fr": "Fusionner au vert", "ru": "Слить при зелёном"},
+      "summary": {
+        "en": "Merges your branch’s pull request once its checks pass; hold to turn auto-merge off",
+        "de": "Mergt den Pull Request deines Branches, sobald die Checks durch sind; halten, um Auto-Merge auszuschalten",
+        "es": "Fusiona el pull request de tu rama cuando pasen sus checks; mantén pulsado para quitar la fusión automática",
+        "fr": "Fusionne la pull request de votre branche dès que ses checks passent ; maintenez pour couper la fusion automatique",
+        "ru": "Сливает pull request вашей ветки, когда пройдут проверки; удержание — выключить автослияние"
+      },
+      "details": {
+        "en": "GitHub merges the pull request once its required checks pass, but only if its last commit is the one the Mac is on. If no checks are required, tap once they’re all green. Set the folder and merge method in the button’s settings.",
+        "de": "GitHub mergt den Pull Request, sobald die erforderlichen Checks durch sind, aber nur, wenn der Mac auf dem letzten Commit des Pull Requests steht. Ist kein Check erforderlich, tippe erst, wenn alle grün sind. Ordner und Merge-Methode trägst du in den Einstellungen der Taste ein.",
+        "es": "GitHub fusiona el pull request cuando pasan los checks obligatorios, pero solo si el Mac está en el último commit del pull request. Si ningún check es obligatorio, toca cuando todos estén en verde. Pon la carpeta y el método de fusión en los ajustes del botón.",
+        "fr": "GitHub fusionne la pull request dès que les checks requis passent, mais seulement si le Mac est sur le dernier commit de la pull request. Si aucun check n’est requis, touchez quand tous sont au vert. Indiquez le dossier et la méthode de fusion dans les réglages du bouton.",
+        "ru": "GitHub сольёт pull request, как только пройдут обязательные проверки, но только если Mac стоит на его последнем коммите. Если обязательных проверок нет, нажимайте, когда все станут зелёными. Папку и способ слияния укажите в настройках кнопки."
+      },
+      "tapAction": {
+        "en": "Turns on auto-merge for the branch’s pull request",
+        "de": "Schaltet Auto-Merge für den Pull Request des Branches ein",
+        "es": "Activa la fusión automática del pull request de la rama",
+        "fr": "Active la fusion automatique de la pull request de la branche",
+        "ru": "Включает автослияние для pull request ветки"
+      },
+      "holdAction": {
+        "en": "Turns auto-merge off again",
+        "de": "Schaltet Auto-Merge wieder aus",
+        "es": "Vuelve a quitar la fusión automática",
+        "fr": "Coupe à nouveau la fusion automatique",
+        "ru": "Снова выключает автослияние"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.triangle.merge"}},
+        "color": "#32D74B",
+        "command": {"shellCommand": {"command": "repo=\"\"   # ← the repository’s folder on the Mac, e.g. \"~/Developer/my-app\" (this button takes none from other buttons)\nmethod=\"\"   # ← squash, merge or rebase; empty: the one GitHub offers you first there\naction=auto\n@file:gh.zsh\n@file:merge.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "repo=\"\"   # ← empty: the folder of the Tap script\nmethod=\"\"\naction=off\n@file:gh.zsh\n@file:merge.zsh"}}
+      }
+    },
+    {
+      "id": "new-pr",
+      "title": {"en": "New PR", "de": "Neuer PR", "es": "Nuevo PR", "fr": "Nouvelle PR", "ru": "Новый PR"},
+      "summary": {
+        "en": "Opens GitHub’s page for a new pull request from your branch",
+        "de": "Öffnet die GitHub-Seite für einen neuen Pull Request aus deinem Branch",
+        "es": "Abre la página de GitHub para un nuevo pull request desde tu rama",
+        "fr": "Ouvre la page GitHub d’une nouvelle pull request depuis votre branche",
+        "ru": "Открывает страницу GitHub для нового pull request из вашей ветки"
+      },
+      "details": {
+        "en": "You write the title and description on GitHub’s page. If the branch isn’t pushed yet, the button reminds you to push it, and if it already has a pull request, it opens that instead. Set the folder in the button’s settings.",
+        "de": "Titel und Beschreibung schreibst du auf der GitHub-Seite. Ist der Branch noch nicht gepusht, erinnert dich die Taste daran, und gibt es schon einen Pull Request, öffnet sie diesen. Den Ordner trägst du in den Einstellungen der Taste ein.",
+        "es": "El título y la descripción los escribes en la página de GitHub. Si aún no has hecho push de la rama, el botón te lo recuerda, y si ya tiene un pull request, abre ese. Pon la carpeta en los ajustes del botón.",
+        "fr": "Vous écrivez le titre et la description sur la page GitHub. Si la branche n’est pas encore poussée, le bouton vous le rappelle, et si elle a déjà une pull request, il l’ouvre. Indiquez le dossier dans les réglages du bouton.",
+        "ru": "Заголовок и описание вы напишете на странице GitHub. Если ветку ещё не отправили, кнопка напомнит сделать push, а если pull request уже есть, откроет его. Папку укажите в настройках кнопки."
+      },
+      "tapAction": {
+        "en": "Opens the new pull request page in the browser",
+        "de": "Öffnet die Seite für den neuen Pull Request im Browser",
+        "es": "Abre la página del nuevo pull request en el navegador",
+        "fr": "Ouvre la page de la nouvelle pull request dans le navigateur",
+        "ru": "Открывает страницу нового pull request в браузере"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "plus.circle"}},
+        "color": "#0A84FF",
+        "command": {"shellCommand": {"command": "repo=\"\"   # ← the repository’s folder on the Mac, e.g. \"~/Developer/my-app\"; empty: the one set last on any GitHub button\n@file:gh.zsh\n@file:new-pr.zsh"}}
+      }
+    },
+    {
+      "id": "prs",
+      "title": {"en": "My PRs", "de": "Meine PRs", "es": "Mis PR", "fr": "Mes PR", "ru": "Мои PR"},
+      "summary": {
+        "en": "How many of your pull requests are open and how many wait for your review",
+        "de": "Wie viele deiner Pull Requests offen sind und wie viele auf dein Review warten",
+        "es": "Cuántos de tus pull requests siguen abiertos y cuántos esperan tu revisión",
+        "fr": "Combien de vos pull requests sont ouvertes et combien attendent votre revue",
+        "ru": "Сколько ваших pull request открыто и сколько ждут вашего ревью"
+      },
+      "details": {
+        "en": "The button shows how many of your pull requests are open. When someone waits for your review, a second number appears and the button turns orange. Set the repository in the button’s settings, under Advanced.",
+        "de": "Die Taste zeigt, wie viele deiner Pull Requests offen sind. Wartet jemand auf dein Review, erscheint eine zweite Zahl und die Taste wird orange. Das Repository trägst du in den Einstellungen der Taste unter „Erweitert“ ein.",
+        "es": "El botón muestra cuántos de tus pull requests siguen abiertos. Si alguien espera tu revisión, aparece un segundo número y el botón se pone naranja. Pon el repositorio en los ajustes del botón, en «Avanzado».",
+        "fr": "Le bouton montre combien de vos pull requests sont ouvertes. Si quelqu’un attend votre revue, un second nombre apparaît et le bouton passe à l’orange. Indiquez le dépôt dans les réglages du bouton, sous « Avancé ».",
+        "ru": "На кнопке видно, сколько ваших pull request открыто. Если кто-то ждёт вашего ревью, рядом появится второе число, и кнопка станет оранжевой. Репозиторий укажите в настройках кнопки, в разделе «Дополнительно»."
+      },
+      "tapAction": {
+        "en": "Opens the repository’s pull requests in the browser",
+        "de": "Öffnet die Pull Requests des Repositorys im Browser",
+        "es": "Abre los pull requests del repositorio en el navegador",
+        "fr": "Ouvre les pull requests du dépôt dans le navigateur",
+        "ru": "Открывает pull request репозитория в браузере"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.triangle.pull"}},
+        "color": "#BF5AF2",
+        "command": {"shellCommand": {"command": "@file:gh.zsh\n@file:prs/open.zsh"}},
+        "startupScript": "repo=\"\"   # ← the repository: its folder on the Mac (\"~/Developer/my-app\") or owner/name; empty: the one set last on any GitHub button\n@file:gh.zsh\n@file:prs/startup.zsh"
+      }
+    },
+    {
+      "id": "open",
+      "title": {"en": "On GitHub", "de": "Auf GitHub", "es": "En GitHub", "fr": "Sur GitHub", "ru": "На GitHub"},
+      "summary": {
+        "en": "Opens the repository on GitHub; hold for your branch’s pull request",
+        "de": "Öffnet das Repository auf GitHub; halten für den Pull Request deines Branches",
+        "es": "Abre el repositorio en GitHub; mantén pulsado para el pull request de tu rama",
+        "fr": "Ouvre le dépôt sur GitHub ; maintenez pour la pull request de votre branche",
+        "ru": "Открывает репозиторий на GitHub; удержание — pull request вашей ветки"
+      },
+      "details": {
+        "en": "Set the repository in the button’s settings, as a folder on the Mac or owner/name. The pull request needs a folder, because the button takes its current branch.",
+        "de": "Das Repository trägst du in den Einstellungen der Taste ein, als Ordner auf dem Mac oder owner/name. Für den Pull Request muss es ein Ordner sein, denn die Taste nimmt dessen aktuellen Branch.",
+        "es": "Pon el repositorio en los ajustes del botón, como carpeta del Mac u owner/name. Para el pull request tiene que ser una carpeta, porque el botón toma su rama actual.",
+        "fr": "Indiquez le dépôt dans les réglages du bouton, sous forme de dossier du Mac ou d’owner/name. Pour la pull request, il faut un dossier, car le bouton prend sa branche actuelle.",
+        "ru": "Репозиторий укажите в настройках кнопки: папку на Mac или owner/name. Для pull request нужна папка, потому что кнопка берёт её текущую ветку."
+      },
+      "tapAction": {
+        "en": "Opens the repository in the browser",
+        "de": "Öffnet das Repository im Browser",
+        "es": "Abre el repositorio en el navegador",
+        "fr": "Ouvre le dépôt dans le navigateur",
+        "ru": "Открывает репозиторий в браузере"
+      },
+      "holdAction": {
+        "en": "Opens the branch’s pull request in the browser",
+        "de": "Öffnet den Pull Request des Branches im Browser",
+        "es": "Abre el pull request de la rama en el navegador",
+        "fr": "Ouvre la pull request de la branche dans le navigateur",
+        "ru": "Открывает pull request ветки в браузере"
+      },
+      "button": {
+        "icon": {"sfSymbol": {"name": "arrow.up.forward.square"}},
+        "color": "#5E5CE6",
+        "command": {"shellCommand": {"command": "repo=\"\"   # ← the repository: its folder on the Mac (\"~/Developer/my-app\") or owner/name; empty: the one set last on any GitHub button\naction=repo\n@file:gh.zsh\n@file:open.zsh"}},
+        "longPressCommand": {"shellCommand": {"command": "repo=\"\"   # ← the repository’s folder on the Mac, e.g. \"~/Developer/my-app\"; empty: the one set last on any GitHub button\naction=pr\n@file:gh.zsh\n@file:open.zsh"}}
+      }
+    }
+  ],
+  "pages": [
+    {
+      "id": "main",
+      "title": {"en": "GitHub", "de": "GitHub", "es": "GitHub", "fr": "GitHub", "ru": "GitHub"},
+      "summary": {
+        "en": "Your branch’s CI, pull requests and merges, through the GitHub CLI",
+        "de": "CI, Pull Requests und Merges deines Branches über die GitHub CLI",
+        "es": "La CI, los pull requests y las fusiones de tu rama, con la CLI de GitHub",
+        "fr": "La CI, les pull requests et les fusions de votre branche, via la CLI GitHub",
+        "ru": "CI, pull request и слияния вашей ветки через GitHub CLI"
+      },
+      "details": {
+        "en": "Needs the GitHub CLI: install it with brew install gh, then sign in with gh auth login in Terminal. If something is missing, the buttons tell you. Set your repository on one button, and the others with an empty setting use it too, except Merge When Green, which needs its own.",
+        "de": "Braucht die GitHub CLI: Installiere sie mit brew install gh und melde dich dann mit gh auth login im Terminal an. Fehlt etwas, sagen es dir die Tasten. Trag dein Repository bei einer Taste ein, dann übernehmen es die anderen mit leerer Einstellung, nur „Mergen bei Grün“ braucht ein eigenes.",
+        "es": "Necesita la CLI de GitHub: instálala con brew install gh y luego inicia sesión con gh auth login en Terminal. Si falta algo, los botones te lo dicen. Pon tu repositorio en un botón y los demás con el ajuste vacío lo usarán también, salvo «Fusionar en verde», que necesita el suyo.",
+        "fr": "Il faut la CLI GitHub : installez-la avec brew install gh, puis connectez-vous avec gh auth login dans Terminal. S’il manque quelque chose, les boutons le disent. Indiquez votre dépôt sur un bouton, et les autres boutons dont le réglage est vide le reprennent, sauf « Fusionner au vert », qui a besoin du sien.",
+        "ru": "Нужен GitHub CLI: установите его командой brew install gh, затем войдите в аккаунт командой gh auth login в Терминале. Если чего-то не хватает, кнопки подскажут. Репозиторий достаточно указать на одной кнопке: остальные с пустой настройкой возьмут его, кроме «Слить при зелёном», которой нужен свой."
+      },
+      "bindByDefault": false,
+      "placements": [
+        {"button": "ci", "row": 0, "col": 0},
+        {"button": "prs", "row": 0, "col": 1},
+        {"button": "new-pr", "row": 0, "col": 2},
+        {"button": "merge", "row": 0, "col": 3},
+        {"button": "open", "row": 1, "col": 0}
+      ]
+    }
+  ]
+}

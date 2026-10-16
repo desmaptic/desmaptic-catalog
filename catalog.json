@@ -12,6 +12,10 @@
     "claude-limits",
     "codex-limits",
     "internet",
+    "pr-review",
+    "github-notifications",
+    "branch-ci",
+    "brew-updates",
     "calendar",
     "reminders-today",
     "timer",
@@ -77,13 +81,24 @@
         "ru": "Вне дома"
       },
       "summary": {
-        "en": "Keep on: a VPN such as Tailscale on the phone and the Mac, Allow Connections over VPN in Desmaptic Agent, and App Lock on the phone.\nAI Sessions: install the Desmaptic plugin in Claude Code or Codex and run its sessions-page command.",
-        "de": "Eingeschaltet lassen: ein VPN wie Tailscale auf Telefon und Mac, „Verbindungen über VPN erlauben“ in Desmaptic Agent und die App-Sperre auf dem Telefon.\nKI-Sitzungen: Installiere das Desmaptic-Plugin in Claude Code oder Codex und führe seinen Befehl sessions-page aus.",
-        "es": "Mantén activados: una VPN como Tailscale en el teléfono y el Mac, «Permitir conexiones por VPN» en Desmaptic Agent y el bloqueo de la app en el teléfono.\nSesiones de IA: instala el plugin de Desmaptic en Claude Code o Codex y ejecuta su comando sessions-page.",
-        "fr": "À garder activés : un VPN comme Tailscale sur le téléphone et le Mac, « Autoriser les connexions via VPN » dans Desmaptic Agent et le verrouillage de l’app sur le téléphone.\nSessions IA : installez le plugin Desmaptic dans Claude Code ou Codex et lancez sa commande sessions-page.",
-        "ru": "Держите включёнными: VPN (например, Tailscale) на телефоне и Mac, «Разрешить соединения через VPN» в Desmaptic Agent и блокировку приложения на телефоне.\nСессии ИИ: установите плагин Desmaptic в Claude Code или Codex и запустите его команду sessions-page."
+        "en": "Away from home, the phone reaches the Mac through a VPN such as Tailscale, so keep it running on both. Also turn on Allow Connections over VPN in Desmaptic Agent and App Lock on the phone.\nTo follow AI sessions from the phone, install the Desmaptic plugin in Claude Code or Codex and run its sessions-page command.",
+        "de": "Unterwegs erreicht das Telefon den Mac über ein VPN wie Tailscale, lass es also auf beiden laufen. Schalte außerdem „Verbindungen über VPN erlauben“ in Desmaptic Agent und die App-Sperre auf dem Telefon ein.\nUm KI-Sitzungen vom Telefon aus zu verfolgen, installiere das Desmaptic-Plugin in Claude Code oder Codex und führe seinen Befehl sessions-page aus.",
+        "es": "Fuera de casa, el teléfono llega al Mac a través de una VPN como Tailscale, así que mantenla activa en los dos. Activa también «Permitir conexiones por VPN» en Desmaptic Agent y el bloqueo de la app en el teléfono.\nPara seguir las sesiones de IA desde el teléfono, instala el plugin de Desmaptic en Claude Code o Codex y ejecuta su comando sessions-page.",
+        "fr": "Hors de chez vous, le téléphone joint le Mac par un VPN comme Tailscale, alors laissez-le actif sur les deux. Activez aussi « Autoriser les connexions via VPN » dans Desmaptic Agent et le verrouillage de l’app sur le téléphone.\nPour suivre les sessions d’IA depuis le téléphone, installez le plugin Desmaptic dans Claude Code ou Codex et lancez sa commande sessions-page.",
+        "ru": "Вне дома телефон связывается с Mac через VPN, например Tailscale, поэтому держите его включённым на обоих устройствах. Также включите «Разрешить соединения через VPN» в Desmaptic Agent и блокировку приложения на телефоне.\nЧтобы следить за сессиями ИИ с телефона, установите плагин Desmaptic в Claude Code или Codex и запустите его команду sessions-page."
       },
       "widgets": ["keep-awake", "mac-screen", "long-jobs", "claude-limits", "codex-limits", "battery", "disk-free", "cpu", "internet"]
+    },
+    {
+      "id": "development",
+      "title": {
+        "en": "Development",
+        "de": "Entwicklung",
+        "es": "Desarrollo",
+        "fr": "Développement",
+        "ru": "Разработка"
+      },
+      "widgets": ["pr-review", "github-notifications", "branch-ci", "brew-updates"]
     },
     {
       "id": "time",
@@ -225,7 +240,7 @@
       }
     }
   ],
-  "apps": ["xcode", "devicehub", "vscode", "cursor", "zed", "jetbrains", "terminal", "iterm2", "ghostty", "warp", "fork", "docker", "postman", "proxyman", "linear", "claude", "chatgpt", "figma", "chrome", "safari", "arc", "slack", "discord", "zoom", "teams", "telegram", "mail", "obsidian", "notion", "reminders", "notes", "raycast", "finder", "spotify", "music"],
+  "apps": ["xcode", "devicehub", "vscode", "cursor", "zed", "jetbrains", "terminal", "iterm2", "ghostty", "warp", "fork", "github", "docker", "tailscale", "homebrew", "postman", "proxyman", "linear", "claude", "chatgpt", "figma", "chrome", "safari", "arc", "slack", "discord", "zoom", "teams", "telegram", "mail", "obsidian", "notion", "reminders", "notes", "raycast", "rectangle", "finder", "spotify", "music"],
   "collections": [
     {
       "id": "unusual",
@@ -237,11 +252,11 @@
         "ru": "Необычное"
       },
       "summary": {
-        "en": "Whole pages that come alive — see what Desmaptic can do.",
-        "de": "Ganze Seiten, die lebendig werden – sieh, was Desmaptic kann.",
-        "es": "Páginas enteras que cobran vida: descubre lo que Desmaptic puede hacer.",
-        "fr": "Des pages entières qui prennent vie — découvrez ce que Desmaptic sait faire.",
-        "ru": "Целые страницы, которые оживают, — посмотрите, на что способен Desmaptic."
+        "en": "Whole pages that come alive and show what Desmaptic can do.",
+        "de": "Ganze Seiten, die lebendig werden und zeigen, was Desmaptic kann.",
+        "es": "Páginas enteras que cobran vida y muestran lo que Desmaptic puede hacer.",
+        "fr": "Des pages entières qui prennent vie et montrent ce que Desmaptic sait faire.",
+        "ru": "Целые страницы, которые оживают и показывают, на что способен Desmaptic."
       },
       "scenes": ["town", "visualizer", "aquarium"]
     }

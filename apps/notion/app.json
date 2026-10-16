@@ -1,6 +1,6 @@
 {
   "id": "notion",
-  "revision": 5,
+  "revision": 6,
   "name": "Notion",
   "bundleIds": ["notion.id"],
   "category": "productivity",
@@ -16,11 +16,11 @@
         "ru": "Находит любую страницу или открывает недавнюю (⌘P); удержание — поиск по странице"
       },
       "details": {
-        "en": "Type part of a page’s title or text and press Return; with nothing typed, it lists the pages you opened lately. Works while Notion is in front.",
-        "de": "Einen Teil von Titel oder Text tippen und Return drücken; ohne Eingabe stehen dort die zuletzt geöffneten Seiten. Funktioniert, wenn Notion vorne ist.",
-        "es": "Escribe parte del título o del texto de una página y pulsa Retorno; sin escribir nada, lista las páginas abiertas hace poco. Funciona cuando Notion está delante.",
-        "fr": "Tapez une partie du titre ou du texte d’une page, puis Retour ; sans rien taper, les pages ouvertes récemment s’affichent. Fonctionne quand Notion est au premier plan.",
-        "ru": "Наберите часть названия или текста страницы и нажмите Return; если ничего не вводить, там будут недавно открытые страницы. Работает, когда Notion на переднем плане."
+        "en": "Type part of a page’s title or text and press Return. With nothing typed, it lists the pages you opened lately. Works while Notion is in front.",
+        "de": "Gib einen Teil des Titels oder Texts einer Seite ein und drücke Return. Ohne Eingabe zeigt die Suche die zuletzt geöffneten Seiten. Funktioniert, wenn Notion vorne ist.",
+        "es": "Escribe parte del título o del texto de una página y pulsa Retorno. Si no escribes nada, verás las páginas que abriste hace poco. Funciona cuando Notion está delante.",
+        "fr": "Tapez une partie du titre ou du texte d’une page, puis appuyez sur Retour. Tant que vous ne tapez rien, les pages ouvertes récemment s’affichent. Fonctionne quand Notion est au premier plan.",
+        "ru": "Наберите часть названия или текста страницы и нажмите Return. Пока поле пустое, в поиске видны недавно открытые страницы. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Opens search",
@@ -55,11 +55,11 @@
         "ru": "Создаёт новую страницу и открывает её"
       },
       "details": {
-        "en": "The page lands where Notion puts new pages, in the workspace you used last. Works even with Notion in the background.",
-        "de": "Die Seite landet dort, wo Notion neue Seiten ablegt, im zuletzt genutzten Workspace. Funktioniert auch mit Notion im Hintergrund.",
-        "es": "La página se crea donde Notion pone las páginas nuevas, en el último espacio de trabajo usado. Funciona aunque Notion esté en segundo plano.",
-        "fr": "La page arrive là où Notion range les nouvelles pages, dans le dernier espace de travail utilisé. Fonctionne même avec Notion en arrière-plan.",
-        "ru": "Страница появится там, куда Notion кладёт новые страницы, в последнем открытом рабочем пространстве. Работает, даже когда Notion в фоне."
+        "en": "The page lands where Notion puts new pages, in the workspace you used last. The button brings Notion forward from any app, but doesn’t start it.",
+        "de": "Die Seite landet dort, wo Notion neue Seiten ablegt, im zuletzt genutzten Workspace. Die Taste holt Notion aus jeder App nach vorne, startet es aber nicht.",
+        "es": "La página se crea donde Notion pone las páginas nuevas, en el último espacio de trabajo usado. El botón trae Notion al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "La page arrive là où Notion range les nouvelles pages, dans le dernier espace de travail utilisé. Le bouton met Notion au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Страница появится там, куда Notion кладёт новые страницы, в последнем открытом рабочем пространстве. Кнопка выводит Notion вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Creates a page and opens it",
@@ -85,11 +85,11 @@
         "ru": "Открывает Notion AI; удержание — чат рядом с открытой страницей"
       },
       "details": {
-        "en": "Notion AI answers from your pages and writes with you; Free and Plus plans get a limited trial. The tap works even with Notion in the background, the long press needs it in front.",
-        "de": "Notion-KI antwortet aus deinen Seiten und schreibt mit dir; im Free Plan und Plus-Plan nur begrenzt zum Testen. Tippen klappt auch mit Notion im Hintergrund, Halten braucht Notion vorne.",
-        "es": "La IA de Notion responde a partir de tus páginas y escribe contigo; en los planes gratuito y Plus es una prueba limitada. El toque funciona aunque Notion esté en segundo plano; mantener pulsado requiere Notion delante.",
-        "fr": "L’IA de Notion répond à partir de vos pages et écrit avec vous ; avec les forfaits Gratuit et Plus, c’est un essai limité. Le toucher fonctionne même avec Notion en arrière-plan, l’appui long demande Notion au premier plan.",
-        "ru": "Notion AI отвечает по вашим страницам и пишет вместе с вами; на тарифах Free и Plus — ограниченный пробный доступ. Нажатие работает, даже когда Notion в фоне; для удержания он должен быть на переднем плане."
+        "en": "Notion AI answers from your pages and writes with you, though Free and Plus plans only get a limited trial. The tap brings Notion forward from any app, but doesn’t start it. The long press works while Notion is in front.",
+        "de": "Notion-KI antwortet aus deinen Seiten und schreibt mit dir, im Free- und Plus-Plan allerdings nur als begrenzter Test. Tippen holt Notion aus jeder App nach vorne, startet es aber nicht. Langes Drücken funktioniert, wenn Notion vorne ist.",
+        "es": "La IA de Notion responde a partir de tus páginas y escribe contigo, aunque en los planes gratuito y Plus solo es una prueba limitada. El toque trae Notion al frente desde cualquier app, pero no lo abre si está cerrado. Mantener pulsado funciona cuando Notion está delante.",
+        "fr": "L’IA de Notion répond à partir de vos pages et écrit avec vous, mais avec les forfaits Gratuit et Plus, ce n’est qu’un essai limité. Le toucher met Notion au premier plan depuis n’importe quelle app, sans le lancer. L’appui long fonctionne quand Notion est au premier plan.",
+        "ru": "Notion AI отвечает по вашим страницам и пишет вместе с вами, хотя на тарифах Free и Plus доступ к нему пробный и ограниченный. Нажатие выводит Notion вперёд из любого приложения, но не запускает его. Удержание работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Opens Notion AI with a new chat",
@@ -117,18 +117,18 @@
       "id": "inbox",
       "title": {"en": "Inbox", "de": "Posteingang", "es": "Bandeja de entrada", "fr": "Boîte de réception", "ru": "Inbox"},
       "summary": {
-        "en": "Notion’s badge on your phone: how many Inbox notifications wait",
-        "de": "Das Notion-Kennzeichen auf dem Telefon: wie viele Benachrichtigungen im Posteingang warten",
-        "es": "El globo de Notion en el teléfono: cuántas notificaciones esperan en la bandeja de entrada",
-        "fr": "La pastille de Notion sur le téléphone : combien de notifications attendent dans la boîte de réception",
-        "ru": "Наклейка Notion на телефоне: сколько уведомлений ждёт в Inbox"
+        "en": "How many unread notifications are waiting for you in Notion",
+        "de": "Wie viele ungelesene Benachrichtigungen in Notion auf dich warten",
+        "es": "Cuántas notificaciones sin leer te esperan en Notion",
+        "fr": "Combien de notifications non lues vous attendent dans Notion",
+        "ru": "Сколько непрочитанных уведомлений ждёт вас в Notion"
       },
       "details": {
-        "en": "The number on Notion’s Dock icon: unread Inbox notifications from all your workspaces. A dash means Notion is closed. The long press needs Notion in front.",
-        "de": "Die Zahl am Dock-Symbol von Notion: ungelesene Benachrichtigungen im Posteingang aus all deinen Workspaces. Ein Strich heißt: Notion ist geschlossen. Halten braucht Notion vorne.",
-        "es": "El número del icono de Notion en el Dock: notificaciones sin leer de la bandeja de entrada de todos tus espacios de trabajo. Una raya indica que Notion está cerrado. Mantener pulsado requiere Notion delante.",
-        "fr": "Le nombre sur l’icône de Notion dans le Dock : notifications non lues de la boîte de réception, tous espaces de travail confondus. Un tiret indique que Notion est fermé. L’appui long demande Notion au premier plan.",
-        "ru": "Число на наклейке значка Notion в Dock: непрочитанные уведомления Inbox из всех ваших рабочих пространств. Прочерк — Notion закрыт. Для удержания Notion должен быть на переднем плане."
+        "en": "The button shows the same number as on Notion’s icon in the Dock, counting unread Inbox notifications from all your workspaces. If Notion is closed, it shows a dash. The long press works while Notion is in front.",
+        "de": "Die Taste zeigt dieselbe Zahl wie das Notion-Symbol im Dock, also die ungelesenen Benachrichtigungen im Posteingang aus all deinen Workspaces. Ist Notion geschlossen, zeigt die Taste einen Strich. Langes Drücken funktioniert, wenn Notion vorne ist.",
+        "es": "El botón muestra el mismo número que el icono de Notion en el Dock, es decir, las notificaciones sin leer de la bandeja de entrada de todos tus espacios de trabajo. Si Notion está cerrado, muestra una raya. Mantener pulsado funciona cuando Notion está delante.",
+        "fr": "Le bouton affiche le même nombre que l’icône de Notion dans le Dock, c’est-à-dire les notifications non lues de la boîte de réception, tous espaces de travail confondus. Si Notion est fermé, il affiche un tiret. L’appui long fonctionne quand Notion est au premier plan.",
+        "ru": "Кнопка показывает то же число, что на значке Notion в Dock, то есть непрочитанные уведомления Inbox из всех ваших рабочих пространств. Если Notion закрыт, на кнопке прочерк. Удержание работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Brings Notion to the front",
@@ -166,11 +166,11 @@
         "ru": "К предыдущей открытой странице; удержание — вперёд"
       },
       "details": {
-        "en": "Clicks History › Back in Notion’s menu, so it works on any keyboard layout. Works while Notion is in front.",
-        "de": "Klickt im Menü von Notion auf Verlauf › Zurück und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn Notion vorne ist.",
-        "es": "Hace clic en Historial › Atrás en el menú de Notion, así que funciona con cualquier distribución de teclado. Funciona cuando Notion está delante.",
-        "fr": "Clique sur Historique › Précédent dans le menu de Notion et fonctionne donc avec toute disposition de clavier. Fonctionne quand Notion est au premier plan.",
-        "ru": "Нажимает History › Back в меню Notion, поэтому работает при любой раскладке. Работает, когда Notion на переднем плане."
+        "en": "Same as History › Back in Notion’s menu. Your keyboard layout and Notion’s language don’t matter. Works while Notion is in front.",
+        "de": "Entspricht Verlauf › Zurück im Menü von Notion. Tastaturbelegung und Sprache von Notion spielen keine Rolle. Funktioniert, wenn Notion vorne ist.",
+        "es": "Equivale a Historial › Atrás en el menú de Notion. Da igual la distribución del teclado o el idioma de Notion. Funciona cuando Notion está delante.",
+        "fr": "Équivaut à Historique › Précédent dans le menu de Notion. La disposition du clavier et la langue de Notion n’y changent rien. Fonctionne quand Notion est au premier plan.",
+        "ru": "То же, что History › Back в меню Notion. Раскладка клавиатуры и язык Notion не важны. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Goes back",
@@ -205,11 +205,11 @@
         "ru": "Переходит к странице, внутри которой лежит эта (⇧⌘U)"
       },
       "details": {
-        "en": "One level up the path shown at the top of the page; on a top-level page it does nothing. Works while Notion is in front.",
-        "de": "Eine Ebene höher im Pfad oben auf der Seite; auf einer Seite der obersten Ebene passiert nichts. Funktioniert, wenn Notion vorne ist.",
-        "es": "Un nivel más arriba en la ruta que se ve arriba de la página; en una página de primer nivel no hace nada. Funciona cuando Notion está delante.",
-        "fr": "Un niveau plus haut dans le chemin affiché en haut de la page ; sur une page de premier niveau, rien ne se passe. Fonctionne quand Notion est au premier plan.",
-        "ru": "На уровень выше по пути вверху страницы; на странице верхнего уровня ничего не делает. Работает, когда Notion на переднем плане."
+        "en": "Goes one level up the path shown at the top of the page. On a top-level page, it does nothing. Works while Notion is in front.",
+        "de": "Geht im Pfad oben auf der Seite eine Ebene höher. Auf einer Seite der obersten Ebene passiert nichts. Funktioniert, wenn Notion vorne ist.",
+        "es": "Sube un nivel en la ruta que se ve arriba de la página. En una página de primer nivel no hace nada. Funciona cuando Notion está delante.",
+        "fr": "Remonte d’un niveau dans le chemin affiché en haut de la page. Sur une page de premier niveau, rien ne se passe. Fonctionne quand Notion est au premier plan.",
+        "ru": "Ведёт на уровень выше по пути, который виден вверху страницы. На странице верхнего уровня кнопка ничего не делает. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Opens the parent page",
@@ -236,11 +236,11 @@
         "ru": "Открывает Home — стартовую страницу Notion"
       },
       "details": {
-        "en": "Home of the workspace you used last, or of another one if that has no Home. Works even with Notion in the background.",
-        "de": "Home des zuletzt genutzten Workspace oder eines anderen, wenn dieser kein Home hat. Funktioniert auch mit Notion im Hintergrund.",
-        "es": "Inicio del último espacio de trabajo usado, o de otro si ese no tiene Inicio. Funciona aunque Notion esté en segundo plano.",
-        "fr": "L’Accueil du dernier espace de travail utilisé, ou d’un autre s’il n’en a pas. Fonctionne même avec Notion en arrière-plan.",
-        "ru": "Home последнего открытого рабочего пространства, а если там его нет — другого. Работает, даже когда Notion в фоне."
+        "en": "Home opens for the workspace you used last, or for another one if that workspace has none. The button brings Notion forward from any app, but doesn’t start it.",
+        "de": "Es öffnet sich Home im zuletzt genutzten Workspace oder in einem anderen, wenn dieser kein Home hat. Die Taste holt Notion aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Se abre Inicio del último espacio de trabajo usado, o de otro si ese no tiene Inicio. El botón trae Notion al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Vous arrivez sur l’Accueil du dernier espace de travail utilisé, ou d’un autre s’il n’en a pas. Le bouton met Notion au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Откроется Home последнего открытого рабочего пространства, а если там его нет, то другого. Кнопка выводит Notion вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens Home",
@@ -266,11 +266,11 @@
         "ru": "Показывает или скрывает боковую панель"
       },
       "details": {
-        "en": "Clicks View › Show/Hide Sidebar in Notion’s menu, so it works on any keyboard layout. Works while Notion is in front.",
-        "de": "Klickt im Menü von Notion auf Ansicht › Seitenleiste ein-/ausblenden und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn Notion vorne ist.",
-        "es": "Hace clic en Ver › Mostrar/ocultar barra lateral en el menú de Notion, así que funciona con cualquier distribución de teclado. Funciona cuando Notion está delante.",
-        "fr": "Clique sur Afficher › Afficher/masquer la barre latérale dans le menu de Notion et fonctionne donc avec toute disposition de clavier. Fonctionne quand Notion est au premier plan.",
-        "ru": "Нажимает View › Show/Hide Sidebar в меню Notion, поэтому работает при любой раскладке. Работает, когда Notion на переднем плане."
+        "en": "Same as View › Show/Hide Sidebar in Notion’s menu. Your keyboard layout and Notion’s language don’t matter. Works while Notion is in front.",
+        "de": "Entspricht Ansicht › Seitenleiste ein-/ausblenden im Menü von Notion. Tastaturbelegung und Sprache von Notion spielen keine Rolle. Funktioniert, wenn Notion vorne ist.",
+        "es": "Equivale a Ver › Mostrar/ocultar barra lateral en el menú de Notion. Da igual la distribución del teclado o el idioma de Notion. Funciona cuando Notion está delante.",
+        "fr": "Équivaut à Afficher › Afficher/masquer la barre latérale dans le menu de Notion. La disposition du clavier et la langue de Notion n’y changent rien. Fonctionne quand Notion est au premier plan.",
+        "ru": "То же, что View › Show/Hide Sidebar в меню Notion. Раскладка клавиатуры и язык Notion не важны. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the sidebar",
@@ -336,11 +336,11 @@
         "ru": "Переключает на следующую вкладку (⌃⇥); удержание — на предыдущую"
       },
       "details": {
-        "en": "Goes round the tabs of the front Notion window, from the last back to the first. Works while Notion is in front.",
+        "en": "Cycles through the tabs of the front Notion window. After the last tab, it goes back to the first. Works while Notion is in front.",
         "de": "Geht die Tabs des vorderen Notion-Fensters reihum durch, vom letzten wieder zum ersten. Funktioniert, wenn Notion vorne ist.",
-        "es": "Recorre las pestañas de la ventana de Notion de delante; tras la última vuelve a la primera. Funciona cuando Notion está delante.",
-        "fr": "Parcourt les onglets de la fenêtre Notion au premier plan ; après le dernier, revient au premier. Fonctionne quand Notion est au premier plan.",
-        "ru": "Перебирает вкладки переднего окна Notion по кругу: после последней — снова первая. Работает, когда Notion на переднем плане."
+        "es": "Recorre las pestañas de la ventana de Notion de delante. Después de la última vuelve a la primera. Funciona cuando Notion está delante.",
+        "fr": "Parcourt les onglets de la fenêtre Notion au premier plan. Après le dernier, il revient au premier. Fonctionne quand Notion est au premier plan.",
+        "ru": "Перебирает вкладки переднего окна Notion. За последней вкладкой снова идёт первая. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Switches to the next tab",
@@ -375,11 +375,11 @@
         "ru": "Возвращает последнюю закрытую вкладку (⇧⌘T)"
       },
       "details": {
-        "en": "Each tap undoes one more close, the latest first: a tab, the tabs closed together, or a whole window. Works while Notion is in front.",
-        "de": "Jedes Tippen macht ein weiteres Schließen rückgängig, das jüngste zuerst: einen Tab, zusammen geschlossene Tabs oder ein ganzes Fenster. Funktioniert, wenn Notion vorne ist.",
-        "es": "Cada toque deshace otro cierre, el más reciente primero: una pestaña, las pestañas cerradas juntas o una ventana entera. Funciona cuando Notion está delante.",
-        "fr": "Chaque toucher annule une fermeture de plus, la plus récente d’abord : un onglet, des onglets fermés ensemble ou une fenêtre entière. Fonctionne quand Notion est au premier plan.",
-        "ru": "Каждое нажатие отменяет ещё одно закрытие, начиная с последнего: вкладку, закрытые вместе вкладки или целое окно. Работает, когда Notion на переднем плане."
+        "en": "Tap again to bring back what you closed before that. It can be a tab, tabs you closed together, or a whole window. Works while Notion is in front.",
+        "de": "Tippe erneut, um zurückzuholen, was du davor geschlossen hast. Das kann ein Tab, mehrere zusammen geschlossene Tabs oder ein ganzes Fenster sein. Funktioniert, wenn Notion vorne ist.",
+        "es": "Toca de nuevo para recuperar lo que cerraste antes. Puede ser una pestaña, varias pestañas cerradas juntas o una ventana entera. Funciona cuando Notion está delante.",
+        "fr": "Touchez à nouveau pour rouvrir ce que vous aviez fermé avant. Ce peut être un onglet, plusieurs onglets fermés ensemble ou une fenêtre entière. Fonctionne quand Notion est au premier plan.",
+        "ru": "Нажмите ещё раз, чтобы вернуть то, что закрыли перед этим. Это может быть вкладка, несколько вкладок, которые вы закрыли вместе, или целое окно. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Reopens the last closed tab",
@@ -406,11 +406,11 @@
         "ru": "Копирует ссылку на страницу (⌘L); удержание — её название ссылкой"
       },
       "details": {
-        "en": "The open page’s address, to paste into a chat or another page; it opens only for people who can already see the page. Works while Notion is in front.",
-        "de": "Die Adresse der offenen Seite, zum Einfügen in einen Chat oder eine andere Seite; öffnen kann sie nur, wer die Seite ohnehin sehen darf. Funktioniert, wenn Notion vorne ist.",
-        "es": "La dirección de la página abierta, para pegarla en un chat o en otra página; solo la abre quien ya puede ver la página. Funciona cuando Notion está delante.",
-        "fr": "L’adresse de la page ouverte, à coller dans une discussion ou une autre page ; seuls ceux qui voient déjà la page peuvent l’ouvrir. Fonctionne quand Notion est au premier plan.",
-        "ru": "Адрес открытой страницы — для чата или другой страницы; откроют его только те, кому страница уже доступна. Работает, когда Notion на переднем плане."
+        "en": "You can paste the link into a chat or another page. Only people who can already see the page can open it. Works while Notion is in front.",
+        "de": "Den Link kannst du in einen Chat oder eine andere Seite einfügen. Öffnen kann ihn nur, wer die Seite ohnehin sehen darf. Funktioniert, wenn Notion vorne ist.",
+        "es": "Puedes pegar el enlace en un chat o en otra página. Solo lo abre quien ya puede ver la página. Funciona cuando Notion está delante.",
+        "fr": "Vous pouvez coller le lien dans une discussion ou une autre page. Seuls ceux qui voient déjà la page peuvent l’ouvrir. Fonctionne quand Notion est au premier plan.",
+        "ru": "Ссылку можно вставить в чат или на другую страницу. Откроют её только те, у кого уже есть доступ к странице. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Copies the page’s link",
@@ -445,11 +445,11 @@
         "ru": "Комментарий к выделенному тексту или блоку (⇧⌘M)"
       },
       "details": {
-        "en": "Select text or click in a block, then tap: a comment box opens there, and nothing is posted until you send it. Works while Notion is in front.",
-        "de": "Text markieren oder in einen Block klicken, dann tippen: Dort öffnet sich ein Kommentarfeld, gepostet wird erst beim Senden. Funktioniert, wenn Notion vorne ist.",
-        "es": "Selecciona texto o haz clic en un bloque y toca: se abre ahí un cuadro de comentario y no se publica nada hasta que lo envíes. Funciona cuando Notion está delante.",
-        "fr": "Sélectionnez du texte ou cliquez dans un bloc, puis touchez : une zone de commentaire s’ouvre là, rien n’est publié avant l’envoi. Fonctionne quand Notion est au premier plan.",
-        "ru": "Выделите текст или щёлкните в блоке и нажмите: там откроется поле комментария, и ничего не опубликуется, пока вы его не отправите. Работает, когда Notion на переднем плане."
+        "en": "Select text or click in a block, then tap to open a comment box there. Nothing is posted until you send it. Works while Notion is in front.",
+        "de": "Markiere Text oder klicke in einen Block und tippe dann auf die Taste, um dort ein Kommentarfeld zu öffnen. Gepostet wird erst beim Senden. Funktioniert, wenn Notion vorne ist.",
+        "es": "Selecciona texto o haz clic en un bloque y toca el botón para abrir ahí un cuadro de comentario. No se publica nada hasta que lo envíes. Funciona cuando Notion está delante.",
+        "fr": "Sélectionnez du texte ou cliquez dans un bloc, puis touchez le bouton pour y ouvrir une zone de commentaire. Rien n’est publié avant l’envoi. Fonctionne quand Notion est au premier plan.",
+        "ru": "Выделите текст или щёлкните в блоке и нажмите кнопку, чтобы открыть там поле комментария. Ничего не опубликуется, пока вы не отправите комментарий. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Opens a comment box",
@@ -476,11 +476,11 @@
         "ru": "Раскрывает все toggle на странице или сворачивает их (⌥⌘T)"
       },
       "details": {
-        "en": "Opens the page’s toggle blocks and the groups of its databases; when all are open, it closes them. Works while Notion is in front.",
-        "de": "Klappt die Schalter der Seite und die Gruppen ihrer Datenbanken auf; sind schon alle offen, klappt es sie zu. Funktioniert, wenn Notion vorne ist.",
-        "es": "Abre los bloques desplegables de la página y los grupos de sus bases de datos; si ya están todos abiertos, los cierra. Funciona cuando Notion está delante.",
-        "fr": "Ouvre les menus dépliants de la page et les groupes de ses bases de données ; s’ils sont déjà tous ouverts, il les ferme. Fonctionne quand Notion est au premier plan.",
-        "ru": "Раскрывает блоки toggle на странице и группы её баз данных; если всё уже раскрыто — сворачивает. Работает, когда Notion на переднем плане."
+        "en": "Opens the page’s toggle blocks and the groups in its databases. If all are open already, it closes them. Works while Notion is in front.",
+        "de": "Klappt die Schalter der Seite und die Gruppen ihrer Datenbanken auf. Sind schon alle offen, klappt die Taste sie zu. Funktioniert, wenn Notion vorne ist.",
+        "es": "Abre los bloques desplegables de la página y los grupos de sus bases de datos. Si ya están todos abiertos, los cierra. Funciona cuando Notion está delante.",
+        "fr": "Ouvre les menus dépliants de la page et les groupes de ses bases de données. S’ils sont déjà tous ouverts, le bouton les ferme. Fonctionne quand Notion est au premier plan.",
+        "ru": "Раскрывает блоки toggle на странице и группы в её базах данных. Если всё уже раскрыто, кнопка всё свернёт. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes all toggles",
@@ -507,11 +507,11 @@
         "ru": "Добавляет открытую страницу в Favorites или убирает её оттуда (⌃⇧⌘F)"
       },
       "details": {
-        "en": "Favorites is the sidebar section for the pages you open most; the next tap takes the page off again. Works while Notion is in front.",
-        "de": "Favoriten ist der Bereich der Seitenleiste für oft geöffnete Seiten; erneutes Tippen entfernt die Seite wieder. Funktioniert, wenn Notion vorne ist.",
-        "es": "Favoritos es la sección de la barra lateral para las páginas que más abres; el siguiente toque la quita otra vez. Funciona cuando Notion está delante.",
-        "fr": "Favoris est la section de la barre latérale pour les pages que vous ouvrez le plus ; le toucher suivant retire la page. Fonctionne quand Notion est au premier plan.",
-        "ru": "Favorites — раздел боковой панели для самых нужных страниц; следующее нажатие убирает страницу оттуда. Работает, когда Notion на переднем плане."
+        "en": "Favorites is the sidebar section for the pages you open most. Tap again to remove the page. Works while Notion is in front.",
+        "de": "Favoriten ist der Bereich der Seitenleiste für oft geöffnete Seiten. Tippe erneut, um die Seite wieder zu entfernen. Funktioniert, wenn Notion vorne ist.",
+        "es": "Favoritos es la sección de la barra lateral para las páginas que más abres. Toca de nuevo para quitar la página. Funciona cuando Notion está delante.",
+        "fr": "Favoris est la section de la barre latérale pour les pages que vous ouvrez le plus. Touchez à nouveau pour retirer la page. Fonctionne quand Notion est au premier plan.",
+        "ru": "Favorites — раздел боковой панели для самых нужных страниц. Нажмите ещё раз, чтобы убрать страницу оттуда. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Adds the page to Favorites or removes it",
@@ -542,7 +542,7 @@
         "de": "Nur das Aussehen von Notion ändert sich. Danach folgt Notion nicht mehr dem Mac, bis du in den Einstellungen „Systemeinstellung verwenden“ wählst. Funktioniert, wenn Notion vorne ist.",
         "es": "Solo cambia el aspecto de Notion. Después Notion deja de seguir al Mac hasta que elijas «Usar la configuración del sistema» en sus ajustes. Funciona cuando Notion está delante.",
         "fr": "Seule l’apparence de Notion change. Notion cesse alors de suivre le Mac jusqu’à ce que vous choisissiez « Paramètres du système » dans ses réglages. Fonctionne quand Notion est au premier plan.",
-        "ru": "Меняется только вид Notion. После этого Notion не следует теме Mac, пока в его настройках не выбрать Use system setting. Работает, когда Notion на переднем плане."
+        "ru": "Меняется только вид Notion. После этого Notion не следует теме Mac, пока вы не выберете Use system setting в его настройках. Работает, когда Notion на переднем плане."
       },
       "tapAction": {
         "en": "Switches between light and dark",
@@ -571,11 +571,11 @@
         "ru": "Поиск, записи и переходы по рабочему пространству с телефона"
       },
       "details": {
-        "en": "New Page, Notion AI and Home work even with Notion in the background; the other buttons need it in front. Inbox shows Notion’s badge and fits on any other page too.",
-        "de": "Neue Seite, Notion-KI und Home klappen auch mit Notion im Hintergrund; die übrigen Tasten brauchen es vorne. Posteingang zeigt das Notion-Kennzeichen und passt auch auf jede andere Seite.",
-        "es": "Nueva página, IA de Notion e Inicio funcionan aunque Notion esté en segundo plano; los demás botones lo necesitan delante. Bandeja de entrada muestra el globo de Notion y sirve también en cualquier otra página.",
-        "fr": "Nouvelle page, IA de Notion et Accueil fonctionnent même avec Notion en arrière-plan ; les autres boutons le veulent au premier plan. Boîte de réception affiche la pastille de Notion et va aussi sur toute autre page.",
-        "ru": "«Новая страница», «Notion AI» и «Home» работают, даже когда Notion в фоне; остальным кнопкам он нужен на переднем плане. «Inbox» показывает наклейку Notion и подойдёт для любой другой страницы."
+        "en": "New Page, Notion AI and Home work from any app while Notion is open. Inbox shows how many notifications are waiting in Notion, so it’s handy on any page. The other buttons need Notion in front.",
+        "de": "Neue Seite, Notion-KI und Home funktionieren aus jeder App, solange Notion geöffnet ist. Die Taste Posteingang zeigt, wie viele Benachrichtigungen in Notion warten, und passt deshalb auf jede Seite. Die übrigen Tasten funktionieren, wenn Notion vorne ist.",
+        "es": "Nueva página, IA de Notion e Inicio funcionan desde cualquier app mientras Notion esté abierto. El botón Bandeja de entrada muestra cuántas notificaciones te esperan en Notion, así que sirve en cualquier página. Los demás botones funcionan cuando Notion está delante.",
+        "fr": "Nouvelle page, IA de Notion et Accueil fonctionnent depuis n’importe quelle app tant que Notion est ouvert. Le bouton Boîte de réception affiche combien de notifications vous attendent dans Notion et a donc sa place sur toutes les pages. Les autres boutons fonctionnent quand Notion est au premier plan.",
+        "ru": "«Новая страница», «Notion AI» и «Home» срабатывают из любого приложения, если Notion открыт. «Inbox» показывает, сколько уведомлений ждёт в Notion, и пригодится на любой странице. Остальным кнопкам нужно, чтобы Notion был на переднем плане."
       },
       "bindByDefault": true,
       "placements": [

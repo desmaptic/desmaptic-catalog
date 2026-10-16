@@ -1,6 +1,6 @@
 {
   "id": "dice",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "Dice",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Every face is equally likely and a 20 on the d20 glows gold. Choose your dice in the first line of the Long Press script, from d4 d6 d8 d10 d12 d20 d100 coin.",
-    "de": "Jede Seite ist gleich wahrscheinlich, eine 20 auf dem W20 leuchtet golden. Deine Würfel stehen in der ersten Zeile des Skripts unter „Langes Drücken“: d4 d6 d8 d10 d12 d20 d100 coin.",
-    "es": "Todas las caras son igual de probables y un 20 en el d20 brilla en dorado. Elige tus dados en la primera línea del script de Pulsación larga: d4 d6 d8 d10 d12 d20 d100 coin.",
-    "fr": "Toutes les faces ont la même chance, et un 20 sur le d20 brille en doré. Choisissez vos dés à la première ligne du script de l’appui long : d4 d6 d8 d10 d12 d20 d100 coin.",
-    "ru": "Все грани равновероятны, двадцатка на d20 светится золотом. Свои кубики выберите в первой строке скрипта долгого нажатия: d4 d6 d8 d10 d12 d20 d100 coin."
+    "en": "Every face is equally likely, and a 20 on the d20 glows gold. Choose your dice in the button’s settings: d4, d6, d8, d10, d12, d20, d100 or coin.",
+    "de": "Jede Seite ist gleich wahrscheinlich, und eine 20 auf dem W20 leuchtet golden. Deine Würfel wählst du in den Einstellungen der Taste: d4, d6, d8, d10, d12, d20, d100 oder coin für eine Münze.",
+    "es": "Todas las caras son igual de probables, y un 20 en el d20 brilla en dorado. Elige tus dados en los ajustes del botón: d4, d6, d8, d10, d12, d20, d100 o coin para una moneda.",
+    "fr": "Toutes les faces ont la même chance, et un 20 sur le d20 brille en doré. Choisissez vos dés dans les réglages du bouton : d4, d6, d8, d10, d12, d20, d100 ou coin pour une pièce.",
+    "ru": "Все грани выпадают одинаково часто, а двадцатка на d20 светится золотом. Свои кубики выберите в настройках кнопки: d4, d6, d8, d10, d12, d20, d100 или coin для монетки."
   },
   "tapAction": {
     "en": "Throws the die or flips the coin",

@@ -1,6 +1,6 @@
 {
   "id": "music",
-  "revision": 7,
+  "revision": 8,
   "name": {"en": "Music", "de": "Musik", "es": "Música", "fr": "Musique", "ru": "Музыка"},
   "bundleIds": ["com.apple.Music"],
   "category": "music",
@@ -16,11 +16,11 @@
         "ru": "Переключает «Музыку» на предыдущую песню"
       },
       "details": {
-        "en": "Always the song before, even mid-song, where Music’s own ⏮ first goes back to the start. Works with Music in the background.",
-        "de": "Immer der Titel davor, auch mitten im Titel, wo die ⏮-Taste von Musik erst an den Anfang springt. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "Siempre la canción anterior, también a mitad de canción, donde el ⏮ de Música vuelve antes al principio. Funciona con Música en segundo plano.",
-        "fr": "Toujours le morceau d’avant, même en plein morceau, là où le ⏮ de Musique revient d’abord au début. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Всегда предыдущая песня, даже с середины, где ⏮ самой «Музыки» сначала возвращает к началу. Работает, когда «Музыка» в фоне."
+        "en": "Even mid-song, the button goes straight to the previous song, not back to the start of the current one. Works with Music in the background.",
+        "de": "Auch mitten im Titel springt die Taste direkt zum vorherigen Titel, nicht an den Anfang des aktuellen. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Incluso a mitad de canción, el botón pasa directamente a la anterior, sin volver al principio de la actual. Funciona con Música en segundo plano.",
+        "fr": "Même en plein morceau, le bouton passe directement au précédent, sans revenir au début de celui en cours. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Даже с середины песни кнопка сразу включает предыдущую, а не возвращает к началу текущей. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Skips to the previous song",
@@ -44,21 +44,21 @@
         "de": "Startet oder pausiert die Wiedergabe in Musik",
         "es": "Inicia o pausa la reproducción en Música",
         "fr": "Lance ou met en pause la lecture dans Musique",
-        "ru": "Запускает «Музыку» или ставит на паузу"
+        "ru": "Включает воспроизведение в «Музыке» или ставит на паузу"
       },
       "details": {
-        "en": "Music’s own play button: it reaches Music even when another app has taken the Mac’s media keys, and works with Music in the background.",
-        "de": "Die Wiedergabetaste von Musik selbst: Sie erreicht Musik, auch wenn eine andere App die Medientasten des Mac übernommen hat, und funktioniert auch mit Musik im Hintergrund.",
-        "es": "El botón de reproducción de la propia Música: llega a Música aunque otra app se haya quedado con las teclas multimedia del Mac, y funciona con Música en segundo plano.",
-        "fr": "Le bouton lecture de Musique elle-même : il atteint Musique même quand une autre app a pris les touches multimédias du Mac, et fonctionne avec Musique en arrière-plan.",
-        "ru": "Кнопка воспроизведения самой «Музыки»: доходит до неё, даже когда медиаклавиши Mac забрало другое приложение, и работает, когда «Музыка» в фоне."
+        "en": "Controls Music even when another app has taken over the Mac’s media keys. Works with Music in the background.",
+        "de": "Steuert Musik, auch wenn eine andere App die Medientasten des Mac übernommen hat. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Controla Música aunque otra app se haya quedado con las teclas multimedia del Mac. Funciona con Música en segundo plano.",
+        "fr": "Commande Musique même quand une autre app a pris la main sur les touches multimédias du Mac. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Управляет именно «Музыкой», даже когда медиаклавиши Mac перехватило другое приложение. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Plays or pauses",
         "de": "Spielt ab oder pausiert",
         "es": "Reproduce o pausa",
         "fr": "Lance ou met en pause la lecture",
-        "ru": "Запускает или ставит на паузу"
+        "ru": "Включает или ставит на паузу"
       },
       "permissions": ["automation"],
       "button": {
@@ -78,11 +78,11 @@
         "ru": "Переключает «Музыку» на следующую песню"
       },
       "details": {
-        "en": "Music has to be open — the button never starts it — but it may stay in the background.",
-        "de": "Musik muss geöffnet sein – die Taste startet die App nie –, darf aber im Hintergrund bleiben.",
-        "es": "Música tiene que estar abierta (el botón nunca la abre), pero puede quedarse en segundo plano.",
-        "fr": "Musique doit être ouverte (le bouton ne la lance jamais), mais peut rester en arrière-plan.",
-        "ru": "«Музыка» должна быть открыта — кнопка её не запускает, — но может оставаться в фоне."
+        "en": "Works with Music in the background. If Music is closed, the button won’t start it.",
+        "de": "Funktioniert auch mit Musik im Hintergrund. Ist Musik geschlossen, startet die Taste die App nicht.",
+        "es": "Funciona con Música en segundo plano. Si Música está cerrada, el botón no la abre.",
+        "fr": "Fonctionne avec Musique en arrière-plan. Si Musique est fermée, le bouton ne la lance pas.",
+        "ru": "Работает, когда «Музыка» в фоне. Если «Музыка» закрыта, кнопка её не запустит."
       },
       "tapAction": {
         "en": "Skips to the next song",
@@ -109,11 +109,11 @@
         "ru": "Делает громче «Музыку», а не весь Mac"
       },
       "details": {
-        "en": "Music’s own volume, in steps of 10 up to its maximum; the Mac’s volume stays as it is. Works with Music in the background.",
-        "de": "Die Lautstärke von Musik selbst, in Zehnerschritten bis zum Maximum; die Lautstärke des Mac bleibt, wie sie ist. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "El volumen de la propia Música, en pasos de 10 hasta su máximo; el volumen del Mac no cambia. Funciona con Música en segundo plano.",
-        "fr": "Le volume de Musique elle-même, par pas de 10 jusqu’à son maximum ; celui du Mac ne change pas. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Громкость самой «Музыки», шагами по 10 до её максимума; громкость Mac не меняется. Работает, когда «Музыка» в фоне."
+        "en": "Music gets louder, up to its own maximum. If that’s not enough, you can turn up the Mac’s volume. Works with Music in the background.",
+        "de": "Musik wird lauter, aber nicht über ihr eigenes Maximum hinaus. Reicht das nicht, kannst du die Lautstärke des Mac erhöhen. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "El volumen de Música sube, sin pasar de su propio máximo. Si no basta, puedes subir el volumen del Mac. Funciona con Música en segundo plano.",
+        "fr": "Le volume de Musique monte, sans dépasser son propre maximum. Si ce n’est pas assez, vous pouvez monter le volume du Mac. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Громкость «Музыки» растёт, но не выше её максимума. Если этого мало, можно прибавить громкость самого Mac. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Turns Music up by 10%",
@@ -140,11 +140,11 @@
         "ru": "Делает тише «Музыку», а не весь Mac"
       },
       "details": {
-        "en": "Music’s own volume, in steps of 10: the songs get quieter, while a call or a video keeps its sound. Works with Music in the background.",
-        "de": "Die Lautstärke von Musik selbst, in Zehnerschritten: Die Titel werden leiser, der Ton eines Anrufs oder Videos bleibt, wie er ist. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "El volumen de la propia Música, en pasos de 10: las canciones bajan, y una llamada o un vídeo se siguen oyendo igual. Funciona con Música en segundo plano.",
-        "fr": "Le volume de Musique elle-même, par pas de 10 : les morceaux baissent, le son d’un appel ou d’une vidéo reste le même. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Громкость самой «Музыки», шагами по 10: песни становятся тише, а звук звонка или видео остаётся прежним. Работает, когда «Музыка» в фоне."
+        "en": "Only the songs get quieter, not your calls or videos. Works with Music in the background.",
+        "de": "Nur die Titel werden leiser, nicht deine Anrufe oder Videos. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Solo bajan las canciones, no tus llamadas ni tus vídeos. Funciona con Música en segundo plano.",
+        "fr": "Seuls les morceaux baissent, pas vos appels ni vos vidéos. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Тише становятся только песни, а звонки и видео звучат как раньше. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Turns Music down by 10%",
@@ -171,11 +171,11 @@
         "ru": "Включает и выключает перемешивание в «Музыке» и показывает, включено ли оно"
       },
       "details": {
-        "en": "Red while Shuffle is on, also when it is switched in Music itself; grey when it is off or Music is closed. Works with Music in the background.",
-        "de": "Rot, solange die zufällige Wiedergabe an ist – auch wenn sie in Musik selbst umgeschaltet wird; grau, wenn sie aus oder Musik geschlossen ist. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "Rojo mientras el modo aleatorio está activo, también si se cambia en la propia Música; gris si está desactivado o Música está cerrada. Funciona con Música en segundo plano.",
-        "fr": "Rouge tant que l’ordre aléatoire est actif, même s’il est changé dans Musique ; gris quand il est désactivé ou que Musique est fermée. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Красная, пока перемешивание включено, даже если его переключили в самой «Музыке»; серая, когда оно выключено или «Музыка» закрыта. Работает, когда «Музыка» в фоне."
+        "en": "The button is red while Shuffle is on, even if you turned it on in Music itself. When Music is closed, the button is gray. Works with Music in the background.",
+        "de": "Die Taste ist rot, solange die zufällige Wiedergabe an ist, auch wenn du sie in Musik selbst eingeschaltet hast. Ist Musik geschlossen, ist die Taste grau. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "El botón está rojo mientras el modo aleatorio está activo, aunque lo hayas activado en la propia Música. Con Música cerrada, el botón aparece en gris. Funciona con Música en segundo plano.",
+        "fr": "Le bouton est rouge tant que l’ordre aléatoire est actif, même si vous l’avez activé dans Musique elle-même. Quand Musique est fermée, le bouton est gris. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Кнопка красная, пока перемешивание включено, даже если его включили в самой «Музыке». Когда «Музыка» закрыта, кнопка серая. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Turns Shuffle on or off",
@@ -200,14 +200,14 @@
         "de": "Schaltet Wiederholen in Musik durch Aus, Alle und Eins und zeigt es an",
         "es": "Cambia la repetición de Música entre Desactivado, Todo y Una, y la muestra",
         "fr": "Fait passer la répétition de Musique par Désactivée, Tous et Morceau seul, et l’affiche",
-        "ru": "Переключает повтор в «Музыке»: выключен, всех, одной — и показывает его"
+        "ru": "Переключает повтор в «Музыке» и показывает, повторяются все песни или одна"
       },
       "details": {
-        "en": "Red while Repeat is on, with a 1 while it repeats one song, also when set in Music itself; grey when it is off or Music is closed. Works with Music in the background.",
-        "de": "Rot, solange Wiederholen an ist, mit einer 1 bei einem Titel – auch wenn es in Musik selbst eingestellt wird; grau, wenn es aus oder Musik geschlossen ist. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "Rojo mientras la repetición está activa, con un 1 si repite una canción, también si se cambia en la propia Música; gris si está desactivada o Música está cerrada. Funciona con Música en segundo plano.",
-        "fr": "Rouge tant que la répétition est active, avec un 1 pour un seul morceau, même si elle est changée dans Musique ; gris sinon ou si Musique est fermée. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Красная, пока повтор включён, с цифрой 1 при повторе одной песни, даже если его переключили в самой «Музыке»; серая, когда он выключен или «Музыка» закрыта. Работает, когда «Музыка» в фоне."
+        "en": "The button is red while Repeat is on, even if you turned it on in Music itself, and shows a 1 while one song repeats. When Music is closed, the button is gray. Works with Music in the background.",
+        "de": "Die Taste ist rot, solange Wiederholen an ist, auch wenn du es in Musik selbst eingeschaltet hast, und zeigt eine 1, wenn ein einzelner Titel wiederholt wird. Ist Musik geschlossen, ist die Taste grau. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "El botón está rojo mientras la repetición está activa, aunque la hayas activado en la propia Música, y muestra un 1 si se repite una sola canción. Con Música cerrada, el botón aparece en gris. Funciona con Música en segundo plano.",
+        "fr": "Le bouton est rouge tant que la répétition est active, même si vous l’avez activée dans Musique elle-même, et affiche un 1 si un seul morceau se répète. Quand Musique est fermée, le bouton est gris. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Кнопка красная, пока повтор включён, даже если его включили в самой «Музыке», а если повторяется одна песня, на ней видна единица. Когда «Музыка» закрыта, кнопка серая. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Switches Repeat to the next mode, as Music’s own button does",
@@ -229,21 +229,21 @@
       "title": {"en": "Favorite", "de": "Favorit", "es": "Favorita", "fr": "Favori", "ru": "Избранное"},
       "summary": {
         "en": "Marks the song playing in Music as a favorite, or undoes it",
-        "de": "Markiert den laufenden Titel in Musik als Favorit oder widerruft es",
+        "de": "Markiert den laufenden Titel in Musik als Favorit oder nimmt die Markierung zurück",
         "es": "Añade a favoritas la canción que suena en Música, o la quita",
         "fr": "Ajoute aux favoris le morceau en cours dans Musique, ou l’en retire",
         "ru": "Добавляет песню, которая играет в «Музыке», в Избранное или убирает её оттуда"
       },
       "details": {
-        "en": "Music’s star: filled and red while the song playing is a favorite; grey when it is not or nothing plays. Works with Music in the background.",
-        "de": "Der Stern von Musik: gefüllt und rot, solange der laufende Titel ein Favorit ist; grau, wenn nicht oder nichts läuft. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "La estrella de Música: rellena y roja mientras la canción que suena es favorita; gris si no lo es o no suena nada. Funciona con Música en segundo plano.",
-        "fr": "L’étoile de Musique : pleine et rouge tant que le morceau en cours est un favori ; grise sinon ou si rien ne joue. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Звёздочка «Музыки»: закрашенная и красная, пока играющая песня в Избранном; серая, если нет или ничего не играет. Работает, когда «Музыка» в фоне."
+        "en": "The star on the button is filled while the current song is a favorite, even if you marked it in Music itself. With no current song, or with Music closed, the star is empty. Works with Music in the background.",
+        "de": "Der Stern auf der Taste ist gefüllt, solange der aktuelle Titel ein Favorit ist, auch wenn du ihn in Musik selbst markiert hast. Gibt es keinen aktuellen Titel oder ist Musik geschlossen, ist der Stern leer. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "La estrella del botón está rellena mientras la canción actual es favorita, aunque la hayas marcado en la propia Música. Si no hay canción actual o Música está cerrada, la estrella está vacía. Funciona con Música en segundo plano.",
+        "fr": "L’étoile du bouton est pleine tant que le morceau en cours est un favori, même si vous l’avez marqué dans Musique elle-même. S’il n’y a pas de morceau en cours ou si Musique est fermée, l’étoile est vide. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Звёздочка на кнопке закрашена, пока текущая песня в Избранном, даже если вы добавили её туда в самой «Музыке». Если текущей песни нет или «Музыка» закрыта, звёздочка пустая. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Marks the song as a favorite or undoes it",
-        "de": "Markiert den Titel als Favorit oder widerruft es",
+        "de": "Markiert den Titel als Favorit oder nimmt die Markierung zurück",
         "es": "Añade la canción a favoritas o la quita",
         "fr": "Ajoute le morceau aux favoris ou l’en retire",
         "ru": "Добавляет песню в Избранное или убирает её"
@@ -264,14 +264,14 @@
         "de": "Spielt die Playlist von Musik mit den Titeln, die mit dem Stern markiert sind",
         "es": "Reproduce la playlist de Música con las canciones marcadas con la estrella",
         "fr": "Lance la playlist de Musique des morceaux marqués d’une étoile",
-        "ru": "Включает плейлист «Музыки» с песнями, отмеченными звёздочкой"
+        "ru": "Включает плейлист «Музыки» с песнями, которые вы отметили звёздочкой"
       },
       "details": {
-        "en": "The playlist Music fills by itself as songs get the star. Works with Music in the background.",
-        "de": "Die Playlist, die Musik selbst füllt, sobald ein Titel den Stern bekommt. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "La playlist que Música llena sola cuando una canción recibe la estrella. Funciona con Música en segundo plano.",
-        "fr": "La playlist que Musique remplit d’elle-même quand un morceau reçoit l’étoile. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Плейлист, который «Музыка» сама пополняет песнями со звёздочкой. Работает, когда «Музыка» в фоне."
+        "en": "Every song you mark with the star goes into this playlist automatically. Works with Music in the background.",
+        "de": "Jeder Titel, den du mit dem Stern markierst, landet automatisch in dieser Playlist. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Cada canción que marcas con la estrella se añade sola a esta playlist. Funciona con Música en segundo plano.",
+        "fr": "Chaque morceau que vous marquez d’une étoile s’ajoute automatiquement à cette playlist. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Песни со звёздочкой «Музыка» добавляет в этот плейлист сама. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Plays your favorite songs",
@@ -298,11 +298,11 @@
         "ru": "Включает ваш плейлист в «Музыке»"
       },
       "details": {
-        "en": "Write the playlist’s name in the first line of the button’s script: playlist=\"Focus\". Any playlist of your library, smart ones too. Works with Music in the background.",
-        "de": "Schreib den Namen der Playlist in die erste Zeile des Skripts der Taste: playlist=\"Focus\". Jede Playlist deiner Mediathek, auch intelligente. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "Escribe el nombre de la playlist en la primera línea del script del botón: playlist=\"Focus\". Cualquier playlist de tu biblioteca, también las inteligentes. Funciona con Música en segundo plano.",
-        "fr": "Écrivez le nom de la playlist à la première ligne du script du bouton : playlist=\"Focus\". Toute playlist de votre bibliothèque, intelligentes comprises. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Впишите имя плейлиста в первую строку скрипта кнопки: playlist=\"Focus\". Любой плейлист медиатеки, смарт-плейлисты тоже. Работает, когда «Музыка» в фоне."
+        "en": "Write the playlist’s name in the button’s settings, for example playlist=\"Focus\". Any playlist in your library will do, smart ones too. Works with Music in the background.",
+        "de": "Trag den Namen der Playlist in den Einstellungen der Taste ein, zum Beispiel playlist=\"Focus\". Das geht mit jeder Playlist deiner Mediathek, auch mit intelligenten. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Escribe el nombre de la playlist en los ajustes del botón, por ejemplo playlist=\"Focus\". Sirve cualquier playlist de tu biblioteca, también las inteligentes. Funciona con Música en segundo plano.",
+        "fr": "Indiquez le nom de la playlist dans les réglages du bouton, par exemple playlist=\"Focus\". Toute playlist de votre bibliothèque convient, y compris les playlists intelligentes. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Впишите в настройках кнопки название плейлиста, например playlist=\"Focus\". Подойдёт любой плейлист из вашей медиатеки, и смарт-плейлист тоже. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Plays the playlist",
@@ -329,11 +329,11 @@
         "ru": "Отмечает песню, которая играет в «Музыке», как «Не нравится» и включает следующую"
       },
       "details": {
-        "en": "Music’s Suggest Less: the song is marked as disliked, so Music suggests less like it, and the next one plays. Undo it in Music itself. Works with Music in the background.",
-        "de": "„Weniger vorschlagen“ von Musik: Der Titel bekommt „Gefällt mir nicht“, Musik schlägt weniger Ähnliches vor, und der nächste läuft. Rückgängig in Musik selbst. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "«Sugerir menos» de Música: la canción queda marcada con «No me gusta», Música sugiere menos parecidas y suena la siguiente. Se deshace en la propia Música. Funciona con Música en segundo plano.",
-        "fr": "« Suggérer moins souvent » de Musique : le morceau est marqué « Je n’aime pas », Musique en suggère moins de semblables et le suivant démarre. S’annule dans Musique. Fonctionne avec Musique en arrière-plan.",
-        "ru": "«Предлагать меньше» в «Музыке»: песня отмечается как «Не нравится», «Музыка» реже предлагает похожие, и играет следующая. Отменить — в самой «Музыке». Работает, когда «Музыка» в фоне."
+        "en": "It’s the same as Suggest Less in Music, so Music will suggest fewer songs like this one. You can undo it in Music itself. Works with Music in the background.",
+        "de": "Das entspricht „Weniger vorschlagen“ in Musik, also schlägt dir Musik seltener Ähnliches vor. Rückgängig machen kannst du das in Musik selbst. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Es lo mismo que «Sugerir menos» en Música, así que Música te sugerirá menos canciones parecidas. Puedes deshacerlo en la propia Música. Funciona con Música en segundo plano.",
+        "fr": "C’est la même chose que « Suggérer moins souvent » dans Musique, qui vous proposera donc moins de morceaux semblables. Vous pouvez l’annuler dans Musique elle-même. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Это то же, что «Предлагать меньше» в «Музыке», так что похожие песни она будет предлагать реже. Отменить можно в самой «Музыке». Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Marks the song as disliked and skips it",
@@ -360,11 +360,11 @@
         "ru": "Выводит «Музыку» на вашу колонку AirPlay; удержание — вернуть звук на Mac"
       },
       "details": {
-        "en": "Write the speaker’s name, as Music shows it under AirPlay, in the first line of the button’s script: speaker=\"Living Room\". Music then plays only there. Works with Music in the background.",
-        "de": "Schreib den Namen des Lautsprechers, wie Musik ihn bei AirPlay zeigt, in die erste Zeile des Skripts der Taste: speaker=\"Living Room\". Musik spielt dann nur dort. Funktioniert auch mit Musik im Hintergrund.",
-        "es": "Escribe el nombre del altavoz, tal como Música lo muestra en AirPlay, en la primera línea del script del botón: speaker=\"Living Room\". Música suena entonces solo ahí. Funciona con Música en segundo plano.",
-        "fr": "Écrivez le nom de l’enceinte, tel que Musique l’affiche sous AirPlay, à la première ligne du script du bouton : speaker=\"Living Room\". Musique ne joue alors que là. Fonctionne avec Musique en arrière-plan.",
-        "ru": "Впишите имя колонки, как «Музыка» показывает его в AirPlay, в первую строку скрипта кнопки: speaker=\"Living Room\". «Музыка» будет играть только на ней. Работает, когда «Музыка» в фоне."
+        "en": "Write the speaker’s name in the button’s settings, as Music shows it under AirPlay, for example speaker=\"Living Room\". Music then plays only there. Works with Music in the background.",
+        "de": "Trag den Namen des Lautsprechers in den Einstellungen der Taste ein, so wie Musik ihn bei AirPlay zeigt, zum Beispiel speaker=\"Living Room\". Musik spielt dann nur dort. Funktioniert auch mit Musik im Hintergrund.",
+        "es": "Escribe el nombre del altavoz en los ajustes del botón, tal como Música lo muestra en AirPlay, por ejemplo speaker=\"Living Room\". Música suena entonces solo ahí. Funciona con Música en segundo plano.",
+        "fr": "Indiquez le nom de l’enceinte dans les réglages du bouton, tel que Musique l’affiche sous AirPlay, par exemple speaker=\"Living Room\". Musique ne joue alors que là. Fonctionne avec Musique en arrière-plan.",
+        "ru": "Впишите в настройках кнопки имя колонки так, как его показывает «Музыка» в AirPlay, например speaker=\"Living Room\". «Музыка» будет играть только на ней. Работает, когда «Музыка» в фоне."
       },
       "tapAction": {
         "en": "Sends Music’s sound to the speaker",
@@ -392,21 +392,21 @@
       "id": "current-song",
       "title": {"en": "Current Song", "de": "Aktueller Titel", "es": "Canción actual", "fr": "Morceau en cours", "ru": "Текущая песня"},
       "summary": {
-        "en": "Shows the song that plays in Music’s window (⌘L)",
+        "en": "Shows the song that’s playing in Music’s window (⌘L)",
         "de": "Zeigt den laufenden Titel im Fenster von Musik (⌘L)",
         "es": "Muestra la canción que suena en la ventana de Música (⌘L)",
         "fr": "Montre le morceau en cours dans la fenêtre de Musique (⌘L)",
         "ru": "Показывает играющую песню в окне «Музыки» (⌘L)"
       },
       "details": {
-        "en": "Controls › Go to Current Song (⌘L): Music’s window jumps to the song that plays. Works while Music is in front.",
-        "de": "Steuerung › Zum aktuellen Titel (⌘L): Das Fenster von Musik springt zum laufenden Titel. Funktioniert, wenn Musik vorne ist.",
-        "es": "Controles › Ir a la canción actual (⌘L): la ventana de Música salta a la canción que suena. Funciona cuando Música está delante.",
-        "fr": "Commandes › Aller au morceau à l’écoute (⌘L) : la fenêtre de Musique va au morceau en cours. Fonctionne quand Musique est au premier plan.",
-        "ru": "Управление › Перейти к текущей песне (⌘L): окно «Музыки» переходит к играющей песне. Работает, когда «Музыка» на переднем плане."
+        "en": "Controls › Go to Current Song (⌘L). Works while Music is in front.",
+        "de": "Steuerung › Zum aktuellen Titel (⌘L). Funktioniert, wenn Musik vorne ist.",
+        "es": "Controles › Ir a la canción actual (⌘L). Funciona cuando Música está delante.",
+        "fr": "Commandes › Aller au morceau à l’écoute (⌘L). Fonctionne quand Musique est au premier plan.",
+        "ru": "Управление › Перейти к текущей песне (⌘L). Работает, когда «Музыка» на переднем плане."
       },
       "tapAction": {
-        "en": "Jumps to the song that plays",
+        "en": "Jumps to the song that’s playing",
         "de": "Springt zum laufenden Titel",
         "es": "Salta a la canción que suena",
         "fr": "Va au morceau en cours",
@@ -430,11 +430,11 @@
         "ru": "Показывает или скрывает текст песни в «Музыке» (⌃⌘U)"
       },
       "details": {
-        "en": "View › Show Lyrics (⌃⌘U): the song’s lyrics beside the list, when it has them. Works while Music is in front.",
-        "de": "Darstellung › Liedtexte anzeigen (⌃⌘U): der Liedtext des Titels neben der Liste, wenn es einen gibt. Funktioniert, wenn Musik vorne ist.",
-        "es": "Visualización › Mostrar letra (⌃⌘U): la letra de la canción junto a la lista, si la tiene. Funciona cuando Música está delante.",
-        "fr": "Présentation › Afficher les paroles (⌃⌘U) : les paroles du morceau à côté de la liste, s’il en a. Fonctionne quand Musique est au premier plan.",
-        "ru": "Вид › Показать текст песни (⌃⌘U): текст песни рядом со списком, если он есть. Работает, когда «Музыка» на переднем плане."
+        "en": "View › Show Lyrics (⌃⌘U). The lyrics appear beside the list, if the song has them. Works while Music is in front.",
+        "de": "Darstellung › Liedtexte anzeigen (⌃⌘U). Der Liedtext erscheint neben der Liste, wenn der Titel einen hat. Funktioniert, wenn Musik vorne ist.",
+        "es": "Visualización › Mostrar letra (⌃⌘U). La letra aparece junto a la lista, si la canción la tiene. Funciona cuando Música está delante.",
+        "fr": "Présentation › Afficher les paroles (⌃⌘U). Les paroles s’affichent à côté de la liste, si le morceau en a. Fonctionne quand Musique est au premier plan.",
+        "ru": "Вид › Показать текст песни (⌃⌘U). Текст появится рядом со списком, если он есть у песни. Работает, когда «Музыка» на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the lyrics",
@@ -461,11 +461,11 @@
         "ru": "Переходит в поле поиска «Музыки» (⌘F)"
       },
       "details": {
-        "en": "Go to Search (⌘F): the cursor lands in Music’s search field, ready to type on the Mac. Works while Music is in front.",
-        "de": "Zur Suche (⌘F): Der Cursor landet im Suchfeld von Musik, bereit zum Tippen am Mac. Funktioniert, wenn Musik vorne ist.",
-        "es": "Ir a la búsqueda (⌘F): el cursor queda en el campo de búsqueda de Música, listo para escribir en el Mac. Funciona cuando Música está delante.",
-        "fr": "Accéder à Recherche (⌘F) : le curseur se place dans le champ de recherche de Musique, prêt pour la saisie sur le Mac. Fonctionne quand Musique est au premier plan.",
-        "ru": "Перейти к поиску (⌘F): курсор встаёт в поле поиска «Музыки» — можно печатать на Mac. Работает, когда «Музыка» на переднем плане."
+        "en": "The cursor lands in Music’s search field, so you can type your search on the Mac right away. Works while Music is in front.",
+        "de": "Der Cursor landet im Suchfeld von Musik, und du kannst am Mac gleich lostippen. Funktioniert, wenn Musik vorne ist.",
+        "es": "El cursor se coloca en el campo de búsqueda de Música y puedes escribir enseguida en el Mac. Funciona cuando Música está delante.",
+        "fr": "Le curseur se place dans le champ de recherche de Musique, et vous pouvez taper tout de suite sur le Mac. Fonctionne quand Musique est au premier plan.",
+        "ru": "Курсор встанет в поле поиска «Музыки», и запрос можно сразу набрать на Mac. Работает, когда «Музыка» на переднем плане."
       },
       "tapAction": {
         "en": "Opens Music’s search",
@@ -492,11 +492,11 @@
         "ru": "Показывает или скрывает песни, которые будут дальше в «Музыке» (⌥⌘U)"
       },
       "details": {
-        "en": "View › Show Playing Next (⌥⌘U): the songs to come, beside the list. Works while Music is in front.",
-        "de": "Darstellung › „Nächster Titel“ einblenden (⌥⌘U): die kommenden Titel neben der Liste. Funktioniert, wenn Musik vorne ist.",
-        "es": "Visualización › Mostrar a continuación (⌥⌘U): las canciones que vienen, junto a la lista. Funciona cuando Música está delante.",
-        "fr": "Présentation › Afficher la file d’attente (⌥⌘U) : les morceaux à venir, à côté de la liste. Fonctionne quand Musique est au premier plan.",
-        "ru": "Вид › Показать список «На очереди» (⌥⌘U): песни, которые будут дальше, рядом со списком. Работает, когда «Музыка» на переднем плане."
+        "en": "View › Show Playing Next (⌥⌘U). The songs coming up appear beside the list. Works while Music is in front.",
+        "de": "Darstellung › „Nächster Titel“ einblenden (⌥⌘U). Die kommenden Titel erscheinen neben der Liste. Funktioniert, wenn Musik vorne ist.",
+        "es": "Visualización › Mostrar a continuación (⌥⌘U). Las canciones que vienen aparecen junto a la lista. Funciona cuando Música está delante.",
+        "fr": "Présentation › Afficher la file d’attente (⌥⌘U). Les morceaux à venir s’affichent à côté de la liste. Fonctionne quand Musique est au premier plan.",
+        "ru": "Вид › Показать список «На очереди» (⌥⌘U). Песни, которые будут играть дальше, появятся рядом со списком. Работает, когда «Музыка» на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the queue",
@@ -523,11 +523,11 @@
         "ru": "Открывает или закрывает маленькое окно плеера «Музыки» (⌥⌘M)"
       },
       "details": {
-        "en": "Window › MiniPlayer (⌥⌘M): a small window with the song and its controls, beside the main one. Works while Music is in front.",
-        "de": "Fenster › MiniPlayer (⌥⌘M): ein kleines Fenster mit dem Titel und seinen Tasten, neben dem Hauptfenster. Funktioniert, wenn Musik vorne ist.",
-        "es": "Ventana › Minirreproductor (⌥⌘M): una ventana pequeña con la canción y sus controles, junto a la principal. Funciona cuando Música está delante.",
-        "fr": "Fenêtre › Mini-lecteur (⌥⌘M) : une petite fenêtre avec le morceau et ses commandes, à côté de la fenêtre principale. Fonctionne quand Musique est au premier plan.",
-        "ru": "Окно › Мини-плеер (⌥⌘M): маленькое окно с песней и кнопками управления рядом с основным. Работает, когда «Музыка» на переднем плане."
+        "en": "Window › MiniPlayer (⌥⌘M). A small window with the song and its controls opens beside the main one. Works while Music is in front.",
+        "de": "Fenster › MiniPlayer (⌥⌘M). Ein kleines Fenster mit dem Titel und den Steuertasten öffnet sich neben dem Hauptfenster. Funktioniert, wenn Musik vorne ist.",
+        "es": "Ventana › Minirreproductor (⌥⌘M). Se abre una ventana pequeña con la canción y sus controles junto a la principal. Funciona cuando Música está delante.",
+        "fr": "Fenêtre › Mini-lecteur (⌥⌘M). Une petite fenêtre avec le morceau et ses commandes s’ouvre à côté de la fenêtre principale. Fonctionne quand Musique est au premier plan.",
+        "ru": "Окно › Мини-плеер (⌥⌘M). Маленькое окно с песней и кнопками управления откроется рядом с основным. Работает, когда «Музыка» на переднем плане."
       },
       "tapAction": {
         "en": "Opens or closes the MiniPlayer",
@@ -550,17 +550,17 @@
       "title": {"en": "Music", "de": "Musik", "es": "Música", "fr": "Musique", "ru": "Музыка"},
       "summary": {
         "en": "Play a playlist, skip, shuffle, rate, pick a speaker and set the volume from your phone",
-        "de": "Playlists abspielen, springen, mischen, bewerten, Lautsprecher wählen und Lautstärke vom Telefon aus",
+        "de": "Playlists abspielen, springen, mischen, bewerten, Lautsprecher wählen und Lautstärke regeln – vom Telefon aus",
         "es": "Reproduce una playlist, salta, mezcla, valora, elige altavoz y ajusta el volumen desde el teléfono",
         "fr": "Playlists, morceaux, aléatoire, favoris, enceinte et volume depuis votre téléphone",
         "ru": "Плейлисты, треки, перемешивание, оценки, колонка и громкость с телефона"
       },
       "details": {
-        "en": "Buttons that play or change a setting work with Music in the background; those that show part of Music’s window need Music in front. Play Playlist and AirPlay Speaker take a name in the first line of their script.",
-        "de": "Tasten, die abspielen oder etwas einstellen, funktionieren auch mit Musik im Hintergrund; die, die einen Teil des Fensters von Musik zeigen, brauchen Musik vorne. „Playlist abspielen“ und „AirPlay-Lautsprecher“ brauchen einen Namen in der ersten Zeile ihres Skripts.",
-        "es": "Los botones que reproducen o cambian un ajuste funcionan con Música en segundo plano; los que muestran una parte de la ventana de Música necesitan Música delante. Reproducir playlist y Altavoz AirPlay necesitan un nombre en la primera línea de su script.",
-        "fr": "Les boutons qui lancent la lecture ou changent un réglage fonctionnent avec Musique en arrière-plan ; ceux qui affichent une partie de la fenêtre de Musique demandent Musique au premier plan. Lire la playlist et Enceinte AirPlay demandent un nom à la première ligne de leur script.",
-        "ru": "Кнопки, которые включают музыку или меняют настройку, работают, когда «Музыка» в фоне; те, что показывают часть окна «Музыки», — когда она на переднем плане. «Включить плейлист» и «Колонка AirPlay» ждут имя в первой строке своего скрипта."
+        "en": "Buttons that control playback work even with Music in the background, but don’t start the app if it’s closed. Buttons that show something in Music’s window need Music in front. Play Playlist and AirPlay Speaker need your playlist’s or speaker’s name in their settings.",
+        "de": "Tasten für die Wiedergabe funktionieren auch mit Musik im Hintergrund, starten die App aber nicht. Tasten, die etwas im Fenster von Musik zeigen, funktionieren, wenn Musik vorne ist. „Playlist abspielen“ und „AirPlay-Lautsprecher“ brauchen in ihren Einstellungen den Namen deiner Playlist oder deines Lautsprechers.",
+        "es": "Los botones que controlan la reproducción funcionan con Música en segundo plano, pero no la abren si está cerrada. Los que muestran algo en la ventana de Música funcionan cuando Música está delante. Reproducir playlist y Altavoz AirPlay necesitan en sus ajustes el nombre de tu playlist o de tu altavoz.",
+        "fr": "Les boutons qui commandent la lecture fonctionnent avec Musique en arrière-plan, mais ne lancent pas l’app si elle est fermée. Ceux qui affichent quelque chose dans la fenêtre de Musique fonctionnent quand Musique est au premier plan. Lire la playlist et Enceinte AirPlay demandent le nom de votre playlist ou de votre enceinte dans leurs réglages.",
+        "ru": "Кнопки, которые управляют музыкой, работают, даже когда «Музыка» в фоне, но саму «Музыку» не запускают. Кнопкам, которые что-то показывают в окне «Музыки», нужно, чтобы она была на переднем плане. В настройках кнопок «Включить плейлист» и «Колонка AirPlay» впишите название своего плейлиста и колонки."
       },
       "bindByDefault": true,
       "placements": [

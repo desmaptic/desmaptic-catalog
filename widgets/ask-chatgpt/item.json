@@ -1,6 +1,6 @@
 {
   "id": "ask-chatgpt",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -16,23 +16,23 @@
     "de": "Tippe eine Frage auf dem Telefon – im Browser des Mac öffnet sich damit ein neuer ChatGPT-Chat",
     "es": "Escribe una pregunta en el teléfono y se abre con ella un chat nuevo de ChatGPT en el navegador del Mac",
     "fr": "Saisissez une question sur le téléphone : un nouveau chat ChatGPT s’ouvre avec elle dans le navigateur du Mac",
-    "ru": "Наберите вопрос на телефоне — в браузере Mac откроется новый чат ChatGPT с этим вопросом"
+    "ru": "Наберите вопрос на телефоне, и в браузере Mac откроется новый чат ChatGPT с этим вопросом"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. Opens chatgpt.com in the Mac’s default browser, signed in there or not.",
-    "de": "Nichts einzurichten. Öffnet chatgpt.com im Standardbrowser des Mac, ob du dort angemeldet bist oder nicht.",
-    "es": "No hay nada que configurar. Abre chatgpt.com en el navegador predeterminado del Mac, con tu sesión iniciada allí o sin ella.",
-    "fr": "Rien à configurer. Ouvre chatgpt.com dans le navigateur par défaut du Mac, que vous y soyez connecté ou non.",
-    "ru": "Настраивать ничего не нужно. Открывает chatgpt.com в браузере Mac по умолчанию — со входом в аккаунт или без."
+    "en": "Nothing to set up. The chat opens on chatgpt.com in the Mac’s default browser, even if you’re not signed in there.",
+    "de": "Nichts einzurichten. Der Chat öffnet sich auf chatgpt.com im Standardbrowser des Mac, auch wenn du dort nicht angemeldet bist.",
+    "es": "No hay nada que configurar. El chat se abre en chatgpt.com en el navegador predeterminado del Mac, aunque no hayas iniciado sesión.",
+    "fr": "Rien à configurer. Le chat s’ouvre sur chatgpt.com dans le navigateur par défaut du Mac, même si vous n’y êtes pas connecté.",
+    "ru": "Настраивать ничего не нужно. Чат откроется на chatgpt.com в браузере Mac по умолчанию, даже если вы там не вошли в аккаунт."
   },
   "tapAction": {
-    "en": "Asks for a question and opens a new ChatGPT chat with it",
-    "de": "Fragt nach einer Frage und öffnet damit einen neuen ChatGPT-Chat",
-    "es": "Pide una pregunta y abre con ella un chat nuevo de ChatGPT",
-    "fr": "Demande une question et ouvre avec elle un nouveau chat ChatGPT",
-    "ru": "Спрашивает вопрос и открывает с ним новый чат ChatGPT"
+    "en": "Asks for your question and opens a new ChatGPT chat with it",
+    "de": "Fragt, was du wissen willst, und öffnet damit einen neuen ChatGPT-Chat",
+    "es": "Te pide la pregunta y abre con ella un chat nuevo de ChatGPT",
+    "fr": "Vous demande votre question et ouvre avec elle un nouveau chat ChatGPT",
+    "ru": "Просит ввести вопрос и открывает с ним новый чат ChatGPT"
   },
   "button": {
     "icon": {
@@ -47,8 +47,20 @@
       }
     },
     "input": {
-      "question": "What to ask ChatGPT?",
-      "placeholder": "A question",
+      "question": {
+        "en": "What to ask ChatGPT?",
+        "de": "Was möchtest du ChatGPT fragen?",
+        "es": "¿Qué quieres preguntarle a ChatGPT?",
+        "fr": "Que voulez-vous demander à ChatGPT ?",
+        "ru": "Что спросить у ChatGPT?"
+      },
+      "placeholder": {
+        "en": "Your question",
+        "de": "Deine Frage",
+        "es": "Tu pregunta",
+        "fr": "Votre question",
+        "ru": "Ваш вопрос"
+      },
       "multiline": true
     }
   }

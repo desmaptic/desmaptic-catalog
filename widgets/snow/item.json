@@ -1,6 +1,6 @@
 {
   "id": "snow",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Snow",
@@ -19,18 +19,18 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Soft flakes drift down over every display, above all windows; clicks go through them. It stops by itself after 10 minutes. The button turns icy blue while it snows.",
-    "de": "Weiche Flocken rieseln über jedes Display, über allen Fenstern; Klicks gehen hindurch. Nach 10 Minuten hört es von selbst auf. Die Taste wird eisblau, solange es schneit.",
-    "es": "Copos suaves caen sobre cada pantalla, por encima de todas las ventanas; los clics los atraviesan. Para sola a los 10 minutos. El botón se vuelve azul hielo mientras nieva.",
-    "fr": "De doux flocons tombent sur chaque écran, au-dessus de toutes les fenêtres ; les clics passent au travers. Cela s’arrête tout seul au bout de 10 minutes. Le bouton devient bleu glacier tant qu’il neige.",
-    "ru": "Мягкие хлопья падают на всех дисплеях поверх всех окон, клики проходят сквозь них. Через 10 минут снег прекращается сам. Пока идёт снег, кнопка становится ледяно-голубой."
+    "en": "Soft flakes fall over every display, above all windows, and clicks go through them. The snow stops by itself after 10 minutes. While it snows, the button is icy blue.",
+    "de": "Weiche Flocken rieseln auf jedem Display vor allen Fenstern, und Klicks gehen durch sie hindurch. Nach 10 Minuten hört es von selbst auf. Solange es schneit, ist die Taste eisblau.",
+    "es": "Caen copos suaves en todas las pantallas, por encima de las ventanas, y los clics los atraviesan. La nevada para sola a los 10 minutos. Mientras nieva, el botón está azul hielo.",
+    "fr": "De doux flocons tombent sur chaque écran, au-dessus des fenêtres, et les clics passent au travers. La neige s’arrête toute seule au bout de 10 minutes. Tant qu’il neige, le bouton est bleu glacier.",
+    "ru": "Мягкие хлопья падают на всех дисплеях поверх окон и не мешают кликать. Через 10 минут снег прекратится сам. Пока он идёт, кнопка голубая."
   },
   "tapAction": {
-    "en": "Starts the snow; another tap stops it",
-    "de": "Lässt es schneien; erneutes Tippen beendet es",
-    "es": "Empieza a nevar; otro toque lo detiene",
-    "fr": "Fait tomber la neige ; un autre toucher l’arrête",
-    "ru": "Включает снег; повторное нажатие его останавливает"
+    "en": "Starts or stops the snow",
+    "de": "Startet oder stoppt den Schnee",
+    "es": "Inicia o detiene la nevada",
+    "fr": "Fait tomber la neige ou l’arrête",
+    "ru": "Включает или выключает снег"
   },
   "button": {
     "icon": {

@@ -1,6 +1,6 @@
 {
   "id": "system-monitor",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "System Monitor",
@@ -19,11 +19,11 @@
   "colSpan": 2,
   "rowSpan": 2,
   "details": {
-    "en": "The gauge is CPU load, the bars are memory and disk use. Below: what the Mac downloads ↓ and uploads ↑ now and over 3 minutes — real traffic, not connection speed. Pink means something needs attention.",
-    "de": "Die Anzeige zeigt die CPU-Last, die Balken belegten Arbeitsspeicher und Festplattenplatz. Darunter, was der Mac gerade herunterlädt ↓ und hochlädt ↑, mit 3 Minuten Verlauf – echter Datenverkehr, nicht die Verbindungsgeschwindigkeit. Pink heißt: genauer hinsehen.",
-    "es": "El indicador es la carga de CPU; las barras, el uso de memoria y de disco. Debajo, lo que el Mac descarga ↓ y sube ↑ ahora y en los últimos 3 minutos: tráfico real, no la velocidad de la conexión. El rosa pide atención.",
-    "fr": "La jauge indique la charge du processeur ; les barres, la mémoire et le disque utilisés. En dessous, ce que le Mac télécharge ↓ et envoie ↑, maintenant et sur 3 minutes — le trafic réel, pas le débit de la connexion. Le rose signale un souci.",
-    "ru": "Шкала — загрузка процессора, полоски — занятые память и диск. Внизу — сколько Mac скачивает ↓ и отдаёт ↑ сейчас и за 3 минуты: реальный трафик, а не скорость подключения. Розовый — стоит обратить внимание."
+    "en": "CPU load, memory and disk use, and below them what the Mac is downloading and uploading now, with a 3-minute graph. That’s its traffic, not your connection speed. Anything that turns pink is worth a look.",
+    "de": "CPU-Last, belegter Arbeitsspeicher und Festplattenplatz, darunter, was der Mac gerade herunter- und hochlädt, mit einem Verlauf über 3 Minuten. Das ist sein Datenverkehr, nicht die Geschwindigkeit deiner Verbindung. Was pink wird, solltest du dir ansehen.",
+    "es": "Carga de CPU, memoria y disco en uso y, debajo, lo que el Mac descarga y sube ahora, con una gráfica de los últimos 3 minutos. Es su tráfico, no la velocidad de tu conexión. Si algo se pone rosa, conviene echarle un vistazo.",
+    "fr": "La charge du processeur, la mémoire et le disque utilisés, et en dessous ce que le Mac télécharge et envoie en ce moment, avec un graphique sur 3 minutes. C’est son trafic, pas le débit de votre connexion. Ce qui passe au rose mérite un coup d’œil.",
+    "ru": "Загрузка процессора, занятая память и диск, а внизу — сколько Mac сейчас скачивает и отправляет, с графиком за 3 минуты. Это его трафик, а не скорость интернета. Если что-то загорелось розовым, туда стоит заглянуть."
   },
   "tapAction": {
     "en": "Opens Activity Monitor on the Mac",

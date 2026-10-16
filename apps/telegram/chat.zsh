@@ -14,7 +14,7 @@ setopt extended_glob
 name=${${user##[[:space:]]#}%%[[:space:]]#}
 name=${name#@}
 name=${name#(#i)(https://|http://)#(www.)#(t.me|telegram.me)/}
-[[ -n $name ]] || { print -u2 -- "Open Chat: write a username, without @, in the first line of the button's script"; exit 1 }
+[[ -n $name ]] || { print -u2 -- "Open Chat: write a username, without @, in this button’s settings"; exit 1 }
 # Telegram usernames: Latin letters, digits and underscores, starting with a letter; this also keeps the value from
 # adding anything to the link.
 [[ $name == [A-Za-z][A-Za-z0-9_]## ]] && (( ${#name} >= 4 && ${#name} <= 32 )) ||

@@ -1,6 +1,6 @@
 {
   "id": "accessories",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Accessories",
@@ -10,20 +10,20 @@
     "ru": "Аксессуары"
   },
   "summary": {
-    "en": "Battery of the Bluetooth keyboard, mouse and trackpad; pink at 20%",
-    "de": "Akku von Bluetooth-Tastatur, -Maus und -Trackpad; pink bei 20 %",
-    "es": "Batería del teclado, el ratón y el trackpad Bluetooth; rosa al 20 %",
-    "fr": "Batterie du clavier, de la souris et du trackpad Bluetooth ; rose à 20 %",
-    "ru": "Заряд Bluetooth-клавиатуры, мыши и трекпада; от 20 % розовый"
+    "en": "Battery of the Bluetooth keyboard, mouse and trackpad connected to the Mac",
+    "de": "Akku von Bluetooth-Tastatur, -Maus und -Trackpad am Mac",
+    "es": "La batería del teclado, el ratón y el trackpad Bluetooth conectados al Mac",
+    "fr": "La batterie du clavier, de la souris et du trackpad Bluetooth connectés au Mac",
+    "ru": "Заряд Bluetooth-клавиатуры, мыши и трекпада, подключённых к Mac"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "Battery of the Bluetooth keyboard, mouse and trackpad; pink at 20% or below, dim when none is connected. Devices on a cable or not reporting their battery are left out.",
-    "de": "Akku von Bluetooth-Tastatur, -Maus und -Trackpad; pink bei 20 % und weniger, blass, wenn keins verbunden ist. Geräte am Kabel oder ohne Akkuangabe werden weggelassen.",
-    "es": "La batería del teclado, el ratón y el trackpad Bluetooth; rosa al 20 % o menos, tenue si no hay ninguno conectado. Los dispositivos por cable o que no indican su batería no aparecen.",
-    "fr": "La batterie du clavier, de la souris et du trackpad Bluetooth ; rose à 20 % ou moins, estompée si aucun n’est connecté. Les appareils branchés par câble ou qui n’indiquent pas leur batterie ne sont pas affichés.",
-    "ru": "Заряд Bluetooth-клавиатуры, мыши и трекпада; от 20 % и ниже — розовый, тусклый — ничего не подключено. Устройства на кабеле или не сообщающие заряд не показываются."
+    "en": "A gauge turns pink when it’s time to charge, at 20% or less. Devices on a cable, or ones that don’t report their battery, are left out. When none is connected, the button dims.",
+    "de": "Eine Anzeige wird pink, wenn es Zeit zum Laden ist, also bei 20 % oder weniger. Geräte am Kabel oder ohne Akkuangabe fehlen. Ist keins verbunden, wird die Taste blass.",
+    "es": "Un indicador se vuelve rosa cuando toca cargar, al 20 % o menos. Los dispositivos con cable o que no indican su batería no aparecen. Si no hay ninguno conectado, el botón se atenúa.",
+    "fr": "Une jauge devient rose quand il faut recharger, à 20 % ou moins. Les appareils branchés par câble ou qui n’indiquent pas leur batterie n’apparaissent pas. Si aucun n’est connecté, le bouton s’estompe.",
+    "ru": "Шкала становится розовой, когда пора заряжать: при 20 % и меньше. Устройства на кабеле и те, что не сообщают заряд, не показываются. Если ничего не подключено, кнопка тускнеет."
   },
   "tapAction": {
     "en": "Opens Bluetooth settings on the Mac",

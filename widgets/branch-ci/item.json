@@ -1,0 +1,69 @@
+{
+  "id": "branch-ci",
+  "revision": 1,
+  "kind": "widget",
+  "title": {
+    "en": "Branch CI",
+    "de": "CI des Branches",
+    "es": "CI de la rama",
+    "fr": "CI de la branche",
+    "ru": "CI ветки"
+  },
+  "summary": {
+    "en": "The GitHub Actions CI of your branch’s latest commit, its workflow and how long ago it ran; hold twice to rerun failed jobs",
+    "de": "Die GitHub-Actions-CI des neuesten Commits in deinem Branch, ihr Workflow und wie lange sie her ist; zweimal halten, um fehlgeschlagene Jobs neu zu starten",
+    "es": "El CI de GitHub Actions del último commit de tu rama, su workflow y hace cuánto fue; mantén pulsado dos veces para relanzar los jobs fallidos",
+    "fr": "La CI GitHub Actions du dernier commit de votre branche, son workflow et il y a combien de temps ; maintenez deux fois pour relancer les jobs en échec",
+    "ru": "CI GitHub Actions для последнего коммита вашей ветки, его workflow и как давно он был; удержание дважды — перезапуск упавших jobs"
+  },
+  "colSpan": 2,
+  "rowSpan": 1,
+  "details": {
+    "en": "Whether CI passed on your branch’s latest commit, at a glance. Tap to open the run, hold twice to rerun failed jobs. Set the repository under Advanced; needs the GitHub CLI signed in.",
+    "de": "Auf einen Blick, ob die CI des neuesten Commits im Branch bestanden hat. Tippen öffnet den Lauf, zweimal halten startet Fehlgeschlagenes neu. Repository unter „Erweitert“; GitHub CLI nötig.",
+    "es": "De un vistazo, si el CI del último commit de tu rama pasó. Toca para abrir la ejecución, mantén dos veces para relanzar lo fallido. Repositorio en «Avanzado»; requiere la CLI de GitHub.",
+    "fr": "D’un coup d’œil, si la CI du dernier commit de la branche a réussi. Touchez pour ouvrir l’exécution, maintenez deux fois pour relancer les échecs. Dépôt sous « Avancé » ; CLI GitHub requise.",
+    "ru": "С одного взгляда видно, прошёл ли CI последнего коммита ветки. Нажатие открывает запуск, двойное удержание перезапускает упавшее. Репозиторий — в «Дополнительно»; нужен вход в GitHub CLI."
+  },
+  "tapAction": {
+    "en": "Opens the run on GitHub in the browser",
+    "de": "Öffnet den Lauf auf GitHub im Browser",
+    "es": "Abre la ejecución de GitHub en el navegador",
+    "fr": "Ouvre l’exécution sur GitHub dans le navigateur",
+    "ru": "Открывает запуск на GitHub в браузере"
+  },
+  "holdAction": {
+    "en": "Reruns the failed jobs if you hold it again within 10 seconds",
+    "de": "Startet die fehlgeschlagenen Jobs neu, wenn du die Taste innerhalb von 10 Sekunden noch einmal hältst",
+    "es": "Vuelve a ejecutar los jobs fallidos si lo mantienes pulsado otra vez en menos de 10 segundos",
+    "fr": "Relance les jobs en échec si vous le maintenez à nouveau dans les 10 secondes",
+    "ru": "Перезапускает упавшие jobs, если удержать кнопку ещё раз в течение 10 секунд"
+  },
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "checkmark.circle"
+      }
+    },
+    "color": "#32D74B",
+    "command": {
+      "shellCommand": {
+        "command": "@file:common.zsh\n@file:open.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:common.zsh\n@file:rerun.zsh"
+      }
+    },
+    "startupScript": "repo=\"\"     # ← the repository: its folder on the Mac, e.g. \"~/Developer/my-app\", or owner/name\nbranch=\"\"   # ← empty — the folder’s current branch, or the repository’s default branch for owner/name\n@file:common.zsh\n@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg",
+      "landscapeSource": "@file:rest-landscape.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg",
+    "landscapeSource": "@file:demo-landscape.svg"
+  }
+}

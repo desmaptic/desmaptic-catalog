@@ -14,7 +14,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 link=${${link##[[:space:]]##}%%[[:space:]]##}
 if [[ -z $link ]]; then
-  print -u2 -- "Set your meeting's link in the first line of this button's script"
+  print -u2 -- "Set your meeting’s link in this button’s settings"
   exit 1
 fi
 rest=${link#(#i)https://}

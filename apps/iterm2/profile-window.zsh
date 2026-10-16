@@ -12,7 +12,7 @@ export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 [[ -n $profile ]] ||
-  { print -u2 -- "Profile Window: set the name of an iTerm2 profile on the first line of the button's script, e.g. profile=\"Work\""; exit 1 }
+  { print -u2 -- "Profile Window: set the name of an iTerm2 profile in this button’s settings, e.g. profile=\"Work\""; exit 1 }
 
 # pgrep sees every account's processes; -U keeps it to this one, whose iTerm2 the AppleScript talks to. It also leaves
 # out its own ancestors: -a, because an agent started from an iTerm2 tab runs inside iTerm2.

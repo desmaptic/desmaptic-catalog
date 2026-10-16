@@ -1,6 +1,6 @@
 {
   "id": "jetbrains",
-  "revision": 4,
+  "revision": 5,
   "name": "JetBrains IDE",
   "bundleIds": ["com.jetbrains.intellij", "com.jetbrains.intellij.ce", "com.jetbrains.pycharm", "com.jetbrains.pycharm.ce", "com.jetbrains.WebStorm", "com.jetbrains.goland", "com.jetbrains.PhpStorm", "com.jetbrains.rubymine", "com.jetbrains.CLion", "com.jetbrains.rustrover"],
   "category": "development",
@@ -13,14 +13,14 @@
         "de": "Startet die gewählte Konfiguration; halten zum Auswählen",
         "es": "Ejecuta la configuración elegida; mantén pulsado para elegir",
         "fr": "Lance la configuration choisie ; maintenez pour choisir",
-        "ru": "Запускает выбранную конфигурацию; удержание — выбор"
+        "ru": "Запускает выбранную конфигурацию; удержание — выбор конфигурации"
       },
       "details": {
-        "en": "Like ⌃R for the configuration in the toolbar, but clicked in the Run menu, so a focused terminal never gets the key. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Wie ⌃R für die Konfiguration in der Symbolleiste, aber über das Menü Run, sodass ein fokussiertes Terminal die Taste nie bekommt. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Como ⌃R para la configuración de la barra de herramientas, pero desde el menú Run: un terminal con el foco nunca recibe la tecla. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Comme ⌃R pour la configuration de la barre d’outils, mais par le menu Run : un terminal qui a le focus ne reçoit jamais la touche. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Как ⌃R для конфигурации на панели инструментов, но через меню Run, так что терминал в фокусе не получит клавишу. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "Same as ⌃R for the configuration in the toolbar, even while the IDE’s terminal has focus. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Wie ⌃R für die Konfiguration in der Symbolleiste, auch wenn das Terminal der IDE den Fokus hat. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Como ⌃R para la configuración de la barra de herramientas, incluso con el foco en el terminal del IDE. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Comme ⌃R pour la configuration de la barre d’outils, même quand le terminal de l’IDE a le focus. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "То же, что ⌃R для конфигурации на панели инструментов, даже когда фокус в терминале IDE. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Runs the selected configuration",
@@ -52,14 +52,14 @@
         "de": "Debuggt die gewählte Konfiguration; halten zum Auswählen",
         "es": "Depura la configuración elegida; mantén pulsado para elegir",
         "fr": "Débogue la configuration choisie ; maintenez pour choisir",
-        "ru": "Отлаживает выбранную конфигурацию; удержание — выбор"
+        "ru": "Отлаживает выбранную конфигурацию; удержание — выбор конфигурации"
       },
       "details": {
-        "en": "Like ⌃D, but clicked in the Run menu: in a focused terminal, ⌃D would end the program running there. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Wie ⌃D, aber über das Menü Run: In einem fokussierten Terminal würde ⌃D das Programm darin beenden. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Como ⌃D, pero desde el menú Run: en un terminal con el foco, ⌃D cerraría el programa que corre en él. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Comme ⌃D, mais par le menu Run : dans un terminal qui a le focus, ⌃D terminerait le programme qui y tourne. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Как ⌃D, но через меню Run: в терминале в фокусе ⌃D завершил бы запущенную там программу. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "Same as ⌃D, even while the IDE’s terminal has focus, where the key itself would end the running program. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Wie ⌃D, auch wenn das Terminal der IDE den Fokus hat. Dort würde ⌃D selbst das laufende Programm beenden. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Como ⌃D, incluso con el foco en el terminal del IDE, donde la propia tecla cerraría el programa en marcha. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Comme ⌃D, même quand le terminal de l’IDE a le focus, où la touche elle-même terminerait le programme en cours. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "То же, что ⌃D, даже когда фокус в терминале IDE. Там сама клавиша ⌃D завершила бы запущенную программу. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Starts debugging the selected configuration",
@@ -94,11 +94,11 @@
         "ru": "Выполняет программу до следующей точки останова (⌥⌘R)"
       },
       "details": {
-        "en": "Resume Program: a program paused in the debugger runs on until the next breakpoint. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Resume Program: Ein im Debugger angehaltenes Programm läuft bis zum nächsten Haltepunkt weiter. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Resume Program: un programa detenido en el depurador sigue hasta el siguiente punto de interrupción. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Resume Program : un programme arrêté dans le débogueur continue jusqu’au point d’arrêt suivant. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Resume Program: программа, остановленная в отладчике, выполняется до следующей точки останова. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "A program paused in the debugger runs on until the next breakpoint (Resume Program). Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Ein im Debugger angehaltenes Programm läuft bis zum nächsten Haltepunkt weiter (Resume Program). Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Un programa detenido en el depurador sigue hasta el siguiente punto de interrupción (Resume Program). Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Un programme arrêté dans le débogueur continue jusqu’au point d’arrêt suivant (Resume Program). Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Программа, которую остановил отладчик, продолжит работу до следующей точки останова (Resume Program). Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Resumes the program",
@@ -125,11 +125,11 @@
         "ru": "Останавливает то, что запустила IDE (⌘F2)"
       },
       "details": {
-        "en": "Run › Stop: ends the program or debug session started from the IDE; with several running, the IDE asks which. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Run › Stop: beendet das Programm oder die Debug-Sitzung, die aus der IDE gestartet wurde; laufen mehrere, fragt die IDE, welches. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Run › Stop: termina el programa o la sesión de depuración iniciados desde el IDE; si hay varios, el IDE pregunta cuál. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Run › Stop : termine le programme ou la session de débogage lancés depuis l’IDE ; s’il y en a plusieurs, l’IDE demande lequel. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Run › Stop: завершает программу или сеанс отладки, запущенные из IDE; если их несколько, IDE спросит, какой. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "Run › Stop ends the program or debug session started from the IDE. With several running, the IDE asks which one. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Run › Stop beendet das Programm oder die Debug-Sitzung, die aus der IDE gestartet wurde. Laufen mehrere, fragt die IDE, welches. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Run › Stop termina el programa o la sesión de depuración iniciados desde el IDE. Si hay varios, el IDE pregunta cuál. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Run › Stop termine le programme ou la session de débogage lancés depuis l’IDE. S’il y en a plusieurs, l’IDE demande lequel. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Run › Stop завершает программу или сеанс отладки, запущенные из IDE. Если их несколько, IDE спросит, что остановить. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Stops what is running",
@@ -156,11 +156,11 @@
         "ru": "Классы, файлы, символы, действия и настройки в одном поиске"
       },
       "details": {
-        "en": "What pressing Shift twice opens, clicked in Navigate › Search Everywhere. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Was zweimal Umschalt öffnet, über Navigate › Search Everywhere. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Lo que abre pulsar Mayúsculas dos veces, desde Navigate › Search Everywhere. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Ce qu’ouvre un double appui sur Maj, par Navigate › Search Everywhere. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "То, что открывает двойное нажатие Shift, — через Navigate › Search Everywhere. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "The search that pressing Shift twice opens. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Die Suche, die sich mit zweimal Umschalt öffnet. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "La búsqueda que se abre al pulsar Mayúsculas dos veces. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "La recherche qu’ouvre un double appui sur Maj. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Тот же поиск, что по двойному нажатию Shift. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Opens Search Everywhere",
@@ -195,11 +195,11 @@
         "ru": "Последние открытые файлы (⌘E)"
       },
       "details": {
-        "en": "The last files you opened and the tool windows; type to filter, Return opens. Works while the JetBrains IDE is in front, with its default keymap.",
-        "de": "Die zuletzt geöffneten Dateien und die Toolfenster; Tippen filtert, Return öffnet. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Los últimos archivos abiertos y las ventanas de herramientas; escribe para filtrar, Retorno abre. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
-        "fr": "Les derniers fichiers ouverts et les fenêtres d’outils ; tapez pour filtrer, Retour ouvre. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Последние открытые файлы и окна инструментов; набор текста фильтрует, Return открывает. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "The last files you opened, and the tool windows. Type to filter, then press Return to open. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Die zuletzt geöffneten Dateien und die Toolfenster. Gib etwas ein, um zu filtern, und öffne den Eintrag mit Return. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Los últimos archivos abiertos y las ventanas de herramientas. Escribe para filtrar y pulsa Retorno para abrir. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "Les derniers fichiers ouverts et les fenêtres d’outils. Tapez pour filtrer, puis Retour pour ouvrir. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Последние открытые файлы и окна инструментов. Начните набирать, чтобы сузить список, и нажмите Return, чтобы открыть. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Shows the recent files",
@@ -238,7 +238,7 @@
         "de": "Text in allen Dateien des Projekts, auch mit regulären Ausdrücken, Dateimasken und Bereichen. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
         "es": "Texto en todos los archivos del proyecto, con expresiones regulares, máscaras de archivo y ámbitos. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
         "fr": "Du texte dans tous les fichiers du projet, avec expressions régulières, masques de fichiers et portées. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Текст во всех файлах проекта, в том числе регулярными выражениями, по маске файлов и области. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+        "ru": "Можно искать регулярными выражениями, по маске файлов и в выбранной области. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Opens Find in Files",
@@ -248,11 +248,11 @@
         "ru": "Открывает Find in Files"
       },
       "holdAction": {
-        "en": "Opens Replace in Files (⇧⌘R); nothing changes until you confirm",
-        "de": "Öffnet Replace in Files (⇧⌘R); nichts ändert sich, bevor du bestätigst",
-        "es": "Abre Replace in Files (⇧⌘R); nada cambia hasta que confirmes",
-        "fr": "Ouvre Replace in Files (⇧⌘R) ; rien ne change avant votre confirmation",
-        "ru": "Открывает Replace in Files (⇧⌘R); без подтверждения ничего не изменится"
+        "en": "Opens Replace in Files (⇧⌘R), but nothing changes until you confirm",
+        "de": "Öffnet Replace in Files (⇧⌘R), aber nichts ändert sich, bevor du bestätigst",
+        "es": "Abre Replace in Files (⇧⌘R), pero nada cambia hasta que confirmes",
+        "fr": "Ouvre Replace in Files (⇧⌘R), mais rien ne change avant votre confirmation",
+        "ru": "Открывает Replace in Files (⇧⌘R), но без подтверждения ничего не изменится"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -273,11 +273,11 @@
         "ru": "Переходит к объявлению имени под курсором (⌘B)"
       },
       "details": {
-        "en": "Navigate › Declaration or Usages: from a declaration, it lists the usages instead. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Navigate › Declaration or Usages: Steht der Cursor auf der Deklaration, listet es stattdessen die Verwendungen. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Navigate › Declaration or Usages: desde una declaración, muestra en cambio sus usos. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Navigate › Declaration or Usages : depuis une déclaration, liste plutôt ses usages. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Navigate › Declaration or Usages: если курсор уже на объявлении, покажет использования. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "If the caret is already on the declaration, you get a list of its usages instead (Navigate › Declaration or Usages). Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Steht der Cursor schon auf der Deklaration, erscheint stattdessen die Liste der Verwendungen (Navigate › Declaration or Usages). Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Si el cursor ya está en la declaración, aparece en cambio la lista de sus usos (Navigate › Declaration or Usages). Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Si le curseur est déjà sur la déclaration, la liste de ses usages s’affiche à la place (Navigate › Declaration or Usages). Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Если курсор уже стоит на объявлении, откроется список мест, где имя используется (Navigate › Declaration or Usages). Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Goes to the declaration",
@@ -312,11 +312,11 @@
         "ru": "Ставит или убирает точку останова на строке с курсором (⌘F8)"
       },
       "details": {
-        "en": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint in the same menu brings back one removed by mistake. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint im selben Menü holt einen versehentlich entfernten zurück. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint, en el mismo menú, recupera uno quitado por error. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Run › Toggle Breakpoint › Line Breakpoint ; Restore Breakpoint, dans le même menu, rétablit un point retiré par erreur. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Run › Toggle Breakpoint › Line Breakpoint; Restore Breakpoint в том же меню вернёт случайно убранную точку. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "If you remove one by mistake, Restore Breakpoint in the same Run › Toggle Breakpoint menu brings it back. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Einen versehentlich entfernten Haltepunkt holt Restore Breakpoint im selben Menü Run › Toggle Breakpoint zurück. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Si quitas uno por error, Restore Breakpoint, en el mismo menú Run › Toggle Breakpoint, lo recupera. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Si vous en retirez un par erreur, Restore Breakpoint, dans le même menu Run › Toggle Breakpoint, le rétablit. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Если убрали точку по ошибке, её вернёт Restore Breakpoint в том же меню Run › Toggle Breakpoint. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Toggles a line breakpoint",
@@ -396,11 +396,11 @@
         "ru": "Заходит в вызов"
       },
       "holdAction": {
-        "en": "Smart Step Into: pick which call on the line to enter (⇧F7)",
-        "de": "Smart Step Into: wählen, in welchen Aufruf der Zeile es geht (⇧F7)",
-        "es": "Smart Step Into: elige en qué llamada de la línea entrar (⇧F7)",
-        "fr": "Smart Step Into : choisir l’appel de la ligne où entrer (⇧F7)",
-        "ru": "Smart Step Into: выбор, в какой вызов на строке зайти (⇧F7)"
+        "en": "Opens Smart Step Into (⇧F7) to pick which call on the line to enter",
+        "de": "Öffnet Smart Step Into (⇧F7), um zu wählen, in welchen Aufruf der Zeile es geht",
+        "es": "Abre Smart Step Into (⇧F7) para elegir en qué llamada de la línea entrar",
+        "fr": "Ouvre Smart Step Into (⇧F7) pour choisir dans quel appel de la ligne entrer",
+        "ru": "Открывает Smart Step Into (⇧F7), чтобы выбрать, в какой вызов на строке зайти"
       },
       "permissions": ["automation", "accessibility"],
       "button": {
@@ -452,11 +452,11 @@
         "ru": "Форматирует файл по стилю кода (⌥⌘L)"
       },
       "details": {
-        "en": "The whole file, or only the selection, by the project’s code style; ⌘Z undoes it. Works while the JetBrains IDE is in front, with its default keymap.",
-        "de": "Die ganze Datei oder nur die Auswahl, nach dem Codestil des Projekts; ⌘Z macht es rückgängig. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Todo el archivo o solo la selección, según el estilo de código del proyecto; ⌘Z lo deshace. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
-        "fr": "Tout le fichier, ou seulement la sélection, selon le style de code du projet ; ⌘Z l’annule. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Весь файл или только выделение — по стилю кода проекта; ⌘Z отменит. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "With a selection, only that is reformatted. ⌘Z undoes it. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Mit einer Auswahl wird nur diese formatiert. ⌘Z macht es rückgängig. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Si hay algo seleccionado, solo da formato a eso. ⌘Z lo deshace. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "Avec une sélection, seule celle-ci est mise en forme. ⌘Z l’annule. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Если что-то выделено, форматирует только выделение. ⌘Z отменит форматирование. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Reformats the code",
@@ -483,11 +483,11 @@
         "ru": "Переименовывает символ под курсором везде (⇧F6)"
       },
       "details": {
-        "en": "Refactor › Rename…: type the new name and press Return; every use changes with it. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Refactor › Rename…: neuen Namen tippen und Return drücken; alle Verwendungen ändern sich mit. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Refactor › Rename…: escribe el nombre nuevo y pulsa Retorno; todos los usos cambian con él. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Refactor › Rename… : tapez le nouveau nom puis Retour ; tous les usages changent avec lui. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Refactor › Rename…: введите новое имя и нажмите Return — все использования изменятся вместе с ним. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "Type the new name and press Return, and every use changes with it. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Gib den neuen Namen ein und drück Return, dann ändern sich alle Verwendungen mit. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Escribe el nombre nuevo y pulsa Retorno, y todos los usos cambian con él. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Tapez le nouveau nom puis Retour, et tous les usages changent avec lui. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Наберите новое имя и нажмите Return: все использования символа изменятся вместе с ним. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Renames the symbol",
@@ -514,11 +514,11 @@
         "ru": "Открывает окно коммита (⌘K); удержание — Push"
       },
       "details": {
-        "en": "Git › Commit… shows your changes and a message field; nothing is committed until you press Commit. Works while the JetBrains IDE is in front, with English menus.",
-        "de": "Git › Commit… zeigt die Änderungen und ein Feld für die Nachricht; committet wird erst, wenn du Commit drückst. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
-        "es": "Git › Commit… muestra los cambios y un campo para el mensaje; nada se confirma hasta que pulses Commit. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
-        "fr": "Git › Commit… affiche les modifications et un champ de message ; rien n’est validé avant que vous appuyiez sur Commit. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
-        "ru": "Git › Commit… показывает изменения и поле для сообщения; коммит будет, только когда вы нажмёте Commit. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
+        "en": "Git › Commit… shows your changes and a message field. Nothing is committed until you press Commit. Works while the JetBrains IDE is in front, with English menus.",
+        "de": "Git › Commit… zeigt die Änderungen und ein Feld für die Nachricht. Committet wird erst, wenn du Commit drückst. Funktioniert, wenn die JetBrains-IDE vorne ist, mit englischen Menüs.",
+        "es": "Git › Commit… muestra los cambios y un campo para el mensaje. Nada se confirma hasta que pulses Commit. Funciona cuando el IDE de JetBrains está delante, con los menús en inglés.",
+        "fr": "Git › Commit… affiche les modifications et un champ de message. Rien n’est validé avant que vous appuyiez sur Commit. Fonctionne quand l’IDE JetBrains est au premier plan, menus en anglais.",
+        "ru": "Git › Commit… показывает изменения и поле для сообщения. Коммит появится, только когда вы нажмёте Commit. Работает, когда IDE JetBrains на переднем плане, с меню на английском."
       },
       "tapAction": {
         "en": "Opens the commit view",
@@ -528,11 +528,11 @@
         "ru": "Открывает окно коммита"
       },
       "holdAction": {
-        "en": "Opens the Push dialog (⇧⌘K); nothing is pushed until you confirm",
-        "de": "Öffnet den Push-Dialog (⇧⌘K); gepusht wird erst nach deiner Bestätigung",
-        "es": "Abre el diálogo Push (⇧⌘K); no se envía nada hasta que confirmes",
-        "fr": "Ouvre la fenêtre Push (⇧⌘K) ; rien n’est poussé avant votre confirmation",
-        "ru": "Открывает окно Push (⇧⌘K); без подтверждения ничего не отправится"
+        "en": "Opens the Push dialog (⇧⌘K), but nothing is pushed until you confirm",
+        "de": "Öffnet den Push-Dialog (⇧⌘K), aber gepusht wird erst nach deiner Bestätigung",
+        "es": "Abre el diálogo Push (⇧⌘K), pero no se envía nada hasta que confirmes",
+        "fr": "Ouvre la fenêtre Push (⇧⌘K), mais rien n’est poussé avant votre confirmation",
+        "ru": "Открывает окно Push (⇧⌘K), но без подтверждения ничего не отправится"
       },
       "permissions": ["automation", "accessibility"],
       "button": {
@@ -553,11 +553,11 @@
         "ru": "Показывает или прячет терминал IDE (⌥F12)"
       },
       "details": {
-        "en": "The Terminal tool window, opened in the project folder; tapped while the terminal has focus, it hides it. Works while the JetBrains IDE is in front, with its default keymap.",
-        "de": "Das Toolfenster Terminal, im Projektordner geöffnet; hat das Terminal den Fokus, blendet ein Tippen es aus. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "La ventana de herramientas Terminal, abierta en la carpeta del proyecto; si el terminal tiene el foco, la oculta. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
-        "fr": "La fenêtre d’outils Terminal, ouverte dans le dossier du projet ; si le terminal a le focus, elle se masque. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Окно инструментов Terminal в папке проекта; если терминал в фокусе, нажатие его спрячет. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
+        "en": "The Terminal tool window, in the project folder. If the terminal has focus, a tap hides it. Works while the JetBrains IDE is in front, with its default keymap.",
+        "de": "Das Toolfenster Terminal im Projektordner. Hat das Terminal den Fokus, blendet die Taste es aus. Funktioniert, wenn die JetBrains-IDE vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "La ventana de herramientas Terminal, en la carpeta del proyecto. Si el terminal tiene el foco, un toque la oculta. Funciona cuando el IDE de JetBrains está delante, con sus atajos predeterminados.",
+        "fr": "La fenêtre d’outils Terminal, dans le dossier du projet. Si le terminal a le focus, un toucher la masque. Fonctionne quand l’IDE JetBrains est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Окно инструментов Terminal в папке проекта. Если терминал в фокусе, нажатие спрячет его. Работает, когда IDE JetBrains на переднем плане, со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Shows or hides the terminal",
@@ -586,11 +586,11 @@
         "ru": "Запуск, отладка, поиск и коммиты в IntelliJ IDEA, PyCharm, WebStorm и других"
       },
       "details": {
-        "en": "Most buttons click the IDE’s menus (in English, its default), so a focused terminal never gets their keys. Recent Files, Find in Files, Reformat Code, Terminal and the long press of Commit use the default macOS keymap.",
-        "de": "Die meisten Tasten klicken in die Menüs der IDE (auf Englisch, ihre Standardsprache), sodass kein Tastenkürzel in einem fokussierten Terminal landet. Letzte Dateien, In Dateien suchen, Code formatieren, Terminal und langes Drücken auf Commit nutzen die Standard-Tastenkürzel für macOS.",
-        "es": "La mayoría de los botones usan los menús del IDE (en inglés, su idioma predeterminado), así que un terminal con el foco nunca recibe sus teclas. Archivos recientes, Buscar en archivos, Formatear código, Terminal y la pulsación larga de Commit usan los atajos predeterminados de macOS.",
-        "fr": "La plupart des boutons cliquent dans les menus de l’IDE (en anglais, sa langue par défaut) : un terminal qui a le focus ne reçoit donc jamais leurs touches. Fichiers récents, Rechercher du texte, Reformater le code, Terminal et l’appui long sur Commit utilisent les raccourcis macOS par défaut.",
-        "ru": "Большинство кнопок нажимают пункты меню IDE (на английском, как по умолчанию), поэтому терминал в фокусе не получит их клавиш. «Недавние файлы», «Поиск в файлах», «Формат кода», «Терминал» и долгое нажатие на «Коммит» используют стандартные сочетания клавиш macOS."
+        "en": "Most buttons click the IDE’s menus, so they work even while its terminal has focus. For those, the menus must be in English, the IDE’s default. Recent Files, Find in Files, Reformat Code, Terminal and the long press of Commit need the default macOS keymap.",
+        "de": "Die meisten Tasten klicken in die Menüs der IDE und funktionieren so auch, wenn ihr Terminal den Fokus hat. Dafür müssen die Menüs auf Englisch sein, wie in der IDE voreingestellt. Letzte Dateien, In Dateien suchen, Code formatieren, Terminal und Commit beim Halten brauchen die Standard-Tastenkürzel für macOS.",
+        "es": "La mayoría de los botones usan los menús del IDE, así que funcionan aunque su terminal tenga el foco. Para ellos, los menús deben estar en inglés, como vienen por defecto. Archivos recientes, Buscar en archivos, Formatear código, Terminal y la pulsación larga de Commit necesitan los atajos predeterminados del IDE para macOS.",
+        "fr": "La plupart des boutons cliquent dans les menus de l’IDE et fonctionnent donc même quand son terminal a le focus. Pour eux, les menus doivent être en anglais, comme par défaut. Fichiers récents, Rechercher du texte, Reformater le code, Terminal et l’appui long sur Commit demandent les raccourcis macOS par défaut.",
+        "ru": "Большинство кнопок нажимают пункты меню IDE, поэтому работают, даже когда фокус в её терминале. Для них меню IDE должны быть на английском, как по умолчанию. «Недавние файлы», «Поиск в файлах», «Формат кода», «Терминал» и удержание «Коммита» рассчитаны на стандартные сочетания клавиш macOS."
       },
       "bindByDefault": true,
       "placements": [

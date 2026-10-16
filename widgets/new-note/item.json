@@ -1,6 +1,6 @@
 {
   "id": "new-note",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -16,23 +16,23 @@
     "de": "Tippe auf dem Telefon – der Text wird auf dem Mac zu einer neuen Notiz in Notizen",
     "es": "Escribe en el teléfono y el texto se convierte en una nota nueva en Notas del Mac",
     "fr": "Saisissez sur le téléphone : le texte devient une nouvelle note dans Notes sur le Mac",
-    "ru": "Наберите текст на телефоне — он станет новой заметкой в «Заметках» на Mac"
+    "ru": "Наберите текст на телефоне, и он станет новой заметкой в «Заметках» на Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. A new note in the default folder, its first line as the title; starts Notes when it’s closed. The first time, macOS asks to let Desmaptic Agent control Notes.",
-    "de": "Nichts einzurichten. Eine neue Notiz im Standardordner, die erste Zeile als Titel; startet Notizen, wenn es geschlossen ist. Beim ersten Mal fragt macOS, ob Desmaptic Agent Notizen steuern darf.",
-    "es": "No hay nada que configurar. Una nota nueva en la carpeta por omisión, con la primera línea como título; abre Notas si está cerrado. La primera vez, macOS pide permitir que Desmaptic Agent controle Notas.",
-    "fr": "Rien à configurer. Une nouvelle note dans le dossier par défaut, la première ligne comme titre ; lance Notes s’il est fermé. La première fois, macOS demande d’autoriser Desmaptic Agent à contrôler Notes.",
-    "ru": "Настраивать ничего не нужно. Новая заметка в папке по умолчанию, первая строка — название; запускает «Заметки», если они закрыты. В первый раз macOS спросит, разрешить ли Desmaptic Agent управлять «Заметками»."
+    "en": "Nothing to set up. The note lands in the default folder even if Notes is closed, and its first line becomes the title.",
+    "de": "Nichts einzurichten. Die Notiz landet im Standardordner, auch wenn Notizen geschlossen ist, und die erste Zeile wird ihr Titel.",
+    "es": "No hay nada que configurar. La nota va a la carpeta por omisión aunque Notas esté cerrado, y su primera línea será el título.",
+    "fr": "Rien à configurer. La note arrive dans le dossier par défaut, même si Notes est fermé, et sa première ligne devient le titre.",
+    "ru": "Настраивать ничего не нужно. Заметка появится в папке по умолчанию, даже если «Заметки» закрыты, а первая строка станет её названием."
   },
   "tapAction": {
     "en": "Asks what to note and adds it as a new note",
     "de": "Fragt, was notiert werden soll, und legt es als neue Notiz an",
     "es": "Pregunta qué anotar y lo añade como nota nueva",
     "fr": "Demande quoi noter et l’ajoute comme nouvelle note",
-    "ru": "Спрашивает, что записать, и добавляет это новой заметкой"
+    "ru": "Спрашивает, что записать, и создаёт новую заметку"
   },
   "permissions": [
     "automation"
@@ -50,8 +50,20 @@
       }
     },
     "input": {
-      "question": "What to note?",
-      "placeholder": "A thought, a list, a link",
+      "question": {
+        "en": "What to note?",
+        "de": "Was möchtest du notieren?",
+        "es": "¿Qué quieres anotar?",
+        "fr": "Que voulez-vous noter ?",
+        "ru": "Что записать?"
+      },
+      "placeholder": {
+        "en": "A thought, a list, a link",
+        "de": "Ein Gedanke, eine Liste, ein Link",
+        "es": "Una idea, una lista, un enlace",
+        "fr": "Une idée, une liste, un lien",
+        "ru": "Мысль, список, ссылка"
+      },
       "multiline": true
     }
   }

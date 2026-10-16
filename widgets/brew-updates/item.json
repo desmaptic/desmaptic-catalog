@@ -1,0 +1,91 @@
+{
+  "id": "brew-updates",
+  "revision": 1,
+  "kind": "widget",
+  "minAgentVersion": "2.0.1",
+  "minAppVersion": "2.0.1",
+  "title": {
+    "en": "Homebrew Updates",
+    "de": "Homebrew-Updates",
+    "es": "Actualizaciones de Homebrew",
+    "fr": "Mises à jour Homebrew",
+    "ru": "Обновления Homebrew"
+  },
+  "summary": {
+    "en": "How many Homebrew packages on the Mac are out of date, and a tap updates them; hold to check again now",
+    "de": "Wie viele Homebrew-Pakete auf dem Mac veraltet sind, und Tippen aktualisiert sie; Halten prüft sofort neu",
+    "es": "Cuántos paquetes de Homebrew del Mac están desactualizados, y un toque los actualiza; mantén pulsado para comprobarlo ahora",
+    "fr": "Combien de paquets Homebrew du Mac sont obsolètes, et un toucher les met à jour ; maintenez pour vérifier tout de suite",
+    "ru": "Сколько пакетов Homebrew на Mac устарело, а нажатие их обновляет; удержание проверяет сразу"
+  },
+  "colSpan": 1,
+  "rowSpan": 1,
+  "details": {
+    "en": "The update runs in a Terminal window on the Mac, so it goes on when the phone sleeps. Meanwhile the number counts down, and a notification tells you how it went. Packages that ask for your password are skipped and named, with the command to update them in Terminal.",
+    "de": "Das Update läuft in einem Terminal-Fenster auf dem Mac und geht deshalb weiter, wenn das Telefon schläft. Dabei zählt die Zahl herunter, und eine Mitteilung sagt dir, wie es gelaufen ist. Pakete, die dein Passwort brauchen, werden übersprungen und genannt, mit dem Befehl, der sie im Terminal aktualisiert.",
+    "es": "La actualización se ejecuta en una ventana de Terminal del Mac, así que sigue aunque el teléfono se bloquee. Mientras tanto, el número va bajando y una notificación te dice cómo ha ido. Los paquetes que piden tu contraseña se saltan y se nombran, con el comando para actualizarlos en Terminal.",
+    "fr": "La mise à jour s’exécute dans une fenêtre de Terminal sur le Mac : elle continue quand le téléphone se met en veille. Pendant ce temps, le nombre diminue, et une notification indique comment elle s’est passée. Les paquets qui demandent votre mot de passe sont ignorés et nommés, avec la commande pour les mettre à jour dans Terminal.",
+    "ru": "Обновление идёт в окне Терминала на Mac, поэтому не прерывается, когда телефон засыпает. Пока оно идёт, число уменьшается, а уведомление расскажет, чем всё закончилось. Пакеты, которым нужен ваш пароль, пропускаются и называются по имени — с командой, которая обновит их в Терминале."
+  },
+  "tapAction": {
+    "en": "Asks first, then updates every outdated package with brew upgrade in a Terminal window",
+    "de": "Fragt nach und aktualisiert dann alle veralteten Pakete mit brew upgrade in einem Terminal-Fenster",
+    "es": "Pregunta antes y luego actualiza todos los paquetes desactualizados con brew upgrade en una ventana de Terminal",
+    "fr": "Demande confirmation, puis met à jour tous les paquets obsolètes avec brew upgrade dans une fenêtre de Terminal",
+    "ru": "Спрашивает подтверждение и обновляет все устаревшие пакеты командой brew upgrade в окне Терминала"
+  },
+  "holdAction": {
+    "en": "Checks for updates now instead of in a few hours",
+    "de": "Sucht jetzt nach Updates statt erst in ein paar Stunden",
+    "es": "Busca actualizaciones ahora en vez de dentro de unas horas",
+    "fr": "Recherche les mises à jour maintenant plutôt que dans quelques heures",
+    "ru": "Проверяет обновления сейчас, не дожидаясь следующей проверки"
+  },
+  "permissions": [
+    "notifications"
+  ],
+  "button": {
+    "icon": {
+      "sfSymbol": {
+        "name": "mug"
+      }
+    },
+    "color": "#FFD60A",
+    "command": {
+      "shellCommand": {
+        "command": "@file:tap.zsh"
+      }
+    },
+    "longPressCommand": {
+      "shellCommand": {
+        "command": "@file:hold.zsh"
+      }
+    },
+    "input": {
+      "question": {
+        "en": "Update all outdated Homebrew packages?",
+        "de": "Alle veralteten Homebrew-Pakete aktualisieren?",
+        "es": "¿Actualizar todos los paquetes de Homebrew desactualizados?",
+        "fr": "Mettre à jour tous les paquets Homebrew obsolètes ?",
+        "ru": "Обновить все устаревшие пакеты Homebrew?"
+      },
+      "quickReplies": [
+        {
+          "en": "Update all",
+          "de": "Alle aktualisieren",
+          "es": "Actualizar todo",
+          "fr": "Tout mettre à jour",
+          "ru": "Обновить всё"
+        }
+      ],
+      "quickRepliesOnly": true
+    },
+    "startupScript": "@file:startup.zsh",
+    "svgFace": {
+      "source": "@file:rest.svg"
+    }
+  },
+  "demoFace": {
+    "source": "@file:demo.svg"
+  }
+}

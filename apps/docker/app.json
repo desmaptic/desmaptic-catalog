@@ -1,6 +1,6 @@
 {
   "id": "docker",
-  "revision": 5,
+  "revision": 6,
   "name": "Docker Desktop",
   "bundleIds": [
     "com.docker.docker"
@@ -24,18 +24,18 @@
         "ru": "Сколько контейнеров запущено"
       },
       "details": {
-        "en": "Checked every few seconds. 0: nothing is running, or Resource Saver has stopped Docker’s VM. …: the engine is starting or paused. A dash: Docker Desktop is closed.",
-        "de": "Alle paar Sekunden geprüft. 0: Keiner läuft, oder Resource Saver hat die VM von Docker gestoppt. …: Die Engine startet oder ist pausiert. Ein Strich: Docker Desktop ist geschlossen.",
-        "es": "Se revisa cada pocos segundos. 0: no hay ninguno en marcha o Resource Saver ha detenido la VM de Docker. …: el motor está arrancando o en pausa. Una raya: Docker Desktop está cerrado.",
-        "fr": "Relevé à quelques secondes d’intervalle. 0 : aucun ne tourne, ou Resource Saver a arrêté la VM de Docker. … : le moteur démarre ou est en pause. Un tiret : Docker Desktop est fermé.",
-        "ru": "Проверяется каждые несколько секунд. 0 — ничего не запущено или Resource Saver остановил виртуальную машину Docker, … — движок запускается или на паузе, прочерк — Docker Desktop закрыт."
+        "en": "While Docker’s engine is starting or paused, the button shows an ellipsis. When Docker Desktop is closed, it turns gray with a dash instead of a number.",
+        "de": "Solange die Engine von Docker startet oder pausiert ist, zeigt die Taste drei Punkte. Ist Docker Desktop geschlossen, wird sie grau und zeigt einen Strich statt einer Zahl.",
+        "es": "Mientras el motor de Docker arranca o está en pausa, el botón muestra puntos suspensivos. Si Docker Desktop está cerrado, se pone gris y muestra una raya en vez de un número.",
+        "fr": "Tant que le moteur de Docker démarre ou est en pause, le bouton affiche des points de suspension. Quand Docker Desktop est fermé, il devient gris avec un tiret à la place du nombre.",
+        "ru": "Пока движок Docker запускается или стоит на паузе, на кнопке многоточие. Когда Docker Desktop закрыт, кнопка серая, а вместо числа прочерк."
       },
       "tapAction": {
         "en": "Opens the Dashboard, starting Docker Desktop if it’s closed",
         "de": "Öffnet das Dashboard und startet Docker Desktop, falls es geschlossen ist",
         "es": "Abre el Dashboard e inicia Docker Desktop si está cerrado",
         "fr": "Ouvre le Dashboard et démarre Docker Desktop s’il est fermé",
-        "ru": "Открывает Dashboard, при необходимости запуская Docker Desktop"
+        "ru": "Открывает Dashboard и запускает Docker Desktop, если он закрыт"
       },
       "holdAction": {
         "en": "⚠️ Stops every running container",
@@ -81,17 +81,17 @@
       },
       "summary": {
         "en": "Starts Docker Desktop; hold to quit it",
-        "de": "Startet Docker Desktop; Halten beendet es",
+        "de": "Startet Docker Desktop; halten, um es zu beenden",
         "es": "Inicia Docker Desktop; mantén pulsado para cerrarlo",
         "fr": "Démarre Docker Desktop ; maintenez pour le quitter",
-        "ru": "Запускает Docker Desktop; удержание — завершает"
+        "ru": "Запускает Docker Desktop; удержание — завершить его"
       },
       "details": {
-        "en": "Starts Docker Desktop in the background, or does nothing if it’s already running. Quitting works like Quit Docker Desktop in its menu.",
-        "de": "Startet Docker Desktop im Hintergrund; läuft es schon, passiert nichts. Beenden entspricht Quit Docker Desktop in seinem Menü.",
-        "es": "Inicia Docker Desktop en segundo plano; si ya está abierto, no pasa nada. Cerrarlo equivale a Quit Docker Desktop en su menú.",
-        "fr": "Démarre Docker Desktop en arrière-plan ; s’il tourne déjà, rien ne se passe. Le quitter revient à Quit Docker Desktop dans son menu.",
-        "ru": "Запускает Docker Desktop в фоне; если он уже работает, ничего не происходит. Завершение — то же, что Quit Docker Desktop в его меню."
+        "en": "Docker Desktop starts in the background, and nothing happens if it’s already running. The hold works like Quit Docker Desktop in its menu.",
+        "de": "Docker Desktop startet im Hintergrund, und läuft es schon, passiert nichts. Halten wirkt wie Quit Docker Desktop in seinem Menü.",
+        "es": "Docker Desktop se inicia en segundo plano, y si ya está abierto, no pasa nada. Mantener pulsado equivale a Quit Docker Desktop en su menú.",
+        "fr": "Docker Desktop démarre en arrière-plan, et s’il tourne déjà, rien ne se passe. Le maintien équivaut à Quit Docker Desktop dans son menu.",
+        "ru": "Docker Desktop запустится в фоне, а если он уже работает, ничего не произойдёт. Удержание действует как Quit Docker Desktop в его меню."
       },
       "tapAction": {
         "en": "Starts Docker Desktop",
@@ -147,7 +147,7 @@
         "de": "Container, Images, Volumes und Builds im Fenster von Docker Desktop. Startet Docker Desktop zuerst, falls es geschlossen ist.",
         "es": "Contenedores, imágenes, volúmenes y compilaciones en la ventana de Docker Desktop. Si Docker Desktop está cerrado, lo inicia primero.",
         "fr": "Conteneurs, images, volumes et builds dans la fenêtre de Docker Desktop. Démarre d’abord Docker Desktop s’il est fermé.",
-        "ru": "Контейнеры, образы, тома и сборки в окне Docker Desktop. Если Docker Desktop закрыт, сначала запускает его."
+        "ru": "В окне Docker Desktop видны контейнеры, образы, тома и сборки. Если Docker Desktop закрыт, кнопка сначала запустит его."
       },
       "tapAction": {
         "en": "Opens the Dashboard",
@@ -284,18 +284,18 @@
         "ru": "MCP Toolkit"
       },
       "summary": {
-        "en": "Opens the MCP Toolkit: MCP servers for AI apps",
-        "de": "Öffnet das MCP Toolkit: MCP-Server für KI-Apps",
-        "es": "Abre el MCP Toolkit: servidores MCP para apps de IA",
-        "fr": "Ouvre le MCP Toolkit : serveurs MCP pour les apps d’IA",
-        "ru": "Открывает MCP Toolkit: MCP-серверы для ИИ-приложений"
+        "en": "Opens the MCP Toolkit with MCP servers for AI apps",
+        "de": "Öffnet das MCP Toolkit mit MCP-Servern für KI-Apps",
+        "es": "Abre el MCP Toolkit con servidores MCP para apps de IA",
+        "fr": "Ouvre le MCP Toolkit et ses serveurs MCP pour les apps d’IA",
+        "ru": "Открывает MCP Toolkit с MCP-серверами для ИИ-приложений"
       },
       "details": {
         "en": "Docker’s catalog of MCP servers, the ones you added and the AI clients that use them. Starts Docker Desktop first if it’s closed.",
         "de": "Der MCP-Server-Katalog von Docker, deine hinzugefügten Server und die KI-Clients, die sie nutzen. Startet Docker Desktop zuerst, falls es geschlossen ist.",
         "es": "El catálogo de servidores MCP de Docker, los que añadiste y los clientes de IA que los usan. Si Docker Desktop está cerrado, lo inicia primero.",
         "fr": "Le catalogue de serveurs MCP de Docker, ceux que vous avez ajoutés et les clients d’IA qui les utilisent. Démarre d’abord Docker Desktop s’il est fermé.",
-        "ru": "Каталог MCP-серверов Docker, добавленные вами серверы и ИИ-клиенты, которые ими пользуются. Если Docker Desktop закрыт, сначала запускает его."
+        "ru": "В MCP Toolkit есть каталог MCP-серверов Docker, серверы, которые вы добавили, и ИИ-клиенты, которые ими пользуются. Если Docker Desktop закрыт, кнопка сначала запустит его."
       },
       "tapAction": {
         "en": "Opens the MCP Toolkit",
@@ -335,11 +335,11 @@
         "ru": "Поднимает ваш compose-проект в фоне; удержание — остановить его"
       },
       "details": {
-        "en": "Set the folder with your compose.yaml in the first line of the Tap and Long Press scripts. Starts its services as docker compose up -d does; Docker Desktop must be running. A first start that pulls images may need another tap.",
-        "de": "Den Ordner mit deiner compose.yaml trägst du in der ersten Zeile der Skripte für „Tippen“ und „Langes Drücken“ ein. Startet seine Dienste wie docker compose up -d; Docker Desktop muss laufen. Ein erster Start, der Images lädt, braucht vielleicht ein weiteres Tippen.",
-        "es": "Indica la carpeta con tu compose.yaml en la primera línea de los scripts de Toque y Pulsación larga. Inicia sus servicios como docker compose up -d; Docker Desktop tiene que estar abierto. Un primer inicio que descarga imágenes puede necesitar otro toque.",
-        "fr": "Indiquez le dossier de votre compose.yaml à la première ligne des scripts de l’appui et de l’appui long. Démarre ses services comme docker compose up -d ; Docker Desktop doit être ouvert. Un premier démarrage qui télécharge des images peut demander un autre appui.",
-        "ru": "Папку с вашим compose.yaml укажите в первой строке скриптов нажатия и долгого нажатия. Поднимает её сервисы, как docker compose up -d; Docker Desktop должен быть запущен. Первый запуск, который скачивает образы, может потребовать ещё одного нажатия."
+        "en": "Works like docker compose up -d and needs Docker Desktop running. A first start that pulls images may need another tap. Set the folder with your compose.yaml in the button’s settings, for both the tap and the hold.",
+        "de": "Wirkt wie docker compose up -d und braucht ein laufendes Docker Desktop. Lädt der erste Start Images, musst du vielleicht noch einmal tippen. Den Ordner mit deiner compose.yaml trägst du in den Einstellungen der Taste ein, fürs Tippen und fürs Halten.",
+        "es": "Funciona como docker compose up -d y necesita Docker Desktop abierto. Si el primer inicio descarga imágenes, quizá tengas que tocar otra vez. Pon la carpeta con tu compose.yaml en los ajustes del botón, tanto para el toque como para mantener pulsado.",
+        "fr": "Fonctionne comme docker compose up -d et demande que Docker Desktop soit ouvert. Si le premier démarrage télécharge des images, il faudra peut-être toucher une seconde fois. Indiquez le dossier de votre compose.yaml dans les réglages du bouton, pour le toucher comme pour le maintien.",
+        "ru": "Работает как docker compose up -d, и Docker Desktop при этом должен быть запущен. Если в первый раз скачиваются образы, может понадобиться нажать ещё раз. Папку с compose.yaml укажите в настройках кнопки и для нажатия, и для удержания."
       },
       "tapAction": {
         "en": "Starts the project’s containers in the background",
@@ -349,11 +349,11 @@
         "ru": "Поднимает контейнеры проекта в фоне"
       },
       "holdAction": {
-        "en": "⚠️ Takes the project down: its containers and networks are stopped and removed; volumes stay",
-        "de": "⚠️ Fährt das Projekt herunter: Seine Container und Netzwerke werden gestoppt und entfernt, Volumes bleiben",
-        "es": "⚠️ Detiene el proyecto: sus contenedores y redes se detienen y se eliminan; los volúmenes se quedan",
-        "fr": "⚠️ Arrête le projet : ses conteneurs et réseaux sont arrêtés et supprimés ; les volumes restent",
-        "ru": "⚠️ Останавливает проект: его контейнеры и сети останавливаются и удаляются, тома остаются"
+        "en": "⚠️ Stops and removes the project’s containers and networks, but keeps its volumes",
+        "de": "⚠️ Stoppt und entfernt die Container und Netzwerke des Projekts, die Volumes bleiben",
+        "es": "⚠️ Detiene y elimina los contenedores y las redes del proyecto, pero conserva los volúmenes",
+        "fr": "⚠️ Arrête et supprime les conteneurs et réseaux du projet, mais garde les volumes",
+        "ru": "⚠️ Останавливает и удаляет контейнеры и сети проекта, но оставляет тома"
       },
       "button": {
         "icon": {
@@ -386,18 +386,18 @@
         "ru": "Docker"
       },
       "summary": {
-        "en": "See what runs; start and stop Docker and your compose project from your phone",
-        "de": "Sehen, was läuft, und Docker und dein Compose-Projekt starten oder stoppen – vom Telefon aus",
+        "en": "See what’s running, and start or stop Docker and your compose project from your phone",
+        "de": "Sehen, was läuft, und Docker und dein Compose-Projekt vom Telefon aus starten oder stoppen",
         "es": "Mira qué está en marcha e inicia o detén Docker y tu proyecto de Compose desde el teléfono",
         "fr": "Voyez ce qui tourne, démarrez et arrêtez Docker et votre projet Compose depuis votre téléphone",
-        "ru": "Что запущено, запуск и остановка Docker и compose-проекта — с телефона"
+        "ru": "Смотрите, что запущено, и запускайте или останавливайте Docker и compose-проект с телефона"
       },
       "details": {
-        "en": "Containers, Start, Dashboard, MCP Toolkit and Compose Up work from any app; Search and Settings while Docker Desktop is in front. Memory and Disk Free show what the Mac has left.",
-        "de": "Container, Starten, Dashboard, MCP Toolkit und Compose Up funktionieren aus jeder App, Suchen und Einstellungen, wenn Docker Desktop vorne ist. Speicher und Freier Speicher zeigen, was dem Mac bleibt.",
-        "es": "Contenedores, Iniciar, Dashboard, MCP Toolkit y Compose Up funcionan desde cualquier app; Buscar y Ajustes, cuando Docker Desktop está delante. Memoria y Espacio libre muestran lo que le queda al Mac.",
-        "fr": "Conteneurs, Démarrer, Dashboard, MCP Toolkit et Compose Up fonctionnent depuis n’importe quelle app ; Rechercher et Réglages, quand Docker Desktop est au premier plan. Mémoire et Espace libre montrent ce qu’il reste au Mac.",
-        "ru": "«Контейнеры», «Запустить», Dashboard, MCP Toolkit и Compose Up работают из любого приложения, «Поиск» и «Настройки» — когда Docker Desktop на переднем плане. «Память» и «Свободно на диске» показывают, сколько памяти и места осталось на Mac."
+        "en": "Containers, Start, Dashboard, MCP Toolkit and Compose Up work from any app. Search and Settings work while Docker Desktop is in front. Memory and Disk Free show what the Mac has left.",
+        "de": "Container, Starten, Dashboard, MCP Toolkit und Compose Up funktionieren aus jeder App. Suchen und Einstellungen funktionieren, wenn Docker Desktop vorne ist. Speicher und Freier Speicher zeigen, wie viel Arbeitsspeicher und Speicherplatz dem Mac bleiben.",
+        "es": "Contenedores, Iniciar, Dashboard, MCP Toolkit y Compose Up funcionan desde cualquier app. Buscar y Ajustes funcionan cuando Docker Desktop está delante. Memoria y Espacio libre muestran lo que le queda al Mac.",
+        "fr": "Conteneurs, Démarrer, Dashboard, MCP Toolkit et Compose Up fonctionnent depuis n’importe quelle app. Rechercher et Réglages fonctionnent quand Docker Desktop est au premier plan. Mémoire et Espace libre montrent ce qu’il reste au Mac.",
+        "ru": "«Контейнеры», «Запустить», Dashboard, MCP Toolkit и Compose Up работают из любого приложения. «Поиск» и «Настройки» работают, когда Docker Desktop на переднем плане. «Память» и «Свободно на диске» показывают, сколько памяти и места осталось на Mac."
       },
       "placements": [
         {

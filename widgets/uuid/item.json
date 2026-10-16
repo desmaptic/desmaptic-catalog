@@ -1,6 +1,6 @@
 {
   "id": "uuid",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "UUID",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "A version 7 UUID begins with the time it was made, so such IDs sort in the order they were created — handy as database keys.",
-    "de": "Eine UUID der Version 7 beginnt mit ihrem Erstellungszeitpunkt, daher lassen sich solche IDs chronologisch sortieren – praktisch als Datenbankschlüssel.",
-    "es": "Un UUID de la versión 7 empieza por el momento de su creación, así que estos identificadores se ordenan por fecha: útiles como claves de base de datos.",
+    "en": "A version 7 UUID begins with the time it was made, so such IDs sort in the order they were created. That makes them handy as database keys.",
+    "de": "Eine UUID der Version 7 beginnt mit ihrem Erstellungszeitpunkt, daher lassen sich solche IDs chronologisch sortieren. Das macht sie praktisch als Datenbankschlüssel.",
+    "es": "Un UUID de la versión 7 empieza por el momento de su creación, así que estos identificadores se ordenan por fecha. Por eso son útiles como claves de base de datos.",
     "fr": "Un UUID de version 7 commence par l’instant de sa création : ces identifiants se trient donc par ordre de création, ce qui est pratique pour des clés de base de données.",
-    "ru": "UUID версии 7 начинается со времени создания, поэтому такие идентификаторы сортируются в порядке появления — удобно для ключей в базе данных."
+    "ru": "UUID версии 7 начинается со времени создания, поэтому такие идентификаторы сортируются в порядке появления. Это удобно для ключей в базе данных."
   },
   "tapAction": {
     "en": "Copies a new random UUID (version 4) to the Mac’s clipboard",
@@ -37,7 +37,7 @@
     "de": "Kopiert eine neue zeitlich sortierbare UUID (Version 7)",
     "es": "Copia un nuevo UUID ordenado por tiempo (versión 7)",
     "fr": "Copie un nouvel UUID ordonné chronologiquement (version 7)",
-    "ru": "Копирует новый UUID, упорядоченный по времени (версия 7)"
+    "ru": "Копирует новый UUID версии 7, который сортируется по времени создания"
   },
   "button": {
     "icon": {

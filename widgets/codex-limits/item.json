@@ -1,6 +1,6 @@
 {
   "id": "codex-limits",
-  "revision": 2,
+  "revision": 3,
   "kind": "widget",
   "title": {
     "en": "Codex Limits",
@@ -14,23 +14,23 @@
     "de": "Wie viel deiner Codex-Nutzungslimits verbraucht ist und wann sie zurückgesetzt werden",
     "es": "Cuánto has usado de tus límites de uso de Codex y cuándo se restablecen",
     "fr": "La part utilisée de vos limites d’utilisation Codex, et quand elles se réinitialisent",
-    "ru": "Сколько израсходовано из ваших лимитов Codex и когда они обновятся"
+    "ru": "Сколько потрачено из лимитов Codex и когда они обновятся"
   },
   "colSpan": 2,
   "rowSpan": 2,
   "details": {
-    "en": "One column per limit: its length (5h, 7d, 30d) in the colour of its ring, how much is used and ↻ the time until it resets. Works with ChatGPT closed. A dash: signed out, or no answer.",
-    "de": "Eine Spalte pro Limit: seine Dauer (5h, 7d, 30d) in der Farbe seines Rings, wie viel verbraucht ist und ↻ die Zeit bis zum Zurücksetzen. Klappt auch bei geschlossenem ChatGPT. Ein Strich: abgemeldet oder keine Antwort.",
-    "es": "Una columna por límite: su duración (5h, 7d, 30d) en el color de su anillo, cuánto se ha usado y ↻ el tiempo hasta que se restablece. Funciona con ChatGPT cerrado. Una raya: sesión cerrada o sin respuesta.",
-    "fr": "Une colonne par limite : sa durée (5h, 7d, 30d) dans la couleur de son anneau, la part utilisée et ↻ le temps avant sa réinitialisation. Fonctionne même avec ChatGPT fermé. Un tiret : déconnecté, ou pas de réponse.",
-    "ru": "По колонке на лимит: его срок (5h, 7d, 30d) цветом своего кольца, сколько израсходовано и ↻ время до обновления. Работает и при закрытом ChatGPT. Прочерк — вы не вошли или нет ответа."
+    "en": "For each limit: how much is used and how soon it resets. ChatGPT can stay closed. A dash instead of numbers means you’re signed out of ChatGPT or no answer came.",
+    "de": "Für jedes Limit: wie viel verbraucht ist und wann es zurückgesetzt wird. ChatGPT kann dabei geschlossen bleiben. Ein Strich statt Zahlen heißt: Du bist in ChatGPT abgemeldet oder es kam keine Antwort.",
+    "es": "Para cada límite: cuánto se ha usado y cuándo se restablece. ChatGPT puede estar cerrado. Una raya en lugar de números indica que cerraste sesión en ChatGPT o que no llegó respuesta.",
+    "fr": "Pour chaque limite : la part utilisée et le temps avant sa réinitialisation. ChatGPT peut rester fermé. Un tiret à la place des chiffres signifie que vous êtes déconnecté de ChatGPT ou qu’aucune réponse n’est arrivée.",
+    "ru": "Для каждого лимита видно, сколько потрачено и через сколько он обновится. ChatGPT при этом может быть закрыт. Прочерк вместо цифр значит, что вы не вошли в ChatGPT или ответ не пришёл."
   },
   "tapAction": {
-    "en": "Reads the limits again and brings ChatGPT to the front if it’s open",
-    "de": "Liest die Limits neu und holt ChatGPT nach vorne, wenn es geöffnet ist",
-    "es": "Vuelve a leer los límites y trae ChatGPT al frente si está abierto",
-    "fr": "Relit les limites et met ChatGPT au premier plan s’il est ouvert",
-    "ru": "Заново читает лимиты и выводит ChatGPT на передний план, если он открыт"
+    "en": "Refreshes the numbers and switches to ChatGPT if it’s open",
+    "de": "Aktualisiert die Zahlen und holt ChatGPT nach vorne, wenn es geöffnet ist",
+    "es": "Actualiza los números y trae ChatGPT al frente si está abierto",
+    "fr": "Actualise les chiffres et met ChatGPT au premier plan s’il est ouvert",
+    "ru": "Обновляет цифры и переключает на ChatGPT, если он открыт"
   },
   "button": {
     "icon": {

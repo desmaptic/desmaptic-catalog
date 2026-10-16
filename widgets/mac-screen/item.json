@@ -1,6 +1,6 @@
 {
   "id": "mac-screen",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "title": {
     "en": "Mac Screen",
@@ -14,23 +14,23 @@
     "de": "Ob der Bildschirm des Mac entsperrt oder gesperrt ist, und seit wann",
     "es": "Si la pantalla del Mac está desbloqueada o bloqueada, y desde cuándo",
     "fr": "Si l’écran du Mac est déverrouillé ou verrouillé, et depuis quand",
-    "ru": "Открыт экран Mac или заблокирован, и с какого времени"
+    "ru": "Заблокирован ли экран Mac и с какого времени"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Says whether the Mac’s screen is unlocked or locked, and since when: cyan while locked, pink while anyone at the Mac could use it. The words come in the Mac’s language.",
-    "de": "Zeigt, ob der Bildschirm des Mac entsperrt oder gesperrt ist, und seit wann: cyan, wenn gesperrt, pink, solange jeder am Mac ihn benutzen könnte. Die Wörter erscheinen in der Sprache des Mac.",
-    "es": "Indica si la pantalla del Mac está desbloqueada o bloqueada, y desde cuándo: cian si está bloqueada, rosa mientras cualquiera frente al Mac podría usarlo. Las palabras aparecen en el idioma del Mac.",
-    "fr": "Indique si l’écran du Mac est déverrouillé ou verrouillé, et depuis quand : cyan s’il est verrouillé, rose tant que n’importe qui devant le Mac pourrait s’en servir. Les mots s’affichent dans la langue du Mac.",
-    "ru": "Показывает, открыт экран Mac или заблокирован, и с какого времени: голубой — заблокирован, розовый — пока за Mac может сесть кто угодно. Слова — на языке Mac."
+    "en": "A quick check that you didn’t leave the Mac unlocked. While the screen is unlocked, the button is pink: anyone at the Mac could use it. The words on it are in the Mac’s language.",
+    "de": "So siehst du schnell, ob du den Mac offen gelassen hast. Solange der Bildschirm entsperrt ist, ist die Taste pink: Jeder am Mac könnte ihn benutzen. Die Wörter darauf erscheinen in der Sprache des Mac.",
+    "es": "Para comprobar de un vistazo si dejaste el Mac sin bloquear. Mientras la pantalla está desbloqueada, el botón es rosa: cualquiera frente al Mac podría usarlo. Las palabras aparecen en el idioma del Mac.",
+    "fr": "Pour vérifier d’un coup d’œil que vous n’avez pas laissé le Mac déverrouillé. Tant que l’écran est déverrouillé, le bouton est rose : n’importe qui devant le Mac pourrait s’en servir. Les mots s’affichent dans la langue du Mac.",
+    "ru": "Удобно проверить, не забыли ли вы заблокировать Mac. Пока экран открыт, кнопка розовая: за Mac может сесть кто угодно. Подписи на кнопке будут на языке, который выбран на Mac."
   },
   "tapAction": {
-    "en": "Locks the Mac’s screen; does nothing when it is already locked",
-    "de": "Sperrt den Bildschirm des Mac; ist er schon gesperrt, passiert nichts",
-    "es": "Bloquea la pantalla del Mac; si ya está bloqueada, no hace nada",
-    "fr": "Verrouille l’écran du Mac ; s’il est déjà verrouillé, ne fait rien",
-    "ru": "Блокирует экран Mac; если он уже заблокирован, ничего не делает"
+    "en": "Locks the Mac’s screen if it isn’t locked yet",
+    "de": "Sperrt den Bildschirm des Mac, falls er noch nicht gesperrt ist",
+    "es": "Bloquea la pantalla del Mac si aún no está bloqueada",
+    "fr": "Verrouille l’écran du Mac s’il ne l’est pas déjà",
+    "ru": "Блокирует экран Mac, если он ещё не заблокирован"
   },
   "button": {
     "icon": {

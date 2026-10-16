@@ -1,6 +1,6 @@
 {
   "id": "keep-awake",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "title": {
@@ -11,7 +11,7 @@
     "ru": "Не спать"
   },
   "summary": {
-    "en": "Keeps the Mac from sleeping for a few hours, and shows until when",
+    "en": "Keeps the Mac awake for a few hours, with the end time on the button",
     "de": "Hält den Mac ein paar Stunden wach und zeigt, bis wann",
     "es": "Impide que el Mac entre en reposo durante unas horas y muestra hasta cuándo",
     "fr": "Empêche le Mac de se mettre en veille pendant quelques heures, et indique jusqu’à quand",
@@ -20,18 +20,18 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Open eye: the Mac won’t sleep until the time shown, even with your phone away; the gauge empties toward it and turns pink in the last half hour. The display still sleeps as set, and closing the lid still puts the Mac to sleep.",
-    "de": "Offenes Auge: Der Mac schläft bis zur angezeigten Uhrzeit nicht ein, auch ohne Telefon; die Anzeige leert sich bis dahin und wird in der letzten halben Stunde pink. Das Display schläft wie eingestellt, und mit geschlossenem Deckel schläft der Mac trotzdem ein.",
-    "es": "Ojo abierto: el Mac no entra en reposo hasta la hora indicada, aunque el teléfono no esté cerca; el indicador se vacía hasta entonces y se vuelve rosa en la última media hora. La pantalla se apaga como siempre, y al cerrar la tapa el Mac entra en reposo igualmente.",
-    "fr": "Œil ouvert : le Mac ne se met pas en veille avant l’heure affichée, même sans le téléphone ; la jauge se vide jusque-là et vire au rose la dernière demi-heure. L’écran se met en veille comme d’habitude, et fermer le capot met quand même le Mac en veille.",
-    "ru": "Глаз открыт — Mac не уснёт до показанного времени, даже без телефона; шкала пустеет к нему и в последние полчаса розовеет. Экран засыпает как обычно, а с закрытой крышкой Mac всё равно уснёт."
+    "en": "Handy when the Mac has a long job to finish while you’re away. It stays awake until the time on the button, even if your phone disconnects. The display still sleeps as set, and closing the lid still puts the Mac to sleep.",
+    "de": "Praktisch, wenn der Mac eine lange Arbeit beenden soll, während du weg bist. Die Taste zeigt, bis wann er wach bleibt, auch wenn dein Telefon die Verbindung verliert. Das Display schläft wie eingestellt, und mit geschlossenem Deckel schläft der Mac trotzdem ein.",
+    "es": "Útil cuando el Mac tiene que terminar un trabajo largo mientras no estás. El botón muestra hasta cuándo seguirá activo, aunque el teléfono se desconecte. La pantalla se apaga como siempre, y al cerrar la tapa el Mac entra en reposo igualmente.",
+    "fr": "Pratique quand le Mac doit finir un long travail en votre absence. Le bouton indique jusqu’à quand il reste éveillé, même si le téléphone se déconnecte. L’écran se met en veille comme d’habitude, et fermer le capot met quand même le Mac en veille.",
+    "ru": "Пригодится, когда Mac должен закончить долгую работу без вас. На кнопке видно, до какого времени он не уснёт, даже если телефон отключится. Экран гаснет как обычно, а с закрытой крышкой Mac всё равно уснёт."
   },
   "tapAction": {
-    "en": "Keeps the Mac awake for 3 hours; tap again to let it sleep",
-    "de": "Hält den Mac 3 Stunden wach; erneut tippen, damit er wieder schlafen darf",
-    "es": "Mantiene el Mac activo 3 horas; toca de nuevo para que pueda entrar en reposo",
-    "fr": "Garde le Mac éveillé pendant 3 heures ; touchez à nouveau pour le laisser se mettre en veille",
-    "ru": "Не даёт Mac уснуть 3 часа; повторное нажатие снова разрешает сон"
+    "en": "Keeps the Mac awake for 3 hours. Tap again to let it sleep",
+    "de": "Hält den Mac 3 Stunden wach. Tippe erneut, damit er wieder schlafen darf",
+    "es": "Mantiene el Mac activo 3 horas. Toca de nuevo para que pueda entrar en reposo",
+    "fr": "Garde le Mac éveillé pendant 3 heures. Touchez à nouveau pour le laisser se mettre en veille",
+    "ru": "Не даёт Mac уснуть 3 часа. Нажмите ещё раз, чтобы отменить"
   },
   "button": {
     "icon": {

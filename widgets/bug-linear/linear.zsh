@@ -35,7 +35,7 @@ if [[ -n $team ]]; then
   [[ -n $team_id ]] || fail config "No Linear team with the key $team; yours: $teams"
 else
   (( $(jq '.data.teams.nodes | length' "$tmp/answer") == 1 )) ||
-    fail config "Set the team on the first line of this button’s tap script, one of: $teams"
+    fail config "Set the team in this button’s settings, one of: $teams"
   team_id=$(jq -r '.data.teams.nodes[0].id' "$tmp/answer")
 fi
 

@@ -13,7 +13,7 @@ export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 [[ $cmd == *[^[:space:]]* ]] ||
-  { print -u2 -- "Run Command: set the command on the first line of the button's script, e.g. cmd='cd ~/Projects/app && claude'"; exit 1 }
+  { print -u2 -- "Run Command: set the command in this button’s settings, e.g. cmd='cd ~/Projects/app && claude'"; exit 1 }
 
 # pgrep sees every account's processes; -U keeps it to this one, whose Terminal the AppleScript talks to. It also leaves
 # out its own ancestors: -a, because an agent started from a Terminal tab runs inside Terminal.

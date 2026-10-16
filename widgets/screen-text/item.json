@@ -1,6 +1,6 @@
 {
   "id": "screen-text",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Text from Screen",
@@ -10,27 +10,27 @@
     "ru": "Текст с экрана"
   },
   "summary": {
-    "en": "The text in an area of the Mac’s screen, on its clipboard; hold to read a copied picture",
-    "de": "Der Text aus einem Bereich des Mac-Bildschirms in der Zwischenablage; Halten liest ein kopiertes Bild",
-    "es": "El texto de una zona de la pantalla del Mac, en su portapapeles; mantén pulsado para leer una imagen copiada",
-    "fr": "Le texte d’une zone de l’écran du Mac, dans son presse-papiers ; maintenez pour lire une image copiée",
-    "ru": "Текст из области экрана Mac — в его буфер обмена; удержание читает скопированную картинку"
+    "en": "Copies the text from any part of the Mac’s screen; hold to read it from a copied picture",
+    "de": "Kopiert den Text aus einem Bereich des Mac-Bildschirms; Halten liest ihn aus einem kopierten Bild",
+    "es": "Copia el texto de cualquier zona de la pantalla del Mac; mantén pulsado para leerlo de una imagen copiada",
+    "fr": "Copie le texte de n’importe quelle zone de l’écran du Mac ; maintenez pour le lire dans une image copiée",
+    "ru": "Копирует текст с любого участка экрана Mac; удержание достаёт текст из скопированной картинки"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Recognizes text in the languages macOS knows, top to bottom; a QR code gives its link, in its place among the lines. Nothing found: the button flashes red, and the clipboard keeps what it held — except a password copied before the selection.",
-    "de": "Erkennt Text in den Sprachen, die macOS kennt, von oben nach unten; ein QR-Code liefert seinen Link, an seiner Stelle zwischen den Zeilen. Nichts gefunden: Die Taste blinkt rot, und die Zwischenablage behält ihren Inhalt – außer einem Passwort, das vor der Auswahl kopiert wurde.",
-    "es": "Reconoce texto en los idiomas que conoce macOS, de arriba abajo; un código QR da su enlace, en su lugar entre las líneas. Si no encuentra nada, el botón parpadea en rojo y el portapapeles conserva lo que tenía, salvo una contraseña copiada antes de seleccionar.",
-    "fr": "Reconnaît le texte dans les langues que macOS connaît, de haut en bas ; un code QR donne son lien, à sa place parmi les lignes. Rien trouvé : le bouton clignote en rouge et le presse-papiers garde son contenu, sauf un mot de passe copié avant la sélection.",
-    "ru": "Распознаёт текст на языках, которые знает macOS, сверху вниз; QR-код превращается в свою ссылку — на своём месте среди строк. Ничего не нашлось — кнопка мигает красным, в буфере обмена остаётся прежнее, кроме пароля, скопированного до выделения."
+    "en": "Reads text in any language macOS knows and turns a QR code into its link. If nothing is found, the button shakes and the clipboard keeps what it had. A password copied before is not put back, so it won’t linger there.",
+    "de": "Liest Text in jeder Sprache, die macOS kennt, und macht aus einem QR-Code seinen Link. Wird nichts gefunden, wackelt die Taste und die Zwischenablage behält ihren Inhalt. Nur ein vorher kopiertes Passwort kommt nicht zurück, damit es dort nicht liegen bleibt.",
+    "es": "Lee texto en cualquier idioma que conozca macOS y convierte un código QR en su enlace. Si no encuentra nada, el botón tiembla y el portapapeles conserva lo que tenía. Solo una contraseña copiada antes no vuelve, para que no se quede ahí.",
+    "fr": "Lit le texte dans toutes les langues que connaît macOS et remplace un code QR par son lien. Si rien n’est trouvé, le bouton tremble et le presse-papiers garde son contenu. Seul un mot de passe copié avant n’est pas remis, pour qu’il n’y traîne pas.",
+    "ru": "Распознаёт текст на любом языке, который знает macOS, а QR-код превращает в его ссылку. Если ничего не нашлось, кнопка вздрогнет, а в буфере останется то, что было. Только скопированный до этого пароль не вернётся, чтобы он не задержался там надолго."
   },
   "tapAction": {
-    "en": "Starts selecting an area on the Mac, as ⌃⇧⌘4 does, and copies its text; Esc cancels",
-    "de": "Startet auf dem Mac die Auswahl eines Bereichs wie ⌃⇧⌘4 und kopiert seinen Text; Esc bricht ab",
-    "es": "Empieza a seleccionar una zona en el Mac, como ⌃⇧⌘4, y copia su texto; Esc cancela",
-    "fr": "Lance la sélection d’une zone sur le Mac, comme ⌃⇧⌘4, et copie son texte ; Esc annule",
-    "ru": "Включает на Mac выделение области, как ⌃⇧⌘4, и копирует её текст; Esc — отмена"
+    "en": "Lets you select an area on the Mac, as ⌃⇧⌘4 does, and copies the text in it. Esc cancels",
+    "de": "Lässt dich auf dem Mac einen Bereich auswählen wie mit ⌃⇧⌘4 und kopiert den Text darin. Esc bricht ab",
+    "es": "Te deja seleccionar una zona en el Mac, como con ⌃⇧⌘4, y copia su texto. Esc cancela",
+    "fr": "Vous permet de sélectionner une zone sur le Mac, comme avec ⌃⇧⌘4, et copie le texte qu’elle contient. Esc annule",
+    "ru": "Включает на Mac выделение области, как ⌃⇧⌘4, и копирует текст из неё. Esc отменяет выделение"
   },
   "holdAction": {
     "en": "Copies the text from the picture already on the Mac’s clipboard",

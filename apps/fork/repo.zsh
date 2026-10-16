@@ -20,7 +20,7 @@ zmodload -F zsh/files b:zf_mkdir || { print -u2 -- "Open Repo: zsh module files 
 [[ -n $DESMAPTIC_STORAGE ]] && saved="$DESMAPTIC_STORAGE/gallery/{{CELL_ID}}/repo" || saved=""
 case $action in
   log)
-    [[ -n $repo ]] || { print -u2 -- "Open Repo: set your repository's folder on the first line of the button's command, such as repo=\"~/Projects/app\""; exit 1 }
+    [[ -n $repo ]] || { print -u2 -- "Open Repo: set your repository’s folder in this button’s settings, such as repo=\"~/Projects/app\""; exit 1 }
     [[ $repo == '~/'* ]] && repo=$HOME/${repo#\~/}              # "~/…" in quotes is not expanded by zsh
     [[ $repo == /* ]] || { print -u2 -- "Open Repo: the folder must start with / or ~/"; exit 1 } ;;
   status)
@@ -31,7 +31,7 @@ esac
 [[ -d $repo ]] || { print -ru2 -- "Open Repo: no folder at $repo"; exit 1 }
 # A repository's top folder holds its .git folder, or a .git file in a linked worktree.
 marker=($repo/.git(N))  # not a call: the repository's own folder
-(( $#marker )) || { print -ru2 -- "Open Repo: $repo is not a repository's top folder"; exit 1 }
+(( $#marker )) || { print -ru2 -- "Open Repo: $repo is not the top folder of a Git repository"; exit 1 }
 
 app=$(osascript -l JavaScript -e 'function run(argv) {
   ObjC.import("AppKit");

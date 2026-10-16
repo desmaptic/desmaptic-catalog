@@ -1,6 +1,6 @@
 {
   "id": "postman",
-  "revision": 4,
+  "revision": 5,
   "name": "Postman",
   "bundleIds": [
     "com.postmanlabs.mac"
@@ -24,11 +24,11 @@
         "ru": "Отправляет открытый запрос (⌘↩); удержание — сохранить ответ в файл"
       },
       "details": {
-        "en": "The same as the Send button of the request tab in front. Works while Postman is in front.",
-        "de": "Wie die Schaltfläche Send im vorderen Anfrage-Tab. Funktioniert, wenn Postman vorne ist.",
-        "es": "Lo mismo que el botón Send de la pestaña de solicitud de delante. Funciona cuando Postman está delante.",
-        "fr": "Comme le bouton Send de l’onglet de requête au premier plan. Fonctionne quand Postman est au premier plan.",
-        "ru": "То же, что кнопка Send во вкладке запроса на переднем плане. Работает, когда Postman на переднем плане."
+        "en": "Same as the Send button in the open request tab. Works while Postman is in front.",
+        "de": "Wie die Schaltfläche Send im geöffneten Anfrage-Tab. Funktioniert, wenn Postman vorne ist.",
+        "es": "Lo mismo que el botón Send de la pestaña de solicitud abierta. Funciona cuando Postman está delante.",
+        "fr": "Comme le bouton Send de l’onglet de requête ouvert. Fonctionne quand Postman est au premier plan.",
+        "ru": "То же, что кнопка Send в открытой вкладке запроса. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Sends the request",
@@ -282,11 +282,11 @@
         "ru": "Открывает новую вкладку"
       },
       "holdAction": {
-        "en": "⚠️ Closes the tab in front; unsaved changes may be lost (⌘W)",
-        "de": "⚠️ Schließt den vorderen Tab; ungespeicherte Änderungen können verloren gehen (⌘W)",
-        "es": "⚠️ Cierra la pestaña de delante; los cambios sin guardar pueden perderse (⌘W)",
-        "fr": "⚠️ Ferme l’onglet au premier plan ; les modifications non enregistrées peuvent être perdues (⌘W)",
-        "ru": "⚠️ Закрывает переднюю вкладку; несохранённые изменения могут пропасть (⌘W)"
+        "en": "⚠️ Closes the tab in front (⌘W), and unsaved changes may be lost",
+        "de": "⚠️ Schließt den vorderen Tab (⌘W), und ungespeicherte Änderungen können verloren gehen",
+        "es": "⚠️ Cierra la pestaña de delante (⌘W), y los cambios sin guardar pueden perderse",
+        "fr": "⚠️ Ferme l’onglet au premier plan (⌘W), et les modifications non enregistrées peuvent être perdues",
+        "ru": "⚠️ Закрывает переднюю вкладку (⌘W), и несохранённые изменения могут пропасть"
       },
       "permissions": [
         "accessibility"
@@ -337,11 +337,11 @@
         "ru": "Возвращает последнюю закрытую вкладку (⇧⌘T)"
       },
       "details": {
-        "en": "Postman’s Reopen Last Closed Tab, for a tab closed by mistake. Works while Postman is in front.",
-        "de": "„Reopen Last Closed Tab“ von Postman, für einen versehentlich geschlossenen Tab. Funktioniert, wenn Postman vorne ist.",
-        "es": "«Reopen Last Closed Tab» de Postman, para una pestaña cerrada por error. Funciona cuando Postman está delante.",
-        "fr": "« Reopen Last Closed Tab » de Postman, pour un onglet fermé par erreur. Fonctionne quand Postman est au premier plan.",
-        "ru": "«Reopen Last Closed Tab» в Postman — для вкладки, закрытой по ошибке. Работает, когда Postman на переднем плане."
+        "en": "Handy when you close a tab by mistake. Works while Postman is in front.",
+        "de": "Praktisch, wenn du einen Tab versehentlich geschlossen hast. Funktioniert, wenn Postman vorne ist.",
+        "es": "Útil si cerraste una pestaña por error. Funciona cuando Postman está delante.",
+        "fr": "Pratique si vous avez fermé un onglet par erreur. Fonctionne quand Postman est au premier plan.",
+        "ru": "Пригодится, если вкладку закрыли по ошибке. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Reopens the tab you closed last",
@@ -450,11 +450,11 @@
         "ru": "Ищет открытую вкладку по названию (⇧⌘A)"
       },
       "details": {
-        "en": "For many open requests: type part of a tab’s name and pick it from the list. Works while Postman is in front.",
-        "de": "Bei vielen offenen Anfragen: Gib einen Teil des Tab-Namens ein und wähle ihn in der Liste. Funktioniert, wenn Postman vorne ist.",
-        "es": "Para muchas solicitudes abiertas: escribe parte del nombre de una pestaña y elígela en la lista. Funciona cuando Postman está delante.",
-        "fr": "Pour de nombreuses requêtes ouvertes : tapez une partie du nom d’un onglet et choisissez-le dans la liste. Fonctionne quand Postman est au premier plan.",
-        "ru": "Когда открыто много запросов: наберите часть названия вкладки и выберите её в списке. Работает, когда Postman на переднем плане."
+        "en": "Handy with many requests open. Type part of a tab’s name and pick it from the list. Works while Postman is in front.",
+        "de": "Praktisch bei vielen offenen Anfragen. Gib einen Teil des Tab-Namens ein und wähle ihn in der Liste. Funktioniert, wenn Postman vorne ist.",
+        "es": "Útil con muchas solicitudes abiertas. Escribe parte del nombre de una pestaña y elígela en la lista. Funciona cuando Postman está delante.",
+        "fr": "Pratique quand beaucoup de requêtes sont ouvertes. Tapez une partie du nom d’un onglet et choisissez-le dans la liste. Fonctionne quand Postman est au premier plan.",
+        "ru": "Удобно, когда открыто много запросов. Наберите часть названия вкладки и выберите её в списке. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Opens the tab search",
@@ -577,7 +577,7 @@
         "de": "Der Tab Find unten im Fenster, der Gefundenes auch ersetzen kann. Funktioniert, wenn Postman vorne ist.",
         "es": "La pestaña Find en la parte inferior de la ventana, que también reemplaza lo encontrado. Funciona cuando Postman está delante.",
         "fr": "L’onglet Find en bas de la fenêtre, qui peut aussi remplacer ce qu’il trouve. Fonctionne quand Postman est au premier plan.",
-        "ru": "Вкладка Find внизу окна: она может и заменить найденное. Работает, когда Postman на переднем плане."
+        "ru": "Вкладка Find внизу окна умеет и заменять найденное. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides Find",
@@ -674,11 +674,11 @@
         "ru": "Ставит ответ рядом с запросом или под ним (⌥⌘V)"
       },
       "details": {
-        "en": "View › Toggle Two-Pane View: side by side suits a wide screen, one above the other a narrow window. Works while Postman is in front.",
-        "de": "View › Toggle Two-Pane View: nebeneinander für breite Bildschirme, untereinander für schmale Fenster. Funktioniert, wenn Postman vorne ist.",
-        "es": "View › Toggle Two-Pane View: lado a lado para una pantalla ancha, uno sobre otro para una ventana estrecha. Funciona cuando Postman está delante.",
-        "fr": "View › Toggle Two-Pane View : côte à côte pour un écran large, l’un sous l’autre pour une fenêtre étroite. Fonctionne quand Postman est au premier plan.",
-        "ru": "View › Toggle Two-Pane View: рядом — для широкого экрана, одно под другим — для узкого окна. Работает, когда Postman на переднем плане."
+        "en": "Same as View › Toggle Two-Pane View. Side by side suits a wide screen, and one above the other a narrow window. Works while Postman is in front.",
+        "de": "Wie View › Toggle Two-Pane View. Nebeneinander passt zu breiten Bildschirmen, untereinander zu schmalen Fenstern. Funktioniert, wenn Postman vorne ist.",
+        "es": "Lo mismo que View › Toggle Two-Pane View. Lado a lado va bien en una pantalla ancha, y uno sobre otro en una ventana estrecha. Funciona cuando Postman está delante.",
+        "fr": "Comme View › Toggle Two-Pane View. Les panneaux côte à côte conviennent à un écran large, et l’un sous l’autre, à une fenêtre étroite. Fonctionne quand Postman est au premier plan.",
+        "ru": "То же, что View › Toggle Two-Pane View. На широком экране удобнее рядом, в узком окне — одно под другим. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Switches the layout",
@@ -727,11 +727,11 @@
         "ru": "Открывает Postman Console (⌥⌘C); удержание — очистить"
       },
       "details": {
-        "en": "Every request as it was sent and the response that came back: headers, body and console.log from scripts. Works while Postman is in front.",
-        "de": "Jede Anfrage, wie sie gesendet wurde, und die Antwort darauf: Header, Body und console.log aus Skripten. Funktioniert, wenn Postman vorne ist.",
-        "es": "Cada solicitud tal como se envió y la respuesta que volvió: cabeceras, cuerpo y console.log de los scripts. Funciona cuando Postman está delante.",
-        "fr": "Chaque requête telle qu’envoyée et la réponse reçue : en-têtes, corps et console.log des scripts. Fonctionne quand Postman est au premier plan.",
-        "ru": "Каждый запрос — каким он ушёл, и ответ, который вернулся: заголовки, тело и console.log скриптов. Работает, когда Postman на переднем плане."
+        "en": "Shows each request as it was sent and the response that came back, with headers, body and console.log output from scripts. Works while Postman is in front.",
+        "de": "Zeigt jede Anfrage, wie sie gesendet wurde, und die Antwort darauf, mit Header, Body und der Ausgabe von console.log aus Skripten. Funktioniert, wenn Postman vorne ist.",
+        "es": "Muestra cada solicitud tal como se envió y la respuesta que volvió, con cabeceras, cuerpo y la salida de console.log de los scripts. Funciona cuando Postman está delante.",
+        "fr": "Montre chaque requête telle qu’elle est partie et la réponse reçue, avec en-têtes, corps et sortie de console.log des scripts. Fonctionne quand Postman est au premier plan.",
+        "ru": "Здесь видно, каким ушёл каждый запрос и какой пришёл ответ: заголовки, тело и вывод console.log из скриптов. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Opens the console",
@@ -798,11 +798,11 @@
         "ru": "Открывает Collection Runner в новой вкладке (⇧⌘R)"
       },
       "details": {
-        "en": "Drop in a collection or folder and set the iterations; nothing runs until you press Run. Works while Postman is in front.",
-        "de": "Zieh eine Collection oder einen Ordner hinein und leg die Durchläufe fest; los geht es erst, wenn du auf Run klickst. Funktioniert, wenn Postman vorne ist.",
-        "es": "Arrastra una colección o carpeta y fija las iteraciones; nada se ejecuta hasta pulsar Run. Funciona cuando Postman está delante.",
-        "fr": "Glissez une collection ou un dossier et réglez les itérations ; rien ne s’exécute avant Run. Fonctionne quand Postman est au premier plan.",
-        "ru": "Перетащите коллекцию или папку и задайте число итераций; ничего не запустится, пока не нажмёте Run. Работает, когда Postman на переднем плане."
+        "en": "Drop in a collection or folder and set the iterations. Nothing runs until you click Run. Works while Postman is in front.",
+        "de": "Zieh eine Collection oder einen Ordner hinein und leg die Durchläufe fest. Los geht es erst, wenn du auf Run klickst. Funktioniert, wenn Postman vorne ist.",
+        "es": "Arrastra una colección o carpeta y fija las iteraciones. Nada se ejecuta hasta que haces clic en Run. Funciona cuando Postman está delante.",
+        "fr": "Glissez une collection ou un dossier et réglez les itérations. Rien ne s’exécute avant que vous cliquiez sur Run. Fonctionne quand Postman est au premier plan.",
+        "ru": "Перетащите коллекцию или папку и задайте число итераций. Ничего не запустится, пока вы не нажмёте Run. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Opens a Runner tab",
@@ -851,11 +851,11 @@
         "ru": "Импортирует cURL, OpenAPI, коллекции и файлы (⌘O)"
       },
       "details": {
-        "en": "Paste a cURL command or a link, or drop files: Postman turns them into requests and collections. Works while Postman is in front.",
-        "de": "Einen cURL-Befehl oder Link einfügen oder Dateien hineinziehen: Postman macht daraus Anfragen und Collections. Funktioniert, wenn Postman vorne ist.",
-        "es": "Pega un comando cURL o un enlace, o suelta archivos: Postman los convierte en solicitudes y colecciones. Funciona cuando Postman está delante.",
-        "fr": "Collez une commande cURL ou un lien, ou déposez des fichiers : Postman en fait des requêtes et des collections. Fonctionne quand Postman est au premier plan.",
-        "ru": "Вставьте команду cURL или ссылку либо перетащите файлы — Postman превратит их в запросы и коллекции. Работает, когда Postman на переднем плане."
+        "en": "Paste a cURL command or a link, or drop in files, and Postman turns them into requests and collections. Works while Postman is in front.",
+        "de": "Füg einen cURL-Befehl oder Link ein oder zieh Dateien hinein, und Postman macht daraus Anfragen und Collections. Funktioniert, wenn Postman vorne ist.",
+        "es": "Pega un comando cURL o un enlace, o suelta archivos, y Postman los convierte en solicitudes y colecciones. Funciona cuando Postman está delante.",
+        "fr": "Collez une commande cURL ou un lien, ou déposez des fichiers, et Postman en fait des requêtes et des collections. Fonctionne quand Postman est au premier plan.",
+        "ru": "Вставьте команду cURL или ссылку либо перетащите файлы, и Postman превратит их в запросы и коллекции. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Opens Import",
@@ -903,11 +903,11 @@
         "ru": "Открывает ИИ-помощника Postman (⌃⌥P)"
       },
       "details": {
-        "en": "Agent Mode, or Postbot where Agent Mode is off: ask it to write tests, fix a request or explain a response. Works while Postman is in front.",
-        "de": "Agent Mode oder, wo Agent Mode aus ist, Postbot: Lass dir Tests schreiben, eine Anfrage reparieren oder eine Antwort erklären. Funktioniert, wenn Postman vorne ist.",
-        "es": "Agent Mode, o Postbot donde Agent Mode está desactivado: pídele que escriba tests, arregle una solicitud o explique una respuesta. Funciona cuando Postman está delante.",
-        "fr": "Agent Mode, ou Postbot là où Agent Mode est désactivé : demandez-lui d’écrire des tests, de corriger une requête ou d’expliquer une réponse. Fonctionne quand Postman est au premier plan.",
-        "ru": "Agent Mode, а где он выключен — Postbot: попросите написать тесты, исправить запрос или объяснить ответ. Работает, когда Postman на переднем плане."
+        "en": "You get Agent Mode, or Postbot if Agent Mode is off. Ask it to write tests, fix a request or explain a response. Works while Postman is in front.",
+        "de": "Du bekommst Agent Mode oder, wenn er aus ist, Postbot. Lass dir Tests schreiben, eine Anfrage reparieren oder eine Antwort erklären. Funktioniert, wenn Postman vorne ist.",
+        "es": "Se abre Agent Mode, o Postbot si Agent Mode está desactivado. Pídele que escriba tests, arregle una solicitud o explique una respuesta. Funciona cuando Postman está delante.",
+        "fr": "Vous obtenez Agent Mode, ou Postbot si Agent Mode est désactivé. Demandez-lui d’écrire des tests, de corriger une requête ou d’expliquer une réponse. Fonctionne quand Postman est au premier plan.",
+        "ru": "Откроется Agent Mode, а если он выключен, то Postbot. Попросите его написать тесты, исправить запрос или объяснить ответ. Работает, когда Postman на переднем плане."
       },
       "tapAction": {
         "en": "Opens Agent Mode",
@@ -958,11 +958,11 @@
         "ru": "Отправлять, сохранять и переключать запросы с телефона"
       },
       "details": {
-        "en": "The buttons work while Postman is in front, with its keyboard shortcuts on and unchanged (Settings › Shortcuts). Next Tab and Sidebar click Postman’s menu instead.",
-        "de": "Die Tasten funktionieren, wenn Postman vorne ist und seine Tastenkürzel eingeschaltet und unverändert sind (Settings › Shortcuts). Nächster Tab und Seitenleiste klicken stattdessen ins Menü von Postman.",
-        "es": "Los botones funcionan cuando Postman está delante, con sus atajos de teclado activados y sin cambios (Settings › Shortcuts). Pestaña siguiente y Barra lateral usan el menú de Postman.",
-        "fr": "Les boutons fonctionnent quand Postman est au premier plan, avec ses raccourcis clavier activés et d’origine (Settings › Shortcuts). Onglet suivant et Barre latérale cliquent dans le menu de Postman.",
-        "ru": "Кнопки работают, когда Postman на переднем плане, а его сочетания клавиш включены и не изменены (Settings › Shortcuts). «Следующая вкладка» и «Боковая панель» нажимают пункты меню Postman."
+        "en": "The buttons work while Postman is in front, with its keyboard shortcuts on and unchanged (Settings › Shortcuts). Next Tab and Sidebar don’t need the shortcuts.",
+        "de": "Die Tasten funktionieren, wenn Postman vorne ist und seine Tastenkürzel eingeschaltet und unverändert sind (Settings › Shortcuts). Nächster Tab und Seitenleiste brauchen keine Tastenkürzel.",
+        "es": "Los botones funcionan cuando Postman está delante, con sus atajos de teclado activados y sin cambios (Settings › Shortcuts). Pestaña siguiente y Barra lateral no necesitan los atajos.",
+        "fr": "Les boutons fonctionnent quand Postman est au premier plan, avec ses raccourcis clavier activés et d’origine (Settings › Shortcuts). Onglet suivant et Barre latérale n’ont pas besoin des raccourcis.",
+        "ru": "Кнопки работают, когда Postman на переднем плане, а его сочетания клавиш включены и не изменены (Settings › Shortcuts). Кнопкам «Следующая вкладка» и «Боковая панель» сочетания не нужны."
       },
       "bindByDefault": true,
       "placements": [

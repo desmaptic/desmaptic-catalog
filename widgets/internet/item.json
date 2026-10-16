@@ -1,6 +1,6 @@
 {
   "id": "internet",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Internet",
@@ -10,20 +10,20 @@
     "ru": "Интернет"
   },
   "summary": {
-    "en": "Whether the Mac is online and how fast the internet answers, in ms; hold to copy its IP address",
-    "de": "Ob der Mac online ist und wie schnell das Internet antwortet, in ms; Halten kopiert seine IP-Adresse",
-    "es": "Si el Mac tiene conexión y lo rápido que responde internet, en ms; mantén pulsado para copiar su dirección IP",
-    "fr": "Si le Mac est en ligne et à quelle vitesse Internet répond, en ms ; maintenez pour copier son adresse IP",
-    "ru": "Есть ли у Mac интернет и как быстро он отвечает, в мс; удержание копирует IP-адрес Mac"
+    "en": "Whether the Mac is online and how quickly the internet answers; hold to copy its IP address",
+    "de": "Ob der Mac online ist und wie schnell das Internet antwortet; Halten kopiert seine IP-Adresse",
+    "es": "Si el Mac tiene conexión y lo rápido que responde internet; mantén pulsado para copiar su dirección IP",
+    "fr": "Si le Mac est en ligne et à quelle vitesse Internet répond ; maintenez pour copier son adresse IP",
+    "ru": "Есть ли у Mac интернет и насколько быстро он отвечает; удержание копирует IP-адрес Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "How long the internet takes to answer your Mac, in milliseconds, with the last two minutes as a line below. Blue is quick, pink is slow; a crossed-out globe means the Mac is offline.",
-    "de": "Wie lange das Internet braucht, um dem Mac zu antworten, in Millisekunden, darunter die letzten zwei Minuten als Linie. Blau ist schnell, Pink langsam; ein durchgestrichener Globus heißt: Der Mac ist offline.",
-    "es": "Cuánto tarda internet en responder a tu Mac, en milisegundos, con los dos últimos minutos como una línea debajo. El azul es rápido y el rosa, lento; un globo tachado indica que el Mac no tiene conexión.",
-    "fr": "Le temps que met Internet à répondre à votre Mac, en millisecondes, avec les deux dernières minutes en ligne dessous. Le bleu est rapide, le rose lent ; un globe barré signifie que le Mac est hors ligne.",
-    "ru": "За сколько миллисекунд интернет отвечает Mac, а под числом — линия за последние две минуты. Синий — быстро, розовый — медленно; перечёркнутый глобус — интернета нет."
+    "en": "The number is how many milliseconds the Mac waits for the internet to answer: lower is better. The line below shows the last two minutes, and the slower the answer, the pinker it gets. With no internet, the globe is crossed out.",
+    "de": "Die Zahl gibt an, wie viele Millisekunden der Mac auf eine Antwort aus dem Internet wartet: Je kleiner, desto besser. Die Linie darunter zeigt die letzten zwei Minuten, und je langsamer die Antwort, desto pinker wird sie. Ohne Internet ist der Globus durchgestrichen.",
+    "es": "El número son los milisegundos que el Mac espera la respuesta de internet: cuanto menos, mejor. La línea de abajo muestra los dos últimos minutos, y cuanto más lenta la respuesta, más rosa se vuelve. Sin internet, el globo aparece tachado.",
+    "fr": "Le nombre indique combien de millisecondes le Mac attend la réponse d’Internet : plus il est bas, mieux c’est. La ligne en dessous montre les deux dernières minutes, et plus la réponse est lente, plus elle vire au rose. Sans Internet, le globe est barré.",
+    "ru": "Число показывает, сколько миллисекунд Mac ждёт ответа из интернета: чем меньше, тем лучше. Под ним видно, как ответ менялся за последние две минуты, и чем он медленнее, тем розовее линия. Если интернета нет, глобус перечёркнут."
   },
   "tapAction": {
     "en": "Opens Network settings on the Mac",

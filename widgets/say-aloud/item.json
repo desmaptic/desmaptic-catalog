@@ -1,6 +1,6 @@
 {
   "id": "say-aloud",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -13,26 +13,26 @@
   },
   "summary": {
     "en": "Type on the phone and the Mac says it out loud",
-    "de": "Tippe auf dem Telefon – der Mac spricht es laut aus",
+    "de": "Tippe etwas auf dem Telefon, und der Mac spricht es laut aus",
     "es": "Escribe en el teléfono y el Mac lo dice en voz alta",
-    "fr": "Saisissez sur le téléphone : le Mac le dit à voix haute",
-    "ru": "Наберите текст на телефоне — Mac произнесёт его вслух"
+    "fr": "Saisissez un texte sur le téléphone, et le Mac le dit à voix haute",
+    "ru": "Наберите текст на телефоне, и Mac произнесёт его вслух"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. A voice for the text’s language from the ones on the Mac, up to about a minute of speech; the button waits until it ends.",
-    "de": "Nichts einzurichten. Eine Stimme in der Sprache des Textes aus denen auf dem Mac, bis etwa eine Minute lang; die Taste wartet, bis sie fertig ist.",
-    "es": "No hay nada que configurar. Una voz del idioma del texto entre las del Mac, hasta cerca de un minuto; el botón espera a que termine.",
-    "fr": "Rien à configurer. Une voix dans la langue du texte parmi celles du Mac, jusqu’à une minute environ ; le bouton attend la fin.",
-    "ru": "Настраивать ничего не нужно. Голос на языке текста из тех, что есть на Mac, примерно до минуты речи; кнопка ждёт, пока речь не закончится."
+    "en": "Nothing to set up. The Mac picks a voice for the text’s language and reads for up to a minute. The button waits until it’s done.",
+    "de": "Nichts einzurichten. Der Mac wählt eine Stimme für die Sprache des Textes und liest höchstens eine Minute lang vor. Die Taste wartet, bis er fertig ist.",
+    "es": "No hay nada que configurar. El Mac elige una voz para el idioma del texto y lee como mucho un minuto. El botón espera a que termine.",
+    "fr": "Rien à configurer. Le Mac choisit une voix pour la langue du texte et lit pendant une minute au plus. Le bouton attend qu’il ait fini.",
+    "ru": "Настраивать ничего не нужно. Mac сам подберёт голос под язык текста и будет читать не дольше минуты. Кнопка ждёт, пока он не договорит."
   },
   "tapAction": {
     "en": "Asks what to say and the Mac speaks it",
     "de": "Fragt, was gesagt werden soll, und der Mac spricht es",
     "es": "Pregunta qué decir y el Mac lo pronuncia",
     "fr": "Demande quoi dire et le Mac le prononce",
-    "ru": "Спрашивает, что сказать, и Mac произносит это"
+    "ru": "Спрашивает, что сказать, и Mac произносит это вслух"
   },
   "button": {
     "icon": {
@@ -47,8 +47,20 @@
       }
     },
     "input": {
-      "question": "What should the Mac say?",
-      "placeholder": "Dinner is ready!",
+      "question": {
+        "en": "What should the Mac say?",
+        "de": "Was soll der Mac sagen?",
+        "es": "¿Qué quieres que diga el Mac?",
+        "fr": "Que doit dire le Mac ?",
+        "ru": "Что сказать вслух?"
+      },
+      "placeholder": {
+        "en": "Dinner is ready!",
+        "de": "Das Essen ist fertig!",
+        "es": "¡La cena está lista!",
+        "fr": "Le dîner est prêt !",
+        "ru": "Ужин готов!"
+      },
       "multiline": true
     }
   }

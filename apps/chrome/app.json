@@ -1,6 +1,6 @@
 {
   "id": "chrome",
-  "revision": 4,
+  "revision": 5,
   "name": "Google Chrome",
   "bundleIds": ["com.google.Chrome"],
   "category": "browsers",
@@ -16,11 +16,11 @@
         "ru": "На страницу назад, даже когда Chrome в фоне"
       },
       "details": {
-        "en": "Like the ← button in Chrome’s toolbar, for the current tab of the front Chrome window — even while another app is in front.",
-        "de": "Wie der Pfeil ← in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters – auch wenn eine andere App vorne ist.",
-        "es": "Como el botón ← de la barra de Chrome, en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app.",
-        "fr": "Comme le bouton ← de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant.",
-        "ru": "Как кнопка ← на панели Chrome — для текущей вкладки переднего окна Chrome, даже когда впереди другое приложение."
+        "en": "Like the ← button in Chrome’s toolbar, for the current tab of the front Chrome window. Works with Chrome in the background.",
+        "de": "Wie der Pfeil ← in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters. Funktioniert auch mit Chrome im Hintergrund.",
+        "es": "Como el botón ← de la barra de Chrome, para la pestaña actual de la ventana principal de Chrome. Funciona con Chrome en segundo plano.",
+        "fr": "Comme le bouton ← de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre principale de Chrome. Fonctionne avec Chrome en arrière-plan.",
+        "ru": "Как кнопка ← на панели Chrome, для текущей вкладки переднего окна. Работает, когда Chrome в фоне."
       },
       "tapAction": {
         "en": "Goes back a page",
@@ -47,11 +47,11 @@
         "ru": "На страницу вперёд, даже когда Chrome в фоне"
       },
       "details": {
-        "en": "Like the → button in Chrome’s toolbar, for the current tab of the front Chrome window — even while another app is in front.",
-        "de": "Wie der Pfeil → in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters – auch wenn eine andere App vorne ist.",
-        "es": "Como el botón → de la barra de Chrome, en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app.",
-        "fr": "Comme le bouton → de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant.",
-        "ru": "Как кнопка → на панели Chrome — для текущей вкладки переднего окна Chrome, даже когда впереди другое приложение."
+        "en": "Like the → button in Chrome’s toolbar, for the current tab of the front Chrome window. Works with Chrome in the background.",
+        "de": "Wie der Pfeil → in der Symbolleiste von Chrome, für den aktuellen Tab des vorderen Chrome-Fensters. Funktioniert auch mit Chrome im Hintergrund.",
+        "es": "Como el botón → de la barra de Chrome, para la pestaña actual de la ventana principal de Chrome. Funciona con Chrome en segundo plano.",
+        "fr": "Comme le bouton → de la barre d’outils de Chrome, pour l’onglet actif de la fenêtre principale de Chrome. Fonctionne avec Chrome en arrière-plan.",
+        "ru": "Как кнопка → на панели Chrome, для текущей вкладки переднего окна. Работает, когда Chrome в фоне."
       },
       "tapAction": {
         "en": "Goes forward a page",
@@ -75,14 +75,14 @@
         "de": "Lädt die Seite neu; Halten erzwingt das Neuladen ohne Cache",
         "es": "Vuelve a cargar la página; mantén pulsado para forzar la recarga sin caché",
         "fr": "Actualise la page ; maintenez pour forcer l’actualisation sans cache",
-        "ru": "Обновляет страницу; удержание — принудительно, без кеша"
+        "ru": "Обновляет страницу; удержание — обновление без кеша"
       },
       "details": {
-        "en": "A tap reaches the current tab of the front Chrome window even while another app is in front; a hold works while Chrome is in front.",
-        "de": "Tippen wirkt auf den aktuellen Tab des vorderen Chrome-Fensters, auch wenn eine andere App vorne ist; Halten funktioniert, wenn Chrome vorne ist.",
-        "es": "El toque actúa en la pestaña actual de la ventana de Chrome que está delante, aunque estés en otra app; mantener pulsado funciona cuando Chrome está delante.",
-        "fr": "Le toucher agit sur l’onglet actif de la fenêtre Chrome au premier plan, même quand une autre app est devant ; l’appui long fonctionne quand Chrome est au premier plan.",
-        "ru": "Нажатие доходит до текущей вкладки переднего окна Chrome, даже когда впереди другое приложение; удержание работает, когда Chrome на переднем плане."
+        "en": "The tap reloads the current tab of the front Chrome window, even with Chrome in the background. The long press works while Chrome is in front.",
+        "de": "Tippen lädt den aktuellen Tab des vorderen Chrome-Fensters neu, auch mit Chrome im Hintergrund. Langes Drücken funktioniert, wenn Chrome vorne ist.",
+        "es": "El toque vuelve a cargar la pestaña actual de la ventana principal de Chrome, aunque Chrome esté en segundo plano. Mantener pulsado funciona cuando Chrome está delante.",
+        "fr": "Le toucher actualise l’onglet actif de la fenêtre principale de Chrome, même avec Chrome en arrière-plan. L’appui long fonctionne quand Chrome est au premier plan.",
+        "ru": "Нажатие обновляет текущую вкладку переднего окна Chrome, даже когда Chrome в фоне. Удержание работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Reloads the page",
@@ -117,11 +117,11 @@
         "ru": "Открывает новую вкладку и выводит Chrome вперёд"
       },
       "details": {
-        "en": "In the front Chrome window, or in a new one if none is open. Chrome comes forward, ready for an address or a search.",
-        "de": "Im vorderen Chrome-Fenster oder in einem neuen, wenn keins offen ist. Chrome kommt nach vorn, bereit für eine Adresse oder eine Suche.",
-        "es": "En la ventana de Chrome que está delante, o en una nueva si no hay ninguna. Chrome pasa al frente, listo para una dirección o una búsqueda.",
-        "fr": "Dans la fenêtre Chrome au premier plan, ou dans une nouvelle si aucune n’est ouverte. Chrome passe devant, prêt pour une adresse ou une recherche.",
-        "ru": "В переднем окне Chrome или в новом, если открытых нет. Chrome выходит вперёд — можно сразу вводить адрес или запрос."
+        "en": "The tab opens in the front Chrome window, or in a new one if none is open. You can type an address or a search right away. The button brings Chrome forward from any app, but doesn’t start it.",
+        "de": "Der Tab öffnet sich im vorderen Chrome-Fenster oder in einem neuen, wenn keins offen ist. Du kannst gleich eine Adresse oder einen Suchbegriff eingeben. Die Taste holt Chrome aus jeder App nach vorne, startet es aber nicht.",
+        "es": "La pestaña se abre en la ventana principal de Chrome, o en una nueva si no hay ninguna. Puedes escribir enseguida una dirección o una búsqueda. El botón trae Chrome al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "L’onglet s’ouvre dans la fenêtre principale de Chrome, ou dans une nouvelle si aucune n’est ouverte. Vous pouvez taper tout de suite une adresse ou une recherche. Le bouton met Chrome au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Вкладка откроется в переднем окне Chrome, а если окон нет, то в новом. Адрес или запрос можно вводить сразу. Кнопка выводит Chrome вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens a new tab",
@@ -210,11 +210,11 @@
         "ru": "Открывает последнюю закрытую вкладку (⇧⌘T)"
       },
       "details": {
-        "en": "Brings back the last closed tab or window with its history; tap again for the one before. Works while Chrome is in front.",
-        "de": "Holt den zuletzt geschlossenen Tab oder das Fenster samt Verlauf zurück; erneut tippen für den davor. Funktioniert, wenn Chrome vorne ist.",
-        "es": "Recupera la última pestaña o ventana cerrada con su historial; toca otra vez para la anterior. Funciona cuando Chrome está delante.",
-        "fr": "Rétablit le dernier onglet ou la dernière fenêtre fermés avec leur historique ; touchez encore pour le précédent. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Возвращает последнюю закрытую вкладку или окно вместе с историей; нажмите ещё раз — вернётся предыдущая. Работает, когда Chrome на переднем плане."
+        "en": "Brings back the last closed tab or window with its history. Tap again for the one you closed before it. Works while Chrome is in front.",
+        "de": "Holt den zuletzt geschlossenen Tab oder das Fenster samt Verlauf zurück. Tippst du noch einmal, öffnet sich das davor Geschlossene wieder. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Recupera la última pestaña o ventana cerrada con su historial. Toca otra vez y vuelve lo que cerraste justo antes. Funciona cuando Chrome está delante.",
+        "fr": "Rétablit le dernier onglet ou la dernière fenêtre fermés avec leur historique. Touchez encore pour rouvrir ce que vous aviez fermé juste avant. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Возвращает последнюю закрытую вкладку или окно вместе с историей. Нажмите ещё раз, и вернётся то, что было закрыто перед этим. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Reopens the last closed tab",
@@ -241,11 +241,11 @@
         "ru": "Находит открытую вкладку по названию (⇧⌘A)"
       },
       "details": {
-        "en": "Type part of a tab’s title or address and press Return to jump to it; recently closed tabs are listed too. Works while Chrome is in front.",
-        "de": "Einen Teil des Titels oder der Adresse tippen und mit Return hinspringen; kürzlich geschlossene Tabs stehen auch in der Liste. Funktioniert, wenn Chrome vorne ist.",
-        "es": "Escribe parte del título o la dirección y pulsa Retorno para ir a ella; también aparecen las pestañas cerradas hace poco. Funciona cuando Chrome está delante.",
-        "fr": "Tapez une partie du titre ou de l’adresse, puis Retour pour y aller ; les onglets fermés récemment sont aussi listés. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Наберите часть названия или адреса и нажмите Return, чтобы перейти; недавно закрытые вкладки тоже в списке. Работает, когда Chrome на переднем плане."
+        "en": "Type part of a tab’s title or address and press Return to jump to it. Recently closed tabs are listed too. Works while Chrome is in front.",
+        "de": "Gib einen Teil des Titels oder der Adresse ein und drück Return, um zum Tab zu springen. Kürzlich geschlossene Tabs stehen auch in der Liste. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Escribe parte del título o la dirección de una pestaña y pulsa Retorno para ir a ella. También aparecen las pestañas cerradas hace poco. Funciona cuando Chrome está delante.",
+        "fr": "Tapez une partie du titre ou de l’adresse d’un onglet, puis appuyez sur Retour pour y aller. Les onglets fermés récemment sont aussi dans la liste. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Наберите часть названия или адреса вкладки и нажмите Return, чтобы на неё перейти. Недавно закрытые вкладки тоже есть в списке. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Opens the tab search",
@@ -272,11 +272,11 @@
         "ru": "Ищет текст на странице (⌘F)"
       },
       "details": {
-        "en": "Type a word to highlight every match on the page; Return goes to the next one. Works while Chrome is in front.",
-        "de": "Ein Wort tippen, um alle Treffer auf der Seite zu markieren; Return springt zum nächsten. Funktioniert, wenn Chrome vorne ist.",
-        "es": "Escribe una palabra para resaltar todas las coincidencias de la página; Retorno lleva a la siguiente. Funciona cuando Chrome está delante.",
-        "fr": "Tapez un mot pour surligner toutes les occurrences dans la page ; Retour passe à la suivante. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Наберите слово — все совпадения на странице подсветятся; Return переходит к следующему. Работает, когда Chrome на переднем плане."
+        "en": "Type a word to highlight every match on the page. Return goes to the next one. Works while Chrome is in front.",
+        "de": "Tippe ein Wort ein, um alle Treffer auf der Seite zu markieren. Return springt zum nächsten. Funktioniert, wenn Chrome vorne ist.",
+        "es": "Escribe una palabra para resaltar todas las coincidencias de la página. Retorno lleva a la siguiente. Funciona cuando Chrome está delante.",
+        "fr": "Tapez un mot pour surligner toutes les occurrences dans la page. Retour passe à la suivante. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Наберите слово, и все совпадения на странице подсветятся. Return переходит к следующему. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Opens the find bar",
@@ -303,11 +303,11 @@
         "ru": "Добавляет страницу в закладки (⌘D)"
       },
       "details": {
-        "en": "Saves the page at once; the bubble that opens lets you rename it or pick a folder. On a page already bookmarked, only the bubble opens. Works while Chrome is in front.",
-        "de": "Speichert die Seite sofort; in der Blase lassen sich Name und Ordner ändern. Hat die Seite schon ein Lesezeichen, öffnet sich nur die Blase. Funktioniert, wenn Chrome vorne ist.",
-        "es": "Guarda la página al momento; en la burbuja puedes cambiar el nombre o la carpeta. Si la página ya está en marcadores, solo se abre la burbuja. Funciona cuando Chrome está delante.",
-        "fr": "Enregistre la page aussitôt ; la bulle permet de la renommer ou de choisir un dossier. Si la page est déjà en favori, seule la bulle s’ouvre. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Сохраняет страницу сразу; в появившемся окошке можно поменять название или папку. Если страница уже в закладках, откроется только окошко. Работает, когда Chrome на переднем плане."
+        "en": "The bookmark is saved at once, and the small window that opens lets you rename it or pick a folder. If the page is already bookmarked, only that window opens. Works while Chrome is in front.",
+        "de": "Das Lesezeichen wird sofort gespeichert, und im kleinen Fenster, das sich öffnet, kannst du Name und Ordner ändern. Hat die Seite schon ein Lesezeichen, öffnet sich nur dieses Fenster. Funktioniert, wenn Chrome vorne ist.",
+        "es": "El marcador se guarda al momento, y en la ventanita que se abre puedes cambiarle el nombre o la carpeta. Si la página ya está en marcadores, solo se abre esa ventanita. Funciona cuando Chrome está delante.",
+        "fr": "Le favori est enregistré aussitôt, et la petite fenêtre qui s’ouvre permet de le renommer ou de choisir un dossier. Si la page est déjà dans vos favoris, seule cette fenêtre s’ouvre. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Закладка сохраняется сразу, а в появившемся окошке можно поменять её название или папку. Если страница уже в закладках, откроется только окошко. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Bookmarks the page",
@@ -334,11 +334,11 @@
         "ru": "Показывает или прячет панель закладок (⇧⌘B)"
       },
       "details": {
-        "en": "The row of your bookmarks under the address bar — Always Show Bookmarks Bar in Chrome’s View menu. Works while Chrome is in front.",
-        "de": "Die Reihe der Lesezeichen unter der Adressleiste – „Lesezeichenleiste immer anzeigen“ im Chrome-Menü „Darstellung“. Funktioniert, wenn Chrome vorne ist.",
-        "es": "La fila de marcadores bajo la barra de direcciones: «Mostrar siempre la barra de marcadores» en el menú Visualización de Chrome. Funciona cuando Chrome está delante.",
-        "fr": "La rangée de vos favoris sous la barre d’adresse — « Toujours afficher la barre de favoris » dans le menu Présentation de Chrome. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Ряд закладок под адресной строкой — «Всегда показывать панель закладок» в меню «Вид» Chrome. Работает, когда Chrome на переднем плане."
+        "en": "The row of your bookmarks under the address bar. Works while Chrome is in front.",
+        "de": "Die Reihe deiner Lesezeichen unter der Adressleiste. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La fila de tus marcadores bajo la barra de direcciones. Funciona cuando Chrome está delante.",
+        "fr": "La rangée de vos favoris sous la barre d’adresse. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Ряд ваших закладок под адресной строкой. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides the bookmarks bar",
@@ -365,8 +365,8 @@
         "ru": "Открывает инструменты разработчика (⌥⌘I); удержание — консоль"
       },
       "details": {
-        "en": "Chrome’s Developer Tools for the current tab — Elements, Console, Network and the rest. Works while Chrome is in front.",
-        "de": "Die Entwicklertools von Chrome für den aktuellen Tab – Elemente, Konsole, Netzwerk und mehr. Funktioniert, wenn Chrome vorne ist.",
+        "en": "Chrome’s Developer Tools for the current tab: Elements, Console, Network and the rest. Works while Chrome is in front.",
+        "de": "Die Entwicklertools von Chrome für den aktuellen Tab: Elemente, Konsole, Netzwerk und mehr. Funktioniert, wenn Chrome vorne ist.",
         "es": "Las DevTools de Chrome para la pestaña actual: Elementos, Consola, Red y el resto. Funciona cuando Chrome está delante.",
         "fr": "Les outils pour les développeurs de Chrome pour l’onglet actif : Éléments, Console, Réseau et le reste. Fonctionne quand Chrome est au premier plan.",
         "ru": "Инструменты разработчика Chrome для текущей вкладки: «Элементы», «Консоль», «Сеть» и остальное. Работает, когда Chrome на переднем плане."
@@ -404,11 +404,11 @@
         "ru": "Открывает новое окно Chrome и выводит Chrome вперёд"
       },
       "details": {
-        "en": "Works even while another app is in front: Chrome comes forward with the new window, ready for an address or a search.",
-        "de": "Klappt auch, wenn eine andere App vorne ist: Chrome kommt mit dem neuen Fenster nach vorn, bereit für eine Adresse oder eine Suche.",
-        "es": "Funciona aunque haya otra app delante: Chrome pasa al frente con la ventana nueva, listo para una dirección o una búsqueda.",
-        "fr": "Fonctionne même quand une autre app est devant : Chrome passe au premier plan avec la nouvelle fenêtre, prêt pour une adresse ou une recherche.",
-        "ru": "Работает, даже когда впереди другое приложение: Chrome выходит вперёд с новым окном — можно сразу вводить адрес или запрос."
+        "en": "You can type an address or a search in the new window right away. The button brings Chrome forward from any app, but doesn’t start it.",
+        "de": "Im neuen Fenster kannst du gleich eine Adresse oder einen Suchbegriff eingeben. Die Taste holt Chrome aus jeder App nach vorne, startet es aber nicht.",
+        "es": "En la ventana nueva puedes escribir enseguida una dirección o una búsqueda. El botón trae Chrome al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Dans la nouvelle fenêtre, vous pouvez taper tout de suite une adresse ou une recherche. Le bouton met Chrome au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "В новом окне можно сразу вводить адрес или запрос. Кнопка выводит Chrome вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens a new window",
@@ -435,11 +435,11 @@
         "ru": "Открывает новое окно в режиме инкогнито"
       },
       "details": {
-        "en": "Chrome forgets the history, cookies and site data of Incognito windows once you close them all. Chrome comes forward, even from another app.",
-        "de": "Chrome vergisst Verlauf, Cookies und Websitedaten der Inkognitofenster, sobald alle geschlossen sind. Chrome kommt nach vorn, auch aus einer anderen App.",
-        "es": "Chrome olvida el historial, las cookies y los datos de sitios de las ventanas de Incógnito al cerrarlas todas. Chrome pasa al frente, aunque haya otra app delante.",
-        "fr": "Chrome oublie l’historique, les cookies et les données de site des fenêtres de navigation privée une fois toutes fermées. Chrome passe au premier plan, même depuis une autre app.",
-        "ru": "Chrome забывает историю, cookie и данные сайтов окон инкогнито, когда все они закрыты. Chrome выходит вперёд, даже из другого приложения."
+        "en": "Chrome forgets the history, cookies and site data of Incognito windows once you close them all. The button brings Chrome forward from any app, but doesn’t start it.",
+        "de": "Chrome vergisst Verlauf, Cookies und Websitedaten der Inkognitofenster, sobald alle geschlossen sind. Die Taste holt Chrome aus jeder App nach vorne, startet es aber nicht.",
+        "es": "Chrome olvida el historial, las cookies y los datos de sitios de las ventanas de Incógnito al cerrarlas todas. El botón trae Chrome al frente desde cualquier app, pero no lo abre si está cerrado.",
+        "fr": "Chrome oublie l’historique, les cookies et les données de site des fenêtres de navigation privée une fois toutes fermées. Le bouton met Chrome au premier plan depuis n’importe quelle app, sans le lancer.",
+        "ru": "Когда вы закроете все окна инкогнито, Chrome забудет их историю, cookie и всё, что в них сохранили сайты. Кнопка выводит Chrome вперёд из любого приложения, но не запускает его."
       },
       "tapAction": {
         "en": "Opens an Incognito window",
@@ -466,11 +466,11 @@
         "ru": "Открывает историю браузера (⌘Y)"
       },
       "details": {
-        "en": "The History page, with the sites you visited and a search box; if it’s already open, Chrome switches to it. Works while Chrome is in front.",
-        "de": "Die Seite „Verlauf“ mit den besuchten Websites und einem Suchfeld; ist sie schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
-        "es": "La página Historial, con los sitios visitados y un buscador; si ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
-        "fr": "La page Historique, avec les sites visités et un champ de recherche ; si elle est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Страница «История» с посещёнными сайтами и поиском; если она уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
+        "en": "The History page, with the sites you visited and a search box. If it’s already open, Chrome switches to it. Works while Chrome is in front.",
+        "de": "Die Seite „Verlauf“ mit den besuchten Websites und einem Suchfeld. Ist sie schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La página Historial, con los sitios visitados y un buscador. Si ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
+        "fr": "La page Historique, avec les sites visités et un champ de recherche. Si elle est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
+        "ru": "Страница «История» с посещёнными сайтами и поиском по ним. Если она уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Opens History",
@@ -497,11 +497,11 @@
         "ru": "Открывает список скачанных файлов (⇧⌘J)"
       },
       "details": {
-        "en": "Everything Chrome downloaded, with search and Show in Finder; if the page is already open, Chrome switches to it. Works while Chrome is in front.",
-        "de": "Alles, was Chrome heruntergeladen hat, mit Suche und „Im Finder anzeigen“; ist die Seite schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
-        "es": "Todo lo que Chrome ha descargado, con búsqueda y «Mostrar en Finder»; si la página ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
-        "fr": "Tout ce que Chrome a téléchargé, avec recherche et « Afficher dans le Finder » ; si la page est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
-        "ru": "Всё, что скачал Chrome, с поиском и «Показать в Finder»; если страница уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
+        "en": "The page lists everything Chrome has downloaded, so you can find a file and show it in Finder. If the page is already open, Chrome switches to it. Works while Chrome is in front.",
+        "de": "Die Seite listet alles, was Chrome heruntergeladen hat, und du kannst jede Datei suchen und im Finder anzeigen. Ist die Seite schon offen, wechselt Chrome dorthin. Funktioniert, wenn Chrome vorne ist.",
+        "es": "La página muestra todo lo que Chrome ha descargado, y puedes buscar cualquier archivo y mostrarlo en el Finder. Si la página ya está abierta, Chrome cambia a ella. Funciona cuando Chrome está delante.",
+        "fr": "La page liste tout ce que Chrome a téléchargé, et vous pouvez y chercher n’importe quel fichier et l’afficher dans le Finder. Si la page est déjà ouverte, Chrome y passe. Fonctionne quand Chrome est au premier plan.",
+        "ru": "На странице собрано всё, что скачал Chrome, и любой файл можно найти и показать в Finder. Если страница уже открыта, Chrome переключится на неё. Работает, когда Chrome на переднем плане."
       },
       "tapAction": {
         "en": "Opens Downloads",
@@ -528,11 +528,11 @@
         "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
       },
       "details": {
-        "en": "The address of the current tab of the front Chrome window, ready to paste. Works even while another app is in front.",
-        "de": "Die Adresse des aktuellen Tabs im vorderen Chrome-Fenster, bereit zum Einsetzen. Funktioniert auch, wenn eine andere App vorne ist.",
-        "es": "La dirección de la pestaña actual de la ventana principal de Chrome, lista para pegar. Funciona aunque estés en otra app.",
-        "fr": "L’adresse de l’onglet actif de la fenêtre principale de Chrome, prête à coller. Fonctionne même quand une autre app est devant.",
-        "ru": "Адрес текущей вкладки переднего окна Chrome — сразу для вставки. Работает, даже если вы в другом приложении."
+        "en": "The address and title come from the current tab of the front Chrome window. Works with Chrome in the background.",
+        "de": "Adresse und Titel kommen aus dem aktuellen Tab des vorderen Chrome-Fensters. Funktioniert auch mit Chrome im Hintergrund.",
+        "es": "La dirección y el título salen de la pestaña actual de la ventana principal de Chrome. Funciona con Chrome en segundo plano.",
+        "fr": "L’adresse et le titre viennent de l’onglet actif de la fenêtre principale de Chrome. Fonctionne avec Chrome en arrière-plan.",
+        "ru": "Адрес и заголовок берутся из текущей вкладки переднего окна Chrome. Работает, когда Chrome в фоне."
       },
       "tapAction": {
         "en": "Copies the page’s address",
@@ -569,11 +569,11 @@
         "ru": "Вкладки, страницы и DevTools под рукой"
       },
       "details": {
-        "en": "Going back and forward, reloading, copying the address and opening tabs and windows work even with Chrome in the background. The other buttons work while Chrome is in front.",
-        "de": "Zurück, vorwärts, neu laden, die Adresse kopieren und neue Tabs und Fenster öffnen klappt auch mit Chrome im Hintergrund. Die übrigen Tasten funktionieren, wenn Chrome vorne ist.",
-        "es": "Ir atrás y adelante, volver a cargar, copiar la dirección y abrir pestañas y ventanas funcionan aunque Chrome esté en segundo plano. Los demás botones, cuando Chrome está delante.",
-        "fr": "Revenir en arrière, avancer, actualiser, copier l’adresse et ouvrir onglets et fenêtres fonctionnent même avec Chrome en arrière-plan. Les autres boutons, quand Chrome est au premier plan.",
-        "ru": "Назад и вперёд, обновление страницы, копирование адреса, новые вкладки и окна работают, даже когда Chrome в фоне. Остальные кнопки — когда Chrome на переднем плане."
+        "en": "Back, Forward, Reload and Copy URL work even with Chrome in the background. New Tab, New Window and Incognito bring Chrome forward from any app, but don’t start it. The other buttons, and a long press on Reload, work while Chrome is in front.",
+        "de": "„Zurück“, „Vorwärts“, „Neu laden“ und „URL kopieren“ funktionieren auch mit Chrome im Hintergrund. „Neuer Tab“, „Neues Fenster“ und „Inkognito“ holen Chrome aus jeder App nach vorne, starten es aber nicht. Die übrigen Tasten und langes Drücken auf „Neu laden“ funktionieren, wenn Chrome vorne ist.",
+        "es": "«Volver», «Adelante», «Volver a cargar» y «Copiar URL» funcionan aunque Chrome esté en segundo plano. «Nueva pestaña», «Nueva ventana» e «Incógnito» traen Chrome al frente desde cualquier app, pero no lo abren si está cerrado. Los demás botones y la pulsación larga en «Volver a cargar» funcionan cuando Chrome está delante.",
+        "fr": "« Retour », « Avancer », « Actualiser » et « Copier l’URL » fonctionnent même avec Chrome en arrière-plan. « Nouvel onglet », « Nouvelle fenêtre » et « Navigation privée » mettent Chrome au premier plan depuis n’importe quelle app, mais ne le lancent pas. Les autres boutons et l’appui long sur « Actualiser » fonctionnent quand Chrome est au premier plan.",
+        "ru": "«Назад», «Вперёд», «Обновить» и «Скопировать URL» работают, даже когда Chrome в фоне. «Новая вкладка», «Новое окно» и «Инкогнито» выводят Chrome вперёд из любого приложения, но не запускают его. Остальные кнопки и долгое нажатие на «Обновить» работают, когда Chrome на переднем плане."
       },
       "bindByDefault": true,
       "placements": [

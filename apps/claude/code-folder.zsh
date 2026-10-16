@@ -13,7 +13,7 @@ export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 [[ -n $folder ]] ||
-  { print -u2 -- "No folder set: put your project folder on the first line of this button's tap script"; exit 1 }
+  { print -u2 -- "Session in Folder: set your project folder in this button’s settings, e.g. folder=\"~/Developer/my-app\""; exit 1 }
 case $folder in
   '~')  folder=$HOME ;;
   '~/'*) folder=$HOME/${folder#'~/'} ;;

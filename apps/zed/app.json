@@ -1,6 +1,6 @@
 {
   "id": "zed",
-  "revision": 5,
+  "revision": 6,
   "name": "Zed",
   "bundleIds": ["dev.zed.Zed"],
   "category": "development",
@@ -141,11 +141,11 @@
         "ru": "Переход к функции или типу в файле"
       },
       "details": {
-        "en": "The outline of the open file: functions, types, headings. Type to filter. The tap clicks Zed’s Go menu, the long press uses its default key bindings; both need Zed in front.",
-        "de": "Die Gliederung der offenen Datei: Funktionen, Typen, Überschriften; eine Eingabe filtert sie. Tippen klickt im Menü „Go“ von Zed, Halten nutzt die Standard-Tastenkürzel; beides braucht Zed vorne.",
-        "es": "El esquema del archivo abierto: funciones, tipos, títulos. Escribe para filtrar. El toque usa el menú «Go» de Zed; mantener pulsado, los atajos predeterminados. Zed debe estar delante.",
-        "fr": "Le plan du fichier ouvert : fonctions, types, titres. Tapez pour filtrer. Le toucher passe par le menu « Go » de Zed, l’appui long par ses raccourcis par défaut ; Zed doit être au premier plan.",
-        "ru": "Структура открытого файла: функции, типы, заголовки. Набор текста фильтрует список. Нажатие использует меню Go в Zed, удержание — стандартные сочетания клавиш; Zed должен быть на переднем плане."
+        "en": "The outline of the open file: functions, types, headings. Type to filter it. Works while Zed is in front, and the long press only with its default key bindings.",
+        "de": "Die Gliederung der offenen Datei: Funktionen, Typen, Überschriften. Gib etwas ein, um sie zu filtern. Funktioniert, wenn Zed vorne ist, das Halten aber nur mit den Standard-Tastenkürzeln.",
+        "es": "El esquema del archivo abierto: funciones, tipos, títulos. Escribe para filtrar. Funciona cuando Zed está delante, y mantener pulsado, solo con los atajos predeterminados.",
+        "fr": "Le plan du fichier ouvert : fonctions, types, titres. Tapez pour filtrer. Fonctionne quand Zed est au premier plan, et l’appui long seulement avec ses raccourcis par défaut.",
+        "ru": "Структура открытого файла: функции, типы, заголовки. Начните набирать, чтобы сузить список. Работает, когда Zed на переднем плане, а удержание — только со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Lists the symbols of the file",
@@ -186,11 +186,11 @@
         "ru": "Дерево файлов проекта"
       },
       "details": {
-        "en": "The project’s file tree; a second tap puts the cursor back in the editor. Clicks Zed’s menus, so any keymap and keyboard layout will do. Needs Zed in front.",
-        "de": "Der Dateibaum des Projekts; nochmals tippen setzt den Cursor zurück in den Editor. Klickt in den Menüs von Zed und klappt so mit jeder Keymap und Tastaturbelegung. Zed muss vorne sein.",
-        "es": "El árbol de archivos del proyecto; otro toque devuelve el cursor al editor. Hace clic en los menús de Zed, así que sirve cualquier keymap y teclado. Zed debe estar delante.",
-        "fr": "L’arborescence du projet ; un second toucher remet le curseur dans l’éditeur. Clique dans les menus de Zed, donc toute keymap et tout clavier conviennent. Zed doit être au premier plan.",
-        "ru": "Дерево файлов проекта; повторное нажатие возвращает курсор в редактор. Нажимает пункты меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
+        "en": "Shows the project’s file tree, and a second tap puts the cursor back in the editor. Clicks Zed’s menus, so any keymap and keyboard layout will do. Needs Zed in front.",
+        "de": "Zeigt den Dateibaum des Projekts, und erneutes Tippen setzt den Cursor zurück in den Editor. Klickt in den Menüs von Zed und klappt so mit jeder Keymap und Tastaturbelegung. Zed muss vorne sein.",
+        "es": "Muestra el árbol de archivos del proyecto, y otro toque devuelve el cursor al editor. Hace clic en los menús de Zed, así que sirve cualquier keymap y teclado. Zed debe estar delante.",
+        "fr": "Affiche l’arborescence du projet, et un second toucher remet le curseur dans l’éditeur. Clique dans les menus de Zed, donc toute keymap et tout clavier conviennent. Zed doit être au premier plan.",
+        "ru": "Показывает дерево файлов проекта, а повторное нажатие вернёт курсор в редактор. Нажимает пункты меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
       },
       "tapAction": {
         "en": "Shows the project panel (View › Project Panel)",
@@ -225,11 +225,11 @@
         "ru": "Изменения, индекс и коммиты"
       },
       "details": {
-        "en": "Changed files, staging and the commit message, in a dock. The tap clicks Zed’s View menu, the long press uses its default key bindings; both need Zed in front.",
-        "de": "Geänderte Dateien, Staging und die Commit-Nachricht, in einem Dock. Tippen klickt im Menü „View“ von Zed, Halten nutzt die Standard-Tastenkürzel; beides braucht Zed vorne.",
-        "es": "Archivos cambiados, staging y el mensaje del commit, en un dock. El toque usa el menú «View» de Zed; mantener pulsado, los atajos predeterminados. Zed debe estar delante.",
-        "fr": "Fichiers modifiés, indexation et message de commit, dans un dock. Le toucher passe par le menu « View » de Zed, l’appui long par ses raccourcis par défaut ; Zed doit être au premier plan.",
-        "ru": "Изменённые файлы, индекс и сообщение коммита — в доке. Нажатие использует меню View в Zed, удержание — стандартные сочетания клавиш; Zed должен быть на переднем плане."
+        "en": "Changed files, staging and the commit message, in a dock. Works while Zed is in front, and the long press only with its default key bindings.",
+        "de": "Geänderte Dateien, Staging und die Commit-Nachricht, in einem Dock. Funktioniert, wenn Zed vorne ist, das Halten aber nur mit den Standard-Tastenkürzeln.",
+        "es": "Archivos cambiados, staging y el mensaje del commit, en un dock. Funciona cuando Zed está delante, y mantener pulsado, solo con los atajos predeterminados.",
+        "fr": "Fichiers modifiés, indexation et message de commit, dans un dock. Fonctionne quand Zed est au premier plan, et l’appui long seulement avec ses raccourcis par défaut.",
+        "ru": "Изменённые файлы, индекс и сообщение коммита в одном доке. Работает, когда Zed на переднем плане, а удержание — только со стандартными сочетаниями клавиш."
       },
       "tapAction": {
         "en": "Shows the Git panel",
@@ -295,11 +295,11 @@
         "ru": "ИИ-агент Zed"
       },
       "details": {
-        "en": "Threads with Zed’s agent or an external one, such as Claude Code. The tap clicks Zed’s View menu and needs Zed in front; the long press works from any app and starts Zed if closed.",
-        "de": "Threads mit dem Agenten von Zed oder einem externen wie Claude Code. Tippen klickt im Menü „View“ und braucht Zed vorne; Halten klappt aus jeder App und startet Zed, falls es geschlossen ist.",
-        "es": "Hilos con el agente de Zed o uno externo, como Claude Code. El toque usa el menú «View» y necesita Zed delante; mantener pulsado funciona desde cualquier app y abre Zed si está cerrado.",
-        "fr": "Des fils avec l’agent de Zed ou un agent externe comme Claude Code. Le toucher passe par le menu « View » et demande Zed au premier plan ; l’appui long marche depuis toute app et lance Zed s’il est fermé.",
-        "ru": "Треды с агентом Zed или внешним, например Claude Code. Нажатие идёт через меню View и требует Zed на переднем плане; удержание работает из любого приложения и запускает Zed, если он закрыт."
+        "en": "Threads with Zed’s agent or an external one, such as Claude Code. The tap works while Zed is in front. The long press works from any app and starts Zed if it’s closed.",
+        "de": "Threads mit dem Agenten von Zed oder einem externen wie Claude Code. Tippen funktioniert, wenn Zed vorne ist. Halten klappt aus jeder App und startet Zed, falls es geschlossen ist.",
+        "es": "Hilos con el agente de Zed o uno externo, como Claude Code. El toque funciona cuando Zed está delante. Mantener pulsado funciona desde cualquier app y abre Zed si está cerrado.",
+        "fr": "Des fils de discussion avec l’agent de Zed ou un agent externe comme Claude Code. Le toucher fonctionne quand Zed est au premier plan. L’appui long marche depuis toute app et lance Zed s’il est fermé.",
+        "ru": "Треды с агентом Zed или с внешним, например Claude Code. Нажатие работает, когда Zed на переднем плане. Удержание работает из любого приложения и запускает Zed, если он закрыт."
       },
       "tapAction": {
         "en": "Shows the agent panel (View › Agent Panel)",
@@ -366,10 +366,10 @@
       },
       "details": {
         "en": "Uses the formatter Zed has for the file’s language, or the language server. Works while Zed is in front, with its default key bindings.",
-        "de": "Mit dem Formatierer, den Zed für die Sprache der Datei hat, oder mit dem Language Server. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "Con el formateador que Zed tiene para el lenguaje del archivo o con el servidor de lenguaje. Funciona cuando Zed está delante, con los atajos predeterminados.",
-        "fr": "Avec le formateur que Zed a pour le langage du fichier, ou le serveur de langage. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Форматтером, который в Zed задан для языка файла, или языковым сервером. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
+        "de": "Zed nutzt den Formatierer für die Sprache der Datei oder den Language Server. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Zed usa el formateador del lenguaje del archivo o el servidor de lenguaje. Funciona cuando Zed está delante, con los atajos predeterminados.",
+        "fr": "Zed utilise le formateur prévu pour le langage du fichier, ou le serveur de langage. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Zed применит форматтер, который задан для языка файла, или языковой сервер. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
       },
       "tapAction": {
         "en": "Formats the file (⇧⌘I)",
@@ -396,11 +396,11 @@
         "ru": "Переименовывает символ везде"
       },
       "details": {
-        "en": "The symbol under the cursor, wherever it is used: type the new name and press Return. Needs a language server. Works while Zed is in front, with its default key bindings.",
-        "de": "Das Symbol unter dem Cursor, überall, wo es vorkommt: neuen Namen tippen, Return drücken. Braucht einen Language Server. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "El símbolo bajo el cursor, allí donde se use: escribe el nombre nuevo y pulsa Retorno. Requiere un servidor de lenguaje. Funciona cuando Zed está delante, con los atajos predeterminados.",
-        "fr": "Le symbole sous le curseur, partout où il sert : tapez le nouveau nom, puis Retour. Demande un serveur de langage. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Символ под курсором — везде, где он используется: наберите новое имя и нажмите Return. Нужен языковой сервер. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
+        "en": "Type the new name and press Return to rename the symbol under the cursor wherever it’s used. Needs a language server. Works while Zed is in front, with its default key bindings.",
+        "de": "Gib den neuen Namen ein und drück Return, dann heißt das Symbol unter dem Cursor überall so. Braucht einen Language Server. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "Escribe el nombre nuevo y pulsa Retorno para cambiárselo al símbolo bajo el cursor allí donde se use. Necesita un servidor de lenguaje. Funciona cuando Zed está delante, con los atajos predeterminados.",
+        "fr": "Tapez le nouveau nom, puis Retour, et le symbole sous le curseur est renommé partout où il est utilisé. Demande un serveur de langage. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Наберите новое имя, нажмите Return, и символ под курсором переименуется везде, где он используется. Нужен языковой сервер. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
       },
       "tapAction": {
         "en": "Renames the symbol (F2)",
@@ -431,7 +431,7 @@
         "de": "Für das Symbol unter dem Cursor, wie sein Language Server es kennt. Klickt in den Menüs von Zed und klappt so mit jeder Keymap und Tastaturbelegung. Zed muss vorne sein.",
         "es": "Para el símbolo bajo el cursor, según su servidor de lenguaje. Hace clic en los menús de Zed, así que sirve cualquier keymap y teclado. Zed debe estar delante.",
         "fr": "Pour le symbole sous le curseur, tel que le connaît son serveur de langage. Clique dans les menus de Zed, donc toute keymap et tout clavier conviennent. Zed doit être au premier plan.",
-        "ru": "Для символа под курсором — по данным языкового сервера. Нажимает пункты меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
+        "ru": "Работает для символа под курсором, если его знает языковой сервер. Нажимает пункты меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the definition (Go › Go to Definition)",
@@ -511,11 +511,11 @@
         "ru": "Одна панель на всё окно"
       },
       "details": {
-        "en": "The pane or panel you are in fills Zed’s window; a second tap puts it back. Works while Zed is in front, with its default key bindings.",
-        "de": "Der Bereich oder das Panel mit dem Cursor füllt das Fenster von Zed; nochmals tippen stellt es zurück. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
-        "es": "El panel en el que estás ocupa toda la ventana de Zed; otro toque lo devuelve. Funciona cuando Zed está delante, con los atajos predeterminados.",
-        "fr": "Le volet ou panneau où vous êtes remplit la fenêtre de Zed ; un second toucher le remet. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
-        "ru": "Панель, в которой вы работаете, занимает всё окно Zed; повторное нажатие возвращает как было. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
+        "en": "The pane or panel you’re in fills Zed’s window. A second tap puts it back. Works while Zed is in front, with its default key bindings.",
+        "de": "Der Bereich oder das Panel mit dem Cursor füllt das Fenster von Zed. Erneutes Tippen stellt es zurück. Funktioniert, wenn Zed vorne ist, mit den Standard-Tastenkürzeln.",
+        "es": "El panel en el que estás ocupa toda la ventana de Zed. Otro toque lo deja como estaba. Funciona cuando Zed está delante, con los atajos predeterminados.",
+        "fr": "Le volet ou panneau où vous êtes remplit la fenêtre de Zed. Un second toucher le remet en place. Fonctionne quand Zed est au premier plan, avec ses raccourcis par défaut.",
+        "ru": "Панель, в которой вы работаете, займёт всё окно Zed. Повторное нажатие вернёт всё как было. Работает, когда Zed на переднем плане, при стандартных сочетаниях клавиш."
       },
       "tapAction": {
         "en": "Zooms the pane in or out (⇧Esc)",
@@ -542,11 +542,11 @@
         "ru": "Выбор задачи проекта для запуска"
       },
       "details": {
-        "en": "Your tasks.json tasks and the ones Zed finds; nothing runs until you pick one. Clicks Run › Spawn Task in Zed’s menu, so any keymap and keyboard layout will do. Needs Zed in front.",
-        "de": "Die Tasks aus tasks.json und die, die Zed selbst findet; nichts läuft, bis einer gewählt ist. Klickt im Menü von Zed auf Run › Spawn Task und klappt so mit jeder Keymap und Tastaturbelegung. Zed muss vorne sein.",
-        "es": "Las tareas de tasks.json y las que Zed encuentra; nada se ejecuta hasta que eliges una. Hace clic en Run › Spawn Task en el menú de Zed, así que sirve cualquier keymap y teclado. Zed debe estar delante.",
-        "fr": "Les tâches de tasks.json et celles que Zed trouve ; rien ne se lance avant votre choix. Clique sur Run › Spawn Task dans le menu de Zed, donc toute keymap et tout clavier conviennent. Zed doit être au premier plan.",
-        "ru": "Задачи из tasks.json и найденные самим Zed; ничего не запустится, пока вы не выберете. Нажимает Run › Spawn Task в меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
+        "en": "Lists your tasks.json tasks and the ones Zed finds itself, and only the one you pick runs. Clicks Run › Spawn Task in Zed’s menu, so any keymap and keyboard layout will do. Needs Zed in front.",
+        "de": "Zeigt die Tasks aus tasks.json und die, die Zed selbst findet, gestartet wird aber nur der, den du wählst. Klickt im Menü von Zed auf Run › Spawn Task und klappt so mit jeder Keymap und Tastaturbelegung. Zed muss vorne sein.",
+        "es": "Muestra las tareas de tasks.json y las que Zed encuentra por su cuenta, y solo se ejecuta la que elijas. Hace clic en Run › Spawn Task en el menú de Zed, así que sirve cualquier keymap y teclado. Zed debe estar delante.",
+        "fr": "Affiche les tâches de tasks.json et celles que Zed trouve lui-même, et seule celle que vous choisissez se lance. Clique sur Run › Spawn Task dans le menu de Zed, donc toute keymap et tout clavier conviennent. Zed doit être au premier plan.",
+        "ru": "Показывает задачи из tasks.json и те, что Zed нашёл сам, а запустится только та, которую вы выберете. Нажимает Run › Spawn Task в меню Zed, поэтому подойдут любой keymap и любая раскладка. Zed должен быть на переднем плане."
       },
       "tapAction": {
         "en": "Opens the task list",
@@ -612,11 +612,11 @@
         "ru": "Открывает папку вашего проекта или выводит его окно вперёд"
       },
       "details": {
-        "en": "Set the folder on the first line of the Tap script: folder=\"~/Projects/app\". Works from any app and starts Zed if it’s closed.",
-        "de": "Trag den Ordner in der ersten Zeile des Skripts unter „Tippen“ ein: folder=\"~/Projects/app\". Klappt aus jeder App und startet Zed, falls es geschlossen ist.",
-        "es": "Indica la carpeta en la primera línea del script del toque: folder=\"~/Projects/app\". Funciona desde cualquier app y abre Zed si está cerrado.",
-        "fr": "Indiquez le dossier à la première ligne du script du toucher : folder=\"~/Projects/app\". Marche depuis toute app et lance Zed s’il est fermé.",
-        "ru": "Укажите папку в первой строке скрипта нажатия: folder=\"~/Projects/app\". Работает из любого приложения и запускает Zed, если он закрыт."
+        "en": "Set the folder in the button’s settings: folder=\"~/Projects/app\". Works from any app and starts Zed if it’s closed.",
+        "de": "Trag den Ordner in den Einstellungen der Taste ein: folder=\"~/Projects/app\". Klappt aus jeder App und startet Zed, falls es geschlossen ist.",
+        "es": "Indica la carpeta en los ajustes del botón: folder=\"~/Projects/app\". Funciona desde cualquier app y abre Zed si está cerrado.",
+        "fr": "Indiquez le dossier dans les réglages du bouton : folder=\"~/Projects/app\". Marche depuis toute app et lance Zed s’il est fermé.",
+        "ru": "Укажите папку в настройках кнопки: folder=\"~/Projects/app\". Работает из любого приложения и запускает Zed, если он закрыт."
       },
       "tapAction": {
         "en": "Opens the folder in Zed",
@@ -644,11 +644,11 @@
         "ru": "Проекты, поиск, панели, агент и код с телефона"
       },
       "details": {
-        "en": "Open Project works from any app and starts Zed if it’s closed; the other buttons work while Zed is in front. Most click Zed’s menus, so any keymap and keyboard layout will do; Format, Rename, Zoom and two long presses use its default key bindings.",
-        "de": "Projekt öffnen klappt aus jeder App und startet Zed, falls es geschlossen ist; die anderen Tasten funktionieren, wenn Zed vorne ist. Die meisten klicken in den Menüs von Zed, daher passt jede Keymap und Tastaturbelegung; Formatieren, Umbenennen, Maximieren und zwei Aktionen beim Halten nutzen die Standard-Tastenkürzel.",
-        "es": "Abrir proyecto funciona desde cualquier app y abre Zed si está cerrado; los demás botones funcionan cuando Zed está delante. Casi todos usan los menús de Zed, así que sirve cualquier keymap y teclado; Formatear, Cambiar nombre, Maximizar y dos pulsaciones largas usan los atajos predeterminados.",
-        "fr": "Ouvrir le projet marche depuis toute app et lance Zed s’il est fermé ; les autres boutons fonctionnent quand Zed est au premier plan. La plupart passent par ses menus, donc toute keymap et tout clavier conviennent ; Mettre en forme, Renommer, Agrandir et deux appuis longs utilisent ses raccourcis par défaut.",
-        "ru": "«Открыть проект» работает из любого приложения и запускает Zed, если он закрыт; остальные кнопки работают, когда Zed на переднем плане. Большинство нажимает пункты меню Zed, поэтому подойдут любой keymap и раскладка; «Формат», «Новое имя», «Развернуть» и два удержания используют стандартные сочетания клавиш."
+        "en": "Open Project and Agent Panel’s long press work from any app and start Zed if it’s closed, while everything else works only with Zed in front. Most buttons click Zed’s menus, so any keymap and keyboard layout will do. Format, Rename, Zoom and two long presses need its default key bindings.",
+        "de": "Projekt öffnen und das Halten von Agent-Panel klappen aus jeder App und starten Zed, falls es geschlossen ist, während alles andere nur funktioniert, wenn Zed vorne ist. Die meisten Tasten klicken in den Menüs von Zed, daher passt jede Keymap und Tastaturbelegung. Formatieren, Umbenennen, Maximieren und zwei Aktionen beim Halten brauchen die Standard-Tastenkürzel.",
+        "es": "Abrir proyecto y la pulsación larga de Panel del agente funcionan desde cualquier app y abren Zed si está cerrado, mientras que todo lo demás solo funciona con Zed delante. Casi todos los botones usan los menús de Zed, así que sirve cualquier keymap y teclado. Formatear, Cambiar nombre, Maximizar y dos pulsaciones largas necesitan los atajos predeterminados.",
+        "fr": "Ouvrir le projet et l’appui long sur Panneau Agent marchent depuis toute app et lancent Zed s’il est fermé, alors que tout le reste ne fonctionne que si Zed est au premier plan. La plupart des boutons passent par les menus de Zed, donc toute keymap et tout clavier conviennent. Mettre en forme, Renommer, Agrandir et deux appuis longs demandent ses raccourcis par défaut.",
+        "ru": "«Открыть проект» и удержание кнопки «Панель агента» работают из любого приложения и запускают Zed, если он закрыт, а остальное работает, только когда Zed на переднем плане. Большинство кнопок нажимают пункты меню Zed, поэтому подойдут любой keymap и любая раскладка. «Формат», «Новое имя», «Развернуть» и два удержания рассчитаны на стандартные сочетания клавиш."
       },
       "bindByDefault": true,
       "placements": [

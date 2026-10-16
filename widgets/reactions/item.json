@@ -1,6 +1,6 @@
 {
   "id": "reactions",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "Reactions",
@@ -19,11 +19,11 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "A handful float up from the bottom of the display the pointer is on, over every window; clicks go through. To change or add emoji, edit the first line of Advanced › Startup Script.",
-    "de": "Eine Handvoll steigt vom unteren Rand des Displays mit dem Zeiger auf, über allen Fenstern; Klicks gehen hindurch. Um Emojis zu ändern oder hinzuzufügen, bearbeite die erste Zeile unter Erweitert › Startskript.",
-    "es": "Un puñado sube desde el borde inferior de la pantalla donde está el puntero, sobre todas las ventanas; los clics los atraviesan. Para cambiar o añadir emojis, edita la primera línea de Avanzado › Script de inicio.",
-    "fr": "Une poignée monte du bas de l’écran où se trouve le pointeur, au-dessus de toutes les fenêtres ; les clics passent au travers. Pour changer ou ajouter des emojis, modifiez la première ligne de Avancé › Script de démarrage.",
-    "ru": "Несколько штук всплывают снизу экрана, где указатель, поверх всех окон; клики проходят сквозь них. Чтобы сменить или добавить эмодзи, измените первую строку в Дополнительно › Стартовый скрипт."
+    "en": "A handful of emoji float up from the bottom of the display with the pointer, over all windows, and clicks go through them. You can change or add emoji in the button’s settings, under Advanced.",
+    "de": "Eine Handvoll Emojis steigt vom unteren Rand des Displays mit dem Zeiger auf, vor allen Fenstern, und Klicks gehen durch sie hindurch. Emojis änderst oder ergänzt du in den Einstellungen der Taste unter „Erweitert“.",
+    "es": "Un puñado de emojis sube desde el borde inferior de la pantalla donde está el puntero, por encima de las ventanas, y los clics los atraviesan. Puedes cambiar o añadir emojis en los ajustes del botón, en «Avanzado».",
+    "fr": "Une poignée d’emojis monte du bas de l’écran où se trouve le pointeur, au-dessus des fenêtres, et les clics passent au travers. Vous pouvez changer ou ajouter des emojis dans les réglages du bouton, sous « Avancé ».",
+    "ru": "Несколько эмодзи всплывают снизу экрана, где сейчас курсор, поверх всех окон и не мешают кликать. Сменить или добавить эмодзи можно в настройках кнопки, в разделе «Дополнительно»."
   },
   "tapAction": {
     "en": "Sends the emoji shown on the button",

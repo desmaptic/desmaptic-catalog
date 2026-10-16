@@ -1,6 +1,6 @@
 {
   "id": "reminders-today",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "Reminders",
@@ -14,23 +14,23 @@
     "de": "Das heute Fällige auf einen Blick: wie viele, wie viele überfällig und die ersten drei",
     "es": "Lo de hoy de un vistazo: cuántos, cuántos atrasados y los tres primeros",
     "fr": "Ce qui est dû aujourd’hui d’un coup d’œil : combien, combien en retard et les trois premiers",
-    "ru": "Дела на сегодня одним взглядом: сколько, сколько просрочено и первые три"
+    "ru": "Сколько дел на сегодня, сколько из них просрочено и первые три"
   },
   "colSpan": 2,
   "rowSpan": 2,
   "details": {
-    "en": "The big number counts open reminders due today or earlier; the pink clock, how many are overdue. Below, the first three, overdue first, with their time or date.",
-    "de": "Die große Zahl zählt offene Erinnerungen, die heute oder früher fällig sind, die pinke Uhr die überfälligen. Darunter die ersten drei, überfällige zuerst, mit Uhrzeit oder Datum.",
-    "es": "El número grande cuenta los recordatorios pendientes para hoy o antes; el reloj rosa, cuántos están atrasados. Debajo, los tres primeros, los atrasados antes, con su hora o fecha.",
-    "fr": "Le grand nombre compte les rappels non terminés dus aujourd’hui ou avant ; l’horloge rose, ceux en retard. Dessous, les trois premiers, en retard d’abord, avec leur heure ou leur date.",
-    "ru": "Большое число — незавершённые напоминания на сегодня и раньше, розовые часы — сколько из них просрочено. Ниже — первые три, просроченные сначала, со временем или датой."
+    "en": "The big number is everything due today, plus anything still open from before. The pink clock shows how many of them are overdue. Below are the first three, overdue ones first.",
+    "de": "Die große Zahl ist alles, was heute fällig ist, plus alles Offene von früher. Die pinke Uhr zeigt, wie viele davon überfällig sind. Darunter die ersten drei, überfällige zuerst.",
+    "es": "El número grande es todo lo que vence hoy, más lo pendiente de días anteriores. El reloj rosa indica cuántos están atrasados. Debajo, los tres primeros, empezando por los atrasados.",
+    "fr": "Le grand nombre, c’est tout ce qui est prévu aujourd’hui, plus ce qui reste en suspens d’avant. L’horloge rose indique combien sont en retard. En dessous, les trois premiers, ceux en retard d’abord.",
+    "ru": "Крупное число — это всё, что осталось сделать сегодня, вместе с тем, что вы не успели раньше. Розовые часы показывают, сколько из этого уже просрочено. Ниже видны первые три дела, сначала просроченные."
   },
   "tapAction": {
-    "en": "Opens Reminders on the Today list; without access, its privacy settings",
-    "de": "Öffnet Erinnerungen mit der Liste „Heute“, ohne Zugriff die Datenschutzeinstellungen dafür",
-    "es": "Abre Recordatorios en la lista Hoy; sin acceso, sus ajustes de privacidad",
-    "fr": "Ouvre Rappels sur la liste Aujourd’hui ; sans accès, ses réglages de confidentialité",
-    "ru": "Открывает список «Сегодня» в «Напоминаниях», а без доступа — настройки конфиденциальности"
+    "en": "Opens Reminders on the Today list, or the settings to allow access if it has none",
+    "de": "Öffnet Erinnerungen mit der Liste „Heute“ oder, ohne Zugriff, die Einstellungen, um ihn zu erlauben",
+    "es": "Abre Recordatorios en la lista Hoy o, sin acceso, los ajustes para permitirlo",
+    "fr": "Ouvre Rappels sur la liste Aujourd’hui ou, sans accès, les réglages pour l’autoriser",
+    "ru": "Открывает список «Сегодня» в «Напоминаниях», а если доступа нет — настройки, где его можно дать"
   },
   "holdAction": {
     "en": "Opens Reminders on the Scheduled list",

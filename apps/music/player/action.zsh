@@ -19,9 +19,9 @@ setopt extended_glob
 name=""
 case $action in
   playlist) name=${${playlist##[[:space:]]##}%%[[:space:]]##}
-            [[ -n $name ]] || { print -u2 -- "Write the playlist’s name in the first line of the button’s script: playlist=\"Focus\""; exit 1 } ;;
+            [[ -n $name ]] || { print -u2 -- "Write the playlist’s name in this button’s settings: playlist=\"Focus\""; exit 1 } ;;
   airplay)  name=${${speaker##[[:space:]]##}%%[[:space:]]##}
-            [[ -n $name ]] || { print -u2 -- "Write the AirPlay speaker’s name, as Music shows it, in the first line of the button’s script: speaker=\"Living Room\""; exit 1 } ;;
+            [[ -n $name ]] || { print -u2 -- "Write the AirPlay speaker’s name, as Music shows it, in this button’s settings: speaker=\"Living Room\""; exit 1 } ;;
   computer) name=$(/usr/sbin/scutil --get ComputerName 2>/dev/null) ;;   # tells this Mac from other Macs (below)
 esac
 export LC_ALL=C

@@ -1,6 +1,6 @@
 {
   "id": "ruler",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "Ruler",
@@ -19,18 +19,18 @@
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Width × height from the first spot to the pointer as it moves, even across displays; a frame on the Mac’s screen marks the area. In points, like CSS pixels and Figma at 100% zoom — not pixels, which vary by display.",
-    "de": "Breite × Höhe von der ersten Stelle bis zum Zeiger, während er sich bewegt, auch über mehrere Displays; ein Rahmen auf dem Mac-Bildschirm markiert den Bereich. In Punkten wie bei CSS-Pixeln und in Figma bei 100 % Zoom – nicht in Pixeln, die je nach Display variieren.",
-    "es": "Ancho × alto desde el primer lugar hasta el puntero mientras se mueve, incluso entre pantallas; un marco en la pantalla del Mac señala el área. En puntos, como los píxeles CSS y Figma al 100 % de zoom, no en píxeles, que varían según la pantalla.",
-    "fr": "Largeur × hauteur du premier endroit jusqu’au pointeur, à mesure qu’il bouge, même d’un écran à l’autre ; un cadre sur l’écran du Mac délimite la zone. En points, comme les pixels CSS et Figma à 100 % de zoom, pas en pixels, qui varient selon l’écran.",
-    "ru": "Ширина × высота от первой точки до указателя, пока он движется, даже между дисплеями; рамка на экране Mac показывает измеряемую область. В пунктах, как CSS-пиксели и Figma при масштабе 100 %, а не в пикселях, которые зависят от дисплея."
+    "en": "As you move the pointer, the button shows width × height, and a frame on the Mac’s screen marks the area, even across displays. Sizes are in points, as in CSS and in Figma at 100% zoom, not in screen pixels.",
+    "de": "Während du den Zeiger bewegst, zeigt die Taste Breite × Höhe, und ein Rahmen auf dem Mac-Bildschirm markiert den Bereich, auch über mehrere Displays. Gemessen wird in Punkten wie in CSS und in Figma bei 100 % Zoom, nicht in Bildschirmpixeln.",
+    "es": "Mientras mueves el puntero, el botón muestra ancho × alto y un marco en la pantalla del Mac señala la zona, incluso entre pantallas. Se mide en puntos, como en CSS y en Figma al 100 % de zoom, no en píxeles de pantalla.",
+    "fr": "Pendant que vous déplacez le pointeur, le bouton affiche largeur × hauteur et un cadre sur l’écran du Mac délimite la zone, même d’un écran à l’autre. La mesure est en points, comme en CSS et dans Figma à 100 %, pas en pixels d’écran.",
+    "ru": "Пока вы ведёте указатель, на кнопке видны ширина × высота, а на экране Mac — рамка вокруг области, даже на нескольких дисплеях. Размеры в пунктах, как в CSS и в Figma при масштабе 100 %, а не в пикселях экрана."
   },
   "tapAction": {
-    "en": "Marks where the pointer is; the next tap copies the size to the Mac’s clipboard, like 128×64",
-    "de": "Merkt sich, wo der Zeiger steht; das nächste Tippen kopiert die Größe in die Zwischenablage des Mac, etwa 128×64",
-    "es": "Marca dónde está el puntero; el siguiente toque copia el tamaño al portapapeles del Mac, como 128×64",
-    "fr": "Marque la position du pointeur ; le toucher suivant copie la taille dans le presse-papiers du Mac, par ex. 128×64",
-    "ru": "Запоминает, где указатель; следующее нажатие копирует размер в буфер обмена Mac, например 128×64"
+    "en": "Marks where the pointer is, and the next tap copies the size to the Mac’s clipboard, like 128×64",
+    "de": "Merkt sich, wo der Zeiger steht, und das nächste Tippen kopiert die Größe in die Zwischenablage des Mac, etwa 128×64",
+    "es": "Marca dónde está el puntero, y el siguiente toque copia el tamaño al portapapeles del Mac, como 128×64",
+    "fr": "Marque la position du pointeur, puis le toucher suivant copie la taille dans le presse-papiers du Mac, par ex. 128×64",
+    "ru": "Запоминает, где сейчас указатель, а следующее нажатие копирует размер в буфер обмена Mac, например 128×64"
   },
   "holdAction": {
     "en": "Cancels the measurement",

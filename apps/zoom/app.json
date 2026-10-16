@@ -1,6 +1,6 @@
 {
   "id": "zoom",
-  "revision": 9,
+  "revision": 10,
   "name": "Zoom",
   "bundleIds": [
     "us.zoom.xos"
@@ -24,11 +24,11 @@
         "ru": "Выключает и включает звук и показывает, слышит ли вас Zoom"
       },
       "details": {
-        "en": "Green while Zoom hears you, red and crossed out while you are muted, grey outside a meeting. With no audio joined, a tap opens Zoom’s Join audio. Works with Zoom in the background.",
-        "de": "Grün, solange Zoom dich hört, rot und durchgestrichen, solange du stumm bist, grau außerhalb eines Meetings. Ohne Audio öffnet ein Tippen „An Audio teilnehmen“ von Zoom. Klappt mit Zoom im Hintergrund.",
-        "es": "Verde mientras Zoom te oye, rojo y tachado mientras estás silenciado, gris fuera de una reunión. Sin audio conectado, un toque abre «Conectar audio» de Zoom. Funciona con Zoom en segundo plano.",
-        "fr": "Vert tant que Zoom vous entend, rouge et barré quand votre son est coupé, gris hors réunion. Sans audio connecté, un toucher ouvre « Participer à l’audio » de Zoom. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Зелёная, пока Zoom вас слышит, красная и перечёркнутая, пока звук выключен, серая вне конференции. Если звук не подключён, нажатие открывает «Подключить звук» в Zoom. Работает, когда Zoom в фоне."
+        "en": "The button is gray outside a meeting. If you haven’t joined audio yet, it is gray too, and a tap opens “Join audio” in Zoom. Works with Zoom in the background.",
+        "de": "Außerhalb eines Meetings ist die Taste grau. Ohne verbundenes Audio ist sie ebenfalls grau, und ein Tippen öffnet „An Audio teilnehmen“ in Zoom. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Fuera de una reunión, el botón está gris. Si aún no has conectado el audio, también está gris y un toque abre «Conectar audio» en Zoom. Funciona con Zoom en segundo plano.",
+        "fr": "Hors réunion, le bouton est gris. Tant que l’audio n’est pas connecté, il est gris aussi, et un toucher ouvre « Participer à l’audio » dans Zoom. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Вне конференции кнопка серая. Если звук ещё не подключён, она тоже серая, а нажатие открывает «Подключить звук» в Zoom. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Mutes or unmutes you",
@@ -72,11 +72,11 @@
         "ru": "Включает и выключает видео и показывает, включено ли оно"
       },
       "details": {
-        "en": "Green while your video is on, red and crossed out while it is off, grey outside a meeting. Works with Zoom in the background.",
-        "de": "Grün, solange dein Video läuft, rot und durchgestrichen, solange es aus ist, grau außerhalb eines Meetings. Klappt mit Zoom im Hintergrund.",
-        "es": "Verde mientras tu vídeo está activo, rojo y tachado mientras está apagado, gris fuera de una reunión. Funciona con Zoom en segundo plano.",
-        "fr": "Vert tant que votre vidéo est active, rouge et barré quand elle est arrêtée, gris hors réunion. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Зелёная, пока видео включено, красная и перечёркнутая, пока выключено, серая вне конференции. Работает, когда Zoom в фоне."
+        "en": "The button is gray outside a meeting. Works with Zoom in the background.",
+        "de": "Außerhalb eines Meetings ist die Taste grau. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Fuera de una reunión, el botón está gris. Funciona con Zoom en segundo plano.",
+        "fr": "Hors réunion, le bouton est gris. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Вне конференции кнопка серая. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Starts or stops your video",
@@ -120,11 +120,11 @@
         "ru": "Начинает и останавливает демонстрацию и показывает, идёт ли она"
       },
       "details": {
-        "en": "Green while you share. A tap brings Zoom forward with its window for choosing what to share; while you share, it stops sharing. Works with Zoom in the background.",
-        "de": "Grün, solange du freigibst. Ein Tippen holt Zoom mit dem Fenster zur Auswahl der Freigabe nach vorne; während einer Freigabe beendet es sie. Klappt mit Zoom im Hintergrund.",
-        "es": "Verde mientras compartes. Un toque trae Zoom al frente con su ventana para elegir qué compartir; si ya compartes, deja de compartir. Funciona con Zoom en segundo plano.",
-        "fr": "Vert tant que vous partagez. Un toucher met Zoom au premier plan avec sa fenêtre pour choisir quoi partager ; pendant un partage, il l’arrête. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Зелёная, пока идёт демонстрация. Нажатие выводит Zoom вперёд с окном выбора, что показать; во время демонстрации — останавливает её. Работает, когда Zoom в фоне."
+        "en": "The button is green while you share. Before sharing starts, Zoom comes forward so you can choose what to share. Works with Zoom in the background.",
+        "de": "Solange du freigibst, ist die Taste grün. Vor dem Start der Freigabe kommt Zoom nach vorne, damit du auswählen kannst, was du zeigst. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Mientras compartes, el botón está verde. Antes de empezar, Zoom pasa al frente para que elijas qué compartir. Funciona con Zoom en segundo plano.",
+        "fr": "Le bouton est vert tant que vous partagez. Avant le partage, Zoom passe au premier plan pour que vous choisissiez quoi partager. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Пока идёт демонстрация, кнопка зелёная. Перед началом демонстрации Zoom выходит вперёд, чтобы вы выбрали, что показать. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Starts or stops sharing",
@@ -168,11 +168,11 @@
         "ru": "Выводит конференцию вперёд; удержание — выйти из неё"
       },
       "details": {
-        "en": "Holding closes Zoom’s meeting window, as its close button does: Zoom asks whether to leave (a host also gets “End meeting for all”), unless “Ask me to confirm when I leave a meeting” is off in its settings.",
-        "de": "Halten schließt das Meeting-Fenster von Zoom wie dessen Schließen-Taste: Zoom fragt, ob du gehen willst (Hosts auch „Das Meeting für alle beenden“) – außer die Bestätigung beim Verlassen ist in den Einstellungen aus.",
-        "es": "Mantener pulsado cierra la ventana de la reunión de Zoom como su botón de cerrar: Zoom pregunta si quieres salir (el anfitrión ve también «Finalizar la reunión para todos»), salvo que hayas desactivado esa confirmación en sus ajustes.",
-        "fr": "Maintenir ferme la fenêtre de réunion de Zoom comme son bouton de fermeture : Zoom demande si vous voulez partir (l’hôte voit aussi « Mettre fin à la réunion pour tous »), sauf si cette confirmation est désactivée dans ses paramètres.",
-        "ru": "Удержание закрывает окно конференции Zoom, как его кнопка закрытия: Zoom спрашивает, выйти ли (организатор видит и «Завершить конференцию для всех»), если подтверждение при выходе не выключено в настройках."
+        "en": "Holding closes the meeting window, and Zoom asks whether to leave. A host can also end the meeting for all there. Zoom doesn’t ask if “Ask me to confirm when I leave a meeting” is off in its settings.",
+        "de": "Halten schließt das Meeting-Fenster, und Zoom fragt, ob du gehen willst. Als Host kannst du das Meeting dort auch für alle beenden. Ist die Bestätigung beim Verlassen in den Zoom-Einstellungen aus, fragt Zoom nicht.",
+        "es": "Mantener pulsado cierra la ventana de la reunión y Zoom pregunta si quieres salir. Como anfitrión, ahí también puedes finalizarla para todos. Si desactivaste esa confirmación en la configuración de Zoom, ya no pregunta.",
+        "fr": "Maintenir ferme la fenêtre de réunion et Zoom demande si vous voulez partir. L’hôte peut aussi y mettre fin à la réunion pour tous. Si cette confirmation est désactivée dans les paramètres de Zoom, il ne demande rien.",
+        "ru": "Удержание закрывает окно конференции, и Zoom спрашивает, выйти ли из неё. Организатор может там же завершить конференцию для всех. Если в настройках Zoom выключено подтверждение при выходе, вопроса не будет."
       },
       "tapAction": {
         "en": "Brings the meeting window forward",
@@ -182,11 +182,11 @@
         "ru": "Выводит окно конференции вперёд"
       },
       "holdAction": {
-        "en": "⚠️ Leaves the meeting — Zoom asks first",
-        "de": "⚠️ Verlässt das Meeting – Zoom fragt zuerst",
-        "es": "⚠️ Sale de la reunión: Zoom pregunta antes",
-        "fr": "⚠️ Quitte la réunion — Zoom demande d’abord",
-        "ru": "⚠️ Выход из конференции — Zoom сначала спросит"
+        "en": "⚠️ Leaves the meeting",
+        "de": "⚠️ Verlässt das Meeting",
+        "es": "⚠️ Sale de la reunión",
+        "fr": "⚠️ Quitte la réunion",
+        "ru": "⚠️ Выходит из конференции"
       },
       "permissions": [
         "accessibility"
@@ -227,10 +227,10 @@
         "ru": "Открывает и закрывает панель участников"
       },
       "details": {
-        "en": "View › Show participants. Opening the panel brings the meeting window forward; closing it leaves you where you are. Works with Zoom in the background.",
-        "de": "Anzeigen › Teilnehmer anzeigen. Beim Öffnen kommt das Meeting-Fenster nach vorne, beim Schließen bleibst du, wo du bist. Klappt mit Zoom im Hintergrund.",
-        "es": "Ver › Mostrar participantes. Al abrir el panel, la ventana de la reunión pasa al frente; al cerrarlo, te quedas donde estás. Funciona con Zoom en segundo plano.",
-        "fr": "Afficher › Afficher les participants. L’ouverture met la fenêtre de réunion au premier plan ; la fermeture vous laisse où vous êtes. Fonctionne avec Zoom en arrière-plan.",
+        "en": "View › Show participants. Opening the panel brings the meeting window forward, and closing it leaves you where you are. Works with Zoom in the background.",
+        "de": "Anzeigen › Teilnehmer anzeigen. Beim Öffnen kommt das Meeting-Fenster nach vorne, beim Schließen bleibst du, wo du bist. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Ver › Mostrar participantes. Al abrir el panel, la ventana de la reunión pasa al frente, y al cerrarlo te quedas donde estás. Funciona con Zoom en segundo plano.",
+        "fr": "Afficher › Afficher les participants. À l’ouverture, la fenêtre de réunion passe au premier plan, et à la fermeture, vous restez où vous êtes. Fonctionne avec Zoom en arrière-plan.",
         "ru": "Посмотреть › Показать участников. При открытии панели окно конференции выходит вперёд, при закрытии вы остаётесь, где были. Работает, когда Zoom в фоне."
       },
       "tapAction": {
@@ -274,11 +274,11 @@
         "ru": "Открывает и закрывает чат конференции"
       },
       "details": {
-        "en": "View › Show chat. Opening the chat brings the meeting window forward, ready to type; closing it leaves you where you are. Works with Zoom in the background.",
-        "de": "Anzeigen › Chat anzeigen. Beim Öffnen kommt das Meeting-Fenster zum Schreiben nach vorne, beim Schließen bleibst du, wo du bist. Klappt mit Zoom im Hintergrund.",
-        "es": "Ver › Mostrar chat. Al abrir el chat, la ventana de la reunión pasa al frente para escribir; al cerrarlo, te quedas donde estás. Funciona con Zoom en segundo plano.",
-        "fr": "Afficher › Afficher le chat. L’ouverture met la fenêtre de réunion au premier plan, prête pour écrire ; la fermeture vous laisse où vous êtes. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Посмотреть › Показать чат. При открытии окно конференции выходит вперёд, можно писать; при закрытии вы остаётесь, где были. Работает, когда Zoom в фоне."
+        "en": "View › Show chat. Opening the chat brings the meeting window forward so you can type right away, and closing it leaves you where you are. Works with Zoom in the background.",
+        "de": "Anzeigen › Chat anzeigen. Beim Öffnen kommt das Meeting-Fenster zum Schreiben nach vorne, beim Schließen bleibst du, wo du bist. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Ver › Mostrar chat. Al abrir el chat, la ventana de la reunión pasa al frente para que escribas, y al cerrarlo te quedas donde estás. Funciona con Zoom en segundo plano.",
+        "fr": "Afficher › Afficher le chat. À l’ouverture, la fenêtre de réunion passe au premier plan pour que vous puissiez écrire, et à la fermeture, vous restez où vous êtes. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Посмотреть › Показать чат. При открытии окно конференции выходит вперёд и можно сразу писать, а при закрытии вы остаётесь, где были. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Shows or hides the chat",
@@ -321,11 +321,11 @@
         "ru": "Поднимает или опускает руку (⌥Y)"
       },
       "details": {
-        "en": "Brings Zoom’s meeting window to the front, then presses Zoom’s default shortcut there. If you changed it in Zoom’s Keyboard shortcuts, the button misses.",
-        "de": "Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel von Zoom. Hast du es in den Tastaturkürzeln von Zoom geändert, geht die Taste ins Leere.",
-        "es": "Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado de Zoom. Si lo cambiaste en los métodos abreviados de Zoom, el botón no tendrá efecto.",
-        "fr": "Met la fenêtre de réunion de Zoom au premier plan, puis y appuie sur le raccourci par défaut de Zoom. Si vous l’avez modifié dans ses raccourcis clavier, le bouton n’aura aucun effet.",
-        "ru": "Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш Zoom по умолчанию. Если вы изменили его в сочетаниях клавиш Zoom, кнопка не сработает."
+        "en": "Brings Zoom’s meeting window to the front first. If you changed ⌥Y in Zoom’s settings, the button won’t work.",
+        "de": "Holt zuerst das Meeting-Fenster von Zoom nach vorne. Hast du ⌥Y in den Zoom-Einstellungen geändert, funktioniert die Taste nicht.",
+        "es": "Primero trae al frente la ventana de la reunión de Zoom. Si cambiaste ⌥Y en la configuración de Zoom, el botón no funcionará.",
+        "fr": "Met d’abord la fenêtre de réunion de Zoom au premier plan. Si vous avez modifié ⌥Y dans les paramètres de Zoom, le bouton ne fonctionnera pas.",
+        "ru": "Сначала выводит окно конференции Zoom вперёд. Если вы поменяли ⌥Y в настройках Zoom, кнопка не сработает."
       },
       "tapAction": {
         "en": "Raises or lowers your hand",
@@ -368,11 +368,11 @@
         "ru": "Переключает вид галереи и вид докладчика"
       },
       "details": {
-        "en": "Meeting › Gallery view, or Speaker view while the gallery shows. Works with Zoom in the background.",
-        "de": "Meeting › Galerieansicht oder, solange die Galerie zu sehen ist, Sprecheransicht. Klappt mit Zoom im Hintergrund.",
-        "es": "Reunión › Vista de galería o, mientras se ve la galería, Vista del orador. Funciona con Zoom en segundo plano.",
-        "fr": "Réunion › Vue galerie ou, quand la galerie est affichée, Affichage intervenant. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Конференция › Вид галереи или, пока показана галерея, Вид докладчика. Работает, когда Zoom в фоне."
+        "en": "Meeting › Gallery view or Speaker view. Works with Zoom in the background.",
+        "de": "Meeting › Galerieansicht oder Sprecheransicht. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Reunión › Vista de galería o Vista del orador. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Vue galerie ou Affichage intervenant. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Вид галереи или Вид докладчика. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Switches the view",
@@ -415,11 +415,11 @@
         "ru": "Отправляет реакцию «палец вверх» в конференцию (⌥⌘5)"
       },
       "details": {
-        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
-        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
-        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
-        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
-        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+        "en": "Everyone sees the reaction on your video for a few seconds. The button brings Zoom’s meeting window to the front first. If you changed ⌥⌘5 in Zoom’s settings, it won’t work.",
+        "de": "Alle sehen die Reaktion ein paar Sekunden auf deinem Video. Die Taste holt zuerst das Meeting-Fenster von Zoom nach vorne. Hast du ⌥⌘5 in den Zoom-Einstellungen geändert, funktioniert sie nicht.",
+        "es": "Todos ven la reacción unos segundos sobre tu vídeo. Primero, el botón trae al frente la ventana de la reunión de Zoom. Si cambiaste ⌥⌘5 en la configuración de Zoom, no funcionará.",
+        "fr": "Tout le monde voit la réaction quelques secondes sur votre vidéo. Le bouton met d’abord la fenêtre de réunion de Zoom au premier plan. Si vous avez modifié ⌥⌘5 dans les paramètres de Zoom, il ne fonctionnera pas.",
+        "ru": "Реакция видна всем на вашем видео несколько секунд. Кнопка сначала выводит окно конференции Zoom вперёд. Если вы поменяли ⌥⌘5 в настройках Zoom, она не сработает."
       },
       "tapAction": {
         "en": "Sends 👍",
@@ -462,11 +462,11 @@
         "ru": "Отправляет реакцию «аплодисменты» в конференцию (⌥⌘4)"
       },
       "details": {
-        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
-        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
-        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
-        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
-        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+        "en": "Everyone sees the reaction on your video for a few seconds. The button brings Zoom’s meeting window to the front first. If you changed ⌥⌘4 in Zoom’s settings, it won’t work.",
+        "de": "Alle sehen die Reaktion ein paar Sekunden auf deinem Video. Die Taste holt zuerst das Meeting-Fenster von Zoom nach vorne. Hast du ⌥⌘4 in den Zoom-Einstellungen geändert, funktioniert sie nicht.",
+        "es": "Todos ven la reacción unos segundos sobre tu vídeo. Primero, el botón trae al frente la ventana de la reunión de Zoom. Si cambiaste ⌥⌘4 en la configuración de Zoom, no funcionará.",
+        "fr": "Tout le monde voit la réaction quelques secondes sur votre vidéo. Le bouton met d’abord la fenêtre de réunion de Zoom au premier plan. Si vous avez modifié ⌥⌘4 dans les paramètres de Zoom, il ne fonctionnera pas.",
+        "ru": "Реакция видна всем на вашем видео несколько секунд. Кнопка сначала выводит окно конференции Zoom вперёд. Если вы поменяли ⌥⌘4 в настройках Zoom, она не сработает."
       },
       "tapAction": {
         "en": "Sends 👏",
@@ -509,11 +509,11 @@
         "ru": "Отправляет реакцию «сердце» в конференцию (⌥⌘6)"
       },
       "details": {
-        "en": "Everyone sees it on your video for a few seconds. Brings Zoom’s meeting window to the front and presses Zoom’s default shortcut there; if you changed it, the button misses.",
-        "de": "Alle sehen sie ein paar Sekunden auf deinem Video. Holt das Meeting-Fenster von Zoom nach vorne und drückt dort das Standard-Tastaturkürzel; hast du es geändert, geht die Taste ins Leere.",
-        "es": "Todos la ven unos segundos sobre tu vídeo. Trae al frente la ventana de la reunión de Zoom y pulsa allí el método abreviado predeterminado; si lo cambiaste, el botón no tendrá efecto.",
-        "fr": "Tout le monde la voit quelques secondes sur votre vidéo. Met la fenêtre de réunion de Zoom au premier plan et y appuie sur le raccourci par défaut ; si vous l’avez modifié, le bouton n’aura aucun effet.",
-        "ru": "Все видят её несколько секунд на вашем видео. Выводит окно конференции Zoom вперёд и нажимает там сочетание клавиш по умолчанию; если вы его изменили, кнопка не сработает."
+        "en": "Everyone sees the reaction on your video for a few seconds. The button brings Zoom’s meeting window to the front first. If you changed ⌥⌘6 in Zoom’s settings, it won’t work.",
+        "de": "Alle sehen die Reaktion ein paar Sekunden auf deinem Video. Die Taste holt zuerst das Meeting-Fenster von Zoom nach vorne. Hast du ⌥⌘6 in den Zoom-Einstellungen geändert, funktioniert sie nicht.",
+        "es": "Todos ven la reacción unos segundos sobre tu vídeo. Primero, el botón trae al frente la ventana de la reunión de Zoom. Si cambiaste ⌥⌘6 en la configuración de Zoom, no funcionará.",
+        "fr": "Tout le monde voit la réaction quelques secondes sur votre vidéo. Le bouton met d’abord la fenêtre de réunion de Zoom au premier plan. Si vous avez modifié ⌥⌘6 dans les paramètres de Zoom, il ne fonctionnera pas.",
+        "ru": "Реакция видна всем на вашем видео несколько секунд. Кнопка сначала выводит окно конференции Zoom вперёд. Если вы поменяли ⌥⌘6 в настройках Zoom, она не сработает."
       },
       "tapAction": {
         "en": "Sends ❤️",
@@ -556,11 +556,11 @@
         "ru": "Копирует ссылку приглашения на конференцию"
       },
       "details": {
-        "en": "Meeting › Copy invite link: paste it into a chat or an email on the Mac. Works with Zoom in the background.",
-        "de": "Meeting › Einladungslink kopieren: zum Einfügen in einen Chat oder eine E-Mail auf dem Mac. Klappt mit Zoom im Hintergrund.",
-        "es": "Reunión › Copiar enlace de invitación: pégalo en un chat o un correo en el Mac. Funciona con Zoom en segundo plano.",
-        "fr": "Réunion › Copier le lien d’invitation : collez-le dans un chat ou un e-mail sur le Mac. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Конференция › Копировать ссылку приглашения: вставьте её в чат или письмо на Mac. Работает, когда Zoom в фоне."
+        "en": "Meeting › Copy invite link. Paste it into a chat or an email on the Mac to invite someone. Works with Zoom in the background.",
+        "de": "Meeting › Einladungslink kopieren. Füge ihn in einen Chat oder eine E-Mail auf dem Mac ein, um jemanden einzuladen. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "Reunión › Copiar enlace de invitación. Pégalo en un chat o un correo en el Mac para invitar a alguien. Funciona con Zoom en segundo plano.",
+        "fr": "Réunion › Copier le lien d’invitation. Collez-le dans un chat ou un e-mail sur le Mac pour inviter quelqu’un. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Конференция › Копировать ссылку приглашения. Вставьте её в чат или письмо на Mac, чтобы позвать кого-нибудь. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Copies the invite link",
@@ -604,7 +604,7 @@
       },
       "details": {
         "en": "Meeting › Fullscreen, or Exit fullscreen. Works with Zoom in the background.",
-        "de": "Meeting › Zu Vollbildmodus wechseln oder Vollbild schließen. Klappt mit Zoom im Hintergrund.",
+        "de": "Meeting › Zu Vollbildmodus wechseln oder Vollbild schließen. Funktioniert auch mit Zoom im Hintergrund.",
         "es": "Reunión › Cambiar a pantalla completa o Salir de pantalla completa. Funciona con Zoom en segundo plano.",
         "fr": "Réunion › Passer en mode plein écran ou Quitter le mode plein écran. Fonctionne avec Zoom en arrière-plan.",
         "ru": "Конференция › Войти в полноэкранный режим или выйти из него. Работает, когда Zoom в фоне."
@@ -650,11 +650,11 @@
         "ru": "Сворачивает конференцию в маленькое окно и обратно"
       },
       "details": {
-        "en": "Meeting › Enter minimal view: a small window that stays above your other windows. Works with Zoom in the background.",
-        "de": "Meeting › Gehen Sie auf Minimal-Ansicht: ein kleines Fenster, das über deinen anderen Fenstern bleibt. Klappt mit Zoom im Hintergrund.",
-        "es": "Reunión › Cambiar a vista mínima: una ventana pequeña que queda sobre las demás. Funciona con Zoom en segundo plano.",
-        "fr": "Réunion › Passer en affichage minimal : une petite fenêtre qui reste au-dessus des autres. Fonctionne avec Zoom en arrière-plan.",
-        "ru": "Конференция › Войти в минимальное представление: маленькое окно поверх остальных окон. Работает, когда Zoom в фоне."
+        "en": "The small meeting window stays above your other windows. Works with Zoom in the background.",
+        "de": "Das kleine Meeting-Fenster bleibt über deinen anderen Fenstern. Funktioniert auch mit Zoom im Hintergrund.",
+        "es": "La ventana pequeña de la reunión queda sobre las demás. Funciona con Zoom en segundo plano.",
+        "fr": "La petite fenêtre de réunion reste au-dessus des autres. Fonctionne avec Zoom en arrière-plan.",
+        "ru": "Маленькое окно конференции остаётся поверх остальных окон. Работает, когда Zoom в фоне."
       },
       "tapAction": {
         "en": "Enters or leaves minimal view",
@@ -697,11 +697,11 @@
         "ru": "Начинает запись конференции в облако; удержание — записывать на этот Mac"
       },
       "details": {
-        "en": "Meeting › Record to the cloud, or Record to this computer when held, as the host or with the host’s leave. While Zoom already records, it says so. Works with Zoom in the background; Zoom comes forward when it asks or explains something before it records.",
-        "de": "Meeting › In der Cloud aufzeichnen, beim Halten „Auf diesem Computer aufzeichnen“ – als Host oder mit Erlaubnis des Hosts. Läuft schon eine Aufzeichnung, sagt die Taste das. Klappt mit Zoom im Hintergrund; fragt oder erklärt Zoom vor der Aufzeichnung etwas, kommt es nach vorn.",
-        "es": "Reunión › Grabar en la nube, o «Grabar en este equipo» al mantener pulsado, como anfitrión o con su permiso. Si Zoom ya graba, lo dice. Funciona con Zoom en segundo plano; si Zoom pregunta o avisa de algo antes de grabar, pasa al frente.",
-        "fr": "Réunion › Enregistrement dans le cloud, ou « Enregistrer sur cet ordinateur » en maintenant, en tant qu’hôte ou avec son accord. Si Zoom enregistre déjà, le bouton le signale. Fonctionne avec Zoom en arrière-plan ; si Zoom demande ou signale quelque chose avant d’enregistrer, il passe au premier plan.",
-        "ru": "Конференция › Запись в облако, при удержании — «Записывать на этот компьютер»; организатору или с его разрешения. Если запись уже идёт, кнопка так и скажет. Работает, когда Zoom в фоне; если перед записью Zoom что-то спрашивает или сообщает, он выходит вперёд."
+        "en": "You can record as the host or with the host’s permission. If Zoom is already recording, the button says so. Works with Zoom in the background, but Zoom comes forward if it asks or tells you something first.",
+        "de": "Aufzeichnen kannst du als Host oder mit Erlaubnis des Hosts. Läuft schon eine Aufzeichnung, sagt die Taste das. Funktioniert auch mit Zoom im Hintergrund, aber wenn Zoom vorher etwas fragt oder erklärt, kommt es nach vorne.",
+        "es": "Puedes grabar como anfitrión o con permiso del anfitrión. Si Zoom ya está grabando, el botón te lo dice. Funciona con Zoom en segundo plano, pero si Zoom pregunta o avisa de algo antes de grabar, pasa al frente.",
+        "fr": "Vous pouvez enregistrer en tant qu’hôte ou avec l’accord de l’hôte. Si Zoom enregistre déjà, le bouton vous le signale. Fonctionne avec Zoom en arrière-plan, mais si Zoom pose une question ou affiche un message avant d’enregistrer, il passe au premier plan.",
+        "ru": "Записывать может организатор или участник с его разрешения. Если запись уже идёт, кнопка так и скажет. Работает, когда Zoom в фоне, но если перед записью Zoom что-то спросит или сообщит, он выйдет вперёд."
       },
       "tapAction": {
         "en": "Starts a cloud recording",
@@ -749,18 +749,18 @@
         "ru": "Моя конференция"
       },
       "summary": {
-        "en": "Joins your own meeting — your personal room or a recurring one — by its ID",
-        "de": "Tritt deinem eigenen Meeting bei – deinem persönlichen Raum oder einem wiederkehrenden – über die ID",
-        "es": "Entra en tu propia reunión (tu sala personal o una periódica) por su ID",
-        "fr": "Rejoint votre propre réunion (votre salle personnelle ou une réunion récurrente) par son ID",
-        "ru": "Входит в вашу конференцию — личную комнату или повторяющуюся — по идентификатору"
+        "en": "Joins your personal room or a recurring meeting by its ID",
+        "de": "Tritt über die ID deinem persönlichen Raum oder einem wiederkehrenden Meeting bei",
+        "es": "Entra por su ID en tu sala personal o en una reunión periódica",
+        "fr": "Rejoint par son ID votre salle personnelle ou une réunion récurrente",
+        "ru": "Входит по идентификатору в вашу личную комнату или повторяющуюся конференцию"
       },
       "details": {
-        "en": "Put the meeting ID, and its passcode if it has one, in the first line of the button’s script. Works outside a meeting too, with Zoom in the background; starts Zoom when it is closed.",
-        "de": "Trag die Meeting-ID und, falls es einen gibt, den Kenncode in die erste Zeile des Skripts der Taste ein. Klappt auch außerhalb eines Meetings, mit Zoom im Hintergrund; startet Zoom, wenn es geschlossen ist.",
-        "es": "Pon el ID de la reunión y, si lo tiene, su código de acceso en la primera línea del script del botón. Funciona también fuera de una reunión, con Zoom en segundo plano; abre Zoom si está cerrado.",
-        "fr": "Indiquez l’ID de réunion et, s’il y en a un, son code secret à la première ligne du script du bouton. Fonctionne aussi hors réunion, avec Zoom en arrière-plan ; lance Zoom s’il est fermé.",
-        "ru": "Идентификатор конференции и, если он есть, код доступа впишите в первую строку скрипта кнопки. Работает и вне конференции, когда Zoom в фоне; запускает Zoom, если он закрыт."
+        "en": "Put the meeting ID, and its passcode if it has one, in the button’s settings. Works outside a meeting too, and with Zoom in the background. Starts Zoom if it is closed.",
+        "de": "Trag die Meeting-ID und, falls es einen gibt, den Kenncode in den Einstellungen der Taste ein. Funktioniert auch außerhalb eines Meetings und mit Zoom im Hintergrund. Ist Zoom geschlossen, startet die Taste es.",
+        "es": "Pon el ID de la reunión y, si lo tiene, su código de acceso en los ajustes del botón. Funciona también fuera de una reunión y con Zoom en segundo plano. Si Zoom está cerrado, lo abre.",
+        "fr": "Indiquez l’ID de réunion et, s’il y en a un, son code secret dans les réglages du bouton. Fonctionne aussi hors réunion et avec Zoom en arrière-plan. Si Zoom est fermé, le bouton le lance.",
+        "ru": "Идентификатор конференции и, если он есть, код доступа впишите в настройках кнопки. Работает и вне конференции, и когда Zoom в фоне. Если Zoom закрыт, кнопка его запустит."
       },
       "tapAction": {
         "en": "Joins your meeting",
@@ -796,17 +796,17 @@
       },
       "summary": {
         "en": "Microphone, video, sharing and recording for your Zoom meetings, and joining your own",
-        "de": "Mikrofon, Video, Freigabe und Aufzeichnung für deine Zoom-Meetings – und der Weg in dein eigenes",
+        "de": "Mikrofon, Video, Freigabe und Aufzeichnung in Zoom-Meetings, dazu der Beitritt zu deinem eigenen Meeting",
         "es": "Micrófono, vídeo, pantalla compartida y grabación para tus reuniones de Zoom, y entrar en la tuya",
         "fr": "Micro, vidéo, partage et enregistrement pour vos réunions Zoom, et l’accès à la vôtre",
-        "ru": "Микрофон, видео, демонстрация и запись для конференций Zoom — и вход в вашу"
+        "ru": "Микрофон, видео, демонстрация и запись в конференциях Zoom, а ещё вход в вашу конференцию"
       },
       "details": {
-        "en": "Microphone, Video and Share Screen show whether they are on. Most buttons work with Zoom in the background; Raise Hand and the reactions bring its meeting window to the front first. Join My Meeting works outside a meeting too.",
-        "de": "Mikrofon, Video und Bildschirm freigeben zeigen, ob sie an sind. Die meisten Tasten klappen mit Zoom im Hintergrund; Hand heben und die Reaktionen holen zuerst das Meeting-Fenster nach vorne. Mein Meeting klappt auch außerhalb eines Meetings.",
-        "es": "Micrófono, Vídeo y Compartir pantalla muestran si están activos. Casi todos los botones funcionan con Zoom en segundo plano; Levantar la mano y las reacciones traen antes al frente la ventana de la reunión. Mi reunión funciona también fuera de una reunión.",
-        "fr": "Microphone, Vidéo et Partager l’écran montrent s’ils sont actifs. La plupart des boutons fonctionnent avec Zoom en arrière-plan ; Lever la main et les réactions mettent d’abord la fenêtre de réunion au premier plan. Ma réunion fonctionne aussi hors réunion.",
-        "ru": "«Микрофон», «Видео» и «Показ экрана» показывают, включены ли они. Большинство кнопок работают, когда Zoom в фоне; «Поднять руку» и реакции сначала выводят окно конференции вперёд. «Моя конференция» работает и вне конференции."
+        "en": "During a meeting, the buttons work even with Zoom in the background. Raise Hand and the reactions bring the meeting window to the front first. Join My Meeting works outside a meeting too.",
+        "de": "Während eines Meetings funktionieren die Tasten auch mit Zoom im Hintergrund. Hand heben und die Reaktionen holen zuerst das Meeting-Fenster nach vorne. Mein Meeting funktioniert auch außerhalb eines Meetings.",
+        "es": "Durante una reunión, los botones funcionan incluso con Zoom en segundo plano. Levantar la mano y las reacciones traen antes al frente la ventana de la reunión. Mi reunión funciona también fuera de una reunión.",
+        "fr": "Pendant une réunion, les boutons fonctionnent même avec Zoom en arrière-plan. Lever la main et les réactions mettent d’abord la fenêtre de réunion au premier plan. Ma réunion fonctionne aussi hors réunion.",
+        "ru": "Во время конференции кнопки работают, даже когда Zoom в фоне. «Поднять руку» и реакции сначала выводят окно конференции вперёд. «Моя конференция» работает и вне конференции."
       },
       "bindByDefault": true,
       "placements": [

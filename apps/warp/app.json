@@ -1,6 +1,6 @@
 {
   "id": "warp",
-  "revision": 4,
+  "revision": 5,
   "name": "Warp",
   "bundleIds": ["dev.warp.Warp-Stable"],
   "category": "development",
@@ -16,11 +16,11 @@
         "ru": "Вкладка терминала в домашней папке из любого приложения"
       },
       "details": {
-        "en": "In Warp’s front window; Warp comes forward. Doesn’t start Warp when it isn’t running.",
-        "de": "Im vorderen Fenster von Warp; Warp kommt nach vorne. Startet Warp nicht, wenn es nicht läuft.",
-        "es": "En la ventana de delante de Warp; Warp pasa al frente. Si Warp no está abierto, no lo abre.",
-        "fr": "Dans la fenêtre de Warp au premier plan ; Warp passe au premier plan. Ne lance pas Warp s’il n’est pas ouvert.",
-        "ru": "В переднем окне Warp; Warp выходит на передний план. Если Warp не запущен, не запускает его."
+        "en": "The tab opens in Warp’s front window, and Warp comes forward. If Warp isn’t running, the button doesn’t start it.",
+        "de": "Der Tab öffnet sich im vorderen Fenster von Warp, und Warp kommt nach vorne. Läuft Warp nicht, startet die Taste es nicht.",
+        "es": "La pestaña se abre en la ventana de delante de Warp, y Warp pasa al frente. Si Warp no está abierto, el botón no lo abre.",
+        "fr": "L’onglet s’ouvre dans la fenêtre active de Warp, qui passe au premier plan. Si Warp n’est pas ouvert, le bouton ne le lance pas.",
+        "ru": "Вкладка откроется в переднем окне Warp, и Warp выйдет на передний план. Если Warp закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Opens a new tab",
@@ -50,7 +50,7 @@
         "de": "Tab › Switch to Previous Tab (⌃⇧⇥), wenn Ctrl+Tab behavior in Settings › Features › Keys von Warp unverändert ist. Funktioniert, wenn Warp vorne ist.",
         "es": "Tab › Switch to Previous Tab (⌃⇧⇥), si Ctrl+Tab behavior sigue como viene en Settings › Features › Keys de Warp. Funciona cuando Warp está delante.",
         "fr": "Tab › Switch to Previous Tab (⌃⇧⇥), si Ctrl+Tab behavior est resté tel quel dans Settings › Features › Keys de Warp. Fonctionne quand Warp est au premier plan.",
-        "ru": "Tab › Switch to Previous Tab (⌃⇧⇥), если Ctrl+Tab behavior в Settings › Features › Keys у Warp не менялся. Работает, когда Warp на переднем плане."
+        "ru": "Tab › Switch to Previous Tab (⌃⇧⇥), если в Warp не меняли Ctrl+Tab behavior в Settings › Features › Keys. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Shows the previous tab",
@@ -81,7 +81,7 @@
         "de": "Tab › Switch to Next Tab (⌃⇥), wenn Ctrl+Tab behavior in Settings › Features › Keys von Warp unverändert ist. Funktioniert, wenn Warp vorne ist.",
         "es": "Tab › Switch to Next Tab (⌃⇥), si Ctrl+Tab behavior sigue como viene en Settings › Features › Keys de Warp. Funciona cuando Warp está delante.",
         "fr": "Tab › Switch to Next Tab (⌃⇥), si Ctrl+Tab behavior est resté tel quel dans Settings › Features › Keys de Warp. Fonctionne quand Warp est au premier plan.",
-        "ru": "Tab › Switch to Next Tab (⌃⇥), если Ctrl+Tab behavior в Settings › Features › Keys у Warp не менялся. Работает, когда Warp на переднем плане."
+        "ru": "Tab › Switch to Next Tab (⌃⇥), если в Warp не меняли Ctrl+Tab behavior в Settings › Features › Keys. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Shows the next tab",
@@ -108,11 +108,11 @@
         "ru": "Новое окно Warp из любого приложения"
       },
       "details": {
-        "en": "In your home folder; Warp comes forward. When Warp isn’t running, the tap starts it with the window it opens at launch.",
-        "de": "Im Benutzerordner; Warp kommt nach vorne. Läuft Warp nicht, startet es der Tipp mit dem Fenster, das es beim Start öffnet.",
-        "es": "En tu carpeta de inicio; Warp pasa al frente. Si Warp no está abierto, el toque lo abre con la ventana que abre al iniciarse.",
-        "fr": "Dans votre dossier de départ ; Warp passe au premier plan. S’il n’est pas ouvert, le toucher lance Warp avec la fenêtre qu’il ouvre au démarrage.",
-        "ru": "В домашней папке; Warp выходит на передний план. Если Warp не запущен, касание запускает его с окном, которое он открывает при запуске."
+        "en": "The window opens in your home folder, and Warp comes forward. When Warp isn’t running, the tap starts it with the window it usually opens at launch.",
+        "de": "Das Fenster öffnet sich im Benutzerordner, und Warp kommt nach vorne. Läuft Warp nicht, wird es beim Tippen mit dem Fenster gestartet, das es sonst beim Start öffnet.",
+        "es": "La ventana se abre en tu carpeta de inicio, y Warp pasa al frente. Si Warp no está abierto, el toque lo abre con la ventana que suele abrir al iniciarse.",
+        "fr": "La fenêtre s’ouvre dans votre dossier de départ, et Warp passe au premier plan. S’il n’est pas ouvert, le toucher lance Warp avec la fenêtre qu’il ouvre d’habitude au démarrage.",
+        "ru": "Окно откроется в домашней папке, и Warp выйдет на передний план. Если Warp не запущен, нажатие запустит его с тем окном, которое он обычно открывает при запуске."
       },
       "tapAction": {
         "en": "Opens a new window",
@@ -138,11 +138,11 @@
         "ru": "Вкладка с новым разговором с агентом из любого приложения"
       },
       "details": {
-        "en": "Like File › New Agent Tab; nothing is sent until you send a prompt. The Agent needs a paid Warp plan or your own API key. Doesn’t start Warp when it isn’t running.",
-        "de": "Wie File › New Agent Tab; gesendet wird erst, wenn du eine Anfrage abschickst. Der Agent braucht einen bezahlten Warp-Tarif oder deinen eigenen API-Schlüssel. Startet Warp nicht, wenn es nicht läuft.",
-        "es": "Como File › New Agent Tab; no se envía nada hasta que envíes una petición. El agente necesita un plan de pago de Warp o tu propia clave de API. Si Warp no está abierto, no lo abre.",
-        "fr": "Comme File › New Agent Tab ; rien n’est envoyé tant que vous n’envoyez pas de requête. L’agent demande un forfait Warp payant ou votre propre clé d’API. Ne lance pas Warp s’il n’est pas ouvert.",
-        "ru": "Как File › New Agent Tab; ничего не отправляется, пока вы сами не отправите запрос. Агенту нужен платный тариф Warp или свой ключ API. Если Warp не запущен, не запускает его."
+        "en": "Same as File › New Agent Tab. The Agent needs a paid Warp plan or your own API key and gets nothing until you send a prompt. If Warp isn’t running, the button doesn’t start it.",
+        "de": "Wie File › New Agent Tab. Der Agent braucht einen bezahlten Warp-Tarif oder deinen eigenen API-Schlüssel und bekommt nichts, bis du eine Anfrage abschickst. Läuft Warp nicht, startet die Taste es nicht.",
+        "es": "Lo mismo que File › New Agent Tab. El agente necesita un plan de pago de Warp o tu propia clave de API, y no recibe nada hasta que envíes una petición. Si Warp no está abierto, el botón no lo abre.",
+        "fr": "Comme File › New Agent Tab. L’agent demande un forfait Warp payant ou votre propre clé d’API, et ne reçoit rien tant que vous n’envoyez pas de requête. Si Warp n’est pas ouvert, le bouton ne le lance pas.",
+        "ru": "То же, что File › New Agent Tab. Агенту нужен платный тариф Warp или свой ключ API, и он ничего не получит, пока вы сами не отправите запрос. Если Warp закрыт, кнопка его не запустит."
       },
       "tapAction": {
         "en": "Opens a new Agent tab",
@@ -168,11 +168,11 @@
         "ru": "Находит действия, workflows и настройки Warp по имени (⌘P)"
       },
       "details": {
-        "en": "Command Palette (⌘P): actions, workflows, notebooks, settings and keyboard shortcuts in one search. Works while Warp is in front.",
-        "de": "Command Palette (⌘P): Aktionen, Workflows, Notebooks, Einstellungen und Tastenkürzel in einer Suche. Funktioniert, wenn Warp vorne ist.",
-        "es": "Command Palette (⌘P): acciones, workflows, notebooks, ajustes y atajos de teclado en una sola búsqueda. Funciona cuando Warp está delante.",
-        "fr": "Command Palette (⌘P) : actions, workflows, notebooks, réglages et raccourcis clavier dans une seule recherche. Fonctionne quand Warp est au premier plan.",
-        "ru": "Command Palette (⌘P): действия, workflows, блокноты, настройки и сочетания клавиш в одном поиске. Работает, когда Warp на переднем плане."
+        "en": "Command Palette (⌘P) searches actions, workflows, notebooks, settings and keyboard shortcuts at once. Works while Warp is in front.",
+        "de": "Command Palette (⌘P) durchsucht Aktionen, Workflows, Notebooks, Einstellungen und Tastenkürzel auf einmal. Funktioniert, wenn Warp vorne ist.",
+        "es": "Command Palette (⌘P) busca a la vez en acciones, workflows, notebooks, ajustes y atajos de teclado. Funciona cuando Warp está delante.",
+        "fr": "Command Palette (⌘P) cherche à la fois dans les actions, workflows, notebooks, réglages et raccourcis clavier. Fonctionne quand Warp est au premier plan.",
+        "ru": "Command Palette (⌘P) ищет сразу по действиям, workflows, блокнотам, настройкам и сочетаниям клавиш. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Opens the command palette",
@@ -199,11 +199,11 @@
         "ru": "Ищет по прошлым командам (⌃R); удержание — workflows"
       },
       "details": {
-        "en": "Command Search (⌃R): past commands, workflows and Agent conversations. Only at Warp’s command line; with fzf or atuin on ⌃R, the shell gets the key.",
-        "de": "Command Search (⌃R): frühere Befehle, Workflows und Agent-Unterhaltungen. Nur an der Befehlszeile von Warp; liegt fzf oder atuin auf ⌃R, bekommt die Shell die Taste.",
-        "es": "Command Search (⌃R): comandos anteriores, workflows y conversaciones del agente. Solo en la línea de comandos de Warp; con fzf o atuin en ⌃R, la tecla va al shell.",
-        "fr": "Command Search (⌃R) : commandes passées, workflows et conversations Agent. Seulement à la ligne de commande de Warp ; avec fzf ou atuin sur ⌃R, le shell reçoit la touche.",
-        "ru": "Command Search (⌃R): прошлые команды, workflows и разговоры с агентом. Только в командной строке Warp; если ⌃R занят fzf или atuin, клавишу получает оболочка."
+        "en": "Command Search (⌃R) searches past commands, workflows and Agent conversations. It works only at Warp’s command line. With fzf or atuin on ⌃R, the shell gets the key.",
+        "de": "Command Search (⌃R) durchsucht frühere Befehle, Workflows und Agent-Unterhaltungen. Das klappt nur an der Befehlszeile von Warp. Liegt fzf oder atuin auf ⌃R, bekommt die Shell das Tastenkürzel.",
+        "es": "Command Search (⌃R) busca en comandos anteriores, workflows y conversaciones del agente. Solo funciona en la línea de comandos de Warp. Con fzf o atuin en ⌃R, la tecla va al shell.",
+        "fr": "Command Search (⌃R) cherche dans les commandes passées, les workflows et les conversations Agent. Ne marche qu’à la ligne de commande de Warp. Avec fzf ou atuin sur ⌃R, le shell reçoit la touche.",
+        "ru": "Command Search (⌃R) ищет по прошлым командам, workflows и разговорам с агентом. Работает только в командной строке Warp. Если на ⌃R настроен fzf или atuin, клавишу получит оболочка."
       },
       "tapAction": {
         "en": "Opens Command Search",
@@ -217,7 +217,7 @@
         "de": "Öffnet Workflows (⌃⇧R), deine gespeicherten Befehle",
         "es": "Abre Workflows (⌃⇧R), tus comandos guardados",
         "fr": "Ouvre Workflows (⌃⇧R), vos commandes enregistrées",
-        "ru": "Открывает Workflows (⌃⇧R) — сохранённые команды"
+        "ru": "Открывает Workflows (⌃⇧R) с сохранёнными командами"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -238,11 +238,11 @@
         "ru": "Переходит к любой открытой сессии по папке или команде (⇧⌘P)"
       },
       "details": {
-        "en": "Navigation Palette (⇧⌘P): the open sessions of all windows, most recent first, found by prompt or command. Works while Warp is in front.",
-        "de": "Navigation Palette (⇧⌘P): die offenen Sitzungen aller Fenster, die jüngste zuerst, gefunden nach Prompt oder Befehl. Funktioniert, wenn Warp vorne ist.",
-        "es": "Navigation Palette (⇧⌘P): las sesiones abiertas de todas las ventanas, la más reciente primero, por prompt o comando. Funciona cuando Warp está delante.",
-        "fr": "Navigation Palette (⇧⌘P) : les sessions ouvertes de toutes les fenêtres, la plus récente d’abord, par prompt ou commande. Fonctionne quand Warp est au premier plan.",
-        "ru": "Navigation Palette (⇧⌘P): открытые сессии всех окон, сначала последние, поиск по приглашению или команде. Работает, когда Warp на переднем плане."
+        "en": "Navigation Palette (⇧⌘P) lists the open sessions of all windows, most recent first. Search them by prompt or command. Works while Warp is in front.",
+        "de": "Navigation Palette (⇧⌘P) zeigt die offenen Sitzungen aller Fenster, die jüngste zuerst. Suchen kannst du nach Prompt oder Befehl. Funktioniert, wenn Warp vorne ist.",
+        "es": "Navigation Palette (⇧⌘P) muestra las sesiones abiertas de todas las ventanas, la más reciente primero. Puedes buscarlas por prompt o comando. Funciona cuando Warp está delante.",
+        "fr": "Navigation Palette (⇧⌘P) liste les sessions ouvertes de toutes les fenêtres, la plus récente d’abord. Cherchez-les par prompt ou par commande. Fonctionne quand Warp est au premier plan.",
+        "ru": "Navigation Palette (⇧⌘P) показывает открытые сессии всех окон, сначала недавние. Искать можно по приглашению или команде. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Opens the session list",
@@ -370,11 +370,11 @@
         "ru": "Передняя панель занимает всю вкладку (⇧⌘↩)"
       },
       "details": {
-        "en": "Toggle Maximize Active Pane (⇧⌘↩): the other panes are hidden, not closed, and come back on the next tap. Works while Warp is in front.",
-        "de": "Toggle Maximize Active Pane (⇧⌘↩): Die anderen Bereiche werden ausgeblendet, nicht geschlossen, und kommen beim nächsten Tippen zurück. Funktioniert, wenn Warp vorne ist.",
-        "es": "Toggle Maximize Active Pane (⇧⌘↩): los demás paneles se ocultan, no se cierran, y vuelven con el siguiente toque. Funciona cuando Warp está delante.",
-        "fr": "Toggle Maximize Active Pane (⇧⌘↩) : les autres panneaux sont masqués, pas fermés, et reviennent au toucher suivant. Fonctionne quand Warp est au premier plan.",
-        "ru": "Toggle Maximize Active Pane (⇧⌘↩): остальные панели скрываются, а не закрываются, и возвращаются при следующем касании. Работает, когда Warp на переднем плане."
+        "en": "Toggle Maximize Active Pane (⇧⌘↩). The other panes are hidden, not closed, until the next tap. Works while Warp is in front.",
+        "de": "Toggle Maximize Active Pane (⇧⌘↩). Die anderen Bereiche werden bis zum nächsten Tippen ausgeblendet, nicht geschlossen. Funktioniert, wenn Warp vorne ist.",
+        "es": "Toggle Maximize Active Pane (⇧⌘↩). Los demás paneles se ocultan hasta el siguiente toque, no se cierran. Funciona cuando Warp está delante.",
+        "fr": "Toggle Maximize Active Pane (⇧⌘↩). Les autres panneaux sont masqués jusqu’au toucher suivant, pas fermés. Fonctionne quand Warp est au premier plan.",
+        "ru": "Toggle Maximize Active Pane (⇧⌘↩). Остальные панели не закрываются, а прячутся до следующего нажатия. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Maximizes or restores the pane",
@@ -401,11 +401,11 @@
         "ru": "Ищет по блокам сессии (⌘F); удержание очищает их"
       },
       "details": {
-        "en": "Warp’s find bar (⌘F), over the commands and output of every block in the session. Works while Warp is in front.",
-        "de": "Die Suchleiste von Warp (⌘F), über Befehle und Ausgabe aller Blöcke der Sitzung. Funktioniert, wenn Warp vorne ist.",
-        "es": "La barra de búsqueda de Warp (⌘F), en los comandos y la salida de todos los bloques de la sesión. Funciona cuando Warp está delante.",
-        "fr": "La barre de recherche de Warp (⌘F), sur les commandes et la sortie de tous les blocs de la session. Fonctionne quand Warp est au premier plan.",
-        "ru": "Панель поиска Warp (⌘F) по командам и выводу всех блоков сессии. Работает, когда Warp на переднем плане."
+        "en": "Warp’s find bar (⌘F) searches the commands and output of every block in the session. Works while Warp is in front.",
+        "de": "Die Suchleiste von Warp (⌘F) durchsucht Befehle und Ausgabe aller Blöcke der Sitzung. Funktioniert, wenn Warp vorne ist.",
+        "es": "La barra de búsqueda de Warp (⌘F) busca en los comandos y la salida de todos los bloques de la sesión. Funciona cuando Warp está delante.",
+        "fr": "La barre de recherche de Warp (⌘F) cherche dans les commandes et la sortie de tous les blocs de la session. Fonctionne quand Warp est au premier plan.",
+        "ru": "Панель поиска Warp (⌘F) ищет по командам и выводу всех блоков сессии. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Opens the find bar",
@@ -415,11 +415,11 @@
         "ru": "Открывает панель поиска"
       },
       "holdAction": {
-        "en": "⚠️ Removes every block — commands and output — from the session for good; in an Agent conversation, stops the Agent and starts a new one (Blocks › Clear Blocks)",
-        "de": "⚠️ Entfernt alle Blöcke – Befehle und Ausgabe – endgültig aus der Sitzung; in einer Agent-Unterhaltung stoppt es den Agent und beginnt eine neue (Blocks › Clear Blocks)",
-        "es": "⚠️ Quita para siempre todos los bloques —comandos y salida— de la sesión; en una conversación del agente, lo detiene y empieza otra (Blocks › Clear Blocks)",
-        "fr": "⚠️ Retire définitivement tous les blocs — commandes et sortie — de la session ; dans une conversation Agent, arrête l’agent et en commence une nouvelle (Blocks › Clear Blocks)",
-        "ru": "⚠️ Безвозвратно убирает из сессии все блоки — команды и вывод; в разговоре с агентом останавливает агента и начинает новый разговор (Blocks › Clear Blocks)"
+        "en": "⚠️ Removes every block, with its commands and output, from the session for good (Blocks › Clear Blocks), and in an Agent conversation stops the Agent and starts a new one",
+        "de": "⚠️ Entfernt alle Blöcke mit Befehlen und Ausgabe endgültig aus der Sitzung (Blocks › Clear Blocks) und stoppt in einer Agent-Unterhaltung den Agenten und beginnt eine neue",
+        "es": "⚠️ Quita para siempre de la sesión todos los bloques con sus comandos y su salida (Blocks › Clear Blocks), y en una conversación del agente lo detiene y empieza otra",
+        "fr": "⚠️ Retire définitivement de la session tous les blocs, commandes et sortie comprises (Blocks › Clear Blocks), et, dans une conversation Agent, arrête l’agent et en commence une nouvelle",
+        "ru": "⚠️ Безвозвратно убирает из сессии все блоки с командами и выводом (Blocks › Clear Blocks), а в разговоре с агентом останавливает его и начинает новый разговор"
       },
       "permissions": ["accessibility", "automation"],
       "button": {
@@ -440,11 +440,11 @@
         "ru": "Новая вкладка в папке, открытой в Finder"
       },
       "details": {
-        "en": "The folder of the front Finder window, or the desktop when none is open. Works from any app and starts Warp if needed.",
-        "de": "Der Ordner des vorderen Finder-Fensters, ohne Finder-Fenster der Schreibtisch. Funktioniert aus jeder App und startet Warp bei Bedarf.",
-        "es": "La carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna. Funciona desde cualquier app y abre Warp si hace falta.",
-        "fr": "Le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Fonctionne depuis n’importe quelle app et lance Warp au besoin.",
-        "ru": "Папка переднего окна Finder, а если окон нет — рабочий стол. Работает из любого приложения и при необходимости запускает Warp."
+        "en": "The button uses the folder of the front Finder window, or the desktop if no Finder window is open. Works from any app and starts Warp if needed.",
+        "de": "Die Taste nimmt den Ordner des vorderen Finder-Fensters oder, wenn keins offen ist, den Schreibtisch. Funktioniert aus jeder App und startet Warp bei Bedarf.",
+        "es": "El botón usa la carpeta de la ventana del Finder de delante, o el escritorio si no hay ninguna abierta. Funciona desde cualquier app y abre Warp si hace falta.",
+        "fr": "Le bouton prend le dossier de la fenêtre du Finder au premier plan, ou le bureau s’il n’y en a aucune. Fonctionne depuis n’importe quelle app et lance Warp au besoin.",
+        "ru": "Кнопка берёт папку из переднего окна Finder, а если окон Finder нет, то рабочий стол. Работает из любого приложения и при необходимости запускает Warp."
       },
       "tapAction": {
         "en": "Opens Warp in that folder",
@@ -471,11 +471,11 @@
         "ru": "Уменьшает все окна Warp (⌘-); удержание — масштаб по умолчанию"
       },
       "details": {
-        "en": "Clicks View › Zoom Out in Warp’s menu, and View › Reset Zoom on hold: text and panels shrink together. Works while Warp is in front.",
-        "de": "Klickt im Menü von Warp auf View › Zoom Out, beim Halten auf View › Reset Zoom: Schrift und Bedienelemente schrumpfen gemeinsam. Funktioniert, wenn Warp vorne ist.",
-        "es": "Pulsa View › Zoom Out en el menú de Warp y, al mantener pulsado, View › Reset Zoom: el texto y los paneles se reducen juntos. Funciona cuando Warp está delante.",
-        "fr": "Clique sur View › Zoom Out dans le menu de Warp, et en maintenant sur View › Reset Zoom : texte et panneaux rétrécissent ensemble. Fonctionne quand Warp est au premier plan.",
-        "ru": "Нажимает View › Zoom Out в меню Warp, а при удержании — View › Reset Zoom: текст и панели уменьшаются вместе. Работает, когда Warp на переднем плане."
+        "en": "Clicks View › Zoom Out in Warp’s menu, and View › Reset Zoom on hold. Text and panels shrink together. Works while Warp is in front.",
+        "de": "Klickt im Menü von Warp auf View › Zoom Out, beim Halten auf View › Reset Zoom. Schrift und Bedienelemente schrumpfen gemeinsam. Funktioniert, wenn Warp vorne ist.",
+        "es": "Hace clic en View › Zoom Out del menú de Warp y, al mantener pulsado, en View › Reset Zoom. El texto y los paneles se reducen juntos. Funciona cuando Warp está delante.",
+        "fr": "Clique sur View › Zoom Out dans le menu de Warp et, en maintenant le bouton, sur View › Reset Zoom. Texte et panneaux rétrécissent ensemble. Fonctionne quand Warp est au premier plan.",
+        "ru": "Нажимает View › Zoom Out в меню Warp, а при удержании — View › Reset Zoom. Текст и панели уменьшаются вместе. Работает, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Makes everything smaller",
@@ -510,11 +510,11 @@
         "ru": "Увеличивает все окна Warp (⌘=); удержание — масштаб по умолчанию"
       },
       "details": {
-        "en": "Clicks View › Zoom In in Warp’s menu, on any keyboard layout, and View › Reset Zoom on hold. Works while Warp is in front.",
-        "de": "Klickt im Menü von Warp auf View › Zoom In – mit jeder Tastaturbelegung –, beim Halten auf View › Reset Zoom. Funktioniert, wenn Warp vorne ist.",
-        "es": "Pulsa View › Zoom In en el menú de Warp, con cualquier distribución de teclado, y al mantener pulsado, View › Reset Zoom. Funciona cuando Warp está delante.",
-        "fr": "Clique sur View › Zoom In dans le menu de Warp, avec toute disposition de clavier, et en maintenant sur View › Reset Zoom. Fonctionne quand Warp est au premier plan.",
-        "ru": "Нажимает View › Zoom In в меню Warp — при любой раскладке, — а при удержании View › Reset Zoom. Работает, когда Warp на переднем плане."
+        "en": "Clicks View › Zoom In in Warp’s menu, and View › Reset Zoom on hold. Works with any keyboard layout while Warp is in front.",
+        "de": "Klickt im Menü von Warp auf View › Zoom In, beim Halten auf View › Reset Zoom. Klappt mit jeder Tastaturbelegung, wenn Warp vorne ist.",
+        "es": "Hace clic en View › Zoom In del menú de Warp y, al mantener pulsado, en View › Reset Zoom. Sirve con cualquier distribución de teclado cuando Warp está delante.",
+        "fr": "Clique sur View › Zoom In dans le menu de Warp et, en maintenant le bouton, sur View › Reset Zoom. Marche avec toute disposition de clavier quand Warp est au premier plan.",
+        "ru": "Нажимает View › Zoom In в меню Warp, а при удержании — View › Reset Zoom. Срабатывает при любой раскладке, когда Warp на переднем плане."
       },
       "tapAction": {
         "en": "Makes everything bigger",
@@ -551,11 +551,11 @@
         "ru": "Вкладки, агент, палитры и панели в одно касание"
       },
       "details": {
-        "en": "New Tab, New Window, New Agent and Finder Folder work from any app; the rest, long presses included, while Warp is in front. The keys are Warp’s defaults; its menus are in English only.",
-        "de": "Neuer Tab, Neues Fenster, Neuer Agent und Finder-Ordner funktionieren aus jeder App; der Rest, auch das Halten, wenn Warp vorne ist. Es gelten die Standard-Tastenkürzel von Warp; seine Menüs gibt es nur auf Englisch.",
-        "es": "Nueva pestaña, Nueva ventana, Nuevo agente y Carpeta del Finder funcionan desde cualquier app; el resto, también al mantener pulsado, cuando Warp está delante. Los atajos son los predeterminados de Warp y sus menús solo están en inglés.",
-        "fr": "Nouvel onglet, Nouvelle fenêtre, Nouvel agent et Dossier du Finder fonctionnent depuis n’importe quelle app ; le reste, appuis longs compris, quand Warp est au premier plan. Les raccourcis sont ceux de Warp par défaut, et ses menus sont uniquement en anglais.",
-        "ru": "«Новая вкладка», «Новое окно», «Новый агент» и «Папка Finder» работают из любого приложения; остальное, включая удержание, — когда Warp на переднем плане. Сочетания клавиш — стандартные для Warp, а его меню есть только на английском."
+        "en": "New Tab, New Window, New Agent and Finder Folder work from any app. The other buttons and all long presses work while Warp is in front. The keys are Warp’s defaults, and its menus are in English only.",
+        "de": "Neuer Tab, Neues Fenster, Neuer Agent und Finder-Ordner funktionieren aus jeder App. Die übrigen Tasten und alle Aktionen beim Halten funktionieren, wenn Warp vorne ist. Es gelten die Standard-Tastenkürzel von Warp, und seine Menüs gibt es nur auf Englisch.",
+        "es": "Nueva pestaña, Nueva ventana, Nuevo agente y Carpeta del Finder funcionan desde cualquier app. Los demás botones y todas las pulsaciones largas funcionan cuando Warp está delante. Los atajos son los predeterminados de Warp y sus menús solo están en inglés.",
+        "fr": "Nouvel onglet, Nouvelle fenêtre, Nouvel agent et Dossier du Finder fonctionnent depuis n’importe quelle app. Les autres boutons et tous les appuis longs fonctionnent quand Warp est au premier plan. Les raccourcis sont ceux de Warp par défaut, et ses menus sont uniquement en anglais.",
+        "ru": "«Новая вкладка», «Новое окно», «Новый агент» и «Папка Finder» работают из любого приложения. Остальные кнопки и все удержания работают, когда Warp на переднем плане. Кнопки рассчитаны на стандартные сочетания клавиш Warp, а его меню есть только на английском."
       },
       "bindByDefault": true,
       "placements": [

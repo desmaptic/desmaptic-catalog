@@ -16,7 +16,7 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 vault=${${vault##[[:space:]]#}%%[[:space:]]#}
 note=${${${note##[[:space:]]#}%%[[:space:]]#}%.md}
 [[ -n $vault && -n $note ]] ||
-  { print -u2 -- "Open Note: write the vault's name and the note's path in the first line of the button's script"; exit 1 }
+  { print -u2 -- "Open Note: write the vault’s name and the note’s path in this button’s settings"; exit 1 }
 
 enc() { print -rn -- ${1//(#m)[^A-Za-z0-9._~-]/%${(l:2::0:)$(([##16]#MATCH))}} }
 

@@ -342,7 +342,7 @@ function press(pid, id, show, expect) {
     delay(0.2);
   }
   const enabled = value(target, "AXEnabled");
-  if (typeof enabled !== "number" && !yes(enabled)) return ["!Teams has greyed out this control now"];
+  if (typeof enabled !== "number" && !yes(enabled)) return ["!Teams has grayed out this control now"];
   const toggle = id === MIC || id === CAMERA;
   const was = toggle ? stateOf(target, id) : "";
   const win = show ? 0 : value(target, "AXWindow");

@@ -1,6 +1,6 @@
 {
   "id": "stopwatch",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Stopwatch",
@@ -14,23 +14,23 @@
     "de": "Zählt ab null hoch, der Ring füllt sich einmal pro Minute",
     "es": "Cuenta desde cero en un anillo que se llena una vez por minuto",
     "fr": "Compte à partir de zéro sur un anneau qui se remplit chaque minute",
-    "ru": "Считает время с нуля, кольцо заполняется раз в минуту"
+    "ru": "Отсчитывает время с нуля, а кольцо заполняется каждую минуту"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Minutes and seconds since the start, plus hours after the first hour. The ring fills once a minute, the white dot is the second hand. While paused, the face dims and shows ▶.",
-    "de": "Minuten und Sekunden seit dem Start, nach der ersten Stunde auch Stunden. Der Ring füllt sich einmal pro Minute, der weiße Punkt ist der Sekundenzeiger. In der Pause wird die Anzeige gedimmt und zeigt ▶.",
-    "es": "Minutos y segundos desde el inicio, y también horas pasada la primera. El anillo se llena una vez por minuto; el punto blanco es el segundero. En pausa, la esfera se atenúa y muestra ▶.",
-    "fr": "Minutes et secondes depuis le lancement, puis les heures au-delà d’une heure. L’anneau se remplit une fois par minute, le point blanc fait office de trotteuse. En pause, le cadran s’assombrit et affiche ▶.",
-    "ru": "Минуты и секунды с запуска, после первого часа — и часы. Кольцо заполняется раз в минуту, белая точка — секундная стрелка. На паузе циферблат тускнеет и показывает ▶."
+    "en": "Minutes and seconds, plus hours after the first hour. The white dot runs around the ring like a second hand. While paused, the button dims.",
+    "de": "Minuten und Sekunden, nach der ersten Stunde auch Stunden. Der weiße Punkt läuft wie ein Sekundenzeiger um den Ring. In der Pause wird die Taste gedimmt.",
+    "es": "Minutos y segundos, y también horas pasada la primera. El punto blanco recorre el anillo como un segundero. En pausa, el botón se atenúa.",
+    "fr": "Minutes et secondes, puis les heures au-delà d’une heure. Le point blanc fait le tour de l’anneau comme une trotteuse. En pause, le bouton s’assombrit.",
+    "ru": "Показывает минуты и секунды, а после первого часа — ещё и часы. Белая точка бежит по кольцу, как секундная стрелка. На паузе кнопка тускнеет."
   },
   "tapAction": {
-    "en": "Starts or pauses the stopwatch; after a pause it carries on from where it stopped",
-    "de": "Startet die Stoppuhr oder hält sie an; nach einer Pause läuft sie dort weiter, wo sie stand",
-    "es": "Inicia o pausa el cronómetro; tras una pausa sigue desde donde se quedó",
-    "fr": "Lance le chronomètre ou le met en pause ; après une pause, il reprend là où il s’était arrêté",
-    "ru": "Запускает секундомер или ставит на паузу; после паузы он продолжает с того же места"
+    "en": "Starts or pauses the stopwatch. After a pause, it carries on from where it stopped",
+    "de": "Startet die Stoppuhr oder hält sie an. Nach einer Pause läuft sie dort weiter, wo sie stand",
+    "es": "Inicia o pausa el cronómetro. Tras una pausa, sigue desde donde se quedó",
+    "fr": "Lance le chronomètre ou le met en pause. Après une pause, il reprend là où il s’était arrêté",
+    "ru": "Запускает секундомер или ставит на паузу. После паузы счёт продолжается с того же места"
   },
   "holdAction": {
     "en": "Stops the stopwatch and resets it to 0:00",

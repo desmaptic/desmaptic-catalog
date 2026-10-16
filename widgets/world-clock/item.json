@@ -1,6 +1,6 @@
 {
   "id": "world-clock",
-  "revision": 5,
+  "revision": 6,
   "kind": "widget",
   "title": {
     "en": "World Clock",
@@ -14,16 +14,16 @@
     "de": "Die Uhrzeit in einer anderen Stadt und der Zeitunterschied zum Mac; tippen für die nächste",
     "es": "La hora en otra ciudad y la diferencia con tu Mac; toca para cambiar de ciudad",
     "fr": "L’heure d’une autre ville et le décalage avec votre Mac ; touchez pour la suivante",
-    "ru": "Время в другом городе и разница с Mac; нажатие — следующий город"
+    "ru": "Время в другом городе и разница с часами Mac; нажмите, чтобы сменить город"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The arc is the city’s day: midnight at both ends, noon on top; the sun or moon shows if it’s light there. The number is the offset from your Mac. Pink from 10 pm to 7 am there.",
-    "de": "Der Bogen ist der Tag der Stadt: Mitternacht an beiden Enden, Mittag oben; Sonne oder Mond zeigen, ob es dort hell ist. Die Zahl ist der Zeitunterschied zum Mac. Pink von 22 bis 7 Uhr Ortszeit.",
-    "es": "El arco es el día de la ciudad: medianoche en los extremos y mediodía arriba; el sol o la luna indican si allí es de día. El número es la diferencia con tu Mac. Rosa de 22:00 a 7:00, hora local.",
-    "fr": "L’arc représente la journée de la ville : minuit aux deux extrémités, midi au sommet ; le soleil ou la lune indique s’il y fait jour. Le nombre est le décalage avec votre Mac. Rose de 22 h à 7 h, heure locale.",
-    "ru": "Дуга — сутки в этом городе: полночь по краям, полдень наверху; солнце или луна показывают, светло ли там. Число — разница со временем на Mac. С 22:00 до 7:00 по местному — розовый."
+    "en": "The sun or moon on the arc tells you whether it’s day or night there. The number is how many hours ahead or behind your Mac it is. From 10 pm to 7 am there, the button is pink: probably too late to call.",
+    "de": "Sonne oder Mond auf dem Bogen zeigen, ob dort gerade Tag oder Nacht ist. Die Zahl sagt, wie viele Stunden die Stadt vor oder hinter dem Mac liegt. Von 22 bis 7 Uhr Ortszeit ist die Taste pink: Für einen Anruf ist es dann wohl zu spät.",
+    "es": "El sol o la luna en el arco indican si allí es de día o de noche. El número son las horas de diferencia con tu Mac, adelante o atrás. De 22:00 a 7:00, hora local, el botón es rosa: seguramente es tarde para llamar.",
+    "fr": "Le soleil ou la lune sur l’arc indique s’il fait jour ou nuit là-bas. Le nombre est le décalage horaire avec votre Mac, en avance ou en retard. De 22 h à 7 h, heure locale, le bouton est rose : il est sans doute trop tard pour appeler.",
+    "ru": "Солнце или луна на дуге подскажут, день там сейчас или ночь. Число показывает разницу во времени с Mac. С 22:00 до 7:00 по местному времени кнопка розовая: звонить туда, скорее всего, поздно."
   },
   "tapAction": {
     "en": "Switches to the next city: London, New York, San Francisco, Tokyo, Dubai, Singapore, Sydney, Paris, Berlin, Moscow, Istanbul, Hong Kong",

@@ -1,6 +1,6 @@
 {
   "id": "type-text",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -16,23 +16,23 @@
     "de": "Tippe auf dem Telefon – der Text wird auf dem Mac dort eingegeben, wo der Cursor steht",
     "es": "Escribe en el teléfono y el texto se escribe en el Mac, donde esté el cursor",
     "fr": "Saisissez sur le téléphone : le texte est tapé sur le Mac, là où se trouve le curseur",
-    "ru": "Наберите текст на телефоне — он напечатается на Mac там, где стоит курсор"
+    "ru": "Наберите текст на телефоне, и он напечатается на Mac там, где стоит курсор"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "Nothing to set up. Typed into the app in front, as if from the Mac’s keyboard. The first time, macOS may ask to allow Desmaptic Agent under Accessibility.",
-    "de": "Nichts einzurichten. Wird in die App im Vordergrund getippt, als käme es von der Tastatur des Mac. Beim ersten Mal fragt macOS eventuell, ob Desmaptic Agent unter „Bedienungshilfen“ erlaubt wird.",
-    "es": "No hay nada que configurar. Se escribe en la app que está delante, como desde el teclado del Mac. La primera vez, macOS puede pedir que permitas Desmaptic Agent en Accesibilidad.",
-    "fr": "Rien à configurer. Le texte est tapé dans l’app au premier plan, comme au clavier du Mac. La première fois, macOS peut demander d’autoriser Desmaptic Agent dans Accessibilité.",
-    "ru": "Настраивать ничего не нужно. Текст печатается в приложение на переднем плане, как с клавиатуры Mac. В первый раз macOS может попросить разрешить Desmaptic Agent в разделе «Универсальный доступ»."
+    "en": "Nothing to set up. The text goes into the app in front, as if typed on the Mac’s keyboard.",
+    "de": "Nichts einzurichten. Der Text landet in der App im Vordergrund, als hättest du ihn auf der Tastatur des Mac getippt.",
+    "es": "No hay nada que configurar. El texto aparece en la app que está delante, como si lo escribieras en el teclado del Mac.",
+    "fr": "Rien à configurer. Le texte s’écrit dans l’app au premier plan, comme si vous le tapiez au clavier du Mac.",
+    "ru": "Настраивать ничего не нужно. Текст появится в активном приложении, как будто его набрали на клавиатуре Mac."
   },
   "tapAction": {
     "en": "Asks for text and types it on the Mac",
     "de": "Fragt nach einem Text und tippt ihn auf dem Mac",
     "es": "Pide un texto y lo escribe en el Mac",
     "fr": "Demande un texte et le tape sur le Mac",
-    "ru": "Спрашивает текст и печатает его на Mac"
+    "ru": "Просит ввести текст и печатает его на Mac"
   },
   "permissions": [
     "accessibility"
@@ -50,8 +50,20 @@
       }
     },
     "input": {
-      "question": "What to type on the Mac?",
-      "placeholder": "Text for where the cursor is"
+      "question": {
+        "en": "What to type on the Mac?",
+        "de": "Was soll auf dem Mac getippt werden?",
+        "es": "¿Qué quieres escribir en el Mac?",
+        "fr": "Que voulez-vous taper sur le Mac ?",
+        "ru": "Что напечатать на Mac?"
+      },
+      "placeholder": {
+        "en": "Text to type at the cursor",
+        "de": "Text für die Stelle des Cursors",
+        "es": "Texto para donde está el cursor",
+        "fr": "Texte à taper au curseur",
+        "ru": "Текст, который появится у курсора"
+      }
     }
   }
 }

@@ -7,7 +7,7 @@
 # shows it: the first Space with exactly that title wins, then the first whose title differs only in case.
 setopt extended_glob
 space=${${space##[[:space:]]##}%%[[:space:]]##}
-[[ -n $space ]] || { print -u2 -- "Go to Space: type the Space’s name on the first line of this button’s script, space=\"…\""; exit 1 }
+[[ -n $space ]] || { print -u2 -- "Go to Space: type the Space’s name in this button’s settings, space=\"…\""; exit 1 }
 export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 

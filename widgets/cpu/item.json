@@ -1,6 +1,6 @@
 {
   "id": "cpu",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "CPU Load",
@@ -10,20 +10,20 @@
     "ru": "Загрузка ЦП"
   },
   "summary": {
-    "en": "How busy the processor is, every 2 seconds; turns pink under heavy load",
-    "de": "Wie ausgelastet der Prozessor ist, alle 2 Sekunden; wird bei hoher Last pink",
-    "es": "Cuánto trabaja el procesador, cada 2 segundos; se vuelve rosa con carga alta",
-    "fr": "La charge du processeur, toutes les 2 secondes ; vire au rose sous forte charge",
-    "ru": "Загрузка процессора каждые 2 секунды; розовеет под высокой нагрузкой"
+    "en": "How busy the Mac’s processor is right now",
+    "de": "Wie ausgelastet der Prozessor des Mac gerade ist",
+    "es": "Cuánto trabaja ahora mismo el procesador del Mac",
+    "fr": "La charge actuelle du processeur du Mac",
+    "ru": "Насколько сейчас загружен процессор Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "How busy the Mac’s processor is right now, across all its cores. The gauge warms up as the load grows and turns pink near 100%.",
-    "de": "Wie stark der Prozessor des Mac gerade ausgelastet ist – über alle Kerne hinweg. Mit steigender Last wird die Anzeige wärmer, nahe 100 % wird sie pink.",
-    "es": "Cuánto trabaja ahora mismo el procesador del Mac, en todos sus núcleos a la vez. El indicador se vuelve más cálido a medida que sube la carga y se pone rosa cerca del 100 %.",
-    "fr": "La charge actuelle du processeur du Mac, tous cœurs confondus. La jauge se réchauffe à mesure que la charge augmente et vire au rose près de 100 %.",
-    "ru": "Насколько сейчас загружен процессор Mac — по всем ядрам сразу. Чем выше нагрузка, тем теплее шкала, у 100 % она розовая."
+    "en": "All cores count together. The gauge warms up as the load grows and turns pink close to 100%. Handy when the Mac suddenly slows down or gets loud.",
+    "de": "Alle Kerne zählen zusammen. Je höher die Last, desto wärmer die Farbe, kurz vor 100 % wird die Anzeige pink. Praktisch, wenn der Mac plötzlich langsam oder laut wird.",
+    "es": "Cuentan todos los núcleos juntos. Cuanta más carga, más cálido el color, y cerca del 100 % el indicador se pone rosa. Útil cuando el Mac de pronto va lento o hace ruido.",
+    "fr": "Tous les cœurs comptent ensemble. Plus la charge monte, plus la couleur se réchauffe, et près de 100 % la jauge passe au rose. Pratique quand le Mac ralentit ou devient bruyant.",
+    "ru": "Считаются все ядра вместе. Чем выше нагрузка, тем теплее цвет, а ближе к 100 % шкала становится розовой. Пригодится, когда Mac вдруг начал тормозить или шуметь."
   },
   "tapAction": {
     "en": "Opens Activity Monitor on the Mac",

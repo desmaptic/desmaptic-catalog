@@ -104,7 +104,7 @@ JS
     (ok) ;;
     ('!blank')      fail other "Nothing to write: the text is empty" ;;
     ('!unanswered') fail permission "macOS is still asking whether the agent may use Reminders: answer at the Mac, then tap again" ;;
-    ('!denied')     fail permission "Allow the agent in System Settings → Privacy & Security → Reminders, or set an inbox file on the first line of this button’s tap script" ;;
+    ('!denied')     fail permission "Allow the agent in System Settings → Privacy & Security → Reminders, or set an inbox file in this button’s settings" ;;
     ('!nolist')     fail config "Reminders has no default list: choose one in Reminders › Settings" ;;
     ('!readonly')   fail config "The default list of Reminders can’t take new reminders: choose another in Reminders › Settings" ;;
     ('!save '*)     fail other "The reminder was not saved (EventKit error ${answer#!save })" ;;

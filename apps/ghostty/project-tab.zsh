@@ -13,11 +13,11 @@ export LC_ALL=C
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 [[ -n $folder ]] ||
-  { print -u2 -- "Project Tab: set your project folder on the first line of the button's script, e.g. folder=\"~/Projects/app\""; exit 1 }
+  { print -u2 -- "Project Tab: set your project folder in this button’s settings, e.g. folder=\"~/Projects/app\""; exit 1 }
 # "~/…" in quotes is not expanded by zsh: do it here, for this account's home only.
 [[ $folder == '~' || $folder == '~/'* ]] && folder=$HOME${folder#\~}
 [[ $folder == /* && -d $folder ]] ||
-  { print -ru2 -- "Project Tab: no such folder: $folder (the first line of the button's script)"; exit 1 }
+  { print -ru2 -- "Project Tab: no such folder: $folder (check this button’s settings)"; exit 1 }
 
 # Asked by bundle id, not with pgrep: `ghostty` is also the name of Ghostty's command-line tool (the same binary), which
 # may run in a shell while the app does not.

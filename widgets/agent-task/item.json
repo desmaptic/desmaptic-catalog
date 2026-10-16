@@ -1,6 +1,6 @@
 {
   "id": "agent-task",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "minAgentVersion": "2.0.1",
   "minAppVersion": "2.0.1",
@@ -13,26 +13,26 @@
   },
   "summary": {
     "en": "Type a task on the phone and Claude Code or Codex starts on it in a terminal on the Mac, in a worktree of its own, without pushing",
-    "de": "Tippe eine Aufgabe auf dem Telefon ein – Claude Code oder Codex macht sich in einem Terminal auf dem Mac daran, in einem eigenen Worktree und ohne Push",
+    "de": "Tippe eine Aufgabe auf dem Telefon ein, und Claude Code oder Codex macht sich in einem Terminal auf dem Mac daran, in einem eigenen Worktree und ohne Push",
     "es": "Escribe una tarea en el teléfono y Claude Code o Codex se pone con ella en un terminal del Mac, en su propio worktree y sin hacer push",
-    "fr": "Saisissez une tâche sur le téléphone : Claude Code ou Codex s’y met dans un terminal du Mac, dans son propre worktree et sans push",
-    "ru": "Наберите задачу на телефоне — Claude Code или Codex возьмётся за неё в терминале на Mac, в собственном worktree и без push"
+    "fr": "Saisissez une tâche sur le téléphone, et Claude Code ou Codex s’y met dans un terminal du Mac, dans son propre worktree et sans push",
+    "ru": "Наберите задачу на телефоне, и Claude Code или Codex возьмётся за неё в терминале на Mac, в отдельном worktree и без push"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "In a worktree of its own: it may commit, never push. Unset, it works in the folder of your last Claude Code or Codex session (else the front Terminal or Finder window’s), with Claude Code (else Codex), in that session’s terminal. Change them on the tap script’s first lines.",
-    "de": "In einem eigenen Worktree: Commits ja, Push nie. Ohne Einstellung arbeitet es im Ordner deiner letzten Claude-Code- oder Codex-Sitzung (sonst des vorderen Terminal- oder Finder-Fensters), mit Claude Code (sonst Codex), im Terminal dieser Sitzung. Ändern in den ersten Zeilen des Tipp-Skripts.",
-    "es": "En su propio worktree: puede hacer commit, nunca push. Sin ajustes, trabaja en la carpeta de tu última sesión de Claude Code o Codex (si no, la de la ventana de Terminal o Finder delante), con Claude Code (si no, Codex), en el terminal de esa sesión. Cámbialo en las primeras líneas del script del toque.",
-    "fr": "Dans son propre worktree : commits oui, push jamais. Sans réglage, il travaille dans le dossier de votre dernière session Claude Code ou Codex (sinon celui de la fenêtre Terminal ou Finder au premier plan), avec Claude Code (sinon Codex), dans le terminal de cette session. À changer sur les premières lignes du script du toucher.",
-    "ru": "В собственном worktree: коммитить может, push — никогда. Без настройки — в папке вашей последней сессии Claude Code или Codex (иначе переднего окна Терминала или Finder), через Claude Code (иначе Codex), в терминале той сессии. Поменять — в первых строках скрипта нажатия."
+    "en": "The agent may commit but never pushes. By default it uses the folder and terminal of your last Claude Code or Codex session. You can choose another folder, tool or terminal in the button’s settings.",
+    "de": "Der Agent darf committen, pusht aber nie. Ohne Einstellung nimmt er Ordner und Terminal deiner letzten Claude-Code- oder Codex-Sitzung. Einen anderen Ordner, ein anderes Tool oder Terminal legst du in den Einstellungen der Taste fest.",
+    "es": "El agente puede hacer commits, pero nunca hace push. Sin ajustes, usa la carpeta y el terminal de tu última sesión de Claude Code o Codex. Otra carpeta, herramienta o terminal se elige en los ajustes del botón.",
+    "fr": "L’agent peut faire des commits, mais jamais de push. Sans réglage, il reprend le dossier et le terminal de votre dernière session Claude Code ou Codex. Un autre dossier, outil ou terminal se choisit dans les réglages du bouton.",
+    "ru": "Агент может делать коммиты, но никогда не делает push. Без настройки он берёт папку и терминал вашей последней сессии Claude Code или Codex. Другую папку, агента или терминал можно выбрать в настройках кнопки."
   },
   "tapAction": {
     "en": "Asks what to do and starts an agent session on the Mac with it",
     "de": "Fragt, was zu tun ist, und startet damit eine Agenten-Sitzung auf dem Mac",
     "es": "Pregunta qué hacer y abre con ello una sesión de agente en el Mac",
     "fr": "Demande quoi faire et lance avec cela une session d’agent sur le Mac",
-    "ru": "Спрашивает, что сделать, и запускает с этим сессию агента на Mac"
+    "ru": "Спрашивает, что сделать, и запускает агента на Mac"
   },
   "permissions": [
     "automation"
@@ -50,12 +50,42 @@
       }
     },
     "input": {
-      "question": "What should the agent do?",
-      "placeholder": "A task for Claude Code or Codex",
+      "question": {
+        "en": "What should the agent do?",
+        "de": "Was soll der Agent tun?",
+        "es": "¿Qué debe hacer el agente?",
+        "fr": "Que doit faire l’agent ?",
+        "ru": "Что сделать агенту?"
+      },
+      "placeholder": {
+        "en": "A task for Claude Code or Codex",
+        "de": "Eine Aufgabe für Claude Code oder Codex",
+        "es": "Una tarea para Claude Code o Codex",
+        "fr": "Une tâche pour Claude Code ou Codex",
+        "ru": "Задача для Claude Code или Codex"
+      },
       "quickReplies": [
-        "Fix the failing tests",
-        "Update the dependencies and run the tests",
-        "Review the last commit"
+        {
+          "en": "Fix the failing tests",
+          "de": "Repariere die fehlschlagenden Tests",
+          "es": "Arregla los tests que fallan",
+          "fr": "Corrigez les tests qui échouent",
+          "ru": "Почините падающие тесты"
+        },
+        {
+          "en": "Update the dependencies and run the tests",
+          "de": "Aktualisiere die Abhängigkeiten und führe die Tests aus",
+          "es": "Actualiza las dependencias y ejecuta los tests",
+          "fr": "Mettez à jour les dépendances et lancez les tests",
+          "ru": "Обновите зависимости и запустите тесты"
+        },
+        {
+          "en": "Review the last commit",
+          "de": "Prüfe den letzten Commit",
+          "es": "Revisa el último commit",
+          "fr": "Relisez le dernier commit",
+          "ru": "Проверьте последний коммит"
+        }
       ],
       "multiline": true
     }

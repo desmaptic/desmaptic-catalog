@@ -1,6 +1,6 @@
 {
   "id": "slack",
-  "revision": 5,
+  "revision": 6,
   "name": "Slack",
   "bundleIds": ["com.tinyspeck.slackmacgap"],
   "category": "communication",
@@ -9,18 +9,18 @@
       "id": "badge",
       "title": {"en": "Mentions & DMs", "de": "Erwähnungen & DMs", "es": "Menciones y MD", "fr": "Mentions et MP", "ru": "Упоминания и ЛС"},
       "summary": {
-        "en": "Slack’s badge on your phone: how many mentions and DMs wait",
-        "de": "Das Slack-Kennzeichen auf dem Telefon: wie viele Erwähnungen und DMs warten",
-        "es": "El globo de Slack en el teléfono: cuántas menciones y MD esperan",
-        "fr": "La pastille de Slack sur le téléphone : combien de mentions et de MP attendent",
-        "ru": "Наклейка Slack на телефоне: сколько ждёт упоминаний и личных сообщений"
+        "en": "How many mentions and DMs are waiting for you in Slack",
+        "de": "Wie viele Erwähnungen und DMs in Slack auf dich warten",
+        "es": "Cuántas menciones y MD te esperan en Slack",
+        "fr": "Combien de mentions et de MP vous attendent dans Slack",
+        "ru": "Сколько упоминаний и личных сообщений ждёт вас в Slack"
       },
       "details": {
-        "en": "The number on Slack’s Dock icon, checked every few seconds. A dot means other unread messages, a dash that Slack is closed.",
-        "de": "Die Zahl am Dock-Symbol von Slack, alle paar Sekunden geprüft. Ein Punkt heißt: andere ungelesene Nachrichten, ein Strich: Slack ist geschlossen.",
-        "es": "El número del icono de Slack en el Dock, revisado cada pocos segundos. Un punto indica otros mensajes sin leer; una raya, que Slack está cerrado.",
-        "fr": "Le nombre sur l’icône de Slack dans le Dock, relevé toutes les trois secondes environ. Un point signale d’autres messages non lus, un tiret que Slack est fermé.",
-        "ru": "Число с наклейки на значке Slack в Dock, проверяется каждые несколько секунд. Точка — другие непрочитанные сообщения, прочерк — Slack закрыт."
+        "en": "The button shows the same number as on Slack’s icon in the Dock. With no mentions or DMs but other unread messages, it shows a dot. If Slack is closed, it shows a dash.",
+        "de": "Die Taste zeigt dieselbe Zahl wie das Slack-Symbol im Dock. Gibt es keine Erwähnungen oder DMs, aber andere ungelesene Nachrichten, zeigt sie einen Punkt. Ist Slack geschlossen, zeigt sie einen Strich.",
+        "es": "El botón muestra el mismo número que el icono de Slack en el Dock. Si no hay menciones ni MD pero sí otros mensajes sin leer, muestra un punto. Si Slack está cerrado, muestra una raya.",
+        "fr": "Le bouton affiche le même nombre que l’icône de Slack dans le Dock. S’il n’y a ni mention ni MP mais d’autres messages non lus, il affiche un point. Si Slack est fermé, il affiche un tiret.",
+        "ru": "Кнопка показывает то же число, что на значке Slack в Dock. Если упоминаний и ЛС нет, но есть другие непрочитанные сообщения, на ней точка. Если Slack закрыт, на кнопке прочерк."
       },
       "tapAction": {
         "en": "Brings Slack to the front",
@@ -49,11 +49,11 @@
         "ru": "Упоминания, реакции и ответы вам (⇧⌘M)"
       },
       "details": {
-        "en": "The Activity view: everything that involves you, newest first — mentions, reactions, thread replies (⇧⌘M). Works while Slack is in front.",
-        "de": "Die Ansicht Aktivität: alles, was dich betrifft, das Neueste oben – Erwähnungen, Reaktionen, Antworten in Threads (⇧⌘M). Funktioniert, wenn Slack vorne ist.",
-        "es": "La vista Actividad: todo lo que te incumbe, lo más reciente arriba — menciones, reacciones, respuestas en hilos (⇧⌘M). Funciona cuando Slack está delante.",
-        "fr": "La vue Activité : tout ce qui vous concerne, le plus récent en haut — mentions, réactions, réponses dans les fils (⇧⌘M). Fonctionne quand Slack est au premier plan.",
-        "ru": "Раздел Activity: всё, что касается вас, свежее сверху, — упоминания, реакции, ответы в тредах (⇧⌘M). Работает, когда Slack на переднем плане."
+        "en": "The Activity view gathers everything that involves you, newest first (⇧⌘M). Works while Slack is in front.",
+        "de": "Die Ansicht Aktivität sammelt alles, was dich betrifft, das Neueste oben (⇧⌘M). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Actividad reúne todo lo que tiene que ver contigo, con lo más reciente arriba (⇧⌘M). Funciona cuando Slack está delante.",
+        "fr": "La vue Activité regroupe tout ce qui vous concerne, le plus récent en haut (⇧⌘M). Fonctionne quand Slack est au premier plan.",
+        "ru": "Раздел Activity собирает всё, что касается вас, свежее сверху (⇧⌘M). Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens Activity",
@@ -80,11 +80,11 @@
         "ru": "Все непрочитанные сообщения одним списком (⇧⌘A)"
       },
       "details": {
-        "en": "All unreads: the unread messages of every channel and DM, conversation by conversation, to read through in one go (⇧⌘A). Works while Slack is in front.",
-        "de": "Die Ansicht Ungelesenes: die ungelesenen Nachrichten aller Channels und DMs, Unterhaltung für Unterhaltung, zum Durchlesen am Stück (⇧⌘A). Funktioniert, wenn Slack vorne ist.",
-        "es": "La vista Mensajes sin leer: lo no leído de cada canal y MD, conversación por conversación, para leerlo de una vez (⇧⌘A). Funciona cuando Slack está delante.",
-        "fr": "La vue Messages non lus : ceux de chaque canal et MP, conversation par conversation, à lire d’une traite (⇧⌘A). Fonctionne quand Slack est au premier plan.",
-        "ru": "All unreads: непрочитанное из всех каналов и личных сообщений, по беседам, чтобы прочитать разом (⇧⌘A). Работает, когда Slack на переднем плане."
+        "en": "Handy for reading everything new from your channels and DMs in one go, conversation by conversation (⇧⌘A). Works while Slack is in front.",
+        "de": "Praktisch, um alles Neue aus Channels und DMs am Stück zu lesen, Unterhaltung für Unterhaltung (⇧⌘A). Funktioniert, wenn Slack vorne ist.",
+        "es": "Útil para leer de una vez todo lo nuevo de tus canales y MD, conversación por conversación (⇧⌘A). Funciona cuando Slack está delante.",
+        "fr": "Pratique pour lire d’une traite tout ce qui est nouveau dans vos canaux et MP, conversation par conversation (⇧⌘A). Fonctionne quand Slack est au premier plan.",
+        "ru": "Пригодится, чтобы разом прочитать всё новое из каналов и личных сообщений, беседа за беседой (⇧⌘A). Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens All unreads",
@@ -111,11 +111,11 @@
         "ru": "Треды, за которыми вы следите (⇧⌘T)"
       },
       "details": {
-        "en": "The Threads view: conversations you started, replied to or follow, with the newest replies on top (⇧⌘T). Works while Slack is in front.",
-        "de": "Die Ansicht Threads: Unterhaltungen, die du begonnen, beantwortet oder abonniert hast, neueste Antworten oben (⇧⌘T). Funktioniert, wenn Slack vorne ist.",
-        "es": "La vista Hilos: conversaciones que empezaste, respondiste o sigues, con las respuestas más recientes arriba (⇧⌘T). Funciona cuando Slack está delante.",
-        "fr": "La vue Fils de discussion : ceux que vous avez lancés, auxquels vous avez répondu ou que vous suivez, réponses récentes en haut (⇧⌘T). Fonctionne quand Slack est au premier plan.",
-        "ru": "Раздел Threads: треды, которые вы начали, где ответили или на которые подписаны, свежие ответы сверху (⇧⌘T). Работает, когда Slack на переднем плане."
+        "en": "The Threads view lists the conversations you started, replied to or follow (⇧⌘T). The newest replies are on top. Works while Slack is in front.",
+        "de": "Die Ansicht Threads zeigt die Unterhaltungen, die du begonnen, beantwortet oder abonniert hast (⇧⌘T). Die neuesten Antworten stehen oben. Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Hilos muestra los hilos que empezaste, en los que respondiste o que sigues (⇧⌘T). Las respuestas más recientes están arriba. Funciona cuando Slack está delante.",
+        "fr": "La vue Fils de discussion affiche les fils que vous avez lancés, auxquels vous avez répondu ou que vous suivez (⇧⌘T). Les réponses récentes sont en haut. Fonctionne quand Slack est au premier plan.",
+        "ru": "Раздел Threads показывает треды, которые вы начали, в которых ответили или на которые подписаны (⇧⌘T). Свежие ответы сверху. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens Threads",
@@ -142,11 +142,11 @@
         "ru": "Все личные сообщения (⇧⌘K)"
       },
       "details": {
-        "en": "The DMs view: your direct messages and group DMs in one list, the latest first (⇧⌘K). Works while Slack is in front.",
-        "de": "Die Ansicht Direktnachrichten: deine DMs und Gruppen-DMs in einer Liste, die neuesten zuerst (⇧⌘K). Funktioniert, wenn Slack vorne ist.",
-        "es": "La vista Mensajes directos: tus MD y MD de grupo en una lista, los más recientes primero (⇧⌘K). Funciona cuando Slack está delante.",
-        "fr": "La vue Messages directs : vos messages directs et de groupe dans une liste, les plus récents d’abord (⇧⌘K). Fonctionne quand Slack est au premier plan.",
-        "ru": "Раздел DMs: личные и групповые переписки одним списком, свежие сверху (⇧⌘K). Работает, когда Slack на переднем плане."
+        "en": "The DMs view puts your direct messages and group DMs in one list, the latest first (⇧⌘K). Works while Slack is in front.",
+        "de": "In der Ansicht Direktnachrichten stehen deine DMs und Gruppen-DMs in einer Liste, die neuesten zuerst (⇧⌘K). Funktioniert, wenn Slack vorne ist.",
+        "es": "La vista Mensajes directos muestra tus MD y MD de grupo en una sola lista, los más recientes primero (⇧⌘K). Funciona cuando Slack está delante.",
+        "fr": "La vue Messages directs réunit vos messages directs et de groupe dans une seule liste, les plus récents d’abord (⇧⌘K). Fonctionne quand Slack est au premier plan.",
+        "ru": "В разделе DMs личные и групповые переписки идут одним списком, свежие сверху (⇧⌘K). Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens DMs",
@@ -177,7 +177,7 @@
         "de": "Geht die Seitenleiste von einer ungelesenen Unterhaltung zur nächsten durch: ein paarmal tippen, und du hast alles Neue gesehen. Funktioniert, wenn Slack vorne ist.",
         "es": "Recorre la barra lateral de una conversación sin leer a la siguiente: con unos toques ves todo lo nuevo. Funciona cuando Slack está delante.",
         "fr": "Parcourt la barre latérale d’une conversation non lue à la suivante : en quelques appuis, vous avez tout vu. Fonctionne quand Slack est au premier plan.",
-        "ru": "Идёт по боковой панели от одной непрочитанной беседы к другой: несколько нажатий — и вы видели всё новое. Работает, когда Slack на переднем плане."
+        "ru": "Ведёт по боковой панели от одной непрочитанной беседы к следующей. За несколько нажатий вы просмотрите всё новое. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Goes to the next unread conversation",
@@ -212,18 +212,18 @@
         "ru": "Отмечает открытую беседу прочитанной (Esc)"
       },
       "details": {
-        "en": "Slack has no undo for this: to come back to a message later, mark it unread with ⌥-click. Works while Slack is in front.",
-        "de": "Slack kann das nicht rückgängig machen: Eine Nachricht für später markierst du per ⌥-Klick wieder als ungelesen. Funktioniert, wenn Slack vorne ist.",
-        "es": "Slack no lo puede deshacer: para volver a un mensaje más tarde, márcalo como no leído con ⌥-clic. Funciona cuando Slack está delante.",
-        "fr": "Slack ne peut pas l’annuler : pour revenir plus tard à un message, marquez-le non lu d’un ⌥-clic. Fonctionne quand Slack est au premier plan.",
-        "ru": "Отменить это в Slack нельзя: чтобы вернуться к сообщению позже, отметьте его непрочитанным ⌥-щелчком. Работает, когда Slack на переднем плане."
+        "en": "Slack can’t undo this. To come back to a message later, ⌥-click it to mark it unread. Works while Slack is in front.",
+        "de": "Slack kann das nicht rückgängig machen. Eine Nachricht für später markierst du per ⌥-Klick wieder als ungelesen. Funktioniert, wenn Slack vorne ist.",
+        "es": "Slack no puede deshacerlo. Para volver a un mensaje más tarde, márcalo como no leído con ⌥-clic. Funciona cuando Slack está delante.",
+        "fr": "Slack ne peut pas l’annuler. Pour revenir plus tard à un message, marquez-le comme non lu d’un ⌥-clic. Fonctionne quand Slack est au premier plan.",
+        "ru": "Отменить это в Slack нельзя. Чтобы вернуться к сообщению позже, щёлкните по нему с нажатой клавишей ⌥, и оно снова станет непрочитанным. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Marks the open conversation read",
         "de": "Markiert die offene Unterhaltung als gelesen",
         "es": "Marca como leída la conversación abierta",
         "fr": "Marque la conversation ouverte comme lue",
-        "ru": "Отмечает прочитанной открытую беседу"
+        "ru": "Отмечает открытую беседу прочитанной"
       },
       "holdAction": {
         "en": "Marks all messages everywhere read (⇧Esc)",
@@ -251,11 +251,11 @@
         "ru": "Ищет сообщения, файлы, каналы и людей (⌘G)"
       },
       "details": {
-        "en": "Slack’s search box: type to jump to a channel or person, or press Return to search every message (⌘G). Works while Slack is in front.",
-        "de": "Das Suchfeld von Slack: einen Namen eingeben, um zu einem Channel oder einer Person zu springen, oder Return drücken, um alle Nachrichten zu durchsuchen (⌘G). Funktioniert, wenn Slack vorne ist.",
-        "es": "El cuadro de búsqueda de Slack: escribe para ir a un canal o persona, o pulsa Retorno para buscar en todos los mensajes (⌘G). Funciona cuando Slack está delante.",
-        "fr": "Le champ de recherche de Slack : tapez pour aller à un canal ou une personne, ou appuyez sur Retour pour chercher dans tous les messages (⌘G). Fonctionne quand Slack est au premier plan.",
-        "ru": "Поле поиска Slack: начните печатать, чтобы перейти к каналу или человеку, или нажмите Return, чтобы искать по всем сообщениям (⌘G). Работает, когда Slack на переднем плане."
+        "en": "Start typing in the search box to jump to a channel or person (⌘G). Press Return to search every message. Works while Slack is in front.",
+        "de": "Gib im Suchfeld einen Namen ein, um zu einem Channel oder einer Person zu springen (⌘G). Drücke Return, um alle Nachrichten zu durchsuchen. Funktioniert, wenn Slack vorne ist.",
+        "es": "Escribe en el cuadro de búsqueda para ir a un canal o a una persona (⌘G). Pulsa Retorno para buscar en todos los mensajes. Funciona cuando Slack está delante.",
+        "fr": "Tapez dans le champ de recherche pour aller à un canal ou à une personne (⌘G). Appuyez sur Retour pour chercher dans tous les messages. Fonctionne quand Slack est au premier plan.",
+        "ru": "Начните печатать в поле поиска, чтобы перейти к каналу или человеку (⌘G). Чтобы искать по всем сообщениям, нажмите Return. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens search",
@@ -290,11 +290,11 @@
         "ru": "Сообщение кому угодно в рабочем пространстве (⌘N)"
       },
       "details": {
-        "en": "Opens a new message: pick people or a channel in To, then write. Nothing is sent until you press Return (⌘N). Works while Slack is in front.",
-        "de": "Öffnet eine neue Nachricht: Personen oder einen Channel bei An wählen, dann schreiben. Gesendet wird erst mit Return (⌘N). Funktioniert, wenn Slack vorne ist.",
-        "es": "Abre un mensaje nuevo: elige personas o un canal en Para y escribe. No se envía nada hasta que pulses Retorno (⌘N). Funciona cuando Slack está delante.",
-        "fr": "Ouvre un nouveau message : choisissez des personnes ou un canal dans À, puis écrivez. Rien n’est envoyé avant que vous appuyiez sur Retour (⌘N). Fonctionne quand Slack est au premier plan.",
-        "ru": "Открывает новое сообщение: выберите людей или канал в поле To и пишите. Ничего не уйдёт, пока вы не нажмёте Return (⌘N). Работает, когда Slack на переднем плане."
+        "en": "Pick people or a channel in To, then write (⌘N). Nothing is sent until you press Return. Works while Slack is in front.",
+        "de": "Wähle bei An Personen oder einen Channel und schreib los (⌘N). Gesendet wird erst mit Return. Funktioniert, wenn Slack vorne ist.",
+        "es": "Elige personas o un canal en Para y escribe (⌘N). No se envía nada hasta que pulses Retorno. Funciona cuando Slack está delante.",
+        "fr": "Choisissez des personnes ou un canal dans À, puis écrivez (⌘N). Rien n’est envoyé avant que vous appuyiez sur Retour. Fonctionne quand Slack est au premier plan.",
+        "ru": "Выберите людей или канал в поле To и пишите (⌘N). Ничего не уйдёт, пока вы не нажмёте Return. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens a new message",
@@ -349,21 +349,21 @@
         "de": "Startet, betritt oder verlässt ein Huddle in der offenen Unterhaltung (⇧⌘H)",
         "es": "Inicia o deja una junta en la conversación abierta, o te une a ella (⇧⌘H)",
         "fr": "Lance, rejoint ou quitte un appel d’équipe dans la conversation ouverte (⇧⌘H)",
-        "ru": "Начинает huddle в открытой беседе, подключает к нему или выводит из него (⇧⌘H)"
+        "ru": "Начинает huddle в открытой беседе, подключает к нему или отключает от него (⇧⌘H)"
       },
       "details": {
-        "en": "An audio call in the open channel or DM: the first tap starts one or joins the one going on, the next leaves it. Works while Slack is in front.",
-        "de": "Ein Audioanruf im offenen Channel oder DM: Einmal tippen startet ihn oder tritt dem laufenden bei, nochmal tippen verlässt ihn. Funktioniert, wenn Slack vorne ist.",
-        "es": "Una llamada de audio en el canal o MD abierto: el primer toque la inicia o te une a la que está en curso; el siguiente te saca de ella. Funciona cuando Slack está delante.",
-        "fr": "Un appel audio dans le canal ou MP ouvert : un premier appui le lance ou rejoint celui en cours, le suivant le quitte. Fonctionne quand Slack est au premier plan.",
-        "ru": "Аудиозвонок в открытом канале или ЛС: первое нажатие начинает его или подключает к идущему, следующее выводит из него. Работает, когда Slack на переднем плане."
+        "en": "The first tap starts an audio call in the open channel or DM, or joins the one already going on. Tap again to leave. Works while Slack is in front.",
+        "de": "Beim ersten Tippen startest du einen Audioanruf in der offenen Unterhaltung oder trittst dem laufenden bei. Beim nächsten Tippen verlässt du ihn. Funktioniert, wenn Slack vorne ist.",
+        "es": "El primer toque inicia una llamada de audio en el canal o MD abierto, o te une a la que ya está en curso. El siguiente toque te saca de ella. Funciona cuando Slack está delante.",
+        "fr": "Le premier appui lance un appel audio dans le canal ou MP ouvert, ou vous fait rejoindre celui en cours. L’appui suivant vous en fait sortir. Fonctionne quand Slack est au premier plan.",
+        "ru": "Первое нажатие начинает аудиозвонок в открытом канале или ЛС, а если звонок уже идёт, подключает вас к нему. Следующее нажатие отключает вас от звонка. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Starts, joins or leaves a huddle",
         "de": "Startet, betritt oder verlässt ein Huddle",
-        "es": "Inicia una junta, te une o te saca",
+        "es": "Inicia o deja una junta, o te une a ella",
         "fr": "Lance, rejoint ou quitte un appel d’équipe",
-        "ru": "Начинает huddle, подключает к нему или выводит из него"
+        "ru": "Начинает huddle, подключает к нему или отключает от него"
       },
       "permissions": ["accessibility"],
       "button": {
@@ -383,11 +383,11 @@
         "ru": "Выключает и включает ваш микрофон в huddle (⇧⌘Пробел)"
       },
       "details": {
-        "en": "For the huddle you are in. Slack’s huddle controls show whether you are muted. Works while Slack is in front.",
-        "de": "Für das laufende Huddle. Ob du stumm bist, zeigt die Huddle-Steuerung von Slack. Funktioniert, wenn Slack vorne ist.",
-        "es": "Para la junta en la que estás. Los controles de la junta en Slack muestran si tienes el micrófono silenciado. Funciona cuando Slack está delante.",
-        "fr": "Pour l’appel d’équipe en cours. Les commandes de l’appel dans Slack indiquent si votre micro est coupé. Fonctionne quand Slack est au premier plan.",
-        "ru": "Для huddle, в котором вы сейчас. Выключен ли микрофон, видно на панели huddle в Slack. Работает, когда Slack на переднем плане."
+        "en": "The button doesn’t show whether you’re muted. You can see it in Slack’s huddle controls. Works while Slack is in front.",
+        "de": "Die Taste zeigt nicht, ob du stumm bist. Das siehst du in der Huddle-Steuerung von Slack. Funktioniert, wenn Slack vorne ist.",
+        "es": "El botón no muestra si tienes el micrófono silenciado. Eso lo ves en los controles de la junta en Slack. Funciona cuando Slack está delante.",
+        "fr": "Le bouton n’indique pas si votre micro est coupé. Pour le savoir, regardez les commandes de l’appel dans Slack. Fonctionne quand Slack est au premier plan.",
+        "ru": "Кнопка не показывает, выключен ли микрофон. Это видно на панели huddle в Slack. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Mutes or unmutes you",
@@ -411,14 +411,14 @@
         "de": "Zurück durch die geöffneten Unterhaltungen und Ansichten",
         "es": "Vuelve por las conversaciones y vistas que abriste",
         "fr": "Revient sur les conversations et vues ouvertes",
-        "ru": "Назад по открытым беседам и разделам"
+        "ru": "Назад по беседам и разделам, которые вы открывали"
       },
       "details": {
-        "en": "Clicks Go › History › Back in Slack’s menu, so it works with any keyboard layout and in any language. Works while Slack is in front.",
-        "de": "Klickt im Menü von Slack auf Gehe zu › Verlauf › Zurück und klappt so mit jeder Tastaturbelegung und in jeder Sprache. Funktioniert, wenn Slack vorne ist.",
-        "es": "Hace clic en Ir › Historial › Atrás en el menú de Slack, así que funciona con cualquier teclado y en cualquier idioma. Funciona cuando Slack está delante.",
-        "fr": "Clique sur Aller › Historique › Retour dans le menu de Slack et fonctionne donc avec tout clavier et dans toutes les langues. Fonctionne quand Slack est au premier plan.",
-        "ru": "Нажимает Go › History › Back в меню Slack, поэтому работает при любой раскладке и на любом языке. Работает, когда Slack на переднем плане."
+        "en": "Same as Go › History › Back in Slack’s menu. Your keyboard layout and Slack’s language don’t matter. Works while Slack is in front.",
+        "de": "Entspricht Gehe zu › Verlauf › Zurück im Menü von Slack. Tastaturbelegung und Sprache von Slack spielen keine Rolle. Funktioniert, wenn Slack vorne ist.",
+        "es": "Equivale a Ir › Historial › Atrás en el menú de Slack. Da igual la distribución del teclado o el idioma de Slack. Funciona cuando Slack está delante.",
+        "fr": "Équivaut à Aller › Historique › Retour dans le menu de Slack. La disposition du clavier et la langue de Slack n’y changent rien. Fonctionne quand Slack est au premier plan.",
+        "ru": "То же, что Go › History › Back в меню Slack. Раскладка клавиатуры и язык Slack не важны. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Goes back",
@@ -453,11 +453,11 @@
         "ru": "Все каналы рабочего пространства (⇧⌘L)"
       },
       "details": {
-        "en": "The channel browser, with the channels you’re not in yet: search one, preview it, join it (⇧⌘L). Works while Slack is in front.",
-        "de": "Der Channel-Browser, auch mit Channels, in denen du noch nicht bist: suchen, ansehen, beitreten (⇧⌘L). Funktioniert, wenn Slack vorne ist.",
-        "es": "El explorador de canales, incluidos aquellos en los que aún no estás: busca uno, échale un vistazo, únete (⇧⌘L). Funciona cuando Slack está delante.",
-        "fr": "Le navigateur de canaux, y compris ceux que vous n’avez pas rejoints : cherchez, prévisualisez, rejoignez (⇧⌘L). Fonctionne quand Slack est au premier plan.",
-        "ru": "Список каналов, включая те, где вас ещё нет: найти, посмотреть, вступить (⇧⌘L). Работает, когда Slack на переднем плане."
+        "en": "Channels you’re not in yet are listed too (⇧⌘L). Find one, take a look and join if you like. Works while Slack is in front.",
+        "de": "Dort stehen auch Channels, in denen du noch nicht bist (⇧⌘L). Such dir einen aus, schau hinein und tritt bei, wenn du willst. Funktioniert, wenn Slack vorne ist.",
+        "es": "Ahí también aparecen los canales en los que aún no estás (⇧⌘L). Busca uno, échale un vistazo y únete si quieres. Funciona cuando Slack está delante.",
+        "fr": "On y trouve aussi les canaux que vous n’avez pas encore rejoints (⇧⌘L). Cherchez-en un, jetez-y un œil et rejoignez-le si vous voulez. Fonctionne quand Slack est au premier plan.",
+        "ru": "В списке есть и каналы, в которых вас ещё нет (⇧⌘L). Найдите нужный, загляните в него и вступите, если захотите. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens the channel browser",
@@ -484,11 +484,11 @@
         "ru": "Переключает на следующее рабочее пространство Slack (⌃Tab)"
       },
       "details": {
-        "en": "For when you are signed in to more than one workspace: goes round them in the order of the workspace switcher. Works while Slack is in front.",
-        "de": "Wenn du in mehreren Workspaces angemeldet bist: geht sie in der Reihenfolge des Workspace-Umschalters durch. Funktioniert, wenn Slack vorne ist.",
-        "es": "Si tienes sesión en varios espacios de trabajo: los recorre en el orden del selector de espacios. Funciona cuando Slack está delante.",
-        "fr": "Si vous êtes connecté à plusieurs espaces de travail : les parcourt dans l’ordre du sélecteur d’espaces. Fonctionne quand Slack est au premier plan.",
-        "ru": "Если вы вошли в несколько рабочих пространств: перебирает их по порядку переключателя. Работает, когда Slack на переднем плане."
+        "en": "Handy if you’re signed in to more than one workspace. It goes through them in the order of Slack’s workspace switcher. Works while Slack is in front.",
+        "de": "Praktisch, wenn du in mehreren Workspaces angemeldet bist. Die Taste geht sie in der Reihenfolge des Workspace-Umschalters durch. Funktioniert, wenn Slack vorne ist.",
+        "es": "Útil si tienes sesión abierta en varios espacios de trabajo. El botón los recorre en el orden del selector de espacios. Funciona cuando Slack está delante.",
+        "fr": "Pratique si vous êtes connecté à plusieurs espaces de travail. Le bouton les parcourt dans l’ordre du sélecteur d’espaces. Fonctionne quand Slack est au premier plan.",
+        "ru": "Пригодится, если вы вошли в несколько рабочих пространств. Кнопка перебирает их по порядку, как в переключателе Slack. Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Switches to the next workspace",
@@ -523,11 +523,11 @@
         "ru": "Задаёт статус: эмодзи, текст и когда он снимется (⇧⌘Y)"
       },
       "details": {
-        "en": "The status window, with Slack’s suggestions and the statuses you used recently (⇧⌘Y). Works while Slack is in front.",
-        "de": "Das Statusfenster, mit den Vorschlägen von Slack und deinen zuletzt verwendeten Status (⇧⌘Y). Funktioniert, wenn Slack vorne ist.",
-        "es": "La ventana de estado, con las sugerencias de Slack y los estados que usaste hace poco (⇧⌘Y). Funciona cuando Slack está delante.",
-        "fr": "La fenêtre de statut, avec les suggestions de Slack et les statuts utilisés récemment (⇧⌘Y). Fonctionne quand Slack est au premier plan.",
-        "ru": "Окно статуса с вариантами Slack и статусами, которые вы ставили недавно (⇧⌘Y). Работает, когда Slack на переднем плане."
+        "en": "Pick one of Slack’s suggestions or a status you used recently (⇧⌘Y). Works while Slack is in front.",
+        "de": "Wähle einen Vorschlag von Slack oder einen Status, den du kürzlich verwendet hast (⇧⌘Y). Funktioniert, wenn Slack vorne ist.",
+        "es": "Elige una de las sugerencias de Slack o un estado que usaste hace poco (⇧⌘Y). Funciona cuando Slack está delante.",
+        "fr": "Choisissez une suggestion de Slack ou un statut utilisé récemment (⇧⌘Y). Fonctionne quand Slack est au premier plan.",
+        "ru": "Выберите один из вариантов Slack или статус, который вы недавно ставили (⇧⌘Y). Работает, когда Slack на переднем плане."
       },
       "tapAction": {
         "en": "Opens the status window",
@@ -556,11 +556,11 @@
         "ru": "Разбирать новое, отвечать и созваниваться с телефона"
       },
       "details": {
-        "en": "The buttons work while Slack is in front. Mentions & DMs shows Slack’s badge and fits on any other page too.",
-        "de": "Die Tasten funktionieren, wenn Slack vorne ist. Erwähnungen & DMs zeigt das Slack-Kennzeichen und passt auch auf jede andere Seite.",
-        "es": "Los botones funcionan cuando Slack está delante. Menciones y MD muestra el globo de Slack y sirve también en cualquier otra página.",
-        "fr": "Les boutons fonctionnent quand Slack est au premier plan. Mentions et MP affiche la pastille de Slack et va aussi sur toute autre page.",
-        "ru": "Кнопки работают, когда Slack на переднем плане. «Упоминания и ЛС» показывает наклейку Slack и подойдёт для любой другой страницы."
+        "en": "Most buttons need Slack in front. Mentions & DMs works even with Slack in the background. Put it on any page to see if someone’s waiting for you in Slack.",
+        "de": "Die meisten Tasten funktionieren nur, wenn Slack vorne ist. Die Taste Erwähnungen & DMs funktioniert auch mit Slack im Hintergrund. Sie passt auf jede Seite und zeigt dir, ob in Slack jemand auf dich wartet.",
+        "es": "Casi todos los botones funcionan solo cuando Slack está delante. El botón Menciones y MD funciona también con Slack en segundo plano. Ponlo en cualquier página para ver si alguien te espera en Slack.",
+        "fr": "La plupart des boutons ne fonctionnent que quand Slack est au premier plan. Le bouton Mentions et MP fonctionne aussi avec Slack en arrière-plan. Placez-le sur n’importe quelle page pour voir si quelqu’un vous attend dans Slack.",
+        "ru": "Почти все кнопки работают, только когда Slack на переднем плане. Кнопка «Упоминания и ЛС» работает, даже когда Slack в фоне. Её удобно держать на любой странице, чтобы видеть, ждут ли вас в Slack."
       },
       "bindByDefault": true,
       "placements": [

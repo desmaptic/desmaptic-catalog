@@ -1,6 +1,6 @@
 {
   "id": "finder",
-  "revision": 6,
+  "revision": 7,
   "name": "Finder",
   "bundleIds": [
     "com.apple.finder"
@@ -24,11 +24,11 @@
         "ru": "Открывает «Загрузки» в Finder из любого приложения"
       },
       "details": {
-        "en": "Go › Downloads (⌥⌘L), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
-        "de": "Gehe zu › Downloads (⌥⌘L), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
-        "es": "Ir › Descargas (⌥⌘L), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
-        "fr": "Aller › Téléchargements (⌥⌘L), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
-        "ru": "Переход › Загрузки (⌥⌘L), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+        "en": "Go › Downloads (⌥⌘L). With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › Downloads (⌥⌘L). Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › Descargas (⌥⌘L). Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › Téléchargements (⌥⌘L). Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › Загрузки (⌥⌘L). Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens Downloads",
@@ -71,11 +71,11 @@
         "ru": "Открывает папку «Рабочий стол» в Finder из любого приложения"
       },
       "details": {
-        "en": "Go › Desktop (⇧⌘D), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
-        "de": "Gehe zu › Schreibtisch (⇧⌘D), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
-        "es": "Ir › Escritorio (⇧⌘D), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
-        "fr": "Aller › Bureau (⇧⌘D), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
-        "ru": "Переход › Рабочий стол (⇧⌘D), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+        "en": "Go › Desktop (⇧⌘D). With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › Schreibtisch (⇧⌘D). Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › Escritorio (⇧⌘D). Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › Bureau (⇧⌘D). Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › Рабочий стол (⇧⌘D). Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens the Desktop folder",
@@ -118,11 +118,11 @@
         "ru": "Открывает «Документы» в Finder из любого приложения"
       },
       "details": {
-        "en": "Go › Documents (⇧⌘O), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
-        "de": "Gehe zu › Dokumente (⇧⌘O), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
-        "es": "Ir › Documentos (⇧⌘O), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
-        "fr": "Aller › Documents (⇧⌘O), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
-        "ru": "Переход › Документы (⇧⌘O), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+        "en": "Go › Documents (⇧⌘O). With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › Dokumente (⇧⌘O). Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › Documentos (⇧⌘O). Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › Documents (⇧⌘O). Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › Документы (⇧⌘O). Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens Documents",
@@ -165,11 +165,11 @@
         "ru": "Открывает вашу личную папку в Finder из любого приложения"
       },
       "details": {
-        "en": "Go › Home (⇧⌘H), from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
-        "de": "Gehe zu › Benutzerordner (⇧⌘H), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
-        "es": "Ir › Inicio (⇧⌘H), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
-        "fr": "Aller › Départ (⇧⌘H), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
-        "ru": "Переход › Личное (⇧⌘H), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+        "en": "Go › Home (⇧⌘H). With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › Benutzerordner (⇧⌘H). Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › Inicio (⇧⌘H). Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › Départ (⇧⌘H). Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › Личное (⇧⌘H). Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens your home folder",
@@ -212,11 +212,11 @@
         "ru": "Открывает «Программы» в Finder из любого приложения; удержание — «Утилиты»"
       },
       "details": {
-        "en": "Go › Applications (⇧⌘A), and Go › Utilities (⇧⌘U) on hold, from any app: with Finder in front its window goes there, otherwise a new Finder window opens.",
-        "de": "Gehe zu › Programme (⇧⌘A), beim Halten Gehe zu › Dienstprogramme (⇧⌘U), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster.",
-        "es": "Ir › Aplicaciones (⇧⌘A) y, al mantener pulsado, Ir › Utilidades (⇧⌘U), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder.",
-        "fr": "Aller › Applications (⇧⌘A), et en maintenant Aller › Utilitaires (⇧⌘U), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre.",
-        "ru": "Переход › Программы (⇧⌘A), а при удержании — Переход › Утилиты (⇧⌘U), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder."
+        "en": "Go › Applications (⇧⌘A), and Go › Utilities (⇧⌘U) on hold. With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › Programme (⇧⌘A), beim Halten Gehe zu › Dienstprogramme (⇧⌘U). Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › Aplicaciones (⇧⌘A) y, al mantener pulsado, Ir › Utilidades (⇧⌘U). Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › Applications (⇧⌘A), et en maintenant Aller › Utilitaires (⇧⌘U). Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › Программы (⇧⌘A), а при удержании — Переход › Утилиты (⇧⌘U). Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens Applications",
@@ -271,11 +271,11 @@
         "ru": "Открывает iCloud Drive в Finder из любого приложения"
       },
       "details": {
-        "en": "Go › iCloud Drive (⇧⌘I), from any app: with Finder in front its window goes there, otherwise a new Finder window opens. It needs iCloud Drive turned on.",
-        "de": "Gehe zu › iCloud Drive (⇧⌘I), aus jeder App: Ist der Finder vorne, wechselt sein Fenster dorthin, sonst öffnet sich ein neues Finder-Fenster. iCloud Drive muss eingeschaltet sein.",
-        "es": "Ir › iCloud Drive (⇧⌘I), desde cualquier app: con el Finder delante, su ventana pasa a esa carpeta; si no, se abre una ventana nueva del Finder. iCloud Drive tiene que estar activado.",
-        "fr": "Aller › iCloud Drive (⇧⌘I), depuis n’importe quelle app : si le Finder est au premier plan, sa fenêtre passe à ce dossier, sinon une nouvelle fenêtre Finder s’ouvre. iCloud Drive doit être activé.",
-        "ru": "Переход › iCloud Drive (⇧⌘I), из любого приложения: если Finder на переднем плане, его окно переходит туда, иначе открывается новое окно Finder. iCloud Drive должен быть включён."
+        "en": "Go › iCloud Drive (⇧⌘I), if iCloud Drive is turned on. With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
+        "de": "Gehe zu › iCloud Drive (⇧⌘I), wenn iCloud Drive eingeschaltet ist. Ist der Finder vorne, wechselt sein Fenster dorthin. Aus jeder anderen App öffnet sich der Ordner in einem neuen Finder-Fenster.",
+        "es": "Ir › iCloud Drive (⇧⌘I), si iCloud Drive está activado. Con el Finder delante, su ventana pasa a esa carpeta. Desde cualquier otra app, la carpeta se abre en una ventana nueva del Finder.",
+        "fr": "Aller › iCloud Drive (⇧⌘I), quand iCloud Drive est activé. Si le Finder est au premier plan, sa fenêtre passe à ce dossier. Depuis n’importe quelle autre app, le dossier s’ouvre dans une nouvelle fenêtre Finder.",
+        "ru": "Переход › iCloud Drive (⇧⌘I), когда iCloud Drive включён. Если Finder на переднем плане, его окно перейдёт в эту папку. Из любого другого приложения папка откроется в новом окне Finder."
       },
       "tapAction": {
         "en": "Opens iCloud Drive",
@@ -318,11 +318,11 @@
         "ru": "Новое окно Finder из любого приложения; удержание — новая вкладка"
       },
       "details": {
-        "en": "File › New Finder Window (⌘N), from any app, and Finder comes to the front. The new tab (File › New Tab, ⌘T) needs Finder in front.",
-        "de": "Ablage › Neues Fenster (⌘N), aus jeder App, und der Finder kommt nach vorne. Der neue Tab (Ablage › Neuer Tab, ⌘T) braucht den Finder vorne.",
-        "es": "Archivo › Nueva ventana del Finder (⌘N), desde cualquier app, y el Finder pasa delante. La pestaña nueva (Archivo › Nueva pestaña, ⌘T) necesita el Finder delante.",
-        "fr": "Fichier › Nouvelle fenêtre Finder (⌘N), depuis n’importe quelle app, et le Finder passe au premier plan. Le nouvel onglet (Fichier › Nouvel onglet, ⌘T) demande le Finder au premier plan.",
-        "ru": "Файл › Новое окно Finder (⌘N) из любого приложения, и Finder выходит на передний план. Новой вкладке (Файл › Новая вкладка, ⌘T) нужен Finder на переднем плане."
+        "en": "File › New Finder Window (⌘N), and File › New Tab (⌘T) on hold. The tap works from any app and brings Finder to the front. The long press works while Finder is in front.",
+        "de": "Ablage › Neues Fenster (⌘N), beim Halten Ablage › Neuer Tab (⌘T). Tippen funktioniert aus jeder App und holt den Finder nach vorne. Langes Drücken funktioniert, wenn der Finder vorne ist.",
+        "es": "Archivo › Nueva ventana del Finder (⌘N) y, al mantener pulsado, Archivo › Nueva pestaña (⌘T). El toque funciona desde cualquier app y trae el Finder al frente. La pulsación larga funciona cuando el Finder está delante.",
+        "fr": "Fichier › Nouvelle fenêtre Finder (⌘N), et en maintenant Fichier › Nouvel onglet (⌘T). Le toucher fonctionne depuis n’importe quelle app et met le Finder au premier plan. L’appui long fonctionne quand le Finder est au premier plan.",
+        "ru": "Файл › Новое окно Finder (⌘N), а при удержании — Файл › Новая вкладка (⌘T). Нажатие работает из любого приложения и выводит Finder вперёд. Удержание работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Opens a new Finder window",
@@ -378,11 +378,11 @@
         "ru": "Создаёт папку там, где вы сейчас (⇧⌘N)"
       },
       "details": {
-        "en": "File › New Folder (⇧⌘N): in the window in front, or on the desktop, with its name ready to type. Works while Finder is in front.",
-        "de": "Ablage › Neuer Ordner (⇧⌘N): im vorderen Fenster oder auf dem Schreibtisch, der Name ist gleich zum Tippen bereit. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Archivo › Nueva carpeta (⇧⌘N): en la ventana de delante o en el escritorio, con el nombre listo para escribir. Funciona cuando el Finder está delante.",
-        "fr": "Fichier › Nouveau dossier (⇧⌘N) : dans la fenêtre au premier plan ou sur le bureau, avec le nom prêt à être saisi. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Файл › Новая папка (⇧⌘N): в переднем окне или на рабочем столе, имя сразу можно ввести. Работает, когда Finder на переднем плане."
+        "en": "File › New Folder (⇧⌘N). The folder appears in the Finder window in front, or on the desktop, ready for you to type its name. Works while Finder is in front.",
+        "de": "Ablage › Neuer Ordner (⇧⌘N). Der Ordner erscheint im vorderen Finder-Fenster oder auf dem Schreibtisch, und du kannst gleich seinen Namen eintippen. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Archivo › Nueva carpeta (⇧⌘N). La carpeta aparece en la ventana del Finder de delante o en el escritorio, lista para que escribas su nombre. Funciona cuando el Finder está delante.",
+        "fr": "Fichier › Nouveau dossier (⇧⌘N). Le dossier apparaît dans la fenêtre Finder au premier plan ou sur le bureau, et vous pouvez tout de suite saisir son nom. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Файл › Новая папка (⇧⌘N). Папка появится в переднем окне Finder или на рабочем столе, и её имя можно сразу ввести. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Makes a new folder",
@@ -423,14 +423,14 @@
         "de": "Der Ordner davor, mit jeder Tastaturbelegung",
         "es": "La carpeta anterior, con cualquier teclado",
         "fr": "Le dossier précédent, avec tout clavier",
-        "ru": "Предыдущая папка — при любой раскладке"
+        "ru": "Возвращает в предыдущую папку при любой раскладке"
       },
       "details": {
-        "en": "Clicks Go › Back in Finder’s menu, so it works on any keyboard layout. Works while Finder is in front.",
-        "de": "Klickt im Menü des Finders auf Gehe zu › Zurück und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Hace clic en Ir › Atrás en el menú del Finder, así que funciona con cualquier distribución de teclado. Funciona cuando el Finder está delante.",
-        "fr": "Clique sur Aller › Précédent dans le menu du Finder : ainsi, le bouton marche avec toute disposition de clavier. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Нажимает Переход › Назад в меню Finder, поэтому работает при любой раскладке. Работает, когда Finder на переднем плане."
+        "en": "Same as Go › Back in Finder’s menu. Your keyboard layout doesn’t matter. Works while Finder is in front.",
+        "de": "Entspricht Gehe zu › Zurück im Menü des Finders. Die Tastaturbelegung spielt keine Rolle. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Equivale a Ir › Atrás en el menú del Finder. Da igual la distribución del teclado. Funciona cuando el Finder está delante.",
+        "fr": "Équivaut à Aller › Précédent dans le menu du Finder. La disposition du clavier n’y change rien. Fonctionne quand le Finder est au premier plan.",
+        "ru": "То же, что Переход › Назад в меню Finder. Раскладка клавиатуры не важна. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Shows the previous folder",
@@ -471,14 +471,14 @@
         "de": "Wieder vorwärts nach „Zurück“, mit jeder Tastaturbelegung",
         "es": "Avanza de nuevo tras Atrás, con cualquier teclado",
         "fr": "Avance de nouveau après Précédent, avec tout clavier",
-        "ru": "Снова вперёд после «Назад» — при любой раскладке"
+        "ru": "Снова вперёд после «Назад», при любой раскладке"
       },
       "details": {
-        "en": "Clicks Go › Forward in Finder’s menu, so it works on any keyboard layout. Works while Finder is in front.",
-        "de": "Klickt im Menü des Finders auf Gehe zu › Vorwärts und klappt so mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Hace clic en Ir › Adelante en el menú del Finder, así que funciona con cualquier distribución de teclado. Funciona cuando el Finder está delante.",
-        "fr": "Clique sur Aller › Suivant dans le menu du Finder : ainsi, le bouton marche avec toute disposition de clavier. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Нажимает Переход › Вперед в меню Finder, поэтому работает при любой раскладке. Работает, когда Finder на переднем плане."
+        "en": "Same as Go › Forward in Finder’s menu. Your keyboard layout doesn’t matter. Works while Finder is in front.",
+        "de": "Entspricht Gehe zu › Vorwärts im Menü des Finders. Die Tastaturbelegung spielt keine Rolle. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Equivale a Ir › Adelante en el menú del Finder. Da igual la distribución del teclado. Funciona cuando el Finder está delante.",
+        "fr": "Équivaut à Aller › Suivant dans le menu du Finder. La disposition du clavier n’y change rien. Fonctionne quand le Finder est au premier plan.",
+        "ru": "То же, что Переход › Вперед в меню Finder. Раскладка клавиатуры не важна. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Goes forward again",
@@ -582,11 +582,11 @@
         "ru": "Копирует путь выбранного (⌥⌘C)"
       },
       "details": {
-        "en": "Edit › Copy as Pathname (⌥⌘C): the paths of the selected items, or of the folder in front when nothing is selected. Works while Finder is in front.",
-        "de": "Bearbeiten › Als Pfadname kopieren (⌥⌘C): die Pfade der ausgewählten Objekte oder, ohne Auswahl, der des vorderen Ordners. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Edición › Copiar como ruta (⌥⌘C): las rutas de los ítems seleccionados o, sin selección, la de la carpeta de delante. Funciona cuando el Finder está delante.",
-        "fr": "Édition › Copier en tant que nom de chemin (⌥⌘C) : les chemins des éléments sélectionnés ou, sans sélection, celui du dossier au premier plan. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Правка › Скопировать путь (⌥⌘C): пути выбранных объектов, а если ничего не выбрано — путь передней папки. Работает, когда Finder на переднем плане."
+        "en": "Copies the paths of the selected items, like Edit › Copy as Pathname (⌥⌘C). With nothing selected, it copies the path of the folder in front. Works while Finder is in front.",
+        "de": "Kopiert die Pfade der ausgewählten Objekte, wie Bearbeiten › Als Pfadname kopieren (⌥⌘C). Ist nichts ausgewählt, kopiert die Taste den Pfad des vorderen Ordners. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Copia las rutas de los ítems seleccionados, como Edición › Copiar como ruta (⌥⌘C). Si no hay nada seleccionado, copia la ruta de la carpeta de delante. Funciona cuando el Finder está delante.",
+        "fr": "Copie les chemins des éléments sélectionnés, comme Édition › Copier en tant que nom de chemin (⌥⌘C). Si rien n’est sélectionné, le bouton copie le chemin du dossier au premier plan. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Копирует пути выбранных объектов, как Правка › Скопировать путь (⌥⌘C). Если ничего не выбрано, копирует путь папки в переднем окне. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Copies the path",
@@ -627,14 +627,14 @@
         "de": "Fenster als Symbole; halten für Galerie",
         "es": "La ventana como iconos; mantén pulsado para galería",
         "fr": "La fenêtre par icônes ; maintenez pour la galerie",
-        "ru": "Окно значками; удержание — галерея"
+        "ru": "Окно в виде значков; удержание — в виде галереи"
       },
       "details": {
-        "en": "Clicks View › as Icons (⌘1) in Finder’s menu, and View › as Gallery (⌘4) on hold, on any keyboard layout. Works while Finder is in front.",
-        "de": "Klickt im Menü des Finders auf Darstellung › Als Symbole (⌘1), beim Halten Darstellung › Als Galerie (⌘4) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Hace clic en Visualización › Como iconos (⌘1) en el menú del Finder y, al mantener pulsado, en Visualización › Como galería (⌘4), con cualquier teclado. Funciona cuando el Finder está delante.",
-        "fr": "Clique sur Présentation › Par icônes (⌘1) dans le menu du Finder, et en maintenant sur Présentation › Par galerie d’icônes (⌘4), avec tout clavier. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Нажимает Вид › Значки (⌘1) в меню Finder, а при удержании — Вид › Галерея (⌘4), при любой раскладке. Работает, когда Finder на переднем плане."
+        "en": "View › as Icons (⌘1), and View › as Gallery (⌘4) on hold. Your keyboard layout doesn’t matter. Works while Finder is in front.",
+        "de": "Darstellung › Als Symbole (⌘1), beim Halten Darstellung › Als Galerie (⌘4). Die Tastaturbelegung spielt keine Rolle. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Visualización › Como iconos (⌘1) y, al mantener pulsado, Visualización › Como galería (⌘4). Da igual la distribución del teclado. Funciona cuando el Finder está delante.",
+        "fr": "Présentation › Par icônes (⌘1), et en maintenant Présentation › Par galerie d’icônes (⌘4). La disposition du clavier n’y change rien. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Вид › Значки (⌘1), а при удержании — Вид › Галерея (⌘4). Раскладка клавиатуры не важна. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Shows items as icons",
@@ -687,14 +687,14 @@
         "de": "Fenster als Liste",
         "es": "La ventana como lista",
         "fr": "La fenêtre par liste",
-        "ru": "Окно списком"
+        "ru": "Окно в виде списка"
       },
       "details": {
-        "en": "Clicks View › as List (⌘2) in Finder’s menu, on any keyboard layout. Works while Finder is in front.",
-        "de": "Klickt im Menü des Finders auf Darstellung › Als Liste (⌘2) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Hace clic en Visualización › Como lista (⌘2) en el menú del Finder, con cualquier teclado. Funciona cuando el Finder está delante.",
-        "fr": "Clique sur Présentation › Par liste (⌘2) dans le menu du Finder, avec tout clavier. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Нажимает Вид › Список (⌘2) в меню Finder, при любой раскладке. Работает, когда Finder на переднем плане."
+        "en": "View › as List (⌘2). Your keyboard layout doesn’t matter. Works while Finder is in front.",
+        "de": "Darstellung › Als Liste (⌘2). Die Tastaturbelegung spielt keine Rolle. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Visualización › Como lista (⌘2). Da igual la distribución del teclado. Funciona cuando el Finder está delante.",
+        "fr": "Présentation › Par liste (⌘2). La disposition du clavier n’y change rien. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Вид › Список (⌘2). Раскладка клавиатуры не важна. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Shows items as a list",
@@ -735,14 +735,14 @@
         "de": "Fenster in Spalten",
         "es": "La ventana en columnas",
         "fr": "La fenêtre par colonnes",
-        "ru": "Окно колонками"
+        "ru": "Окно в виде колонок"
       },
       "details": {
-        "en": "Clicks View › as Columns (⌘3) in Finder’s menu, on any keyboard layout. Works while Finder is in front.",
-        "de": "Klickt im Menü des Finders auf Darstellung › Als Spalten (⌘3) – mit jeder Tastaturbelegung. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Hace clic en Visualización › Como columnas (⌘3) en el menú del Finder, con cualquier teclado. Funciona cuando el Finder está delante.",
-        "fr": "Clique sur Présentation › Par colonnes (⌘3) dans le menu du Finder, avec tout clavier. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Нажимает Вид › Колонки (⌘3) в меню Finder, при любой раскладке. Работает, когда Finder на переднем плане."
+        "en": "View › as Columns (⌘3). Your keyboard layout doesn’t matter. Works while Finder is in front.",
+        "de": "Darstellung › Als Spalten (⌘3). Die Tastaturbelegung spielt keine Rolle. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Visualización › Como columnas (⌘3). Da igual la distribución del teclado. Funciona cuando el Finder está delante.",
+        "fr": "Présentation › Par colonnes (⌘3). La disposition du clavier n’y change rien. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Вид › Колонки (⌘3). Раскладка клавиатуры не важна. Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Shows items in columns",
@@ -786,11 +786,11 @@
         "ru": "Показывает или скрывает скрытые файлы (⇧⌘.)"
       },
       "details": {
-        "en": "Files macOS hides, such as .zshrc and the Library folder. Works while Finder is in front.",
-        "de": "Dateien, die macOS ausblendet, etwa .zshrc und der Ordner „Library“. Funktioniert, wenn der Finder vorne ist.",
-        "es": "Archivos que macOS oculta, como .zshrc y la carpeta Biblioteca. Funciona cuando el Finder está delante.",
-        "fr": "Les fichiers que macOS masque, comme .zshrc et le dossier Bibliothèque. Fonctionne quand le Finder est au premier plan.",
-        "ru": "Файлы, которые macOS скрывает, например .zshrc и папка «Библиотека». Работает, когда Finder на переднем плане."
+        "en": "Handy for getting to files macOS normally hides, such as .zshrc or the Library folder. Works while Finder is in front.",
+        "de": "Praktisch, um an Dateien zu kommen, die macOS sonst ausblendet, etwa .zshrc oder den Ordner „Library“. Funktioniert, wenn der Finder vorne ist.",
+        "es": "Útil para llegar a archivos que macOS suele ocultar, como .zshrc o la carpeta Biblioteca. Funciona cuando el Finder está delante.",
+        "fr": "Pratique pour accéder aux fichiers que macOS masque d’habitude, comme .zshrc ou le dossier Bibliothèque. Fonctionne quand le Finder est au premier plan.",
+        "ru": "Пригодится, чтобы добраться до файлов, которые macOS обычно скрывает, например .zshrc или папки «Библиотека». Работает, когда Finder на переднем плане."
       },
       "tapAction": {
         "en": "Shows or hides hidden files",
@@ -833,17 +833,17 @@
       },
       "summary": {
         "en": "Ejects every external disk before you unplug or leave, from any app",
-        "de": "Wirft alle externen Laufwerke aus, bevor du absteckst oder gehst – aus jeder App",
+        "de": "Wirft aus jeder App alle externen Laufwerke aus, bevor du sie abziehst oder gehst",
         "es": "Expulsa todos los discos externos antes de desconectar o irte, desde cualquier app",
         "fr": "Éjecte tous les disques externes avant de débrancher ou de partir, depuis n’importe quelle app",
-        "ru": "Извлекает все внешние диски, прежде чем отключить их или уйти, из любого приложения"
+        "ru": "Извлекает все внешние диски из любого приложения, перед тем как вы их отключите или уйдёте"
       },
       "details": {
-        "en": "File › Eject All (⌥⌘E), from any app: external drives, disk images and servers. A disk an app is still using stays, and the button names it.",
-        "de": "Ablage › Alle auswerfen (⌥⌘E), aus jeder App: externe Laufwerke, Festplatten-Images und Server. Ein Laufwerk, das eine App noch benutzt, bleibt, und die Taste nennt es.",
-        "es": "Archivo › Expulsar todo (⌥⌘E), desde cualquier app: discos externos, imágenes de disco y servidores. Un disco que alguna app aún usa se queda, y el botón dice cuál.",
-        "fr": "Fichier › Tout éjecter (⌥⌘E), depuis n’importe quelle app : disques externes, images disque et serveurs. Un disque qu’une app utilise encore reste, et le bouton le nomme.",
-        "ru": "Файл › Извлечь все тома (⌥⌘E), из любого приложения: внешние диски, образы дисков и серверы. Диск, который ещё занят приложением, остаётся, и кнопка называет его."
+        "en": "Ejects external drives, disk images and servers, like File › Eject All (⌥⌘E). A disk an app is still using stays, and the button names it. Works with Finder in the background.",
+        "de": "Wirft externe Laufwerke, Festplatten-Images und Server aus, wie Ablage › Alle auswerfen (⌥⌘E). Ein Laufwerk, das eine App noch benutzt, bleibt, und die Taste nennt es. Funktioniert auch mit dem Finder im Hintergrund.",
+        "es": "Expulsa discos externos, imágenes de disco y servidores, como Archivo › Expulsar todo (⌥⌘E). Un disco que alguna app aún usa se queda, y el botón dice cuál. Funciona con el Finder en segundo plano.",
+        "fr": "Éjecte les disques externes, les images disque et les serveurs, comme Fichier › Tout éjecter (⌥⌘E). Si une app utilise encore un disque, il reste en place et le bouton le nomme. Fonctionne avec le Finder en arrière-plan.",
+        "ru": "Извлекает внешние диски, образы дисков и серверы, как Файл › Извлечь все тома (⌥⌘E). Если диск ещё занят приложением, он останется, и кнопка назовёт его. Работает, когда Finder в фоне."
       },
       "tapAction": {
         "en": "Ejects every disk Finder can eject",
@@ -885,14 +885,14 @@
         "de": "Deine Ordner und „Alle auswerfen“ aus jeder App, dazu Darstellungen und Pfade des Finders",
         "es": "Tus carpetas y Expulsar todo desde cualquier app, y las vistas y rutas del Finder con un toque",
         "fr": "Vos dossiers et Tout éjecter depuis n’importe quelle app, et les présentations et chemins du Finder",
-        "ru": "Ваши папки и «Извлечь все» из любого приложения, а также виды и пути Finder"
+        "ru": "Ваши папки и «Извлечь все» из любого приложения, а ещё вид окон Finder и пути к файлам"
       },
       "details": {
-        "en": "The folder buttons, New Window and Eject All work from any app; the others while Finder is in front. Finder comes to the front whenever you click the desktop, so “Open with Finder” starts off.",
-        "de": "Die Ordnertasten, „Neues Fenster“ und „Alle auswerfen“ funktionieren aus jeder App, die übrigen, wenn der Finder vorne ist. Der Finder kommt bei jedem Klick auf den Schreibtisch nach vorne, daher ist „Mit Finder öffnen“ zunächst aus.",
-        "es": "Los botones de carpetas, Nueva ventana y Expulsar todo funcionan desde cualquier app; los demás, cuando el Finder está delante. El Finder pasa delante cada vez que haces clic en el escritorio, así que «Abrir con Finder» empieza desactivado.",
-        "fr": "Les boutons de dossiers, Nouvelle fenêtre et Tout éjecter fonctionnent depuis n’importe quelle app ; les autres, quand le Finder est au premier plan. Le Finder passe au premier plan à chaque clic sur le bureau : « Ouvrir avec Finder » est donc désactivé au départ.",
-        "ru": "Кнопки папок, «Новое окно» и «Извлечь все» работают из любого приложения, остальные — когда Finder на переднем плане. Finder выходит вперёд при каждом щелчке по рабочему столу, поэтому «Открывать с приложением Finder» сначала выключено."
+        "en": "The folder buttons, New Window and Eject All work from any app. The other buttons need Finder in front. Finder comes to the front every time you click the desktop, so “Open with Finder” is off by default.",
+        "de": "Die Ordnertasten, „Neues Fenster“ und „Alle auswerfen“ funktionieren aus jeder App. Für die übrigen Tasten muss der Finder vorne sein. Der Finder kommt bei jedem Klick auf den Schreibtisch nach vorne, daher ist „Mit Finder öffnen“ standardmäßig ausgeschaltet.",
+        "es": "Los botones de carpetas, Nueva ventana y Expulsar todo funcionan desde cualquier app. Los demás botones necesitan que el Finder esté delante. El Finder pasa delante cada vez que haces clic en el escritorio, así que «Abrir con Finder» viene desactivado.",
+        "fr": "Les boutons de dossiers, Nouvelle fenêtre et Tout éjecter fonctionnent depuis n’importe quelle app. Pour les autres boutons, le Finder doit être au premier plan. Le Finder passe au premier plan à chaque clic sur le bureau, c’est pourquoi « Ouvrir avec Finder » est désactivé par défaut.",
+        "ru": "Кнопки папок, «Новое окно» и «Извлечь все» работают из любого приложения. Остальным кнопкам нужно, чтобы Finder был на переднем плане. Finder выходит вперёд при каждом щелчке по рабочему столу, поэтому «Открывать с приложением Finder» сначала выключено."
       },
       "bindByDefault": false,
       "placements": [

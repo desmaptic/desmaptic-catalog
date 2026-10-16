@@ -1,6 +1,6 @@
 {
   "id": "figma",
-  "revision": 6,
+  "revision": 7,
   "name": "Figma",
   "bundleIds": ["com.figma.Desktop"],
   "category": "design",
@@ -16,10 +16,10 @@
         "ru": "Инструмент Move (V)"
       },
       "details": {
-        "en": "Selects, moves and resizes layers on the canvas. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Selects, moves and resizes layers on the canvas. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Ebenen auf der Arbeitsfläche auswählen, verschieben und skalieren. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Selecciona, mueve y cambia el tamaño de las capas del lienzo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Sélectionne, déplace et redimensionne les calques du canevas. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "es": "Selecciona, mueve y cambia el tamaño de las capas del lienzo. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Sélectionne, déplace et redimensionne les calques du canevas. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
         "ru": "Выделяет, двигает и масштабирует слои на холсте. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
@@ -47,10 +47,10 @@
         "ru": "Инструмент Frame (F)"
       },
       "details": {
-        "en": "Drag to draw a frame, or pick a device size in the right sidebar. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Drag to draw a frame, or pick a device size in the right sidebar. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Zum Zeichnen eines Rahmens ziehen oder in der rechten Seitenleiste eine Gerätegröße wählen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Arrastra para dibujar un marco o elige el tamaño de un dispositivo en la barra lateral derecha. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Faites glisser pour tracer un cadre, ou choisissez une taille d’appareil dans la barre latérale droite. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "es": "Arrastra para dibujar un marco o elige el tamaño de un dispositivo en la barra lateral derecha. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Faites glisser pour tracer un cadre, ou choisissez une taille d’appareil dans la barre latérale droite. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
         "ru": "Потяните, чтобы нарисовать фрейм, или выберите размер устройства в правой панели. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
@@ -78,11 +78,11 @@
         "ru": "Инструмент Rectangle (R)"
       },
       "details": {
-        "en": "Drag to draw a rectangle; hold Shift for a square. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Drag to draw a rectangle. Hold Shift for a square. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Ziehen zeichnet ein Rechteck, mit gedrückter Umschalttaste ein Quadrat. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Arrastra para dibujar un rectángulo; con Mayúsculas, un cuadrado. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Faites glisser pour tracer un rectangle ; avec Maj, un carré. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
-        "ru": "Потяните, чтобы нарисовать прямоугольник, с Shift — квадрат. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+        "es": "Arrastra para dibujar un rectángulo. Si mantienes pulsada Mayúsculas, sale un cuadrado. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Faites glisser pour tracer un rectangle. Avec Maj enfoncée, vous obtenez un carré. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
+        "ru": "Потяните, чтобы нарисовать прямоугольник. С Shift получится квадрат. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
         "en": "Picks the Rectangle tool",
@@ -109,11 +109,11 @@
         "ru": "Инструмент Text (T)"
       },
       "details": {
-        "en": "Click to start typing, or drag for a text box of fixed width. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Click to start typing, or drag for a fixed-width text box. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Klicken und lostippen, oder ziehen für ein Textfeld mit fester Breite. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Haz clic para escribir o arrastra para un cuadro de texto de ancho fijo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Cliquez pour écrire, ou faites glisser pour une zone de texte de largeur fixe. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
-        "ru": "Щёлкните и печатайте или потяните — получится блок текста фиксированной ширины. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+        "es": "Haz clic para escribir o arrastra para un cuadro de texto de ancho fijo. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Cliquez pour écrire, ou faites glisser pour une zone de texte de largeur fixe. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
+        "ru": "Щёлкните и печатайте или потяните, чтобы получить блок текста фиксированной ширины. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
         "en": "Picks the Text tool",
@@ -137,13 +137,13 @@
         "de": "Fügt Auto-Layout hinzu (⇧A); Halten entfernt es",
         "es": "Añade diseño automático (⇧A); mantén pulsado para quitarlo",
         "fr": "Ajoute la disposition automatique (⇧A) ; maintenez pour la retirer",
-        "ru": "Добавляет Auto Layout (⇧A); удержание — убирает"
+        "ru": "Добавляет Auto Layout (⇧A); удержание убирает его"
       },
       "details": {
-        "en": "Wraps the selected layers in an auto layout frame, or turns a selected frame into one. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Wraps the selected layers in an auto layout frame, or turns a selected frame into one. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Packt die ausgewählten Ebenen in einen Auto-Layout-Rahmen oder macht einen ausgewählten Rahmen dazu. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Envuelve las capas seleccionadas en un marco con diseño automático o se lo aplica al marco seleccionado. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Place les calques sélectionnés dans un cadre en disposition automatique, ou l’applique au cadre sélectionné. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "es": "Envuelve las capas seleccionadas en un marco con diseño automático o se lo aplica al marco seleccionado. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Place les calques sélectionnés dans un cadre en disposition automatique, ou l’applique au cadre sélectionné. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
         "ru": "Оборачивает выделенные слои во фрейм с Auto Layout или включает его у выделенного фрейма. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
@@ -176,14 +176,14 @@
         "de": "Macht die Auswahl zur Komponente (⌥⌘K); Halten löst eine Instanz",
         "es": "Convierte la selección en componente (⌥⌘K); mantén pulsado para separar una instancia",
         "fr": "Fait de la sélection un composant (⌥⌘K) ; maintenez pour détacher une instance",
-        "ru": "Делает из выделения компонент (⌥⌘K); удержание — отвязывает экземпляр"
+        "ru": "Делает из выделения компонент (⌥⌘K); удержание отвязывает экземпляр"
       },
       "details": {
-        "en": "The selected layers become a component; its instances then follow every change to it. Works while Figma is in front.",
-        "de": "Die ausgewählten Ebenen werden zur Komponente; ihre Instanzen übernehmen dann jede Änderung. Funktioniert, wenn Figma vorne ist.",
-        "es": "Las capas seleccionadas se convierten en un componente; sus instancias siguen luego cada cambio. Funciona cuando Figma está delante.",
-        "fr": "Les calques sélectionnés deviennent un composant ; ses instances suivent ensuite chaque modification. Fonctionne quand Figma est au premier plan.",
-        "ru": "Выделенные слои становятся компонентом; его экземпляры потом повторяют каждое изменение. Работает, когда Figma на переднем плане."
+        "en": "The selected layers become a component. Its instances then follow every change you make to it. Works while Figma is in front.",
+        "de": "Die ausgewählten Ebenen werden zur Komponente. Deren Instanzen übernehmen dann jede Änderung, die du an ihr machst. Funktioniert, wenn Figma vorne ist.",
+        "es": "Las capas seleccionadas se convierten en un componente. Sus instancias reflejarán cada cambio que le hagas. Funciona cuando Figma está delante.",
+        "fr": "Les calques sélectionnés deviennent un composant. Ses instances reprennent ensuite chaque modification que vous y apportez. Fonctionne quand Figma est au premier plan.",
+        "ru": "Выделенные слои станут компонентом. Его экземпляры будут повторять все изменения, которые вы в нём сделаете. Работает, когда Figma на переднем плане."
       },
       "tapAction": {
         "en": "Creates a component",
@@ -215,13 +215,13 @@
         "de": "Gruppiert die Auswahl (⌘G); Halten hebt die Gruppierung auf",
         "es": "Agrupa la selección (⌘G); mantén pulsado para desagrupar",
         "fr": "Groupe la sélection (⌘G) ; maintenez pour dégrouper",
-        "ru": "Группирует выделение (⌘G); удержание — разгруппировывает"
+        "ru": "Группирует выделение (⌘G); удержание разгруппировывает"
       },
       "details": {
-        "en": "The selected layers move, resize and hide together as one group. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "The selected layers move, resize and hide together as one group. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Die ausgewählten Ebenen werden als eine Gruppe gemeinsam verschoben, skaliert und ausgeblendet. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Las capas seleccionadas se mueven, cambian de tamaño y se ocultan juntas, como un grupo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Les calques sélectionnés se déplacent, se redimensionnent et se masquent ensemble, en un groupe. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
+        "es": "Las capas seleccionadas se mueven, cambian de tamaño y se ocultan juntas, como un grupo. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Les calques sélectionnés se déplacent, se redimensionnent et se masquent ensemble, en un groupe. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
         "ru": "Выделенные слои двигаются, масштабируются и скрываются вместе, одной группой. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
@@ -257,11 +257,11 @@
         "ru": "Помещает выделение во фрейм (⌥⌘G)"
       },
       "details": {
-        "en": "A new frame fits around the selected layers, ready for auto layout, a fill or clipping. Works while Figma is in front and you are not typing in text or a field.",
-        "de": "Ein neuer Rahmen legt sich um die ausgewählten Ebenen – bereit für Auto-Layout, eine Füllung oder Beschneiden. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Un marco nuevo se ajusta a las capas seleccionadas, listo para diseño automático, un relleno o un recorte. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Un nouveau cadre entoure les calques sélectionnés, prêt pour la disposition automatique, un remplissage ou un masquage. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
-        "ru": "Вокруг выделенных слоёв появляется новый фрейм — для Auto Layout, заливки или обрезки. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+        "en": "A new frame fits around the selected layers, ready for auto layout, a fill or clipping. Works while Figma is in front and you’re not typing in a text layer or a field.",
+        "de": "Um die ausgewählten Ebenen entsteht ein neuer Rahmen. Er ist praktisch für Auto-Layout, eine Füllung oder das Beschneiden. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Un marco nuevo se ajusta a las capas seleccionadas, listo para diseño automático, un relleno o un recorte. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Un nouveau cadre entoure les calques sélectionnés, prêt pour la disposition automatique, un remplissage ou un masquage. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
+        "ru": "Вокруг выделенных слоёв появится новый фрейм. Он пригодится для Auto Layout, заливки или обрезки. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
         "en": "Frames the selected layers",
@@ -288,11 +288,11 @@
         "ru": "Инструмент Pen (P)"
       },
       "details": {
-        "en": "Click to place points, drag to bend the path between them. Works while Figma is in front and you are not typing in text or a field.",
+        "en": "Click to place points, drag to bend the path between them. Works while Figma is in front and you’re not typing in a text layer or a field.",
         "de": "Klicken setzt Punkte, Ziehen biegt den Pfad dazwischen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Haz clic para poner puntos y arrastra para curvar el trazado entre ellos. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Cliquez pour placer des points, faites glisser pour courber le tracé entre eux. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
-        "ru": "Щелчки ставят точки, перетаскивание изгибает контур между ними. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+        "es": "Haz clic para poner puntos y arrastra para curvar el trazado entre ellos. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Cliquez pour placer des points, faites glisser pour courber le tracé entre eux. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
+        "ru": "Щёлкайте, чтобы ставить точки, и тяните, чтобы изгибать контур между ними. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
         "en": "Picks the Pen tool",
@@ -319,11 +319,11 @@
         "ru": "Инструмент Comment (C)"
       },
       "details": {
-        "en": "Shows the file’s comments; click anywhere to leave a new one. Works while Figma is in front and you are not typing in text or a field.",
-        "de": "Zeigt die Kommentare der Datei; ein Klick irgendwo hinterlässt einen neuen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
-        "es": "Muestra los comentarios del archivo; haz clic en cualquier sitio para dejar uno nuevo. Funciona cuando Figma está delante y no se escribe en un texto o un campo.",
-        "fr": "Affiche les commentaires du fichier ; cliquez n’importe où pour en laisser un. Fonctionne quand Figma est au premier plan, hors saisie dans un texte ou un champ.",
-        "ru": "Показывает комментарии файла; щёлкните в любом месте, чтобы оставить новый. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
+        "en": "Shows the file’s comments. Click anywhere to leave a new one. Works while Figma is in front and you’re not typing in a text layer or a field.",
+        "de": "Zeigt die Kommentare der Datei. Klick irgendwohin, um einen neuen zu hinterlassen. Funktioniert, wenn Figma vorne ist und gerade kein Text oder Feld bearbeitet wird.",
+        "es": "Muestra los comentarios del archivo. Haz clic en cualquier sitio para dejar uno nuevo. Funciona cuando Figma está delante y no estás escribiendo en una capa de texto o un campo.",
+        "fr": "Affiche les commentaires du fichier. Cliquez n’importe où pour en laisser un nouveau. Fonctionne quand Figma est au premier plan et que vous ne saisissez pas de texte dans un calque ou un champ.",
+        "ru": "Показывает комментарии к файлу. Щёлкните в любом месте, чтобы оставить новый. Работает, когда Figma на переднем плане и вы не набираете текст в слое или поле."
       },
       "tapAction": {
         "en": "Picks the Comment tool",
@@ -350,11 +350,11 @@
         "ru": "Любая команда или плагин по названию (⌘P)"
       },
       "details": {
-        "en": "Figma’s Actions menu: type part of a name and press Return. Works while Figma is in front.",
-        "de": "Das Aktionen-Menü von Figma: einen Teil des Namens tippen und mit Return ausführen. Funktioniert, wenn Figma vorne ist.",
-        "es": "El menú Acciones de Figma: escribe parte del nombre y pulsa Retorno. Funciona cuando Figma está delante.",
-        "fr": "Le menu Actions de Figma : tapez une partie du nom, puis Retour. Fonctionne quand Figma est au premier plan.",
-        "ru": "Меню Actions в Figma: наберите часть названия и нажмите Return. Работает, когда Figma на переднем плане."
+        "en": "Type part of a name and press Return. Works while Figma is in front.",
+        "de": "Gib einen Teil des Namens ein und drück Return. Funktioniert, wenn Figma vorne ist.",
+        "es": "Escribe parte del nombre y pulsa Retorno. Funciona cuando Figma está delante.",
+        "fr": "Tapez une partie du nom, puis appuyez sur Retour. Fonctionne quand Figma est au premier plan.",
+        "ru": "Наберите часть названия и нажмите Return. Работает, когда Figma на переднем плане."
       },
       "tapAction": {
         "en": "Opens the Actions menu",
@@ -385,7 +385,7 @@
         "de": "Wiederholt den zuletzt ausgeführten Plug-in-Befehl, ohne ihn erneut zu suchen. Funktioniert, wenn Figma vorne ist.",
         "es": "Repite el último comando de plugin que ejecutaste, sin buscarlo otra vez. Funciona cuando Figma está delante.",
         "fr": "Répète la dernière commande de plug-in lancée, sans la rechercher. Fonctionne quand Figma est au premier plan.",
-        "ru": "Повторяет последнюю запущенную команду плагина — искать её заново не нужно. Работает, когда Figma на переднем плане."
+        "ru": "Повторяет последнюю команду плагина, которую вы запускали. Искать её заново не нужно. Работает, когда Figma на переднем плане."
       },
       "tapAction": {
         "en": "Runs the last plugin again",
@@ -412,11 +412,11 @@
         "ru": "Масштаб, при котором видна вся страница; удержание — 100 %"
       },
       "details": {
-        "en": "Clicks View › Zoom to fit in Figma’s menu: its key, 1 or ⇧1, depends on a Figma preference. Needs Figma in front, set to English.",
-        "de": "Klickt View › Zoom to fit im Menü von Figma: Die Taste dafür, 1 oder ⇧1, hängt von einer Figma-Einstellung ab. Figma muss vorne und auf Englisch eingestellt sein.",
-        "es": "Pulsa View › Zoom to fit en el menú de Figma: su tecla, 1 o ⇧1, depende de un ajuste de Figma. Figma debe estar delante y en inglés.",
-        "fr": "Clique sur View › Zoom to fit dans le menu de Figma : sa touche, 1 ou ⇧1, dépend d’un réglage de Figma. Figma doit être au premier plan et en anglais.",
-        "ru": "Нажимает View › Zoom to fit в меню Figma: клавиша для него, 1 или ⇧1, зависит от настройки Figma. Figma должна быть на переднем плане и на английском."
+        "en": "Same as View › Zoom to fit in Figma’s menu. Its shortcut is 1 or ⇧1, depending on your Figma settings. Works while Figma is in front and set to English.",
+        "de": "Entspricht View › Zoom to fit im Menü von Figma. Das Tastenkürzel dafür ist 1 oder ⇧1, je nach deinen Figma-Einstellungen. Funktioniert, wenn Figma vorne ist und auf Englisch läuft.",
+        "es": "Equivale a View › Zoom to fit en el menú de Figma. Su atajo es 1 o ⇧1, según tus ajustes de Figma. Funciona cuando Figma está delante y en inglés.",
+        "fr": "Équivaut à View › Zoom to fit dans le menu de Figma. Son raccourci est 1 ou ⇧1, selon vos réglages de Figma. Fonctionne quand Figma est au premier plan et en anglais.",
+        "ru": "То же, что View › Zoom to fit в меню Figma. В зависимости от настроек Figma это клавиша 1 или ⇧1. Работает, когда Figma на переднем плане и её интерфейс на английском."
       },
       "tapAction": {
         "en": "Zooms to fit the whole page",
@@ -451,11 +451,11 @@
         "ru": "Приближает выделенные слои"
       },
       "details": {
-        "en": "Clicks View › Zoom to selection in Figma’s menu: its key, 2 or ⇧2, depends on a Figma preference. Needs Figma in front, set to English.",
-        "de": "Klickt View › Zoom to selection im Menü von Figma: Die Taste dafür, 2 oder ⇧2, hängt von einer Figma-Einstellung ab. Figma muss vorne und auf Englisch eingestellt sein.",
-        "es": "Pulsa View › Zoom to selection en el menú de Figma: su tecla, 2 o ⇧2, depende de un ajuste de Figma. Figma debe estar delante y en inglés.",
-        "fr": "Clique sur View › Zoom to selection dans le menu de Figma : sa touche, 2 ou ⇧2, dépend d’un réglage de Figma. Figma doit être au premier plan et en anglais.",
-        "ru": "Нажимает View › Zoom to selection в меню Figma: клавиша для него, 2 или ⇧2, зависит от настройки Figma. Figma должна быть на переднем плане и на английском."
+        "en": "Same as View › Zoom to selection in Figma’s menu. Its shortcut is 2 or ⇧2, depending on your Figma settings. Works while Figma is in front and set to English.",
+        "de": "Entspricht View › Zoom to selection im Menü von Figma. Das Tastenkürzel dafür ist 2 oder ⇧2, je nach deinen Figma-Einstellungen. Funktioniert, wenn Figma vorne ist und auf Englisch läuft.",
+        "es": "Equivale a View › Zoom to selection en el menú de Figma. Su atajo es 2 o ⇧2, según tus ajustes de Figma. Funciona cuando Figma está delante y en inglés.",
+        "fr": "Équivaut à View › Zoom to selection dans le menu de Figma. Son raccourci est 2 ou ⇧2, selon vos réglages de Figma. Fonctionne quand Figma est au premier plan et en anglais.",
+        "ru": "То же, что View › Zoom to selection в меню Figma. В зависимости от настроек Figma это клавиша 2 или ⇧2. Работает, когда Figma на переднем плане и её интерфейс на английском."
       },
       "tapAction": {
         "en": "Zooms to the selection",
@@ -486,7 +486,7 @@
         "de": "Erneut tippen holt Werkzeugleiste und Seitenleisten zurück. Funktioniert, wenn Figma vorne ist, mit jeder Tastatur außer AZERTY.",
         "es": "Toca otra vez para recuperar la barra de herramientas y las laterales. Funciona cuando Figma está delante, con cualquier teclado salvo AZERTY.",
         "fr": "Touchez encore pour retrouver la barre d’outils et les barres latérales. Fonctionne quand Figma est au premier plan, avec tout clavier sauf AZERTY.",
-        "ru": "Повторное нажатие возвращает панель инструментов и боковые панели. Работает, когда Figma на переднем плане, с любой раскладкой, кроме AZERTY."
+        "ru": "Нажмите ещё раз, чтобы вернуть панель инструментов и боковые панели. Работает, когда Figma на переднем плане, с любой раскладкой, кроме AZERTY."
       },
       "tapAction": {
         "en": "Shows or hides Figma’s panels",
@@ -544,11 +544,11 @@
         "ru": "Создаёт новый файл дизайна; удержание — доску FigJam"
       },
       "details": {
-        "en": "Opens a new, untitled file in a new Figma tab, from any app and on any keyboard layout; starts Figma if it is closed.",
-        "de": "Öffnet eine neue, unbenannte Datei in einem neuen Figma-Tab, aus jeder App und mit jeder Tastaturbelegung; startet Figma, wenn es geschlossen ist.",
-        "es": "Abre un archivo nuevo sin título en una pestaña nueva de Figma, desde cualquier app y con cualquier distribución de teclado; abre Figma si está cerrado.",
-        "fr": "Ouvre un nouveau fichier sans titre dans un nouvel onglet Figma, depuis n’importe quelle app et avec toute disposition de clavier ; lance Figma s’il est fermé.",
-        "ru": "Открывает новый файл без названия в новой вкладке Figma — из любого приложения и при любой раскладке; запускает Figma, если она закрыта."
+        "en": "The new, untitled file opens in a new tab. Brings Figma forward from any app and starts it if it’s closed. Your keyboard layout doesn’t matter.",
+        "de": "Die neue, unbenannte Datei öffnet sich in einem neuen Tab. Holt Figma aus jeder App nach vorne und startet es, wenn es geschlossen ist. Die Tastaturbelegung spielt keine Rolle.",
+        "es": "El archivo nuevo se abre sin título en una pestaña nueva. Trae Figma al frente desde cualquier app y lo abre si está cerrado. Da igual la distribución del teclado.",
+        "fr": "Le nouveau fichier s’ouvre sans titre dans un nouvel onglet. Met Figma au premier plan depuis n’importe quelle app et le lance s’il est fermé. La disposition du clavier n’y change rien.",
+        "ru": "Новый файл без названия откроется в новой вкладке. Выводит Figma вперёд из любого приложения и запускает её, если она закрыта. Раскладка клавиатуры не важна."
       },
       "tapAction": {
         "en": "Starts a new design file",
@@ -582,11 +582,11 @@
         "ru": "Открывает файл, с которым вы работаете каждый день, или переключает на его вкладку"
       },
       "details": {
-        "en": "Put the file’s Share link (Copy link: https://www.figma.com/design/…, board or slides) in the first line of the button’s script; until then the button says where. Works from any app; starts Figma if it is closed.",
-        "de": "Trag den Link der Datei aus Figma (https://www.figma.com/design/…, board oder slides) in die erste Zeile des Skripts der Taste ein; bis dahin sagt die Taste, wo. Funktioniert aus jeder App; startet Figma, wenn es geschlossen ist.",
-        "es": "Pon el enlace del archivo copiado de Figma (https://www.figma.com/design/…, board o slides) en la primera línea del script del botón; hasta entonces el botón dice dónde. Funciona desde cualquier app y abre Figma si está cerrado.",
-        "fr": "Indiquez le lien du fichier copié depuis Figma (https://www.figma.com/design/…, board ou slides) à la première ligne du script du bouton ; d’ici là, le bouton dit où. Fonctionne depuis n’importe quelle app et lance Figma s’il est fermé.",
-        "ru": "Ссылку Share на файл (Copy link: https://www.figma.com/design/…, board или slides) впишите в первую строку скрипта кнопки; пока её нет, кнопка подскажет, где её задать. Работает из любого приложения и запускает Figma, если она закрыта."
+        "en": "Copy the file’s link with Share › Copy link, then paste it in the button’s settings. It can be a design file, a FigJam board or a Slides deck. Brings Figma forward from any app and starts it if it’s closed.",
+        "de": "Kopier den Link der Datei aus Figma und füge ihn in den Einstellungen der Taste ein. Das kann eine Design-Datei, ein FigJam-Board oder eine Slides-Präsentation sein. Holt Figma aus jeder App nach vorne und startet es, wenn es geschlossen ist.",
+        "es": "Copia el enlace del archivo desde Figma y pégalo en los ajustes del botón. Puede ser un archivo de diseño, una pizarra de FigJam o una presentación de Slides. Trae Figma al frente desde cualquier app y lo abre si está cerrado.",
+        "fr": "Copiez le lien du fichier depuis Figma, puis collez-le dans les réglages du bouton. Il peut s’agir d’un fichier de design, d’un tableau FigJam ou d’une présentation Slides. Met Figma au premier plan depuis n’importe quelle app et le lance s’il est fermé.",
+        "ru": "Скопируйте ссылку на файл через Share › Copy link и вставьте её в настройках кнопки. Подойдёт файл дизайна, доска FigJam или презентация Slides. Выводит Figma вперёд из любого приложения и запускает её, если она закрыта."
       },
       "tapAction": {
         "en": "Opens your file in Figma",
@@ -614,11 +614,11 @@
         "ru": "Инструменты, вёрстка, масштаб и файлы с телефона"
       },
       "details": {
-        "en": "Most buttons work while Figma is in front, many only while you are not typing in text or a field; New Design File and Open File work from any app. The two zoom buttons click Figma’s menu, which must be in English.",
-        "de": "Die meisten Tasten funktionieren, wenn Figma vorne ist, viele nur, wenn gerade kein Text oder Feld bearbeitet wird; Neue Datei und Datei öffnen klappen aus jeder App. Die zwei Zoom-Tasten klicken ins Menü von Figma, das englisch sein muss.",
-        "es": "Casi todos los botones funcionan cuando Figma está delante, muchos solo si no se escribe en un texto o un campo; Archivo nuevo y Abrir archivo funcionan desde cualquier app. Los dos botones de zoom pulsan el menú de Figma, que debe estar en inglés.",
-        "fr": "La plupart des boutons fonctionnent quand Figma est au premier plan, beaucoup hors saisie dans un texte ou un champ ; Nouveau fichier et Ouvrir le fichier fonctionnent depuis n’importe quelle app. Les deux boutons de zoom cliquent dans le menu de Figma, qui doit être en anglais.",
-        "ru": "Большинство кнопок работают, когда Figma на переднем плане, многие — только когда вы не набираете текст в слое или поле; «Новый файл» и «Открыть файл» работают из любого приложения. Две кнопки масштаба нажимают пункты меню Figma — оно должно быть на английском."
+        "en": "New Design File and Open File work from any app and start Figma if it’s closed. The other buttons work only while Figma is in front, and many only while you’re not typing in a text layer or a field. The zoom buttons also need Figma set to English.",
+        "de": "„Neue Datei“ und „Datei öffnen“ funktionieren aus jeder App und starten Figma, wenn es geschlossen ist. Die übrigen Tasten funktionieren nur, wenn Figma vorne ist, und viele davon nur, wenn gerade kein Text oder Feld bearbeitet wird. Für die Zoom-Tasten muss Figma außerdem auf Englisch eingestellt sein.",
+        "es": "«Archivo nuevo» y «Abrir archivo» funcionan desde cualquier app y abren Figma si está cerrado. Los demás botones solo funcionan con Figma delante, y muchos solo si no estás escribiendo en una capa de texto o un campo. Los botones de zoom necesitan además que Figma esté en inglés.",
+        "fr": "« Nouveau fichier » et « Ouvrir le fichier » fonctionnent depuis n’importe quelle app et lancent Figma s’il est fermé. Les autres boutons ne fonctionnent que si Figma est au premier plan, et beaucoup seulement si vous ne saisissez pas de texte dans un calque ou un champ. Pour les boutons de zoom, Figma doit aussi être en anglais.",
+        "ru": "«Новый файл» и «Открыть файл» работают из любого приложения и запускают Figma, если она закрыта. Остальным кнопкам нужна Figma на переднем плане, а многие из них не сработают, пока вы набираете текст в слое или поле. Кнопкам масштаба нужен ещё и английский интерфейс Figma."
       },
       "bindByDefault": true,
       "placements": [

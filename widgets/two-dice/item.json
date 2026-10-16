@@ -1,6 +1,6 @@
 {
   "id": "two-dice",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Two Dice",
@@ -10,20 +10,20 @@
     "ru": "Два кубика"
   },
   "summary": {
-    "en": "Throws two dice and shows their sum, for board games",
-    "de": "Wirft zwei Würfel und zeigt ihre Summe, für Brettspiele",
-    "es": "Lanza dos dados y muestra la suma, para juegos de mesa",
-    "fr": "Lance deux dés et affiche leur somme, pour les jeux de société",
-    "ru": "Бросает два кубика и показывает сумму — для настольных игр"
+    "en": "Throws two dice for a board game and shows their sum",
+    "de": "Wirft zwei Würfel fürs Brettspiel und zeigt ihre Summe",
+    "es": "Lanza dos dados para un juego de mesa y muestra la suma",
+    "fr": "Lance deux dés pour un jeu de société et affiche leur somme",
+    "ru": "Бросает два кубика для настольной игры и показывает сумму"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "The dice tumble and land; the big number beside them is their sum. Each die is fair: every face is equally likely. Doubles glow gold.",
-    "de": "Die Würfel rollen und landen; die große Zahl daneben ist ihre Summe. Jeder Würfel ist fair: Jede Seite ist gleich wahrscheinlich. Ein Pasch leuchtet golden.",
-    "es": "Los dados ruedan y caen; el número grande a su lado es la suma. Cada dado es justo: todas las caras son igual de probables. Los dobles brillan en dorado.",
-    "fr": "Les dés roulent et retombent ; le grand nombre à côté est leur somme. Chaque dé est équitable : toutes les faces ont la même chance. Un double brille en doré.",
-    "ru": "Кубики катятся и падают, большое число рядом — их сумма. Каждый кубик честный: все грани равновероятны. Дубль светится золотом."
+    "en": "The dice tumble and land, and the big number beside them is their sum. Every face is equally likely. Doubles glow gold.",
+    "de": "Die Würfel rollen und bleiben liegen, und die große Zahl daneben ist ihre Summe. Jede Seite ist gleich wahrscheinlich. Ein Pasch leuchtet golden.",
+    "es": "Los dados ruedan y caen, y el número grande a su lado es la suma. Todas las caras son igual de probables. Los dobles brillan en dorado.",
+    "fr": "Les dés roulent et retombent, et le grand nombre à côté est leur somme. Toutes les faces ont la même chance. Un double brille en doré.",
+    "ru": "Кубики катятся и останавливаются, а большое число рядом показывает их сумму. Все грани выпадают одинаково часто. Дубль светится золотом."
   },
   "tapAction": {
     "en": "Throws both dice",
