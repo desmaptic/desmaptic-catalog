@@ -1,6 +1,6 @@
 {
   "id": "docker",
-  "revision": 6,
+  "revision": 7,
   "name": "Docker Desktop",
   "bundleIds": [
     "com.docker.docker"
@@ -80,11 +80,11 @@
         "ru": "Запустить"
       },
       "summary": {
-        "en": "Starts Docker Desktop; hold to quit it",
-        "de": "Startet Docker Desktop; halten, um es zu beenden",
-        "es": "Inicia Docker Desktop; mantén pulsado para cerrarlo",
-        "fr": "Démarre Docker Desktop ; maintenez pour le quitter",
-        "ru": "Запускает Docker Desktop; удержание — завершить его"
+        "en": "Gets Docker Desktop running for your containers",
+        "de": "Startet Docker Desktop für deine Container",
+        "es": "Pone en marcha Docker Desktop para tus contenedores",
+        "fr": "Lance Docker Desktop pour vos conteneurs",
+        "ru": "Запускает Docker Desktop для ваших контейнеров"
       },
       "details": {
         "en": "Docker Desktop starts in the background, and nothing happens if it’s already running. The hold works like Quit Docker Desktop in its menu.",
@@ -328,11 +328,11 @@
         "ru": "Compose Up"
       },
       "summary": {
-        "en": "Starts your compose project in the background; hold to take it down",
-        "de": "Startet dein Compose-Projekt im Hintergrund; Halten fährt es herunter",
-        "es": "Inicia tu proyecto de Compose en segundo plano; mantén pulsado para detenerlo",
-        "fr": "Démarre votre projet Compose en arrière-plan ; maintenez pour l’arrêter",
-        "ru": "Поднимает ваш compose-проект в фоне; удержание — остановить его"
+        "en": "Gets your Compose project up and running",
+        "de": "Bringt dein Compose-Projekt zum Laufen",
+        "es": "Pone en marcha tu proyecto de Compose",
+        "fr": "Met en route votre projet Compose",
+        "ru": "Запускает ваш проект Compose"
       },
       "details": {
         "en": "Works like docker compose up -d and needs Docker Desktop running. A first start that pulls images may need another tap. Set the folder with your compose.yaml in the button’s settings, for both the tap and the hold.",

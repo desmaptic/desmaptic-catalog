@@ -1,6 +1,6 @@
 {
   "id": "arc",
-  "revision": 8,
+  "revision": 9,
   "name": "Arc",
   "bundleIds": ["company.thebrowser.Browser"],
   "category": "browsers",
@@ -71,11 +71,11 @@
       "id": "refresh",
       "title": {"en": "Refresh", "de": "Aktualisieren", "es": "Actualizar", "fr": "Actualiser", "ru": "Обновить"},
       "summary": {
-        "en": "Refreshes the page; hold to refresh without the cache",
-        "de": "Aktualisiert die Seite; Halten lädt sie ohne Cache neu",
-        "es": "Actualiza la página; mantén pulsado para hacerlo sin la caché",
-        "fr": "Actualise la page ; maintenez pour l’actualiser sans le cache",
-        "ru": "Обновляет страницу; удержание — без кеша"
+        "en": "Refreshes the page you’re on in Arc",
+        "de": "Aktualisiert die offene Seite in Arc",
+        "es": "Vuelve a cargar la página que tienes abierta en Arc",
+        "fr": "Actualise la page ouverte dans Arc",
+        "ru": "Перезагружает текущую страницу в Arc"
       },
       "details": {
         "en": "The tap works on the current tab of the front Arc window, even with Arc in the background. The long press brings Arc forward and chooses View › Force Refresh the Page.",
@@ -358,11 +358,11 @@
       "id": "split-view",
       "title": {"en": "Split View", "de": "Split View", "es": "Split View", "fr": "Split View", "ru": "Split View"},
       "summary": {
-        "en": "Adds a pane beside the page; hold to take the page out of Split View",
-        "de": "Fügt neben der Seite einen Bereich hinzu; Halten löst die Seite aus Split View",
-        "es": "Añade un panel junto a la página; mantén pulsado para sacarla de Split View",
-        "fr": "Ajoute un volet à côté de la page ; maintenez pour la sortir de Split View",
-        "ru": "Добавляет панель рядом со страницей; удержание выносит её из Split View"
+        "en": "Pages side by side in one Arc window",
+        "de": "Seiten nebeneinander in einem Arc-Fenster",
+        "es": "Páginas una junto a otra en la misma ventana de Arc",
+        "fr": "Des pages côte à côte dans une seule fenêtre Arc",
+        "ru": "Несколько страниц рядом в одном окне Arc"
       },
       "details": {
         "en": "View › Add Split View, and View › Separate Page from Split View on hold. Your keyboard layout doesn’t matter. The button brings Arc forward from any app, but doesn’t start it.",
@@ -397,11 +397,11 @@
       "id": "copy-url",
       "title": {"en": "Copy URL", "de": "URL kopieren", "es": "Copiar URL", "fr": "Copier l’URL", "ru": "Скопировать URL"},
       "summary": {
-        "en": "Copies the page’s address; hold for a Markdown link",
-        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
-        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
-        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
-        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+        "en": "The page’s address on your clipboard, ready to paste",
+        "de": "Kopiert die Adresse der Seite, damit du sie überall einsetzen kannst",
+        "es": "La dirección de la página en el portapapeles, lista para pegar",
+        "fr": "L’adresse de la page dans le presse-papiers, prête à coller",
+        "ru": "Копирует адрес страницы, чтобы вставить его куда угодно"
       },
       "details": {
         "en": "The address and title come from the current tab of the front Arc window. Works with Arc in the background.",
@@ -467,11 +467,11 @@
       "id": "capture",
       "title": {"en": "Capture", "de": "Capture", "es": "Capture", "fr": "Capture", "ru": "Capture"},
       "summary": {
-        "en": "Captures part of the page as an image; hold for the full page",
-        "de": "Nimmt einen Teil der Seite als Bild auf; halten für die ganze Seite",
-        "es": "Captura parte de la página como imagen; mantén pulsado para la página entera",
-        "fr": "Capture une partie de la page en image ; maintenez pour la page entière",
-        "ru": "Снимок части страницы; удержание — всей страницы"
+        "en": "A screenshot of the page you’re on",
+        "de": "Ein Bildschirmfoto der offenen Seite",
+        "es": "Una captura de la página que tienes abierta",
+        "fr": "Une capture de la page ouverte",
+        "ru": "Снимок текущей страницы"
       },
       "details": {
         "en": "File › Capture… (⇧⌘2), and File › Capture Full Page on hold. Your keyboard layout doesn’t matter. The button brings Arc forward from any app, but doesn’t start it.",
@@ -506,11 +506,11 @@
       "id": "dev-tools",
       "title": {"en": "DevTools", "de": "DevTools", "es": "DevTools", "fr": "DevTools", "ru": "DevTools"},
       "summary": {
-        "en": "Opens Developer Tools; hold for the Console",
-        "de": "Öffnet die Developer Tools; halten für die Konsole",
-        "es": "Abre Developer Tools; mantén pulsado para la consola",
-        "fr": "Ouvre les Developer Tools ; maintenez pour la console",
-        "ru": "Открывает Developer Tools; удержание — консоль"
+        "en": "Opens Developer Tools for the page you’re on",
+        "de": "Öffnet die Developer Tools für die aktuelle Seite",
+        "es": "Abre Developer Tools para la página actual",
+        "fr": "Ouvre les Developer Tools pour la page affichée",
+        "ru": "Открывает Developer Tools для текущей страницы"
       },
       "details": {
         "en": "View › Developer › Developer Tools. They’re the same tools as in Chrome, for the current tab. The button brings Arc forward from any app, but doesn’t start it.",

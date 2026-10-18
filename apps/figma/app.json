@@ -1,6 +1,6 @@
 {
   "id": "figma",
-  "revision": 7,
+  "revision": 8,
   "name": "Figma",
   "bundleIds": ["com.figma.Desktop"],
   "category": "design",
@@ -133,11 +133,11 @@
       "id": "auto-layout",
       "title": {"en": "Auto Layout", "de": "Auto-Layout", "es": "Diseño automático", "fr": "Disposition automatique", "ru": "Auto Layout"},
       "summary": {
-        "en": "Adds auto layout (⇧A); hold to remove it",
-        "de": "Fügt Auto-Layout hinzu (⇧A); Halten entfernt es",
-        "es": "Añade diseño automático (⇧A); mantén pulsado para quitarlo",
-        "fr": "Ajoute la disposition automatique (⇧A) ; maintenez pour la retirer",
-        "ru": "Добавляет Auto Layout (⇧A); удержание убирает его"
+        "en": "Auto layout for the selection (⇧A)",
+        "de": "Auto-Layout für die Auswahl (⇧A)",
+        "es": "Diseño automático para la selección (⇧A)",
+        "fr": "Applique la disposition automatique à la sélection (⇧A)",
+        "ru": "Добавляет Auto Layout к выделению (⇧A)"
       },
       "details": {
         "en": "Wraps the selected layers in an auto layout frame, or turns a selected frame into one. Works while Figma is in front and you’re not typing in a text layer or a field.",
@@ -172,11 +172,11 @@
       "id": "component",
       "title": {"en": "Create Component", "de": "Komponente erstellen", "es": "Crear componente", "fr": "Créer un composant", "ru": "Создать компонент"},
       "summary": {
-        "en": "Makes the selection a component (⌥⌘K); hold to detach an instance",
-        "de": "Macht die Auswahl zur Komponente (⌥⌘K); Halten löst eine Instanz",
-        "es": "Convierte la selección en componente (⌥⌘K); mantén pulsado para separar una instancia",
-        "fr": "Fait de la sélection un composant (⌥⌘K) ; maintenez pour détacher une instance",
-        "ru": "Делает из выделения компонент (⌥⌘K); удержание отвязывает экземпляр"
+        "en": "A reusable component from the selection (⌥⌘K)",
+        "de": "Eine wiederverwendbare Komponente aus der Auswahl (⌥⌘K)",
+        "es": "Un componente reutilizable a partir de la selección (⌥⌘K)",
+        "fr": "Un composant réutilisable à partir de la sélection (⌥⌘K)",
+        "ru": "Превращает выделение в компонент (⌥⌘K)"
       },
       "details": {
         "en": "The selected layers become a component. Its instances then follow every change you make to it. Works while Figma is in front.",
@@ -211,11 +211,11 @@
       "id": "group",
       "title": {"en": "Group", "de": "Gruppieren", "es": "Agrupar", "fr": "Grouper", "ru": "Группа"},
       "summary": {
-        "en": "Groups the selection (⌘G); hold to ungroup",
-        "de": "Gruppiert die Auswahl (⌘G); Halten hebt die Gruppierung auf",
-        "es": "Agrupa la selección (⌘G); mantén pulsado para desagrupar",
-        "fr": "Groupe la sélection (⌘G) ; maintenez pour dégrouper",
-        "ru": "Группирует выделение (⌘G); удержание разгруппировывает"
+        "en": "Puts the selection in one group (⌘G)",
+        "de": "Fasst die Auswahl zu einer Gruppe zusammen (⌘G)",
+        "es": "Junta la selección en un grupo (⌘G)",
+        "fr": "Réunit la sélection en un groupe (⌘G)",
+        "ru": "Собирает выделение в одну группу (⌘G)"
       },
       "details": {
         "en": "The selected layers move, resize and hide together as one group. Works while Figma is in front and you’re not typing in a text layer or a field.",
@@ -405,11 +405,11 @@
       "id": "zoom-fit",
       "title": {"en": "Zoom to Fit", "de": "Alles zeigen", "es": "Ver todo", "fr": "Tout afficher", "ru": "Показать всё"},
       "summary": {
-        "en": "Zooms to show all of the page; hold for 100%",
-        "de": "Zoomt, bis die ganze Seite zu sehen ist; halten für 100 %",
-        "es": "Hace zoom para ver toda la página; mantén pulsado para el 100 %",
-        "fr": "Zoome pour voir toute la page ; maintenez pour 100 %",
-        "ru": "Масштаб, при котором видна вся страница; удержание — 100 %"
+        "en": "The whole page on screen at once",
+        "de": "Die ganze Seite auf einen Blick",
+        "es": "Toda la página de un vistazo",
+        "fr": "Toute la page d’un coup d’œil",
+        "ru": "Вся страница сразу на экране"
       },
       "details": {
         "en": "Same as View › Zoom to fit in Figma’s menu. Its shortcut is 1 or ⇧1, depending on your Figma settings. Works while Figma is in front and set to English.",
@@ -537,11 +537,11 @@
       "id": "new-file",
       "title": {"en": "New Design File", "de": "Neue Datei", "es": "Archivo nuevo", "fr": "Nouveau fichier", "ru": "Новый файл"},
       "summary": {
-        "en": "Starts a new design file; hold for a FigJam board",
-        "de": "Legt eine neue Design-Datei an; halten für ein FigJam-Board",
-        "es": "Crea un archivo de diseño nuevo; mantén pulsado para una pizarra de FigJam",
-        "fr": "Crée un nouveau fichier de design ; maintenez pour un tableau FigJam",
-        "ru": "Создаёт новый файл дизайна; удержание — доску FigJam"
+        "en": "A blank design file in Figma",
+        "de": "Eine leere Design-Datei in Figma",
+        "es": "Un archivo de diseño en blanco en Figma",
+        "fr": "Un fichier de design vierge dans Figma",
+        "ru": "Пустой файл дизайна в Figma"
       },
       "details": {
         "en": "The new, untitled file opens in a new tab. Brings Figma forward from any app and starts it if it’s closed. Your keyboard layout doesn’t matter.",

@@ -9,19 +9,19 @@
 
 loop_said
 read_run
-[[ ${run[id]} == <-> ]] || fail notFound "No GitHub Actions run of this branch yet: the button looks while it is on screen"
-[[ ${run[status]} == completed ]] || fail busy "The last run is still going: nothing to rerun yet"
-[[ ${run[conclusion]} == startup_failure ]] && fail other "The workflow could not start: its file needs a fix, not a rerun"
-[[ ${run[conclusion]} == (failure|timed_out|cancelled) ]] || fail other "The last run did not fail: nothing to rerun"
+[[ ${run[id]} == <-> ]] || fail notFound "The button hasn’t seen a GitHub Actions run of this branch yet. It checks while it’s on screen."
+[[ ${run[status]} == completed ]] || fail busy "The last run is still going. There’s nothing to rerun yet."
+[[ ${run[conclusion]} == startup_failure ]] && fail other "The workflow couldn’t start. Its file needs a fix, so a rerun won’t help."
+[[ ${run[conclusion]} == (failure|timed_out|cancelled) ]] || fail other "The last run didn’t fail, so there’s nothing to rerun."
 [[ ${run[url]} == https://github.com/(#b)([A-Za-z0-9-]##/[A-Za-z0-9._-]##)/actions/runs/${run[id]} ]] ||
-  fail other "GitHub gave no address of the run to rerun"
+  fail other "GitHub didn’t give the run’s address."
 folder="" slug=$match[1]
 
 hold=""
 [[ -f $own/hold ]] && IFS= read -r hold < "$own/hold" 2>/dev/null
 at=${hold#armed }
 if [[ $hold != armed\ * || $at != <-> ]] || (( EPOCHSECONDS - at > 10 )); then
-  print -r -- "armed $EPOCHSECONDS" > "$own/hold" 2>/dev/null || fail permission "The button cannot keep its state in the agent’s folder"
+  print -r -- "armed $EPOCHSECONDS" > "$own/hold" 2>/dev/null || fail permission "The button can’t save its state on the Mac."
   poke                                          # the loop shows the ↻ now
   exit 0
 fi

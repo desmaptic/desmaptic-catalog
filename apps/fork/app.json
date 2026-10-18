@@ -1,6 +1,6 @@
 {
   "id": "fork",
-  "revision": 5,
+  "revision": 6,
   "name": "Fork",
   "bundleIds": ["com.DanPristupov.Fork"],
   "category": "development",
@@ -9,11 +9,11 @@
       "id": "fetch",
       "title": {"en": "Fetch", "de": "Fetch", "es": "Fetch", "fr": "Fetch", "ru": "Fetch"},
       "summary": {
-        "en": "Fetches right away; hold for the Fetch dialog",
-        "de": "Führt sofort einen Fetch aus; Halten öffnet den Fetch-Dialog",
-        "es": "Hace fetch al instante; mantén pulsado para el diálogo Fetch",
-        "fr": "Lance un fetch immédiatement ; maintenez pour la fenêtre Fetch",
-        "ru": "Сразу выполняет fetch; удержание — окно Fetch"
+        "en": "Gets the latest commits from the remote",
+        "de": "Holt die neuesten Commits vom Remote",
+        "es": "Trae los últimos commits del remoto",
+        "fr": "Récupère les derniers commits du dépôt distant",
+        "ru": "Забирает свежие коммиты с удалённого репозитория"
       },
       "details": {
         "en": "Repository › Quick Fetch (⌥⇧⌘F) downloads new commits and branches from the remote. Your files and branches stay as they are. Works while Fork is in front.",
@@ -48,11 +48,11 @@
       "id": "pull",
       "title": {"en": "Pull", "de": "Pull", "es": "Pull", "fr": "Pull", "ru": "Pull"},
       "summary": {
-        "en": "Opens the Pull dialog; hold to pull right away",
-        "de": "Öffnet den Pull-Dialog; Halten pullt sofort",
-        "es": "Abre el diálogo Pull; mantén pulsado para hacer pull al instante",
-        "fr": "Ouvre la fenêtre Pull ; maintenez pour un pull immédiat",
-        "ru": "Открывает окно Pull; удержание — pull сразу"
+        "en": "Brings your branch up to date with the remote",
+        "de": "Bringt deinen Branch auf den Stand des Remotes",
+        "es": "Pone tu rama al día con el remoto",
+        "fr": "Met votre branche à jour avec le dépôt distant",
+        "ru": "Подтягивает в вашу ветку изменения с удалённого репозитория"
       },
       "details": {
         "en": "Repository › Pull… (⇧⌘L) shows the branch and lets you rebase instead of merge. Nothing changes until you press Pull there. Works while Fork is in front.",
@@ -87,11 +87,11 @@
       "id": "push",
       "title": {"en": "Push", "de": "Push", "es": "Push", "fr": "Push", "ru": "Push"},
       "summary": {
-        "en": "Opens the Push dialog; hold to push right away",
-        "de": "Öffnet den Push-Dialog; Halten pusht sofort",
-        "es": "Abre el diálogo Push; mantén pulsado para hacer push al instante",
-        "fr": "Ouvre la fenêtre Push ; maintenez pour un push immédiat",
-        "ru": "Открывает окно Push; удержание — push сразу"
+        "en": "Sends your commits to the remote",
+        "de": "Schickt deine Commits zum Remote",
+        "es": "Envía tus commits al remoto",
+        "fr": "Envoie vos commits vers le dépôt distant",
+        "ru": "Отправляет ваши коммиты в удалённый репозиторий"
       },
       "details": {
         "en": "Repository › Push… (⇧⌘P) shows which branch goes to which remote. Nothing leaves the Mac until you press Push there. Works while Fork is in front.",
@@ -126,11 +126,11 @@
       "id": "commit",
       "title": {"en": "Commit", "de": "Commit", "es": "Commit", "fr": "Commit", "ru": "Commit"},
       "summary": {
-        "en": "Commits the staged changes (⌘↩); hold to commit and push",
-        "de": "Committet die gestagten Änderungen (⌘↩); Halten committet und pusht",
-        "es": "Hace commit de los cambios preparados (⌘↩); mantén pulsado para commit y push",
-        "fr": "Fait un commit des modifications indexées (⌘↩) ; maintenez pour commit et push",
-        "ru": "Коммитит проиндексированные изменения (⌘↩); удержание — commit и push"
+        "en": "Saves your staged changes as a commit (⌘↩)",
+        "de": "Speichert deine gestagten Änderungen als Commit (⌘↩)",
+        "es": "Guarda los cambios preparados en un commit (⌘↩)",
+        "fr": "Enregistre vos modifications indexées dans un commit (⌘↩)",
+        "ru": "Сохраняет проиндексированные изменения в коммит (⌘↩)"
       },
       "details": {
         "en": "Uses the message typed in Changes. With “Automatically push on commit” on in Fork’s settings, a tap pushes as well. Works while Fork is in front.",
@@ -289,11 +289,11 @@
       "id": "all-commits",
       "title": {"en": "All Commits", "de": "Alle Commits", "es": "Todos los commits", "fr": "Tous les commits", "ru": "Все коммиты"},
       "summary": {
-        "en": "Shows the commit graph (⌘2); hold to jump to HEAD",
-        "de": "Zeigt den Commit-Graphen (⌘2); Halten springt zu HEAD",
-        "es": "Muestra el grafo de commits (⌘2); mantén pulsado para ir a HEAD",
-        "fr": "Affiche le graphe des commits (⌘2) ; maintenez pour aller à HEAD",
-        "ru": "Показывает граф коммитов (⌘2); удержание — переход к HEAD"
+        "en": "The whole history of the repository at a glance",
+        "de": "Der ganze Verlauf des Repositorys auf einen Blick",
+        "es": "Todo el historial del repositorio de un vistazo",
+        "fr": "Tout l’historique du dépôt d’un coup d’œil",
+        "ru": "Вся история репозитория на одном экране"
       },
       "details": {
         "en": "View › Show All Commits (⌘2): the commits of all branches in one graph. Works while Fork is in front.",
@@ -390,11 +390,11 @@
       "id": "new-branch",
       "title": {"en": "New Branch", "de": "Neuer Branch", "es": "Nueva rama", "fr": "Nouvelle branche", "ru": "Новая ветка"},
       "summary": {
-        "en": "Creates a branch (⇧⌘B); hold for a tag",
-        "de": "Erstellt einen Branch (⇧⌘B); halten für einen Tag",
-        "es": "Crea una rama (⇧⌘B); mantén pulsado para una etiqueta",
-        "fr": "Crée une branche (⇧⌘B) ; maintenez pour un tag",
-        "ru": "Создаёт ветку (⇧⌘B); удержание — тег"
+        "en": "A new branch to work on",
+        "de": "Ein neuer Branch zum Weiterarbeiten",
+        "es": "Una rama nueva para trabajar en ella",
+        "fr": "Une nouvelle branche pour y travailler",
+        "ru": "Новая ветка для работы"
       },
       "details": {
         "en": "Repository › New Branch… (⇧⌘B) asks for a name and whether to check it out. Nothing is created until you confirm. Works while Fork is in front.",
@@ -522,11 +522,11 @@
       "id": "next-tab",
       "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
       "summary": {
-        "en": "Switches to the tab on the right (⌃⇥); hold for the left",
-        "de": "Wechselt zum Tab rechts (⌃⇥); halten für den linken",
-        "es": "Pasa a la pestaña de la derecha (⌃⇥); mantén pulsado para la de la izquierda",
-        "fr": "Passe à l’onglet de droite (⌃⇥) ; maintenez pour celui de gauche",
-        "ru": "Переключает на вкладку справа (⌃⇥); удержание — слева"
+        "en": "Switches to the tab on the right (⌃⇥)",
+        "de": "Wechselt zum Tab rechts daneben (⌃⇥)",
+        "es": "Pasa a la pestaña de la derecha (⌃⇥)",
+        "fr": "Passe à l’onglet de droite (⌃⇥)",
+        "ru": "Переключает на вкладку справа (⌃⇥)"
       },
       "details": {
         "en": "Each Fork tab holds one repository, so this moves you between repositories. Works while Fork is in front.",
@@ -561,11 +561,11 @@
       "id": "open-repo",
       "title": {"en": "Open Repo", "de": "Repo öffnen", "es": "Abrir repo", "fr": "Ouvrir le dépôt", "ru": "Открыть репозиторий"},
       "summary": {
-        "en": "Opens your repository in Fork; hold for its uncommitted changes",
-        "de": "Öffnet dein Repository in Fork; Halten zeigt seine nicht committeten Änderungen",
-        "es": "Abre tu repositorio en Fork; mantén pulsado para sus cambios sin commit",
-        "fr": "Ouvre votre dépôt dans Fork ; maintenez pour ses modifications non commitées",
-        "ru": "Открывает ваш репозиторий в Fork; удержание — его незакоммиченные изменения"
+        "en": "Opens the repository you work on in Fork",
+        "de": "Öffnet das Repository, an dem du arbeitest, in Fork",
+        "es": "Abre en Fork el repositorio en el que trabajas",
+        "fr": "Ouvre dans Fork le dépôt sur lequel vous travaillez",
+        "ru": "Открывает в Fork репозиторий, с которым вы работаете"
       },
       "details": {
         "en": "Set the repository’s folder in the button’s settings: repo=\"~/Projects/app\". Works from any app and starts Fork if it’s closed. The long press opens the repository the tap opened last.",

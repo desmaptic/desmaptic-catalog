@@ -1,6 +1,6 @@
 {
   "id": "linear",
-  "revision": 7,
+  "revision": 8,
   "name": "Linear",
   "bundleIds": ["com.linear"],
   "category": "development",
@@ -9,11 +9,11 @@
       "id": "inbox",
       "title": {"en": "Inbox", "de": "Posteingang", "es": "Bandeja de entrada", "fr": "Boîte de réception", "ru": "Входящие"},
       "summary": {
-        "en": "Linear’s unread badge on your phone; tap for the Inbox",
-        "de": "Das Ungelesen-Kennzeichen von Linear auf dem Telefon; Tippen öffnet die Inbox",
-        "es": "El globo de no leídos de Linear en el teléfono; toca para abrir Inbox",
-        "fr": "La pastille des non-lus de Linear sur le téléphone ; touchez pour ouvrir l’Inbox",
-        "ru": "Непрочитанные уведомления Linear на телефоне; нажатие открывает Inbox"
+        "en": "Whether there’s anything unread in your Linear Inbox",
+        "de": "Ob in deiner Linear-Inbox etwas Ungelesenes liegt",
+        "es": "Si tienes algo sin leer en Inbox de Linear",
+        "fr": "S’il reste des notifications non lues dans l’Inbox de Linear",
+        "ru": "Есть ли непрочитанное в Inbox Linear"
       },
       "details": {
         "en": "A dot on the button means unread notifications in the Inbox. To see their number, choose Unread count in Preferences › App notification badge. When Linear is closed, the button shows a dash, and a tap starts Linear.",
@@ -72,11 +72,11 @@
       "id": "new-issue",
       "title": {"en": "New Issue", "de": "Neues Issue", "es": "Nuevo issue", "fr": "Nouvelle issue", "ru": "Новая задача"},
       "summary": {
-        "en": "Opens the new issue form; hold for a new project",
-        "de": "Öffnet das Formular für ein neues Issue; halten für ein neues Projekt",
-        "es": "Abre el formulario de issue nuevo; mantén pulsado para un proyecto nuevo",
-        "fr": "Ouvre le formulaire de nouvelle issue ; maintenez pour un nouveau projet",
-        "ru": "Открывает форму новой задачи; удержание — нового проекта"
+        "en": "Starts a new Linear issue",
+        "de": "Legt ein neues Issue in Linear an",
+        "es": "Crea un issue nuevo en Linear",
+        "fr": "Crée une nouvelle issue dans Linear",
+        "ru": "Заводит новую задачу в Linear"
       },
       "details": {
         "en": "Clicks File › New › Issue… in Linear’s menu, so any keyboard layout will do, even while you type. Nothing is created until you press Create issue. Works while Linear is in front.",
@@ -233,11 +233,11 @@
       "id": "back",
       "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Retour", "ru": "Назад"},
       "summary": {
-        "en": "Back through the pages of the tab; hold for Forward",
-        "de": "Zurück durch die Seiten des Tabs; halten für Vorwärts",
-        "es": "Vuelve por las páginas de la pestaña; mantén pulsado para ir adelante",
-        "fr": "Revient sur les pages de l’onglet ; maintenez pour avancer",
-        "ru": "Назад по страницам вкладки; удержание — вперёд"
+        "en": "Back through the pages you opened in the tab",
+        "de": "Zurück durch die Seiten, die du im Tab geöffnet hast",
+        "es": "Vuelve atrás por las páginas que abriste en la pestaña",
+        "fr": "Revient sur les pages ouvertes dans l’onglet",
+        "ru": "Назад по страницам, которые вы открывали во вкладке"
       },
       "details": {
         "en": "Clicks History › Back in Linear’s menu, so any keyboard layout will do. Works while Linear is in front.",
@@ -396,11 +396,11 @@
       "id": "copy-link",
       "title": {"en": "Copy Link", "de": "Link kopieren", "es": "Copiar enlace", "fr": "Copier le lien", "ru": "Скопировать ссылку"},
       "summary": {
-        "en": "Copies the issue’s link; hold for its ID",
-        "de": "Kopiert den Link des Issues; halten für seine ID",
-        "es": "Copia el enlace del issue; mantén pulsado para su ID",
-        "fr": "Copie le lien de l’issue ; maintenez pour son ID",
-        "ru": "Копирует ссылку на задачу; удержание — её ID"
+        "en": "The issue’s link, ready to share",
+        "de": "Kopiert den Link zum Issue, damit du ihn teilen kannst",
+        "es": "El enlace del issue, listo para compartir",
+        "fr": "Le lien de l’issue, à partager où vous voulez",
+        "ru": "Копирует ссылку на задачу, чтобы ею поделиться"
       },
       "details": {
         "en": "Applies to the open issue, or the one under the pointer. Copying the ID needs a keyboard layout that types a period without Shift, which French doesn’t. Works while Linear is in front.",
@@ -466,11 +466,11 @@
       "id": "next-tab",
       "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
       "summary": {
-        "en": "Moves to the next Linear tab; hold for the previous one",
-        "de": "Wechselt zum nächsten Linear-Tab; halten für den vorherigen",
-        "es": "Pasa a la pestaña siguiente de Linear; mantén pulsado para la anterior",
-        "fr": "Passe à l’onglet Linear suivant ; maintenez pour le précédent",
-        "ru": "Переключает на следующую вкладку Linear; удержание — на предыдущую"
+        "en": "Moves to the next Linear tab",
+        "de": "Wechselt zum nächsten Linear-Tab",
+        "es": "Pasa a la pestaña siguiente de Linear",
+        "fr": "Passe à l’onglet Linear suivant",
+        "ru": "Переключает на следующую вкладку Linear"
       },
       "details": {
         "en": "Cycles through Linear’s tabs, including the ones the Inbox, My Issues, Projects and Views buttons open. Works while Linear is in front, even while you type.",
@@ -505,11 +505,11 @@
       "id": "close-tab",
       "title": {"en": "Close Tab", "de": "Tab schließen", "es": "Cerrar pestaña", "fr": "Fermer l’onglet", "ru": "Закрыть вкладку"},
       "summary": {
-        "en": "Closes the Linear tab in front; hold to reopen it",
-        "de": "Schließt den vorderen Linear-Tab; Halten öffnet ihn wieder",
-        "es": "Cierra la pestaña de Linear de delante; mantén pulsado para reabrirla",
-        "fr": "Ferme l’onglet Linear au premier plan ; maintenez pour le rouvrir",
-        "ru": "Закрывает текущую вкладку Linear; удержание открывает её снова"
+        "en": "Closes the Linear tab in front",
+        "de": "Schließt den vorderen Linear-Tab",
+        "es": "Cierra la pestaña de Linear que tienes delante",
+        "fr": "Ferme l’onglet Linear au premier plan",
+        "ru": "Закрывает текущую вкладку Linear"
       },
       "details": {
         "en": "If something would be lost, Linear asks first, and a pinned tab needs a second tap. Closing the last tab closes the window. Works while Linear is in front.",

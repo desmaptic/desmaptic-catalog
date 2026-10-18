@@ -21,7 +21,7 @@ if [[ -z $repo && $action == off && -n $own && -f $own/repo ]]; then
   IFS= read -r repo < "$own/repo"
 fi
 [[ -n $repo ]] ||
-  fail config "Merge When Green takes no repository from other buttons: set its folder in this button’s settings, e.g. repo=\"~/Developer/my-app\""
+  fail config "Merge When Green doesn’t use the repository set on other buttons. Set its folder in this button’s settings, like repo=\"~/Developer/my-app\"."
 ready
 branch
 br=$REPLY
@@ -30,7 +30,7 @@ call update-button "{\"cellId\":\"$cell\",\"icon\":\"hourglass\"}" >/dev/null
 run_gh 20 pr view --json number,state,isDraft,headRefOid,autoMergeRequest,mergeStateStatus,statusCheckRollup
 rc=$?
 if (( rc != 0 )); then
-  [[ $(first_line $tmp/err) == *no\ pull\ requests\ found* ]] && fail notFound "No pull request for $br: New PR makes one"
+  [[ $(first_line $tmp/err) == *no\ pull\ requests\ found* ]] && fail notFound "$br has no pull request yet. Make one with New PR."
   gh_refusal $rc "gh pr view"
   fail ${REPLY%% *} "${REPLY#* }"
 fi
@@ -39,11 +39,11 @@ pr=( ${(f)"$(jq -r '"number", (.number|tostring), "state", .state, "draft", (.is
   "head", .headRefOid, "auto", (if .autoMergeRequest then "on" else "off" end), "merge", (.mergeStateStatus // ""),
   "red", ([.statusCheckRollup[]? | .conclusion // .state // "" | select(IN("SUCCESS", "NEUTRAL", "SKIPPED") | not)]
     | length | tostring)' "$tmp/out" 2>/dev/null)"} )
-[[ ${pr[number]} == <-> ]] || fail other "GitHub did not say which pull request $br has"
-[[ ${pr[state]} == OPEN ]] || fail other "Pull request #${pr[number]} is ${(L)pr[state]}"
+[[ ${pr[number]} == <-> ]] || fail other "GitHub didn’t say which pull request $br has. Try again in a moment."
+[[ ${pr[state]} == OPEN ]] || fail other "Pull request #${pr[number]} is already ${(L)pr[state]}."
 
 if [[ $action == off ]]; then
-  [[ ${pr[auto]} == on ]] || fail other "Auto-merge is not on for #${pr[number]}"
+  [[ ${pr[auto]} == on ]] || fail other "Auto-merge isn’t on for #${pr[number]}."
   run_gh 20 pr merge ${pr[number]} --disable-auto
   rc=$?
   if (( rc != 0 )); then
@@ -54,20 +54,20 @@ if [[ $action == off ]]; then
   exit 0
 fi
 
-[[ ${pr[draft]} == false ]] || fail other "Pull request #${pr[number]} is a draft: mark it ready for review first"
+[[ ${pr[draft]} == false ]] || fail other "Pull request #${pr[number]} is still a draft. Mark it ready for review first."
 limited 10 $vcs -C "$folder" rev-parse -q --verify HEAD
 head=$(first_line $tmp/out)
 [[ $head == ${pr[head]} ]] ||
-  fail config "#${pr[number]} on GitHub is not the commit this Mac is on: push or pull first"
+  fail config "#${pr[number]} on GitHub isn’t at the commit your Mac is on. Push or pull first."
 case ${pr[merge]} in
   (UNSTABLE)
-    fail config "Checks of #${pr[number]} are not green, and this repository requires none: GitHub would merge it now. Tap when they pass, or make them required" ;;
+    fail config "The checks on #${pr[number]} aren’t green yet, and this repository doesn’t require them. GitHub would merge it right away, so tap once they pass, or make them required." ;;
   (CLEAN|HAS_HOOKS)
     [[ ${pr[red]} == 0 ]] ||
-      fail config "Checks of #${pr[number]} are not green, and this repository requires none: GitHub would merge it now. Tap when they pass, or make them required" ;;
-  (DIRTY) fail config "#${pr[number]} conflicts with its base branch: resolve that first" ;;
+      fail config "The checks on #${pr[number]} aren’t green yet, and this repository doesn’t require them. GitHub would merge it right away, so tap once they pass, or make them required." ;;
+  (DIRTY) fail config "#${pr[number]} has conflicts with its base branch. Resolve them first." ;;
   (BLOCKED|BEHIND) ;;
-  (*) fail busy "GitHub has not worked out yet whether #${pr[number]} can be merged: tap again in a moment" ;;
+  (*) fail busy "GitHub is still checking whether #${pr[number]} can be merged. Tap again in a moment." ;;
 esac
 
 case $method in
@@ -82,8 +82,8 @@ case $method in
     method=$(jq -r '({MERGE: "merge", SQUASH: "squash", REBASE: "rebase"}[.viewerDefaultMergeMethod // ""]
       // (if .squashMergeAllowed then "squash" elif .mergeCommitAllowed then "merge"
           elif .rebaseMergeAllowed then "rebase" else "" end))' "$tmp/out" 2>/dev/null)
-    [[ -n $method ]] || fail other "GitHub did not say how this repository merges: set method=\"squash\", \"merge\" or \"rebase\"" ;;
-  (*) fail config "Unknown method \"$method\": squash, merge or rebase (or empty)" ;;
+    [[ -n $method ]] || fail other "GitHub didn’t say how this repository merges. Set method=\"squash\", \"merge\" or \"rebase\" in the button’s settings." ;;
+  (*) fail config "“$method” isn’t a merge method. Use squash, merge or rebase, or leave it empty." ;;
 esac
 
 run_gh 40 pr merge ${pr[number]} --auto --$method --match-head-commit $head
@@ -91,11 +91,11 @@ rc=$?
 if (( rc != 0 )); then
   err=$(first_line $tmp/err)
   [[ $err == *[Aa]uto\ merge\ is\ not\ allowed* ]] &&
-    fail config "Auto-merge is off in this repository’s settings (General › Pull Requests › Allow auto-merge)"
+    fail config "This repository doesn’t allow auto-merge. Turn on Allow auto-merge in its settings, under General › Pull Requests."
   [[ $err == *([Hh]ead\ branch\ was\ modified|expected\ head)* ]] &&
-    fail config "#${pr[number]} changed on GitHub: pull, then tap again"
+    fail config "#${pr[number]} changed on GitHub. Pull, then tap again."
   [[ $err == *[Mm]erge\ method*not\ allowed* ]] &&
-    fail config "GitHub does not allow $method here: set method= to one it allows"
+    fail config "This repository doesn’t allow $method merges. Set another method in the button’s settings."
   gh_refusal $rc "gh pr merge"
   fail ${REPLY%% *} "${REPLY#* }"
 fi

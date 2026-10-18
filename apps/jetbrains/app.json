@@ -1,6 +1,6 @@
 {
   "id": "jetbrains",
-  "revision": 5,
+  "revision": 6,
   "name": "JetBrains IDE",
   "bundleIds": ["com.jetbrains.intellij", "com.jetbrains.intellij.ce", "com.jetbrains.pycharm", "com.jetbrains.pycharm.ce", "com.jetbrains.WebStorm", "com.jetbrains.goland", "com.jetbrains.PhpStorm", "com.jetbrains.rubymine", "com.jetbrains.CLion", "com.jetbrains.rustrover"],
   "category": "development",
@@ -9,11 +9,11 @@
       "id": "run",
       "title": {"en": "Run", "de": "Ausführen", "es": "Ejecutar", "fr": "Exécuter", "ru": "Запуск"},
       "summary": {
-        "en": "Runs the selected configuration; hold to pick one",
-        "de": "Startet die gewählte Konfiguration; halten zum Auswählen",
-        "es": "Ejecuta la configuración elegida; mantén pulsado para elegir",
-        "fr": "Lance la configuration choisie ; maintenez pour choisir",
-        "ru": "Запускает выбранную конфигурацию; удержание — выбор конфигурации"
+        "en": "Runs the configuration picked in the toolbar",
+        "de": "Startet die Konfiguration, die in der Symbolleiste gewählt ist",
+        "es": "Ejecuta la configuración elegida en la barra de herramientas",
+        "fr": "Lance la configuration choisie dans la barre d’outils",
+        "ru": "Запускает конфигурацию, выбранную на панели инструментов"
       },
       "details": {
         "en": "Same as ⌃R for the configuration in the toolbar, even while the IDE’s terminal has focus. Works while the JetBrains IDE is in front, with English menus.",
@@ -48,11 +48,11 @@
       "id": "debug",
       "title": {"en": "Debug", "de": "Debuggen", "es": "Depurar", "fr": "Déboguer", "ru": "Отладка"},
       "summary": {
-        "en": "Debugs the selected configuration; hold to pick one",
-        "de": "Debuggt die gewählte Konfiguration; halten zum Auswählen",
-        "es": "Depura la configuración elegida; mantén pulsado para elegir",
-        "fr": "Débogue la configuration choisie ; maintenez pour choisir",
-        "ru": "Отлаживает выбранную конфигурацию; удержание — выбор конфигурации"
+        "en": "Debugs the configuration picked in the toolbar",
+        "de": "Debuggt die Konfiguration, die in der Symbolleiste gewählt ist",
+        "es": "Depura la configuración elegida en la barra de herramientas",
+        "fr": "Débogue la configuration choisie dans la barre d’outils",
+        "ru": "Запускает отладку конфигурации, выбранной на панели инструментов"
       },
       "details": {
         "en": "Same as ⌃D, even while the IDE’s terminal has focus, where the key itself would end the running program. Works while the JetBrains IDE is in front, with English menus.",
@@ -507,11 +507,11 @@
       "id": "commit",
       "title": {"en": "Commit", "de": "Commit", "es": "Commit", "fr": "Commit", "ru": "Коммит"},
       "summary": {
-        "en": "Opens the commit view (⌘K); hold to push",
-        "de": "Öffnet die Commit-Ansicht (⌘K); halten für Push",
-        "es": "Abre la vista de commit (⌘K); mantén pulsado para hacer push",
-        "fr": "Ouvre la vue de commit (⌘K) ; maintenez pour pousser",
-        "ru": "Открывает окно коммита (⌘K); удержание — Push"
+        "en": "Your changes, ready to review and commit (⌘K)",
+        "de": "Zeigt deine Änderungen zum Prüfen und Committen (⌘K)",
+        "es": "Tus cambios, listos para revisarlos y hacer commit (⌘K)",
+        "fr": "Vos modifications, prêtes à relire et à valider (⌘K)",
+        "ru": "Изменения, которые можно проверить и закоммитить (⌘K)"
       },
       "details": {
         "en": "Git › Commit… shows your changes and a message field. Nothing is committed until you press Commit. Works while the JetBrains IDE is in front, with English menus.",

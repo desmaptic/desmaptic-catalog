@@ -1,6 +1,6 @@
 {
   "id": "mail",
-  "revision": 7,
+  "revision": 8,
   "name": {
     "en": "Mail",
     "de": "Mail",
@@ -121,11 +121,11 @@
         "ru": "Входящие"
       },
       "summary": {
-        "en": "Shows the Inbox (⌘1); hold to go to any mailbox by name",
-        "de": "Zeigt den Eingang (⌘1); halten, um ein Postfach per Namen zu öffnen",
-        "es": "Muestra Entrada (⌘1); mantén pulsado para ir a cualquier buzón por su nombre",
-        "fr": "Affiche la boîte de réception (⌘1) ; maintenez pour ouvrir une boîte par son nom",
-        "ru": "Показывает «Входящие» (⌘1); удержание — любой ящик по имени"
+        "en": "Takes you to the Inbox (⌘1)",
+        "de": "Bringt dich zum Eingang (⌘1)",
+        "es": "Te lleva a Entrada (⌘1)",
+        "fr": "Vous amène à la boîte de réception (⌘1)",
+        "ru": "Переходит во «Входящие» (⌘1)"
       },
       "details": {
         "en": "Opens your first favorite mailbox. That’s the Inbox, unless you’ve reordered your favorites in Mail. Works while Mail is in front.",
@@ -191,11 +191,11 @@
         "ru": "Поиск"
       },
       "summary": {
-        "en": "Searches your mail (⌥⌘F); hold to find text in the message",
-        "de": "Durchsucht die E-Mails (⌥⌘F); Halten sucht Text in der E-Mail",
-        "es": "Busca en el correo (⌥⌘F); mantén pulsado para buscar texto en el mensaje",
-        "fr": "Recherche dans le courrier (⌥⌘F) ; maintenez pour chercher dans le message",
-        "ru": "Ищет в почте (⌥⌘F); удержание — в открытом письме"
+        "en": "Finds any message in your mail",
+        "de": "Findet jede E-Mail in deinen Postfächern",
+        "es": "Encuentra cualquier mensaje en tu correo",
+        "fr": "Retrouve n’importe quel message dans votre courrier",
+        "ru": "Находит любое письмо в почте"
       },
       "details": {
         "en": "Edit › Find › Mailbox Search (⌥⌘F). The cursor lands in Mail’s search field, so you can type your search on the Mac right away. Works while Mail is in front.",
@@ -471,11 +471,11 @@
         "ru": "В архив"
       },
       "summary": {
-        "en": "Archives the selected messages (⌃⌘A); hold to delete them",
-        "de": "Archiviert die ausgewählten E-Mails (⌃⌘A); Halten löscht sie",
-        "es": "Archiva los mensajes seleccionados (⌃⌘A); mantén pulsado para eliminarlos",
-        "fr": "Archive les messages sélectionnés (⌃⌘A) ; maintenez pour les supprimer",
-        "ru": "Архивирует выбранные письма (⌃⌘A); удержание удаляет их"
+        "en": "Puts the selected messages away in Archive (⌃⌘A)",
+        "de": "Legt die ausgewählten E-Mails im Archiv ab (⌃⌘A)",
+        "es": "Manda los mensajes seleccionados al archivo (⌃⌘A)",
+        "fr": "Range les messages sélectionnés dans les archives (⌃⌘A)",
+        "ru": "Убирает выбранные письма в архив (⌃⌘A)"
       },
       "details": {
         "en": "Archived messages go to the account’s Archive mailbox, where they’re easy to find. Deleted ones go to the Trash, or are erased if the account doesn’t use a Trash. Works while Mail is in front.",
@@ -590,11 +590,11 @@
         "ru": "Напомнить"
       },
       "summary": {
-        "en": "Brings the message back in an hour; hold for tomorrow",
-        "de": "Bringt die E-Mail in einer Stunde zurück; halten für morgen",
-        "es": "Te recuerda el mensaje dentro de una hora; mantén pulsado para mañana",
-        "fr": "Vous rappelle le message dans une heure ; maintenez pour demain",
-        "ru": "Напомнит о письме через час; удержание — завтра"
+        "en": "Brings the message back in an hour",
+        "de": "Die E-Mail taucht in einer Stunde wieder auf",
+        "es": "El mensaje vuelve a aparecer dentro de una hora",
+        "fr": "Le message revient dans une heure",
+        "ru": "Письмо снова всплывёт через час"
       },
       "details": {
         "en": "When the time comes, Mail puts the message back at the top of the Inbox. To cancel, choose Clear Reminder in the Message menu. Works while Mail is in front.",

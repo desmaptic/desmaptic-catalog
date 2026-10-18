@@ -1,6 +1,6 @@
 {
   "id": "calendar",
-  "revision": 8,
+  "revision": 9,
   "kind": "widget",
   "title": {
     "en": "Calendar",
@@ -10,11 +10,11 @@
     "ru": "Календарь"
   },
   "summary": {
-    "en": "Today’s meeting in progress or the next one, with a countdown; tap to join the call",
-    "de": "Der laufende oder nächste Termin von heute mit Countdown; tippen, um dem Call beizutreten",
-    "es": "La reunión de hoy en curso o la siguiente, con cuenta atrás; toca para unirte a la llamada",
-    "fr": "La réunion du jour en cours ou la suivante, avec compte à rebours ; touchez pour rejoindre l’appel",
-    "ru": "Ближайшая встреча сегодня и сколько до неё осталось; нажмите, чтобы подключиться к звонку"
+    "en": "Today’s current or next meeting, with a countdown",
+    "de": "Der laufende oder nächste Termin von heute, mit Countdown",
+    "es": "La reunión de hoy en curso o la próxima, con cuenta atrás",
+    "fr": "La réunion du jour en cours ou la suivante, avec un compte à rebours",
+    "ru": "Ближайшая встреча сегодня и сколько до неё осталось"
   },
   "colSpan": 2,
   "rowSpan": 2,

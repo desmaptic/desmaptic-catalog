@@ -9,7 +9,7 @@ cell="{{CELL_ID}}"
 dir="${DESMAPTIC_STORAGE:-$HOME/Library/Application Support/Desmaptic/ScriptStorage}/gallery/$cell"
 
 if [[ -e $dir/running ]]; then
-  print -u2 -- "Homebrew updates: brew upgrade is running: the count comes when it ends"
+  print -u2 -- "Homebrew updates: Packages are updating in Terminal. The new count comes when it’s done."
   exit 1
 fi
-mkdir -p -- "$dir" && : > "$dir/poke" || { print -u2 -- "Homebrew updates: cannot write $dir"; exit 1 }
+mkdir -p -- "$dir" && : > "$dir/poke" || { print -u2 -- "Homebrew updates: couldn’t write to $dir. Check the Mac’s free disk space."; exit 1 }

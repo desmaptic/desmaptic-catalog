@@ -147,7 +147,7 @@ look() {
   local rc err all n
   gh=( /opt/homebrew/bin/gh(N-*) /usr/local/bin/gh(N-*) )
   if (( ! $#gh )); then
-    trouble notFound "The GitHub CLI is not installed: brew install gh, then gh auth login in Terminal"
+    trouble notFound "The GitHub CLI isn’t installed. In Terminal, run brew install gh, then gh auth login."
     return
   fi
   limited 30 env -i HOME=$HOME USER=$USER LOGNAME=$LOGNAME ${TMPDIR:+TMPDIR=$TMPDIR} PATH="$PATH" \
@@ -156,7 +156,7 @@ look() {
   rc=$?
   if (( rc == 0 )); then
     n=$(first_line $tmp/out)
-    if [[ $n != <-> ]]; then hitch other "GitHub gave no count"; return; fi
+    if [[ $n != <-> ]]; then hitch other "GitHub didn’t give the count."; return; fi
     told=""
     report clear
     good=$EPOCHSECONDS
@@ -168,20 +168,20 @@ look() {
   # greys the count at once; anything else is a hitch.
   all=$(<$tmp/err)
   if (( rc == 124 )); then
-    hitch timeout "GitHub did not answer in time"
+    hitch timeout "GitHub didn’t answer in time."
   elif (( rc == 4 )) || [[ $all == *(401\ Unauthorized|Bad\ credentials)* ]]; then
-    trouble auth "The GitHub CLI is not signed in: run gh auth login in Terminal"
+    trouble auth "The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   elif [[ $all == *[Rr]ate\ limit* ]]; then
-    hitch other "GitHub’s limit of searches is used up for now: the count comes back in a few minutes"
+    hitch other "You’ve hit GitHub’s search limit for now. The count comes back in a few minutes."
   elif [[ $all == *(auth\ login|authenticat)* ]]; then
-    trouble auth "The GitHub CLI is not signed in: run gh auth login in Terminal"
+    trouble auth "The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   elif [[ $all == *(error\ connecting|dial\ tcp|no\ such\ host|TLS\ handshake|connection\ refused|connection\ reset|i/o\ timeout|EOF)* ]]; then
-    hitch network "GitHub cannot be reached"
+    hitch network "The Mac can’t reach GitHub. Check its internet connection."
   elif [[ $all == *status\ code:\ 5[0-9][0-9]* ]]; then
-    hitch network "GitHub has trouble on its side: it answered ${${all#*status code: }[1,3]}"
+    hitch network "GitHub is having trouble right now. It answered with error ${${all#*status code: }[1,3]}."
   else
     err=$(first_line $tmp/err)
-    hitch other "GitHub did not give the count: ${err:-gh ended with status $rc}"
+    hitch other "GitHub didn’t give the count: ${err:-gh ended with status $rc}"
   fi
 }
 

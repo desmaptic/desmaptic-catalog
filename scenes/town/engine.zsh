@@ -47,7 +47,7 @@ BEGIN {
   for (i = 1; i <= 6; i++) { HXC[i] = cos((i - 1) * PI / 3); HXS[i] = sin((i - 1) * PI / 3) }
   palettes(); appdeck()
   GEN = 0; TICK = 0; T = 0; NOW = 0; SHOWN = 0; COLS = 0; LGEN = 0; UPC = 0; KAC = 0
-  GAP = 0; PITCH = 100; GDEMO = 15; PER = 0.5; NCAR = 6; NPPL = 0; NFLY = 3; NADR = 10; NFW = 1; GOING = 5; WNEXT = 300; WAVE0 = -100; GLNEXT = 60; KTNEXT = 90
+  GAP = 0; PITCH = 100; AWMAX = 82; GDEMO = 15; PER = 0.5; NCAR = 6; NPPL = 0; NFLY = 3; NADR = 10; NFW = 1; GOING = 5; WNEXT = 300; WAVE0 = -100; GLNEXT = 60; KTNEXT = 90
   LOAD = 0; AWAKE = 1; FRONT = ""; FRONTX = -1; HASBAT = 0; BATT = 100; CHARGING = 0; OPENB = ""
 }
 
@@ -183,8 +183,8 @@ function st(layer, s, x0, y0, x1, y1) { NS++; SL_[NS] = layer; SST[NS] = s; SX0[
 # Everything long is cut into tile columns: a tile carries only its own stars, blocks, lights, rails and road marks.
 function statics(   i, j, x, y, s, k) {
   NS = 0; RI = 1
-  # stars, a few per tile of the sky
-  if (NIGHT > 0.05) for (i = 0; i < NTA; i++) for (j = 0; tt(j) < HORY - 40; j++) {
+  # stars, a few per tile of the sky — there by day too, transparent: the light never changes a tile's structure
+  for (i = 0; i < NTA; i++) for (j = 0; tt(j) < HORY - 40; j++) {
     SSEED = 7717 + i * 131 + j * 17; s = ""
     for (k = 0; k < 3; k++) { x = tl(i) + sr(2, 98); y = tt(j) + sr(2, 98); if (y < HORY - 40) s = s sub_dot(x, y, sr(0.9, 1.7)) }
     if (s != "") st(1, pth(s, "#FFF6D8", " opacity='" f2(0.9 * NIGHT) "'"), tl(i), tt(j), tl(i) + 100, tt(j) + 100)
@@ -213,8 +213,9 @@ function skyline(base, near,   rj, s, i, x, w, h, k, top, lit, lit2, red, ant, e
     SSEED = 3301 + near * 17 + i * 53; s = ""; lit = ""; lit2 = ""; red = ""; ant = ""; r = ""; nb = 0; cells = 0
     x = tl(i) - 2
     while (x < tl(i) + 100) { w = sr(14, 26); h = sr(top * 0.3, top); nb++; BKX0[nb] = x; BKX1[nb] = mn(x + w, tl(i) + 102); BKH[nb] = h; cells += int((h - 14) / 7) * int((BKX1[nb] - x - 5) / 5 + 1); x += w + sr(0, 4) }
-    # about 30 lit windows a tile, whatever the blocks' heights (a few more at night)
-    p = cells > 0 ? mn(0.3, (22 + 10 * NIGHT) / cells) : 0
+    # about 28 lit windows a tile, whatever the blocks' heights and the light (the night only makes them brighter: the
+    # same windows at every hour, so a change of light never changes a tile's structure)
+    p = cells > 0 ? mn(0.3, 28 / cells) : 0
     for (b = 1; b <= nb; b++) {
       x0 = BKX0[b]; x1 = BKX1[b]; h = BKH[b]
       s = s "M" f1(x0) " " f1(base) "V" f1(base - h) "H" f1(x1) "V" f1(base) "Z"
@@ -298,10 +299,10 @@ function sunpos(k,   h, u) {
 #   side: one of a vertical neon sign, air-conditioning boxes, a holographic ad panel; a neon strip on some
 #   street: a door with a neon lintel, the neon sign with the app's name, the wet reflection, the traffic light before
 #     the app in front (downtown)
-function building(sl,   s,   rl, gl, dust, scf, bg, nw, ww, xx, a, h, g, x0, x1, xc, w, op, c, dk, win, act, typ, s1, y1, k, fs, nm, cpu, sm, lit, u, tl_, r, ne, n2, na, bl, sh, rf, sd, wv, bd, big, dash, tx, ty) {
+function building(sl,   s,   rl, gl, dust, scf, bg, nw, ww, xx, a, h, g, x0, x1, xc, w, op, c, dk, win, act, typ, s1, y1, k, fs, nm, cpu, sm, lit, u, tl_, r, ne, n2, na, bl, sh, rf, sd, wv, bd, big, dash, tx, ty, lx) {
   a = SAPP[sl]; h = SH[sl]; g = SG[sl]; xc = SX[sl]; w = a != "" ? AW[a] : 70; x0 = xc - w / 2; x1 = xc + w / 2
   op = cl(h / 30, 0, 1); act = a != "" && a == FRONT
-  typ = a != "" ? ATYP[a] : 0; nm = a != "" ? ANAME[a] : "·"; cpu = a != "" ? ACPU[a] : 0
+  typ = a != "" ? ATYP[a] : 0; nm = a != "" ? ASIGN[a] : "·"; cpu = a != "" ? ACPU[a] : 0
   # a roof piece stands only on a flat roof (the plain tower, the twins): on a slope, steps or a spire it would float
   rf = a != "" && (ATYP[a] == 0 || ATYP[a] == 5) ? AROOF[a] : 0; sd = a != "" ? ASIDE[a] : 0; wv = a != "" ? AWV[a] : 0; bd = a != "" ? ABAND[a] : 0
   big = h > 120 ? 1 : 0
@@ -328,7 +329,7 @@ function building(sl,   s,   rl, gl, dust, scf, bg, nw, ww, xx, a, h, g, x0, x1,
   s = s re(x0 + 8, g + 5, w - 16, 12, ne, " opacity='" f2(SQ[sl] ? 0 : (RAINY ? 0.08 : 0.04) * na) "'")
   # dust at its foot while it comes down, scaffolding round it while a new one goes up
   dust = SGONE[sl] && h > 0 ? 1 : 0; scf = SRISE[sl] && h < STGT[sl] ? 1 : 0
-  s = s pth(sub_ell(x0 + 6, g - 6, 16, 9, 0) sub_ell(xc, g - 10, 22, 12, 0) sub_ell(x1 - 6, g - 6, 16, 9, 0), li("#8E86A6", 3), " opacity='" f2(0.75 * dust) "'")
+  s = s pth(sub_ell(x0 + 7, g - 6, 16, 9, 0) sub_ell(xc, g - 10, 22, 12, 0) sub_ell(x1 - 7, g - 6, 16, 9, 0), li("#8E86A6", 3), " opacity='" f2(0.75 * dust) "'")
   s = s strk(seg_(x0 - 5, cy(g), x0 - 5, cy(top - 4)) seg_(x1 + 5, cy(g), x1 + 5, cy(top - 4)), "#C98A1A", 1.6, " opacity='" scf "'")
   s = s "<path d='" vd(xc, g - 2, mn(top, g - 2)) "' fill='none' stroke='#C98A1A' stroke-width='" f1(w + 10) "' stroke-dasharray='1.6 16' opacity='" scf "'/>"
   s = s pg(8, "none", " stroke='" ne "' stroke-width='4' stroke-opacity='" f2(0.1 * na) "'")
@@ -369,24 +370,47 @@ function building(sl,   s,   rl, gl, dust, scf, bg, nw, ww, xx, a, h, g, x0, x1,
   s = s re(xc - 7, g - 17, 14, 17, dk) re(xc - 9, g - 19, 18, 2, ne, " opacity='" f2(0.8 * na) "'")
   # the app's Dock badge as a hologram at the roof's corner
   bg = a != "" ? ABADGE[a] : 0
-  s = s ringc(x1 - 6, top + 8, 11, n2, n2, 1.5, " fill-opacity='0.3' opacity='" f2(bg > 0 ? na : 0) "'")
-  s = s "<text x='" f1(x1 - 6) "' y='" f1(top + 12.5) "' font-size='12' font-weight='bold' text-anchor='middle' fill='#FFFFFF' opacity='" f2(bg > 0 ? 1 : 0) "'>" (bg > 99 ? "99+" : (bg > 0 ? bg : "0")) "</text>"
-  s = s rr_(x0 + 3, g - 42, w - 6, 18, 4, act ? mixh("#0E0D18", ne, 0.3) : "#0E0D18", " stroke='" ne "' stroke-width='" (act ? "2.2" : "1.2") "' stroke-opacity='" f2(na) "'")
+  s = s ringc(x1 - 6, top + 8, 12, n2, n2, 1.5, " fill-opacity='0.3' opacity='" f2(bg > 0 ? na : 0) "'")
+  s = s "<text x='" f1(x1 - 6) "' y='" f1(top + 13) "' font-size='14' font-weight='bold' text-anchor='middle' fill='#FFFFFF' opacity='" f2(bg > 0 ? 1 : 0) "'>" (bg > 99 ? "99+" : (bg > 0 ? bg : "0")) "</text>"
+  s = s rr_(x0 + 2, g - 42, w - 4, 18, 4, act ? mixh("#0E0D18", ne, 0.3) : "#0E0D18", " stroke='" ne "' stroke-width='" (act ? "2.2" : "1.2") "' stroke-opacity='" f2(na) "'")
   # a glitch: for a moment the sign takes another neon, jumps a little and flickers
   gl = T < SGL[sl]; if (gl) { ne = GLC; na = int(T * 4) % 2 ? 1 : 0.35 }
-  fs = fitsize(nm)
+  fs = a != "" ? AFS[a] : 15
   s = s "<text x='" f1(xc + (gl ? 2.5 * (int(T * 4) % 2 ? 1 : -1) : 0)) "' y='" f1(g - 28.5) "' font-size='" fs "' font-weight='bold' text-anchor='middle' fill='" (act ? "#FFFFFF" : mixh("#FFFFFF", ne, 0.55)) "'>" nm "</text>"
   tl_ = act && SQ[sl] == 0 && SX[sl] > 160 ? 1 : 0
-  s = s re(x0 - 4, g - 34, 2.4, 34, "#1A1924", " opacity='" tl_ "'") rr_(x0 - 7, g - 44, 8, 14, 2, "#1A1924", " opacity='" tl_ "'")
-  s = s ci(x0 - 3, g - 41, 2.2, RED ? "#FF3B5C" : "#3A1420", " opacity='" tl_ "'") ci(x0 - 3, g - 33.5, 2.2, RED ? "#123A2A" : "#39FF88", " opacity='" tl_ "'")
+  lx = lightx(sl)
+  s = s re(lx - 1, g - 34, 2.4, 34, "#1A1924", " opacity='" tl_ "'") rr_(lx - 4, g - 44, 8, 14, 2, "#1A1924", " opacity='" tl_ "'")
+  s = s ci(lx, g - 41, 2.2, RED ? "#FF3B5C" : "#3A1420", " opacity='" tl_ "'") ci(lx, g - 33.5, 2.2, RED ? "#123A2A" : "#39FF88", " opacity='" tl_ "'")
   return s "</g>"
 }
-# the sign's font: the name fits 62 units (a glyph is about 0.58 em)
-function fitsize(nm,   n) { n = length(nm); if (n < 1) n = 1; return cl(int(62 / (n * 0.6) * 2) / 2, 9.5, 15) }
+# The sign: the name at 15 units when it fits, else at 14 — the least a one-cell face can be read at on a phone — and
+# a name too long even for the widest building loses its end to an ellipsis. It keeps 4.5 units off each side of the
+# building, inside the sign's frame (2 units in).
+function sign(a,   r, s) {
+  r = AW[a] - 9; s = ANAME[a]
+  AFS[a] = emw(s) * 15 <= r ? 15 : 14
+  if (emw(s) * 14 > r + 0.01) { while (length(s) > 1 && (emw(s) + emw("…")) * 14 > r) s = chop(s); sub(/ +$/, "", s); s = s "…" }
+  ASIGN[a] = s
+}
+# a name's width in em in the bold sign font: its letters as the phone draws them; a character beyond ASCII by its
+# first byte (under LC_ALL=C a string is bytes), its other bytes nothing — two bytes (accents, Cyrillic, Greek) 0.7,
+# three (CJK, kana, Hangul, the ellipsis) 1, four (emoji) 1.25
+function emw(s,   i, c, w) {
+  w = 0
+  for (i = 1; i <= length(s); i++) { c = substr(s, i, 1); if (c !~ /[\200-\277]/) w += (c in GW_) ? GW_[c] : (c ~ /[\300-\337]/ ? 0.7 : (c ~ /[\340-\357]/ ? 1 : (c ~ /[\360-\377]/ ? 1.25 : (c == " " ? 0.28 : 0.6)))) }
+  return w
+}
+# The traffic light before a building, its lights' centre: at the building's left, or at the right of a wide one — on
+# the left it would stand under the tile's lamp post (lamp_post(), 43 left of the tile's centre). The cars stop at it.
+function lightx(sl,   w) { w = SAPP[sl] != "" ? AW[SAPP[sl]] : 70; return SX[sl] - w / 2 - 7 < SX[sl] - 40 ? SX[sl] + w / 2 + 3 : SX[sl] - w / 2 - 3 }
+# the least even number not under x
+function evenup(x,   c) { c = 2 * int(x / 2); return c < x ? c + 2 : c }
+# a string less its last letter, a letter beyond ASCII whole
+function chop(s) { while (s ~ /[\200-\277]$/) s = substr(s, 1, length(s) - 1); return substr(s, 1, length(s) - 1) }
 
 # ---------------------------------------------------------------- apps: which ones, where
 # Every app's look from its bundle id: a kind of building and a colour (well-known apps in their own colour).
-function appdeck(   k) {
+function appdeck(   k, u) {
   split("#E07A5F #3D5A80 #81B29A #E9B872 #9C6ADE #5FA8D3 #EF8354 #6D9DC5 #C06C84 #4F7CAC #D4A373 #7A9E7E", PALB, " ")
   BRAND["com.apple.dt.Xcode"] = "#1C7CF4"; BRAND["com.apple.Terminal"] = "#3A3A40"; BRAND["ru.keepcoder.Telegram"] = "#2AABEE"
   BRAND["company.thebrowser.Browser"] = "#F25C7C"; BRAND["com.google.Chrome"] = "#E8B32E"; BRAND["com.apple.finder"] = "#4FA3F7"
@@ -396,6 +420,13 @@ function appdeck(   k) {
   BRAND["com.postmanlabs.mac"] = "#FF6C37"; BRAND["com.spotify.client"] = "#1DB954"; BRAND["com.apple.Safari"] = "#1E90FF"
   BRAND["com.microsoft.VSCode"] = "#007ACC"; BRAND["com.todesktop.230313mzl4w4u92"] = "#2B2B2B"; BRAND["com.mitchellh.ghostty"] = "#3B3F58"
   for (k = 32; k < 127; k++) ORD_[sprintf("%c", k)] = k
+  # the first words of a name that tell no app from another (shortname())
+  split("Adobe Affinity Apple Autodesk Corel Google JetBrains Microsoft The PDF", u, " "); for (k in u) NOTNAME_[u[k]] = 1
+  # the last words of a maker's app name that tell a build from the stable app (shortname())
+  split("Beta Dev Canary Nightly Insiders Testing", u, " "); for (k in u) CHANNEL_[u[k]] = 1
+  # the sign font's letters, in em (bold, as the phone draws them)
+  split("564 625 564 625 579 389 621 604 261 268 575 268 904 600 596 621 621 418 532 393 600 561 825 561 575 539 711 668 714 721 593 571 732 754 289 575 686 568 875 739 757 646 757 668 646 639 729 700 986 704 686 650 643 621 639 643 646 639 643 643 643 643", u, " ")
+  for (k = 1; k <= 62; k++) GW_[substr("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", k, 1)] = u[k] / 1000
   split("#35E8FF #FF2BD6 #FFB800 #7CFF4F #9D4DFF #FF4D6D", NEONP, " "); split("#6FF3FF #FF7BE8 #FFD37A", WINP, " ")
 }
 # An app's neon: its own colour made to glow (a dark brand colour takes a neon of the palette), a second neon for its
@@ -407,13 +438,31 @@ function neon(a, hsh,   c) {
   ANEON[a] = c; ANEON2[a] = NEONP[(hsh + 3) % 6 + 1]; AWINC[a] = WINP[int(hsh / 7) % 3 + 1]
 }
 function hash(s,   i, h) { h = 7; for (i = 1; i <= length(s); i++) h = (h * 31 + ORD_[substr(s, i, 1)]) % 1000003; return h }
-function shortname(n,   a, k) {
-  if (length(n) <= 9) return n
+# the name for the sign: the app's own, or of a name too long for the widest sign the name less its first words that
+# tell no app from another — a maker's ("Adobe Photoshop 2025"), "The", "PDF" — if that fits and is not a number
+# ("Microsoft 365" keeps its maker), or less a first word of one or two letters if the rest then fits ("SF Symbols";
+# "VK Messenger" keeps "VK"); else, after such words, its last word if it names a channel ("Google Chrome Canary",
+# not the stable "Chrome"; "Discord Canary" stays "Discord"), its first word if not a number ("Microsoft 365
+# Copilot"), or its last if it is a word of three letters and more — only after such words or in an ASCII name: in
+# Russian the first word is the noun ("Мониторинг системы"); of no word that fits, the name less those words, which
+# sign() cuts: "PowerP…", not "Microsof…"
+function shortname(n,   a, k, m, i, j, r) {
+  m = (AWMAX - 9) / 14
+  if (emw(n) <= m) return n
   k = split(n, a, " ")
-  if (k == 1 && length(n) <= 11) return n
-  if (k > 1 && length(a[1]) <= 9 && a[1] != "Google" && a[1] != "Microsoft") return a[1]
-  if (k > 1 && length(a[k]) <= 9) return a[k]
-  return substr(n, 1, 8) "…"
+  for (i = 1; i < k && a[i] in NOTNAME_; i++) ;
+  r = a[i]; for (j = i + 1; j <= k; j++) r = r " " a[j]
+  if (r ~ /^[0-9. ]+$/) { i = 1; r = n }
+  if (i == 1 && k > 1 && a[1] !~ /[\200-\377]/ && length(a[1]) < 3) {
+    r = a[2]; for (j = 3; j <= k; j++) r = r " " a[j]
+    if (emw(r) <= m && r !~ /^[0-9. ]+$/) return r
+    r = n
+  }
+  if (emw(r) <= m) return r
+  if (i > 1 && emw(a[k]) <= m && a[k] in CHANNEL_) return a[k]
+  if (emw(a[i]) <= m && a[i] !~ /^[0-9.]+$/) return a[i]
+  if (emw(a[k]) <= m && a[k] !~ /^[0-9.]+$/ && length(a[k]) > 2 && (i > 1 || n !~ /[\200-\377]/)) return a[k]
+  return r
 }
 # A new list of apps (most recent first): known ones keep their building; the first NSLOT get one, a new app takes a
 # free slot (downtown first, left to right), and an app pushed out of the list sinks to make room.
@@ -422,8 +471,11 @@ function commit(   i, a, s, want, hsh, h) {
     a = APPB[i]
     # an app without a colour of its own: a dark body under a bright neon of NEONP (neon()) — the look checked on an
     # old iPad; a colour of PALB would turn its neon pastel
-    if (!(a in ACOL)) { hsh = hash(a); ACOL[a] = (a in BRAND) ? BRAND[a] : ""; ATYP[a] = int(hsh / 12) % 7; AROOF[a] = int(hsh / 7) % 4; ASIDE[a] = int(hsh / 29) % 4; AWV[a] = int(hsh / 113) % 4; ABAND[a] = int(hsh / 41) % 2; ALIT[a] = int(hsh / 60) % 3 != 0; neon(a, hsh); AW[a] = 54 + 4 * (int(hsh / 180) % 6); AWIN[a] = 2 + int(hsh / 1080) % 3 }
     ANAME[a] = shortname(LN[i]); ARSS[a] = LR_[i]; RANK[a] = i
+    # its width: from its bundle id, wider when its name wants it, up to AWMAX — at that the dust and the traffic light
+    # round it still stay in its tile
+    if (!(a in ACOL)) { hsh = hash(a); ACOL[a] = (a in BRAND) ? BRAND[a] : ""; ATYP[a] = int(hsh / 12) % 7; AROOF[a] = int(hsh / 7) % 4; ASIDE[a] = int(hsh / 29) % 4; AWV[a] = int(hsh / 113) % 4; ABAND[a] = int(hsh / 41) % 2; ALIT[a] = int(hsh / 60) % 3 != 0; neon(a, hsh); AW[a] = mx(54 + 4 * (int(hsh / 180) % 6), mn(AWMAX, evenup(emw(ANAME[a]) * 14 + 9))); AWIN[a] = 2 + int(hsh / 1080) % 3 }
+    sign(a)
     # its processor, in steps (the steam), and when it last worked (its windows stay lit for a while after)
     ACPU[a] = LC[i] > 30 ? 30 : (LC[i] > 12 ? 20 : (LC[i] > 3 ? 10 : 0)); if (LC[i] > 2) AWORK[a] = T
     # a badge that grew: a courier flies to the building (once the building stands)
@@ -452,11 +504,13 @@ function commit(   i, a, s, want, hsh, h) {
 # its height: the app's memory, from one storey to the top of the quarter
 # its height: the app's memory among the apps in town — the hungriest the tallest, the lightest one storey
 function height_of(s, a,   f) { f = MLO < MHI ? (log(ARSS[a] + 1) - MLO) / (MHI - MLO) : 0.5; f = 0.12 + 0.88 * cl(f, 0, 1); return int((70 + (SMAX[s] - 70) * f) / 4 + 0.5) * 4 }
-function grow(dt,   s, d) {
+function grow(dt,   s, d, h) {
   for (s = 1; s <= NSLOT; s++) {
-    d = STGT[s] - SH[s]
+    h = SH[s]; d = STGT[s] - SH[s]
     if (d > 0) SH[s] = mn(STGT[s], SH[s] + 90 * dt); else if (d < 0) SH[s] = mx(STGT[s], SH[s] - 120 * dt)
     SH[s] = int(SH[s] + 0.5); if (SH[s] >= STGT[s]) SRISE[s] = 0
+    # it moved this tick: its last step too glides at the quick pace in every tile it spans (busy())
+    SMV[s] = SH[s] != h
     if (SH[s] == 0 && SGONE[s]) { delete SLOTOF[SAPP[s]]; SAPP[s] = ""; SGONE[s] = 0 }
   }
 }
@@ -600,7 +654,7 @@ function step(dt,   hh, j, m, n, want, jam, v, lead, gap, k, x, stop) {
     for (k = 1; k <= NCAR; k++) { n = CAR[k]; if (n == m || !ACT[n] || D[n] != D[m]) continue; gap = (X[n] - X[m]) * D[m]; if (gap > 0 && gap < lead) lead = gap }
     stop = 1e9
     # (only with road enough before it: a light at the very edge would stop the cars as they come in)
-    if (RED && D[m] > 0 && FRONTX > 160) { gap = (FRONTX - 40) - X[m]; if (gap > -2) stop = gap }
+    if (RED && D[m] > 0 && FRONTX > 160) { gap = (FRONTLX - 3) - X[m]; if (gap > -2) stop = gap }
     # the speed it wants: nought close behind a car or at the red light, gently less as it nears them
     if (lead < 38 || stop < 16) v = 0; else v *= cl(mn((lead - 38) / 50, (stop - 16) / 70), 0, 1)
     # and the speed it has: it brakes and speeds up gradually, never in one step
@@ -703,20 +757,26 @@ function d_ship(op,   d, s, n) {
   s = s (PK ? "<path d='" ELLPK "' stroke='#000'/>" : pth(sub_ell(0, 0, 48, 15, 0), li("#1A1830", 3), " stroke='#35E8FF' stroke-width='1.4'"))
   s = s (PK ? "<rect rx='1' stroke='#000'/>" : rr_(-14, 14, 28, 8, 3, li("#23212F", 3), " stroke='#6FF3FF' stroke-width='0.8'"))
   s = s (PK ? "<path d='M0 0L0 0' fill='none' stroke='#000' stroke-dasharray='1 1'/>" : "<path d='M-10 18H10' fill='none' stroke='#FFD37A' stroke-width='3' stroke-dasharray='3 3'/>")
-  s = s (PK ? "<rect rx='1' stroke='#000'/>" : rr_(-20, -8, 40, 15, 3, "#0E0D18", " stroke='#FF2BD6' stroke-width='1'"))
-  s = s "<text x='0' y='3.5' font-size='11' font-weight='bold' text-anchor='middle' fill='#FF9BEA'>" (PK ? "0" : n " AI") "</text>"
+  # the screen: its text at 14 units, the least a one-cell face can be read at on a phone
+  s = s (PK ? "<rect rx='1' stroke='#000'/>" : rr_(-24, -10, 48, 19, 3, "#0E0D18", " stroke='#FF2BD6' stroke-width='1'"))
+  s = s "<text x='0' y='4.5' font-size='14' font-weight='bold' text-anchor='middle' fill='#FF9BEA'>" (PK ? "0" : n " AI") "</text>"
   s = s ci(d * 47, 0, 2, "#FF3B5C")
   return s gout()
 }
 # One drone a session, up to ten, on three rings round the airship; the drones of a ring fly in a chain, evenly spaced.
-function drones(dt,   j, m, n, ph, r, ry, ring, k, cnt, w) {
+# The sessions change, the spacing changes: a drone coming takes its place at once (it is unseen then), one going
+# keeps its own while it hides, the rest move up to their new places gradually — in one step the phone would glide
+# them across the ring, a leaving one fading as it goes.
+function drones(dt,   j, m, n, ph, r, ry, ring, k, cnt, w, sh) {
   n = ACT[SHIP] ? mn(AGENTS, NADR) : 0
   for (j = 1; j <= NADR; j++) {
     m = ADR[j]; ring = (j - 1) % 3; k = int((j - 1) / 3)
     cnt = int((n - 1 - ring) / 3) + 1; if (cnt < 1) cnt = 1
-    w = 0.34 - 0.06 * ring; r = 62 + 16 * ring; ry = 12 + 7 * ring
-    ph = T * w * (ring == 1 ? -1 : 1) + 2 * PI * k / cnt + ring * 1.3
-    X[m] = X[SHIP] + r * cos(ph); Y[m] = Y[SHIP] + ry * sin(ph); VX[m] = VX[SHIP] - r * w * (ring == 1 ? -1 : 1) * sin(ph); D[m] = 0
+    w = (0.34 - 0.06 * ring) * (ring == 1 ? -1 : 1); r = 62 + 16 * ring; ry = 12 + 7 * ring; sh = 0
+    if (!ACT[m]) DPH[m] = 2 * PI * k / cnt
+    else if (j <= n) { sh = cl(2 * PI * k / cnt - DPH[m], -0.6 * dt, 0.6 * dt); DPH[m] += sh }
+    ph = T * w + DPH[m] + ring * 1.3
+    X[m] = X[SHIP] + r * cos(ph); Y[m] = Y[SHIP] + ry * sin(ph); VX[m] = VX[SHIP] - r * (w + (dt > 0 ? sh / dt : 0)) * sin(ph); D[m] = 0
     if (j <= n) { if (!ACT[m]) { ACT[m] = 1; OP[m] = 0 } else OP[m] = 1 }
     else if (ACT[m]) { if (OP[m] > 0) OP[m] = 0; else ACT[m] = 0 }
   }
@@ -932,7 +992,7 @@ function busy(id,   k, t, n) {
   for (k = 1; k <= NSL[id]; k++) {
     t = SLT[id, k]; n = SLN[id, k]
     if (t == 3) { if ((MK[n] != "cloud" || (CJ[n] && TST[id, n])) && (TST[id, n] || hitv(id, n))) return 1 }
-    else if (t == 2) { if (DK[n] == "bld" && SH[DS_[n]] != STGT[DS_[n]]) return 1 }
+    else if (t == 2) { if (DK[n] == "bld" && (SH[DS_[n]] != STGT[DS_[n]] || SMV[DS_[n]])) return 1 }
   }
   return 0
 }
@@ -1045,7 +1105,7 @@ function net(ib, ob, now,   dt) {
   if (NETT > 0 && now > NETT) { dt = now - NETT; NETIN = (ib - NETIB) / dt / 1024; NETOUT = (ob - NETOB) / dt / 1024; if (NETIN < 0 || NETOUT < 0) { NETIN = 0; NETOUT = 0 }; NETR = NETIN + NETOUT }
   NETIB = ib; NETOB = ob; NETT = now
 }
-function front_x(   s) { FRONTX = -1; for (s = 1; s <= NSLOT; s++) if (SAPP[s] == FRONT && FRONT != "" && SQ[s] == 0 && !SGONE[s]) FRONTX = SX[s] }
+function front_x(   s) { FRONTX = -1; for (s = 1; s <= NSLOT; s++) if (SAPP[s] == FRONT && FRONT != "" && SQ[s] == 0 && !SGONE[s]) { FRONTX = SX[s]; FRONTLX = lightx(s) } }
 # One step a tick. The invisible jump (hidden where it left, moved while hidden, shown again) takes one frame a stage:
 # with smaller steps two stages could land in one frame, and the phone would glide a car back across the street.
 function sim(dt) { T += dt; step(dt) }

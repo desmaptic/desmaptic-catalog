@@ -1,6 +1,6 @@
 {
   "id": "zoom",
-  "revision": 10,
+  "revision": 11,
   "name": "Zoom",
   "bundleIds": [
     "us.zoom.xos"
@@ -161,11 +161,11 @@
         "ru": "Конференция"
       },
       "summary": {
-        "en": "Brings the meeting forward; hold to leave it",
-        "de": "Holt das Meeting nach vorne; halten, um es zu verlassen",
-        "es": "Trae la reunión al frente; mantén pulsado para salir de ella",
-        "fr": "Met la réunion au premier plan ; maintenez pour la quitter",
-        "ru": "Выводит конференцию вперёд; удержание — выйти из неё"
+        "en": "Brings the Zoom meeting forward",
+        "de": "Holt das Zoom-Meeting nach vorne",
+        "es": "Trae al frente la reunión de Zoom",
+        "fr": "Met la réunion Zoom au premier plan",
+        "ru": "Выводит вперёд окно конференции Zoom"
       },
       "details": {
         "en": "Holding closes the meeting window, and Zoom asks whether to leave. A host can also end the meeting for all there. Zoom doesn’t ask if “Ask me to confirm when I leave a meeting” is off in its settings.",
@@ -690,11 +690,11 @@
         "ru": "Запись"
       },
       "summary": {
-        "en": "Starts recording the meeting to the cloud; hold to record on this Mac",
-        "de": "Startet die Aufzeichnung des Meetings in der Cloud; halten, um auf diesem Mac aufzuzeichnen",
-        "es": "Empieza a grabar la reunión en la nube; mantén pulsado para grabar en este Mac",
-        "fr": "Lance l’enregistrement de la réunion dans le cloud ; maintenez pour enregistrer sur ce Mac",
-        "ru": "Начинает запись конференции в облако; удержание — записывать на этот Mac"
+        "en": "Records the meeting to the cloud",
+        "de": "Zeichnet das Meeting in der Cloud auf",
+        "es": "Graba la reunión en la nube",
+        "fr": "Enregistre la réunion dans le cloud",
+        "ru": "Записывает конференцию в облако"
       },
       "details": {
         "en": "You can record as the host or with the host’s permission. If Zoom is already recording, the button says so. Works with Zoom in the background, but Zoom comes forward if it asks or tells you something first.",

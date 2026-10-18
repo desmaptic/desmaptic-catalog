@@ -20,7 +20,7 @@ started=$EPOCHREALTIME
 tmp=""
 trap '[[ -n $tmp ]] && rm -rf -- "$tmp"' EXIT
 trap 'exit 1' TERM INT HUP
-tmp=$(mktemp -d) || { print -u2 -- "Homebrew: no room for a temporary folder"; exit 1 }
+tmp=$(mktemp -d) || { print -u2 -- "Homebrew: couldn’t create a temporary folder. Check the Mac’s free disk space."; exit 1 }
 : > "$tmp/in"
 
 # call <endpoint> <json>: posts to the agent and prints its HTTP code. The token goes in through a descriptor,
@@ -96,7 +96,7 @@ first_line() {
 brew=""
 brewing=()
 need_brew() {
-  (( $#found )) || fail notFound "Homebrew is not installed: see brew.sh to install it"
+  (( $#found )) || fail notFound "Homebrew isn’t installed. You can install it from brew.sh."
   brew=$found[1]
   brewing=( env -i HOME=$HOME USER=$USER LOGNAME=$LOGNAME ${TMPDIR:+TMPDIR=$TMPDIR} PATH=$PATH
     HOMEBREW_NO_AUTO_UPDATE=1 HOMEBREW_NO_ENV_HINTS=1 HOMEBREW_NO_COLOR=1 NONINTERACTIVE=1 $brew )
@@ -111,16 +111,16 @@ run_brew() {
   limited $REPLY $brewing "$@"
   rc=$?
   (( rc == 0 )) && return 0
-  (( rc == 124 )) && fail timeout "$what took longer than this button may wait and was stopped: try again, or run brew $* in Terminal"
+  (( rc == 124 )) && fail timeout "$what took too long, so the button stopped it. Try again, or run brew $* in Terminal."
   err=$(first_line $tmp/err)
   [[ -n $err ]] || err=$(first_line $tmp/out)
   case $err in
     (*(Could\ not\ resolve\ host|Failed\ to\ connect|timed\ out|network)*)
-      fail network "$what failed: the Mac can’t reach GitHub. Check its internet connection" ;;
+      fail network "The Mac can’t reach GitHub, so $what failed. Check the Mac’s internet connection." ;;
     (*(already\ locked|is\ locked|another\ active\ Homebrew)*)
-      fail busy "Homebrew is busy with another job: try again when it ends" ;;
+      fail busy "Homebrew is busy with another task. Try again when it’s done." ;;
   esac
-  fail other "$what failed: ${err:-brew gave no reason}"
+  fail other "$what failed: ${err:-Homebrew didn’t say why}"
 }
 
 # names_after <header>: the package names $tmp/out lists under a "==> <header>…" line (one a line, as brew prints them).
@@ -142,5 +142,5 @@ n=0
 outdated() {
   run_brew 30 "brew outdated" outdated --json=v2
   n=$(jq -r '[.formulae[] | select(.pinned | not)] + .casks | length' $tmp/out 2>/dev/null)
-  [[ $n == <-> ]] || fail other "brew outdated gave no list this button can read"
+  [[ $n == <-> ]] || fail other "brew outdated gave an answer this button can’t read. Run it in Terminal to see why."
 }

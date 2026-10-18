@@ -272,10 +272,10 @@ look() {
     rc=$?                                       # 1: a detached HEAD; anything else: no repository there
     br=""; IFS= read -r br < "$tmp/out"
     if (( rc == 1 )); then
-      trouble config "The folder’s repository is on no branch: check one out, or set the branch in the button’s settings"
+      trouble config "The folder’s repository isn’t on a branch. Check one out, or set the branch in the button’s settings."
       return 0
     elif (( rc != 0 )) || [[ -z $br ]]; then
-      trouble config "The folder in the button’s settings is not a GitHub repository"
+      trouble config "The folder in the button’s settings isn’t a GitHub repository."
       return 0
     fi
   elif [[ -z $br ]]; then
@@ -319,12 +319,12 @@ look() {
   fi
   row=$(jq -rn --slurpfile push "$tmp/push" --slurpfile pr "$tmp/pull_request" "$ci_pick" 2>/dev/null)
   if [[ $row == none ]]; then
-    trouble notFound "No GitHub Actions runs for a push or a pull request on this branch yet"
+    trouble notFound "This branch has no GitHub Actions runs for a push or a pull request yet."
     return 0
   fi
   IFS=$'\t' read -r id run_status conclusion url when name <<< "$row"
   if [[ $id != <-> || $url != https://github.com/*/actions/runs/$id ]]; then
-    hitch other "GitHub gave a run the button cannot read"
+    hitch other "GitHub sent a run the button can’t read."
     return 0
   fi
   told=""

@@ -73,7 +73,7 @@ limited() {
 find_gh() {
   gh=( /opt/homebrew/bin/gh(N-*) /usr/local/bin/gh(N-*) )
   (( $#gh )) && return 1
-  REPLY="notFound The GitHub CLI is not installed: brew install gh, then gh auth login in Terminal"
+  REPLY="notFound The GitHub CLI isn’t installed. In Terminal, run brew install gh, then gh auth login."
   return 0
 }
 
@@ -83,7 +83,7 @@ resolve() {
   folder="" slug="" vcs=()
   local given=$repo dev
   [[ -n $given ]] || {
-    REPLY="config No repository set: put its folder or owner/name in the button’s settings, under Advanced"
+    REPLY="config No repository is set. Put its folder or owner/name in the button’s settings, under Advanced."
     return 0
   }
   case $given in
@@ -91,24 +91,24 @@ resolve() {
     '~/'*) given=$HOME/${given#'~/'} ;;
   esac
   if [[ $given == /* ]]; then
-    [[ -d $given ]] || { REPLY="notFound The repository folder in the button’s settings does not exist"; return 0 }
+    [[ -d $given ]] || { REPLY="notFound The repository folder in the button’s settings doesn’t exist. Check the path there."; return 0 }
     folder=${given:a}
     # gh asks the version control tool which repository a folder is. A stock Mac has only a stub that opens an
     # install dialog: it is never called, and without the Command Line Tools the button says what to install.
     dev=$(xcode-select -p 2>/dev/null)
     vcs=( ${dev:+$dev/usr/bin/git(N-*)} )
     (( $#vcs )) || {
-      REPLY="notFound A repository folder needs Apple’s Command Line Tools: install them in Terminal with xcode-select --install, or set owner/name instead"
+      REPLY="notFound A repository folder needs Apple’s Command Line Tools. Install them in Terminal with xcode-select --install, or set owner/name instead."
       return 0
     }
   elif [[ $given == [A-Za-z0-9-]##/[A-Za-z0-9._-]## ]]; then
     slug=$given
   else
-    REPLY="config The repository in the button’s settings is neither a folder (starting with / or ~/) nor owner/name"
+    REPLY="config The repository in the button’s settings is neither a folder nor owner/name. A folder starts with / or ~/."
     return 0
   fi
   if [[ -n $branch && ( $branch != [A-Za-z0-9._/+@-]## || $branch == [-/.]* ) ]]; then
-    REPLY="config The branch in the button’s settings is not a branch name"
+    REPLY="config The branch in the button’s settings isn’t a valid branch name."
     return 0
   fi
   return 1
@@ -135,31 +135,31 @@ run_gh() {
 refusal() {
   local all=$(<$tmp/err)
   if (( $1 == 124 )); then
-    REPLY="timeout GitHub did not answer in time"
+    REPLY="timeout GitHub didn’t answer in time."
   elif (( $1 == 4 )) || [[ $all == *(401\ Unauthorized|Bad\ credentials)* ]]; then
-    REPLY="auth The GitHub CLI is not signed in: run gh auth login in Terminal"
+    REPLY="auth The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   elif [[ $all == *(no\ git\ remotes|not\ a\ git\ repository|none\ of\ the\ git\ remotes|known\ GitHub\ host|could\ not\ determine)* ]]; then # not a call: gh's error text
-    REPLY="config The folder in the button’s settings is not a GitHub repository"
+    REPLY="config The folder in the button’s settings isn’t a GitHub repository."
   elif [[ $all == *(No\ default\ remote|set-default)* ]]; then
-    REPLY="config The folder’s repository has several remotes: choose GitHub’s with gh repo set-default in Terminal"
+    REPLY="config The folder’s repository has several remotes. Choose the GitHub one in Terminal with gh repo set-default."
   elif [[ $all == *[Rr]ate\ limit* ]]; then
-    REPLY="busy GitHub’s limit of questions is used up for now: the button tries again in a few minutes"
+    REPLY="busy You’ve hit GitHub’s request limit for now. The button tries again in a few minutes."
   elif [[ $all == *over\ a\ month* ]]; then
-    REPLY="other This run is too old to rerun: GitHub allows it for a month"
+    REPLY="other This run is too old to rerun. GitHub allows reruns for a month."
   elif [[ $all == *(Unable\ to\ retry|cannot\ be\ re[rt]*)* ]]; then
-    REPLY="other GitHub does not let this run be rerun"
+    REPLY="other GitHub won’t rerun this run."
   elif [[ $all == *(Could\ not\ resolve\ to\ a\ Repository|HTTP\ 404)* ]]; then
-    REPLY="notFound GitHub has no such repository that this account can see"
+    REPLY="notFound Your GitHub account can’t see this repository. Check the name, or sign in to gh with another account."
   elif [[ $all == *(Must\ have\ admin\ rights|HTTP\ 403|Resource\ not\ accessible|[Pp]ermission)* ]]; then
-    REPLY="permission This GitHub account may not do that in this repository"
+    REPLY="permission Your GitHub account isn’t allowed to do that in this repository."
   elif [[ $all == *(error\ connecting|dial\ tcp|no\ such\ host|TLS\ handshake|connection\ refused|connection\ reset|i/o\ timeout|EOF)* ]]; then
-    REPLY="network GitHub cannot be reached"
+    REPLY="network The Mac can’t reach GitHub. Check its internet connection."
   elif [[ $all == *(HTTP\ 5[0-9][0-9]|status\ code:\ 5[0-9][0-9])* ]]; then
-    REPLY="network GitHub has trouble on its side"
+    REPLY="network GitHub is having trouble right now."
   elif [[ $all == *(auth\ login|authenticat)* ]]; then
-    REPLY="auth The GitHub CLI is not signed in: run gh auth login in Terminal"
+    REPLY="auth The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   else
-    REPLY="other The GitHub CLI ended with status $1"
+    REPLY="other The GitHub CLI failed with status $1."
   fi
 }
 

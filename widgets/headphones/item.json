@@ -1,6 +1,6 @@
 {
   "id": "headphones",
-  "revision": 7,
+  "revision": 8,
   "kind": "widget",
   "title": {
     "en": "Headphones",
@@ -10,20 +10,20 @@
     "ru": "Наушники"
   },
   "summary": {
-    "en": "Battery of the headphones connected to the Mac, and for AirPods each earbud and the case",
-    "de": "Akku der mit dem Mac verbundenen Kopfhörer, bei AirPods jeder Ohrhörer und das Case einzeln",
-    "es": "La batería de los auriculares conectados al Mac y, en los AirPods, la de cada uno y la del estuche",
-    "fr": "La batterie des écouteurs connectés au Mac et, pour les AirPods, celle de chaque écouteur et du boîtier",
-    "ru": "Заряд наушников, подключённых к Mac, а у AirPods — каждого наушника и футляра"
+    "en": "How much charge is left in the headphones connected to the Mac, for AirPods in each earbud and the case",
+    "de": "Wie viel Akku die Kopfhörer am Mac noch haben, bei AirPods auch jeder Ohrhörer und das Ladecase",
+    "es": "Cuánta batería les queda a los auriculares conectados al Mac y, en los AirPods, a cada uno y al estuche",
+    "fr": "Ce qu’il reste de batterie aux écouteurs connectés au Mac et, pour des AirPods, à chaque écouteur et au boîtier",
+    "ru": "Сколько заряда осталось в подключённых к Mac наушниках, у AirPods отдельно в каждом наушнике и в футляре"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "A gauge turns pink when it’s time to charge, at 20% or less. Other headphones show one battery, or a dash if macOS doesn’t know the level. When nothing is connected, the button dims.",
-    "de": "Eine Anzeige wird pink, wenn es Zeit zum Laden ist, also bei 20 % oder weniger. Andere Kopfhörer zeigen einen Akku oder einen Strich, wenn macOS den Stand nicht kennt. Ist nichts verbunden, wird die Taste blass.",
-    "es": "Un indicador se vuelve rosa cuando toca cargar, al 20 % o menos. Otros auriculares muestran una sola batería, o una raya si macOS no conoce el nivel. Si no hay nada conectado, el botón se atenúa.",
-    "fr": "Une jauge devient rose quand il faut recharger, à 20 % ou moins. Les autres écouteurs affichent une seule batterie, ou un tiret si macOS ne connaît pas le niveau. Si rien n’est connecté, le bouton s’estompe.",
-    "ru": "Шкала становится розовой, когда пора заряжать: при 20 % и меньше. У других наушников одна шкала, а если macOS не знает заряд, вместо числа будет прочерк. Если ничего не подключено, кнопка тускнеет."
+    "en": "When a battery drops to 20% or less, its gauge turns pink. Other headphones show one battery, or a dash when the Mac doesn’t know the level. With nothing connected, the button dims.",
+    "de": "Sinkt ein Akku auf 20 % oder weniger, wird seine Anzeige pink. Andere Kopfhörer zeigen einen Akku oder einen Strich, wenn der Mac den Stand nicht kennt. Ist nichts verbunden, wird die Taste blass.",
+    "es": "Cuando una batería baja al 20 % o menos, su indicador se vuelve rosa. Otros auriculares muestran una sola batería, o una raya si el Mac no sabe el nivel. Si no hay nada conectado, el botón se atenúa.",
+    "fr": "Quand une batterie descend à 20 % ou moins, sa jauge devient rose. Les autres écouteurs affichent une seule batterie, ou un tiret si le Mac ne connaît pas le niveau. Quand rien n’est connecté, le bouton s’estompe.",
+    "ru": "Когда заряд падает до 20 % и ниже, шкала становится розовой. У других наушников одна шкала, а если Mac не знает заряд, на ней будет прочерк. Если ничего не подключено, кнопка тускнеет."
   },
   "tapAction": {
     "en": "Opens Bluetooth settings on the Mac",

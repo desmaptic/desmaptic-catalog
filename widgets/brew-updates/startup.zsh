@@ -112,7 +112,7 @@ again=600                                       # seconds a face that did not ch
 
 tmp=""
 trap '[[ -n $tmp ]] && rm -rf -- "$tmp"' EXIT
-tmp=$(mktemp -d) || { print -u2 -- "Homebrew updates: no room for a temporary folder"; exit 1 }
+tmp=$(mktemp -d) || { print -u2 -- "Homebrew updates: couldn’t create a temporary folder. Check the Mac’s free disk space."; exit 1 }
 : > "$tmp/in"
 
 # brew in a clean environment: no auto-update (the loop decides when), no hints, no colours, no questions.
@@ -168,12 +168,12 @@ count() {
   if (( rc )); then
     brew_err=$(first_line $tmp/err)
     why_kind=other why="brew outdated failed: $brew_err"
-    (( rc == 124 )) && why_kind=timeout why="brew outdated took longer than 2 minutes" brew_err="⏱ 120 s"
+    (( rc == 124 )) && why_kind=timeout why="brew outdated took more than 2 minutes. The button will try again later." brew_err="⏱ 120 s"
     return 1
   fi
   lines=( "${(@f)$(jq -r '"list", (.formulae[] | select(.pinned | not) | "formula \(.name)"), (.casks[] | "cask \(.name)")' $tmp/out 2>/dev/null)}" )
   if [[ $lines[1] != list ]]; then
-    why_kind=other why="brew outdated gave no list"
+    why_kind=other why="brew outdated gave an answer the button can’t read. Run it in Terminal to see why."
     return 1
   fi
   formulae=()
@@ -204,7 +204,7 @@ count() {
 }
 
 if [[ $1 == --count ]]; then
-  find_brew || { print -u2 -- "Homebrew is not installed"; exit 1 }
+  find_brew || { print -u2 -- "Homebrew isn’t installed"; exit 1 }
   brew=$REPLY
   count || { print -u2 -- "$why"; exit 1 }
   print -r -- "outdated: $n (formulae $#formulae, casks $(( $#casks + $#locked )))"
@@ -279,14 +279,14 @@ hitch() {
 # A failed brew update still counts by the list Homebrew has, and says so.
 look() {
   local rc fetched=""
-  find_brew || { trouble notFound "Homebrew is not installed: see brew.sh to install it"; return }
+  find_brew || { trouble notFound "Homebrew isn’t installed. You can install it from brew.sh."; return }
   brew=$REPLY
   limited 300 $brewing $brew update --quiet
   rc=$?
   if (( rc == 124 )); then
-    fetched="timeout Homebrew did not fetch its package list in 5 minutes: the count may be old"
+    fetched="timeout Homebrew couldn’t fetch its package list in 5 minutes. The count may be out of date."
   elif (( rc )); then
-    fetched="network Homebrew could not fetch its package list: $(first_line $tmp/err)"
+    fetched="network Homebrew couldn’t fetch its package list, so the count may be out of date: $(first_line $tmp/err)"
   fi
   if ! count; then
     hitch $why_kind "$why"
@@ -364,10 +364,10 @@ upgrading=0 since=0 total=0 upid=""
 start_upgrade() {
   local name
   local -a body pkgs
-  find_brew || { trouble notFound "Homebrew is not installed: see brew.sh to install it"; return }
+  find_brew || { trouble notFound "Homebrew isn’t installed. You can install it from brew.sh."; return }
   brew=$REPLY
   if ! count; then
-    notify "Homebrew ✗" "✗ brew outdated${brew_err:+$'\n'$brew_err}"
+    notify "Homebrew ✗" "✗ Couldn’t check for updates${brew_err:+$'\n'$brew_err}"
     hitch $why_kind "$why"
     return
   fi
@@ -385,7 +385,7 @@ start_upgrade() {
   for name in $casks; do pkgs+=( cask $name ); done
   zf_rm -f -- "$dir/upgrade.pid" "$dir/upgrade.now" "$dir/upgrade.done" "$dir/upgrade.end"
   if ! write_command $pkgs; then
-    trouble other "Cannot write the upgrade into $dir"
+    trouble other "The button couldn’t save the update in $dir. Check the Mac’s free disk space."
     return
   fi
   since=$EPOCHSECONDS upid=""
@@ -393,8 +393,8 @@ start_upgrade() {
   if ! env -i /usr/bin/open -b com.apple.Terminal "$dir/upgrade.command"; then
     zf_rm -f -- "$dir/running" "$dir/upgrade.command"
     notify "Homebrew ✗" "✗ Terminal"
-    tell "Terminal did not open the upgrade"
-    report other "Terminal did not open the upgrade"
+    tell "Terminal didn’t open the update. Tap the button to try again."
+    report other "Terminal didn’t open the update. Tap the button to try again."
     counted
     return
   fi
@@ -466,8 +466,8 @@ finish() {
   elif [[ $how == never ]]; then
     title="Homebrew ✗"
     body+=( "✗ Terminal" )
-    tell "Terminal did not start the upgrade in a minute"
-    report other "Terminal did not start the upgrade in a minute"
+    tell "Terminal didn’t start the update within a minute. Tap the button to try again."
+    report other "Terminal didn’t start the update within a minute. Tap the button to try again."
   fi
   for name in $locked; do body+=( "$(line_for 🔒 upgrade cask $name)" ); done
   body=( "↑ $ok" $body )
@@ -477,7 +477,7 @@ finish() {
   upgrading=0 upid=""
   awake off
   if ! find_brew; then
-    trouble notFound "Homebrew is not installed: see brew.sh to install it"
+    trouble notFound "Homebrew isn’t installed. You can install it from brew.sh."
     return
   fi
   brew=$REPLY
@@ -529,7 +529,7 @@ fresh() {
   (( EPOCHSECONDS - ${st[mtime]:-0} <= 600 ))
 }
 
-zf_mkdir -p -- "$dir" || { print -u2 -- "Homebrew updates: cannot make $dir"; exit 1 }
+zf_mkdir -p -- "$dir" || { print -u2 -- "Homebrew updates: couldn’t create $dir. Check the Mac’s free disk space."; exit 1 }
 zf_rm -f -- "$dir/upgrade" "$dir/poke"         # taps left while no loop ran: not this start's
 if [[ -r $dir/running ]]; then                  # an upgrade opened before: follow it on, or tell how it ended
   w=( ${=${"$(<$dir/running)"%%$'\n'*}} )

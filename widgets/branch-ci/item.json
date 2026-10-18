@@ -1,6 +1,6 @@
 {
   "id": "branch-ci",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "title": {
     "en": "Branch CI",
@@ -10,34 +10,34 @@
     "ru": "CI ветки"
   },
   "summary": {
-    "en": "The GitHub Actions CI of your branch’s latest commit, its workflow and how long ago it ran; hold twice to rerun failed jobs",
-    "de": "Die GitHub-Actions-CI des neuesten Commits in deinem Branch, ihr Workflow und wie lange sie her ist; zweimal halten, um fehlgeschlagene Jobs neu zu starten",
-    "es": "El CI de GitHub Actions del último commit de tu rama, su workflow y hace cuánto fue; mantén pulsado dos veces para relanzar los jobs fallidos",
-    "fr": "La CI GitHub Actions du dernier commit de votre branche, son workflow et il y a combien de temps ; maintenez deux fois pour relancer les jobs en échec",
-    "ru": "CI GitHub Actions для последнего коммита вашей ветки, его workflow и как давно он был; удержание дважды — перезапуск упавших jobs"
+    "en": "Whether CI passed on your branch’s latest commit, and how long ago",
+    "de": "Ob die CI beim neuesten Commit deines Branches geklappt hat, und wie lange das her ist",
+    "es": "Si la CI ha pasado en el último commit de tu rama, y hace cuánto",
+    "fr": "Si la CI est passée sur le dernier commit de votre branche, et il y a combien de temps",
+    "ru": "Прошёл ли CI на последнем коммите вашей ветки и как давно"
   },
   "colSpan": 2,
   "rowSpan": 1,
   "details": {
-    "en": "Whether CI passed on your branch’s latest commit, at a glance. Tap to open the run, hold twice to rerun failed jobs. Set the repository under Advanced; needs the GitHub CLI signed in.",
-    "de": "Auf einen Blick, ob die CI des neuesten Commits im Branch bestanden hat. Tippen öffnet den Lauf, zweimal halten startet Fehlgeschlagenes neu. Repository unter „Erweitert“; GitHub CLI nötig.",
-    "es": "De un vistazo, si el CI del último commit de tu rama pasó. Toca para abrir la ejecución, mantén dos veces para relanzar lo fallido. Repositorio en «Avanzado»; requiere la CLI de GitHub.",
-    "fr": "D’un coup d’œil, si la CI du dernier commit de la branche a réussi. Touchez pour ouvrir l’exécution, maintenez deux fois pour relancer les échecs. Dépôt sous « Avancé » ; CLI GitHub requise.",
-    "ru": "С одного взгляда видно, прошёл ли CI последнего коммита ветки. Нажатие открывает запуск, двойное удержание перезапускает упавшее. Репозиторий — в «Дополнительно»; нужен вход в GitHub CLI."
+    "en": "If several checks ran on that commit, the button shows the worst result. Set the repository in the button’s settings, under Advanced. It needs the GitHub CLI on the Mac, signed in to your account.",
+    "de": "Liefen auf dem Commit mehrere Checks, zeigt die Taste das schlechteste Ergebnis. Das Repository trägst du in den Einstellungen der Taste unter „Erweitert“ ein. Auf dem Mac muss die GitHub CLI mit deinem Konto angemeldet sein.",
+    "es": "Si en ese commit se ejecutaron varios checks, el botón muestra el peor resultado. Pon el repositorio en los ajustes del botón, en «Avanzado». Necesita en el Mac la CLI de GitHub con tu sesión iniciada.",
+    "fr": "Si plusieurs checks ont tourné sur ce commit, le bouton montre le pire résultat. Indiquez le dépôt dans les réglages du bouton, sous « Avancé ». Il faut la CLI GitHub sur le Mac, connectée à votre compte.",
+    "ru": "Если на этом коммите запускалось несколько проверок, кнопка покажет худший итог. Репозиторий укажите в настройках кнопки, в разделе «Дополнительно». На Mac нужен GitHub CLI, в который вы вошли под своим аккаунтом."
   },
   "tapAction": {
-    "en": "Opens the run on GitHub in the browser",
-    "de": "Öffnet den Lauf auf GitHub im Browser",
-    "es": "Abre la ejecución de GitHub en el navegador",
-    "fr": "Ouvre l’exécution sur GitHub dans le navigateur",
-    "ru": "Открывает запуск на GitHub в браузере"
+    "en": "Opens the run in the browser",
+    "de": "Öffnet den Lauf im Browser",
+    "es": "Abre la ejecución en el navegador",
+    "fr": "Ouvre l’exécution dans le navigateur",
+    "ru": "Открывает запуск в браузере"
   },
   "holdAction": {
-    "en": "Reruns the failed jobs if you hold it again within 10 seconds",
-    "de": "Startet die fehlgeschlagenen Jobs neu, wenn du die Taste innerhalb von 10 Sekunden noch einmal hältst",
-    "es": "Vuelve a ejecutar los jobs fallidos si lo mantienes pulsado otra vez en menos de 10 segundos",
-    "fr": "Relance les jobs en échec si vous le maintenez à nouveau dans les 10 secondes",
-    "ru": "Перезапускает упавшие jobs, если удержать кнопку ещё раз в течение 10 секунд"
+    "en": "Reruns what failed if you hold it again within 10 seconds",
+    "de": "Startet neu, was fehlgeschlagen ist, wenn du die Taste innerhalb von 10 Sekunden noch einmal hältst",
+    "es": "Vuelve a lanzar lo que falló si lo mantienes pulsado otra vez en menos de 10 segundos",
+    "fr": "Relance ce qui a échoué si vous le maintenez de nouveau dans les 10 secondes",
+    "ru": "Перезапускает то, что упало, если за 10 секунд удержать кнопку ещё раз"
   },
   "button": {
     "icon": {

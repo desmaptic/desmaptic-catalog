@@ -18,15 +18,15 @@ confirmed() {   # the reply, trimmed, in any case
 }
 
 if ! confirmed "$DESMAPTIC_INPUT"; then
-  print -u2 -- "Homebrew updates: nothing updated: confirm with the reply on the phone"
+  print -u2 -- "Homebrew updates: The update didn’t start. Tap the button and confirm on the phone."
   exit 1
 fi
 if [[ ! -x /opt/homebrew/bin/brew && ! -x /usr/local/bin/brew ]]; then
-  print -u2 -- "Homebrew updates: Homebrew is not installed: see brew.sh to install it"
+  print -u2 -- "Homebrew updates: Homebrew isn’t installed. You can install it from brew.sh."
   exit 1
 fi
 if [[ -e $dir/running ]]; then
-  print -u2 -- "Homebrew updates: brew upgrade is already running"
+  print -u2 -- "Homebrew updates: Packages are already updating in Terminal. Wait until it’s done."
   exit 1
 fi
-mkdir -p -- "$dir" && : > "$dir/upgrade" || { print -u2 -- "Homebrew updates: cannot write $dir"; exit 1 }
+mkdir -p -- "$dir" && : > "$dir/upgrade" || { print -u2 -- "Homebrew updates: couldn’t write to $dir. Check the Mac’s free disk space."; exit 1 }

@@ -49,13 +49,13 @@ shorten() {
 start_app() {
   app_running && return 0
   [[ -n $app ]] || return 0
-  env -i /usr/bin/open -g -b $app || fail notRunning "Tailscale did not open: open it on the Mac"
+  env -i /usr/bin/open -g -b $app || fail notRunning "Tailscale didn’t open. Open it on the Mac."
   local deadline=$(( EPOCHSECONDS + 15 ))
   while (( EPOCHSECONDS < deadline )); do
     if app_running && status fresh; then return 0; fi
     sleep 1
   done
-  fail timeout "Tailscale opened but didn’t answer in time: try again in a moment"
+  fail timeout "Tailscale opened but didn’t answer in time. Try again in a moment."
 }
 
 # accounts: reads the signed-in accounts into ids, names and current (the index of the one in use).
@@ -75,7 +75,7 @@ accounts() {
     ids+=( $id ) names+=( "$name" ) keys+=( $'\t'"$key"$'\t' )
     [[ $selected == true ]] && current=$#ids
   done
-  (( $#ids )) || fail auth "No account is signed in to Tailscale: sign in from its menu on the Mac"
+  (( $#ids )) || fail auth "No account is signed in to Tailscale. Sign in from its menu on the Mac."
 }
 
 case $action in
@@ -84,8 +84,8 @@ case $action in
     ready
     case $state in
       (Running|Starting) poke; exit 0 ;;
-      (NeedsLogin)       fail auth "Tailscale is signed out: sign in from its menu on the Mac" ;;
-      (NeedsMachineAuth) fail auth "This Mac waits for your tailnet admin to approve it in the admin console" ;;
+      (NeedsLogin)       fail auth "Tailscale is signed out. Sign in from its menu on the Mac." ;;
+      (NeedsMachineAuth) fail auth "This Mac is waiting for the admin of your Tailscale network to approve it. They can do it in Tailscale’s admin console." ;;
     esac
     keep_lan                                    # a stored exit node comes back with it
     run_ts 30 up
@@ -104,10 +104,10 @@ case $action in
 
   (exit-on)
     ready
-    [[ $state == Running ]] || fail other "Tailscale is off: turn it on first"
+    [[ $state == Running ]] || fail other "Tailscale is off. Turn it on first."
     [[ -z ${node-} && $exit_name != - ]] && { poke; exit 0; }   # one is in use already: auto:any would replace it
     if [[ -z ${node-} ]] && (( offers == 0 )); then
-      fail notFound "No device in your tailnet offers to be an exit node: turn it on in that device’s Tailscale, then approve it in the admin console"
+      fail notFound "None of your devices is set up as an exit node. Turn on “Run as Exit Node” in Tailscale on one of them, then approve it in the admin console."
     fi
     run_ts 15 set "--exit-node=${node:-auto:any}" --exit-node-allow-lan-access=true
     rc=$?
@@ -115,7 +115,7 @@ case $action in
       err=$(first_line $tmp/err)
       case $err in
         (*(not\ advertising|ambiguous|no\ node\ found|invalid\ value|unknown\ node)*)
-          fail config "Tailscale can’t use “${node:-auto:any}” as the exit node: $err. Set another one in the button’s settings" ;;
+          fail config "Tailscale can’t use “${node:-auto:any}” as the exit node. It says “$err”. Choose another one in the button’s settings." ;;
       esac
       ts_refusal $rc "tailscale set"
       fail ${REPLY%% *} "${REPLY#* }"
@@ -132,7 +132,7 @@ case $action in
   (account)
     ready
     accounts
-    (( current )) || fail other "Tailscale didn’t say which account is in use"
+    (( current )) || fail other "Tailscale didn’t say which account is in use. Check its menu on the Mac."
     shorten "${names[current]}"
     flash 3 "#32D74B" person.crop.circle "$REPLY" ;;
 
@@ -144,9 +144,9 @@ case $action in
       for (( i = 1; i <= $#ids; i++ )); do
         [[ $keys[i] == *$'\t'"${(L)account}"$'\t'* ]] && { target=$i; break }
       done
-      (( target )) || fail config "No signed-in Tailscale account is “$account”: sign it in from Tailscale’s menu on the Mac, or change the button’s settings"
+      (( target )) || fail config "Tailscale has no signed-in account called “$account”. Sign in to it from Tailscale’s menu on the Mac, or change the button’s settings."
     else
-      (( $#ids > 1 )) || fail config "Only one account is signed in to Tailscale: add another from its menu on the Mac"
+      (( $#ids > 1 )) || fail config "Only one account is signed in to Tailscale. Add another from its menu on the Mac."
       target=$(( current % $#ids + 1 ))
     fi
     shorten "${names[target]}"
@@ -178,7 +178,7 @@ case $action in
           fi ;;
       esac
     done
-    [[ -n $relay ]] || fail network "Tailscale reached none of its relay servers: check the Mac’s internet connection"
+    [[ -n $relay ]] || fail network "Tailscale couldn’t reach any of its relay servers. Check the Mac’s internet connection."
     mark() { [[ $1 == (true|yes*) ]] && print -n ✓ || print -n ✗; }
     report="UDP $(mark $udp) · IPv4 $(mark $v4) · IPv6 $(mark $v6) · $relay${ms:+ $ms ms}"
     call notify "$(jq -nc --arg c "$cell" --arg b "$report" '{title: "Tailscale", body: $b, targets: ["phone"], cellId: $c}')" >/dev/null

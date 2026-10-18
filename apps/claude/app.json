@@ -1,6 +1,6 @@
 {
   "id": "claude",
-  "revision": 8,
+  "revision": 9,
   "name": "Claude",
   "bundleIds": ["com.anthropic.claudefordesktop"],
   "category": "ai",
@@ -9,11 +9,11 @@
       "id": "new-chat",
       "title": {"en": "New Chat", "de": "Neuer Chat", "es": "Nuevo chat", "fr": "Nouvelle conversation", "ru": "Новый чат"},
       "summary": {
-        "en": "Starts a new chat; hold for an incognito one",
-        "de": "Startet einen neuen Chat; halten für einen Inkognito-Chat",
-        "es": "Empieza un chat nuevo; mantén pulsado para uno de incógnito",
-        "fr": "Lance une nouvelle conversation ; maintenez pour une conversation incognito",
-        "ru": "Новый чат; удержание — чат инкогнито"
+        "en": "A fresh chat with Claude",
+        "de": "Ein neuer, leerer Chat mit Claude",
+        "es": "Un chat con Claude desde cero",
+        "fr": "Une conversation toute neuve avec Claude",
+        "ru": "Начинает новый чат с Claude"
       },
       "details": {
         "en": "The new chat opens even when you’re in Code or Cowork, and even with Claude in the background. If Claude is closed, a tap starts it. The hold needs Claude in front.",
@@ -333,11 +333,11 @@
       "id": "next-chat",
       "title": {"en": "Next Chat", "de": "Nächster Chat", "es": "Chat siguiente", "fr": "Conversation suivante", "ru": "Следующий чат"},
       "summary": {
-        "en": "Goes to the next chat; hold for the previous one",
-        "de": "Springt zum nächsten Chat; halten für den vorherigen",
-        "es": "Va al chat siguiente; mantén pulsado para el anterior",
-        "fr": "Passe à la conversation suivante ; maintenez pour la précédente",
-        "ru": "Следующий чат; удержание — предыдущий"
+        "en": "Flips through your chats one at a time",
+        "de": "Geht deine Chats einen nach dem anderen durch",
+        "es": "Recorre tus chats uno a uno",
+        "fr": "Parcourt vos conversations une à une",
+        "ru": "Листает ваши чаты по одному"
       },
       "details": {
         "en": "In Cowork it steps through tasks, and in Code through sessions. Clicks Claude’s Go menu, so it works on any keyboard layout. Needs Claude in front.",

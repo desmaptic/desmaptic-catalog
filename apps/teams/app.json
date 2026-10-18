@@ -1,6 +1,6 @@
 {
   "id": "teams",
-  "revision": 8,
+  "revision": 9,
   "name": "Microsoft Teams",
   "bundleIds": ["com.microsoft.teams2"],
   "category": "communication",
@@ -235,11 +235,11 @@
         "ru": "Собрание"
       },
       "summary": {
-        "en": "Brings the Teams meeting window forward; hold to leave the meeting",
-        "de": "Holt das Fenster der Teams-Besprechung nach vorne; halten, um die Besprechung zu verlassen",
-        "es": "Trae al frente la ventana de la reunión de Teams; mantén pulsado para salir de la reunión",
-        "fr": "Met la fenêtre de la réunion Teams au premier plan ; maintenez pour quitter la réunion",
-        "ru": "Выводит вперёд окно собрания Teams; удержание — выйти из собрания"
+        "en": "Brings the Teams meeting window forward",
+        "de": "Holt das Fenster der Teams-Besprechung nach vorne",
+        "es": "Trae al frente la ventana de la reunión de Teams",
+        "fr": "Met la fenêtre de la réunion Teams au premier plan",
+        "ru": "Выводит вперёд окно собрания Teams"
       },
       "details": {
         "en": "A long press takes you out of the meeting right away, with no confirmation. The meeting goes on for the others, but a one-on-one call ends. To end the meeting for everyone, use Teams itself.",

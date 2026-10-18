@@ -8,7 +8,7 @@ if [[ -n $own && -f $own/where ]]; then
   for line in ${(f)"$(<$own/where)"}; do where[${line%%=*}]=${line#*=}; done
 fi
 folder=${where[folder]} slug=${where[slug]}
-[[ -n $folder || -n $slug ]] || fail config "The button does not know the repository yet: set it in this button’s settings, under Advanced"
+[[ -n $folder || -n $slug ]] || fail config "The button doesn’t know the repository yet. Set it in the button’s settings, under Advanced."
 run_gh 20 browse -n
 rc=$?
 if (( rc != 0 )); then

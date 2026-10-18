@@ -1,6 +1,6 @@
 {
   "id": "world-clock",
-  "revision": 6,
+  "revision": 7,
   "kind": "widget",
   "title": {
     "en": "World Clock",
@@ -10,11 +10,11 @@
     "ru": "Мировое время"
   },
   "summary": {
-    "en": "The time in another city and the offset from your Mac; tap for the next one",
-    "de": "Die Uhrzeit in einer anderen Stadt und der Zeitunterschied zum Mac; tippen für die nächste",
-    "es": "La hora en otra ciudad y la diferencia con tu Mac; toca para cambiar de ciudad",
-    "fr": "L’heure d’une autre ville et le décalage avec votre Mac ; touchez pour la suivante",
-    "ru": "Время в другом городе и разница с часами Mac; нажмите, чтобы сменить город"
+    "en": "The time in another city and the time difference from your Mac",
+    "de": "Die Uhrzeit in einer anderen Stadt und der Zeitunterschied zum Mac",
+    "es": "La hora en otra ciudad y la diferencia con tu Mac",
+    "fr": "L’heure dans une autre ville et le décalage avec votre Mac",
+    "ru": "Время в другом городе и разница с часами Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,

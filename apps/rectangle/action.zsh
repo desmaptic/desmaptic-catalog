@@ -23,13 +23,13 @@ if [[ $(lsappinfo info -only pid -app com.knollsoft.Rectangle 2>/dev/null) != *'
     const url = $.NSWorkspace.sharedWorkspace.URLForApplicationWithBundleIdentifier(argv[0]);
     return url.isNil() ? "" : url.path.js;
   }' com.knollsoft.Rectangle 2>/dev/null)
-  [[ $app == /* ]] || { print -u2 -- "Rectangle is not installed: get it free at rectangleapp.com"; exit 1 }
-  print -u2 -- "Rectangle is not running: open it on the Mac"
+  [[ $app == /* ]] || { print -u2 -- "Rectangle isn’t installed. Get it free at rectangleapp.com."; exit 1 }
+  print -u2 -- "Rectangle isn’t running. Open it on the Mac."
   exit 1
 fi
 
 # -b: to Rectangle itself, not to whatever else may have claimed rectangle:// links.
 # env -i: an app this starts gets the account's own environment, as from the Dock, not the agent's token.
 env -i /usr/bin/open -g -b com.knollsoft.Rectangle "rectangle://execute-action?name=$action" \
-  || { print -u2 -- "Rectangle did not take the link"; exit 1 }
+  || { print -u2 -- "Rectangle didn’t take the command. Try again."; exit 1 }
 exit 0

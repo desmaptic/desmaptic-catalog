@@ -113,7 +113,7 @@ find_cli() {
 
 # need_cli: find_cli, or the press ends saying what to install.
 need_cli() {
-  find_cli || fail notFound "Tailscale is not installed: get it from tailscale.com or the App Store, then sign in"
+  find_cli || fail notFound "Tailscale isn’t installed. Get it from tailscale.com or the App Store, then sign in."
 }
 
 # app_running: 0 while the Tailscale app runs (or there is no app to ask about: the CLI's own service then).
@@ -135,19 +135,19 @@ ts_refusal() {
   local err=$(first_line $tmp/err)
   [[ -n $err ]] || err=$(first_line $tmp/out)
   case $1 in
-    (124) REPLY="timeout Tailscale did not answer in time" ;;
+    (124) REPLY="timeout Tailscale didn’t answer in time. Try again in a moment." ;;
     (*)   case $err in
             (*(failed\ to\ connect\ to\ local\ Tailscale|is\ Tailscale\ running|Tailscale\ is\ not\ running)*)
-              REPLY="notRunning Tailscale is not running: open it on the Mac" ;;
+              REPLY="notRunning Tailscale isn’t open. Open it on the Mac." ;;
             (*reason\ required*)
-              REPLY="permission Your organization asks for a reason to turn Tailscale off: turn it off from Tailscale’s menu on the Mac, which asks for one" ;;
+              REPLY="permission Your organization wants a reason before Tailscale is turned off. Turn it off from Tailscale’s menu on the Mac, where you can give one." ;;
             (*always-on*)
-              REPLY="permission Your organization keeps Tailscale always on: it can’t be turned off" ;;
+              REPLY="permission Your organization keeps Tailscale always on. It can’t be turned off." ;;
             (*accept-risk*)
-              REPLY="other Tailscale wants you to confirm this on the Mac: ${err}" ;;
+              REPLY="other Tailscale wants you to confirm this on the Mac. It says “${err}”." ;;
             (*(not\ logged\ in|NeedsLogin|log\ in)*)
-              REPLY="auth Tailscale is signed out: sign in from its menu on the Mac" ;;
-            (*) REPLY="other $2: ${err:-no answer}" ;;
+              REPLY="auth Tailscale is signed out. Sign in from its menu on the Mac." ;;
+            (*) REPLY="other Tailscale couldn’t do it.${err:+ It says “$err”.}" ;;
           esac ;;
   esac
 }
@@ -184,7 +184,7 @@ status() {
         | if (.DNSName // "") != "" then (.DNSName | split(".")[0]) else (.HostName // "") end][0] // "")
     ] | map(if . == "" then "-" else . end) | join(" ")' "$tmp/out" 2>/dev/null)
   read -r state online exit_online offers exit_name <<< "$row"
-  [[ -n $state && $state != - ]] || { REPLY="other Tailscale gave a status this button cannot read"; return 1; }
+  [[ -n $state && $state != - ]] || { REPLY="other This button couldn’t read Tailscale’s status. Check Tailscale’s menu on the Mac."; return 1; }
   if [[ -n $shared ]]; then
     zf_mkdir -p "$shared" 2>/dev/null
     print -rl -- $asked "$row" > "$shared/status.$$" 2>/dev/null && mv -f "$shared/status.$$" "$shared/status" 2>/dev/null
@@ -225,7 +225,7 @@ over_tailscale() {
 guard() {
   over_tailscale
   case $? in
-    (0) fail permission "Your phone reaches this Mac through Tailscale: $1 would cut it off, and it couldn’t undo it. Turn Tailscale off on the phone to connect over Wi-Fi first, or do it on the Mac" ;;
-    (2) fail other "This button couldn’t tell whether your phone reaches the Mac through Tailscale, so it did nothing: do it on the Mac" ;;
+    (0) fail permission "Your phone reaches this Mac through Tailscale, and $1 would cut it off for good. Turn Tailscale off on the phone to connect over Wi-Fi, or do it on the Mac." ;;
+    (2) fail other "This button couldn’t tell whether your phone reaches the Mac through Tailscale, so it did nothing. Do it on the Mac." ;;
   esac
 }

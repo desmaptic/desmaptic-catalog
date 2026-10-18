@@ -1,6 +1,6 @@
 {
   "id": "homebrew",
-  "revision": 1,
+  "revision": 2,
   "name": "Homebrew",
   "commands": ["brew"],
   "minAgentVersion": "2.1.1",
@@ -16,25 +16,25 @@
         "ru": "Обновить Homebrew"
       },
       "summary": {
-        "en": "Fetches Homebrew’s latest package list and shows how many packages are out of date",
-        "de": "Holt die neueste Paketliste von Homebrew und zeigt, wie viele Pakete veraltet sind",
-        "es": "Descarga la lista de paquetes más reciente de Homebrew y muestra cuántos están desactualizados",
-        "fr": "Récupère la dernière liste de paquets de Homebrew et montre combien sont obsolètes",
-        "ru": "Загружает свежий список пакетов Homebrew и показывает, сколько из них устарело"
+        "en": "Updates Homebrew itself and shows how many packages can be updated",
+        "de": "Bringt Homebrew selbst auf den neuesten Stand und zeigt, wie viele Pakete ein Update haben",
+        "es": "Pone al día el propio Homebrew y te dice cuántos paquetes tienen actualización",
+        "fr": "Met à jour Homebrew lui-même et montre combien de paquets ont une nouvelle version",
+        "ru": "Обновляет сам Homebrew и показывает, сколько пакетов можно обновить"
       },
       "details": {
-        "en": "Changes no package: Homebrew Updates next to it does that. A check mark means everything is up to date.",
-        "de": "Ändert kein Paket: Das macht „Homebrew-Updates“ daneben. Ein Häkchen heißt, alles ist aktuell.",
-        "es": "No cambia ningún paquete: eso lo hace «Actualizaciones de Homebrew», al lado. Una marca de verificación indica que todo está al día.",
-        "fr": "Ne modifie aucun paquet : c’est le rôle de « Mises à jour Homebrew », juste à côté. Une coche signifie que tout est à jour.",
-        "ru": "Пакеты не меняет: это делает соседняя кнопка «Обновления Homebrew». Галочка значит, что всё уже обновлено."
+        "en": "This button doesn’t touch your packages. The one next to it updates them. When there’s nothing to update, you’ll see a check mark.",
+        "de": "Deine Pakete lässt diese Taste in Ruhe. Um die kümmert sich die Taste daneben. Gibt es nichts zu aktualisieren, erscheint ein Häkchen.",
+        "es": "Este botón no toca los paquetes. Los actualiza el de al lado. Si no hay nada que actualizar, aparece una marca.",
+        "fr": "Ce bouton ne touche pas aux paquets. C’est celui d’à côté qui les met à jour. S’il n’y a rien à mettre à jour, une coche s’affiche.",
+        "ru": "Сами пакеты эта кнопка не трогает, их обновляет соседняя. Если обновлять нечего, на кнопке появится галочка."
       },
       "tapAction": {
-        "en": "Runs brew update, then counts the outdated packages",
-        "de": "Führt brew update aus und zählt dann die veralteten Pakete",
-        "es": "Ejecuta brew update y luego cuenta los paquetes desactualizados",
-        "fr": "Lance brew update, puis compte les paquets obsolètes",
-        "ru": "Запускает brew update и считает устаревшие пакеты"
+        "en": "Updates Homebrew, then counts the packages you can update",
+        "de": "Aktualisiert Homebrew und zählt dann die Pakete, für die es ein Update gibt",
+        "es": "Actualiza Homebrew y cuenta los paquetes que tienen actualización",
+        "fr": "Met à jour Homebrew, puis compte les paquets à mettre à jour",
+        "ru": "Обновляет Homebrew и считает пакеты, которые можно обновить"
       },
       "button": {
         "icon": {"sfSymbol": {"name": "arrow.clockwise"}},
@@ -52,32 +52,32 @@
         "ru": "Почистить"
       },
       "summary": {
-        "en": "Shows how much space old package versions and downloads take; hold to remove them",
-        "de": "Zeigt, wie viel Platz alte Paketversionen und Downloads belegen; halten, um sie zu entfernen",
-        "es": "Muestra cuánto espacio ocupan las versiones antiguas y las descargas; mantén pulsado para eliminarlas",
-        "fr": "Montre l’espace pris par les anciennes versions et les téléchargements ; maintenez pour les supprimer",
-        "ru": "Показывает, сколько места занимают старые версии пакетов и загрузки; удержание — удалить их"
+        "en": "How much space you’d free by removing old package versions",
+        "de": "Wie viel Platz frei wird, wenn alte Paketversionen weg sind",
+        "es": "Cuánto espacio recuperas si borras las versiones antiguas de los paquetes",
+        "fr": "L’espace que vous récupérez en supprimant les anciennes versions des paquets",
+        "ru": "Сколько места освободится, если убрать старые версии пакетов"
       },
       "details": {
-        "en": "The installed versions stay. A check mark means there’s nothing to remove.",
-        "de": "Die installierten Versionen bleiben. Ein Häkchen heißt, es gibt nichts zu entfernen.",
-        "es": "Las versiones instaladas se quedan. Una marca de verificación indica que no hay nada que eliminar.",
-        "fr": "Les versions installées restent. Une coche signifie qu’il n’y a rien à supprimer.",
-        "ru": "Установленные версии остаются. Галочка значит, что удалять нечего."
+        "en": "This also covers Homebrew’s old downloads. The versions you use stay. When there’s nothing to remove, you’ll see a check mark.",
+        "de": "Alte Downloads von Homebrew zählen mit. Die Versionen, die du nutzt, bleiben. Gibt es nichts zu entfernen, erscheint ein Häkchen.",
+        "es": "También cuentan las descargas antiguas de Homebrew. Las versiones que usas se quedan. Si no hay nada que borrar, aparece una marca.",
+        "fr": "Les anciens téléchargements de Homebrew comptent aussi. Les versions que vous utilisez restent. S’il n’y a rien à supprimer, une coche s’affiche.",
+        "ru": "Сюда входят и старые загрузки Homebrew. Версии, которыми вы пользуетесь, остаются. Если удалять нечего, на кнопке появится галочка."
       },
       "tapAction": {
-        "en": "Shows how much brew cleanup would free, removing nothing",
-        "de": "Zeigt, wie viel brew cleanup freigeben würde, ohne etwas zu entfernen",
-        "es": "Muestra cuánto liberaría brew cleanup, sin eliminar nada",
-        "fr": "Montre ce que brew cleanup libérerait, sans rien supprimer",
-        "ru": "Показывает, сколько освободит brew cleanup, ничего не удаляя"
+        "en": "Shows how much space you’d free, without removing anything",
+        "de": "Zeigt, wie viel Platz frei würde, und entfernt dabei nichts",
+        "es": "Muestra cuánto espacio liberarías, sin borrar nada",
+        "fr": "Indique l’espace que vous libéreriez, sans rien supprimer",
+        "ru": "Показывает, сколько места освободится, но ничего не удаляет"
       },
       "holdAction": {
-        "en": "⚠️ Removes old versions and downloads with brew cleanup",
-        "de": "⚠️ Entfernt alte Versionen und Downloads mit brew cleanup",
-        "es": "⚠️ Elimina las versiones antiguas y las descargas con brew cleanup",
-        "fr": "⚠️ Supprime les anciennes versions et les téléchargements avec brew cleanup",
-        "ru": "⚠️ Удаляет старые версии и загрузки командой brew cleanup"
+        "en": "⚠️ Removes old versions and downloads, then shows how much space you got back",
+        "de": "⚠️ Entfernt alte Versionen und Downloads und zeigt, wie viel Platz frei geworden ist",
+        "es": "⚠️ Borra las versiones y descargas antiguas y muestra cuánto espacio has recuperado",
+        "fr": "⚠️ Supprime les anciennes versions et les téléchargements, puis indique l’espace récupéré",
+        "ru": "⚠️ Удаляет старые версии и загрузки и показывает, сколько места освободилось"
       },
       "button": {
         "icon": {"sfSymbol": {"name": "trash"}},
@@ -96,32 +96,32 @@
         "ru": "Лишние пакеты"
       },
       "summary": {
-        "en": "Shows how many packages were installed only for others and are no longer needed; hold to remove them",
-        "de": "Zeigt, wie viele Pakete nur für andere installiert wurden und nicht mehr gebraucht werden; halten, um sie zu entfernen",
-        "es": "Muestra cuántos paquetes se instalaron solo para otros y ya no hacen falta; mantén pulsado para eliminarlos",
-        "fr": "Montre combien de paquets installés pour d’autres ne servent plus ; maintenez pour les supprimer",
-        "ru": "Показывает, сколько пакетов ставились только для других и больше не нужны; удержание — удалить их"
+        "en": "How many packages came along for others and are now left over",
+        "de": "Wie viele Pakete nur für andere mitkamen und jetzt übrig sind",
+        "es": "Cuántos paquetes vinieron con otros y ahora sobran",
+        "fr": "Combien de paquets sont venus avec d’autres et ne servent plus",
+        "ru": "Сколько пакетов Homebrew ставил ради других, а теперь они не нужны"
       },
       "details": {
-        "en": "The phone gets their names. Packages you installed yourself are never among them.",
-        "de": "Das Telefon bekommt ihre Namen. Pakete, die du selbst installiert hast, sind nie darunter.",
-        "es": "El teléfono recibe sus nombres. Los paquetes que instalaste tú nunca están entre ellos.",
-        "fr": "Le téléphone reçoit leurs noms. Les paquets que vous avez installés vous-même n’en font jamais partie.",
-        "ru": "Их названия придут на телефон. Пакетов, которые вы ставили сами, среди них не бывает."
+        "en": "Packages you installed yourself never end up here. When there’s nothing left over, you’ll see a check mark.",
+        "de": "Pakete, die du selbst installiert hast, landen hier nie. Ist nichts übrig, erscheint ein Häkchen.",
+        "es": "Los paquetes que instalaste tú nunca acaban aquí. Si no sobra ninguno, aparece una marca.",
+        "fr": "Les paquets que vous avez installés vous-même n’y figurent jamais. S’il n’y en a aucun, une coche s’affiche.",
+        "ru": "Пакеты, которые вы ставили сами, сюда никогда не попадают. Если лишних нет, на кнопке появится галочка."
       },
       "tapAction": {
-        "en": "Counts what brew autoremove would remove and names them, removing nothing",
-        "de": "Zählt, was brew autoremove entfernen würde, und nennt die Pakete, ohne etwas zu entfernen",
-        "es": "Cuenta lo que eliminaría brew autoremove y lo nombra, sin eliminar nada",
-        "fr": "Compte ce que brew autoremove supprimerait et le nomme, sans rien supprimer",
-        "ru": "Считает, что удалит brew autoremove, и называет пакеты, ничего не удаляя"
+        "en": "Counts them and sends you their names, without removing anything",
+        "de": "Zählt sie und schickt dir ihre Namen, ohne etwas zu entfernen",
+        "es": "Los cuenta y te envía sus nombres, sin borrar nada",
+        "fr": "Les compte et vous envoie leurs noms, sans rien supprimer",
+        "ru": "Считает их и присылает названия, но ничего не удаляет"
       },
       "holdAction": {
-        "en": "⚠️ Uninstalls them with brew autoremove",
-        "de": "⚠️ Deinstalliert sie mit brew autoremove",
-        "es": "⚠️ Los desinstala con brew autoremove",
-        "fr": "⚠️ Les désinstalle avec brew autoremove",
-        "ru": "⚠️ Удаляет их командой brew autoremove"
+        "en": "⚠️ Uninstalls them and sends you their names",
+        "de": "⚠️ Deinstalliert sie und schickt dir ihre Namen",
+        "es": "⚠️ Los desinstala y te envía sus nombres",
+        "fr": "⚠️ Les désinstalle et vous envoie leurs noms",
+        "ru": "⚠️ Удаляет их и присылает названия"
       },
       "permissions": ["notifications"],
       "button": {
@@ -141,25 +141,25 @@
         "ru": "Службы"
       },
       "summary": {
-        "en": "Lists Homebrew’s background services and which of them run",
-        "de": "Listet die Hintergrunddienste von Homebrew auf und welche davon laufen",
-        "es": "Enumera los servicios en segundo plano de Homebrew y cuáles están en marcha",
-        "fr": "Liste les services d’arrière-plan de Homebrew et ceux qui tournent",
-        "ru": "Перечисляет фоновые службы Homebrew и показывает, какие из них работают"
+        "en": "Which Homebrew services are running",
+        "de": "Welche Homebrew-Dienste gerade laufen",
+        "es": "Qué servicios de Homebrew están en marcha",
+        "fr": "Les services Homebrew qui tournent en ce moment",
+        "ru": "Какие службы Homebrew сейчас работают"
       },
       "details": {
-        "en": "The button shows how many services run out of all of them. The phone gets the list, with a mark for each one that runs, has stopped or has failed.",
-        "de": "Die Taste zeigt, wie viele Dienste von allen laufen. Das Telefon bekommt die Liste, mit einem Zeichen für jeden, der läuft, gestoppt ist oder fehlgeschlagen ist.",
-        "es": "El botón muestra cuántos servicios están en marcha del total. El teléfono recibe la lista, con una marca para cada uno que está en marcha, detenido o con error.",
-        "fr": "Le bouton montre combien de services tournent sur le total. Le téléphone reçoit la liste, avec une marque pour chacun qui tourne, est arrêté ou a échoué.",
-        "ru": "На кнопке — сколько служб работает из всех. На телефон придёт список с отметкой у каждой: работает, остановлена или завершилась с ошибкой."
+        "en": "For a moment the button shows how many are running out of all of them, like 2/5. In the list on the phone, you can see which ones are running, stopped or failed.",
+        "de": "Die Taste zeigt kurz, wie viele von allen laufen, etwa 2/5. In der Liste auf dem Telefon siehst du, welche laufen, welche gestoppt sind und welche einen Fehler haben.",
+        "es": "El botón muestra un momento cuántos están en marcha del total, por ejemplo 2/5. En la lista del teléfono ves cuáles están en marcha, detenidos o con error.",
+        "fr": "Le bouton indique un instant combien tournent sur le total, par exemple 2/5. Dans la liste sur le téléphone, vous voyez lesquels tournent, sont arrêtés ou ont échoué.",
+        "ru": "На кнопке ненадолго появится, сколько служб работает из всех, например 2/5. В списке на телефоне видно, какие работают, какие остановлены, а какие завершились с ошибкой."
       },
       "tapAction": {
-        "en": "Runs brew services list and sends it to the phone",
-        "de": "Führt brew services list aus und schickt die Liste ans Telefon",
-        "es": "Ejecuta brew services list y envía la lista al teléfono",
-        "fr": "Lance brew services list et envoie la liste au téléphone",
-        "ru": "Запускает brew services list и присылает список на телефон"
+        "en": "Counts the running services and sends you the list",
+        "de": "Zählt die laufenden Dienste und schickt dir die Liste",
+        "es": "Cuenta los servicios en marcha y te envía la lista",
+        "fr": "Compte les services qui tournent et vous envoie la liste",
+        "ru": "Считает работающие службы и присылает список"
       },
       "permissions": ["notifications"],
       "button": {
@@ -180,18 +180,18 @@
         "ru": "Homebrew"
       },
       "summary": {
-        "en": "Update Homebrew and its packages, free up space and check its services",
-        "de": "Homebrew und seine Pakete aktualisieren, Platz freigeben und die Dienste prüfen",
-        "es": "Actualiza Homebrew y sus paquetes, libera espacio y revisa sus servicios",
-        "fr": "Mettez à jour Homebrew et ses paquets, libérez de l’espace et vérifiez ses services",
-        "ru": "Обновление Homebrew и пакетов, очистка места и проверка служб"
+        "en": "Update Homebrew and its packages, free up space and keep an eye on its services",
+        "de": "Homebrew und die Pakete aktualisieren, Platz schaffen und die Dienste im Blick behalten",
+        "es": "Actualiza Homebrew y sus paquetes, libera espacio y echa un ojo a los servicios",
+        "fr": "Mettez à jour Homebrew et ses paquets, libérez de l’espace et gardez un œil sur les services",
+        "ru": "Обновляйте Homebrew и пакеты, освобождайте место и следите за службами"
       },
       "details": {
-        "en": "Needs Homebrew from brew.sh. Removing anything takes a long press, and upgrading asks first.",
-        "de": "Braucht Homebrew von brew.sh. Entfernen geht nur mit langem Drücken, und vor dem Aktualisieren wird nachgefragt.",
-        "es": "Necesita Homebrew de brew.sh. Para eliminar algo hay que mantener pulsado, y antes de actualizar se pregunta.",
-        "fr": "Il faut Homebrew de brew.sh. Supprimer demande un appui long, et la mise à niveau demande confirmation.",
-        "ru": "Нужен Homebrew с brew.sh. Удаление — только удержанием, а перед обновлением пакетов кнопка спрашивает подтверждение."
+        "en": "You’ll need Homebrew from brew.sh. A tap never removes anything, and Homebrew Updates asks before it updates your packages. Disk Free shows how much space is left.",
+        "de": "Du brauchst Homebrew von brew.sh. Beim Tippen entfernen die Tasten nie etwas, und „Homebrew-Updates“ fragt nach, bevor es deine Pakete aktualisiert. „Freier Speicher“ zeigt, wie viel Platz noch da ist.",
+        "es": "Necesitas Homebrew, de brew.sh. Al tocarlos, los botones nunca borran nada, y «Actualizaciones de Homebrew» te pregunta antes de actualizar los paquetes. «Espacio libre» muestra cuánto sitio queda.",
+        "fr": "Il vous faut Homebrew, disponible sur brew.sh. Quand vous touchez un bouton, il ne supprime jamais rien, et « Mises à jour Homebrew » vous demande confirmation avant de mettre à jour les paquets. « Espace libre » indique la place qui reste.",
+        "ru": "Нужен Homebrew с сайта brew.sh. Если просто нажать кнопку, она ничего не удалит, а виджет «Обновления Homebrew» спросит, прежде чем обновлять пакеты. «Свободно на диске» покажет, сколько осталось места."
       },
       "bindByDefault": false,
       "placements": [

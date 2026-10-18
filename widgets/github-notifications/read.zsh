@@ -15,7 +15,7 @@ fail() {
   exit 1
 }
 
-[[ -n $own ]] || fail permission "The button has no folder for its state in the agent"
+[[ -n $own ]] || fail permission "The button has nowhere to save its state on the Mac."
 gh_found || fail ${REPLY%% *} "${REPLY#* }"
 said=""
 [[ -f $own/problem ]] && IFS= read -r said < "$own/problem" 2>/dev/null
@@ -24,7 +24,7 @@ said=""
 stamp armed; armed=$REPLY
 if (( armed == 0 || EPOCHREALTIME - armed > confirm )); then
   zf_mkdir -p "$own" 2>/dev/null
-  print -r -- $EPOCHREALTIME > "$own/armed" 2>/dev/null || fail permission "The button cannot keep its state in the agent’s folder"
+  print -r -- $EPOCHREALTIME > "$own/armed" 2>/dev/null || fail permission "The button can’t save its state on the Mac."
   exit 0
 fi
 zf_rm -f "$own/armed" 2>/dev/null
@@ -34,7 +34,7 @@ since=$(date -u -r ${armed%.*} '+%Y-%m-%dT%H:%M:%SZ')
 gh_api 30 -X PUT notifications -f last_read_at=$since -F read=true --silent
 rc=$?
 if (( rc != 0 )); then
-  gh_refusal $rc "GitHub did not mark the notifications read"
+  gh_refusal $rc "GitHub didn’t mark the notifications as read"
   REPLY=${REPLY#* }
   fail ${REPLY%% *} "${REPLY#* }"
 fi

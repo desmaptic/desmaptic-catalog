@@ -1,6 +1,6 @@
 {
   "id": "latest-download",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Latest Download",
@@ -10,11 +10,11 @@
     "ru": "Последняя загрузка"
   },
   "summary": {
-    "en": "Opens the file you downloaded last; hold to show it in Finder",
-    "de": "Öffnet die zuletzt heruntergeladene Datei; Halten zeigt sie im Finder",
-    "es": "Abre el último archivo descargado; mantén pulsado para verlo en el Finder",
-    "fr": "Ouvre le dernier fichier téléchargé ; maintenez pour l’afficher dans le Finder",
-    "ru": "Открывает последний скачанный файл; удержание покажет его в Finder"
+    "en": "Opens the file you downloaded last",
+    "de": "Öffnet die zuletzt heruntergeladene Datei",
+    "es": "Abre lo último que descargaste",
+    "fr": "Ouvre le dernier fichier téléchargé",
+    "ru": "Открывает последний скачанный файл"
   },
   "colSpan": 1,
   "rowSpan": 1,

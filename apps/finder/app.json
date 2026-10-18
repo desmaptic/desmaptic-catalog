@@ -1,6 +1,6 @@
 {
   "id": "finder",
-  "revision": 7,
+  "revision": 8,
   "name": "Finder",
   "bundleIds": [
     "com.apple.finder"
@@ -205,11 +205,11 @@
         "ru": "Программы"
       },
       "summary": {
-        "en": "Opens Applications in Finder, from any app; hold for Utilities",
-        "de": "Öffnet „Programme“ im Finder, aus jeder App; halten für „Dienstprogramme“",
-        "es": "Abre Aplicaciones en el Finder desde cualquier app; mantén pulsado para Utilidades",
-        "fr": "Ouvre Applications dans le Finder, depuis n’importe quelle app ; maintenez pour Utilitaires",
-        "ru": "Открывает «Программы» в Finder из любого приложения; удержание — «Утилиты»"
+        "en": "The Applications folder in Finder, from any app",
+        "de": "Der Ordner „Programme“ im Finder, aus jeder App",
+        "es": "La carpeta Aplicaciones en el Finder desde cualquier app",
+        "fr": "Le dossier Applications dans le Finder, depuis n’importe quelle app",
+        "ru": "Папка «Программы» в Finder из любого приложения"
       },
       "details": {
         "en": "Go › Applications (⇧⌘A), and Go › Utilities (⇧⌘U) on hold. With Finder in front, its window switches to the folder. From any other app, the folder opens in a new Finder window.",
@@ -311,11 +311,11 @@
         "ru": "Новое окно"
       },
       "summary": {
-        "en": "A new Finder window, from any app; hold for a new tab",
-        "de": "Ein neues Finder-Fenster, aus jeder App; halten für einen neuen Tab",
-        "es": "Una ventana nueva del Finder desde cualquier app; mantén pulsado para una pestaña nueva",
-        "fr": "Une nouvelle fenêtre Finder, depuis n’importe quelle app ; maintenez pour un nouvel onglet",
-        "ru": "Новое окно Finder из любого приложения; удержание — новая вкладка"
+        "en": "A new Finder window, from any app",
+        "de": "Ein neues Finder-Fenster, aus jeder App",
+        "es": "Una ventana nueva del Finder desde cualquier app",
+        "fr": "Une nouvelle fenêtre Finder, depuis n’importe quelle app",
+        "ru": "Новое окно Finder из любого приложения"
       },
       "details": {
         "en": "File › New Finder Window (⌘N), and File › New Tab (⌘T) on hold. The tap works from any app and brings Finder to the front. The long press works while Finder is in front.",
@@ -515,11 +515,11 @@
         "ru": "Переход к папке"
       },
       "summary": {
-        "en": "Type a path to go to (⇧⌘G); hold to connect to a server",
-        "de": "Pfad eintippen und hin (⇧⌘G); halten für „Mit Server verbinden“",
-        "es": "Escribe una ruta para ir (⇧⌘G); mantén pulsado para conectarte a un servidor",
-        "fr": "Saisissez un chemin (⇧⌘G) ; maintenez pour vous connecter à un serveur",
-        "ru": "Ввести путь и перейти (⇧⌘G); удержание — подключение к серверу"
+        "en": "Jumps to any folder by its path",
+        "de": "Springt über den Pfad zu einem beliebigen Ordner",
+        "es": "Salta a cualquier carpeta escribiendo su ruta",
+        "fr": "Ouvre n’importe quel dossier à partir de son chemin",
+        "ru": "Открывает любую папку по пути к ней"
       },
       "details": {
         "en": "Go › Go to Folder… (⇧⌘G), and Go › Connect to Server… (⌘K) on hold. Works while Finder is in front.",
@@ -623,11 +623,11 @@
         "ru": "Значки"
       },
       "summary": {
-        "en": "The window as icons; hold for gallery",
-        "de": "Fenster als Symbole; halten für Galerie",
-        "es": "La ventana como iconos; mantén pulsado para galería",
-        "fr": "La fenêtre par icônes ; maintenez pour la galerie",
-        "ru": "Окно в виде значков; удержание — в виде галереи"
+        "en": "The Finder window’s contents as icons",
+        "de": "Der Inhalt des Finder-Fensters als Symbole",
+        "es": "El contenido de la ventana del Finder como iconos",
+        "fr": "Le contenu de la fenêtre Finder par icônes",
+        "ru": "Содержимое окна Finder в виде значков"
       },
       "details": {
         "en": "View › as Icons (⌘1), and View › as Gallery (⌘4) on hold. Your keyboard layout doesn’t matter. Works while Finder is in front.",

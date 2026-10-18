@@ -18,7 +18,7 @@ else
   run_gh 20 pr view --json url --jq .url
   rc=$?
   if (( rc != 0 )) && [[ $(first_line $tmp/err) == *no\ pull\ requests\ found* ]]; then
-    fail notFound "No pull request for $br: New PR makes one"
+    fail notFound "$br has no pull request yet. Make one with New PR."
   fi
   url=$(first_line $tmp/out)
 fi

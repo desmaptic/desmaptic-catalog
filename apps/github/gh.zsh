@@ -98,8 +98,8 @@ first_line() {
 # open_url <url>: opens it in the default browser. env -i: the browser gets the account's own environment, as from
 # the Dock, not the agent's token.
 open_url() {
-  [[ $1 == https://* ]] || fail other "GitHub gave no address to open"
-  env -i /usr/bin/open -- "$1" || fail other "The browser did not open $1"
+  [[ $1 == https://* ]] || fail other "GitHub didn’t give an address to open. Try again in a moment."
+  env -i /usr/bin/open -- "$1" || fail other "The browser didn’t open $1."
 }
 
 # problem <reason>: why gh is not usable (sets REPLY: <kind> <message>), or 1 when it is. Shared with the loops,
@@ -107,12 +107,12 @@ open_url() {
 problem() {
   local dev
   gh=( /opt/homebrew/bin/gh(N-*) /usr/local/bin/gh(N-*) )
-  (( $#gh )) || { REPLY="notFound The GitHub CLI is not installed: brew install gh, then gh auth login in Terminal"; return 0 }
+  (( $#gh )) || { REPLY="notFound The GitHub CLI isn’t installed. In Terminal, run brew install gh, then gh auth login."; return 0 }
   # gh asks the version control tool which repository a folder is. A stock Mac has only a stub that opens an
   # install dialog: it is never called, and without the Command Line Tools the button says what to install.
   dev=$(xcode-select -p 2>/dev/null)
   vcs=( ${dev:+$dev/usr/bin/git(N-*)} )
-  (( $#vcs )) || { REPLY="notFound This button needs Apple’s Command Line Tools: install them in Terminal with xcode-select --install"; return 0 }
+  (( $#vcs )) || { REPLY="notFound This button needs Apple’s Command Line Tools. Install them in Terminal with xcode-select --install."; return 0 }
   return 1
 }
 
@@ -134,7 +134,7 @@ resolve() {
     fi
   fi
   [[ -n $given ]] || {
-    REPLY="config No repository set: put a folder or owner/name in this button’s settings (under Advanced on CI and My PRs), e.g. repo=\"~/Developer/my-app\""
+    REPLY="config No repository is set. Put its folder or owner/name in the button’s settings (under Advanced on CI and My PRs), like repo=\"~/Developer/my-app\"."
     return 0
   }
   case $given in
@@ -142,12 +142,12 @@ resolve() {
     '~/'*) given=$HOME/${given#'~/'} ;;
   esac
   if [[ $given == /* ]]; then
-    [[ -d $given ]] || { REPLY="notFound No such folder: $given"; return 0 }
+    [[ -d $given ]] || { REPLY="notFound There’s no folder $given. Check the repository in the button’s settings."; return 0 }
     folder=${given:a}
   elif [[ $given == [A-Za-z0-9-]##/[A-Za-z0-9._-]## ]]; then
     slug=$given
   else
-    REPLY="config Not a folder or owner/name: $given (a folder starts with / or ~/)"
+    REPLY="config $given is neither a folder nor owner/name. A folder starts with / or ~/."
     return 0
   fi
   return 1
@@ -179,7 +179,7 @@ run_gh() {
     args+=( -R $slug )
   fi
   if [[ -n $folder ]]; then
-    builtin cd -q -- "$folder" 2>/dev/null || { print -r -- "The folder cannot be opened: $folder" > "$tmp/err"; return 1 }
+    builtin cd -q -- "$folder" 2>/dev/null || { print -r -- "The Mac can’t open the folder $folder." > "$tmp/err"; return 1 }
   fi
   limited $seconds env -i HOME=$HOME USER=$USER LOGNAME=$LOGNAME ${TMPDIR:+TMPDIR=$TMPDIR} PATH="${vcs[1]:h}:$PATH" \
     GH_PROMPT_DISABLED=1 GH_NO_UPDATE_NOTIFIER=1 NO_COLOR=1 $gh[1] "${args[@]}"
@@ -190,29 +190,29 @@ run_gh() {
 gh_refusal() {
   local err=$(first_line $tmp/err)
   case $1 in
-    (124) REPLY="timeout GitHub did not answer in time" ;;
+    (124) REPLY="timeout GitHub didn’t answer in time. Try again in a moment." ;;
     (*)   case $err in
-            (*(auth\ login|authenticat)*) REPLY="auth The GitHub CLI is not signed in: run gh auth login in Terminal" ;;
+            (*(auth\ login|authenticat)*) REPLY="auth The GitHub CLI isn’t signed in. Run gh auth login in Terminal." ;;
             (*(no\ git\ remotes|not\ a\ git\ repository|could\ not\ determine|none\ of\ the\ git\ remotes)*) # not a call: gh's error text
-              REPLY="config ${folder:-$slug} is not a GitHub repository: set the folder of one" ;;
+              REPLY="config ${folder:-$slug} isn’t a GitHub repository. Set the folder of one in the button’s settings." ;;
             (*[Rr]ate\ limit*)
-              REPLY="busy GitHub’s limit of questions is used up for now: try again in a few minutes" ;;
+              REPLY="busy You’ve hit GitHub’s request limit for now. Try again in a few minutes." ;;
             (*(Must\ have\ admin\ rights|HTTP\ 403|Resource\ not\ accessible|[Pp]ermission)*)
-              REPLY="permission This GitHub account may not do that here: ${err}" ;;
+              REPLY="permission Your GitHub account isn’t allowed to do that here. GitHub says: ${err}" ;;
             (*(Could\ not\ resolve\ to\ a\ Repository|HTTP\ 404)*)
-              REPLY="notFound GitHub has no repository ${slug:-there} that this account can see" ;;
+              REPLY="notFound Your GitHub account can’t see the repository ${slug:-there}. Check the name, or sign in to gh with another account." ;;
             (*(error\ connecting|dial\ tcp|no\ such\ host|TLS\ handshake|connection\ refused)*)
-              REPLY="network GitHub cannot be reached: ${err}" ;;
-            (*) REPLY="other $2: ${err:-no answer}" ;;
+              REPLY="network The Mac can’t reach GitHub. Check its internet connection." ;;
+            (*) REPLY="other $2 failed: ${err:-gh gave no reason}" ;;
           esac ;;
   esac
 }
 
 # current_branch: REPLY = the folder's current branch, or 1 with a refusal in REPLY (as problem's).
 current_branch() {
-  [[ -n $folder ]] || { REPLY="config This button needs the repository’s folder, not owner/name: set repo=\"~/…\""; return 1 }
+  [[ -n $folder ]] || { REPLY="config This button needs the repository’s folder, not owner/name. Set it in the button’s settings, like repo=\"~/…\"."; return 1 }
   limited 10 $vcs -C "$folder" symbolic-ref -q --short HEAD
-  (( $? == 0 )) || { REPLY="config $folder is on no branch (a detached HEAD, or not a repository)"; return 1 }
+  (( $? == 0 )) || { REPLY="config $folder isn’t on any branch. Check out a branch there first."; return 1 }
   REPLY=$(first_line $tmp/out)
 }
 

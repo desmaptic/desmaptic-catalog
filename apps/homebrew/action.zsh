@@ -52,11 +52,11 @@ case $action in
     if [[ $action == autoremove-check ]]; then
       run_brew 40 "brew autoremove --dry-run" autoremove --dry-run
       names=( ${(f)"$(names_after 'Would autoremove')"} )
-      title="brew autoremove --dry-run"
+      title="Unused Homebrew packages"
     else
       run_brew 50 "brew autoremove" autoremove
       names=( ${(f)"$(names_after 'Autoremoving')"} )
-      title="brew autoremove ✓"
+      title="Removed unused packages"
     fi
     if (( $#names == 0 )); then
       flash 3 "#32D74B" checkmark.circle.fill "0"
@@ -89,7 +89,7 @@ case $action in
       [[ $state == error && -n $code ]] && body[-1]+=" ($code)"
       [[ $state == (started|scheduled|error|none|stopped) ]] || body[-1]+=" · $state"
     done
-    notify "brew services" "${(F)body}"
+    notify "Homebrew services" "${(F)body}"
     flash 4 "#30B0C7" gearshape.2.fill "$running/$#rows" ;;
 esac
 exit 0

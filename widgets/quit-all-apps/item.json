@@ -1,6 +1,6 @@
 {
   "id": "quit-all-apps",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Quit All Apps",
@@ -10,11 +10,11 @@
     "ru": "Закрыть все"
   },
   "summary": {
-    "en": "Quits every open app except Finder; hold to hide all but the front one",
-    "de": "Beendet alle Apps außer dem Finder; Halten blendet alle außer der vorderen aus",
-    "es": "Cierra todas las apps salvo el Finder; mantén pulsado para ocultar todas menos la activa",
-    "fr": "Quitte toutes les apps sauf le Finder ; maintenez pour masquer tout sauf l’app active",
-    "ru": "Завершает все приложения, кроме Finder; удержание скрывает все, кроме активного"
+    "en": "Quits all your apps at once, except Finder",
+    "de": "Beendet alle Apps auf einmal, außer dem Finder",
+    "es": "Cierra todas las apps de golpe, salvo el Finder",
+    "fr": "Quitte toutes les apps d’un coup, sauf le Finder",
+    "ru": "Закрывает все приложения разом, кроме Finder"
   },
   "colSpan": 1,
   "rowSpan": 1,

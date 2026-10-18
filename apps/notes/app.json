@@ -1,6 +1,6 @@
 {
   "id": "notes",
-  "revision": 7,
+  "revision": 8,
   "name": {
     "en": "Notes",
     "de": "Notizen",
@@ -211,11 +211,11 @@
         "ru": "Поиск"
       },
       "summary": {
-        "en": "Searches all your notes (⌥⌘F); hold to find in the note (⌘F)",
-        "de": "Durchsucht alle Notizen (⌥⌘F); halten, um in der Notiz zu suchen (⌘F)",
-        "es": "Busca en todas las notas (⌥⌘F); mantén pulsado para buscar en la nota (⌘F)",
-        "fr": "Recherche dans toutes les notes (⌥⌘F) ; maintenez pour chercher dans la note (⌘F)",
-        "ru": "Ищет по всем заметкам (⌥⌘F); удержание — поиск в заметке (⌘F)"
+        "en": "Finds any of your notes",
+        "de": "Findet jede deiner Notizen",
+        "es": "Encuentra cualquiera de tus notas",
+        "fr": "Retrouve n’importe laquelle de vos notes",
+        "ru": "Находит любую заметку"
       },
       "details": {
         "en": "Edit › Find › Note List Search (⌥⌘F) or Find (⌘F). Brings Notes forward from any app and starts it if it’s closed. Then type your search on the Mac.",

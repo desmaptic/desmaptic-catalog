@@ -1,6 +1,6 @@
 {
   "id": "xcode",
-  "revision": 10,
+  "revision": 11,
   "name": "Xcode",
   "bundleIds": ["com.apple.dt.Xcode"],
   "category": "development",
@@ -40,11 +40,11 @@
       "id": "run",
       "title": {"en": "Run", "de": "Ausführen", "es": "Ejecutar", "fr": "Exécuter", "ru": "Запуск"},
       "summary": {
-        "en": "Builds and runs the active scheme; hold to stop",
-        "de": "Baut und startet das aktive Schema; Halten stoppt",
-        "es": "Compila y ejecuta el esquema activo; mantén pulsado para detener",
-        "fr": "Compile et lance le schéma actif ; maintenez pour arrêter",
-        "ru": "Собирает и запускает активную схему; удержание — стоп"
+        "en": "Builds and runs the active scheme",
+        "de": "Baut und startet das aktive Schema",
+        "es": "Compila y ejecuta el esquema activo",
+        "fr": "Compile et lance le schéma actif",
+        "ru": "Собирает и запускает активную схему"
       },
       "details": {
         "en": "Like ⌘R for the scheme in the front Xcode window, even with Xcode in the background. Build Status follows the run.",

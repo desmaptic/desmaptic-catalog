@@ -64,7 +64,7 @@ first_line() {
 gh_found() {
   gh=( /opt/homebrew/bin/gh(N-*) /usr/local/bin/gh(N-*) )
   (( $#gh )) && return 0
-  REPLY="notFound The GitHub CLI is not installed: brew install gh, then gh auth login in Terminal"
+  REPLY="notFound The GitHub CLI isn’t installed. In Terminal, run brew install gh, then gh auth login."
   return 1
 }
 
@@ -81,19 +81,19 @@ gh_api() {
 gh_refusal() {
   local all=$(<$tmp/err) err
   if (( $1 == 124 )); then
-    REPLY="0 timeout GitHub did not answer in time"
+    REPLY="0 timeout GitHub didn’t answer in time."
   elif (( $1 == 4 )) || [[ $all == *(401\ Unauthorized|Bad\ credentials|HTTP\ 401)* ]]; then
-    REPLY="1 auth The GitHub CLI is not signed in: run gh auth login in Terminal"
+    REPLY="1 auth The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   elif [[ $all == *[Rr]ate\ limit* ]]; then
-    REPLY="0 busy GitHub’s limit of questions is used up for now: try again in a few minutes"
+    REPLY="0 busy You’ve hit GitHub’s request limit for now. Try again in a few minutes."
   elif [[ $all == *(notifications?\ scope|Resource\ not\ accessible)* ]]; then
-    REPLY="1 auth The GitHub CLI may not read notifications: run gh auth refresh -s notifications in Terminal"
+    REPLY="1 auth The GitHub CLI isn’t allowed to read notifications. Run gh auth refresh -s notifications in Terminal."
   elif [[ $all == *(auth\ login|authenticat)* ]]; then
-    REPLY="1 auth The GitHub CLI is not signed in: run gh auth login in Terminal"
+    REPLY="1 auth The GitHub CLI isn’t signed in. Run gh auth login in Terminal."
   elif [[ $all == *(error\ connecting|dial\ tcp|no\ such\ host|TLS\ handshake|connection\ refused|connection\ reset|i/o\ timeout|EOF)* ]]; then
-    REPLY="0 network GitHub cannot be reached"
+    REPLY="0 network The Mac can’t reach GitHub. Check its internet connection."
   elif [[ $all == *HTTP\ 5[0-9][0-9]* ]]; then
-    REPLY="0 network GitHub has trouble on its side: it answered ${${all#*HTTP }[1,3]}"
+    REPLY="0 network GitHub is having trouble right now. It answered with error ${${all#*HTTP }[1,3]}."
   else
     err=$(first_line $tmp/err)
     REPLY="0 other $2: ${err:-gh ended with status $1}"

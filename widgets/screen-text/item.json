@@ -1,6 +1,6 @@
 {
   "id": "screen-text",
-  "revision": 4,
+  "revision": 5,
   "kind": "widget",
   "title": {
     "en": "Text from Screen",
@@ -10,11 +10,11 @@
     "ru": "Текст с экрана"
   },
   "summary": {
-    "en": "Copies the text from any part of the Mac’s screen; hold to read it from a copied picture",
-    "de": "Kopiert den Text aus einem Bereich des Mac-Bildschirms; Halten liest ihn aus einem kopierten Bild",
-    "es": "Copia el texto de cualquier zona de la pantalla del Mac; mantén pulsado para leerlo de una imagen copiada",
-    "fr": "Copie le texte de n’importe quelle zone de l’écran du Mac ; maintenez pour le lire dans une image copiée",
-    "ru": "Копирует текст с любого участка экрана Mac; удержание достаёт текст из скопированной картинки"
+    "en": "Copies the text from any part of the Mac’s screen",
+    "de": "Kopiert den Text aus einem beliebigen Bereich des Mac-Bildschirms",
+    "es": "Copia el texto de cualquier zona de la pantalla del Mac",
+    "fr": "Copie le texte de n’importe quelle zone de l’écran du Mac",
+    "ru": "Копирует текст с любого участка экрана Mac"
   },
   "colSpan": 1,
   "rowSpan": 1,

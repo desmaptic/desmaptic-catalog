@@ -1,6 +1,6 @@
 {
   "id": "vscode",
-  "revision": 6,
+  "revision": 7,
   "name": "VS Code",
   "bundleIds": ["com.microsoft.VSCode"],
   "category": "development",
@@ -529,11 +529,11 @@
       "id": "open-project",
       "title": {"en": "Open Project", "de": "Projekt öffnen", "es": "Abrir proyecto", "fr": "Ouvrir le projet", "ru": "Открыть проект"},
       "summary": {
-        "en": "Opens your project, or brings its window forward; hold for recent projects",
-        "de": "Öffnet dein Projekt oder holt sein Fenster nach vorne; Halten zeigt zuletzt geöffnete Projekte",
-        "es": "Abre tu proyecto o trae su ventana al frente; mantén pulsado para los proyectos recientes",
-        "fr": "Ouvre votre projet ou met sa fenêtre au premier plan ; maintenez pour les projets récents",
-        "ru": "Открывает ваш проект или выводит его окно вперёд; удержание — недавние проекты"
+        "en": "Opens your project, or brings its window forward",
+        "de": "Öffnet dein Projekt oder holt sein Fenster nach vorne",
+        "es": "Abre tu proyecto o trae su ventana al frente",
+        "fr": "Ouvre votre projet ou met sa fenêtre au premier plan",
+        "ru": "Открывает ваш проект или выводит его окно вперёд"
       },
       "details": {
         "en": "Set the folder or .code-workspace file in the button’s settings: folder=\"~/Projects/app\". Works from any app and starts VS Code if it’s closed. The long press needs VS Code in front, with English menus.",
@@ -598,11 +598,11 @@
       "id": "open-chat",
       "title": {"en": "Open Chat", "de": "Chat öffnen", "es": "Abrir chat", "fr": "Ouvrir le chat", "ru": "Открыть чат"},
       "summary": {
-        "en": "Opens the chat (⌃⌘I); hold for the chat in Agent mode (⇧⌘I)",
-        "de": "Öffnet den Chat (⌃⌘I); Halten öffnet ihn im Agent-Modus (⇧⌘I)",
-        "es": "Abre el chat (⌃⌘I); mantén pulsado para el chat en modo Agent (⇧⌘I)",
-        "fr": "Ouvre le chat (⌃⌘I) ; maintenez pour le chat en mode Agent (⇧⌘I)",
-        "ru": "Открывает чат (⌃⌘I); удержание — чат в режиме Agent (⇧⌘I)"
+        "en": "Opens VS Code’s chat (⌃⌘I)",
+        "de": "Öffnet den Chat von VS Code (⌃⌘I)",
+        "es": "Abre el chat de VS Code (⌃⌘I)",
+        "fr": "Ouvre le chat de VS Code (⌃⌘I)",
+        "ru": "Открывает чат VS Code (⌃⌘I)"
       },
       "details": {
         "en": "The chat opens in the side bar, with the cursor in its message box. In Agent mode it edits files and runs commands itself. Works while VS Code is in front, with its default shortcuts.",

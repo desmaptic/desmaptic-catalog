@@ -57,7 +57,7 @@ look() {
     if (( rc != 0 )); then refused $rc "gh repo view"; return; fi
     name=$(first_line $tmp/out) named_for=$folder
   fi
-  [[ $name == */* ]] || { named_for=""; stuck "other GitHub did not say which repository $folder is"; return }
+  [[ $name == */* ]] || { named_for=""; stuck "other GitHub didn’t say which repository $folder is."; return }
   run_gh 30 api graphql -f query="$query" -f mine="repo:$name state:open is:pr author:@me" \
     -f review="repo:$name state:open is:pr review-requested:@me"
   rc=$?

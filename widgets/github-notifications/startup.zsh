@@ -133,7 +133,7 @@ look() {
   gh_api 30 -i 'notifications?per_page=50' --jq length
   rc=$?
   if (( rc != 0 )); then
-    gh_refusal $rc "GitHub did not give the count"
+    gh_refusal $rc "GitHub didn’t give the count"
     lasting=${REPLY%% *}; REPLY=${REPLY#* }
     if (( lasting )); then trouble ${REPLY%% *} "${REPLY#* }"; else hitch ${REPLY%% *} "${REPLY#* }"; fi
     return
@@ -141,7 +141,7 @@ look() {
   # The answer: the status line, the headers, an empty line, then the count alone on the last line.
   lines=( "${(@f)${$(<$tmp/out)//$'\r'/}}" )
   n=${lines[-1]}
-  if [[ $n != <-> ]]; then hitch other "GitHub gave no count"; return; fi
+  if [[ $n != <-> ]]; then hitch other "GitHub didn’t give the count."; return; fi
   for line in $lines[1,-2]; do
     name=${(L)line%%:*}
     case $name in

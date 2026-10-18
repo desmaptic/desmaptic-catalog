@@ -1,6 +1,6 @@
 {
   "id": "chatgpt",
-  "revision": 7,
+  "revision": 8,
   "name": "ChatGPT",
   "bundleIds": [
     "com.openai.codex"
@@ -17,11 +17,11 @@
         "ru": "Новый чат"
       },
       "summary": {
-        "en": "Starts a chat in Chat mode; hold for a temporary chat",
-        "de": "Startet einen Chat im Modus „Chat“; halten für einen temporären Chat",
-        "es": "Inicia un chat en el modo Chat; mantén pulsado para uno temporal",
-        "fr": "Lance un chat en mode Chat ; maintenez pour un chat éphémère",
-        "ru": "Начинает чат в режиме «Чат»; удержание — временный чат"
+        "en": "A fresh chat with ChatGPT",
+        "de": "Ein neuer, leerer Chat mit ChatGPT",
+        "es": "Un chat con ChatGPT desde cero",
+        "fr": "Un chat tout neuf avec ChatGPT",
+        "ru": "Начинает новый чат с ChatGPT"
       },
       "details": {
         "en": "Works even with ChatGPT in the background, and opens it if it’s closed. A temporary chat stays out of your history. The long press needs ChatGPT in front, with its default shortcuts.",
@@ -126,11 +126,11 @@
         "ru": "Codex"
       },
       "summary": {
-        "en": "Starts a Codex chat; hold for one outside any project",
-        "de": "Startet einen Codex-Chat; halten für einen außerhalb eines Projekts",
-        "es": "Inicia un chat de Codex; mantén pulsado para uno fuera de los proyectos",
-        "fr": "Lance un chat Codex ; maintenez pour un chat hors projet",
-        "ru": "Начинает чат Codex; удержание — вне проектов"
+        "en": "A new task for Codex in ChatGPT",
+        "de": "Eine neue Aufgabe für Codex in ChatGPT",
+        "es": "Una tarea nueva para Codex en ChatGPT",
+        "fr": "Une nouvelle tâche pour Codex dans ChatGPT",
+        "ru": "Новая задача для Codex в ChatGPT"
       },
       "details": {
         "en": "Pick a project, describe the task, and Codex gets to work. Works even with ChatGPT in the background, and opens it if closed. The long press needs it in front, with default shortcuts.",
@@ -191,11 +191,11 @@
         "ru": "Поиск"
       },
       "summary": {
-        "en": "Finds a chat or a command; hold to search the open chat",
-        "de": "Findet einen Chat oder Befehl; halten, um im offenen Chat zu suchen",
-        "es": "Encuentra un chat o un comando; mantén pulsado para buscar en el chat abierto",
-        "fr": "Trouve un chat ou une commande ; maintenez pour chercher dans le chat ouvert",
-        "ru": "Находит чат или команду; удержание — поиск в открытом чате"
+        "en": "Finds a past chat or a command in ChatGPT",
+        "de": "Findet einen früheren Chat oder einen Befehl in ChatGPT",
+        "es": "Encuentra un chat anterior o un comando en ChatGPT",
+        "fr": "Retrouve un ancien chat ou une commande dans ChatGPT",
+        "ru": "Находит прошлый чат или команду в ChatGPT"
       },
       "details": {
         "en": "Type a few words and press Return to open a chat or run a command. Works while ChatGPT is in front, with its default shortcuts.",

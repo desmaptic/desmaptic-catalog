@@ -1,6 +1,6 @@
 {
   "id": "proxyman",
-  "revision": 6,
+  "revision": 7,
   "name": "Proxyman",
   "bundleIds": ["com.proxyman.NSProxy"],
   "category": "development",
@@ -9,11 +9,11 @@
       "id": "record",
       "title": {"en": "Record", "de": "Aufnahme", "es": "Grabar", "fr": "Enregistrer", "ru": "Запись"},
       "summary": {
-        "en": "Pauses or resumes capture; hold to clear the session",
-        "de": "Pausiert die Aufzeichnung oder setzt sie fort; Halten leert die Sitzung",
-        "es": "Pausa o reanuda la captura; mantén pulsado para vaciar la sesión",
-        "fr": "Met en pause ou reprend la capture ; maintenez pour vider la session",
-        "ru": "Пауза или продолжение записи; удержание — очистить сессию"
+        "en": "Pauses and resumes capturing traffic",
+        "de": "Hält die Aufzeichnung an und lässt sie weiterlaufen",
+        "es": "Pausa y reanuda la captura del tráfico",
+        "fr": "Met en pause et reprend la capture du trafic",
+        "ru": "Пауза и продолжение записи трафика"
       },
       "details": {
         "en": "Same as Tools › Toggle Recording. While paused, new requests stay out of the list, and the captured ones remain. Works from any app while Proxyman is running.",
@@ -47,11 +47,11 @@
       "id": "macos-proxy",
       "title": {"en": "macOS Proxy", "de": "macOS-Proxy", "es": "Proxy de macOS", "fr": "Proxy macOS", "ru": "Прокси macOS"},
       "summary": {
-        "en": "Whether the Mac’s web traffic goes through Proxyman; hold to switch it",
-        "de": "Ob der Webverkehr des Mac über Proxyman läuft; Halten schaltet um",
-        "es": "Si el tráfico web del Mac pasa por Proxyman; mantén pulsado para cambiarlo",
-        "fr": "Si le trafic web du Mac passe par Proxyman ; maintenez pour basculer",
-        "ru": "Идёт ли веб-трафик Mac через Proxyman; удержание — переключить"
+        "en": "Whether the Mac’s web traffic goes through Proxyman",
+        "de": "Ob der Webverkehr des Mac über Proxyman läuft",
+        "es": "Si el tráfico web del Mac pasa por Proxyman",
+        "fr": "Si le trafic web du Mac passe par Proxyman",
+        "ru": "Идёт ли веб-трафик Mac через Proxyman"
       },
       "details": {
         "en": "The button turns green when the Mac’s proxy settings send web traffic to this Proxyman, and orange when they send it to another proxy on this Mac. Gray means no proxy on this Mac.",
@@ -86,11 +86,11 @@
       "id": "filter",
       "title": {"en": "Filter", "de": "Filter", "es": "Filtrar", "fr": "Filtrer", "ru": "Фильтр"},
       "summary": {
-        "en": "Opens the filter bar (⌘F); hold to filter domains and apps",
-        "de": "Öffnet die Filterleiste (⌘F); Halten filtert Domains und Apps",
-        "es": "Abre la barra de filtro (⌘F); mantén pulsado para filtrar dominios y apps",
-        "fr": "Ouvre la barre de filtre (⌘F) ; maintenez pour filtrer domaines et apps",
-        "ru": "Открывает панель фильтра (⌘F); удержание — фильтр доменов и приложений"
+        "en": "Shows only the requests you’re after (⌘F)",
+        "de": "Zeigt nur die Anfragen, die dich interessieren (⌘F)",
+        "es": "Deja a la vista solo las solicitudes que buscas (⌘F)",
+        "fr": "N’affiche que les requêtes qui vous intéressent (⌘F)",
+        "ru": "Оставляет в списке только нужные запросы (⌘F)"
       },
       "details": {
         "en": "The filter bar narrows the list by URL, header, body, status code or content type. Esc hides it. Works while Proxyman is in front.",
@@ -156,11 +156,11 @@
       "id": "repeat",
       "title": {"en": "Repeat", "de": "Wiederholen", "es": "Repetir", "fr": "Répéter", "ru": "Повторить"},
       "summary": {
-        "en": "Sends the selected request again (⌘↩); hold to edit it first",
-        "de": "Sendet die ausgewählte Anfrage erneut (⌘↩); halten, um sie vorher zu bearbeiten",
-        "es": "Vuelve a enviar la solicitud seleccionada (⌘↩); mantén pulsado para editarla antes",
-        "fr": "Renvoie la requête sélectionnée (⌘↩) ; maintenez pour la modifier d’abord",
-        "ru": "Повторно отправляет выбранный запрос (⌘↩); удержание — сначала изменить"
+        "en": "Sends the selected request again (⌘↩)",
+        "de": "Sendet die ausgewählte Anfrage erneut (⌘↩)",
+        "es": "Vuelve a enviar la solicitud seleccionada (⌘↩)",
+        "fr": "Renvoie la requête sélectionnée (⌘↩)",
+        "ru": "Повторно отправляет выбранный запрос (⌘↩)"
       },
       "details": {
         "en": "The request goes to the server again with the same URL, headers and body, and the new response joins the list (Flow › Repeat). Works while Proxyman is in front.",
@@ -288,11 +288,11 @@
       "id": "breakpoint",
       "title": {"en": "Breakpoint", "de": "Breakpoint", "es": "Breakpoint", "fr": "Breakpoint", "ru": "Breakpoint"},
       "summary": {
-        "en": "Opens the Breakpoint rules (⌥⌘B); hold to turn the tool on or off",
-        "de": "Öffnet die Breakpoint-Regeln (⌥⌘B); Halten schaltet das Werkzeug ein oder aus",
-        "es": "Abre las reglas de Breakpoint (⌥⌘B); mantén pulsado para activar o desactivar la herramienta",
-        "fr": "Ouvre les règles Breakpoint (⌥⌘B) ; maintenez pour activer ou désactiver l’outil",
-        "ru": "Открывает правила Breakpoint (⌥⌘B); удержание — включить или выключить инструмент"
+        "en": "Opens the Breakpoint rules (⌥⌘B)",
+        "de": "Öffnet die Breakpoint-Regeln (⌥⌘B)",
+        "es": "Abre las reglas de Breakpoint (⌥⌘B)",
+        "fr": "Ouvre les règles Breakpoint (⌥⌘B)",
+        "ru": "Открывает правила Breakpoint (⌥⌘B)"
       },
       "details": {
         "en": "Breakpoint stops matching requests and responses so you can edit them before they go on. Works while Proxyman is in front.",
@@ -327,11 +327,11 @@
       "id": "map-local",
       "title": {"en": "Map Local", "de": "Map Local", "es": "Map Local", "fr": "Map Local", "ru": "Map Local"},
       "summary": {
-        "en": "Opens the Map Local rules (⌥⌘L); hold to turn the tool on or off",
-        "de": "Öffnet die Map-Local-Regeln (⌥⌘L); Halten schaltet das Werkzeug ein oder aus",
-        "es": "Abre las reglas de Map Local (⌥⌘L); mantén pulsado para activar o desactivar la herramienta",
-        "fr": "Ouvre les règles Map Local (⌥⌘L) ; maintenez pour activer ou désactiver l’outil",
-        "ru": "Открывает правила Map Local (⌥⌘L); удержание — включить или выключить инструмент"
+        "en": "Opens the Map Local rules (⌥⌘L)",
+        "de": "Öffnet die Map-Local-Regeln (⌥⌘L)",
+        "es": "Abre las reglas de Map Local (⌥⌘L)",
+        "fr": "Ouvre les règles Map Local (⌥⌘L)",
+        "ru": "Открывает правила Map Local (⌥⌘L)"
       },
       "details": {
         "en": "Map Local answers matching requests with a file from this Mac instead of the server. Works while Proxyman is in front.",
@@ -366,11 +366,11 @@
       "id": "map-remote",
       "title": {"en": "Map Remote", "de": "Map Remote", "es": "Map Remote", "fr": "Map Remote", "ru": "Map Remote"},
       "summary": {
-        "en": "Opens the Map Remote rules (⌥⌘R); hold to turn the tool on or off",
-        "de": "Öffnet die Map-Remote-Regeln (⌥⌘R); Halten schaltet das Werkzeug ein oder aus",
-        "es": "Abre las reglas de Map Remote (⌥⌘R); mantén pulsado para activar o desactivar la herramienta",
-        "fr": "Ouvre les règles Map Remote (⌥⌘R) ; maintenez pour activer ou désactiver l’outil",
-        "ru": "Открывает правила Map Remote (⌥⌘R); удержание — включить или выключить инструмент"
+        "en": "Opens the Map Remote rules (⌥⌘R)",
+        "de": "Öffnet die Map-Remote-Regeln (⌥⌘R)",
+        "es": "Abre las reglas de Map Remote (⌥⌘R)",
+        "fr": "Ouvre les règles Map Remote (⌥⌘R)",
+        "ru": "Открывает правила Map Remote (⌥⌘R)"
       },
       "details": {
         "en": "Map Remote sends matching requests to another host, path or port. Works while Proxyman is in front.",
@@ -405,11 +405,11 @@
       "id": "scripting",
       "title": {"en": "Scripting", "de": "Scripting", "es": "Scripting", "fr": "Scripting", "ru": "Scripting"},
       "summary": {
-        "en": "Opens the Script List (⌥⌘I); hold to turn Scripting on or off",
-        "de": "Öffnet die Script List (⌥⌘I); Halten schaltet Scripting ein oder aus",
-        "es": "Abre la Script List (⌥⌘I); mantén pulsado para activar o desactivar Scripting",
-        "fr": "Ouvre la Script List (⌥⌘I) ; maintenez pour activer ou désactiver Scripting",
-        "ru": "Открывает Script List (⌥⌘I); удержание — включить или выключить Scripting"
+        "en": "Opens the Script List (⌥⌘I)",
+        "de": "Öffnet die Script List (⌥⌘I)",
+        "es": "Abre la Script List (⌥⌘I)",
+        "fr": "Ouvre la Script List (⌥⌘I)",
+        "ru": "Открывает Script List (⌥⌘I)"
       },
       "details": {
         "en": "Scripting runs your JavaScript on matching requests and responses to change them on the fly. Works while Proxyman is in front.",
@@ -444,11 +444,11 @@
       "id": "ssl-proxying",
       "title": {"en": "SSL Proxying", "de": "SSL Proxying", "es": "SSL Proxying", "fr": "SSL Proxying", "ru": "SSL Proxying"},
       "summary": {
-        "en": "Opens the SSL Proxying List (⌥⌘P); hold to turn it on or off",
-        "de": "Öffnet die SSL Proxying List (⌥⌘P); Halten schaltet sie ein oder aus",
-        "es": "Abre la SSL Proxying List (⌥⌘P); mantén pulsado para activarla o desactivarla",
-        "fr": "Ouvre la SSL Proxying List (⌥⌘P) ; maintenez pour l’activer ou la désactiver",
-        "ru": "Открывает SSL Proxying List (⌥⌘P); удержание — включить или выключить"
+        "en": "Opens the SSL Proxying List (⌥⌘P)",
+        "de": "Öffnet die SSL Proxying List (⌥⌘P)",
+        "es": "Abre la SSL Proxying List (⌥⌘P)",
+        "fr": "Ouvre la SSL Proxying List (⌥⌘P)",
+        "ru": "Открывает SSL Proxying List (⌥⌘P)"
       },
       "details": {
         "en": "The domains and apps whose HTTPS traffic Proxyman decrypts and shows in full. Works while Proxyman is in front.",
@@ -483,11 +483,11 @@
       "id": "network-conditions",
       "title": {"en": "Network Conditions", "de": "Network Conditions", "es": "Network Conditions", "fr": "Network Conditions", "ru": "Network Conditions"},
       "summary": {
-        "en": "Opens Network Conditions (⌥⌘J); hold to turn it on or off",
-        "de": "Öffnet Network Conditions (⌥⌘J); Halten schaltet es ein oder aus",
-        "es": "Abre Network Conditions (⌥⌘J); mantén pulsado para activarlo o desactivarlo",
-        "fr": "Ouvre Network Conditions (⌥⌘J) ; maintenez pour l’activer ou le désactiver",
-        "ru": "Открывает Network Conditions (⌥⌘J); удержание — включить или выключить"
+        "en": "Opens Network Conditions (⌥⌘J)",
+        "de": "Öffnet Network Conditions (⌥⌘J)",
+        "es": "Abre Network Conditions (⌥⌘J)",
+        "fr": "Ouvre Network Conditions (⌥⌘J)",
+        "ru": "Открывает Network Conditions (⌥⌘J)"
       },
       "details": {
         "en": "Network Conditions slows matching traffic to a profile such as 3G, with its bandwidth, delay and packet loss. Works while Proxyman is in front.",
@@ -553,11 +553,11 @@
       "id": "diff",
       "title": {"en": "Diff", "de": "Diff", "es": "Diff", "fr": "Diff", "ru": "Diff"},
       "summary": {
-        "en": "Adds the selected requests to Diff (⌘Y); hold to open Diff",
-        "de": "Fügt die ausgewählten Anfragen zu Diff hinzu (⌘Y); Halten öffnet Diff",
-        "es": "Añade las solicitudes seleccionadas a Diff (⌘Y); mantén pulsado para abrir Diff",
-        "fr": "Ajoute les requêtes sélectionnées à Diff (⌘Y) ; maintenez pour ouvrir Diff",
-        "ru": "Добавляет выбранные запросы в Diff (⌘Y); удержание — открыть Diff"
+        "en": "Puts the selected requests aside to compare (⌘Y)",
+        "de": "Legt die ausgewählten Anfragen zum Vergleichen beiseite (⌘Y)",
+        "es": "Aparta las solicitudes seleccionadas para compararlas (⌘Y)",
+        "fr": "Met de côté les requêtes sélectionnées pour les comparer (⌘Y)",
+        "ru": "Откладывает выбранные запросы для сравнения (⌘Y)"
       },
       "details": {
         "en": "Diff compares two requests or responses side by side: URL, method, status code, headers and body. Works while Proxyman is in front.",
@@ -592,11 +592,11 @@
       "id": "block-list",
       "title": {"en": "Block List", "de": "Block List", "es": "Block List", "fr": "Block List", "ru": "Block List"},
       "summary": {
-        "en": "Turns the Block List on or off; hold to open its rules",
-        "de": "Schaltet die Block List ein oder aus; Halten öffnet ihre Regeln",
-        "es": "Activa o desactiva la Block List; mantén pulsado para abrir sus reglas",
-        "fr": "Active ou désactive la Block List ; maintenez pour ouvrir ses règles",
-        "ru": "Включает или выключает Block List; удержание — открыть его правила"
+        "en": "Blocks the requests on your list, or lets them through again",
+        "de": "Blockiert die Anfragen auf deiner Liste oder lässt sie wieder durch",
+        "es": "Bloquea las solicitudes de tu lista o vuelve a dejarlas pasar",
+        "fr": "Bloque les requêtes de votre liste ou les laisse de nouveau passer",
+        "ru": "Блокирует запросы из вашего списка или снова их пропускает"
       },
       "details": {
         "en": "While the Block List is on, Proxyman blocks requests that match its rules, so you can see how an app copes without those hosts. Works from any app while Proxyman is running.",

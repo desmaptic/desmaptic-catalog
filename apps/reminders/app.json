@@ -1,6 +1,6 @@
 {
   "id": "reminders",
-  "revision": 6,
+  "revision": 7,
   "name": {
     "en": "Reminders",
     "de": "Erinnerungen",
@@ -492,11 +492,11 @@
         "ru": "Завтра"
       },
       "summary": {
-        "en": "Moves the selected reminders to tomorrow (⌥⌘T); hold for next week",
-        "de": "Verschiebt die ausgewählten Erinnerungen auf morgen (⌥⌘T); halten für nächste Woche",
-        "es": "Pasa los recordatorios seleccionados a mañana (⌥⌘T); mantén pulsado para la semana que viene",
-        "fr": "Reporte les rappels sélectionnés à demain (⌥⌘T) ; maintenez pour la semaine prochaine",
-        "ru": "Переносит выбранные напоминания на завтра (⌥⌘T); удержание — на следующую неделю"
+        "en": "Moves the selected reminders to tomorrow",
+        "de": "Verschiebt die ausgewählten Erinnerungen auf morgen",
+        "es": "Pasa los recordatorios seleccionados a mañana",
+        "fr": "Reporte les rappels sélectionnés à demain",
+        "ru": "Переносит выбранные напоминания на завтра"
       },
       "details": {
         "en": "Edit › Mark Due Date As › Tomorrow (⌥⌘T) or Next Week (⌥⌘K). Works while Reminders is in front.",

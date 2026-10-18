@@ -1,6 +1,6 @@
 {
   "id": "notion",
-  "revision": 6,
+  "revision": 7,
   "name": "Notion",
   "bundleIds": ["notion.id"],
   "category": "productivity",
@@ -9,11 +9,11 @@
       "id": "search",
       "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Chercher", "ru": "Поиск"},
       "summary": {
-        "en": "Finds any page or jumps to a recent one (⌘P); hold to find in the page",
-        "de": "Findet jede Seite oder springt zu einer zuletzt besuchten (⌘P); Halten sucht in der Seite",
-        "es": "Encuentra cualquier página o salta a una reciente (⌘P); mantén pulsado para buscar en la página",
-        "fr": "Trouve n’importe quelle page ou revient à une page récente (⌘P) ; maintenez pour chercher dans la page",
-        "ru": "Находит любую страницу или открывает недавнюю (⌘P); удержание — поиск по странице"
+        "en": "Finds any page or jumps to a recent one (⌘P)",
+        "de": "Findet jede Seite oder springt zu einer zuletzt besuchten (⌘P)",
+        "es": "Encuentra cualquier página o salta a una reciente (⌘P)",
+        "fr": "Trouve n’importe quelle page ou revient à une page récente (⌘P)",
+        "ru": "Находит любую страницу или открывает недавнюю (⌘P)"
       },
       "details": {
         "en": "Type part of a page’s title or text and press Return. With nothing typed, it lists the pages you opened lately. Works while Notion is in front.",
@@ -78,11 +78,11 @@
       "id": "notion-ai",
       "title": {"en": "Notion AI", "de": "Notion-KI", "es": "IA de Notion", "fr": "IA de Notion", "ru": "Notion AI"},
       "summary": {
-        "en": "Opens Notion AI; hold to ask it beside the open page",
-        "de": "Öffnet Notion-KI; Halten fragt sie neben der offenen Seite",
-        "es": "Abre la IA de Notion; mantén pulsado para preguntarle junto a la página abierta",
-        "fr": "Ouvre l’IA de Notion ; maintenez pour l’interroger à côté de la page ouverte",
-        "ru": "Открывает Notion AI; удержание — чат рядом с открытой страницей"
+        "en": "A new chat with Notion AI",
+        "de": "Ein neuer Chat mit Notion-KI",
+        "es": "Un chat nuevo con la IA de Notion",
+        "fr": "Une nouvelle discussion avec l’IA de Notion",
+        "ru": "Новый чат с Notion AI"
       },
       "details": {
         "en": "Notion AI answers from your pages and writes with you, though Free and Plus plans only get a limited trial. The tap brings Notion forward from any app, but doesn’t start it. The long press works while Notion is in front.",
@@ -159,11 +159,11 @@
       "id": "back",
       "title": {"en": "Back", "de": "Zurück", "es": "Atrás", "fr": "Précédent", "ru": "Назад"},
       "summary": {
-        "en": "Back to the page you had open before; hold to go forward",
-        "de": "Zurück zur vorher geöffneten Seite; Halten geht vorwärts",
-        "es": "Vuelve a la página que tenías abierta; mantén pulsado para avanzar",
-        "fr": "Revient à la page ouverte juste avant ; maintenez pour avancer",
-        "ru": "К предыдущей открытой странице; удержание — вперёд"
+        "en": "Back to the page you had open before",
+        "de": "Zurück zur vorher geöffneten Seite",
+        "es": "Vuelve a la página que tenías abierta antes",
+        "fr": "Revient à la page ouverte juste avant",
+        "ru": "Назад к предыдущей странице"
       },
       "details": {
         "en": "Same as History › Back in Notion’s menu. Your keyboard layout and Notion’s language don’t matter. Works while Notion is in front.",
@@ -290,11 +290,11 @@
       "id": "new-tab",
       "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
       "summary": {
-        "en": "Opens a new tab (⌘T); hold for a new window",
-        "de": "Öffnet einen neuen Tab (⌘T); halten für ein neues Fenster",
-        "es": "Abre una pestaña nueva (⌘T); mantén pulsado para una ventana nueva",
-        "fr": "Ouvre un nouvel onglet (⌘T) ; maintenez pour une nouvelle fenêtre",
-        "ru": "Открывает новую вкладку (⌘T); удержание — новое окно"
+        "en": "Opens a new Notion tab (⌘T)",
+        "de": "Öffnet einen neuen Tab in Notion (⌘T)",
+        "es": "Abre una pestaña nueva en Notion (⌘T)",
+        "fr": "Ouvre un nouvel onglet dans Notion (⌘T)",
+        "ru": "Открывает новую вкладку в Notion (⌘T)"
       },
       "details": {
         "en": "Notion’s tabs work like a browser’s: each keeps its own page and history. Works while Notion is in front.",
@@ -329,11 +329,11 @@
       "id": "next-tab",
       "title": {"en": "Next Tab", "de": "Nächster Tab", "es": "Pestaña siguiente", "fr": "Onglet suivant", "ru": "Следующая вкладка"},
       "summary": {
-        "en": "Switches to the next tab (⌃⇥); hold for the previous one",
-        "de": "Wechselt zum nächsten Tab (⌃⇥); halten für den vorherigen",
-        "es": "Pasa a la pestaña siguiente (⌃⇥); mantén pulsado para la anterior",
-        "fr": "Passe à l’onglet suivant (⌃⇥) ; maintenez pour le précédent",
-        "ru": "Переключает на следующую вкладку (⌃⇥); удержание — на предыдущую"
+        "en": "Switches to the next tab (⌃⇥)",
+        "de": "Wechselt zum nächsten Tab (⌃⇥)",
+        "es": "Pasa a la pestaña siguiente (⌃⇥)",
+        "fr": "Passe à l’onglet suivant (⌃⇥)",
+        "ru": "Переключает на следующую вкладку (⌃⇥)"
       },
       "details": {
         "en": "Cycles through the tabs of the front Notion window. After the last tab, it goes back to the first. Works while Notion is in front.",
@@ -399,11 +399,11 @@
       "id": "copy-link",
       "title": {"en": "Copy Link", "de": "Link kopieren", "es": "Copiar enlace", "fr": "Copier le lien", "ru": "Копировать ссылку"},
       "summary": {
-        "en": "Copies the page’s link (⌘L); hold to copy its name as a link",
-        "de": "Kopiert den Link der Seite (⌘L); Halten kopiert ihren Namen als Link",
-        "es": "Copia el enlace de la página (⌘L); mantén pulsado para copiar su nombre como enlace",
-        "fr": "Copie le lien de la page (⌘L) ; maintenez pour copier son nom en lien",
-        "ru": "Копирует ссылку на страницу (⌘L); удержание — её название ссылкой"
+        "en": "The page’s link, ready to share (⌘L)",
+        "de": "Kopiert den Link der Seite, damit du ihn teilen kannst (⌘L)",
+        "es": "El enlace de la página, listo para compartir (⌘L)",
+        "fr": "Le lien de la page, à partager où vous voulez (⌘L)",
+        "ru": "Копирует ссылку на страницу, чтобы ею поделиться (⌘L)"
       },
       "details": {
         "en": "You can paste the link into a chat or another page. Only people who can already see the page can open it. Works while Notion is in front.",

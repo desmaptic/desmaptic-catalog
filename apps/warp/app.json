@@ -1,6 +1,6 @@
 {
   "id": "warp",
-  "revision": 5,
+  "revision": 6,
   "name": "Warp",
   "bundleIds": ["dev.warp.Warp-Stable"],
   "category": "development",
@@ -192,11 +192,11 @@
       "id": "command-search",
       "title": {"en": "Command Search", "de": "Befehlssuche", "es": "Buscar comandos", "fr": "Recherche de commandes", "ru": "Поиск команд"},
       "summary": {
-        "en": "Searches your past commands (⌃R); hold for workflows",
-        "de": "Durchsucht frühere Befehle (⌃R); halten für Workflows",
-        "es": "Busca en tus comandos anteriores (⌃R); mantén pulsado para los workflows",
-        "fr": "Cherche dans vos commandes passées (⌃R) ; maintenez pour les workflows",
-        "ru": "Ищет по прошлым командам (⌃R); удержание — workflows"
+        "en": "Finds a command you’ve run before",
+        "de": "Findet einen Befehl, den du schon mal ausgeführt hast",
+        "es": "Encuentra un comando que ya ejecutaste",
+        "fr": "Retrouve une commande que vous avez déjà lancée",
+        "ru": "Находит команду, которую вы уже запускали"
       },
       "details": {
         "en": "Command Search (⌃R) searches past commands, workflows and Agent conversations. It works only at Warp’s command line. With fzf or atuin on ⌃R, the shell gets the key.",
@@ -324,11 +324,11 @@
       "id": "next-pane",
       "title": {"en": "Next Pane", "de": "Nächster Bereich", "es": "Panel siguiente", "fr": "Panneau suivant", "ru": "Следующая панель"},
       "summary": {
-        "en": "Moves to the next pane; hold for the previous one",
-        "de": "Wechselt zum nächsten Bereich; halten für den vorherigen",
-        "es": "Pasa al panel siguiente; mantén pulsado para el anterior",
-        "fr": "Passe au panneau suivant ; maintenez pour le précédent",
-        "ru": "Переходит к следующей панели; удержание — к предыдущей"
+        "en": "Moves to the next pane",
+        "de": "Wechselt zum nächsten Bereich",
+        "es": "Pasa al panel siguiente",
+        "fr": "Passe au panneau suivant",
+        "ru": "Переходит к следующей панели"
       },
       "details": {
         "en": "Clicks Tab › Activate Next Pane, so it works with any keyboard layout. Works while Warp is in front.",
@@ -394,11 +394,11 @@
       "id": "find",
       "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
       "summary": {
-        "en": "Searches the session’s blocks (⌘F); hold to clear them",
-        "de": "Durchsucht die Blöcke der Sitzung (⌘F); Halten leert sie",
-        "es": "Busca en los bloques de la sesión (⌘F); mantén pulsado para borrarlos",
-        "fr": "Cherche dans les blocs de la session (⌘F) ; maintenez pour les effacer",
-        "ru": "Ищет по блокам сессии (⌘F); удержание очищает их"
+        "en": "Searches the session’s blocks",
+        "de": "Durchsucht die Blöcke der Sitzung",
+        "es": "Busca en los bloques de la sesión",
+        "fr": "Cherche dans les blocs de la session",
+        "ru": "Ищет по блокам сессии"
       },
       "details": {
         "en": "Warp’s find bar (⌘F) searches the commands and output of every block in the session. Works while Warp is in front.",
@@ -464,11 +464,11 @@
       "id": "smaller",
       "title": {"en": "Smaller", "de": "Kleiner", "es": "Más pequeño", "fr": "Réduire", "ru": "Уменьшить"},
       "summary": {
-        "en": "Zooms all Warp windows out (⌘-); hold for the default zoom",
-        "de": "Verkleinert alle Warp-Fenster (⌘-); halten für den Standardzoom",
-        "es": "Reduce todas las ventanas de Warp (⌘-); mantén pulsado para el zoom por omisión",
-        "fr": "Réduit toutes les fenêtres Warp (⌘-) ; maintenez pour le zoom par défaut",
-        "ru": "Уменьшает все окна Warp (⌘-); удержание — масштаб по умолчанию"
+        "en": "Zooms out every Warp window (⌘-)",
+        "de": "Verkleinert alle Warp-Fenster (⌘-)",
+        "es": "Reduce todas las ventanas de Warp (⌘-)",
+        "fr": "Réduit toutes les fenêtres Warp (⌘-)",
+        "ru": "Уменьшает все окна Warp (⌘-)"
       },
       "details": {
         "en": "Clicks View › Zoom Out in Warp’s menu, and View › Reset Zoom on hold. Text and panels shrink together. Works while Warp is in front.",
@@ -503,11 +503,11 @@
       "id": "bigger",
       "title": {"en": "Bigger", "de": "Größer", "es": "Más grande", "fr": "Agrandir", "ru": "Увеличить"},
       "summary": {
-        "en": "Zooms all Warp windows in (⌘=); hold for the default zoom",
-        "de": "Vergrößert alle Warp-Fenster (⌘=); halten für den Standardzoom",
-        "es": "Amplía todas las ventanas de Warp (⌘=); mantén pulsado para el zoom por omisión",
-        "fr": "Agrandit toutes les fenêtres Warp (⌘=) ; maintenez pour le zoom par défaut",
-        "ru": "Увеличивает все окна Warp (⌘=); удержание — масштаб по умолчанию"
+        "en": "Zooms in every Warp window (⌘=)",
+        "de": "Vergrößert alle Warp-Fenster (⌘=)",
+        "es": "Amplía todas las ventanas de Warp (⌘=)",
+        "fr": "Agrandit toutes les fenêtres Warp (⌘=)",
+        "ru": "Увеличивает все окна Warp (⌘=)"
       },
       "details": {
         "en": "Clicks View › Zoom In in Warp’s menu, and View › Reset Zoom on hold. Works with any keyboard layout while Warp is in front.",

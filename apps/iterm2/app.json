@@ -1,6 +1,6 @@
 {
   "id": "iterm2",
-  "revision": 6,
+  "revision": 7,
   "name": "iTerm2",
   "bundleIds": [
     "com.googlecode.iterm2"
@@ -17,11 +17,11 @@
         "ru": "Новая вкладка"
       },
       "summary": {
-        "en": "A tab in the front window, from any app; hold to close the pane",
-        "de": "Ein Tab im vorderen Fenster, aus jeder App; Halten schließt den Bereich",
-        "es": "Una pestaña en la ventana de delante, desde cualquier app; mantén pulsado para cerrar el panel",
-        "fr": "Un onglet dans la fenêtre au premier plan, depuis n’importe quelle app ; maintenez pour fermer le panneau",
-        "ru": "Вкладка в переднем окне из любого приложения; удержание закрывает панель"
+        "en": "A new tab in the front window, from any app",
+        "de": "Ein neuer Tab im vorderen Fenster, aus jeder App",
+        "es": "Una pestaña nueva en la ventana de delante, desde cualquier app",
+        "fr": "Un nouvel onglet dans la fenêtre au premier plan, depuis n’importe quelle app",
+        "ru": "Новая вкладка в переднем окне из любого приложения"
       },
       "details": {
         "en": "Opens with the default profile and brings iTerm2 forward. Shell › Undo Close (⇧⌘T) brings back a closed pane within 5 seconds, iTerm2’s default.",
@@ -312,11 +312,11 @@
         "ru": "Следующая панель"
       },
       "summary": {
-        "en": "Moves to the next pane; hold for the previous one",
-        "de": "Wechselt zum nächsten Bereich; halten für den vorherigen",
-        "es": "Pasa al panel siguiente; mantén pulsado para el anterior",
-        "fr": "Passe au panneau suivant ; maintenez pour le précédent",
-        "ru": "Переходит к следующей панели; удержание — к предыдущей"
+        "en": "Moves from pane to pane in an iTerm2 window",
+        "de": "Wechselt zwischen den Bereichen eines iTerm2-Fensters",
+        "es": "Pasa de un panel a otro en una ventana de iTerm2",
+        "fr": "Passe d’un panneau à l’autre dans une fenêtre iTerm2",
+        "ru": "Переходит от панели к панели в окне iTerm2"
       },
       "details": {
         "en": "Clicks Window › Split Pane › Select Split Pane › Next Pane, so it works with any keyboard layout. Works while iTerm2 is in front.",
@@ -425,11 +425,11 @@
         "ru": "Найти"
       },
       "summary": {
-        "en": "Searches the pane’s text (⌘F); hold to clear it",
-        "de": "Durchsucht den Text des Bereichs (⌘F); Halten leert ihn",
-        "es": "Busca en el texto del panel (⌘F); mantén pulsado para borrarlo",
-        "fr": "Cherche dans le texte du panneau (⌘F) ; maintenez pour l’effacer",
-        "ru": "Ищет по тексту панели (⌘F); удержание очищает его"
+        "en": "Finds a word or a line in the terminal’s output",
+        "de": "Findet ein Wort oder eine Zeile in der Ausgabe des Terminals",
+        "es": "Encuentra una palabra o una línea en la salida del terminal",
+        "fr": "Retrouve un mot ou une ligne dans la sortie du terminal",
+        "ru": "Находит слово или строку в выводе терминала"
       },
       "details": {
         "en": "Edit › Find › Find… (⌘F). Searches the scrollback too. Works while iTerm2 is in front.",
@@ -743,11 +743,11 @@
         "ru": "Уменьшить"
       },
       "summary": {
-        "en": "Makes the text smaller (⌘-); hold for the profile’s size",
-        "de": "Verkleinert die Schrift (⌘-); halten für die Größe des Profils",
-        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño del perfil",
-        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille du profil",
-        "ru": "Уменьшает шрифт (⌘-); удержание — размер из профиля"
+        "en": "Smaller text, to fit more on screen",
+        "de": "Kleinere Schrift, damit mehr auf den Bildschirm passt",
+        "es": "Letra más pequeña para que quepa más en pantalla",
+        "fr": "Un texte plus petit, pour en voir davantage à l’écran",
+        "ru": "Шрифт помельче, чтобы на экране помещалось больше"
       },
       "details": {
         "en": "Same as View › Make Text Smaller (⌘-), and View › Make Text Normal Size (⌘0) on hold. Works while iTerm2 is in front.",
@@ -812,11 +812,11 @@
         "ru": "Увеличить"
       },
       "summary": {
-        "en": "Makes the text bigger (⌘+); hold for the profile’s size",
-        "de": "Vergrößert die Schrift (⌘+); halten für die Größe des Profils",
-        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño del perfil",
-        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille du profil",
-        "ru": "Увеличивает шрифт (⌘+); удержание — размер из профиля"
+        "en": "Bigger text, easier to read",
+        "de": "Größere Schrift, leichter zu lesen",
+        "es": "Letra más grande, más fácil de leer",
+        "fr": "Un texte plus grand, plus facile à lire",
+        "ru": "Шрифт покрупнее, чтобы было легче читать"
       },
       "details": {
         "en": "Same as View › Make Text Bigger (⌘+), and View › Make Text Normal Size (⌘0) on hold. Works while iTerm2 is in front.",

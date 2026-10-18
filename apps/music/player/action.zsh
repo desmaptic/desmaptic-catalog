@@ -38,10 +38,11 @@ zmodload -F zsh/files b:zf_mkdir b:zf_mv
 # Off → All → One → Off, as Music's own button. Favorite Songs is the playlist Music fills with the songs marked with
 # its star; its name depends on the language of the Apple Account ("Favourite Songs" in British English), so it is
 # found by its English names first and otherwise as the smart playlist whose songs are all favorites (preferring one
-# that is a favorite itself, as Music's own is). "favorited" is the star of Music 1.6 (older Music called it "loved");
-# "disliked" is what Music 1.6 calls Suggest Less. Names the user set compare as AppleScript compares text: case does
-# not matter; a playlist is the user's own first, then one added from Apple Music. The AirPlay speaker becomes the
-# only one Music plays to. A speaker's name Music does not know is a refusal that lists the names it does know.
+# that is a favorite itself, as Music's own is). The star is written by its code, «class pLov»: Music 1.6 names it
+# "favorited", older Music "loved", and the code is the same in both. "disliked" is what Music 1.6 calls Suggest
+# Less. Names the user set compare as AppleScript compares text: case does not matter; a playlist is the user's own
+# first, then one added from Apple Music. The AirPlay speaker becomes the only one Music plays to. A speaker's name
+# Music does not know is a refusal that lists the names it does know.
 # "computer" is this Mac's own output, a device of kind computer: other Macs of the same Apple Account can be AirPlay
 # receivers too, so when Music lists several of that kind, the one named as this Mac (System Settings › General ›
 # About) is taken, and without one the hold refuses and lists them rather than send the music to another Mac.
@@ -83,7 +84,7 @@ on run argv
 				if player state is stopped then return "!Nothing is playing in Music"
 				try
 					set t to current track
-					set favorited of t to not (favorited of t)
+					set «class pLov» of t to not («class pLov» of t)
 				on error msg number n
 					if n is in {-1743, -1712, -600, -609} then error msg number n
 					return "!Music cannot mark what is playing as a favorite: " & msg
@@ -149,8 +150,8 @@ on run argv
 					repeat with c in (every user playlist whose smart is true and special kind is none)
 						set c to contents of c
 						if (count of tracks of c) > 0 then
-							if (count of (every track of c whose favorited is false)) is 0 then
-								if favorited of c then
+							if (count of (every track of c whose «class pLov» is false)) is 0 then
+								if «class pLov» of c then
 									set p to c
 									exit repeat
 								end if

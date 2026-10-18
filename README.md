@@ -1,8 +1,8 @@
 # Desmaptic Catalog
 
-Desmaptic turns an iPhone or iPad into buttons that control your Mac. This repository holds its
-**Gallery**: every ready-made widget, app page and scene the Gallery offers, as the files the
-Desmaptic Agent uses.
+[Desmaptic](https://desmaptic.com) turns the iPhone or iPad you already have into a deck of buttons for your Mac,
+like a Stream Deck. This repository holds its **Gallery**: every ready-made widget, app page and scene
+the Gallery offers, as the files the Desmaptic Agent uses.
 
 The app and the agent are closed source; the catalog is published so that you can read what a button
 will run on your Mac before you add it, find a template by searching GitHub, and point an AI assistant at

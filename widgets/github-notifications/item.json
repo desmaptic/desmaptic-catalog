@@ -1,6 +1,6 @@
 {
   "id": "github-notifications",
-  "revision": 1,
+  "revision": 2,
   "kind": "widget",
   "title": {
     "en": "GitHub Notifications",
@@ -10,20 +10,20 @@
     "ru": "Уведомления GitHub"
   },
   "summary": {
-    "en": "How many unread notifications wait for you on GitHub; hold twice to mark them all as read",
-    "de": "Wie viele ungelesene Benachrichtigungen auf GitHub auf dich warten; zweimal halten, um alle als gelesen zu markieren",
-    "es": "Cuántas notificaciones sin leer te esperan en GitHub; mantén pulsado dos veces para marcarlas todas como leídas",
-    "fr": "Combien de notifications non lues vous attendent sur GitHub ; maintenez deux fois pour toutes les marquer comme lues",
-    "ru": "Сколько непрочитанных уведомлений ждут вас на GitHub; удержание дважды — отметить все прочитанными"
+    "en": "How many unread notifications wait for you on GitHub",
+    "de": "Wie viele ungelesene Benachrichtigungen auf GitHub auf dich warten",
+    "es": "Cuántas notificaciones sin leer te esperan en GitHub",
+    "fr": "Combien de notifications non lues vous attendent sur GitHub",
+    "ru": "Сколько непрочитанных уведомлений ждёт вас на GitHub"
   },
   "colSpan": 1,
   "rowSpan": 1,
   "details": {
-    "en": "The number is your unread GitHub notifications, up to 50+. It updates as often as GitHub allows, about once a minute. It needs the GitHub CLI signed in on the Mac, and the button tells you what’s missing.",
-    "de": "Die Zahl zeigt deine ungelesenen Benachrichtigungen auf GitHub, bis 50+. Sie wird so oft aktualisiert, wie GitHub es erlaubt, etwa einmal pro Minute. Nötig ist die angemeldete GitHub CLI auf dem Mac, und die Taste sagt dir, was fehlt.",
-    "es": "El número son tus notificaciones de GitHub sin leer, hasta 50+. Se actualiza tan a menudo como GitHub lo permite, más o menos una vez por minuto. Hace falta la CLI de GitHub con la sesión iniciada en el Mac, y el botón te dice qué falta.",
-    "fr": "Le nombre indique vos notifications GitHub non lues, jusqu’à 50+. Il se met à jour aussi souvent que GitHub le permet, environ une fois par minute. Il faut la CLI GitHub connectée sur le Mac, et le bouton indique ce qui manque.",
-    "ru": "Число — ваши непрочитанные уведомления на GitHub, до 50+. Оно обновляется так часто, как позволяет GitHub, примерно раз в минуту. Нужен GitHub CLI с выполненным входом на Mac, а чего не хватает, подскажет кнопка."
+    "en": "When there are more than 50, you’ll see 50+. It needs the GitHub CLI on the Mac, signed in to your account. If something’s missing, the button tells you.",
+    "de": "Sind es mehr als 50, steht dort 50+. Auf dem Mac muss die GitHub CLI mit deinem Konto angemeldet sein. Fehlt etwas, sagt dir die Taste Bescheid.",
+    "es": "Si hay más de 50, verás 50+. Necesita en el Mac la CLI de GitHub con tu sesión iniciada. Si falta algo, el botón te lo dice.",
+    "fr": "Au-delà de 50, vous verrez 50+. Il faut la CLI GitHub sur le Mac, connectée à votre compte. S’il manque quelque chose, le bouton vous le dit.",
+    "ru": "Если их больше 50, вы увидите 50+. На Mac нужен GitHub CLI, в который вы вошли под своим аккаунтом. Если чего-то не хватает, кнопка подскажет."
   },
   "tapAction": {
     "en": "Opens your GitHub notifications in the browser",
@@ -36,8 +36,8 @@
     "en": "Marks all notifications as read if you hold it again within 10 seconds",
     "de": "Markiert alle Benachrichtigungen als gelesen, wenn du die Taste innerhalb von 10 Sekunden noch einmal hältst",
     "es": "Marca todas las notificaciones como leídas si lo mantienes pulsado otra vez en menos de 10 segundos",
-    "fr": "Marque toutes les notifications comme lues si vous le maintenez à nouveau dans les 10 secondes",
-    "ru": "Отмечает все уведомления прочитанными, если удержать кнопку ещё раз в течение 10 секунд"
+    "fr": "Marque toutes les notifications comme lues si vous le maintenez de nouveau dans les 10 secondes",
+    "ru": "Отмечает все уведомления прочитанными, если за 10 секунд удержать кнопку ещё раз"
   },
   "button": {
     "icon": {

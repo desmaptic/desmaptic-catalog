@@ -1,6 +1,6 @@
 {
   "id": "devicehub",
-  "revision": 6,
+  "revision": 7,
   "name": "Device Hub",
   "bundleIds": [
     "com.apple.dt.Devices"
@@ -547,11 +547,11 @@
         "ru": "Чистый статус-бар"
       },
       "summary": {
-        "en": "9:41, full battery and full bars for screenshots; hold to undo",
-        "de": "9:41, voller Akku und volle Balken für Screenshots; Halten macht es rückgängig",
-        "es": "9:41, batería y cobertura llenas para capturas; mantén pulsado para deshacer",
-        "fr": "9:41, batterie et barres pleines pour les captures ; maintenez pour annuler",
-        "ru": "9:41, полная батарея и полный сигнал для скриншотов; удержание — отменить"
+        "en": "9:41, full battery and full bars in your simulator screenshots",
+        "de": "9:41, voller Akku und volle Balken auf deinen Simulator-Screenshots",
+        "es": "9:41, batería llena y cobertura completa en tus capturas del simulador",
+        "fr": "9:41, batterie et barres pleines sur vos captures du simulateur",
+        "ru": "9:41, полная батарея и полный сигнал на скриншотах из симулятора"
       },
       "details": {
         "en": "The status bar looks as in Apple’s screenshots until you hold the button or the simulator restarts. It’s the simulator Device Hub shows, or else every running one. A connected device is left alone.",

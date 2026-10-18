@@ -398,7 +398,7 @@ sample() {
   reader=$!
   wait $reader
   reader=0
-  [[ -s $raw ]] || print -u2 -- "headphones: system_profiler gave nothing (Bluetooth off?)"
+  [[ -s $raw ]] || print -u2 -- "headphones: the Mac listed no Bluetooth devices. Check that Bluetooth is on."
   out=$(awk "$READER_AWK" "$raw" 2>/dev/null)
   choose "$out" "$([[ -n $out ]] && pmset -g accps 2>/dev/null)"
 }

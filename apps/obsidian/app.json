@@ -1,6 +1,6 @@
 {
   "id": "obsidian",
-  "revision": 6,
+  "revision": 7,
   "name": "Obsidian",
   "bundleIds": ["md.obsidian"],
   "category": "productivity",
@@ -71,11 +71,11 @@
       "id": "search",
       "title": {"en": "Search", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Поиск"},
       "summary": {
-        "en": "Searches all files in the vault; hold for the open note",
-        "de": "Durchsucht alle Dateien des Vaults; halten für die offene Notiz",
-        "es": "Busca en todos los archivos de la bóveda; mantén pulsado para la nota abierta",
-        "fr": "Cherche dans tous les fichiers du coffre ; maintenez pour la note ouverte",
-        "ru": "Ищет во всех файлах хранилища; удержание — в открытой заметке"
+        "en": "Searches all the files in your vault",
+        "de": "Durchsucht alle Dateien deines Vaults",
+        "es": "Busca en todos los archivos de la bóveda",
+        "fr": "Cherche dans tous les fichiers du coffre",
+        "ru": "Ищет во всех файлах хранилища"
       },
       "details": {
         "en": "Search opens in the left sidebar. The tap brings Obsidian forward from any app, but doesn’t start it. The long press works while Obsidian is in front, with its default hotkeys.",
@@ -141,11 +141,11 @@
       "id": "new-note",
       "title": {"en": "New Note", "de": "Neue Notiz", "es": "Nueva nota", "fr": "Nouvelle note", "ru": "Новая заметка"},
       "summary": {
-        "en": "Creates a note in a new tab; hold to create it to the right",
-        "de": "Erstellt eine Notiz in einem neuen Tab; halten für rechts daneben",
-        "es": "Crea una nota en una pestaña nueva; mantén pulsado para crearla a la derecha",
-        "fr": "Crée une note dans un nouvel onglet ; maintenez pour la créer à droite",
-        "ru": "Создаёт заметку в новой вкладке; удержание — в области справа"
+        "en": "A new note in its own tab",
+        "de": "Eine neue Notiz in einem eigenen Tab",
+        "es": "Una nota nueva en su propia pestaña",
+        "fr": "Une nouvelle note dans son propre onglet",
+        "ru": "Новая заметка в отдельной вкладке"
       },
       "details": {
         "en": "An “Untitled” note appears in the folder set for new notes. You can type its name right away. The button brings Obsidian forward from any app, but doesn’t start it.",
@@ -410,11 +410,11 @@
       "id": "new-tab",
       "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
       "summary": {
-        "en": "Opens an empty tab (⌘T); hold to reopen the last closed one",
-        "de": "Öffnet einen leeren Tab (⌘T); Halten öffnet den zuletzt geschlossenen",
-        "es": "Abre una pestaña vacía (⌘T); mantén pulsado para reabrir la última cerrada",
-        "fr": "Ouvre un onglet vide (⌘T) ; maintenez pour rouvrir le dernier fermé",
-        "ru": "Открывает пустую вкладку (⌘T); удержание возвращает закрытую"
+        "en": "Opens an empty tab (⌘T)",
+        "de": "Öffnet einen leeren Tab (⌘T)",
+        "es": "Abre una pestaña vacía (⌘T)",
+        "fr": "Ouvre un onglet vide (⌘T)",
+        "ru": "Открывает пустую вкладку (⌘T)"
       },
       "details": {
         "en": "The new tab opens in the current tab group, with links to create or open a note. Works while Obsidian is in front, with its default hotkeys.",
@@ -511,11 +511,11 @@
       "id": "split",
       "title": {"en": "Split Right", "de": "Rechts teilen", "es": "Dividir a la derecha", "fr": "Fractionner à droite", "ru": "Разделить вправо"},
       "summary": {
-        "en": "Opens the same note again on the right; hold to split down",
-        "de": "Öffnet die Notiz ein zweites Mal daneben; Halten teilt nach unten",
-        "es": "Abre la nota otra vez a su lado; mantén pulsado para dividir abajo",
-        "fr": "Ouvre la note une seconde fois à côté ; maintenez pour fractionner vers le bas",
-        "ru": "Открывает ту же заметку ещё раз справа; удержание делит вниз"
+        "en": "Opens the same note again on the right",
+        "de": "Öffnet die Notiz ein zweites Mal daneben",
+        "es": "Abre la misma nota otra vez a su lado",
+        "fr": "Ouvre la même note une seconde fois à côté",
+        "ru": "Открывает ту же заметку ещё раз справа"
       },
       "details": {
         "en": "Handy for reading one note while you write another. Works while Obsidian is in front, whatever its hotkeys.",

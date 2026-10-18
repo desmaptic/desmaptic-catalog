@@ -1,6 +1,6 @@
 {
   "id": "chrome",
-  "revision": 5,
+  "revision": 6,
   "name": "Google Chrome",
   "bundleIds": ["com.google.Chrome"],
   "category": "browsers",
@@ -71,11 +71,11 @@
       "id": "reload",
       "title": {"en": "Reload", "de": "Neu laden", "es": "Volver a cargar", "fr": "Actualiser", "ru": "Обновить"},
       "summary": {
-        "en": "Reloads the page; hold to force a reload that skips the cache",
-        "de": "Lädt die Seite neu; Halten erzwingt das Neuladen ohne Cache",
-        "es": "Vuelve a cargar la página; mantén pulsado para forzar la recarga sin caché",
-        "fr": "Actualise la page ; maintenez pour forcer l’actualisation sans cache",
-        "ru": "Обновляет страницу; удержание — обновление без кеша"
+        "en": "Reloads the page you’re on in Chrome",
+        "de": "Lädt die offene Seite in Chrome neu",
+        "es": "Vuelve a cargar la página que tienes abierta en Chrome",
+        "fr": "Actualise la page ouverte dans Chrome",
+        "ru": "Перезагружает текущую страницу в Chrome"
       },
       "details": {
         "en": "The tap reloads the current tab of the front Chrome window, even with Chrome in the background. The long press works while Chrome is in front.",
@@ -358,11 +358,11 @@
       "id": "dev-tools",
       "title": {"en": "DevTools", "de": "DevTools", "es": "DevTools", "fr": "DevTools", "ru": "DevTools"},
       "summary": {
-        "en": "Opens Developer Tools (⌥⌘I); hold for the Console",
-        "de": "Öffnet die Entwicklertools (⌥⌘I); Halten öffnet die Konsole",
-        "es": "Abre DevTools (⌥⌘I); mantén pulsado para la consola",
-        "fr": "Ouvre les outils pour les développeurs (⌥⌘I) ; maintenez pour la console",
-        "ru": "Открывает инструменты разработчика (⌥⌘I); удержание — консоль"
+        "en": "Opens Developer Tools for the page you’re on (⌥⌘I)",
+        "de": "Öffnet die Entwicklertools für die aktuelle Seite (⌥⌘I)",
+        "es": "Abre DevTools para la página actual (⌥⌘I)",
+        "fr": "Ouvre les outils pour les développeurs sur la page affichée (⌥⌘I)",
+        "ru": "Открывает инструменты разработчика для текущей страницы (⌥⌘I)"
       },
       "details": {
         "en": "Chrome’s Developer Tools for the current tab: Elements, Console, Network and the rest. Works while Chrome is in front.",
@@ -521,11 +521,11 @@
       "id": "copy-url",
       "title": {"en": "Copy URL", "de": "URL kopieren", "es": "Copiar URL", "fr": "Copier l’URL", "ru": "Скопировать URL"},
       "summary": {
-        "en": "Copies the page’s address; hold for a Markdown link",
-        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
-        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
-        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
-        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+        "en": "The page’s address on your clipboard, ready to paste",
+        "de": "Kopiert die Adresse der Seite, damit du sie überall einsetzen kannst",
+        "es": "La dirección de la página en el portapapeles, lista para pegar",
+        "fr": "L’adresse de la page dans le presse-papiers, prête à coller",
+        "ru": "Копирует адрес страницы, чтобы вставить его куда угодно"
       },
       "details": {
         "en": "The address and title come from the current tab of the front Chrome window. Works with Chrome in the background.",

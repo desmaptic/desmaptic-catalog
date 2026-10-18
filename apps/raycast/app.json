@@ -1,6 +1,6 @@
 {
   "id": "raycast",
-  "revision": 4,
+  "revision": 5,
   "name": "Raycast",
   "bundleIds": [
     "com.raycast.macos"
@@ -61,11 +61,11 @@
         "ru": "Развернуть"
       },
       "summary": {
-        "en": "The front window fills the screen; hold for almost all of it",
-        "de": "Das vordere Fenster füllt den Bildschirm; halten für fast den ganzen",
-        "es": "La ventana de delante llena la pantalla; mantén pulsado para casi toda",
-        "fr": "La fenêtre au premier plan remplit l’écran ; maintenez pour presque tout",
-        "ru": "Переднее окно на весь экран; удержание — почти на весь"
+        "en": "The front window fills its whole screen",
+        "de": "Das vordere Fenster füllt den ganzen Bildschirm",
+        "es": "La ventana de delante ocupa toda la pantalla",
+        "fr": "La fenêtre au premier plan occupe tout l’écran",
+        "ru": "Переднее окно на весь экран"
       },
       "details": {
         "en": "Unlike macOS full screen, the window stays in its Space, next to your other windows. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
@@ -261,11 +261,11 @@
         "ru": "По центру"
       },
       "summary": {
-        "en": "Centers the front window; hold for a reasonable size",
-        "de": "Zentriert das vordere Fenster; halten für eine sinnvolle Größe",
-        "es": "Centra la ventana de delante; mantén pulsado para un tamaño razonable",
-        "fr": "Centre la fenêtre au premier plan ; maintenez pour une taille raisonnable",
-        "ru": "Ставит переднее окно по центру; удержание — разумный размер"
+        "en": "The front window in the middle of its screen",
+        "de": "Das vordere Fenster in der Mitte des Bildschirms",
+        "es": "La ventana de delante, en el centro de la pantalla",
+        "fr": "La fenêtre au premier plan au centre de l’écran",
+        "ru": "Переднее окно по центру экрана"
       },
       "details": {
         "en": "A tap doesn’t change the window’s size. Reasonable Size is 60% of the screen, at most 1024 × 900 points. Choose “Always Run Command” the first time Raycast asks whether to run the command.",
@@ -713,11 +713,11 @@
         "ru": "Raycast Notes"
       },
       "summary": {
-        "en": "Quick notes in their own window; hold for a new one",
-        "de": "Schnelle Notizen in eigenem Fenster; halten für eine neue",
-        "es": "Notas rápidas en su propia ventana; mantén pulsado para una nueva",
-        "fr": "Notes rapides dans leur fenêtre ; maintenez pour une nouvelle",
-        "ru": "Быстрые заметки в отдельном окне; удержание — создать новую"
+        "en": "Your quick notes in Raycast",
+        "de": "Deine schnellen Notizen in Raycast",
+        "es": "Tus notas rápidas de Raycast",
+        "fr": "Vos notes rapides dans Raycast",
+        "ru": "Быстрые заметки в Raycast"
       },
       "details": {
         "en": "Your notes stay in Raycast and open in a window of their own. Without Raycast Pro, you can have up to 5. Choose “Always Run Command” the first time Raycast asks whether to run the command.",

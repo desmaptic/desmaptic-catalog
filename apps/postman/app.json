@@ -1,6 +1,6 @@
 {
   "id": "postman",
-  "revision": 5,
+  "revision": 6,
   "name": "Postman",
   "bundleIds": [
     "com.postmanlabs.mac"
@@ -17,11 +17,11 @@
         "ru": "Отправить"
       },
       "summary": {
-        "en": "Sends the open request (⌘↩); hold to save the response to a file",
-        "de": "Sendet die offene Anfrage (⌘↩); halten, um die Antwort als Datei zu speichern",
-        "es": "Envía la solicitud abierta (⌘↩); mantén pulsado para guardar la respuesta en un archivo",
-        "fr": "Envoie la requête ouverte (⌘↩) ; maintenez pour enregistrer la réponse dans un fichier",
-        "ru": "Отправляет открытый запрос (⌘↩); удержание — сохранить ответ в файл"
+        "en": "Sends the open request (⌘↩)",
+        "de": "Sendet die offene Anfrage (⌘↩)",
+        "es": "Envía la solicitud abierta (⌘↩)",
+        "fr": "Envoie la requête ouverte (⌘↩)",
+        "ru": "Отправляет открытый запрос (⌘↩)"
       },
       "details": {
         "en": "Same as the Send button in the open request tab. Works while Postman is in front.",
@@ -87,11 +87,11 @@
         "ru": "Сохранить"
       },
       "summary": {
-        "en": "Saves the open request (⌘S); hold for Save As",
-        "de": "Speichert die offene Anfrage (⌘S); halten für Save As",
-        "es": "Guarda la solicitud abierta (⌘S); mantén pulsado para Save As",
-        "fr": "Enregistre la requête ouverte (⌘S) ; maintenez pour Save As",
-        "ru": "Сохраняет открытый запрос (⌘S); удержание — Save As"
+        "en": "Saves the open request (⌘S)",
+        "de": "Speichert die offene Anfrage (⌘S)",
+        "es": "Guarda la solicitud abierta (⌘S)",
+        "fr": "Enregistre la requête ouverte (⌘S)",
+        "ru": "Сохраняет открытый запрос (⌘S)"
       },
       "details": {
         "en": "If the request isn’t in a collection yet, Postman asks where to save it. Works while Postman is in front.",
@@ -261,11 +261,11 @@
         "ru": "Новая вкладка"
       },
       "summary": {
-        "en": "Opens an empty request in a new tab (⌘T); hold closes the tab in front",
-        "de": "Öffnet eine leere Anfrage in einem neuen Tab (⌘T); Halten schließt den vorderen Tab",
-        "es": "Abre una solicitud vacía en una pestaña nueva (⌘T); mantén pulsado para cerrar la de delante",
-        "fr": "Ouvre une requête vide dans un nouvel onglet (⌘T) ; maintenez pour fermer l’onglet au premier plan",
-        "ru": "Открывает пустой запрос в новой вкладке (⌘T); удержание закрывает переднюю вкладку"
+        "en": "Opens an empty request in a new tab (⌘T)",
+        "de": "Öffnet eine leere Anfrage in einem neuen Tab (⌘T)",
+        "es": "Abre una solicitud vacía en una pestaña nueva (⌘T)",
+        "fr": "Ouvre une requête vide dans un nouvel onglet (⌘T)",
+        "ru": "Открывает пустой запрос в новой вкладке (⌘T)"
       },
       "details": {
         "en": "Postman asks about unsaved changes before closing only if you are signed in and “Always ask when closing unsaved tabs” is on. Works while Postman is in front.",
@@ -383,11 +383,11 @@
         "ru": "Следующая вкладка"
       },
       "summary": {
-        "en": "Switches to the tab on the right; hold for the one on the left",
-        "de": "Wechselt zum Tab rechts; halten für den Tab links",
-        "es": "Pasa a la pestaña de la derecha; mantén pulsado para la de la izquierda",
-        "fr": "Passe à l’onglet de droite ; maintenez pour celui de gauche",
-        "ru": "Переключает на вкладку справа; удержание — на вкладку слева"
+        "en": "Switches to the tab on the right",
+        "de": "Wechselt zum Tab rechts",
+        "es": "Pasa a la pestaña de la derecha",
+        "fr": "Passe à l’onglet de droite",
+        "ru": "Переключает на вкладку справа"
       },
       "details": {
         "en": "Clicks Window › Next Tab in Postman’s menu, so any keyboard layout will do. Works while Postman is in front.",
@@ -496,11 +496,11 @@
         "ru": "Поиск"
       },
       "summary": {
-        "en": "Searches workspaces, collections and requests (⌘K); hold for this workspace only",
-        "de": "Durchsucht Workspaces, Collections und Anfragen (⌘K); halten nur für diesen Workspace",
-        "es": "Busca en espacios de trabajo, colecciones y solicitudes (⌘K); mantén pulsado para buscar solo en este",
-        "fr": "Cherche dans les espaces de travail, collections et requêtes (⌘K) ; maintenez pour celui-ci seulement",
-        "ru": "Ищет по рабочим пространствам, коллекциям и запросам (⌘K); удержание — только в текущем"
+        "en": "Searches workspaces, collections and requests (⌘K)",
+        "de": "Durchsucht Workspaces, Collections und Anfragen (⌘K)",
+        "es": "Busca en espacios de trabajo, colecciones y solicitudes (⌘K)",
+        "fr": "Cherche dans les espaces de travail, les collections et les requêtes (⌘K)",
+        "ru": "Ищет по рабочим пространствам, коллекциям и запросам (⌘K)"
       },
       "details": {
         "en": "Postman’s search box at the top of the window. Works while Postman is in front.",
@@ -720,11 +720,11 @@
         "ru": "Консоль"
       },
       "summary": {
-        "en": "Opens the Postman Console (⌥⌘C); hold to clear it",
-        "de": "Öffnet die Postman Console (⌥⌘C); halten zum Leeren",
-        "es": "Abre la Postman Console (⌥⌘C); mantén pulsado para vaciarla",
-        "fr": "Ouvre la Postman Console (⌥⌘C) ; maintenez pour la vider",
-        "ru": "Открывает Postman Console (⌥⌘C); удержание — очистить"
+        "en": "Opens the Postman Console (⌥⌘C)",
+        "de": "Öffnet die Postman Console (⌥⌘C)",
+        "es": "Abre la Postman Console (⌥⌘C)",
+        "fr": "Ouvre la Postman Console (⌥⌘C)",
+        "ru": "Открывает Postman Console (⌥⌘C)"
       },
       "details": {
         "en": "Shows each request as it was sent and the response that came back, with headers, body and console.log output from scripts. Works while Postman is in front.",

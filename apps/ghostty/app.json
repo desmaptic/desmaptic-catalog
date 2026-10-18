@@ -1,6 +1,6 @@
 {
   "id": "ghostty",
-  "revision": 6,
+  "revision": 7,
   "name": "Ghostty",
   "bundleIds": ["com.mitchellh.ghostty"],
   "category": "development",
@@ -9,11 +9,11 @@
       "id": "new-tab",
       "title": {"en": "New Tab", "de": "Neuer Tab", "es": "Nueva pestaña", "fr": "Nouvel onglet", "ru": "Новая вкладка"},
       "summary": {
-        "en": "A tab in the front window, from any app; hold to close the terminal in front",
-        "de": "Ein Tab im vorderen Fenster, aus jeder App; Halten schließt das vordere Terminal",
-        "es": "Una pestaña en la ventana de delante, desde cualquier app; mantén pulsado para cerrar el terminal de delante",
-        "fr": "Un onglet dans la fenêtre au premier plan, depuis n’importe quelle app ; maintenez pour fermer le terminal au premier plan",
-        "ru": "Вкладка в переднем окне из любого приложения; удержание закрывает передний терминал"
+        "en": "A new tab in the front window, from any app",
+        "de": "Ein neuer Tab im vorderen Fenster, aus jeder App",
+        "es": "Una pestaña nueva en la ventana de delante, desde cualquier app",
+        "fr": "Un nouvel onglet dans la fenêtre au premier plan, depuis n’importe quelle app",
+        "ru": "Новая вкладка в переднем окне из любого приложения"
       },
       "details": {
         "en": "The tab opens in the front terminal’s folder, as with File › New Tab (⌘T), and Ghostty comes forward. The long press works only while Ghostty is in front. ⌘Z brings the terminal back within 5 seconds, Ghostty’s default.",
@@ -203,11 +203,11 @@
       "id": "next-split",
       "title": {"en": "Next Split", "de": "Nächster Bereich", "es": "División siguiente", "fr": "Panneau suivant", "ru": "Следующая панель"},
       "summary": {
-        "en": "Moves to the next split; hold for the previous one",
-        "de": "Wechselt zum nächsten Bereich; halten für den vorherigen",
-        "es": "Pasa a la división siguiente; mantén pulsado para la anterior",
-        "fr": "Passe au panneau suivant ; maintenez pour le précédent",
-        "ru": "Переходит к следующей панели; удержание — к предыдущей"
+        "en": "Moves from split to split in a Ghostty window",
+        "de": "Wechselt zwischen den Bereichen eines Ghostty-Fensters",
+        "es": "Pasa de una división a otra en una ventana de Ghostty",
+        "fr": "Passe d’un panneau à l’autre dans une fenêtre Ghostty",
+        "ru": "Переходит от панели к панели в окне Ghostty"
       },
       "details": {
         "en": "Window › Select Next Split (⌘]), with any keyboard layout. Works from any app.",
@@ -273,11 +273,11 @@
       "id": "find",
       "title": {"en": "Find", "de": "Suchen", "es": "Buscar", "fr": "Rechercher", "ru": "Найти"},
       "summary": {
-        "en": "Searches the terminal’s text (⌘F); hold to clear it",
-        "de": "Durchsucht den Text des Terminals (⌘F); Halten leert ihn",
-        "es": "Busca en el texto del terminal (⌘F); mantén pulsado para borrarlo",
-        "fr": "Cherche dans le texte du terminal (⌘F) ; maintenez pour l’effacer",
-        "ru": "Ищет по тексту терминала (⌘F); удержание очищает его"
+        "en": "Finds a word or a line in the terminal’s output",
+        "de": "Findet ein Wort oder eine Zeile in der Ausgabe des Terminals",
+        "es": "Encuentra una palabra o una línea en la salida del terminal",
+        "fr": "Retrouve un mot ou une ligne dans la sortie du terminal",
+        "ru": "Находит слово или строку в выводе терминала"
       },
       "details": {
         "en": "Edit › Find › Find… (⌘F) in the front terminal. Searches the scrollback too. Works from any app, but the long press only while Ghostty is in front.",
@@ -374,11 +374,11 @@
       "id": "reload-config",
       "title": {"en": "Reload Config", "de": "Konfiguration neu laden", "es": "Recargar configuración", "fr": "Recharger la configuration", "ru": "Перечитать конфиг"},
       "summary": {
-        "en": "Applies your config file’s changes (⇧⌘,); hold to open it",
-        "de": "Übernimmt Änderungen der Konfigurationsdatei (⇧⌘,); Halten öffnet sie",
-        "es": "Aplica los cambios del archivo de configuración (⇧⌘,); mantén pulsado para abrirlo",
-        "fr": "Applique les modifications du fichier de configuration (⇧⌘,) ; maintenez pour l’ouvrir",
-        "ru": "Применяет изменения файла конфигурации (⇧⌘,); удержание открывает его"
+        "en": "Puts your config changes into effect right away",
+        "de": "Deine Änderungen an der Konfiguration wirken sofort",
+        "es": "Aplica al momento los cambios de tu configuración",
+        "fr": "Prend en compte tout de suite vos changements de configuration",
+        "ru": "Ваши правки в конфиге начинают действовать сразу"
       },
       "details": {
         "en": "Ghostty › Reload Configuration (⇧⌘,). Ghostty applies what it can while running and shows any errors in the file. Works from any app.",
@@ -475,11 +475,11 @@
       "id": "smaller",
       "title": {"en": "Smaller", "de": "Kleiner", "es": "Más pequeño", "fr": "Réduire", "ru": "Уменьшить"},
       "summary": {
-        "en": "Makes the text smaller (⌘-); hold for the config’s size",
-        "de": "Verkleinert die Schrift (⌘-); halten für die Größe aus der Konfiguration",
-        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño de la configuración",
-        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille de la configuration",
-        "ru": "Уменьшает шрифт (⌘-); удержание — размер из конфигурации"
+        "en": "Smaller text, to fit more on screen",
+        "de": "Kleinere Schrift, damit mehr auf den Bildschirm passt",
+        "es": "Letra más pequeña para que quepa más en pantalla",
+        "fr": "Un texte plus petit, pour en voir davantage à l’écran",
+        "ru": "Шрифт помельче, чтобы на экране помещалось больше"
       },
       "details": {
         "en": "View › Decrease Font Size (⌘-), for the terminal in front only. Works from any app.",
@@ -514,11 +514,11 @@
       "id": "bigger",
       "title": {"en": "Bigger", "de": "Größer", "es": "Más grande", "fr": "Agrandir", "ru": "Увеличить"},
       "summary": {
-        "en": "Makes the text bigger (⌘+); hold for the config’s size",
-        "de": "Vergrößert die Schrift (⌘+); halten für die Größe aus der Konfiguration",
-        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño de la configuración",
-        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille de la configuration",
-        "ru": "Увеличивает шрифт (⌘+); удержание — размер из конфигурации"
+        "en": "Bigger text, easier to read",
+        "de": "Größere Schrift, leichter zu lesen",
+        "es": "Letra más grande, más fácil de leer",
+        "fr": "Un texte plus grand, plus facile à lire",
+        "ru": "Шрифт покрупнее, чтобы было легче читать"
       },
       "details": {
         "en": "View › Increase Font Size (⌘+), for the terminal in front only. Works from any app.",

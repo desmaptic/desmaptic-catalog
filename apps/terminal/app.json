@@ -1,6 +1,6 @@
 {
   "id": "terminal",
-  "revision": 7,
+  "revision": 8,
   "name": {"en": "Terminal", "de": "Terminal", "es": "Terminal", "fr": "Terminal", "ru": "Терминал"},
   "bundleIds": ["com.apple.Terminal"],
   "category": "development",
@@ -303,11 +303,11 @@
       "id": "smaller",
       "title": {"en": "Smaller", "de": "Kleiner", "es": "Más pequeño", "fr": "Réduire", "ru": "Уменьшить"},
       "summary": {
-        "en": "Makes the text smaller (⌘-); hold for the default size",
-        "de": "Verkleinert die Schrift (⌘-); halten für die Standardgröße",
-        "es": "Reduce el texto (⌘-); mantén pulsado para el tamaño por omisión",
-        "fr": "Réduit le texte (⌘-) ; maintenez pour la taille par défaut",
-        "ru": "Уменьшает шрифт (⌘-); удержание — размер по умолчанию"
+        "en": "Makes Terminal’s text smaller",
+        "de": "Verkleinert die Schrift im Terminal",
+        "es": "Reduce el texto de Terminal",
+        "fr": "Réduit le texte du Terminal",
+        "ru": "Уменьшает шрифт в Терминале"
       },
       "details": {
         "en": "Same as View › Smaller (⌘-), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",
@@ -342,11 +342,11 @@
       "id": "bigger",
       "title": {"en": "Bigger", "de": "Größer", "es": "Más grande", "fr": "Agrandir", "ru": "Увеличить"},
       "summary": {
-        "en": "Makes the text bigger (⌘+); hold for the default size",
-        "de": "Vergrößert die Schrift (⌘+); halten für die Standardgröße",
-        "es": "Agranda el texto (⌘+); mantén pulsado para el tamaño por omisión",
-        "fr": "Agrandit le texte (⌘+) ; maintenez pour la taille par défaut",
-        "ru": "Увеличивает шрифт (⌘+); удержание — размер по умолчанию"
+        "en": "Makes Terminal’s text bigger",
+        "de": "Vergrößert die Schrift im Terminal",
+        "es": "Agranda el texto de Terminal",
+        "fr": "Agrandit le texte du Terminal",
+        "ru": "Увеличивает шрифт в Терминале"
       },
       "details": {
         "en": "Same as View › Bigger (⌘+), and View › Default Font Size (⌘0) on hold. Works while Terminal is in front.",

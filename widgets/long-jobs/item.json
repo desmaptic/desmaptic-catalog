@@ -1,6 +1,6 @@
 {
   "id": "long-jobs",
-  "revision": 3,
+  "revision": 4,
   "kind": "widget",
   "title": {
     "en": "Long Jobs",
@@ -10,11 +10,11 @@
     "ru": "Долгая работа"
   },
   "summary": {
-    "en": "What runs on the Mac and for how long, and when the last jobs finished; hold to stop the top one",
-    "de": "Was auf dem Mac läuft und wie lange, und wann die letzten Aufgaben fertig wurden; Halten stoppt die oberste",
-    "es": "Qué se ejecuta en el Mac y desde hace cuánto, y cuándo terminaron las últimas tareas; mantén pulsado para detener la de más arriba",
-    "fr": "Ce qui tourne sur le Mac et depuis combien de temps, et quand les dernières tâches ont fini ; maintenez pour arrêter celle du haut",
-    "ru": "Сколько идут долгие задачи на Mac и когда они закончились; удержание останавливает верхнюю задачу"
+    "en": "What the Mac is busy with and for how long, and what just finished",
+    "de": "Womit der Mac gerade beschäftigt ist und wie lange schon, und was eben fertig wurde",
+    "es": "En qué está ocupado el Mac y desde cuándo, y qué acaba de terminar",
+    "fr": "Ce qui occupe le Mac et depuis combien de temps, et ce qui vient de finir",
+    "ru": "Чем сейчас занят Mac, сколько это длится и что уже закончилось"
   },
   "colSpan": 2,
   "rowSpan": 2,

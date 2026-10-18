@@ -1,6 +1,6 @@
 {
   "id": "music",
-  "revision": 8,
+  "revision": 10,
   "name": {"en": "Music", "de": "Musik", "es": "Música", "fr": "Musique", "ru": "Музыка"},
   "bundleIds": ["com.apple.Music"],
   "category": "music",
@@ -353,11 +353,11 @@
       "id": "airplay-speaker",
       "title": {"en": "AirPlay Speaker", "de": "AirPlay-Lautsprecher", "es": "Altavoz AirPlay", "fr": "Enceinte AirPlay", "ru": "Колонка AirPlay"},
       "summary": {
-        "en": "Sends Music to your AirPlay speaker; hold to bring it back to the Mac",
-        "de": "Schickt Musik an deinen AirPlay-Lautsprecher; Halten holt sie zurück auf den Mac",
-        "es": "Envía Música a tu altavoz AirPlay; mantén pulsado para volver al Mac",
-        "fr": "Envoie Musique vers votre enceinte AirPlay ; maintenez pour revenir au Mac",
-        "ru": "Выводит «Музыку» на вашу колонку AirPlay; удержание — вернуть звук на Mac"
+        "en": "Plays Music on your AirPlay speaker",
+        "de": "Spielt Musik über deinen AirPlay-Lautsprecher ab",
+        "es": "Lleva Música a tu altavoz AirPlay",
+        "fr": "Diffuse Musique sur votre enceinte AirPlay",
+        "ru": "Включает «Музыку» на вашей колонке AirPlay"
       },
       "details": {
         "en": "Write the speaker’s name in the button’s settings, as Music shows it under AirPlay, for example speaker=\"Living Room\". Music then plays only there. Works with Music in the background.",

@@ -35,10 +35,11 @@ function p3(a, b, c) { return (H < 0.5) ? lerp(a, b, H * 2) : lerp(b, c, H * 2 -
 function c3(a, b, c) { return (H < 0.5) ? mix(a, b, H * 2) : mix(b, c, H * 2 - 1) }
 function clamp(x) { return x < 0 ? 0 : (x > 1 ? 1 : x) }
 function f(x) { return sprintf("%.2f", x) }
-# where a latency sits on the gauge and on the line: a log scale, 1 ms empty, 10 ms a third, 100 ms two thirds,
-# 1 s full; offline is full
+# where a latency sits on the gauge: a log scale, 1 ms empty, 10 ms a third, 100 ms two thirds, 1 s full;
+# offline is full
 function share(m) { if (m < 0) return 1; if (m <= 1) return 0; return clamp(log(m) / log(1000)) }
-function lineY(m) { return 182 - 30 * share(m) }
+# the line reads the same scale upside down, as the quality of the link: higher is faster, offline on the floor
+function lineY(m) { return 152 + 30 * share(m) }
 # the colour the gauge has at a share: the arc gradient runs left to right, so it is picked by the x under the bead
 function tint(q) { return spectrum((100 + 80 * sin((-120 + 240 * q) * 3.14159265 / 180) - 24) / 152) }
 # the IP face. em: the width of a string in em of the system font (semibold, fixed-width digits; measured
@@ -145,7 +146,7 @@ BEGIN {
   vs = length(val) >= 4 ? 56 : 60
 
   # the line: 26 samples 4 apart from x 52; 25 on screen (two minutes at 5 s), the newest waits at x 152
-  # outside the clip until the slide. Offline samples sit at the top, where the line turns pink.
+  # outside the clip until the slide. Offline samples lie at the bottom, where the line turns red.
   n = split(hist, hv, " ")
   for (i = 1; i <= 26; i++) {
     v = (i <= n && hv[i] ~ /^-?[0-9]+(\.[0-9]+)?$/) ? hv[i] + 0 : -1
@@ -211,7 +212,8 @@ BEGIN {
     f(gx - e), f(gy), f(gx + e), f(gy), f(gx - c), f(gy - 0.5 * r), f(gx + c), f(gy - 0.5 * r), \
     f(gx - c), f(gy + 0.5 * r), f(gx + c), f(gy + 0.5 * r))
 
-  # the line is coloured by height the way the gauge is coloured along its arc
+  # the line is coloured by height the way the gauge is coloured along its arc: fast cyan on top, slow pink and
+  # offline red at the bottom
   lineStops = ""
   split("0 0.25 0.375 0.5 0.625 0.75 1", q, " ")
   for (i = 1; i <= 7; i++) lineStops = lineStops "<stop offset=`" q[i] "` stop-color=`" tint(q[i]) "`/>"
@@ -223,7 +225,7 @@ BEGIN {
   s = s "<linearGradient id=`trackG` gradientUnits=`userSpaceOnUse` x1=`24` y1=`0` x2=`176` y2=`0`>" \
         "<stop offset=`0` stop-color=`" tc[1] "` stop-opacity=`" to[1] "`/><stop offset=`0.3` stop-color=`" tc[2] "` stop-opacity=`" to[2] "`/>" \
         "<stop offset=`0.65` stop-color=`" tc[3] "` stop-opacity=`" to[3] "`/><stop offset=`1` stop-color=`" tc[4] "` stop-opacity=`" to[4] "`/></linearGradient>"
-  s = s "<linearGradient id=`lineG` gradientUnits=`userSpaceOnUse` x1=`0` y1=`182` x2=`0` y2=`152`>" \
+  s = s "<linearGradient id=`lineG` gradientUnits=`userSpaceOnUse` x1=`0` y1=`152` x2=`0` y2=`182`>" \
         lineStops "</linearGradient>"
   s = s "<linearGradient id=`globeG` gradientUnits=`userSpaceOnUse` x1=`" f(gx - r) "` y1=`0` x2=`" f(gx + r) "` y2=`0`><stop offset=`0` stop-color=`" g1 "`/><stop offset=`1` stop-color=`" g2 "`/></linearGradient>"
   s = s "<radialGradient id=`bloomG`><stop offset=`0` stop-color=`" bC "` stop-opacity=`" f(bA) "`/><stop offset=`0.55` stop-color=`" mC "` stop-opacity=`" f(bM) "`/><stop offset=`1` stop-color=`" mC "` stop-opacity=`0`/></radialGradient>"

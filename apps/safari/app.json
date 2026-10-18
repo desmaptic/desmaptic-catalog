@@ -1,6 +1,6 @@
 {
   "id": "safari",
-  "revision": 7,
+  "revision": 8,
   "name": "Safari",
   "bundleIds": ["com.apple.Safari"],
   "category": "browsers",
@@ -71,11 +71,11 @@
       "id": "reload",
       "title": {"en": "Reload", "de": "Neu laden", "es": "Volver a cargar", "fr": "Recharger", "ru": "Обновить"},
       "summary": {
-        "en": "Reloads the page (⌘R); hold to reload it from the origin",
-        "de": "Lädt die Seite neu (⌘R); Halten lädt sie vom Ursprung",
-        "es": "Vuelve a cargar la página (⌘R); mantén pulsado para cargarla desde el origen",
-        "fr": "Recharge la page (⌘R) ; maintenez pour la recharger depuis son origine",
-        "ru": "Перезагружает страницу (⌘R); удержание — перезагрузка без кеша"
+        "en": "Reloads the page you’re looking at",
+        "de": "Lädt die Seite neu, die du gerade ansiehst",
+        "es": "Vuelve a cargar la página que estás viendo",
+        "fr": "Recharge la page affichée",
+        "ru": "Перезагружает открытую страницу"
       },
       "details": {
         "en": "View › Reload Page (⌘R). A long press makes Safari download the page again instead of using its cache. Works while Safari is in front.",
@@ -327,11 +327,11 @@
       "id": "bookmark",
       "title": {"en": "Add Bookmark", "de": "Lesezeichen hinzufügen", "es": "Añadir marcador", "fr": "Ajouter un signet", "ru": "В закладки"},
       "summary": {
-        "en": "Bookmarks the page (⌘D); hold for the bookmarks sidebar",
-        "de": "Legt ein Lesezeichen an (⌘D); halten für die Seitenleiste",
-        "es": "Añade la página a marcadores (⌘D); mantén pulsado para la barra lateral",
-        "fr": "Ajoute la page aux signets (⌘D) ; maintenez pour la barre latérale",
-        "ru": "Добавляет страницу в закладки (⌘D); удержание — боковое меню"
+        "en": "Saves the page to your bookmarks",
+        "de": "Speichert die Seite als Lesezeichen",
+        "es": "Guarda la página en marcadores",
+        "fr": "Enregistre la page dans vos signets",
+        "ru": "Сохраняет страницу в закладки"
       },
       "details": {
         "en": "Bookmarks › Add Bookmark… (⌘D). Safari asks which folder to save it in and what to call it. Works while Safari is in front.",
@@ -366,11 +366,11 @@
       "id": "reading-list",
       "title": {"en": "Reading List", "de": "Leseliste", "es": "Lista de lectura", "fr": "Liste de lecture", "ru": "Список для чтения"},
       "summary": {
-        "en": "Saves the page to read later; hold for the Reading List",
-        "de": "Merkt die Seite zum Lesen vor; halten für die Leseliste",
-        "es": "Guarda la página para leerla después; mantén pulsado para ver la lista",
-        "fr": "Garde la page pour plus tard ; maintenez pour la liste de lecture",
-        "ru": "Сохраняет страницу на потом; удержание — список для чтения"
+        "en": "Saves the page to read later",
+        "de": "Merkt dir die Seite zum späteren Lesen vor",
+        "es": "Guarda la página para leerla después",
+        "fr": "Garde la page pour la lire plus tard",
+        "ru": "Сохраняет страницу, чтобы прочитать её потом"
       },
       "details": {
         "en": "A tap adds the page in Safari’s front window to the Reading List, even with Safari in the background. The long press works while Safari is in front.",
@@ -405,11 +405,11 @@
       "id": "copy-link",
       "title": {"en": "Copy Link", "de": "Link kopieren", "es": "Copiar enlace", "fr": "Copier le lien", "ru": "Скопировать ссылку"},
       "summary": {
-        "en": "Copies the page’s address; hold for a Markdown link",
-        "de": "Kopiert die Adresse der Seite; halten für einen Markdown-Link",
-        "es": "Copia la dirección de la página; mantén pulsado para un enlace Markdown",
-        "fr": "Copie l’adresse de la page ; maintenez pour un lien Markdown",
-        "ru": "Копирует адрес страницы; удержание — ссылка Markdown"
+        "en": "Copies the address of the page you’re on",
+        "de": "Kopiert die Adresse der offenen Seite",
+        "es": "Copia la dirección de la página abierta",
+        "fr": "Copie l’adresse de la page ouverte",
+        "ru": "Копирует адрес открытой страницы"
       },
       "details": {
         "en": "The link comes from the page in Safari’s front window. Works with Safari in the background.",
@@ -506,11 +506,11 @@
       "id": "web-inspector",
       "title": {"en": "Web Inspector", "de": "Web Inspector", "es": "Inspector web", "fr": "Inspecteur web", "ru": "Веб-инспектор"},
       "summary": {
-        "en": "Opens Web Inspector (⌥⌘I); hold for the console",
-        "de": "Öffnet die Webinformationen (⌥⌘I); halten für die Konsole",
-        "es": "Abre el inspector web (⌥⌘I); mantén pulsado para la consola",
-        "fr": "Ouvre l’inspecteur web (⌥⌘I) ; maintenez pour la console",
-        "ru": "Открывает веб-инспектор (⌥⌘I); удержание — консоль"
+        "en": "Opens Web Inspector for the page",
+        "de": "Öffnet die Webinformationen zur Seite",
+        "es": "Abre el inspector web de la página",
+        "fr": "Ouvre l’inspecteur web de la page",
+        "ru": "Открывает веб-инспектор для страницы"
       },
       "details": {
         "en": "Develop › Show Web Inspector (⌥⌘I). It needs the Develop menu: turn on “Show features for web developers” in Safari Settings › Advanced. Works while Safari is in front.",
@@ -545,11 +545,11 @@
       "id": "mute-tab",
       "title": {"en": "Mute Tab", "de": "Tab stumm", "es": "Silenciar pestaña", "fr": "Couper le son", "ru": "Без звука"},
       "summary": {
-        "en": "Mutes the current tab; hold to mute all the others",
-        "de": "Schaltet das aktuelle Tab stumm; halten, um die anderen stummzuschalten",
-        "es": "Silencia la pestaña actual; mantén pulsado para silenciar las demás",
-        "fr": "Coupe le son de l’onglet actuel ; maintenez pour couper celui des autres",
-        "ru": "Выключает звук текущей вкладки; удержание выключает звук остальных"
+        "en": "Mutes the tab you’re on",
+        "de": "Schaltet den aktuellen Tab stumm",
+        "es": "Silencia la pestaña actual",
+        "fr": "Coupe le son de l’onglet actuel",
+        "ru": "Выключает звук текущей вкладки"
       },
       "details": {
         "en": "Window › Mute Current Tab, and Window › Mute Other Tabs on hold. Do the same again to turn the sound back on. Works while Safari is in front.",

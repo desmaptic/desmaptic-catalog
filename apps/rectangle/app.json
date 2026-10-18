@@ -1,6 +1,6 @@
 {
   "id": "rectangle",
-  "revision": 1,
+  "revision": 2,
   "name": "Rectangle",
   "bundleIds": [
     "com.knollsoft.Rectangle"
@@ -17,25 +17,25 @@
         "ru": "Левая половина"
       },
       "summary": {
-        "en": "The front window on the left half of its screen",
-        "de": "Das vordere Fenster auf der linken Bildschirmhälfte",
-        "es": "La ventana de delante, en la mitad izquierda de su pantalla",
-        "fr": "La fenêtre au premier plan sur la moitié gauche de son écran",
-        "ru": "Переднее окно — на левую половину экрана"
+        "en": "The front window on the left half of the screen",
+        "de": "Das aktive Fenster auf der linken Bildschirmhälfte",
+        "es": "La ventana activa en la mitad izquierda de la pantalla",
+        "fr": "La fenêtre active sur la moitié gauche de l’écran",
+        "ru": "Активное окно на левой половине экрана"
       },
       "details": {
-        "en": "A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "What a second tap does depends on Rectangle’s “Repeated commands” setting. The window may change size or move to the next display. Works in any app, as long as Rectangle is running.",
+        "de": "Was beim zweiten Tippen passiert, hängt von der Einstellung „Wiederholte Befehle“ in Rectangle ab. Das Fenster kann dann seine Größe ändern oder auf den nächsten Bildschirm wechseln. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Lo que pasa al tocar otra vez depende del ajuste «Comandos repetidos» de Rectangle. La ventana puede cambiar de tamaño o pasar a la siguiente pantalla. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». La fenêtre peut alors changer de taille ou passer sur l’écran suivant. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Что будет при повторном нажатии, зависит от настройки Rectangle «Повторяющиеся команды». Окно может поменять размер или перейти на следующий экран. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the left half",
-        "de": "Legt das vordere Fenster auf die linke Hälfte",
-        "es": "Lleva la ventana de delante a la mitad izquierda",
-        "fr": "Place la fenêtre au premier plan sur la moitié gauche",
-        "ru": "Перемещает переднее окно на левую половину"
+        "de": "Schiebt das aktive Fenster auf die linke Hälfte",
+        "es": "Lleva la ventana activa a la mitad izquierda",
+        "fr": "Place la fenêtre active sur la moitié gauche",
+        "ru": "Ставит активное окно на левую половину экрана"
       },
       "button": {
         "icon": {
@@ -61,32 +61,32 @@
         "ru": "Развернуть"
       },
       "summary": {
-        "en": "The front window fills the screen; hold for almost all of it",
-        "de": "Das vordere Fenster füllt den Bildschirm; halten für fast den ganzen",
-        "es": "La ventana de delante llena la pantalla; mantén pulsado para casi toda",
-        "fr": "La fenêtre au premier plan remplit l’écran ; maintenez pour presque tout",
-        "ru": "Переднее окно на весь экран; удержание — почти на весь"
+        "en": "The front window fills the whole screen",
+        "de": "Das aktive Fenster füllt den ganzen Bildschirm",
+        "es": "La ventana activa en toda la pantalla",
+        "fr": "La fenêtre active sur tout l’écran",
+        "ru": "Активное окно на весь экран"
       },
       "details": {
-        "en": "Unlike macOS full screen, the window stays in its Space, next to your other windows. Works with any app in front, while Rectangle is running.",
-        "de": "Anders als der Vollbildmodus von macOS bleibt das Fenster in seinem Space, neben den anderen Fenstern. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "A diferencia de la pantalla completa de macOS, la ventana sigue en su Space, junto a las demás. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Contrairement au plein écran de macOS, la fenêtre reste dans son Space, à côté des autres. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "В отличие от полноэкранного режима macOS, окно остаётся на своём рабочем столе, рядом с другими окнами. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "The window doesn’t go full screen. It stays on its desktop, next to your other windows. Works in any app, as long as Rectangle is running.",
+        "de": "Das Fenster wechselt nicht in den Vollbildmodus. Es bleibt auf seinem Schreibtisch, neben deinen anderen Fenstern. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "La ventana no pasa a pantalla completa. Se queda en su escritorio, junto a tus otras ventanas. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "La fenêtre ne passe pas en plein écran. Elle reste sur son bureau, à côté de vos autres fenêtres. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Окно не уходит в полноэкранный режим. Оно остаётся на своём рабочем столе, рядом с другими окнами. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Makes the front window fill the screen",
-        "de": "Lässt das vordere Fenster den Bildschirm füllen",
-        "es": "Hace que la ventana de delante llene la pantalla",
-        "fr": "Agrandit la fenêtre au premier plan à tout l’écran",
-        "ru": "Разворачивает переднее окно на весь экран"
+        "de": "Zieht das aktive Fenster über den ganzen Bildschirm",
+        "es": "Extiende la ventana activa por toda la pantalla",
+        "fr": "Étend la fenêtre active sur tout l’écran",
+        "ru": "Разворачивает активное окно на весь экран"
       },
       "holdAction": {
-        "en": "Fills almost the whole screen, centered (Almost Maximize)",
-        "de": "Füllt fast den ganzen Bildschirm, zentriert („Nahezu maximieren“)",
-        "es": "Ocupa casi toda la pantalla, centrada («Casi maximizar»)",
-        "fr": "Occupe presque tout l’écran, centrée (« Quasi maximiser »)",
-        "ru": "Занимает почти весь экран по центру («Почти максимизировать»)"
+        "en": "Makes the window fill almost the whole screen, centered (“Almost Maximize”)",
+        "de": "Zieht das Fenster fast über den ganzen Bildschirm, mittig („Nahezu maximieren“)",
+        "es": "Extiende la ventana por casi toda la pantalla, centrada («Casi maximizar»)",
+        "fr": "Étend la fenêtre sur presque tout l’écran, centrée (« Quasi maximiser »)",
+        "ru": "Растягивает окно почти на весь экран, по центру («Почти максимизировать»)"
       },
       "button": {
         "icon": {
@@ -117,25 +117,25 @@
         "ru": "Правая половина"
       },
       "summary": {
-        "en": "The front window on the right half of its screen",
-        "de": "Das vordere Fenster auf der rechten Bildschirmhälfte",
-        "es": "La ventana de delante, en la mitad derecha de su pantalla",
-        "fr": "La fenêtre au premier plan sur la moitié droite de son écran",
-        "ru": "Переднее окно — на правую половину экрана"
+        "en": "The front window on the right half of the screen",
+        "de": "Das aktive Fenster auf der rechten Bildschirmhälfte",
+        "es": "La ventana activa en la mitad derecha de la pantalla",
+        "fr": "La fenêtre active sur la moitié droite de l’écran",
+        "ru": "Активное окно на правой половине экрана"
       },
       "details": {
-        "en": "A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "What a second tap does depends on Rectangle’s “Repeated commands” setting. The window may change size or move to the next display. Works in any app, as long as Rectangle is running.",
+        "de": "Was beim zweiten Tippen passiert, hängt von der Einstellung „Wiederholte Befehle“ in Rectangle ab. Das Fenster kann dann seine Größe ändern oder auf den nächsten Bildschirm wechseln. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Lo que pasa al tocar otra vez depende del ajuste «Comandos repetidos» de Rectangle. La ventana puede cambiar de tamaño o pasar a la siguiente pantalla. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». La fenêtre peut alors changer de taille ou passer sur l’écran suivant. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Что будет при повторном нажатии, зависит от настройки Rectangle «Повторяющиеся команды». Окно может поменять размер или перейти на следующий экран. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the right half",
-        "de": "Legt das vordere Fenster auf die rechte Hälfte",
-        "es": "Lleva la ventana de delante a la mitad derecha",
-        "fr": "Place la fenêtre au premier plan sur la moitié droite",
-        "ru": "Перемещает переднее окно на правую половину"
+        "de": "Schiebt das aktive Fenster auf die rechte Hälfte",
+        "es": "Lleva la ventana activa a la mitad derecha",
+        "fr": "Place la fenêtre active sur la moitié droite",
+        "ru": "Ставит активное окно на правую половину экрана"
       },
       "button": {
         "icon": {
@@ -156,37 +156,37 @@
       "title": {
         "en": "Next Display",
         "de": "Nächster Bildschirm",
-        "es": "Pantalla siguiente",
-        "fr": "Écran suivant",
-        "ru": "Следующий дисплей"
+        "es": "Siguiente pantalla",
+        "fr": "Moniteur suivant",
+        "ru": "Следующий экран"
       },
       "summary": {
-        "en": "Moves the front window to your other display; hold for the previous one",
-        "de": "Schiebt das vordere Fenster auf den anderen Bildschirm; halten für den vorherigen",
-        "es": "Lleva la ventana de delante a tu otra pantalla; mantén pulsado para la anterior",
-        "fr": "Déplace la fenêtre au premier plan sur votre autre écran ; maintenez pour le précédent",
-        "ru": "Переносит переднее окно на другой дисплей; удержание — на предыдущий"
+        "en": "The front window on the next display",
+        "de": "Das aktive Fenster auf dem nächsten Bildschirm",
+        "es": "La ventana activa en la siguiente pantalla",
+        "fr": "La fenêtre active sur l’écran suivant",
+        "ru": "Активное окно на следующем экране"
       },
       "details": {
-        "en": "Needs two or more displays. Works with any app in front, while Rectangle is running.",
-        "de": "Dafür brauchst du zwei oder mehr Bildschirme. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Necesitas dos pantallas o más. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Il faut deux écrans ou plus. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Нужны два дисплея или больше. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "You need at least two displays. Works in any app, as long as Rectangle is running.",
+        "de": "Dafür brauchst du mindestens zwei Bildschirme. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Necesitas al menos dos pantallas. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Il vous faut au moins deux écrans. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Нужно хотя бы два экрана. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the next display",
-        "de": "Schiebt das vordere Fenster auf den nächsten Bildschirm",
-        "es": "Lleva la ventana de delante a la pantalla siguiente",
-        "fr": "Déplace la fenêtre au premier plan sur l’écran suivant",
-        "ru": "Переносит переднее окно на следующий дисплей"
+        "de": "Schiebt das aktive Fenster auf den nächsten Bildschirm",
+        "es": "Lleva la ventana activa a la siguiente pantalla",
+        "fr": "Déplace la fenêtre active sur l’écran suivant",
+        "ru": "Переносит активное окно на следующий экран"
       },
       "holdAction": {
-        "en": "Moves it to the previous display",
-        "de": "Schiebt es auf den vorherigen Bildschirm",
-        "es": "La lleva a la pantalla anterior",
-        "fr": "La déplace sur l’écran précédent",
-        "ru": "Переносит его на предыдущий дисплей"
+        "en": "Moves the window to the previous display",
+        "de": "Schiebt das Fenster auf den vorherigen Bildschirm",
+        "es": "Lleva la ventana a la pantalla anterior",
+        "fr": "Déplace la fenêtre sur l’écran précédent",
+        "ru": "Переносит окно на предыдущий экран"
       },
       "button": {
         "icon": {
@@ -217,32 +217,32 @@
         "ru": "Первая треть"
       },
       "summary": {
-        "en": "The front window on the left third of its screen; hold for two thirds",
-        "de": "Das vordere Fenster auf dem linken Bildschirmdrittel; halten für zwei Drittel",
-        "es": "La ventana de delante, en el tercio izquierdo de su pantalla; mantén pulsado para dos tercios",
-        "fr": "La fenêtre au premier plan sur le tiers gauche de son écran ; maintenez pour deux tiers",
-        "ru": "Переднее окно — на левую треть экрана; удержание — на две трети"
+        "en": "The front window on the left third of the screen",
+        "de": "Das aktive Fenster auf dem linken Bildschirmdrittel",
+        "es": "La ventana activa en el tercio izquierdo de la pantalla",
+        "fr": "La fenêtre active sur le tiers gauche de l’écran",
+        "ru": "Активное окно на левой трети экрана"
       },
       "details": {
-        "en": "On a display turned upright, the thirds go from top to bottom. A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "En una pantalla en vertical, los tercios van de arriba abajo. Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "На повёрнутом вертикально дисплее трети идут сверху вниз. Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "On a display turned upright, the thirds go from top to bottom. A second tap follows Rectangle’s “Repeated commands” setting. Works in any app, as long as Rectangle is running.",
+        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Beim zweiten Tippen gilt die Einstellung „Wiederholte Befehle“ in Rectangle. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "En una pantalla girada en vertical, los tercios van de arriba abajo. Al tocar otra vez, manda el ajuste «Comandos repetidos» de Rectangle. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "На экране, повёрнутом вертикально, трети идут сверху вниз. Что будет при повторном нажатии, решает настройка Rectangle «Повторяющиеся команды». Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the first third",
-        "de": "Legt das vordere Fenster auf das erste Drittel",
-        "es": "Lleva la ventana de delante al primer tercio",
-        "fr": "Place la fenêtre au premier plan sur le premier tiers",
-        "ru": "Перемещает переднее окно на первую треть"
+        "de": "Schiebt das aktive Fenster auf das erste Drittel",
+        "es": "Lleva la ventana activa al primer tercio",
+        "fr": "Place la fenêtre active sur le premier tiers",
+        "ru": "Ставит активное окно на первую треть экрана"
       },
       "holdAction": {
-        "en": "Moves it to the first two thirds",
-        "de": "Legt es auf die ersten zwei Drittel",
-        "es": "La lleva a los dos primeros tercios",
-        "fr": "La place sur les deux premiers tiers",
-        "ru": "Перемещает его на первые две трети"
+        "en": "Moves the window to the first two thirds",
+        "de": "Schiebt das Fenster auf die ersten zwei Drittel",
+        "es": "Lleva la ventana a los dos primeros tercios",
+        "fr": "Place la fenêtre sur les deux premiers tiers",
+        "ru": "Ставит окно на первые две трети экрана"
       },
       "button": {
         "icon": {
@@ -270,35 +270,35 @@
         "de": "Mittleres Drittel",
         "es": "Tercio central",
         "fr": "Tiers central",
-        "ru": "Средняя треть"
+        "ru": "Центральная треть"
       },
       "summary": {
-        "en": "The front window on the middle third of its screen; hold for two thirds",
-        "de": "Das vordere Fenster auf dem mittleren Bildschirmdrittel; halten für zwei Drittel",
-        "es": "La ventana de delante, en el tercio central de su pantalla; mantén pulsado para dos tercios",
-        "fr": "La fenêtre au premier plan sur le tiers central de son écran ; maintenez pour deux tiers",
-        "ru": "Переднее окно — на среднюю треть экрана; удержание — на две трети"
+        "en": "The front window on the middle third of the screen",
+        "de": "Das aktive Fenster auf dem mittleren Bildschirmdrittel",
+        "es": "La ventana activa en el tercio central de la pantalla",
+        "fr": "La fenêtre active sur le tiers central de l’écran",
+        "ru": "Активное окно на центральной трети экрана"
       },
       "details": {
-        "en": "On a display turned upright, the thirds go from top to bottom. A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "En una pantalla en vertical, los tercios van de arriba abajo. Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "На повёрнутом вертикально дисплее трети идут сверху вниз. Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "On a display turned upright, the thirds go from top to bottom. A second tap follows Rectangle’s “Repeated commands” setting. Works in any app, as long as Rectangle is running.",
+        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Beim zweiten Tippen gilt die Einstellung „Wiederholte Befehle“ in Rectangle. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "En una pantalla girada en vertical, los tercios van de arriba abajo. Al tocar otra vez, manda el ajuste «Comandos repetidos» de Rectangle. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "На экране, повёрнутом вертикально, трети идут сверху вниз. Что будет при повторном нажатии, решает настройка Rectangle «Повторяющиеся команды». Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
-        "en": "Moves the front window to the middle third",
-        "de": "Legt das vordere Fenster auf das mittlere Drittel",
-        "es": "Lleva la ventana de delante al tercio central",
-        "fr": "Place la fenêtre au premier plan sur le tiers central",
-        "ru": "Перемещает переднее окно на среднюю треть"
+        "en": "Moves the front window to the center third",
+        "de": "Schiebt das aktive Fenster auf das mittlere Drittel",
+        "es": "Lleva la ventana activa al tercio central",
+        "fr": "Place la fenêtre active sur le tiers central",
+        "ru": "Ставит активное окно на центральную треть экрана"
       },
       "holdAction": {
-        "en": "Takes two thirds of the screen, centered",
-        "de": "Nimmt zwei Drittel des Bildschirms ein, zentriert",
-        "es": "Ocupa dos tercios de la pantalla, centrada",
-        "fr": "Occupe deux tiers de l’écran, centrée",
-        "ru": "Занимает две трети экрана по центру"
+        "en": "Moves the window to the center two thirds",
+        "de": "Schiebt das Fenster auf die mittleren zwei Drittel",
+        "es": "Lleva la ventana a los dos tercios centrales",
+        "fr": "Place la fenêtre sur les deux tiers centraux",
+        "ru": "Ставит окно на центральные две трети экрана"
       },
       "button": {
         "icon": {
@@ -329,32 +329,32 @@
         "ru": "Последняя треть"
       },
       "summary": {
-        "en": "The front window on the right third of its screen; hold for two thirds",
-        "de": "Das vordere Fenster auf dem rechten Bildschirmdrittel; halten für zwei Drittel",
-        "es": "La ventana de delante, en el tercio derecho de su pantalla; mantén pulsado para dos tercios",
-        "fr": "La fenêtre au premier plan sur le tiers droit de son écran ; maintenez pour deux tiers",
-        "ru": "Переднее окно — на правую треть экрана; удержание — на две трети"
+        "en": "The front window on the right third of the screen",
+        "de": "Das aktive Fenster auf dem rechten Bildschirmdrittel",
+        "es": "La ventana activa en el tercio derecho de la pantalla",
+        "fr": "La fenêtre active sur le tiers droit de l’écran",
+        "ru": "Активное окно на правой трети экрана"
       },
       "details": {
-        "en": "On a display turned upright, the thirds go from top to bottom. A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "En una pantalla en vertical, los tercios van de arriba abajo. Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "На повёрнутом вертикально дисплее трети идут сверху вниз. Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "On a display turned upright, the thirds go from top to bottom. A second tap follows Rectangle’s “Repeated commands” setting. Works in any app, as long as Rectangle is running.",
+        "de": "Auf einem hochkant gedrehten Bildschirm liegen die Drittel übereinander. Beim zweiten Tippen gilt die Einstellung „Wiederholte Befehle“ in Rectangle. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "En una pantalla girada en vertical, los tercios van de arriba abajo. Al tocar otra vez, manda el ajuste «Comandos repetidos» de Rectangle. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Sur un écran en mode portrait, les tiers vont de haut en bas. Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "На экране, повёрнутом вертикально, трети идут сверху вниз. Что будет при повторном нажатии, решает настройка Rectangle «Повторяющиеся команды». Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the last third",
-        "de": "Legt das vordere Fenster auf das letzte Drittel",
-        "es": "Lleva la ventana de delante al último tercio",
-        "fr": "Place la fenêtre au premier plan sur le dernier tiers",
-        "ru": "Перемещает переднее окно на последнюю треть"
+        "de": "Schiebt das aktive Fenster auf das letzte Drittel",
+        "es": "Lleva la ventana activa al último tercio",
+        "fr": "Place la fenêtre active sur le dernier tiers",
+        "ru": "Ставит активное окно на последнюю треть экрана"
       },
       "holdAction": {
-        "en": "Moves it to the last two thirds",
-        "de": "Legt es auf die letzten zwei Drittel",
-        "es": "La lleva a los dos últimos tercios",
-        "fr": "La place sur les deux derniers tiers",
-        "ru": "Перемещает его на последние две трети"
+        "en": "Moves the window to the last two thirds",
+        "de": "Schiebt das Fenster auf die letzten zwei Drittel",
+        "es": "Lleva la ventana a los dos últimos tercios",
+        "fr": "Place la fenêtre sur les deux derniers tiers",
+        "ru": "Ставит окно на последние две трети экрана"
       },
       "button": {
         "icon": {
@@ -385,25 +385,25 @@
         "ru": "Как было"
       },
       "summary": {
-        "en": "Puts the front window back where it was",
-        "de": "Setzt das vordere Fenster dorthin zurück, wo es war",
-        "es": "Devuelve la ventana de delante a donde estaba",
-        "fr": "Remet la fenêtre au premier plan là où elle était",
-        "ru": "Возвращает переднее окно на прежнее место"
+        "en": "The front window back the way it was",
+        "de": "Das aktive Fenster wieder so wie vorher",
+        "es": "La ventana activa otra vez como estaba",
+        "fr": "La fenêtre active remise comme avant",
+        "ru": "Активное окно снова как было"
       },
       "details": {
-        "en": "The window gets back the size and place it had before Rectangle moved it. Works with any app in front, while Rectangle is running.",
-        "de": "Das Fenster bekommt die Größe und den Platz zurück, die es hatte, bevor Rectangle es verschoben hat. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "La ventana recupera el tamaño y el lugar que tenía antes de que Rectangle la moviera. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "La fenêtre retrouve la taille et la place qu’elle avait avant que Rectangle la déplace. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Окно вернётся к размеру и месту, которые были до того, как Rectangle его сдвинул. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "The window gets back the size and place it had before Rectangle moved it. Works in any app, as long as Rectangle is running.",
+        "de": "Das Fenster bekommt die Größe und den Platz zurück, die es hatte, bevor Rectangle es verschoben hat. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "La ventana recupera el tamaño y el sitio que tenía antes de que Rectangle la moviera. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "La fenêtre retrouve la taille et la place qu’elle avait avant que Rectangle la déplace. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Окно вернётся к размеру и месту, которые были до того, как его сдвинул Rectangle. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Puts the front window back as it was",
-        "de": "Setzt das vordere Fenster zurück",
-        "es": "Devuelve la ventana de delante a como estaba",
-        "fr": "Remet la fenêtre au premier plan comme avant",
-        "ru": "Возвращает переднее окно, как было"
+        "de": "Setzt das aktive Fenster zurück, wie es vorher war",
+        "es": "Devuelve la ventana activa a como estaba",
+        "fr": "Remet la fenêtre active comme avant",
+        "ru": "Возвращает активное окно, как было"
       },
       "button": {
         "icon": {
@@ -425,29 +425,29 @@
         "en": "Top Half",
         "de": "Obere Hälfte",
         "es": "Mitad superior",
-        "fr": "Moitié haute",
+        "fr": "Moitié du haut",
         "ru": "Верхняя половина"
       },
       "summary": {
-        "en": "The front window on the top half of its screen",
-        "de": "Das vordere Fenster auf der oberen Bildschirmhälfte",
-        "es": "La ventana de delante, en la mitad superior de su pantalla",
-        "fr": "La fenêtre au premier plan sur la moitié haute de son écran",
-        "ru": "Переднее окно — на верхнюю половину экрана"
+        "en": "The front window on the top half of the screen",
+        "de": "Das aktive Fenster auf der oberen Bildschirmhälfte",
+        "es": "La ventana activa en la mitad superior de la pantalla",
+        "fr": "La fenêtre active sur la moitié du haut de l’écran",
+        "ru": "Активное окно на верхней половине экрана"
       },
       "details": {
-        "en": "A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "What a second tap does depends on Rectangle’s “Repeated commands” setting. The window may change size or move to the next display. Works in any app, as long as Rectangle is running.",
+        "de": "Was beim zweiten Tippen passiert, hängt von der Einstellung „Wiederholte Befehle“ in Rectangle ab. Das Fenster kann dann seine Größe ändern oder auf den nächsten Bildschirm wechseln. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Lo que pasa al tocar otra vez depende del ajuste «Comandos repetidos» de Rectangle. La ventana puede cambiar de tamaño o pasar a la siguiente pantalla. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». La fenêtre peut alors changer de taille ou passer sur l’écran suivant. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Что будет при повторном нажатии, зависит от настройки Rectangle «Повторяющиеся команды». Окно может поменять размер или перейти на следующий экран. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the top half",
-        "de": "Legt das vordere Fenster auf die obere Hälfte",
-        "es": "Lleva la ventana de delante a la mitad superior",
-        "fr": "Place la fenêtre au premier plan sur la moitié haute",
-        "ru": "Перемещает переднее окно на верхнюю половину"
+        "de": "Schiebt das aktive Fenster auf die obere Hälfte",
+        "es": "Lleva la ventana activa a la mitad superior",
+        "fr": "Place la fenêtre active sur la moitié du haut",
+        "ru": "Ставит активное окно на верхнюю половину экрана"
       },
       "button": {
         "icon": {
@@ -470,28 +470,28 @@
         "de": "Zentrieren",
         "es": "Centrar",
         "fr": "Centrer",
-        "ru": "По центру"
+        "ru": "В центр"
       },
       "summary": {
-        "en": "Centers the front window on its screen",
-        "de": "Zentriert das vordere Fenster auf seinem Bildschirm",
-        "es": "Centra la ventana de delante en su pantalla",
-        "fr": "Centre la fenêtre au premier plan sur son écran",
-        "ru": "Ставит переднее окно в центр экрана"
+        "en": "The front window in the middle of the screen",
+        "de": "Das aktive Fenster mittig auf dem Bildschirm",
+        "es": "La ventana activa en el centro de la pantalla",
+        "fr": "La fenêtre active au centre de l’écran",
+        "ru": "Активное окно в центре экрана"
       },
       "details": {
-        "en": "The window keeps its size. Works with any app in front, while Rectangle is running.",
-        "de": "Das Fenster behält seine Größe. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "La ventana conserva su tamaño. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "La fenêtre garde sa taille. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Размер окна не меняется. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "The window keeps its size. Works in any app, as long as Rectangle is running.",
+        "de": "Das Fenster behält seine Größe. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "La ventana conserva su tamaño. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "La fenêtre garde sa taille. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Размер окна не меняется. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
-        "en": "Centers the front window on its screen",
-        "de": "Zentriert das vordere Fenster auf seinem Bildschirm",
-        "es": "Centra la ventana de delante en su pantalla",
-        "fr": "Centre la fenêtre au premier plan sur son écran",
-        "ru": "Ставит переднее окно в центр экрана"
+        "en": "Centers the front window on the screen",
+        "de": "Zentriert das aktive Fenster auf dem Bildschirm",
+        "es": "Centra la ventana activa en la pantalla",
+        "fr": "Centre la fenêtre active sur l’écran",
+        "ru": "Ставит активное окно в центр экрана"
       },
       "button": {
         "icon": {
@@ -513,29 +513,29 @@
         "en": "Bottom Half",
         "de": "Untere Hälfte",
         "es": "Mitad inferior",
-        "fr": "Moitié basse",
+        "fr": "Moitié du bas",
         "ru": "Нижняя половина"
       },
       "summary": {
-        "en": "The front window on the bottom half of its screen",
-        "de": "Das vordere Fenster auf der unteren Bildschirmhälfte",
-        "es": "La ventana de delante, en la mitad inferior de su pantalla",
-        "fr": "La fenêtre au premier plan sur la moitié basse de son écran",
-        "ru": "Переднее окно — на нижнюю половину экрана"
+        "en": "The front window on the bottom half of the screen",
+        "de": "Das aktive Fenster auf der unteren Bildschirmhälfte",
+        "es": "La ventana activa en la mitad inferior de la pantalla",
+        "fr": "La fenêtre active sur la moitié du bas de l’écran",
+        "ru": "Активное окно на нижней половине экрана"
       },
       "details": {
-        "en": "A second tap on the same window follows Rectangle’s “Repeated commands” setting, which may resize it or move it to the next display. Works with any app in front, while Rectangle is running.",
-        "de": "Ein zweites Tippen auf dasselbe Fenster folgt der Einstellung „Wiederholte Befehle“ von Rectangle: Das Fenster ändert dann vielleicht seine Größe oder wechselt auf den nächsten Bildschirm. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Un segundo toque en la misma ventana sigue el ajuste «Comandos repetidos» de Rectangle, que puede cambiar su tamaño o llevarla a la pantalla siguiente. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Un second toucher sur la même fenêtre suit le réglage « Commandes répétées » de Rectangle, qui peut changer sa taille ou la déplacer sur l’écran suivant. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Повторное нажатие для того же окна делает то, что задано в настройке Rectangle «Повторяющиеся команды»: окно может сменить размер или переехать на следующий дисплей. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "What a second tap does depends on Rectangle’s “Repeated commands” setting. The window may change size or move to the next display. Works in any app, as long as Rectangle is running.",
+        "de": "Was beim zweiten Tippen passiert, hängt von der Einstellung „Wiederholte Befehle“ in Rectangle ab. Das Fenster kann dann seine Größe ändern oder auf den nächsten Bildschirm wechseln. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Lo que pasa al tocar otra vez depende del ajuste «Comandos repetidos» de Rectangle. La ventana puede cambiar de tamaño o pasar a la siguiente pantalla. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "Si vous touchez le bouton une deuxième fois, Rectangle suit son réglage « Commandes répétées ». La fenêtre peut alors changer de taille ou passer sur l’écran suivant. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "Что будет при повторном нажатии, зависит от настройки Rectangle «Повторяющиеся команды». Окно может поменять размер или перейти на следующий экран. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Moves the front window to the bottom half",
-        "de": "Legt das vordere Fenster auf die untere Hälfte",
-        "es": "Lleva la ventana de delante a la mitad inferior",
-        "fr": "Place la fenêtre au premier plan sur la moitié basse",
-        "ru": "Перемещает переднее окно на нижнюю половину"
+        "de": "Schiebt das aktive Fenster auf die untere Hälfte",
+        "es": "Lleva la ventana activa a la mitad inferior",
+        "fr": "Place la fenêtre active sur la moitié du bas",
+        "ru": "Ставит активное окно на нижнюю половину экрана"
       },
       "button": {
         "icon": {
@@ -557,36 +557,36 @@
         "en": "Larger",
         "de": "Größer",
         "es": "Más grande",
-        "fr": "Agrandir",
+        "fr": "Plus grand",
         "ru": "Больше"
       },
       "summary": {
-        "en": "Makes the front window a little larger; hold to make it smaller",
-        "de": "Macht das vordere Fenster etwas größer; halten zum Verkleinern",
-        "es": "Agranda un poco la ventana de delante; mantén pulsado para achicarla",
-        "fr": "Agrandit un peu la fenêtre au premier plan ; maintenez pour la réduire",
-        "ru": "Немного увеличивает переднее окно; удержание — уменьшить"
+        "en": "The front window a little larger",
+        "de": "Das aktive Fenster ein Stück größer",
+        "es": "La ventana activa un poco más grande",
+        "fr": "La fenêtre active un peu plus grande",
+        "ru": "Делает активное окно чуть больше"
       },
       "details": {
-        "en": "Each tap adds a little on every side. Works with any app in front, while Rectangle is running.",
-        "de": "Jedes Tippen gibt auf allen Seiten etwas dazu. Funktioniert mit jeder App im Vordergrund, solange Rectangle läuft.",
-        "es": "Cada toque suma un poco por todos los lados. Funciona con cualquier app delante, mientras Rectangle esté abierto.",
-        "fr": "Chaque toucher ajoute un peu de chaque côté. Fonctionne avec n’importe quelle app au premier plan, tant que Rectangle est ouvert.",
-        "ru": "Каждое нажатие добавляет понемногу со всех сторон. Работает с любым приложением впереди, пока Rectangle запущен."
+        "en": "With each tap, the window grows a little on every side. Works in any app, as long as Rectangle is running.",
+        "de": "Bei jedem Tippen wächst das Fenster auf allen Seiten ein Stück. Funktioniert in jeder App, solange Rectangle läuft.",
+        "es": "Con cada toque, la ventana crece un poco por todos los lados. Funciona en cualquier app mientras Rectangle esté abierto.",
+        "fr": "La fenêtre s’agrandit un peu de chaque côté chaque fois que vous touchez le bouton. Fonctionne dans toutes les apps, tant que Rectangle est ouvert.",
+        "ru": "С каждым нажатием окно чуть подрастает со всех сторон. Работает в любом приложении, пока запущен Rectangle."
       },
       "tapAction": {
         "en": "Makes the front window a little larger",
-        "de": "Macht das vordere Fenster etwas größer",
-        "es": "Agranda un poco la ventana de delante",
-        "fr": "Agrandit un peu la fenêtre au premier plan",
-        "ru": "Немного увеличивает переднее окно"
+        "de": "Macht das aktive Fenster etwas größer",
+        "es": "Agranda un poco la ventana activa",
+        "fr": "Agrandit un peu la fenêtre active",
+        "ru": "Немного увеличивает активное окно"
       },
       "holdAction": {
-        "en": "Makes it a little smaller",
-        "de": "Macht es etwas kleiner",
-        "es": "La hace un poco más pequeña",
-        "fr": "La réduit un peu",
-        "ru": "Немного уменьшает его"
+        "en": "Makes the window a little smaller",
+        "de": "Macht das Fenster etwas kleiner",
+        "es": "Hace la ventana un poco más pequeña",
+        "fr": "Réduit un peu la fenêtre",
+        "ru": "Немного уменьшает окно"
       },
       "button": {
         "icon": {
@@ -620,17 +620,17 @@
       },
       "summary": {
         "en": "Snap the front window to halves, thirds or the whole screen from your phone",
-        "de": "Vom Telefon aus das vordere Fenster auf Hälften, Drittel oder den ganzen Bildschirm legen",
-        "es": "Coloca la ventana de delante en mitades, tercios o toda la pantalla desde el teléfono",
-        "fr": "Placez la fenêtre au premier plan en moitiés, en tiers ou en plein écran depuis votre téléphone",
-        "ru": "Раскладывайте переднее окно на половины, трети или весь экран с телефона"
+        "de": "Das aktive Fenster vom Telefon aus auf eine Hälfte, ein Drittel oder den ganzen Bildschirm schieben",
+        "es": "Coloca la ventana activa en una mitad, un tercio o toda la pantalla desde el teléfono",
+        "fr": "Placez la fenêtre active sur une moitié, un tiers ou tout l’écran depuis votre téléphone",
+        "ru": "Ставьте активное окно на половину, треть или весь экран прямо с телефона"
       },
       "details": {
-        "en": "The buttons move the front window of any app. Rectangle has to be running, with its own Accessibility access: it asks for it the first time you open it.",
-        "de": "Die Tasten bewegen das vordere Fenster jeder App. Rectangle muss laufen und eigenen Zugriff auf Bedienungshilfen haben: Danach fragt es beim ersten Öffnen.",
-        "es": "Los botones mueven la ventana de delante de cualquier app. Rectangle tiene que estar abierto y con su propio acceso a Accesibilidad: lo pide la primera vez que lo abres.",
-        "fr": "Les boutons déplacent la fenêtre au premier plan de n’importe quelle app. Rectangle doit être ouvert, avec son propre accès à l’Accessibilité : il le demande à sa première ouverture.",
-        "ru": "Кнопки двигают переднее окно любого приложения. Rectangle должен быть запущен и иметь собственное разрешение в «Универсальном доступе»: он попросит его при первом запуске."
+        "en": "The buttons move the front window of any app. Rectangle needs to be running, with its own Accessibility permission. It asks for it the first time you open it.",
+        "de": "Die Tasten bewegen das aktive Fenster jeder App. Rectangle muss laufen und braucht selbst Zugriff auf die Bedienungshilfen. Danach fragt es, wenn du es zum ersten Mal öffnest.",
+        "es": "Los botones mueven la ventana activa de cualquier app. Rectangle tiene que estar abierto y necesita su propio permiso de Accesibilidad. Te lo pide la primera vez que lo abres.",
+        "fr": "Les boutons déplacent la fenêtre active de n’importe quelle app. Rectangle doit être ouvert et autorisé dans Accessibilité. Il vous le demande à sa première ouverture.",
+        "ru": "Кнопки двигают активное окно любого приложения. Rectangle должен быть запущен, и ему нужно своё разрешение в «Универсальном доступе». Он попросит его при первом запуске."
       },
       "bindByDefault": false,
       "placements": [
